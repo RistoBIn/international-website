@@ -6,8 +6,11 @@ export default () => (
     <section className="section">
       <div className="container">
         <div className="content">
-          <h1>Tusen takk for din melding!</h1>
-          <p>Vi har mottatt meldingen, og tar kontakt så fort som mulig.</p>
+          <h1>Thank you for reaching out!</h1>
+          <p>
+            We have recieved your message, and will contact you as soon as
+            possible.
+          </p>
         </div>
       </div>
     </section>

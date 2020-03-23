@@ -3,7 +3,7 @@ import { navigate } from 'gatsby-link';
 import classNames from 'classnames';
 import Footer from '../../components/Footer';
 import GoogleMap from '../../components/GoogleMap';
-import SEO from '../../components/SEO';
+import Layout from '../../components/Layout';
 import Navbar from '../../components/Navbar';
 import ArrowRight from '../../img/Arrow.inline.svg';
 import EmailIcon from '../../img/envelope.inline.svg';
@@ -61,8 +61,10 @@ export default class Index extends React.Component {
     const { trondheimCoordinates, osloCoordinates, activeMap } = this.state;
 
     return (
-      <>
-        <SEO title="Kontakt oss" />
+      <Layout
+        seoTitle="Contact us"
+        seoDescription="Reach out us. We're looking forward to it"
+      >
         <section className="map">
           <Navbar />
           <div id="google-maps">
@@ -98,7 +100,7 @@ export default class Index extends React.Component {
         <section id="offices" className="section">
           <div className="container">
             <div className="wrapper">
-              <h1>Kontakt</h1>
+              <h1>Contact</h1>
               <div
                 role="button"
                 tabIndex={0}
@@ -108,7 +110,7 @@ export default class Index extends React.Component {
                 onClick={() => this.changeMap(trondheimCoordinates)}
                 onKeyPress={() => this.changeMap(trondheimCoordinates)}
               >
-                <h3>Hovedkontor</h3>
+                <h3>Main office</h3>
                 <p>
                   SEALAB OCEAN GROUP <br />
                   Transittgata 14, inngang A<br />
@@ -126,7 +128,7 @@ export default class Index extends React.Component {
               >
                 <h3>Oslo</h3>
                 <p>
-                  Forskningsparken
+                  Oslo Science Park
                   <br />
                   Gaustadalléen 21
                   <br />
@@ -141,10 +143,10 @@ export default class Index extends React.Component {
             <div className="content">
               <div className="columns">
                 <div className="column is-4">
-                  <h3>
-                    Vennligst fyll ut kontaktskjemaet, så svarer vi deg så fort
-                    vi kan.
-                  </h3>
+                  <h2>
+                    Please fill out the contact form, and we will contact you as
+                    fast as we can.
+                  </h2>
                   <div className="contact-information wrapper">
                     <ContactInformation title="E-post" Icon={EmailIcon}>
                       <a href="mailto:contact@sealab.no">contact@sealab.no</a>
@@ -158,7 +160,7 @@ export default class Index extends React.Component {
                   <form
                     name="contact"
                     method="post"
-                    action="/kontakt/takk"
+                    action="/contact/thanks"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
                     onSubmit={this.handleSubmit}
@@ -173,7 +175,7 @@ export default class Index extends React.Component {
                     </div>
                     <div className="field">
                       <label className="label" htmlFor="name">
-                        Navn
+                        Name
                       </label>
                       <div className="control">
                         <input
@@ -188,7 +190,7 @@ export default class Index extends React.Component {
                     </div>
                     <div className="field">
                       <label className="label" htmlFor="email">
-                        E-post
+                        E-mail
                       </label>
                       <div className="control">
                         <input
@@ -203,7 +205,7 @@ export default class Index extends React.Component {
                     </div>
                     <div className="field">
                       <label className="label" htmlFor="message">
-                        Melding
+                        Message
                       </label>
                       <div className="control">
                         <textarea
@@ -230,7 +232,7 @@ export default class Index extends React.Component {
           </div>
         </section>
         <Footer />
-      </>
+      </Layout>
     );
   }
 }
