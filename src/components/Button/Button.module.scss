@@ -1,0 +1,23 @@
+@import '../_variables.scss';
+
+$spacing-between: 18px;
+.title {
+    font-weight: 300;
+    font-size: 3rem;
+    color: $white;
+    // line-height: 110%;
+    @include Title;
+    padding-bottom: $spacing-between;
+  }
+  .subtitle {
+    @include Subtitle;
+    padding-bottom: $spacing-between;
+  }
+  .description {
+    font-family: $primaryFont;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: .55px;
+    color: $text-grey-light;
+    padding-bottom: $spacing-between;
+  }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="50px" viewBox="0 0 52 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>AqualogIconActive</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AqualogIconActive">
+            <g id="AqualogIcon">
+                <g>
+                    <rect id="Rectangle" fill="#7BB7EF" x="0" y="0" width="40" height="50"></rect>
+                    <rect id="Rectangle" fill="#0E111B" x="11" y="8" width="24" height="1" rx="0.2"></rect>
+                    <rect id="Rectangle" fill="#0E111B" x="11" y="15" width="24" height="1" rx="0.2"></rect>
+                    <rect id="Rectangle" fill="#0E111B" x="11" y="22" width="24" height="1" rx="0.2"></rect>
+                    <path d="M23.6989411,33.6197955 C26.5984497,37.7846316 32.1472651,45.5651215 32.788211,44.6603316 C45.1292106,27.2391844 51.1889148,21.022023 50.098966,21.022023 C44.9682006,22.048898 38.8845445,29.2939873 32.788211,36.663175 C32.3071788,37.244642 30.4570297,33.6198301 27.810949,30.1622437 C27.1069596,29.2423533 22.6876287,32.1671526 23.6989411,33.6197955 Z" id="Path-13" stroke="#0E111B" stroke-width="2" fill="#7BB7EF"></path>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="#0E111B" x="5" y="7" width="3" height="3"></rect>
+            <rect id="Rectangle-Copy" fill="#0E111B" x="5" y="14" width="3" height="3"></rect>
+            <rect id="Rectangle-Copy-2" fill="#0E111B" x="5" y="21" width="3" height="3"></rect>
+        </g>
+    </g>
+</svg>

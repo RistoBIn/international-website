@@ -1,0 +1,38 @@
+[build]
+  publish = "public"
+  command = "npm run build"
+  functions = "lambda"
+[build.environment]
+  YARN_VERSION = "1.9.4"
+  YARN_FLAGS = "--no-ignore-optional"
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    Access-Control-Allow-Origin = "*"
+    # Multi-key header rules are expressed with multi-line strings.
+    cache-control = '''
+      max-age=31536000,
+      must-revalidate,
+      public'''
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/public/page-data/"
+
+    # Multi-key header rules are expressed with multi-line strings.
+    cache-control = '''
+      max-age=0,
+      must-revalidate,
+      public'''
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/static/"
+
+    # Multi-key header rules are expressed with multi-line strings.
+    cache-control = '''
+      max-age=31536000,
+      must-revalidate,
+      public,
+      immutable'''

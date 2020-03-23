@@ -1,0 +1,107 @@
+@import '../_variables.scss';
+
+$overlay: rgba(1, 10, 46, 0.726);
+
+.video-section {
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.video {
+    @media screen and (max-width: $tablet) {
+        object-fit: cover;
+        z-index: 0;
+        background-image: url('../../img/bgImg.jpg');
+        background-size: cover;
+        background-position: center;
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: $overlay;
+        }      
+   
+    }
+
+
+    @media screen and (min-width: $tablet) {
+
+        object-fit: cover;
+        z-index: 0;
+        background-color: $background-color-dark;
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: $overlay;
+        }
+        .video-foreground, iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        @media (min-aspect-ratio: 16/9) {
+            .video-foreground { height: 300%; top: -100%; }
+        }
+        @media (max-aspect-ratio: 16/9) {
+            .video-foreground { width: 300%; left: -100%; }
+        }        
+   
+    }
+}
+
+.content {
+    max-width: 60%;
+    strong, h1 {
+        color: $white;
+    }
+    h1 {
+        font-family: $titleFont;
+        font-style: normal;
+        line-height: 110%;
+        font-weight: 300;
+        font-size: 4.5rem;
+    }
+    @media only screen and (max-width: $tablet) {
+        max-width: 100%;
+        padding: 1rem;
+        height:calc(100vh - 56px);
+        h1{
+            font-size: 2.875rem;
+        }
+        
+    }
+    p {
+        @include text_Light;
+        padding-top: 18px;
+        padding-bottom: 32px;
+        max-width: 700px;
+    }
+}
+
+.groupedButtons {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 220px;
+    & > a {
+        margin-right: 40px;
+    }
+    @media only screen and (max-width: $tablet) {
+        & > a  {
+            margin-right: 5px;
+        }
+    }
+}

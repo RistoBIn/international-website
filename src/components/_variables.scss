@@ -1,0 +1,175 @@
+@import '~bulma/sass/utilities/initial-variables';
+/******  COLORS  *******/
+// REGULAR
+$midnight: #010a2e;
+$grey-light: #DBE0EA;
+$red: #E32938;
+$dark: #0E111B;
+$dark-light: #1B1F34;
+$midnight-dark: $dark;
+$midnight-dark-light:#191C27;
+
+//BACKGROUND COLORS
+$background-color-dark: $midnight-dark;
+$background-color-light-dark: $midnight-dark-light;
+$body-dark: #3E4045;
+$secondary-background: #191C27;
+$border-light-background: rgba(0,0,0,.15);
+$border-dark-background: rgba(255, 255, 255, 0.15);;
+$error: #ED1313;
+$success: #32B576;
+$warning: #F5D37C;
+$footer-background: $midnight-dark-light;
+
+//TEXT COLORS
+$text-grey-light: $grey-light;
+$text-dark: $dark;
+$title: $dark;
+$body-light: #DBE0EA;
+$title-dark: #1F253A;
+$text-light: $body-light;
+$text-light-meta: #C0C0C0;
+
+
+// SHADOWS
+$boxShadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.13);
+$newBoxShadow: 0 16px 24px 0 #c7d3e3;
+
+// OVERWRITE BULMA
+$white: white;
+$primary: $red;
+$background: $body-dark;
+
+
+/******  EFFECTS  *******/
+$transition: all 0.25s ease;
+
+
+/******  SIZES  *******/
+
+//FONT SIZES
+$XXS: 4px;
+$XS: 8px;
+$S: 12px;
+$M: 16px;
+$L: 24px;
+$XL: 32px;
+$XXL: 48px;
+
+//FONT WEIGHTS
+$thin: 300;
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+
+// GRID SIZES
+$gridColumnTemplate: repeat(auto-fill, minmax(250px, 1fr));
+$gridColumnGap: 0px;
+$full: 1 / span 10;
+$main: 2 / span 8;
+
+$gap: 10px;
+$icon-dimensions-large: 3rem;
+
+$button-width-desktop: 205px;
+
+/******  FONTS  *******/
+
+$primaryFont: 'Open Sans', sans-serif;
+$titleFont: 'Ubuntu', sans-serif;
+
+@mixin text_Navbar {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+}
+
+@mixin text_Subtitle {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.55px;
+
+  color: $text-grey-light;
+}
+
+@mixin text_Bold {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: $white;
+}
+
+@mixin text_Light {
+font-family: $primaryFont;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 170%;
+color: $text-grey-light;
+}
+
+@mixin text_Dark {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: $body-dark;
+  }
+
+@mixin Title {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110%;
+  color: $white;
+}
+
+@mixin TitleSmall {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+}
+
+@mixin Subtitle {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: $primaryFont;
+  font-size: 1rem;
+  color: $white;
+}
+
+@mixin buttonText {
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem !important;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: $transition;
+}
+
+@mixin text_Uppercase_light {
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $text-grey-light;
+}
+
+
+

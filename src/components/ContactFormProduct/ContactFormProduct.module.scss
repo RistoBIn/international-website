@@ -1,0 +1,26 @@
+@import '../_variables.scss';
+
+
+
+.form {
+  background-color: $secondary-background;
+  text-align: left;
+  padding: 1rem;
+  input, textarea {
+    background-color: $background-color-dark;
+    border: 1px solid $border-dark-background;
+    border-radius: 3px;
+    color: $white;
+  }
+  button {
+    width: 100%;
+    max-width: none;
+  }
+  
+  label {
+    color: $white;
+  }
+  @media screen and(min-width: $desktop) {
+    padding: 2rem;
+  }
+}

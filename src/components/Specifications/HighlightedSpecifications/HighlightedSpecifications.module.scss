@@ -1,0 +1,46 @@
+@import '../../_variables.scss';
+
+section#highlighted {
+  border-top: 1px solid $border-dark-background;
+}
+
+.highlighted__wrapper {
+  display: grid;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  grid-gap: 10px;
+
+  .highlighted__specification {
+    text-align: center;
+    padding: 15px 0;
+
+    
+    
+    .highlighted__specification__title {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 100%;
+      letter-spacing: 0.5px;
+      padding-bottom: 20px;
+    }
+    .highlighted__specification__description {
+      @include text_Uppercase_light;
+    }
+  }
+  @media only screen and(min-width: $tablet) {
+    grid-template-columns: repeat(4, 1fr);  
+    .highlighted__specification {
+      padding: 44px 0;
+      border-right: 1px solid $border-dark-background;
+      &:first-of-type {
+        border-left: 1px solid $border-dark-background;
+      }
+    }
+    
+  }
+  @media only screen and(min-width: $widescreen) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+

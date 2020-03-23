@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="149px" height="52px" viewBox="0 0 149 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OG-Image" transform="translate(-337.000000, -241.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(151.000000, 240.000000)">
+                <g id="Sealab-logo-blå" transform="translate(186.000000, 0.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 1.000000)">
+                        <path d="M149,34.6666667 L149,0 L139.008403,0 L108,52 L131.773109,52 C141.287258,52 149,44.2396023 149,34.6666667 Z" id="Path" fill="#E52421"></path>
+                        <polygon id="Path" fill="#15192E" points="98.5365854 52 130 0 118.463415 0 87 52"></polygon>
+                        <polygon id="Path" fill="#15192E" points="79.4671533 52 111 0 94.5328467 0 63 52"></polygon>
+                        <path d="M0,52 L59.6206897,52 L91,0 L60.9904314,0 C42.6197954,0 25.5961693,9.58353564 16.1445506,25.246208 L0,52 Z" id="Path" fill="#15192E"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,38 @@
+@import '../../_variables.scss';
+
+
+.list {
+  .list__item {
+    border-bottom: 1px solid $border-dark-background;
+    padding: 18px;
+
+    .list__item__heading {
+      @include text_Uppercase_light;
+      padding-bottom: 12px;
+    }
+    .list__item__description {
+      color: $text-grey-light;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      margin-left: auto !important;
+    }
+    .list__item__description,
+    .list__item__heading {
+      margin: auto 0;
+    }
+  }
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+    grid-gap: 0 100px;
+    .list__item {
+      display: inline-flex;
+      width: 570px;
+      margin: 0 auto;
+    }
+    .list__item__heading {
+     padding-bottom: 0;
+    }
+  }
+}

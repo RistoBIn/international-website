@@ -1,0 +1,12 @@
+@import '../_variables.scss';
+
+.image {
+    margin: auto;
+}
+
+@media only screen and (min-width: $desktop){
+    .section__item__content {
+        padding: 5rem !important;
+    }
+}
+

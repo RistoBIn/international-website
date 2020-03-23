@@ -1,0 +1,47 @@
+@import '../_variables.scss';
+
+$spacing-between: 18px;
+.title {
+  font-family: $titleFont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  /* identical to box height, or 127% */
+  letter-spacing: 0.2px;
+  color: $white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.carouselItem {
+  margin-top: 48px;
+  max-width: 800px;
+  .carouselImage {
+    // max-width: 800px !important;
+    margin: 0 auto !important;
+  }
+}
+
+.description {
+  @include text_Light;
+  text-align: center;
+  font-size: 16px;
+  @media screen and (min-width: $tablet){
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+
+.arrow {
+  transition: $transition;
+  svg {
+    transition: $transition;
+  }
+  &:focus, &:hover {
+    svg {
+      opacity: .5;
+    }
+  }
+} 

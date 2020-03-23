@@ -1,0 +1,62 @@
+@import '../_variables.scss';
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  max-height: 100%;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .previous,
+  .next {
+    transition: $transition;
+    top: 60vh !important;
+    #background {
+      fill-opacity: 0.2;
+    }
+    #arrow {
+      stroke: white;
+    }
+    &:not(.disabled):hover,
+    &:not(.disabled):focus {
+      .arrowIcon {
+        #background {
+          fill-opacity: 1;
+        }
+        #arrow {
+          stroke: #464951;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    height: 50vh;
+    .image {
+      margin-top: 8vh !important;
+    }
+    .previous,
+    .next {
+      top: 35vh !important;
+    }
+  }
+}
+
+
+.dotNavigation {
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  svg.dot {
+    margin: 0 10px;
+    height: 10px;
+    width: 10px;
+  }
+  @media only screen and (max-width: $desktop) {
+    margin-top: -32vh;
+  }
+}

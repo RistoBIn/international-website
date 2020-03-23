@@ -1,0 +1,23 @@
+@import '../_variables.scss';
+
+.section {
+  @media only screen and(max-width: $desktop){
+    padding: 3rem 0.5rem !important;
+  }
+}
+
+.heading {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 110%;
+  color: #0E111B;
+}
+
+.button {
+  @media only screen and(max-width: $desktop){
+    margin: 0 1.5rem;
+    width: auto !important;
+  }
+}

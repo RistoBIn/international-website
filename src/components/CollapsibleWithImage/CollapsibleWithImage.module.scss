@@ -1,0 +1,52 @@
+@import '../_variables.scss';
+
+
+.collapsibleSection {
+    padding: 0;
+    background: linear-gradient(132.59deg, #23293C 0%, #0E111B 35.22%) !important;
+
+    .collapsibleColumn {
+        margin: auto 0;
+        margin-right: auto;
+        .collapsibleItem {
+            width: 100%;
+            hr {
+                border: 0;
+                height: 1px;
+                background-color: $border-dark-background;
+                width: 84px;
+            }
+            .collapsibleButton {
+                text-align: left;
+                outline: none;
+                transition: $transition;
+                background-color: transparent;
+                border: none;
+                margin-right: auto;
+                cursor: pointer;
+
+                .plusMinus {
+                    padding-right: 15px;
+                }
+            }
+            .collapsibleDescription {
+                padding-top: 15px;
+                max-width: 600px;
+            }
+        }
+
+
+    }
+    
+    @media only screen and (min-width: $tablet) {
+        .image {
+            padding: 0;
+        }
+    }
+    @media only screen and (min-width: $fullhd) {
+        .collapsibleColumn {
+           margin-right: auto;
+        }
+    }
+    
+}

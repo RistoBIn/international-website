@@ -1,0 +1,15 @@
+@import '../_variables.scss';
+
+.section {
+  margin-top: -50px;
+  border-bottom: 1px solid $border-dark-background;
+}
+
+.button {
+  width: 100%;
+  max-width: 100% !important;
+  svg {
+    margin: auto 0;
+    margin-left: 20px;
+  }
+}

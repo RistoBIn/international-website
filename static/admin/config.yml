@@ -1,0 +1,434 @@
+backend:
+  name: git-gateway
+  repo: SEALAB-Software/website
+  branch: stable
+
+media_folder: static/img
+public_folder: /img
+
+logo_url: /img/sealab-blue.svg
+editor:
+  preview: false
+display_url:  https://www.sealab.no/
+
+collections:
+  - name: "blog"
+    label: "Blogg"
+    folder: "src/pages/blogg"
+    create: true
+    description: "Blogg artikler. Her kan man lage, endre eller slette artikler."
+    filter: {field: "templateKey", value: "blog-post"}
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Tittel", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "Dette er overskriften man først ser under artikkel-bilde"}
+      - {label: "Publiseringsdato", name: "date", widget: "datetime"}
+      - {label: "Kort beskrivelse", name: "description", widget: "text"}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean", hint: "Denne kan brukes til å velge hvilke aritkler som skal vises på Blogg-siden."}
+      - {label: "Featured Image", name: "featuredimage", widget: image, required: false,}
+      - {label: "Innhold", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
+  - name: "apps"
+    label: "Apper"
+    folder: "src/pages/apper"
+    create: true
+    description: "Apper med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
+    filter: {field: "templateKey", value: "software-page"}
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-page"}
+      - {label: "Tittel", name: "title", widget: "string"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - label: "Venstre seksjon"
+        name: "softwareDescription"
+        widget: "object"
+        fields:
+          - {label: "Venstre overskrift", name: "heading", widget: "string"}
+          - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
+      - {label: "Høyre innhold", name: "body", widget: "markdown", }
+      - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
+  - name: "software"
+    label: "Sider som bruker Software mal"
+    folder: "src/pages"
+    create: true
+    description: "Software sider som bruker Software mal. Her kan man lage, endre eller slette artikler. Disse sidene har ingen prefix, og havner derfor under sealab.no/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
+    filter: {field: "templateKey", value: "software-page"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-page"}
+      - {label: "Tittel", name: "title", widget: "string"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
+      - {label: "Featured Image", name: "featuredimage", widget: image, required: false,}
+      - label: "Todelt seksjon"
+        name: "softwareDescription"
+        widget: "object"
+        fields:
+          - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
+          - {label: "Venstre overskrift", name: "heading", widget: "string"}
+      - {label: "Høyre innhold", name: "body", widget: "markdown", }
+      - {label: "SEO Beskrivelse", name: "seoDescription", required: false, widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}  
+  
+  - name: "software-expanded"
+    label: "Software Utvided"
+    folder: "src/pages"
+    create: true
+    description: "Software sider med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
+    filter: {field: "templateKey", value: "software-page-expanded"}
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "software-page-expanded"}
+      - {label: "Tittel", name: "title", widget: "string"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - label: "Venstre seksjon"
+        name: "softwareDescription"
+        widget: "object"
+        fields:
+          - {label: "Venstre overskrift", name: "heading", widget: "string"}
+          - {label: "Venstre underoverskrift", name: "subheading", widget: "string"}
+      - {label: "Høyre innhold", name: freeText, widget: markdown}
+      - label: "Ekspanderbar liste (livestream, timelaps osv)"
+        name: expandableBoxes
+        widget: object
+        fields:
+          - {label: "Featured Image", name: "featuredimage", widget: image}
+          - label: "Ekspanderbar liste"
+            name: boxes
+            widget: list
+            fields:
+              - {label: "H3 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+      - {label: "Fritekst", name: "body", widget: "markdown", }
+      - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
+
+  - name: "hardware"
+    label: "Hardware sider"
+    folder: "src/pages/hardware"
+    create: true
+    description: "Hardware sider med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
+    filter: {field: "templateKey", value: "hardware-page"}
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "hardware-page"}
+      - {label: "Tittel", name: "title", widget: "string" }
+      - label: "Bildekarusell"
+        name: featuredimages
+        widget: list
+        fields:
+          - {label: "Alt tekst", name: alt, widget: string, hint: "ALLE bilder må ha en tekst som beskriver hva bildet viser. Dette er krav for alt som ligger på nettet (søk WCAG på nett)"}
+          - {label: "Bilde", name: img, widget: image}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Kort beskrivelse", name: "shortDescription", widget: "text"}
+      - label: "Fremhevet spesifikasjoner"
+        name: "highlightSpecifications"
+        widget: "list"
+        fields:
+          - {label: "Verdi", name: "heading", widget: "string"}
+          - {label: "Beskrivelse", name: "description", widget: "string"}
+      - label: "Spesifikasjoner - resten"
+        name: allSpecifications
+        widget: list
+        fields:
+          - {label: "Tittel", name: heading, widget: string}
+          - {label: "Beskrivelse", name: description, widget: text, required: false, hint: "Hvis denne er tom, legges det inn en checkmark"}
+      - label: "Bilde og tekst - side om side"
+        name: textAndImages
+        hint: "Vises annenhver høyrestilt og venstrestilt bilde"
+        widget: list
+        fields:
+          - {label: "Tittel", name: heading, widget: string}
+          - {label: "Beskrivelse", name: description, widget: text}
+          - {label: "Bilde", name: img, widget: image}
+      - {label: "Fritekst midtstilt", name: "body", widget: "markdown", }
+      - {label: "SEO Beskrivelse", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
+  
+
+  - name: "simple-pages"
+    label: "Rene tekst sider"
+    folder: "src/pages/"
+    create: true
+    description: "Dette er enkle tekst sider, som vi kan lage flere av. Inneholder kun tittel og en tekst-editor."
+    filter: {field: "templateKey", value: "simple-page"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+      - {label: "Tittel", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "Innhold", name: "body", widget: "markdown"}
+  
+  
+  - name: "settings"
+    label: "Navigasjon & Footer"
+    description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
+    files: 
+      - file: "src/pages/innstillinger/navbar.md"
+        label: "Navigasjon"
+        name: "navbar"
+        fields: 
+          - label: "Lenker"
+            name: "menuLinks"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - label: Dropdown
+                name: dropdown
+                widget: list
+                hint: "Hvis tom, så vises det ingen dropdown eller pil."
+                fields:
+                  - {label: Overskrift, name: title, widget: string}
+                  - {label: Lenke, name: link, widget: string}
+      - file: "src/pages/innstillinger/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields: 
+          - label: "1 - Hovedsider"
+            name: "mainNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "2 - Apper"
+            name: "softwareNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "3 - Hardware"
+            name: "hardwareNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
+          - label: "4 - Om"
+            name: "secondaryNavigation"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "Bedriftskontorer"
+            name: "companyOffices"
+            widget: "list"
+            fields: 
+              - {label: Overskrift, name: title, widget: string}
+              - label: Addresselinjer
+                name: addressItems
+                widget: list
+                hint: "Separer ny linje med komma: adresselinje 1, adresselinje 2, postnummer, poststed"
+          - label: "Call to action"
+            name: "callToAction"
+            widget: "object"
+            fields:
+              - {label: "Tittel", name: "title", widget: "string"}
+              - {label: "Kort beskrivelse", name: "description", widget: "string"}
+              - {label: "Knappetekst", name: "buttonText", widget: "string"}
+              - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
+
+
+
+  - name: "pages"
+    label: "Vanlige sider"
+    files:
+      - file: "src/pages/index.md"
+        label: "Forside"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: Tittel, name: title, widget: string}
+          - {label: SEO Beskrivelse, name: seoDescription, widget: text}
+          - {label: Overskrift, name: heading, widget: string}
+          - {label: Underoverskrift, name: subheading, widget: string}
+          - label: "Nyheter"
+            name: newsSection
+            widget: object
+            fields:
+              - {label: Overskrift liten skrift, name: sectionHeading, widget: string, required: false}
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "Fremhevet bilde", name: "featuredimage", widget: image}
+          - label: "Fokusområder"
+            name: threeColumns
+            widget: object
+            fields:
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: "Tre kolonner"
+                name: columns
+                widget: list
+                fields:
+                  - {label: Underoverskrift, name: icon, widget: image, default: "/img/health.svg"}
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+                  - {label: "Knapp - link", name: buttonPath, widget: string}
+          - label: "Kontrollrom"
+            name: largeImageSection
+            widget: object
+            fields:
+              - {label: "Fremhevet bilde", name: "featuredimage", widget: image}
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "CTA path", name: callToActionPath, widget: string, hint: "Eks: /bluethink-go"}
+          - label: "Midtstilt innhold"
+            name: centeredSection
+            widget: object
+            fields:
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "CTA path", name: callToActionPath, widget: string, hint: "Eks: /bluethink-go"}
+              - {label: "Fremhevet bilde", name: "featuredimage", widget: image}
+             
+          - label: "Partnerskap"
+            name: partnership
+            widget: object
+            fields:
+              - {label: Underoverskrift, name: subheading, widget: string}
+              - {label: "H2 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: "Partnerskap bokser"
+                widget: list
+                name: companies
+                fields:
+                  - {label: "Fremhevet bilde", name: "image", widget: image, hint: "Bør vær være en logo med transparent bakgrunn"}
+                  - {label: "Beskrivelse", name: description, widget: text}
+             
+          - label: "Sitat"
+            name: quote
+            widget: object
+            fields:
+              - {label: Sitatet, name: description, widget: text}
+              - {label: "Kilde", name: author, widget: string}
+
+      - file: "src/pages/bluethink-go/index.md"
+        label: "BlueThink GO"
+        name: "bluethink-go"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "bluethink-go-page"}
+          - {label: "Tittel", name: "title", widget: "string"}
+          - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+          - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
+          - {label: "Featured Image", name: "featuredimage", widget: image}
+          - label: "Tilgjengelig data"
+            name: furtherInformationData
+            widget: object
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: Knapp
+                name: cta
+                widget: object
+                fields:
+                  - {label: "URL", name: "url", widget: "string", hint: "OBS! Må være en URL, altså en ekstern link som inkluderer domene."}
+                  - {label: "Knappetekst", name: "text", widget: string }
+              - label: Data - ikoner og beskrivelse
+                name: dataBoxes
+                widget: list
+                fields:
+                  - {label: "Overskrift", name: "heading", widget: string, hint: "Helst ikke mer enn 14 bokstaver"}
+                  - {label: "Ikon", name: "icon", widget: image}
+          - label: "To kolonner (responsivt design)"
+            name: responsiveDesignSection
+            widget: object
+            fields:
+              - {label: "Featured Image", name: "featuredimage", widget: image}
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: Knapp
+                name: cta
+                widget: object
+                fields:
+                  - {label: "URL", name: "path", widget: "string", hint: "OBS! Ikke ta med domene (f.eks sealab.no)"}
+                  - {label: "Knappetekst", name: "text", widget: string }
+          - label: "Ekspanderbar liste (livestream, timelaps osv)"
+            name: expandableBoxes
+            widget: object
+            fields:
+              - {label: "Featured Image", name: "featuredimage", widget: image}
+              - label: "Ekspanderbar liste"
+                name: boxes
+                widget: list
+                fields:
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+          - label: "3 kolonner med ikon"
+            name: featuredData
+            widget: object
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - label: "Ekspanderbar liste"
+                name: featuredDataBoxes
+                widget: list
+                fields:
+                  - {label: "Ikon", name: "icon", widget: image}
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+          - label: "Fritekst"
+            name: body
+            widget: markdown
+          - label: "INAKTIV - Sitater"
+            name: customerQuotes
+            widget: list
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - {label: "Navn på person", name: author, widget: string}
+              - {label: "Jobstilling", name: position, widget: string}
+      - file: "src/pages/bluethink.md"
+        label: "BlueThink Kontrollrom"
+        name: "bluethink"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "livestream-page"}
+          - {label: "Tittel", name: "title", widget: "string"}
+          - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+          - {label: "Underoverskrift", name: "subheading", widget: "text", hint: "Plasseres under overskrift"}
+          - label: "Kolonner med ikon & knapp"
+            name: featuredData
+            widget: object
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - label: "Kolonner"
+                name: featuredDataBoxes
+                widget: list
+                fields:
+                  - {label: "Ikon", name: "icon", widget: image}
+                  - {label: "H3 Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+                  - {label: "Knapp - path", name: cta, widget: string}
+          - {label: "Innhold", name: "body", widget: "markdown"}
+          - {label: "Videobeskrivelse", name: "videoDescription", widget: "text", hint: "Hvit boks over video"}
+          - label: "Tekst og fire ikoner"
+            name: features
+            widget: object
+            fields:
+              - {label: "Underoverskrift", name: subheading, widget: string}
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: "Ikoner"
+                name: featureItems
+                widget: list
+                fields:
+                  - {label: "Ikon", name: "icon", widget: image}
+                  - {label: "H4 Overskrift", name: heading, widget: string}
+          - label: "Lightbox med karusell"
+            name: lightbox
+            widget: object
+            fields:
+              - {label: "H1 Overskrift", name: heading, widget: string}
+              - {label: "Beskrivelse", name: description, widget: text}
+              - label: "Karusell items"
+                name: carouselItems
+                widget: list
+                fields:
+                  - {label: "Bilde", name: "img", widget: image}
+                  - {label: "Overskrift", name: heading, widget: string}
+                  - {label: "Beskrivelse", name: description, widget: text}
+          

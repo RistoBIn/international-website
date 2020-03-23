@@ -1,0 +1,62 @@
+@import '../_variables.scss';
+.heading {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 70px;
+  @media only screen and (max-width: $tablet) {
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+
+.wrapper {
+  .wrapper__image {
+    grid-column: col 1 / span 2;
+    grid-row: 1;
+    background: transparent;
+    z-index: 20;
+    margin: auto 0;
+    @media only screen and (max-width: $tablet) {
+      padding:16px 0;
+    }
+  }
+  .wrapper__content {
+    grid-column: col 2 / span 4;
+    grid-row: 1;
+    background: transparent;
+    z-index: 10;
+    @media only screen and (max-width: $tablet) {
+      padding:24px 0 0;
+    }
+  }
+  .wrapper__content__subheading {
+    font-size: 14px;
+    color: $body-light;
+    opacity: 0.5;
+  }
+  .wrapper__content__description {
+    font-size: 16px;
+    color: $body-light;
+    max-width: 500px;
+    padding-top: 24px;
+  }
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(5, [col] 1fr);
+    grid-template-rows: repeat(1, [row] auto);
+    .wrapper__image {
+      grid-column: col 1 / span 2;
+      grid-row: 1;
+      border: 1px solid $border-dark-background;
+    }
+    .wrapper__content {
+      grid-column: col 2 / span 4;
+      grid-row: 1;
+      padding: 4rem 4rem;
+      padding-left: 35%;
+      border: 1px solid $border-dark-background;
+    }
+  }
+}

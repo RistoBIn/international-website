@@ -1,0 +1,18 @@
+@import '../_variables.scss';
+
+.hero {
+  background-position: center center !important;
+  background-size: cover !important;
+  .heading {
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+  .subheading {
+    max-width: 600px;
+    margin: auto;
+  }
+  .button {
+    margin: auto;
+  }
+}
