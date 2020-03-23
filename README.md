@@ -1,6 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d992e6f2-de9b-4ed2-b9ec-1c72014a1a1a/deploy-status)](https://app.netlify.com/sites/sealab-no/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c901c293-b48f-479d-a089-271485455ae0/deploy-status)](https://app.netlify.com/sites/sealab-com/deploys)
 
-# SEALAB WEBSITE - Built with Gatsbyjs
+# SEALAB INTERNATIONAL WEBSITE - Built with Gatsbyjs
 **Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
 This repo contains an SEALABS business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Live Link](http://sealab.no/)**.
@@ -54,9 +54,6 @@ npm install --global --production windows-build-tools
 ```
 
 [Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
-
-## Purgecss
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
 
 
 # gatsbyjs/gatsby     [![Travis CI Build Status](https://travis-ci.org/gatsbyjs/gatsby-docker.svg?branch=master)](https://travis-ci.org/gatsbyjs/gatsby-docker)
