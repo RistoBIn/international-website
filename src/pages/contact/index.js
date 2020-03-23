@@ -147,10 +147,10 @@ export default class Index extends React.Component {
                     fast as we can.
                   </h2>
                   <div className="contact-information wrapper">
-                    <ContactInformation title="E-post" Icon={EmailIcon}>
+                    <ContactInformation title="E-mail" Icon={EmailIcon}>
                       <a href="mailto:contact@sealab.no">contact@sealab.no</a>
                     </ContactInformation>
-                    <ContactInformation title="Telefon" Icon={PhoneIcon}>
+                    <ContactInformation title="Phone" Icon={PhoneIcon}>
                       <a href="tel:+4772909111">+47 729 09 111</a>
                     </ContactInformation>
                   </div>

@@ -12,12 +12,12 @@ secondaryNavigation:
 thirdNavigation:
   - path: /projects/indisal
     title: Indisal
-  - path: /projects/5G-Heart
+  - path: /projects/5G-heart
     title: 5G Heart
-  - path: /projects/ocean-cleanup
-    title: Ocean Cleanup
-  - path: /projects/lobster-house
-    title: Lobster house live stream
+  - path: /projects/clean-ocean-iniative
+    title: Clean ocean initative
+  - path: /projects/environmental-monitoring
+    title: Environmental Monitoring
 fourthNavigation:
   - path: /contact
     title: Contact
