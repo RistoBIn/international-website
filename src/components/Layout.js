@@ -52,7 +52,7 @@ const TemplateWrapper = ({ children, seoTitle, seoDescription }) => {
       </Helmet>
 
       <Navbar />
-      {/* <div>{children}</div> */}
+      <div>{children}</div>
       <Footer />
     </div>
   );

@@ -66,7 +66,6 @@ export default class Index extends React.Component {
         seoDescription="Reach out us. We're looking forward to it"
       >
         <section className="map">
-          <Navbar />
           <div id="google-maps">
             <GoogleMap
               isMarkerShown
@@ -231,7 +230,6 @@ export default class Index extends React.Component {
             </div>
           </div>
         </section>
-        <Footer />
       </Layout>
     );
   }

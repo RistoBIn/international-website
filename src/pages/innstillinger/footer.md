@@ -46,15 +46,6 @@ companyOffices:
       - '0349 Oslo, Norge'
     title: In Oslo
   - addressItems:
-      - Niš
-      - Svetozara Markovića 6, Niš 18000, Serbia
-      - '25 12, Niš, Serbia'
-    title: In Serbia
-  - addressItems:
-      - Los Angeles
-      - Menifee, California
-    title: In USA
-  - addressItems:
       - Berlin
       - EUREF-Campus 1-25
       - 10829 Berlin, Tyskland
