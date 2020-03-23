@@ -2,7 +2,7 @@
 mainNavigation:
   - path: /
     title: Home
-  - path: /industries/aquaculture
+  - path: /solutions/aquaculture
     title: Aquaculture
 secondaryNavigation:
   - path: /products/edge-intelligence
