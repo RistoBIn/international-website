@@ -24,15 +24,15 @@ const DynamicFooter = ({ props, articles }) => {
                     title
                     path
                   }
-                  hardwareNavigation {
-                    title
-                    path
-                  }
-                  softwareNavigation {
-                    title
-                    path
-                  }
                   secondaryNavigation {
+                    title
+                    path
+                  }
+                  thirdNavigation {
+                    title
+                    path
+                  }
+                  fourthNavigation {
                     title
                     path
                   }
@@ -56,8 +56,8 @@ const DynamicFooter = ({ props, articles }) => {
         const { phone, email } = data.site.siteMetadata;
         const {
           mainNavigation,
-          hardwareNavigation,
-          softwareNavigation,
+          thirdNavigation,
+          fourthNavigation,
           secondaryNavigation,
           companyOffices,
           callToAction,
@@ -67,10 +67,9 @@ const DynamicFooter = ({ props, articles }) => {
             phone={phone}
             email={email}
             mainNavigation={mainNavigation}
-            hardwareNavigation={hardwareNavigation}
-            softwareNavigation={softwareNavigation}
             secondaryNavigation={secondaryNavigation}
-            articles={articles}
+            thirdNavigation={thirdNavigation}
+            fourthNavigation={fourthNavigation}
             companyOffices={companyOffices}
             callToAction={callToAction}
             {...props}

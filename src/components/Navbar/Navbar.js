@@ -5,6 +5,9 @@ import Logo from '../../img/logo.inline.svg';
 import EnvelopeIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
 import { cleanPath } from '../../utils/paths';
+import { idMaker } from '../../utils/id-maker';
+
+const gen = idMaker();
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -22,7 +25,7 @@ const Navbar = class extends React.Component {
     const { active } = this.state;
     const {
       className,
-      menuLinks = [],
+      menuPaths,
       phone = '+47 729 09 111',
       email = 'contact@sealab.no',
     } = this.props;
@@ -61,7 +64,7 @@ const Navbar = class extends React.Component {
         >
           <div className="navbar-end">
             <NavbarItems
-              menuLinks={menuLinks}
+              menuPaths={menuPaths}
               setActive={this.toggleActiveMenuItem}
               onClick={this.toggleHamburger}
             />
@@ -69,14 +72,14 @@ const Navbar = class extends React.Component {
             <div id="contact" className="is-hidden-tablet">
               <div className="info">
                 <EnvelopeIcon />
-                <p className="subtitle">E-post</p>
+                <p className="subtitle">E-mail</p>
                 <a href={`mailto:${email}`} className="is-bold">
                   {email}
                 </a>
               </div>
               <div className="info">
                 <PhoneIcon />
-                <p className="subtitle">Telefon</p>
+                <p className="subtitle">Phone</p>
                 <a href={`tel:${phone}`} className="is-bold">
                   {phone}
                 </a>
@@ -84,8 +87,8 @@ const Navbar = class extends React.Component {
             </div>
 
             <div className="navbar-item has-buttons">
-              <Link className="button is-white" to="/kontakt">
-                Kontakt oss
+              <Link className="button is-white" to="/contact">
+                Contact
               </Link>
             </div>
           </div>
@@ -95,14 +98,14 @@ const Navbar = class extends React.Component {
   }
 };
 
-const NavbarItems = ({ menuLinks, activeMenuItem, onClick }) => {
+const NavbarItems = ({ menuPaths, activeMenuItem, onClick }) => {
   return (
     <>
-      {menuLinks.map(menuItem => {
+      {menuPaths.map(menuItem => {
         if (menuItem.dropdown) {
           return (
             <MenuDropDown
-              key={menuItem.title}
+              key={gen.next().value}
               menuItem={menuItem}
               activeMenuItem={activeMenuItem}
               onClick={onClick}
@@ -111,10 +114,10 @@ const NavbarItems = ({ menuLinks, activeMenuItem, onClick }) => {
         }
         return (
           <Link
-            key={menuItem.title}
+            key={gen.next().value}
             activeClassName="is-active"
             className={classNames('navbar-item', 'is-tab')}
-            to={cleanPath(menuItem.link)}
+            to={cleanPath(menuItem.path)}
             onClick={onClick}
           >
             {menuItem.title}
@@ -133,10 +136,10 @@ const MenuDropDown = ({ menuItem, onClick }) => (
     <div className="navbar-dropdown is-boxed">
       {menuItem.dropdown.map(subitem => (
         <Link
-          key={subitem.link}
+          key={gen.next().value}
           className={classNames('navbar-item', 'is-tab')}
           activeClassName="is-active"
-          to={cleanPath(subitem.link)}
+          to={cleanPath(subitem.path)}
           onClick={onClick}
         >
           {subitem.title}

@@ -20,12 +20,12 @@ const DynamicNavbar = ({ props }) => {
             edges {
               node {
                 frontmatter {
-                  menuLinks {
+                  menuPaths {
                     title
-                    link
+                    path
                     dropdown {
                       title
-                      link
+                      path
                     }
                   }
                 }
@@ -38,7 +38,7 @@ const DynamicNavbar = ({ props }) => {
         <Navbar
           phone={data.site.siteMetadata.phone}
           email={data.site.siteMetadata.email}
-          menuLinks={data.allMarkdownRemark.edges[0].node.frontmatter.menuLinks}
+          menuPaths={data.allMarkdownRemark.edges[0].node.frontmatter.menuPaths}
           {...props}
         />
       )}

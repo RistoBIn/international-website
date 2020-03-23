@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import './all.scss';
 import useSiteMetadata from './SiteMetadata';
 
-const TemplateWrapper = ({ children, articles, seoTitle, seoDescription }) => {
+const TemplateWrapper = ({ children, seoTitle, seoDescription }) => {
   const { title, description } = useSiteMetadata();
   return (
     <div>
@@ -52,8 +52,8 @@ const TemplateWrapper = ({ children, articles, seoTitle, seoDescription }) => {
       </Helmet>
 
       <Navbar />
-      <div>{children}</div>
-      <Footer articles={articles} />
+      {/* <div>{children}</div> */}
+      <Footer />
     </div>
   );
 };

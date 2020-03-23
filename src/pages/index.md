@@ -14,7 +14,11 @@ productSection:
   featuredimage: /img/camera_render.png
   heading: You've Never Seen a Camera Like This
 
-
+items:
+  - heading: 200
+    description: Billion USD yearly impact for poor ocean management
+  - heading: 7.8 billion
+    description: 7.8 billion blabla
 
 quotes:
   - authorName: Satya Nadella

@@ -1,57 +1,68 @@
 ---
 mainNavigation:
   - path: /
-    title: Hjem
-  - path: /bluethink
-    title: BlueThink™ Kontrollrom
-  - path: /bluethink-go
-    title: BlueThink™ GO
-  - path: /losninger/gapefrekvens
-    title: Stressnivå
-  - path: /losninger/foroptimalisering
-    title: Fôroptimalisering
-  - path: /losninger/helseovervakning
-    title: Helseovervåkning
-  - path: /digital-tvilling
-    title: Digital tvilling
-  - path: /blogg
-    title: Blogg
-softwareNavigation:
-  - path: /apper/ais
-    title: AIS
-  - path: /apper/weather
-    title: Weather
-  - path: /apper/aqualog
-    title: Aqualog
-  - path: /apper/g-force
-    title: G-force
-hardwareNavigation:
-  - path: /sealab-connect
-    title: SEALAB Connect
-  - path: /hardware/undervannskamera
-    title: Undervannskamera
-  - path: /undervannslys
-    title: Undervannslys
+    title: Home
+  - path: /industries/aquaculture
+    title: Aquaculture
 secondaryNavigation:
-  - path: /kontakt
-    title: Kontakt
-  - path: /historie
-    title: Historie
+  - path: /products/edge-intelligence
+    title: Edge intelligence
+  - path: /products/software-platform
+    title: IoT Bridge
+thirdNavigation:
+  - path: /projects/indisal
+    title: Indisal
+  - path: /projects/5G-Heart
+    title: 5G Heart
+  - path: /projects/ocean-cleanup
+    title: Ocean Cleanup
+  - path: /projects/lobster-house
+    title: Lobster house live stream
+fourthNavigation:
+  - path: /contact
+    title: Contact
+  - path: /vision-strategy
+    title: Vision & Strategy
+  - path: /leadership
+    title: Leadership
+  - path: /business-model
+    title: Business model
+  - path: /sealab-ocean-space-center
+    title: SEALAB OCEAN SPACE CENTER
+  - path: /social-responsibility
+    title: Social Responsibility
+  - path: /locations
+    title: Locations
+
 companyOffices:
   - addressItems:
       - SEALAB
       - 'Transittgata 14, inngang A'
       - 7042 Trondheim
-    title: Hovedkontor
+    title: Main office
   - addressItems:
-      - Forskningsparken
+      - Oslo Science Park
       - Gaustadalléen 21
       - '0349 Oslo, Norge'
-    title: Oslo
+    title: In Oslo
+  - addressItems:
+      - Niš
+      - Svetozara Markovića 6, Niš 18000, Serbia
+      - '25 12, Niš, Serbia'
+    title: In Serbia
+  - addressItems:
+      - Los Angeles
+      - Menifee, California
+    title: In USA
+  - addressItems:
+      - Berlin
+      - EUREF-Campus 1-25
+      - 10829 Berlin, Tyskland
+    title: In Germany
 callToAction:
-  buttonPath: /kontakt
-  buttonText: Kontakt oss
-  description: Vi viser gladelig frem våre produkter.
-  title: Ønsker du å booke en demo?
+  buttonPath: /contact
+  buttonText: Contact us
+  description: We will gladly accept your request and make an appointment with you.
+  title: Wish to learn more about SEALAB?
 ---
 

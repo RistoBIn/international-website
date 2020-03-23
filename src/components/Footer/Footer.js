@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import PartnersLogos from '../PartnersLogos';
 import SealabLogo from '../../img/logo.inline.svg';
 import MailIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
@@ -13,33 +12,28 @@ const Footer = ({
   phone,
   email,
   mainNavigation,
-  hardwareNavigation,
-  softwareNavigation,
   secondaryNavigation,
+  thirdNavigation,
+  fourthNavigation,
   callToAction,
   companyOffices,
 }) => {
   return (
     <footer className="footer">
-      <PartnersLogos />
-
       <div className="has-dark-background">
         <div className="container">
           <section id="footer-navigation" className="section is-small">
             <div className="columns">
-              <List title="Hovedsider" navigationItems={mainNavigation} />
-              <List
-                title="BlueThink Apper"
-                navigationItems={softwareNavigation}
-              />
-              <List title="Hardware" navigationItems={hardwareNavigation} />
-              <List title="Om" navigationItems={secondaryNavigation} />
+              <List title="Solutions" navigationItems={mainNavigation} />
+              <List title="Products" navigationItems={secondaryNavigation} />
+              <List title="Project" navigationItems={thirdNavigation} />
+              <List title="Products" navigationItems={fourthNavigation} />
             </div>
           </section>
           <section id="company-information" className="section is-small">
             <div className="columns">
               <div className="column is-3">
-                <h3 className="is-red">Kontakt</h3>
+                <h3 className="is-red">Contact</h3>
                 <p>
                   <span>
                     <MailIcon />
@@ -76,7 +70,7 @@ const Footer = ({
             <SealabLogo />
             <div className="copyright-text">
               <p>Copyright © SEALAB AS {year}</p>
-              <Link to="/personvern">Personvernerklæring</Link>
+              <Link to="/personvern">Privacy Policy</Link>
             </div>
           </section>
         </div>
