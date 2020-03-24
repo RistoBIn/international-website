@@ -21,26 +21,35 @@ const QuotesList = ({ quotes }) => {
   const { authorName, authorPosition, quoteText, authorImage } = quotes[
     activeQuoteIndex
   ];
+
   return (
     <>
       <section
-        className={classNames('section', 'has-dark-background', styles.section)}
+        className={classNames(
+          'section',
+          'is-medium',
+          'has-dark-background',
+          styles.section,
+        )}
       >
         <div className="container">
           <div className={styles.quote__navbar}>
             <QuoteSVG />
-            <NonStretchedImage
-              fluid={authorImage.childImageSharp.fluid}
-              objectFit="contain"
-              alt={authorName}
-              className="image"
+            <Author
+              name={authorName}
+              position={authorPosition}
+              profileImage={authorImage}
             />
-            <p className={styles.author__name}>{authorName}</p>
-            <p className={styles.author__position}>{authorPosition}</p>
-            <div>
-              <ArrowIcon callback={() => previous()} />
-
-              <ArrowIcon isRight callback={() => next()} />
+            <div className={styles.button_navigation}>
+              <ArrowIcon
+                className={styles.button_navigation__icon}
+                callback={() => previous()}
+              />
+              <ArrowIcon
+                className={styles.button_navigation__icon}
+                isRight
+                callback={() => next()}
+              />
             </div>
           </div>
 
@@ -48,6 +57,22 @@ const QuotesList = ({ quotes }) => {
         </div>
       </section>
     </>
+  );
+};
+
+const Author = ({ name, position, profileImage }) => {
+  return (
+    <div className={styles.author}>
+      <figure>
+        <NonStretchedImage
+          fluid={profileImage.childImageSharp.fluid}
+          objectFit="contain"
+          alt={name}
+        />
+      </figure>
+      <p className={styles.author__name}>{name}</p>
+      <p className={styles.author__position}>- {position}</p>
+    </div>
   );
 };
 

@@ -25,7 +25,6 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content;
-  console.log(centeredSection);
 
   return (
     <>
@@ -43,7 +42,7 @@ export const IndexPageTemplate = ({
         backgroundCSS={`linear-gradient(186.69deg, #0E111B 22.36%, rgba(14, 17, 27, 0.21) 37.8%), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%),  url(${centeredSection.bgimage.publicURL})`}
       />
       <QuotesList quotes={quotes} />
-      <section id="camera" className="section has-dark-background">
+      <section id="camera--title" className="section has-dark-background">
         <div className="container">
           <Title
             title={productSection.heading}
@@ -52,7 +51,7 @@ export const IndexPageTemplate = ({
           />
         </div>
       </section>
-      <section id="camera" className="has-dark-background">
+      <section id="camera--image" className="has-dark-background">
         <div
           className="product-image"
           style={{
@@ -65,6 +64,19 @@ export const IndexPageTemplate = ({
             alt={productSection.heading}
             className="image"
           />
+        </div>
+      </section>
+      <section className="section has-dark-background">
+        <div className="wrapper-two-split">
+          <NonStretchedImage
+            fluid={splitSectionImage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={productSection.heading}
+            className="image"
+          />
+          <>
+            <PostContent content={content} />
+          </>
         </div>
       </section>
     </>
@@ -161,8 +173,8 @@ export const pageQuery = graphql`
           quoteText
           authorImage {
             childImageSharp {
-              fluid(maxHeight: 200, quality: 50) {
-                ...GatsbyImageSharpFluid_tracedSVG
+              fluid(maxWidth: 50, quality: 80) {
+                ...GatsbyImageSharpFluid
                 presentationWidth
               }
             }

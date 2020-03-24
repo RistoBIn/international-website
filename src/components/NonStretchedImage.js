@@ -11,13 +11,12 @@ const NonStretchedImage = props => {
         ...(props.style || {}),
         maxWidth: props.fluid.presentationWidth,
         margin: '0 auto', // Used to center the image
-        maxHeight: '100%',
       },
     };
   }
   if (!props.fluid && props.publicURL)
     return <img src={props.publicURL} alt={props.alt} className={props.className} />;
-
+  
   return <Img {...normalizedProps} />;
 };
 

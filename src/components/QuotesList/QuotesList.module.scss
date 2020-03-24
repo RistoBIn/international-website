@@ -3,38 +3,61 @@
 .section {
   text-align: left;
   .quote__navbar {
-    .quote__icon {
+    display: block;
+    height: 100%;
+    .author {
+      display: flex;
+      text-align: left;
+      .author__name {
+        font-weight: bold;
+        font-size: 16px;
+        padding-right: 4px;
+      }
+      .author__position {
+        font-weight: 300;
+        color: $grey-light;
+      }
+    }
+    .button_navigation {
       position: absolute;
-      left: 0;
+      display: flex;
       top: 0;
+      right: 0;
+      .button_navigation__icon:first-of-type {
+        margin-right: 20px;
+      }
+    }
+    .button_navigation__icon svg {
+      height: 46px;
     }
   }
   .quote {
-    color: $body-light;
-    font-size: 20px;
+    max-width: 745px;
+    padding-top: 30px;
     font-style: italic;
-    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 140%;
   }
-  .author {
-    font-weight: bold;
-    font-size: 14px;
-    color: white;
-  }
-  .quote,
-  .author {
-    line-height: 170%;
-    letter-spacing: 0.4px;
-  }
-  .quote__icon {
-    float: left;
-    position: absolute;
-    top: -30px;
-    left: 0;
-  }
-  @media only screen and (min-width: $tablet) {
-    text-align: center;
-    .quote__icon {
-      left: -20px;
+  @media only screen and(min-width: $tablet) {
+    height: 40vh;
+    margin: auto 0;
+    .quote__navbar {
+      height: 60px;
+      border-bottom: 1px solid $border-dark-background;
+      .quote__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+      }
+      .author {
+        display: flex;
+        position: relative;
+        float: left;
+        margin: auto 0;
+        margin-left: 80px;
+      }
     }
   }
 }

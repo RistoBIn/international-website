@@ -43,12 +43,12 @@ productSection:
 quotes:
   - authorName: Satya Nadella
     authorPosition: CEO at Microsoft
-    authorImage: /img/sataya.png
+    authorImage: /img/sataya.jpg
     quoteText: >-
       The Apple approach for harsh environments
   - authorName: Name surname
     authorPosition: CEO at Tullefabrikken
-    authorImage: /img/sataya.png
+    authorImage: /img/sataya.jpg
     quoteText: >-
       We would really recommend SEALAB if you are in need - because electronics for these environments is hard to find.
 
@@ -74,7 +74,7 @@ itemsSection:
       path: /solutions/search-and-rescue
 
 splitSection:
-  bgimage: /img/inspirational.jpg
+  bgimage: /img/aquaculture.png
 
 ---
 

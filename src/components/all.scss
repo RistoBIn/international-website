@@ -622,7 +622,7 @@ footer.footer {
 
 /****************     HOME PAGE    ********************/
 
-section#camera {
+section#camera--image {
   .product-image {
     background-repeat: no-repeat;
     background-size: contain;
@@ -633,9 +633,6 @@ section#camera {
 /****************     CONTACT PAGE    ********************/
 
 section.map {
-  // nav.navbar.is-transparent {
-  //   background-color: transparent;
-  // }
   background: $dark;
   div#google-maps {
     height: 40vh;
