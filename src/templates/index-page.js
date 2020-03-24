@@ -8,6 +8,8 @@ import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/HeroBackgroundImage';
 
 import NonStretchedImage from '../components/NonStretchedImage';
+import HighlightedData from '../components/HighlightedData';
+import SectionBackgroundImage from '../components/SectionBackgroundImage';
 
 export const IndexPageTemplate = ({
   heading,
@@ -22,6 +24,7 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content;
+  console.log(centeredSection);
 
   return (
     <>
@@ -33,13 +36,18 @@ export const IndexPageTemplate = ({
         anchorLink="#facts"
         backgroundCSS={`linear-gradient(177.9deg, #0E111B 8.35%, rgba(14, 17, 27, 0.21) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%), url(${bgimage.publicURL})`}
       />
-      <section className="section has-dark-background">
+      <HighlightedData highlighted={facts} id="facts" />
+      <SectionBackgroundImage
+        {...centeredSection}
+        backgroundCSS={`linear-gradient(186.69deg, #0E111B 22.36%, rgba(14, 17, 27, 0.21) 37.8%), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%),  url(${centeredSection.bgimage.publicURL})`}
+      />
+      {/* <section className="section has-dark-background is-large">
         <div className="container">
           <h1>{heading}</h1>
           <p>This is index page</p>
           <PostContent content={content} />
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
@@ -108,12 +116,7 @@ export const pageQuery = graphql`
             path
           }
           bgimage {
-            childImageSharp {
-              fluid(maxHeight: 1180, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
+            publicURL
           }
         }
 

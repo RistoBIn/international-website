@@ -1,17 +1,15 @@
 @import '../_variables.scss';
 
-$spacing-between: 18px;
+$spacing-between: 31px;
 .title {
-  font-weight: 300;
-  color: $white;
-  // line-height: 110%;
   @include Title;
   padding-bottom: 32px;
   word-wrap: break-word;
+  max-width: 954px;
 }
 .subtitle {
   @include Subtitle;
-  padding-bottom: 8px;
+  padding-bottom: $spacing-between;
   line-height: 1.6rem;
 }
 .description {
@@ -21,11 +19,17 @@ $spacing-between: 18px;
   letter-spacing: 0.55px;
   color: $text-grey-light !important;
   padding-bottom: $spacing-between;
-  max-width: 650px;
+  max-width: 676px;
 }
 
 .titleCenter {
   text-align: center;
   margin: auto;
-  h1,h2,h3,p {text-align: center; margin: 0 auto;}
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: center;
+    margin: 0 auto;
+  }
 }

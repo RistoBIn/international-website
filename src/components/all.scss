@@ -1,7 +1,7 @@
 @import './variables';
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700&display=swap');
 
 $gridColumnWidth: 200px;
 $gridTemplateAuto: repeat(auto-fill, minmax($gridColumnWidth, 1fr));

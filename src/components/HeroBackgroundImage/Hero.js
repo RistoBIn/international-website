@@ -32,10 +32,10 @@ const Hero = ({
 
   const bgCSS = backgroundCSS || `url(${backgroundImage})`;
   const Button = () => {
-    if (anchorLink && !buttonPath) {
+    if (anchorLink) {
       return (
         <AnchorLink
-          href={buttonPath}
+          href={anchorLink}
           className={classNames('is-link', styles.button)}
         >
           <span>{buttonText}</span>
