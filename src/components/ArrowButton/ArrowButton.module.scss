@@ -1,0 +1,21 @@
+@import '../_variables.scss';
+
+.arrowIcon {
+  background-color: transparent;
+  transition: $transition;
+  #background {
+    fill-opacity: 0.2;
+  }
+  #arrow {
+    stroke: white;
+  }
+  &:not(.disabled):hover,
+  &:not(.disabled):focus {
+    #background {
+      fill-opacity: 1;
+    }
+    #arrow {
+      stroke: #464951;
+    }
+  }
+}

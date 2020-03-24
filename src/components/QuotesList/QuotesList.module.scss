@@ -1,0 +1,40 @@
+@import '../_variables.scss';
+
+.section {
+  text-align: left;
+  .quote__navbar {
+    .quote__icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .quote {
+    color: $body-light;
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+  .author {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+  }
+  .quote,
+  .author {
+    line-height: 170%;
+    letter-spacing: 0.4px;
+  }
+  .quote__icon {
+    float: left;
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+  @media only screen and (min-width: $tablet) {
+    text-align: center;
+    .quote__icon {
+      left: -20px;
+    }
+  }
+}

@@ -10,6 +10,7 @@ import Hero from '../components/HeroBackgroundImage';
 import NonStretchedImage from '../components/NonStretchedImage';
 import HighlightedData from '../components/HighlightedData';
 import SectionBackgroundImage from '../components/SectionBackgroundImage';
+import QuotesList from '../components/QuotesList';
 
 export const IndexPageTemplate = ({
   heading,
@@ -41,13 +42,31 @@ export const IndexPageTemplate = ({
         {...centeredSection}
         backgroundCSS={`linear-gradient(186.69deg, #0E111B 22.36%, rgba(14, 17, 27, 0.21) 37.8%), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%),  url(${centeredSection.bgimage.publicURL})`}
       />
-      {/* <section className="section has-dark-background is-large">
+      <QuotesList quotes={quotes} />
+      <section id="camera" className="section has-dark-background">
         <div className="container">
-          <h1>{heading}</h1>
-          <p>This is index page</p>
-          <PostContent content={content} />
+          <Title
+            title={productSection.heading}
+            description={productSection.description}
+            position="center"
+          />
         </div>
-      </section> */}
+      </section>
+      <section id="camera" className="has-dark-background">
+        <div
+          className="product-image"
+          style={{
+            backgroundImage: `url(${productSection.featuredimageBackground.publicURL})`,
+          }}
+        >
+          <NonStretchedImage
+            fluid={productSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={productSection.heading}
+            className="image"
+          />
+        </div>
+      </section>
     </>
   );
 };
@@ -132,12 +151,7 @@ export const pageQuery = graphql`
             }
           }
           featuredimageBackground {
-            childImageSharp {
-              fluid(maxHeight: 1180, quality: 50) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
+            publicURL
           }
         }
 

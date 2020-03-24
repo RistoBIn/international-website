@@ -622,6 +622,14 @@ footer.footer {
 
 /****************     HOME PAGE    ********************/
 
+section#camera {
+  .product-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
 /****************     CONTACT PAGE    ********************/
 
 section.map {
@@ -813,3 +821,7 @@ section#contact-form {
     }
   }
 }
+
+
+
+
