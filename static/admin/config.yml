@@ -14,7 +14,7 @@ display_url:  https://sealab-com.netlify.com
 collections:
 
   - name: "simple-pages"
-    label: "Rene tekst sider"
+    label: "Simple text pages"
     folder: "src/pages/"
     create: true
     description: "Dette er enkle tekst sider, som vi kan lage flere av. Inneholder kun tittel og en tekst-editor."
@@ -22,32 +22,32 @@ collections:
     identifier_field: name
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-      - {label: "Tittel", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      - {label: "Overskrift", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
-      - {label: "Innhold", name: "body", widget: "markdown"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "Content", name: "body", widget: "markdown"}
   
   
   - name: "settings"
-    label: "Navigasjon & Footer"
+    label: "Navigation & Footer"
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
     files: 
       - file: "src/pages/innstillinger/navbar.md"
         label: "Navigasjon"
         name: "navbar"
         fields: 
-          - label: "Lenker"
+          - label: "Links"
             name: "menuLinks"
             widget: "list"
             fields: 
-              - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
               - label: Dropdown
                 name: dropdown
                 widget: list
                 hint: "Hvis tom, så vises det ingen dropdown eller pil."
                 fields:
-                  - {label: Overskrift, name: title, widget: string}
-                  - {label: Lenke, name: link, widget: string}
+                  - {label: Title, name: title, widget: string}
+                  - {label: Link, name: link, widget: string}
       - file: "src/pages/innstillinger/footer.md"
         label: "Footer"
         name: "footer"
@@ -56,31 +56,31 @@ collections:
             name: "mainNavigation"
             widget: "list"
             fields: 
-              - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "2 - Apper"
             name: "softwareNavigation"
             widget: "list"
             fields: 
-              - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "3 - Hardware"
             name: "hardwareNavigation"
             widget: "list"
             fields: 
-              - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
           - label: "4 - Om"
             name: "secondaryNavigation"
             widget: "list"
             fields: 
-              - {label: Overskrift, name: title, widget: string}
-              - {label: Lenke, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "Bedriftskontorer"
             name: "companyOffices"
             widget: "list"
             fields: 
-              - {label: Overskrift, name: title, widget: string}
+              - {label: Title, name: title, widget: string}
               - label: Addresselinjer
                 name: addressItems
                 widget: list
@@ -90,14 +90,14 @@ collections:
             widget: "object"
             fields:
               - {label: "Tittel", name: "title", widget: "string"}
-              - {label: "Kort beskrivelse", name: "description", widget: "string"}
-              - {label: "Knappetekst", name: "buttonText", widget: "string"}
+              - {label: "Short description", name: "description", widget: "string"}
+              - {label: "Button text", name: "buttonText", widget: "string"}
               - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
 
 
 
   - name: "pages"
-    label: "Vanlige sider"
+    label: "Regular pages"
     files:
       - file: "src/pages/index.md"
         label: "Front page"
@@ -105,9 +105,9 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
-          - {label: SEO Beskrivelse, name: seoDescription, widget: text, hint: "Important - Make a overall description"}
+          - {label: SEO Description, name: seoDescription, widget: text, hint: "Important - Make a overall description"}
           - {label: Heading, name: heading, widget: string}
-          - {label: "Hero image", name: "featuredimage", widget: image }
+          - {label: "Hero image", name: "bgimage", widget: image }
           - label: Facts
             widget: list
             name: items
@@ -161,6 +161,7 @@ collections:
                   - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
               - label: "Solution items"
                 widget: list
+                name: items
                 fields:
                   - {label: Heading, name: heading, widget: string}
                   - {label: "Solution image", name: "featuredimage", widget: image }
@@ -170,7 +171,7 @@ collections:
             widget: object
             fields: 
               - {label: "Large image", name: "bgimage", widget: image }
-              - {label: "Content", name: "body", widget: "markdown"}
+          - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
 
         
 
