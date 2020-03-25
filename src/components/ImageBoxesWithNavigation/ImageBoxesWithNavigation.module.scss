@@ -1,15 +1,123 @@
 @import '../_variables.scss';
 
 
+.section {
+  display: grid;
+  grid-template-areas: 
+  "heading"
+  "cta"
+  "carousel"
+  "navigation";
+  .container {
+    display: contents !important;
+  }
+  .cta {
+    grid-area: cta;
+    margin: auto;
+    max-width: 268px;
+    margin-bottom: 50px;
+  }
+  .heading {
+    grid-area: heading;
+    max-width: 320px;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+  }
+  .carousel {
+    grid-area: carousel;
+  }
+  .carousel__navigation {
+    grid-area: navigation;
+    display: flex;
+    padding-top: 20px;
+    div:first-child {
+      margin-right: auto;
+    }
+  }
+  @media only screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "heading ..."
+    "cta navigation"
+    "carousel carousel";
+    .cta {
+      grid-area: cta;
+      max-height: 52px;
+      margin: 0;
+    }
+    .heading {
+      max-width: 510px;
+      text-align: left;
+      margin: 0;
+    }
+    .carousel {
+      grid-area: carousel;
+    }
+    .carousel__navigation {
+      padding: 0;
+      margin-left: auto;
+      div:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}
 
 .carousel {
   display: grid;
-  grid-template-columns: repeat(auto-fill, [col] 450px ) ;
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, [col] 320px);
+  grid-gap: 11px;
+  overflow: hidden;
 
   .carousel__item {
+    width: 320px;
+    padding: 60px 0;
+    grid-row: 1;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+    transition: all 1s ease;
+
+    &.carousel__item__active {
+      background-size: cover;
+    }
+    .carousel__item__button,
+    .carousel__item__heading {
+      margin: auto;
+    }
+    .carousel__item__button {
+      max-width: 158px;
+      border: 1px solid $white;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 170%;
+    }
+    .carousel__item__heading {
+      font-weight: bold;
+      line-height: 200%;
+      font-family: $primaryFont;
+      font-size: 24px;
+      padding-bottom: 11px;
+    }
+    &:hover {
+      .carousel__item__button {
+        background-color: $white;
+        border: 1px solid $grey-light;
+        color: $dark;
+      }
+    }
+  }
+  @media only screen and (min-width: $tablet) {
+    grid-template-columns: repeat(auto-fill, [col] 450px);
+    overflow: visible;
+    width: 100vw;
+    padding-top: 60px;
+    .carousel__item {
+      padding: 120px 0;
+      width: 450px;
+  
+    }
   }
 }

@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
 import Button from '../components/Button';
+import ImageBoxesWithNavigation from '../components/ImageBoxesWithNavigation';
 import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/HeroBackgroundImage';
 
@@ -41,7 +42,7 @@ export const IndexPageTemplate = ({
         {...centeredSection}
         backgroundCSS={`linear-gradient(186.69deg, #0E111B 22.36%, rgba(14, 17, 27, 0.21) 37.8%), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%),  url(${centeredSection.bgimage.publicURL})`}
       />
-      <QuotesList quotes={quotes} />
+      <QuotesList quotes={quotes} className="section has-dark-background" />
       <section id="camera--title" className="section has-dark-background">
         <div className="container">
           <Title
@@ -61,6 +62,12 @@ export const IndexPageTemplate = ({
           />
         </div>
       </section>
+      <ImageBoxesWithNavigation
+        items={solutions.items}
+        heading={solutions.heading}
+        buttonText={solutions.button.text}
+        buttonPath={solutions.button.path}
+      />
       <section id="inspirational-quote" className="section has-dark-background">
         <div
           className="wrapper-two-split"
@@ -68,18 +75,6 @@ export const IndexPageTemplate = ({
             background: `linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)),  url(${splitSectionImage.publicURL})`,
           }}
         >
-          {/* <div
-            style={{
-              backgroundImage: `url(${productSection.featuredimageBackground.publicURL})`,
-            }}
-          >
-            <NonStretchedImage
-              fluid={splitSectionImage.childImageSharp.fluid}
-              objectFit="contain"
-              alt={productSection.heading}
-              className="image"
-            />
-          </div> */}
           <div
             style={{ backgroundImage: `url(${splitSectionImage.publicURL})` }}
             className="bg-image"
@@ -201,6 +196,7 @@ export const pageQuery = graphql`
             heading
             path
             featuredimage {
+              publicURL
               childImageSharp {
                 fluid(maxHeight: 720, quality: 70) {
                   ...GatsbyImageSharpFluid_tracedSVG
@@ -213,12 +209,6 @@ export const pageQuery = graphql`
         splitSection {
           bgimage {
             publicURL
-            childImageSharp {
-              fluid(maxWidth: 1920, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
-                presentationWidth
-              }
-            }
           }
         }
       }

@@ -8,6 +8,7 @@ $gridTemplateAuto: repeat(auto-fill, minmax($gridColumnWidth, 1fr));
 
 $primary: $midnight;
 
+
 html,
 body {
   height: 100%;
@@ -669,6 +670,8 @@ section.section#inspirational-quote {
     }
     .content {
       padding: 3rem;
+      max-width: 625px;
+      margin-left: 0;
       p {
         font-weight: 300;
         font-size: 24px;
@@ -680,8 +683,6 @@ section.section#inspirational-quote {
     }
   }
 }
-
-
 
 /****************     CONTACT PAGE    ********************/
 

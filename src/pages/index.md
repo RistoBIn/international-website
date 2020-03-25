@@ -61,20 +61,20 @@ itemsSection:
     text: Show all solutions
   items:
     - heading: Aquaculture
-      featuredimage: /img/aquaculture.png
+      featuredimage: /img/aquaculture.jpg
       path: /solutions/aquaculture
     - heading: Seafood Production
-      featuredimage: /img/seafood.png
+      featuredimage: /img/seafood.jpg
       path: /solutions/seafood
     - heading: Oil & Gas
-      featuredimage: /img/oil-gas.png
+      featuredimage: /img/oil-gas.jpg
       path: /solutions/oil-and-gas
     - heading: Search & Rescue
-      featuredimage: /img/search-rescue.png
+      featuredimage: /img/search-rescue.jpg
       path: /solutions/search-and-rescue
 
 splitSection:
-  bgimage: /img/aquaculture.png
+  bgimage: /img/inspirational.jpg
 
 ---
 

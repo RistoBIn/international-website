@@ -4,7 +4,7 @@ import styles from './QuotesList.module.scss';
 import NonStretchedImage from '../NonStretchedImage';
 import ArrowIcon from '../ArrowButton';
 
-const QuotesList = ({ quotes }) => {
+const QuotesList = ({ quotes, className }) => {
   if (!quotes || quotes.length < 1) return <></>;
   const [activeQuoteIndex, setActiveQuoteIndex] = useState(0);
 
@@ -24,14 +24,7 @@ const QuotesList = ({ quotes }) => {
 
   return (
     <>
-      <section
-        className={classNames(
-          'section',
-          'is-medium',
-          'has-dark-background',
-          styles.section,
-        )}
-      >
+      <section className={classNames(styles.section, className)}>
         <div className="container">
           <div className={styles.quote__navbar}>
             <QuoteSVG />
