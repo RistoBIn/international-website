@@ -27,6 +27,7 @@ const Hero = ({
   buttonText,
   buttonPath,
   anchorLink,
+  className,
 }) => {
   if (!backgroundImage) return <></>;
 
@@ -55,7 +56,7 @@ const Hero = ({
   };
   return (
     <section
-      className={classNames('hero', 'is-large', styles.hero)}
+      className={classNames('hero', styles.hero, className)}
       style={{
         background: bgCSS,
       }}

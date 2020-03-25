@@ -4,6 +4,7 @@ import Button from '../Button';
 import styles from './Hero.module.scss';
 
 const Hero = ({
+  className,
   heading,
   subheading,
   children,
@@ -13,7 +14,9 @@ const Hero = ({
 }) => {
   return (
     <>
-      <section className="section has-dark-background">
+      <section
+        className={classNames(className, 'section', 'has-dark-background')}
+      >
         <div
           className={classNames(
             styles.title,

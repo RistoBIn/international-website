@@ -104,7 +104,31 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Tittel, name: title, widget: string}
-          - {label: SEO Beskrivelse, name: seoDescription, widget: text}
-          - {label: Overskrift, name: heading, widget: string}
-          - {label: Underoverskrift, name: subheading, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: SEO Beskrivelse, name: seoDescription, widget: text, hint: "Important - Make a overall description"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: "Hero image", name: "featuredimage", widget: image }
+          - label: Facts
+            widget: list
+            name: items
+            fields:
+              - {label: Heading, name: heading, widget: string, hint: "Try to keep it to one word"}
+              - {label: Description, name: description, widget: text}
+            - label: Centered section
+              widget: object
+              name: centeredSection
+              fields:
+                - {label: "Background image", name: "bgimage", widget: image }
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Description, name: description, widget: text}
+                - label: Button
+                  widget: object
+                  name: button
+                  fields:
+                    - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
+                    - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+
+
+          
+
