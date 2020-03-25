@@ -27,7 +27,7 @@ const Footer = ({
               <List title="Solutions" navigationItems={mainNavigation} />
               <List title="Products" navigationItems={secondaryNavigation} />
               <List title="Project" navigationItems={thirdNavigation} />
-              <List title="Products" navigationItems={fourthNavigation} />
+              <List title="About" navigationItems={fourthNavigation} />
             </div>
           </section>
           <section id="company-information" className="section is-small">
