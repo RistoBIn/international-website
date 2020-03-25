@@ -1,0 +1,15 @@
+@import '../_variables.scss';
+
+
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, [col] 450px ) ;
+  grid-gap: 30px;
+
+  .carousel__item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

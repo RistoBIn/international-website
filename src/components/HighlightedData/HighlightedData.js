@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './HighlightedData.module.scss';
+import { idMaker } from '../../utils/id-maker';
 
+const gen = idMaker();
 const HighlightedData = ({ highlighted, id }) => {
   if (
     !highlighted ||
@@ -15,6 +17,7 @@ const HighlightedData = ({ highlighted, id }) => {
         <div className={styles.highlighted__wrapper}>
           {highlighted.map(spec => (
             <HighlightedSpec
+              key={gen.next().value}
               heading={spec.heading}
               description={spec.description}
             />
