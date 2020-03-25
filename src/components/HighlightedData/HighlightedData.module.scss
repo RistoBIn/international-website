@@ -1,0 +1,37 @@
+@import '../_variables.scss';
+
+.highlighted__wrapper {
+  display: grid;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+  grid-gap: 10px;
+
+  .highlighted__specification {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+
+    .highlighted__specification__title {
+      font-weight: 300;
+      font-size: 56px;
+      line-height: 170%;
+      padding-bottom: 20px;
+    }
+    .highlighted__specification__description {
+      max-width: 274px;
+      margin: auto;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 170%;
+    }
+  }
+  @media only screen and(min-width: $tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+    margin: auto;
+    .highlighted__specification {
+      padding: 44px 0;
+    }
+  }
+}

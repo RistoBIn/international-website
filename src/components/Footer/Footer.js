@@ -5,7 +5,9 @@ import MailIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
 import Button from '../Button';
 import { cleanPath } from '../../utils/paths';
+import { idMaker } from '../../utils/id-maker';
 
+const gen = idMaker();
 const year = new Date().getFullYear();
 
 const Footer = ({
@@ -48,7 +50,7 @@ const Footer = ({
                 </p>
               </div>
               {companyOffices.map(office => (
-                <div className="column is-3">
+                <div key={gen.next().value} className="column is-3">
                   <h3>{office.title}</h3>
                   <StringList items={office.addressItems} />
                 </div>
@@ -63,7 +65,7 @@ const Footer = ({
             <Button
               text={callToAction.buttonText}
               className="is-primary large"
-              link={callToAction.buttonPath}
+              path={callToAction.buttonPath}
             />
           </section>
           <section id="copyright" className="section is-small">
@@ -82,7 +84,7 @@ const Footer = ({
 const StringList = ({ items }) => (
   <ul>
     {items.map(item => (
-      <li>
+      <li key={gen.next().value}>
         <p>{item}</p>
       </li>
     ))}
@@ -94,7 +96,7 @@ const List = ({ title, navigationItems }) => (
     <h3>{title}</h3>
     <ul>
       {navigationItems.map(item => (
-        <li key={item.title ? item.title : item}>
+        <li key={gen.next().value}>
           {item.path ? (
             <Link to={cleanPath(item.path)}>{item.title}</Link>
           ) : (

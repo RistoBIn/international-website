@@ -130,8 +130,8 @@ color: $text-grey-light;
 @mixin Title {
   font-family: $titleFont;
   font-style: normal;
-  font-weight: 300;
-  line-height: 110%;
+  font-weight: 500;
+  line-height: 120%;
   color: $white;
 }
 
@@ -169,6 +169,15 @@ color: $text-grey-light;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: $text-grey-light;
+}
+
+@mixin regularLink {
+  font-family: $primaryFont;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 

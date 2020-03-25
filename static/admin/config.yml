@@ -100,11 +100,77 @@ collections:
     label: "Vanlige sider"
     files:
       - file: "src/pages/index.md"
-        label: "Forside"
+        label: "Front page"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Tittel, name: title, widget: string}
-          - {label: SEO Beskrivelse, name: seoDescription, widget: text}
-          - {label: Overskrift, name: heading, widget: string}
-          - {label: Underoverskrift, name: subheading, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: SEO Beskrivelse, name: seoDescription, widget: text, hint: "Important - Make a overall description"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: "Hero image", name: "featuredimage", widget: image }
+          - label: Facts
+            widget: list
+            name: items
+            fields:
+              - {label: Heading, name: heading, widget: string, hint: "Try to keep it to one word"}
+              - {label: Description, name: description, widget: text}
+            - label: Centered section
+              widget: object
+              name: centeredSection
+              fields:
+                - {label: "Background image", name: "bgimage", widget: image }
+                - {label: Subheading, name: subheading, widget: string}
+                - {label: Heading, name: heading, widget: string}
+                - {label: Description, name: description, widget: text}
+                - label: Button
+                  widget: object
+                  name: button
+                  fields:
+                    - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
+                    - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+
+            - label: Product section
+              widget: object
+              name: productSection
+              fields:
+                - {label: Heading, name: heading, widget: string}
+                - {label: "Product image", name: "featuredimage", widget: image }
+                - {label: "Product background image", name: "featuredimageBackground", widget: image, required: false }
+                - {label: Description, name: description, widget: text}
+
+
+            - label: Quotes section
+              widget: list
+              name: quotes
+              fields:
+                - {label: "Author name", name: authorName, widget: string}
+                - {label: "Author position", name: authorPosition, widget: string}
+                - {label: "Author image", name: "authorImage", widget: image, required: false}
+                - {label: "Quote text", name: quoteText, widget: text}
+
+            - label: Solutions
+              widget: object
+              name: itemsSection
+              fields:
+                - {label: Heading, name: heading, widget: string}
+                - label: Button
+                  widget: object
+                  name: button
+                  fields:
+                    - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
+                    - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+                - label: "Solution items"
+                  widget: list
+                  fields:
+                    - {label: Heading, name: heading, widget: string}
+                    - {label: "Solution image", name: "featuredimage", widget: image }
+                    - {label: "Path to page", name: heading, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+            - label: Inspirational section
+              name: splitSection
+              widget: object
+              fields: 
+                - {label: "Large image", name: "bgimage", widget: image }
+                - {label: "Content", name: "body", widget: "markdown"}
+
+          
+

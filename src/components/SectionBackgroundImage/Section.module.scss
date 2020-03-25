@@ -1,0 +1,23 @@
+@import '../_variables.scss';
+
+.section {
+  background-position: center center !important;
+  background-size: cover !important;
+  text-align: center !important;
+  .content {
+    .content__heading {
+      margin: auto;
+      padding-bottom: 20px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+    .content__subheading {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .link__icon {
+      padding-left: 5px;
+    }
+  }
+}

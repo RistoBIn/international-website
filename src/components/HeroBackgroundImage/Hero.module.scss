@@ -3,16 +3,22 @@
 .hero {
   background-position: center center !important;
   background-size: cover !important;
-  .heading {
-    max-width: 500px;
-    margin: auto;
-    padding-bottom: 20px;
-  }
-  .subheading {
-    max-width: 600px;
-    margin: auto;
-  }
-  .button {
-    margin: auto;
+  padding: 40vh auto;
+  .content {
+    .content__heading {
+      margin: auto;
+      padding-bottom: 20px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+    .content__subheading {
+      max-width: 600px;
+    }
+    .button {
+      .button__icon {
+        padding-left: 5px;
+      }
+    }
+
   }
 }
