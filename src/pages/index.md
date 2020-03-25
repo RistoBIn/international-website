@@ -11,8 +11,6 @@ items:
     heading: '7.8'
   - description: Billion USD required yearly to sustain the ocean
     heading: '21'
-  - description: Blabla
-    heading: '999'
 centeredSection:
   heading: The oceans affect us all but entering the deep is not for everyone.
   bgimage: /img/subsea-plant.jpg
