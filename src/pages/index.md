@@ -78,6 +78,6 @@ splitSection:
 
 ---
 
-For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.
+_For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it._
 
-- Jacques-Yves Cousteau
+<strong id="quote-author">- Jacques-Yves Cousteau</strong>

@@ -52,12 +52,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <section id="camera--image" className="has-dark-background">
-        <div
-          className="product-image"
-          style={{
-            backgroundImage: `url(${productSection.featuredimageBackground.publicURL})`,
-          }}
-        >
+        <div className="product-image">
           <NonStretchedImage
             fluid={productSection.featuredimage.childImageSharp.fluid}
             objectFit="contain"
@@ -66,16 +61,31 @@ export const IndexPageTemplate = ({
           />
         </div>
       </section>
-      <section className="section has-dark-background">
-        <div className="wrapper-two-split">
-          <NonStretchedImage
-            fluid={splitSectionImage.childImageSharp.fluid}
-            objectFit="contain"
-            alt={productSection.heading}
-            className="image"
+      <section id="inspirational-quote" className="section has-dark-background">
+        <div
+          className="wrapper-two-split"
+          style={{
+            background: `linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)),  url(${splitSectionImage.publicURL})`,
+          }}
+        >
+          {/* <div
+            style={{
+              backgroundImage: `url(${productSection.featuredimageBackground.publicURL})`,
+            }}
+          >
+            <NonStretchedImage
+              fluid={splitSectionImage.childImageSharp.fluid}
+              objectFit="contain"
+              alt={productSection.heading}
+              className="image"
+            />
+          </div> */}
+          <div
+            style={{ backgroundImage: `url(${splitSectionImage.publicURL})` }}
+            className="bg-image"
           />
           <>
-            <PostContent content={content} />
+            <PostContent content={content} className="content" />
           </>
         </div>
       </section>
@@ -202,8 +212,9 @@ export const pageQuery = graphql`
         }
         splitSection {
           bgimage {
+            publicURL
             childImageSharp {
-              fluid(maxHeight: 1180, quality: 100) {
+              fluid(maxWidth: 1920, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }
