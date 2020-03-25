@@ -54,7 +54,20 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <section id="camera--image" className="has-dark-background">
-        <div className="product-image">
+        {/* <div className="product-image">
+          <NonStretchedImage
+            fluid={productSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={productSection.heading}
+            className="image"
+          />
+        </div> */}
+        <div
+          className="product-image"
+          style={{
+            backgroundImage: `url(${productSection.featuredimageBackground.publicURL})`,
+          }}
+        >
           <NonStretchedImage
             fluid={productSection.featuredimage.childImageSharp.fluid}
             objectFit="contain"

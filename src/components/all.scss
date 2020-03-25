@@ -625,8 +625,13 @@ footer.footer {
 section#camera--image {
   .product-image {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
+  }
+  @media only screen and (min-width: $tablet) {
+    .product-image {
+      background-size: contain;
+    }
   }
 }
 
