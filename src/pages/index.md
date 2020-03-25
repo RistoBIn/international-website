@@ -1,63 +1,83 @@
 ---
 templateKey: index-page
 title: SEALAB
-seoDescription: SEALAB's international website
-heading: Play in our world
+seoDescription: >-
+  SEALAB's international website
 bgimage: /img/subsea-waves.jpg
+heading: Play in our world
+
+
+
+
+############## Facts section ##############
 items:
-  - description: Billion USD yearly impact for poor ocean management
-    heading: '200'
-  - description: Billion people rely on the ocean
-    heading: '7.8'
-  - description: Billion USD required yearly to sustain the ocean
-    heading: '21'
-  - description: Blabla
-    heading: '999'
+  - heading: '200'
+    description: Billion USD yearly impact for poor ocean management
+  - heading: '7.8'
+    description: Billion people rely on the ocean
+  - heading: '21'
+    description: Billion USD required yearly to sustain the ocean
+  - heading: '999'
+    description: Blabla
+
+
+############## Selling section ##############
 centeredSection:
-  heading: The oceans affect us all but entering the deep is not for everyone.
   bgimage: /img/subsea-plant.jpg
+  subheading: Deep Sea and Marine Applications
+  heading: The oceans affect us all but entering the deep is not for everyone.
+  description: Sealab cameras and products can be used in many areas and industries, from Seafood factories to Military, Underwater diving operations.
   button:
     path: /solutions/aquaculture
     text: See solutions
-  description: >-
-    Sealab cameras and products can be used in many areas and industries, from
-    Seafood factories to Military, Underwater diving operations.
-  subheading: Deep Sea and Marine Applications
+
+############## Product section ##############
 productSection:
-  description: >-
-    Superfast FPGA technology and smart 2D and 3D cameras will change everything
-    in the ocean space.
+  heading: You've Never Seen a Camera Like This
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
-  heading: You've Never Seen a Camera Like This
+  description: >-
+    Superfast FPGA technology and smart 2D and 3D cameras will change everything in the ocean space.
+
+############## Facts section ##############
 quotes:
-  - authorImage: /img/sataya.jpg
-    authorName: Satya Nadella
+  - authorName: Satya Nadella
     authorPosition: CEO at Microsoft
-    quoteText: The Apple approach for harsh environments
-  - authorImage: /img/sataya.jpg
-    authorName: Name surname
-    authorPosition: CEO at Tullefabrikken
+    authorImage: /img/sataya.jpg
     quoteText: >-
-      We would really recommend SEALAB if you are in need - because electronics
-      for these environments is hard to find.
+      The Apple approach for harsh environments
+  - authorName: Name surname
+    authorPosition: CEO at Tullefabrikken
+    authorImage: /img/sataya.jpg
+    quoteText: >-
+      We would really recommend SEALAB if you are in need - because electronics for these environments is hard to find.
+
+
+############## Solution section ##############
 itemsSection:
+  heading: Multiple applications in numerous industries
   button:
     path: /solutions/aquaculture
     text: Show all solutions
-  heading: Multiple applications in numerous industries
   items:
-    - featuredimage: /img/aquaculture.jpg
-      heading: Atlantic Salmon and Seafood
-    - featuredimage: /img/seafood.jpg
-      heading: Seafood Production
-    - featuredimage: /img/oil-gas.jpg
-      heading: Oil & Gas
-    - featuredimage: /img/search-rescue.jpg
-      heading: Search & Rescue
+    - heading: Aquaculture
+      featuredimage: /img/aquaculture.jpg
+      path: /solutions/aquaculture
+    - heading: Seafood Production
+      featuredimage: /img/seafood.jpg
+      path: /solutions/seafood
+    - heading: Oil & Gas
+      featuredimage: /img/oil-gas.jpg
+      path: /solutions/oil-and-gas
+    - heading: Search & Rescue
+      featuredimage: /img/search-rescue.jpg
+      path: /solutions/search-and-rescue
+
 splitSection:
   bgimage: /img/inspirational.jpg
+
 ---
-*For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
+
+_For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it._
 
 <strong id="quote-author">- Jacques-Yves Cousteau</strong>

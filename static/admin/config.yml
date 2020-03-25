@@ -165,7 +165,7 @@ collections:
                 fields:
                   - {label: Heading, name: heading, widget: string}
                   - {label: "Solution image", name: "featuredimage", widget: image }
-                  - {label: "Path to page", name: heading, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+                  - {label: "Path to page", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
           - label: Inspirational section
             name: splitSection
             widget: object
