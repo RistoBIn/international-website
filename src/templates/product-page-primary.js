@@ -3,23 +3,44 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+import SplittedSection from '../components/SplittedSection';
+import NonStretchedImage from '../components/NonStretchedImage';
 
 export const ProductPageTemplate = ({
   content,
   contentComponent,
   description,
   heading,
+  item1vsitem2,
+  featuredimageSecondary,
+  centeredText,
+  thirdSection,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section has-dark-background">
-      <div className="container">
-        <h1>{heading}</h1>
-        <p>{description}</p>
-        <p>This is product-page-primary</p>
-        <PostContent content={content} />
-      </div>
+    <section className="has-dark-background">
+      <section className="section">
+        <div className="container">
+          <h1>{heading}</h1>
+          <p>{description}</p>
+          <PostContent content={content} />
+        </div>
+      </section>
+
+      <SplittedSection
+        className="content has-dark-background"
+        shouldReorderOnMobile
+        leftColumn={<PostContent content={content} />}
+        rightColumn={
+          <NonStretchedImage
+            fluid={featuredimageSecondary.childImageSharp.fluid}
+            objectFit="contain"
+            alt=""
+            className="image"
+          />
+        }
+      />
     </section>
   );
 };
@@ -27,7 +48,16 @@ export const ProductPageTemplate = ({
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   if (!frontmatter) return <></>;
-  const { title, seoDescription, heading, description } = frontmatter;
+  const {
+    title,
+    seoDescription,
+    heading,
+    description,
+    item1vsitem2,
+    featuredimageSecondary,
+    centeredText,
+    thirdSection,
+  } = frontmatter;
 
   return (
     <Layout seoTitle={title} seoDescription={seoDescription}>
@@ -36,6 +66,10 @@ const ProductPage = ({ data }) => {
         contentComponent={HTMLContent}
         heading={heading}
         description={description}
+        item1vsitem2={item1vsitem2}
+        featuredimageSecondary={featuredimageSecondary}
+        centeredText={centeredText}
+        thirdSection={thirdSection}
       />
     </Layout>
   );
@@ -53,6 +87,54 @@ export const pageQuery = graphql`
         seoDescription
         description
         heading
+        item1vsitem2 {
+          heading
+          subheading
+          item1 {
+            heading
+            featuredimage {
+              childImageSharp {
+                fluid(maxHeight: 1180, quality: 100) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                  presentationWidth
+                }
+              }
+            }
+            items
+          }
+          item2 {
+            heading
+            featuredimage {
+              childImageSharp {
+                fluid(maxHeight: 1180, quality: 100) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                  presentationWidth
+                }
+              }
+            }
+            items
+          }
+        }
+        featuredimageSecondary {
+          childImageSharp {
+            fluid(maxHeight: 700, quality: 100) {
+              ...GatsbyImageSharpFluid_tracedSVG
+              presentationWidth
+            }
+          }
+        }
+        centeredText
+        thirdSection {
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+          content
+        }
       }
     }
   }
