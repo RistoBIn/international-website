@@ -1,96 +1,65 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import NonStretchedImage from '../components/NonStretchedImage';
-import KeyProjectFactors from '../components/KeyProjectFactors'
-
-// const KeyFactors = ({ keyFactors }) => {
-//   return (
-//     <div id="key-factors" className="wrapper">
-//       <h3>{keyFactors.heading}</h3>
-//       <div id="key-factors" className="columns">
-//         {keyFactors.factorItems.map(factor => (
-//           <div className="features-icons-item column is-3">
-//             <figure className="image">
-//               <img
-//                 src={factor.icon.publicURL}
-//                 alt="Icon"
-//                 style={{ height: 50 }}
-//               />
-//             </figure>
-//             <p>{factor.primaryInfo}</p>
-//             <p>{factor.description}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-const Partners = ({ partners }) => {
-  return (
-    <div id="partners" className="wrapper">
-      <h3>{partners.heading}</h3>
-      <div id="partners" className="columns">
-        {partners.partnerItems.map(partner => (
-          <div className="features-icons-item column is-3">
-            <figure className="image">
-              <img
-                src={partner.icon.publicURL}
-                alt="Icon"
-                style={{ height: 50 }}
-              />
-            </figure>
-            <p>{partner.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+import KeyProjectFactors from '../components/KeyProjectFactors';
+import PartnersFooter from '../components/PartnersFooter';
+import Title from '../components/Title';
 
 export const ProjectPageTemplate = ({
   content,
   contentComponent,
   heading,
-  subHeading,
+  subheading,
   featuredImage,
-  primarySection,
   keyFactors,
   partners,
+  featuredImageCaption,
 }) => {
   const PostContent = contentComponent || Content;
   return (
-    <section className="section has-dark-background">
-      <div className="container">
-        <h1>{heading}</h1>
-        <p>{subHeading}</p>
-        <section id="project-image" className="has-dark-background">
-          <div className="product-image">
-            <NonStretchedImage
+    <div className="section has-dark-background">
+      <div
+        id="project-page-primary"
+        className="wrapper section has-dark-background"
+      >
+        <section
+          id="project-page-heading"
+          className="header has-dark-background"
+        >
+          <Title
+            id="project-page-title"
+            title={heading}
+            description={subheading}
+            position="left"
+          />
+        </section>
+        <section
+          id="key-project-factors"
+          className="sidebar has-dark-background"
+        >
+          <KeyProjectFactors keyFactors={keyFactors} />
+        </section>
+        <section id="project-content" className="content has-dark-background">
+          <figure className="figure">
+            <Img
               fluid={featuredImage.childImageSharp.fluid}
               objectFit="contain"
               alt="Product image"
               className="image"
             />
-          </div>
+            <figcaption id="project-image-caption" >{featuredImageCaption}</figcaption>
+          </figure>
+          <PostContent id="project-page-post-content" content={content} />
         </section>
-        <h1>{primarySection.heading}</h1>
-        {primarySection.subsections.map(paragraph => (
-          <div className="primary-subsections">
-            <p>{paragraph.description}</p>
-          </div>
-        ))}
-        <section id="primary-section" className="has-dark-background">
-          <p>{primarySection.description}</p>
-        </section>
-        <KeyProjectFactors keyFactors={keyFactors} />
-        <PostContent content={content} />
-        <Partners partners={partners} />
+        <PartnersFooter
+          partners={partners}
+          className="partners is-hidden-mobile"
+        />
       </div>
-    </section>
+    </div>
   );
 };
 
@@ -101,12 +70,10 @@ const ProjectPage = ({ data }) => {
     title,
     seoDescription,
     heading,
-    description,
     featuredImageCaption,
     keyFactors,
     partners,
-    primarySection,
-    subHeading,
+    subheading,
     featuredImage,
   } = frontmatter;
 
@@ -116,12 +83,11 @@ const ProjectPage = ({ data }) => {
         content={html}
         contentComponent={HTMLContent}
         heading={heading}
-        description={description}
-        subHeading={subHeading}
+        subheading={subheading}
         featuredImage={featuredImage}
-        primarySection={primarySection}
         keyFactors={keyFactors}
         partners={partners}
+        featuredImageCaption={featuredImageCaption}
       />
     </Layout>
   );
@@ -151,7 +117,6 @@ export const pageQuery = graphql`
           factorItems {
             description
             primaryInfo
-            secondaryInfo
             icon {
               extension
               publicURL
@@ -163,21 +128,21 @@ export const pageQuery = graphql`
           partnerItems {
             description
             icon {
-              extension
               publicURL
+              extension
+              childImageSharp {
+                fluid(maxWidth: 405, quality: 100) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                  presentationWidth
+                }
+              }
             }
-          }
-        }
-        primarySection {
-          heading
-          subsections {
-            description
           }
         }
         title
         templateKey
         seoDescription
-        subHeading
+        subheading
       }
     }
   }

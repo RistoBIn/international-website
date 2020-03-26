@@ -965,3 +965,75 @@ section#contact-form {
     }
   }
 }
+
+
+div#project-page-primary.wrapper {
+
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+  "header"
+  "sidebar"
+  "content"
+  "sidebar2"
+  "partners";
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .partners {
+    grid-area: partners;
+  }
+  
+  .figure {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (min-width: 768px)  {
+    margin: auto;
+    max-width: 1412px;
+    grid-template-columns: 330px auto;
+    grid-template-areas:
+      "header header"
+      "sidebar  content"
+      "partners partners";
+    
+    .figure {
+      margin-right: 0px;
+      margin-bottom: 40px;
+    }
+    figcaption {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 170%;
+      text-align: right;
+      color: #DBE0EA;
+      margin-top: 12px;
+    }
+    #project-page-heading {
+      p {
+        max-width: 930px;
+      }
+    }
+    #project-content {
+    margin-left: 0px;
+    max-width: 1050px;
+      p {
+        max-width: 930px;
+        margin-left: 0px;
+      }
+    }
+  }
+}

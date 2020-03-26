@@ -2,25 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './KeyProjectFactors.module.scss';
 
-// const KeyProjectFeatures = ({ features }) => {
-//   if (!features || features.length < 1) return <></>;
-//   return (
-//     <>
-//       <div className={styles.wrapper}>
-//         {features.map(feature => {
-//           const { publicURL } = feature.icon;
-//           return (
-//             <FeatureItem
-//               icon={publicURL}
-//               heading={feature.heading}
-//               key={feature.heading}
-//             />
-//           );
-//         })}
-//       </div>
-//     </>
-//   );
-// };
 const KeyProjectFactors = ({ keyFactors }) => {
   return (
     <>
@@ -36,21 +17,5 @@ const KeyProjectFactors = ({ keyFactors }) => {
     </>
   );
 };
-// const FeatureItem = ({ icon, heading }) => (
-//   <div className={styles.featureItem}>
-//     <figure className="image">
-//       <img className={styles.icon} src={icon} alt={heading} />
-//     </figure>
-//     <p className={classNames(styles.heading)}> {heading} </p>
-//   </div>
-// );
-
-//            <figure className="image">
-//              <img
-//                src={factor.icon.publicURL}
-//                alt="Icon"
-//                className={styles.icon}
-//              />
-//            </figure>
 
 export default KeyProjectFactors;
