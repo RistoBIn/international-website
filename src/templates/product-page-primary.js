@@ -5,6 +5,8 @@ import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SplittedSection from '../components/SplittedSection';
 import NonStretchedImage from '../components/NonStretchedImage';
+import ComparisonSection from '../components/ComparisonSection';
+import Title from '../components/Title';
 import generateHTML from '../utils/generateHTML';
 
 export const ProductPageTemplate = ({
@@ -23,11 +25,17 @@ export const ProductPageTemplate = ({
     <section className="has-dark-background">
       <section className="section">
         <div className="container">
-          <h1>{heading}</h1>
-          <p>{description}</p>
-          <PostContent content={content} />
+          <Title title={heading} description={description} position="left" />
         </div>
       </section>
+
+      <ComparisonSection
+        heading={item1vsitem2.heading}
+        subheading={item1vsitem2.subheading}
+        item1={item1vsitem2.item1}
+        item2={item1vsitem2.item2}
+        className=""
+      />
 
       <SplittedSection
         className="content has-dark-background"
@@ -35,10 +43,10 @@ export const ProductPageTemplate = ({
         leftColumn={<PostContent content={content} />}
         rightColumn={
           <NonStretchedImage
-            fluid={featuredimageSecondary.childImageSharp.fluid}
             objectFit="contain"
             alt=""
             className="image"
+            {...featuredimageSecondary}
           />
         }
       />
@@ -54,10 +62,10 @@ export const ProductPageTemplate = ({
         }
         leftColumn={
           <NonStretchedImage
-            fluid={thirdSection.featuredimage.childImageSharp.fluid}
             objectFit="contain"
             alt=""
             className="image"
+            {...thirdSection.featuredimage}
           />
         }
       />
@@ -113,29 +121,23 @@ export const pageQuery = graphql`
           item1 {
             heading
             featuredimage {
-              childImageSharp {
-                fluid(maxHeight: 1180, quality: 100) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                  presentationWidth
-                }
-              }
+              publicURL
+              extension
             }
             items
           }
           item2 {
             heading
             featuredimage {
-              childImageSharp {
-                fluid(maxHeight: 1180, quality: 100) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                  presentationWidth
-                }
-              }
+              publicURL
+              extension
             }
             items
           }
         }
         featuredimageSecondary {
+          publicURL
+          extension
           childImageSharp {
             fluid(maxWidth: 405, quality: 100) {
               ...GatsbyImageSharpFluid_tracedSVG
@@ -146,8 +148,10 @@ export const pageQuery = graphql`
         centeredText
         thirdSection {
           featuredimage {
+            publicURL
+            extension
             childImageSharp {
-              fluid(maxWidth: 381, quality: 100) {
+              fluid(maxWidth: 405, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }

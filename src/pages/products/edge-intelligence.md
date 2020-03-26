@@ -12,7 +12,7 @@ item1vsitem2:
   subheading: For inference
   item1:
     heading: Cloud computing
-    featuredimage: /img/cloud.png
+    featuredimage: /img/cloud.svg
     items: 
       - Massive, scalable compute power
       - Unlimited storage
@@ -24,7 +24,7 @@ item1vsitem2:
       - Relatively high cost
   item2:
     heading: Edge computing
-    featuredimage: /img/edge-computing.png
+    featuredimage: /img/edge-computing.svg
     items: 
       - Limited compute power
       - Limited storage
@@ -35,16 +35,18 @@ item1vsitem2:
       - Data kept local
       - Low cost
 
-featuredimageSecondary: /img/what-is-edge-computing.png
+featuredimageSecondary: /img/what-is-edge-computing.svg
 
 centeredText: The main benefits edge solutions provide include **low latency**, **high bandwidth**, **device processing** and **data offload** as well as **trusted computing** and **storage**.
 
 thirdSection:
-  featuredimage: /img/role-of-edge-in5g.png
+  featuredimage: /img/role-of-edge-in5g.svg
   content: >-
     ## The role of Edge in 5G
+
+    By 2023, 5G will make up around one-fifth of all mobile data traffic, where 25% of the use-cases will depend on edge computing capabilities. The majority of the new 5G revenue potential is expected to come from enterprise & IoT services, of which many will rely on edge computing. 
     
-    By 2023, 5G will make up around one-fifth of all mobile data traffic, where 25% of the use-cases will depend on edge computing capabilities. The majority of the new 5G revenue potential is expected to come from enterprise & IoT services, of which many will rely on edge computing. Therefore edge capabilities will be a fundamental technology as part of a 5G infrastructure for any service provider.
+    Therefore edge capabilities will be a fundamental technology as part of a 5G infrastructure for any service provider.
 
 ---
 
