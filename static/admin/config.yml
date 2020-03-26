@@ -13,6 +13,8 @@ display_url:  https://sealab-com.netlify.com
 
 collections:
 
+#### SIMPLE PAGES ####
+
   - name: "simple-pages"
     label: "Rene tekst sider"
     folder: "src/pages/"
@@ -26,7 +28,24 @@ collections:
       - {label: "Overskrift", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "Innhold", name: "body", widget: "markdown"}
   
-  
+#### ABOUT PAGE TEMPLATE 1 ####
+
+  - name: "about-page-osc"
+    label: "About Page Template - 1"
+    folder: "src/pages/about/"
+    create: true
+    description: "This is a about page template."
+    filter: {field: "templateKey", value: "about-page-osc"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-osc"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "text", hint: "Text."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Image", name: "featuredImage", widget: "image", hint: "Image to use on the page."}
+      - {label: "Content", name: "body", widget: "markdown"}
+
   - name: "settings"
     label: "Navigasjon & Footer"
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."

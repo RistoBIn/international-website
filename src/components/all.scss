@@ -609,11 +609,33 @@ footer.footer {
 
 /****************     ABOUT PAGES     ********************/
 
-section#about-template-osc {
-  p {
-    max-width: 930px;
-    margin-right: auto; // litt usikker på hvorvidt denne må være med
-   }
+section.about-page-template {
+
+  .content {
+    font-size: 20px;
+  }
+
+  .about-page-template-image .image {
+    width: 100%;
+    height: 375px;
+    margin: '0 auto';
+    overflow-x: hidden;
+  }
+
+  @media screen and (min-width: $desktop) {
+
+    .title, .content {
+
+      margin-left: 255px;
+      max-width: 930px;
+      margin-right: auto;
+
+    }
+
+    .about-page-template-image .image {
+      height: 100%;
+    }
+  }
 }
 
 /****************     CONTACT PAGE     ********************/

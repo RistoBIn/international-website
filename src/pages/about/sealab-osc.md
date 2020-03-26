@@ -1,10 +1,10 @@
 ---
-templateKey: about-page-osc
+templateKey: about-page-template-primary
 title: SEALAB Ocean Space Center
 seoDescription: >-
   SEALAB Ocean Space Center
 heading: SEALAB Ocean Space Center
-subheading: >-
+description: >-
   When the waves come crashing in, the wind is blowing and the salt starts eating away at your hardware, no simulation will ever come close to the real thing. There’s simply no substitution for the unpredictable, ruthless conditions at sea. Realizing this, the SEALAB Ocean Space Center was established in 2018, located about 25 miles west of the Norwegian coastline among the rocky islands of Froan.
 featuredImage: /img/SEALAB_OSC_Quintus_at_night.png
   

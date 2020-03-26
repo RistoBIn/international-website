@@ -1,41 +1,39 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import NonStretchedImage from '../components/NonStretchedImage';
-import StretchedImage from '../components/StretchedImage';
 
 export const AboutPageOSCTemplate = ({
   content,
   contentComponent,
   heading,
-  subheading,
+  description,
   featuredImage,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
     <>
-      <section id="about-template-osc" className="section has-dark-background">
+      <section className="section has-dark-background about-page-template">
         <div className="container title">
           <h1>{heading}</h1>
         </div>
         <div className="container content">
-          <p>{subheading}</p>
+          <p>{description}</p>
         </div>
       </section>
-      <section id="about-template-image" className="has-dark-background">
-        <div className="about-image">
-          <StretchedImage
+      <section className="has-dark-background about-page-template">
+        <div className="about-page-template-image">
+          <Img
             fluid={featuredImage.childImageSharp.fluid}
-            objectFit="contain"
             alt="About image"
             className="image"
           />
         </div>
       </section>
-      <section id="about-template-osc" className="section has-dark-background">
+      <section className="section has-dark-background about-page-template">
         <div className="container content">
           <PostContent content={content} />
         </div>
@@ -50,7 +48,7 @@ const AboutPage = ({ data }) => {
   const {
     title,
     heading,
-    subheading,
+    description,
     seoDescription,
     featuredImage,
   } = frontmatter;
@@ -61,7 +59,7 @@ const AboutPage = ({ data }) => {
         content={data.markdownRemark.html}
         contentComponent={HTMLContent}
         heading={heading}
-        subheading={subheading}
+        description={description}
         featuredImage={featuredImage}
       />
     </Layout>
@@ -78,7 +76,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         heading
-        subheading
+        description
         seoDescription
         featuredImage {
           childImageSharp {
