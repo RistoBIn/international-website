@@ -117,7 +117,7 @@ export const pageQuery = graphql`
         }
         featuredimageSecondary {
           childImageSharp {
-            fluid(maxHeight: 700, quality: 100) {
+            fluid(maxWidth: 405, quality: 100) {
               ...GatsbyImageSharpFluid_tracedSVG
               presentationWidth
             }
