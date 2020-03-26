@@ -1,0 +1,50 @@
+@import '../_variables.scss';
+
+
+$iconSize: 42px;
+
+.wrapper {
+  display: block;
+  grid-gap: 30px;
+  margin-left: auto;
+  background: linear-gradient(0deg, #1F2331, #1F2331), #191C27;
+  border-radius: 3px;
+  .heading {
+    margin: auto 0;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: .6px;
+    display: block;
+    border-bottom: 1px solid $border-dark-background;
+  }
+  .factorItem {
+    display: block;
+    .primaryInfo {
+      margin: auto 0;
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 170%;
+      letter-spacing: .6px;
+    }
+    .description {
+      margin: auto 0;
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 170%;
+      letter-spacing: .6px;
+    }
+
+  }
+  @media only screen and (min-width: $desktop) {
+    grid-template-columns: repeat(auto-fill, 183px);
+    .factorItem {
+      //border-bottom: 1px solid $border-dark-background;
+      padding-bottom: 10px;
+      width: 213px;
+    }
+  }
+}

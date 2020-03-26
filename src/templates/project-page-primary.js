@@ -4,29 +4,30 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
+import KeyProjectFactors from '../components/KeyProjectFactors'
 
-const KeyFactors = ({ keyFactors }) => {
-  return (
-    <div id="key-factors" className="wrapper">
-      <h3>{keyFactors.heading}</h3>
-      <div id="key-factors" className="columns">
-        {keyFactors.factorItems.map(factor => (
-          <div className="features-icons-item column is-3">
-            <figure className="image">
-              <img
-                src={factor.icon.publicURL}
-                alt="Icon"
-                style={{ height: 50 }}
-              />
-            </figure>
-            <p>{factor.primaryInfo}</p>
-            <p>{factor.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+// const KeyFactors = ({ keyFactors }) => {
+//   return (
+//     <div id="key-factors" className="wrapper">
+//       <h3>{keyFactors.heading}</h3>
+//       <div id="key-factors" className="columns">
+//         {keyFactors.factorItems.map(factor => (
+//           <div className="features-icons-item column is-3">
+//             <figure className="image">
+//               <img
+//                 src={factor.icon.publicURL}
+//                 alt="Icon"
+//                 style={{ height: 50 }}
+//               />
+//             </figure>
+//             <p>{factor.primaryInfo}</p>
+//             <p>{factor.description}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
 
 const Partners = ({ partners }) => {
   return (
@@ -85,7 +86,7 @@ export const ProjectPageTemplate = ({
         <section id="primary-section" className="has-dark-background">
           <p>{primarySection.description}</p>
         </section>
-        <KeyFactors keyFactors={keyFactors} />
+        <KeyProjectFactors keyFactors={keyFactors} />
         <PostContent content={content} />
         <Partners partners={partners} />
       </div>
