@@ -37,7 +37,7 @@ item1vsitem2:
 
 featuredimageSecondary: /img/what-is-edge-computing.png
 
-centeredText: The main benefits edge solutions provide include low latency, high bandwidth, device processing and data offload as well as trusted computing and storage.
+centeredText: The main benefits edge solutions provide include **low latency**, **high bandwidth**, **device processing** and **data offload** as well as **trusted computing** and **storage**.
 
 thirdSection:
   featuredimage: /img/role-of-edge-in5g.png

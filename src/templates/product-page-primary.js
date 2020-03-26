@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SplittedSection from '../components/SplittedSection';
 import NonStretchedImage from '../components/NonStretchedImage';
+import generateHTML from '../utils/generateHTML';
 
 export const ProductPageTemplate = ({
   content,
@@ -17,7 +18,7 @@ export const ProductPageTemplate = ({
   thirdSection,
 }) => {
   const PostContent = contentComponent || Content;
-
+  const printText = generateHTML(centeredText);
   return (
     <section className="has-dark-background">
       <section className="section">
@@ -41,6 +42,11 @@ export const ProductPageTemplate = ({
           />
         }
       />
+      <section className="section">
+        <div className="container content">
+          <PostContent content={printText} />
+        </div>
+      </section>
     </section>
   );
 };

@@ -54,6 +54,7 @@
     "react-use": "^13.27.0",
     "react-youtube": "^7.9.0",
     "recompose": "^0.30.0",
+    "showdown": "^1.9.1",
     "uuid": "^3.2.1"
   },
   "keywords": [
