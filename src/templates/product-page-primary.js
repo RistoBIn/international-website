@@ -28,14 +28,17 @@ export const ProductPageTemplate = ({
           <Title title={heading} description={description} position="left" />
         </div>
       </section>
-
-      <ComparisonSection
-        heading={item1vsitem2.heading}
-        subheading={item1vsitem2.subheading}
-        item1={item1vsitem2.item1}
-        item2={item1vsitem2.item2}
-        className=""
-      />
+      {item1vsitem2 ? (
+        <ComparisonSection
+          heading={item1vsitem2.heading}
+          subheading={item1vsitem2.subheading}
+          item1={item1vsitem2.item1}
+          item2={item1vsitem2.item2}
+          className=""
+        />
+      ) : (
+        <></>
+      )}
 
       <SplittedSection
         className="content has-dark-background"
