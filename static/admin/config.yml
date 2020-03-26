@@ -13,6 +13,7 @@ display_url:  https://sealab-com.netlify.com
 
 collections:
 
+#### SIMPLE PAGES ####
   - name: "simple-pages"
     label: "Simple text pages"
     folder: "src/pages/"
@@ -26,6 +27,50 @@ collections:
       - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "Content", name: "body", widget: "markdown"}
   
+#### PRODUCT PAGE TEMPLATE 1 ####
+  - name: "product-pages-primary"
+    label: "Product pages 1 "
+    folder: "src/pages/products/"
+    create: true
+    description: "This is the primary product page template."
+    filter: {field: "templateKey", value: "product-page-primary"}
+    identifier_field: products-primary
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-primary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
+      - {label: "Description", name: "description", widget: "text"}
+      - label: Comparison
+        name: item1vsitem2
+        required: false
+        widget: object
+        fields:
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Subheading", name: "subheading", widget: "string"}
+          - label: "Item 1"
+            name: item1
+            widget: object
+            fields:
+              - {label: "Comparison list", name: "items", widget: "list"}
+          - label: "Item 2"
+            name: item2
+            widget: object
+            fields:
+              - {label: "Comparison list", name: "items", widget: "list"}
+
+      - {label: "First section image", name: "featuredimageSecondary", widget: image }
+      - {label: "First section content", name: "body", widget: "markdown"}
+
+      - {label: "Centered text", name: "centeredText", widget: "markdown"}
+
+      - label: "Last section"
+        widget: object
+        name: thirdSection
+        fields:
+          - {label: "Left image", name: "featuredimage", widget: image }
+          - {label: "Right content", name: "content", widget: "markdown"}
+
   
   - name: "settings"
     label: "Navigation & Footer"
