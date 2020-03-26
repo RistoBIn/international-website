@@ -273,7 +273,7 @@ body {
   }
 }
 
-/****************     NAVIGATION    ********************/
+/****************     NAVIGATION     ********************/
 
 nav.navbar {
   color: $white;
@@ -331,7 +331,9 @@ nav.navbar {
   .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: transparent;
   }
-  /****************     MOBILE MENU    ********************/
+
+  /****************     MOBILE MENU     ********************/
+
   @media only screen and (max-width: $desktop) {
     .navbar-brand {
       figure.image svg {
@@ -458,7 +460,8 @@ nav.navbar {
   }
 }
 
-/****************     FOOTER PAGE    ********************/
+/****************     FOOTER PAGE     ********************/
+
 footer.footer {
   background: none;
   margin: 0;
@@ -601,9 +604,19 @@ footer.footer {
   }
 }
 
-/****************     HOME PAGE    ********************/
+/****************     HOME PAGE     ********************/
 
-/****************     CONTACT PAGE    ********************/
+
+/****************     ABOUT PAGES     ********************/
+
+section#about-template-osc {
+  p {
+    max-width: 930px;
+    margin-right: auto; // litt usikker på hvorvidt denne må være med
+   }
+}
+
+/****************     CONTACT PAGE     ********************/
 
 section.map {
   // nav.navbar.is-transparent {

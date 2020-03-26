@@ -16,23 +16,31 @@ export const AboutPageOSCTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section has-dark-background">
-      <div className="container">
-        <h1>{heading}</h1>
-        <p2>{subheading}</p2>
-        <section id="about--image" className="has-dark-background">
-          <div className="about-image">
-            <StretchedImage
-              fluid={featuredImage.childImageSharp.fluid}
-              objectFit="contain"
-              alt="About image"
-              className="image"
-            />
-          </div>
-        </section>
-        <PostContent content={content} />
-      </div>
-    </section>
+    <>
+      <section id="about-template-osc" className="section has-dark-background">
+        <div className="container title">
+          <h1>{heading}</h1>
+        </div>
+        <div className="container content">
+          <p>{subheading}</p>
+        </div>
+      </section>
+      <section id="about-template-image" className="has-dark-background">
+        <div className="about-image">
+          <StretchedImage
+            fluid={featuredImage.childImageSharp.fluid}
+            objectFit="contain"
+            alt="About image"
+            className="image"
+          />
+        </div>
+      </section>
+      <section id="about-template-osc" className="section has-dark-background">
+        <div className="container content">
+          <PostContent content={content} />
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -24,6 +24,8 @@ menuPaths:
     path: '#'
     title: Projects
   - dropdown:
+      - path: /contact
+        title: Contact
       - path: /vision-strategy
         title: Vision & Strategy
       - path: /leadership
