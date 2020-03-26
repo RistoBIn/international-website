@@ -6,7 +6,7 @@ const SplittedSection = ({
   leftColumn,
   rightColumn,
   className,
-  shouldReorderOnMobile,
+  shouldReorderOnMobile = false,
 }) => {
   if (!leftColumn || !rightColumn) return <></>;
   return (

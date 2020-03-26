@@ -42,11 +42,25 @@ export const ProductPageTemplate = ({
           />
         }
       />
-      <section className="section">
-        <div className="container content">
+      <section className="section centered-free-text">
+        <div className="container content  centered-free-text">
           <PostContent content={printText} />
         </div>
       </section>
+      <SplittedSection
+        className="content has-dark-background"
+        rightColumn={
+          <PostContent content={generateHTML(thirdSection.content)} />
+        }
+        leftColumn={
+          <NonStretchedImage
+            fluid={thirdSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt=""
+            className="image"
+          />
+        }
+      />
     </section>
   );
 };
@@ -133,7 +147,7 @@ export const pageQuery = graphql`
         thirdSection {
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 1180, quality: 100) {
+              fluid(maxWidth: 381, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }

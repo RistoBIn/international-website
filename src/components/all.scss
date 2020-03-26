@@ -255,12 +255,13 @@ body {
 
 .big-paragraph {
   @include text_Light;
-  font-size: 20px;
+  font-size: $fontLarge;
   padding-bottom: 24px;
 }
 
-.medium-paragraph {
+.regular-paragraph {
   @include text_Light;
+  font-size: $fontMedium;
   padding-bottom: 16px;
 }
 
@@ -295,7 +296,21 @@ body {
     color: inherit !important;
   }
 }
-
+.section .centered-free-text.content {
+  max-width: 1022px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  p {
+    font-size: $fontLarge;
+  }
+  strong {
+    font-weight: normal;
+    font-size: inherit;
+    color: $light-blue;
+  }
+  
+}
 /****************     NAVIGATION    ********************/
 
 nav.navbar {

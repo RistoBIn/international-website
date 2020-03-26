@@ -42,6 +42,8 @@ centeredText: The main benefits edge solutions provide include **low latency**, 
 thirdSection:
   featuredimage: /img/role-of-edge-in5g.png
   content: >-
+    ## The role of Edge in 5G
+    
     By 2023, 5G will make up around one-fifth of all mobile data traffic, where 25% of the use-cases will depend on edge computing capabilities. The majority of the new 5G revenue potential is expected to come from enterprise & IoT services, of which many will rely on edge computing. Therefore edge capabilities will be a fundamental technology as part of a 5G infrastructure for any service provider.
 
 ---

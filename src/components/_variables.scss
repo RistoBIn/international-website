@@ -20,6 +20,7 @@ $error: #ED1313;
 $success: #32B576;
 $warning: #F5D37C;
 $footer-background: $midnight-dark-light;
+$light-blue: #3789B5;
 
 //TEXT COLORS
 $text-grey-light: $grey-light;
@@ -78,6 +79,10 @@ $button-width-desktop: 205px;
 
 $primaryFont: 'Open Sans', sans-serif;
 $titleFont: 'Ubuntu', sans-serif;
+
+$fontLarge: 24px;
+$fontMedium: 18px;
+$fontSmall: 16px;
 
 @mixin text_Navbar {
   font-family: $primaryFont;
