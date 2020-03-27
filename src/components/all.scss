@@ -998,13 +998,13 @@ section#project-page-primary .wrapper {
   
   .figure {
     margin-left: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     figcaption {
       text-align: left;
     }
   }
 
-  @media only screen and (min-width: 768px)  {
+  @media only screen and (min-width: $tablet)  {
     grid-template-columns: 330px auto;
     grid-template-areas:
       "header header"
