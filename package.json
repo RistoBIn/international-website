@@ -11,7 +11,9 @@
     "axios": "^0.19.2",
     "bulma": "^0.7.5",
     "classnames": "^2.2.6",
+    "framer-motion": "^1.10.2",
     "gatsby": "^2.19.7",
+    "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.2.39",
     "gatsby-link": "^2.2.22",
     "gatsby-plugin-google-analytics": "^2.1.23",
@@ -52,6 +54,7 @@
     "react-use": "^13.27.0",
     "react-youtube": "^7.9.0",
     "recompose": "^0.30.0",
+    "showdown": "^1.9.1",
     "uuid": "^3.2.1"
   },
   "keywords": [

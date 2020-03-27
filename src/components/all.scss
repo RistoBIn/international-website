@@ -1,12 +1,13 @@
 @import './variables';
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Ubuntu:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Ubuntu:300,400,500,700&display=swap');
 
 $gridColumnWidth: 200px;
 $gridTemplateAuto: repeat(auto-fill, minmax($gridColumnWidth, 1fr));
 
 $primary: $midnight;
+
 
 html,
 body {
@@ -18,25 +19,24 @@ body {
 
   .button {
     width: 100%;
-    //height: 52px;
     padding: 1rem 1rem;
     display: flex;
     align-items: center;
-    height:auto;
+    height: auto;
     @include buttonText;
     @media only screen and (min-width: $desktop) {
-      max-width: 205px;
+      max-width: 260px;
     }
-    & svg{
+    & svg {
       transition: $transition;
     }
-    &.small{
+    &.small {
       padding: 0.8rem 1rem;
     }
-    &.medium{
+    &.medium {
       padding: 1rem 1rem;
     }
-    &.large{
+    &.large {
       padding: 1.1rem 1rem;
     }
     &.is-primary {
@@ -60,10 +60,10 @@ body {
       background-color: $white;
       border: 1px solid transparent;
       color: $text-dark;
-      opacity:0.95;
+      opacity: 0.95;
       &:hover,
       &:focus {
-        opacity:1;
+        opacity: 1;
       }
       svg {
         fill: $text-dark;
@@ -72,7 +72,7 @@ body {
     }
     &.is-transparent {
       background-color: transparent;
-      border: 1px solid rgba(255,255,255,.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: $white;
       &:hover,
       &:focus {
@@ -116,6 +116,20 @@ body {
     }
   }
 
+  a.is-link:not(.button) {
+    padding: 0;
+    @include regularLink;
+    background-color: transparent;
+    border: none;
+    color: $white;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      filter: brightness(90%);
+    }
+  }
+
   .link.has-white-background {
     color: $text-dark;
     svg {
@@ -126,7 +140,7 @@ body {
       border-bottom: 1px solid $border-light-background;
     }
   }
-  .columns{
+  .columns {
     @media screen and (max-width: $tablet) {
       margin-left: 0;
       margin-right: 0;
@@ -149,7 +163,7 @@ body {
     }
   }
 
-  h2 {
+  .content h2, h2 {
     font-family: $titleFont;
     font-style: normal;
     font-weight: 300;
@@ -183,9 +197,9 @@ body {
   h3 {
     font-family: $titleFont;
   }
-  hr{
+  hr {
     background-color: $border-light-background;
-    height:1px;
+    height: 1px;
   }
   .content {
     @include text_Dark;
@@ -202,9 +216,13 @@ body {
       color: #3273dc;
     }
   }
-  .has-dark-background {
+  .has-dark-background, .has-dark-background .content, .has-dark-background.content {
     background: $dark;
     @include text_Light;
+    p, li {
+      @include text_Light;
+    }
+   
   }
   .section {
     @media screen and (max-width: $tablet) {
@@ -215,6 +233,11 @@ body {
 
 .section.is-small {
   padding: 2rem 1.5rem;
+}
+@media screen and (min-width: 769px) {
+  .hero.is-large .hero-body {
+    padding: 18rem 1.5rem;
+  }
 }
 
 .reverse-row-order {
@@ -232,12 +255,13 @@ body {
 
 .big-paragraph {
   @include text_Light;
-  font-size: 20px;
+  font-size: $fontLarge;
   padding-bottom: 24px;
 }
 
-.medium-paragraph {
+.regular-paragraph {
   @include text_Light;
+  font-size: $fontMedium;
   padding-bottom: 16px;
 }
 
@@ -272,14 +296,28 @@ body {
     color: inherit !important;
   }
 }
-
-/****************     NAVIGATION     ********************/
+.section .centered-free-text.content {
+  max-width: 1022px;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  p {
+    font-size: $fontLarge;
+  }
+  strong {
+    font-weight: normal;
+    font-size: inherit;
+    color: $light-blue;
+  }
+  
+}
+/****************     NAVIGATION    ********************/
 
 nav.navbar {
   color: $white;
   background-color: $dark;
   border-bottom: 1px solid $border-dark-background;
-  
+
   &.is-transparent {
     background-color: transparent;
   }
@@ -304,8 +342,8 @@ nav.navbar {
         background-color: transparent;
       }
     }
-    &::after{
-      border-color:#fff;
+    &::after {
+      border-color: #fff;
     }
     &:focus,
     &:hover,
@@ -573,7 +611,7 @@ footer.footer {
     .copyright-text {
       margin: auto 0;
       p {
-        font-family: "Open Sans";
+        font-family: 'Open Sans';
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -638,12 +676,76 @@ section.about-page-template {
   }
 }
 
-/****************     CONTACT PAGE     ********************/
+section#camera--image {
+  .product-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media only screen and (min-width: $tablet) {
+    .product-image {
+      background-size: contain;
+    }
+  }
+}
+
+section.section#inspirational-quote {
+  .wrapper-two-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .bg-image {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    margin: auto;
+    padding: 1.5rem;
+    p {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 170%;
+      strong#quote-author {
+        font-size: 16px;
+      }
+    }
+  }
+  @media only screen and (min-width: $tablet) {
+    padding: 3rem 0 0 0;
+    .wrapper-two-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-size: 0 !important;
+    }
+    .bg-image {
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .content {
+      padding: 3rem;
+      max-width: 625px;
+      margin-left: 0;
+      p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 170%;
+        strong#quote-author {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+/****************     CONTACT PAGE    ********************/
 
 section.map {
-  // nav.navbar.is-transparent {
-  //   background-color: transparent;
-  // }
   background: $dark;
   div#google-maps {
     height: 40vh;
@@ -651,7 +753,7 @@ section.map {
   }
 }
 
-section#offices { 
+section#offices {
   background-color: $background-color-dark;
   padding-top: 0;
   padding-bottom: 0;
@@ -829,4 +931,7 @@ section#contact-form {
     }
   }
 }
+
+
+
 
