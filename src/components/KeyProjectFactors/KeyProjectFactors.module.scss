@@ -1,0 +1,34 @@
+@import '../_variables.scss';
+
+
+$iconSize: 42px;
+
+.wrapper {
+  grid-gap: 30px;
+  margin-left: auto;
+  background: linear-gradient(0deg, #1F2331, #1F2331), #191C27;
+  border-radius: 3px;
+  padding: 20px 0;
+  .heading {
+    @include Title;
+    font-size: 18px;
+    padding: 0 20px 20px 20px;
+    border-bottom: 2px solid $border-dark-background;
+  }
+  .factorItem {
+    padding: 20px 20px 0 20px;
+    .primaryInfo {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 170%;
+    }
+    .description {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 170%;
+      color: $body-light;
+    }
+
+  }
+}

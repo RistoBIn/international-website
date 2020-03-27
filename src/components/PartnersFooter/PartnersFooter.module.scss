@@ -1,0 +1,35 @@
+@import '../_variables.scss';
+
+
+$iconSize: 42px;
+
+.wrapper {
+  max-width: 1412px;
+
+  .hrLine {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .header {
+    margin-bottom: 38px;
+    text-align: center;
+    font-family: $primaryFont;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .image {
+    margin: 0 auto;
+    max-width: 130px;
+  }
+
+  .partnerDescription {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    text-transform: uppercase;
+  }
+}
