@@ -43,7 +43,7 @@ collections:
       - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
       - {label: "Description", name: "description", widget: "text", hint: "Text."}
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
-      - {label: "Image", name: "featuredImage", widget: "image", hint: "Image to use on the page."}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
       - {label: "Content", name: "body", widget: "markdown"}
 
 #### PRODUCT PAGE TEMPLATE 1 ####
