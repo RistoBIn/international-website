@@ -11,7 +11,6 @@ subheading: >-
   efficient 5G converged network concepts, which enable an intelligent hub
   supported by multiple vertical industries.
 featuredImage: /img/5g_project_illustration.png
-featuredImageCaption: ""
 keyFactors:
   heading: Key-factors for the project
   factorItems:

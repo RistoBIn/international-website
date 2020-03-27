@@ -7,7 +7,7 @@ subheading: >-
   Enabling technology for recognition of individual salmon by using computer
   vision and machine learning algorithms. 
 featuredImage: /img/LaksID2_INDISAL.png
-FeaturedImageCaption: Illustration of the INDISAL-project (A.M. Lien/SINTEF Ocean)
+featuredImageCaption: Illustration of the INDISAL-project (A.M. Lien/SINTEF Ocean)
 keyFactors:
   factorItems:
     - description: Project duration
@@ -18,10 +18,9 @@ keyFactors:
 partners:
   heading: Partners
   partnerItems:
-    - description: '""'
-      icon: /img/sintef.svg
+    - icon: /img/sintef.svg
 ---
-\# Melanophore spot-pattern in identification of individual salmon
+# Melanophore spot-pattern in identification of individual salmon
 
 The goal for the INDISAL-project is to enable technology for identification of individual salmon in industrial sea based salmon farming. Based on the insight that Atlantic salmon maintain a unique spot pattern after they are moved from the hatchery to salt water, identification will be done by using the melanophore spot-pattern in the head region as a biometric fingerprint.
 
