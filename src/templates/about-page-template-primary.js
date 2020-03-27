@@ -17,11 +17,11 @@ export const AboutPageOSCTemplate = ({
   return (
     <>
       <section className="section has-dark-background about-page-template">
-        <div className="container title">
-          <h1>{heading}</h1>
-        </div>
-        <div className="container content">
-          <p>{description}</p>
+        <div className="container">
+          <div className="content">
+            <h1>{heading}</h1>
+            <p>{description}</p>
+          </div>
         </div>
       </section>
       <section className="has-dark-background about-page-template">
@@ -34,8 +34,8 @@ export const AboutPageOSCTemplate = ({
         </div>
       </section>
       <section className="section has-dark-background about-page-template">
-        <div className="container content">
-          <PostContent content={content} />
+        <div className="container">
+          <PostContent content={content} className="content" />
         </div>
       </section>
     </>
@@ -50,7 +50,7 @@ const AboutPage = ({ data }) => {
     heading,
     description,
     seoDescription,
-    featuredImage,
+    featuredimage,
   } = frontmatter;
 
   return (
@@ -60,7 +60,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         heading={heading}
         description={description}
-        featuredImage={featuredImage}
+        featuredImage={featuredimage}
       />
     </Layout>
   );
@@ -78,7 +78,7 @@ export const pageQuery = graphql`
         heading
         description
         seoDescription
-        featuredImage {
+        featuredimage {
           childImageSharp {
             fluid(maxHeight: 600) {
               ...GatsbyImageSharpFluid_noBase64
