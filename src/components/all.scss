@@ -1004,6 +1004,9 @@ section#project-page-primary .wrapper {
   .figure {
     margin-left: 0px;
     margin-bottom: 40px;
+    figcaption {
+      text-align: left;
+    }
   }
 
   @media only screen and (min-width: 768px)  {
