@@ -117,6 +117,7 @@ collections:
             fields:
               - {label: "Factor", name: "primaryInfo", widget: "text" }
               - {label: "Factor description", name: "description", widget: "text" }
+      - {label: "Content", name: "body", widget: "markdown"}
       - label: "Partners"
         name: "partners"
         widget: "object"
@@ -128,7 +129,7 @@ collections:
             fields:
               - {label: "Partner logo", name: "icon", widget: image }
               - {label: "Partner description", name: "description", widget: "text", required: false }
-      - {label: "Content", name: "body", widget: "markdown"}
+
 
   - name: "settings"
     label: "Navigation & Footer"
