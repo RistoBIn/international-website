@@ -6,7 +6,7 @@ mainNavigation:
     title: Aquaculture
 secondaryNavigation:
   - path: /products/edge-intelligence
-    title: Edge intelligence
+    title: Edge Intelligence
   - path: /products/software-platform
     title: IoT Bridge
 thirdNavigation:
@@ -15,7 +15,7 @@ thirdNavigation:
   - path: /projects/5G-heart
     title: 5G Heart
   - path: /projects/clean-ocean-iniative
-    title: Clean ocean initative
+    title: Clean Ocean Initative
   - path: /projects/environmental-monitoring
     title: Environmental Monitoring
 fourthNavigation:
@@ -26,9 +26,9 @@ fourthNavigation:
   - path: /leadership
     title: Leadership
   - path: /business-model
-    title: Business model
-  - path: /sealab-ocean-space-center
-    title: SEALAB OCEAN SPACE CENTER
+    title: Business Model
+  - path: /about/sealab-osc
+    title: SEALAB Ocean Space Center
   - path: /social-responsibility
     title: Social Responsibility
   - path: /locations
