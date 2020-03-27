@@ -61,7 +61,12 @@ export default class Index extends React.Component {
             <GoogleMap
               isMarkerShown
               mapCoordinates={activeMap}
-              markers={[trondheimCoordinates, osloCoordinates]}
+              markers={[
+                trondheimCoordinates,
+                osloCoordinates,
+                serbiaCoordinates,
+                berlinCoordinates,
+              ]}
             />
           </div>
         </section>
