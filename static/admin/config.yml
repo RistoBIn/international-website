@@ -90,7 +90,46 @@ collections:
           - {label: "Left image", name: "featuredimage", widget: image }
           - {label: "Right content", name: "content", widget: "markdown"}
 
-  
+#### PROJECT PAGE TEMPLATE 1 ####
+  - name: "project-page-primary"
+    label: "Project Pages 1"
+    folder: "src/pages/projects/"
+    create: true
+    description: "This is the primary project page template."
+    filter: {field: "templateKey", value: "project-page-primary"}
+    identifier_field: projects-primary
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-primary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
+      - {label: "Subheading", name: "subheading", widget: "text"}
+      - {label: "Featured image", name: "featuredImage", widget: image }
+      - {label: "Featured image caption", name: "FeaturedImageCaption", widget: "text", default: ""}
+      - label: "Key factors"
+        name: "keyFactors"
+        widget: "object"
+        fields:
+          - {label: "Key features heading", name: "heading", widget: "string", hint: "Dette er overskriften i key factors-boksen"}
+          - label: "Key features"
+            name: "factorItems"
+            widget: list
+            fields:
+              - {label: "Factor", name: "primaryInfo", widget: "text" }
+              - {label: "Factor description", name: "description", widget: "text" }
+      - label: "Partners"
+        name: "partners"
+        widget: "object"
+        fields:
+          - {label: "Partners heading", name: "heading", widget: "string" }
+          - label: "Partners list"
+            name: "partnerItems"
+            widget: list
+            fields:
+              - {label: "Partner logo", name: "icon", widget: image }
+              - {label: "Partner description", name: "description", widget: "text" }
+      - {label: "Content", name: "body", widget: "markdown"}
+
   - name: "settings"
     label: "Navigation & Footer"
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
