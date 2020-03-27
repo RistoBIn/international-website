@@ -14,17 +14,25 @@ const SectionList = ({ items }) => {
   return (
     <>
       {items.map(item => {
-        console.log(item);
-
         return (
-          <section className={classNames('section', 'has-dark-background')}>
+          <section
+            className={classNames(
+              'section',
+              'has-dark-background',
+              styles.section,
+            )}
+          >
             <div className="container content">
               <SplittedSection
-                leftColumn={<TitleAndImage {...item} />}
+                leftColumnCSS={styles.leftColumn}
+                leftColumn={
+                  <TitleAndImage {...item} className={styles.leftColumn} />
+                }
                 rightColumn={
                   <PostContent content={generateHTML(item.content)} />
                 }
-                className=""
+                rightColumnCSS={styles.rightColumn}
+                className={styles.content}
               />
             </div>
           </section>
@@ -34,30 +42,30 @@ const SectionList = ({ items }) => {
   );
 };
 
-const TitleAndImage = ({ heading, subheading, image }) => {
+const TitleAndImage = ({ heading, subheading, featuredimage, className }) => {
   const SubheadingResolved = () => {
     if (subheading)
       return <p className={classNames(styles.subheading)}>{subheading}</p>;
     return <></>;
   };
   const ImageResolved = () => {
-    if (image && typeof image === 'object')
+    if (featuredimage && typeof featuredimage === 'object')
       return (
         <NonStretchedImage
           objectFit="contain"
-          alt=""
-          className="image"
-          {...image}
+          alt={heading}
+          className={classNames('image', styles.image)}
+          {...featuredimage}
         />
       );
     return <></>;
   };
   return (
-    <>
+    <div className={className}>
       <SubheadingResolved />
       <h2 className={classNames(styles.heading)}>{heading}</h2>
       <ImageResolved />
-    </>
+    </div>
   );
 };
 

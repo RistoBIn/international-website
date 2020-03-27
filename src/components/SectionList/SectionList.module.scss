@@ -1,25 +1,21 @@
 @import '../_variables.scss';
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    .leftColumn.switchColumnsOnMobile {
-        grid-row: 2;
-    }
-    .rightColumn.switchColumnsOnMobile {
-        grid-row: 1;
-    }
-    .leftColumn, .rightColumn {
-        padding: 1rem;
+.section {
+  .content {
+    .leftColumn {
+      margin: 0;
+      .heading,
+      .subheading {
+        margin-top: 0;
+        margin-bottom: .5em;
+      }
+      .image {
+        padding-top: 3rem;
+      }
     }
 
     @media only screen and (min-width: $tablet) {
-        grid-template-columns: 1fr 1fr;
-        .leftColumn, .rightColumn {
-            grid-row: 1 !important;
-            margin: auto 0;
-            padding: 2rem;
-        }
+
     }
+  }
 }

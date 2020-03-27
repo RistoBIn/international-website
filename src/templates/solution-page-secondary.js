@@ -19,12 +19,9 @@ export const SolutionPageTemplate = ({
     <section className="has-dark-background">
       <Hero heading={heading} description={description} />
       <SectionList items={splitSections} />
-      <section className="section">
-        <div className="container">array section</div>
-      </section>
-      <section className="section has-dark-background">
-        <div className="container content is-left-aligned">
-          <PostContent content={content} />
+      <section className="section is-medium has-dark-background">
+        <div className="container">
+          <PostContent content={content} className="content is-left-aligned" />
         </div>
       </section>
     </section>

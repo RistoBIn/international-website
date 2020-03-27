@@ -4,7 +4,9 @@ import styles from './SplittedSection.module.scss';
 
 const SplittedSection = ({
   leftColumn,
+  leftColumnCSS,
   rightColumn,
+  rightColumnCSS,
   className,
   shouldReorderOnMobile = false,
 }) => {
@@ -14,14 +16,14 @@ const SplittedSection = ({
       <div className="container">
         <div className={styles.wrapper}>
           <div
-            className={classNames(styles.leftColumn, {
+            className={classNames(styles.leftColumn, leftColumnCSS, {
               [styles.switchColumnsOnMobile]: shouldReorderOnMobile,
             })}
           >
             {leftColumn}
           </div>
           <div
-            className={classNames(styles.rightColumn, {
+            className={classNames(styles.rightColumn, rightColumnCSS, {
               [styles.switchColumnsOnMobile]: shouldReorderOnMobile,
             })}
           >
