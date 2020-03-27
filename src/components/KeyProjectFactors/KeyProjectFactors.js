@@ -2,6 +2,15 @@ import React from 'react';
 import styles from './KeyProjectFactors.module.scss';
 
 const KeyProjectFactors = ({ keyFactors }) => {
+  if (
+    !keyFactors ||
+    !keyFactors.heading ||
+    !keyFactors.factorItems ||
+    keyFactors.factorItems.length < 1 ||
+    !keyFactors.factorItems[0].description ||
+    !keyFactors.factorItems[0].primaryInfo
+  )
+    return <></>;
   return (
     <>
       <div id="key-factors" className={styles.wrapper}>
