@@ -18,7 +18,9 @@ keyFactors:
 partners:
   heading: Partners
   partnerItems:
-    - icon: /img/sintef.svg
+    - icon: /img/sintef-white.svg
+    - icon: /img/ntnu-logo-white.svg
+    - icon: /img/safepath-logo-white.svg
 ---
 # Melanophore spot-pattern in identification of individual salmon
 
