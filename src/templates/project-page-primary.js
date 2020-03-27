@@ -50,7 +50,9 @@ export const ProjectPageTemplate = ({
               alt="Product image"
               className="image"
             />
-            <figcaption id="project-image-caption" >{featuredImageCaption}</figcaption>
+            <figcaption id="project-image-caption">
+              {featuredImageCaption}
+            </figcaption>
           </figure>
           <PostContent id="project-page-post-content" content={content} />
         </section>
@@ -117,10 +119,6 @@ export const pageQuery = graphql`
           factorItems {
             description
             primaryInfo
-            icon {
-              extension
-              publicURL
-            }
           }
         }
         partners {

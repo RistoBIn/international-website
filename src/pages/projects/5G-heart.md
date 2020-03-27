@@ -11,18 +11,15 @@ subheading: >-
   efficient 5G converged network concepts, which enable an intelligent hub
   supported by multiple vertical industries.
 featuredImage: /img/5g_project_illustration.png
-featuredImageCaption: hello
+featuredImageCaption: ""
 keyFactors:
   heading: Key-factors for the project
   factorItems:
-    - icon: /img/icon-classic-clock.svg
-      primaryInfo: "01.06.19 - 31.05.22"
+    - primaryInfo: "01.06.19 - 31.05.22"
       description: Project duration
-    - icon: /img/icon-euro.svg
-      primaryInfo: € 14.322.073,75
+    - primaryInfo: € 14.322.073,75
       description: Overall budget
-    - icon: /img/icon-euro.svg
-      primaryInfo: € 510.625
+    - primaryInfo: € 510.625
       description: SEALAB Budget
 partners:
   heading: Partners

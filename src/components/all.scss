@@ -998,6 +998,14 @@ div#project-page-primary.wrapper {
     margin-left: 0px;
     margin-bottom: 40px;
   }
+  h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 110%;
+    color: #FFFFFF;
+  }
 
   @media only screen and (min-width: 768px)  {
     margin: auto;
@@ -1028,8 +1036,8 @@ div#project-page-primary.wrapper {
       }
     }
     #project-content {
-    margin-left: 0px;
-    max-width: 1050px;
+      margin-left: 0px;
+      max-width: 1050px;
       p {
         max-width: 930px;
         margin-left: 0px;
