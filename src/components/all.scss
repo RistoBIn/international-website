@@ -1019,10 +1019,11 @@ section#project-page-primary .wrapper {
     .figure {
       margin-right: 0px;
       margin-bottom: 40px;
+      figcaption {
+        text-align: right;
+      }
     }
-    figcaption {
-      text-align: right;
-    }
+
 
     .content {
       margin-left: 0px;
