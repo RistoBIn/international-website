@@ -18,10 +18,8 @@ export const AboutPageOSCTemplate = ({
     <>
       <section className="section has-dark-background about-page-template">
         <div className="container">
-          <div className="content">
-            <h1 className="section--title">{heading}</h1>
-            <p className="section--description">{description}</p>
-          </div>
+          <h1 className="section--title">{heading}</h1>
+          <p className="section--description">{description}</p>
         </div>
       </section>
       <section className="has-dark-background about-page-template">
