@@ -251,6 +251,13 @@ body {
       font-size: $fontMedium;
     }
   }
+  .section--subheading {
+    @include text_Light;
+    padding-bottom: 20px;
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 10px;
+    }
+  }
   .section--title, 
   .section--description,
   .section--subheading {
@@ -679,7 +686,7 @@ footer.footer {
   }
 }
 
-/****************     ABOUT PAGES     ********************/
+/****************     PROJECT PAGES     ********************/
 
 section.project-page-template {
   .content {
@@ -693,18 +700,32 @@ section.project-page-template {
     }
   } 
 
-  .project-page-template-image .image {
-    width: 100%;
-    height: 375px;
+  .figure {
+    text-align: center;
+    .image {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 375px;
+    }
+    .caption {
+      font-size: 18px;
+      line-height: 170%;
+      max-width: 375px;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     .content {
       padding: 0;
     } 
-
-    .project-page-template-image .image {
-      height: 100%;
+    .figure {
+      .image {
+        width: 1410px;
+        height: 100%;
+      }
+      .caption {
+        max-width: 1410px;
+      }
     }
   }
 }

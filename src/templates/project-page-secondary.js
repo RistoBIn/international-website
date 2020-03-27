@@ -2,7 +2,6 @@ import React from 'react';
 
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import NonStretchedImage from '../components/NonStretchedImage';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
@@ -11,7 +10,10 @@ export const ProjectPageTemplate = ({
   contentComponent,
   heading,
   description,
-  featuredImage,
+  featuredimage,
+  featuredimageCaption,
+  primarySection,
+  splitSectionImage,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -19,25 +21,44 @@ export const ProjectPageTemplate = ({
     <>
       <section className="section has-dark-background project-page-template">
         <div className="container">
-          <div className="content">
-            <h1>{heading}</h1>
-            <p>{description}</p>
-          </div>
+          <h1 className="section--title">{heading}</h1>
+          <p className="section--description">{description}</p>
         </div>
       </section>
       <section className="has-dark-background project-page-template">
-        <div className="project-page-template-image">
-          <NonStretchedImage
-            fluid={featuredImage.childImageSharp.fluid}
+        <figure className="figure">
+          <Img
+            fluid={featuredimage.childImageSharp.fluid}
             alt="About image"
-            className="image"
-            objectFit="contain"
+            className="image container"
           />
-        </div>
+          <figcaption className="caption container">
+            {featuredimageCaption}
+          </figcaption>
+        </figure>
       </section>
       <section className="section has-dark-background project-page-template">
         <div className="container">
-          <PostContent content={content} className="content" />
+          <h1 className="section--subheading">{primarySection.heading}</h1>
+        </div>
+        <div className="container">
+          <p className="section--description">{primarySection.description}</p>
+        </div>
+      </section>
+      <section id="inspirational-quote" className="section has-dark-background">
+        <div
+          className="wrapper-two-split"
+          style={{
+            background: `linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)),  url(${splitSectionImage.publicURL})`,
+          }}
+        >
+          <div
+            style={{ backgroundImage: `url(${splitSectionImage.publicURL})` }}
+            className="bg-image"
+          />
+          <>
+            <PostContent content={content} className="content" />
+          </>
         </div>
       </section>
     </>
@@ -53,6 +74,9 @@ const ProjectPage = ({ data }) => {
     description,
     seoDescription,
     featuredimage,
+    featuredimageCaption,
+    primarySection,
+    splitSection,
   } = frontmatter;
 
   return (
@@ -62,7 +86,10 @@ const ProjectPage = ({ data }) => {
         contentComponent={HTMLContent}
         heading={heading}
         description={description}
-        featuredImage={featuredimage}
+        featuredimage={featuredimage}
+        featuredimageCaption={featuredimageCaption}
+        primarySection={primarySection}
+        splitSectionImage={splitSection.bgimage}
       />
     </Layout>
   );
@@ -86,6 +113,16 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFluid_noBase64
               presentationWidth
             }
+          }
+        }
+        featuredimageCaption
+        primarySection {
+          heading
+          description
+        }
+        splitSection {
+          bgimage {
+            publicURL
           }
         }
       }

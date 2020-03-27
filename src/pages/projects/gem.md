@@ -1,5 +1,5 @@
 ---
-templateKey: project-page-secondary
+templateKey: project-page-primary
 title: Environment Monitoring
 seoDescription: >-
   Environment Monitoring
