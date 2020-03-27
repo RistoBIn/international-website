@@ -136,51 +136,51 @@ collections:
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
     files: 
       - file: "src/pages/innstillinger/navbar.md"
-        label: "Navigasjon"
+        label: "Navigation"
         name: "navbar"
         fields: 
           - label: "Links"
-            name: "menuLinks"
+            name: "menuPaths"
             widget: "list"
             fields: 
               - {label: Title, name: title, widget: string}
-              - {label: Link, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Link, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
               - label: Dropdown
                 name: dropdown
                 widget: list
                 hint: "Hvis tom, så vises det ingen dropdown eller pil."
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Link, name: link, widget: string}
+                  - {label: Link, name: path, widget: string}
       - file: "src/pages/innstillinger/footer.md"
         label: "Footer"
         name: "footer"
         fields: 
-          - label: "1 - Hovedsider"
+          - label: "Main navigation"
             name: "mainNavigation"
             widget: "list"
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "2 - Apper"
-            name: "softwareNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "3 - Hardware"
-            name: "hardwareNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
-          - label: "4 - Om"
+          - label: "Products"
             name: "secondaryNavigation"
             widget: "list"
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "Bedriftskontorer"
+          - label: "Projects"
+            name: "thirdNavigation"
+            widget: "list"
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
+          - label: "About"
+            name: "fourthNavigation"
+            widget: "list"
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "Company offices"
             name: "companyOffices"
             widget: "list"
             fields: 
