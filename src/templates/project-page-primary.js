@@ -43,12 +43,12 @@ export const ProjectPageTemplate = ({
           </figure>
           <PostContent id="content" content={content} />
         </section>
-      </div>
 
-      <PartnersFooter
-        partners={partners}
-        className="partners is-hidden-mobile"
-      />
+        <PartnersFooter
+          partners={partners}
+          className="partners is-hidden-mobile"
+        />
+      </div>
     </section>
   );
 };
