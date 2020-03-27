@@ -6,13 +6,12 @@ import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import KeyProjectFactors from '../components/KeyProjectFactors';
 import PartnersFooter from '../components/PartnersFooter';
-import Title from '../components/Title';
 
 export const ProjectPageTemplate = ({
   content,
   contentComponent,
   heading,
-  subheading,
+  description,
   featuredImage,
   keyFactors,
   partners,
@@ -20,21 +19,14 @@ export const ProjectPageTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
   return (
-    <div className="section has-dark-background">
-      <div
-        id="project-page-primary"
-        className="wrapper section has-dark-background"
-      >
+    <section id="project-page-primary" className="section has-dark-background wrapper">
+
         <section
-          id="project-page-heading"
-          className="header has-dark-background"
         >
-          <Title
-            id="project-page-title"
-            title={heading}
-            description={subheading}
-            position="left"
-          />
+        <div className="container">
+          <h1 className="section--title">{heading}</h1>
+          <p className="section--description">{description}</p>
+        </div>
         </section>
         <section
           id="key-project-factors"
@@ -61,7 +53,7 @@ export const ProjectPageTemplate = ({
           className="partners is-hidden-mobile"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -75,7 +67,7 @@ const ProjectPage = ({ data }) => {
     featuredImageCaption,
     keyFactors,
     partners,
-    subheading,
+    description,
     featuredImage,
   } = frontmatter;
 
@@ -85,7 +77,7 @@ const ProjectPage = ({ data }) => {
         content={html}
         contentComponent={HTMLContent}
         heading={heading}
-        subheading={subheading}
+        description={description}
         featuredImage={featuredImage}
         keyFactors={keyFactors}
         partners={partners}

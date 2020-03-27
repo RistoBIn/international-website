@@ -103,7 +103,7 @@ collections:
       - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
       - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
-      - {label: "Subheading", name: "subheading", widget: "text"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured image", name: "featuredImage", widget: image }
       - {label: "Featured image caption", name: "featuredImageCaption", widget: "text", required: false }
       - label: "Key factors"

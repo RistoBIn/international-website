@@ -4,7 +4,7 @@ title: 5G Heart
 heading: 5G Heart
 seoDescription: >-
   5G Heart seoDescription bla bla
-subheading: >-
+description: >-
   5G-HEART (5G HEalth AquacultuRe and Transport validation trials) will deploy
   innovative digital use cases involving healthcare, transport and aquaculture
   industry partnerships. The overall objective is to define and validate the cost
