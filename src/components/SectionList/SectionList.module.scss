@@ -1,12 +1,22 @@
 @import '../_variables.scss';
 
-.image {
-    margin: auto;
-}
-
-@media only screen and (min-width: $desktop){
-    .section__item__content {
-        padding: 5rem !important;
+.section {
+  .content {
+    .leftColumn {
+      margin: 0;
+      .heading,
+      .subheading {
+        margin-top: 0;
+				margin-bottom: .5em;
+				max-width: 500px;
+      }
+      .image {
+        padding-top: 3rem;
+      }
     }
-}
 
+    @media only screen and (min-width: $tablet) {
+
+    }
+  }
+}

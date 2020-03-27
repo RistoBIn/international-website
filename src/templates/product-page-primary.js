@@ -25,7 +25,8 @@ export const ProductPageTemplate = ({
     <section className="has-dark-background">
       <section className="section">
         <div className="container">
-          <Title title={heading} description={description} position="left" />
+          <h1 className="section--title">{heading}</h1>
+          <p className="section--description">{description}</p>
         </div>
       </section>
       {item1vsitem2 ? (
