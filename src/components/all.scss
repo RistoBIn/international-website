@@ -237,6 +237,7 @@ body {
   .section--title {
     @include PageTitle;
     font-size: 56px;
+    padding-bottom: 30px;
     @media screen and (max-width: $tablet) {
       font-size: 38px;
       line-height: 46px;
@@ -747,7 +748,7 @@ section.section#inspirational-quote {
     }
   }
   @media only screen and (min-width: $tablet) {
-    padding: 3rem 0 0 0;
+    padding: 3rem 0;
     .wrapper-two-split {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -762,7 +763,7 @@ section.section#inspirational-quote {
     }
     .content {
       padding: 3rem;
-      max-width: 625px;
+      max-width: 650px;
       margin-left: 0;
       p {
         font-weight: 300;

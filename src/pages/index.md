@@ -2,7 +2,7 @@
 templateKey: index-page
 title: SEALAB
 seoDescription: SEALAB's international website
-heading: Play in our world
+heading: More than meets the eye
 bgimage: /img/subsea-waves.jpg
 items:
   - description: Billion USD yearly impact for poor ocean management
