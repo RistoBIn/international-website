@@ -16,8 +16,8 @@ thirdNavigation:
     title: 5G Heart
   - path: /projects/clean-ocean-iniative
     title: Clean Ocean Initative
-  - path: /projects/environmental-monitoring
-    title: Environmental Monitoring
+  - path: /projects/gem
+    title: Environment Monitoring
 fourthNavigation:
   - path: /contact
     title: Contact

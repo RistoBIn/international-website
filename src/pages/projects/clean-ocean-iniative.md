@@ -1,15 +1,20 @@
 ---
 templateKey: project-page-secondary
 title: Clean Ocean Initative
-heading: Clean Ocean Initative
 seoDescription: >-
-  Clean Ocean Initative seoDescription bla bla
+  Clean Ocean Initative
+heading: Clean Ocean Initative
 description: >-
-  Clean Ocean Initative description bla bla
+  This initiative is our contribution to keeping the oceans clean from plastic and other human waste.
+featuredimage: /img/clean-ocean-initiative-one.png
+
 ---
 
+## Social Responsibility
 
--------------------------- THIS IS ONLY A DUMMY MOCKUP PAGE --------------------------
+Every year millions of tons of plastic and other human waste enter the oceans. This waste has a negative impact on a high number of marine species, threatening their survival. As a company that is also in part dependent on the ocean, SEALAB has a corporate social responsibility to help mitigate the danger of a polluted ocean space. To combat the alarming rate at which foreign elements enter the oceans SEALAB, inspired by the project The Ocean Cleanup, is contributing to keeping the oceans healthy by cleaning beaches and removing plastic waste wherever we find it.
 
-Production of seafood has increased steadily over the last five decades and as of 2009, more than 50% of seafood was produced by Clean Ocean Initative. The Clean Ocean Initative industry is facing major challenges that must be rectified in order to ensure the quality and well being of the fish, while keeping the production at a responsible and sustainable level for present and future generations. Addressing these issues, requires comprehensive video surveillance in the fish cages so that the proper analysis of the fish welfare can be carried out.
+
+
+
 
