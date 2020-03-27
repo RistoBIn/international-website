@@ -237,6 +237,7 @@ body {
   .section--title {
     @include PageTitle;
     font-size: 56px;
+    padding-bottom: 30px;
     @media screen and (max-width: $tablet) {
       font-size: 38px;
       line-height: 46px;
