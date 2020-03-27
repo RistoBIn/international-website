@@ -29,7 +29,7 @@ partners:
     - icon: /img/TELENOR-WHITE.png
 ---
 
-# Utility, efficient processes, safety
+## Utility, efficient processes, safety
 
 Healthcare, transport and aquaculture, verticals are hugely important in Europe,
 in terms of jobs, size and export trade. Moreover, they are vital from a social

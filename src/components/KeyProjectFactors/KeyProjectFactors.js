@@ -13,7 +13,7 @@ const KeyProjectFactors = ({ keyFactors }) => {
     return <></>;
   return (
     <>
-      <aside id="key-factors" className={styles.wrapper}>
+      <div id="key-factors" className={styles.wrapper}>
         <h3 className={styles.heading}>{keyFactors.heading}</h3>
         {keyFactors.factorItems.map(factor => (
           <div className={styles.factorItem}>
@@ -21,7 +21,7 @@ const KeyProjectFactors = ({ keyFactors }) => {
             <p className={styles.primaryInfo}> {factor.primaryInfo} </p>
           </div>
         ))}
-      </aside>
+      </div>
     </>
   );
 };

@@ -201,6 +201,14 @@ body {
     background-color: $border-light-background;
     height: 1px;
   }
+  figcaption {
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-style: normal !important;
+    color: $body-light;
+    margin-top: 12px;
+  }
+
   .content {
     @include text_Dark;
     p,
@@ -216,6 +224,7 @@ body {
       color: #3273dc;
     }
   }
+  
   .has-dark-background,
   .has-dark-background .content,
   .has-dark-background.content {
@@ -967,15 +976,13 @@ section#contact-form {
 }
 
 
-div#project-page-primary.wrapper {
-
+section#project-page-primary .wrapper {
   display: grid;
   grid-gap: 1em;
   grid-template-areas:
   "header"
   "sidebar"
   "content"
-  "sidebar2"
   "partners";
 
   .sidebar {
@@ -998,18 +1005,8 @@ div#project-page-primary.wrapper {
     margin-left: 0px;
     margin-bottom: 40px;
   }
-  h1 {
-    font-family: Ubuntu;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 56px;
-    line-height: 110%;
-    color: #FFFFFF;
-  }
 
   @media only screen and (min-width: 768px)  {
-    margin: auto;
-    max-width: 1412px;
     grid-template-columns: 330px auto;
     grid-template-areas:
       "header header"
@@ -1021,21 +1018,10 @@ div#project-page-primary.wrapper {
       margin-bottom: 40px;
     }
     figcaption {
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 170%;
       text-align: right;
-      color: #DBE0EA;
-      margin-top: 12px;
     }
-    #project-page-heading {
-      p {
-        max-width: 930px;
-      }
-    }
-    #project-content {
+
+    .content {
       margin-left: 0px;
       max-width: 1050px;
       p {

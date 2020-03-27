@@ -19,22 +19,17 @@ export const ProjectPageTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
   return (
-    <section id="project-page-primary" className="section has-dark-background wrapper">
-
-        <section
-        >
-        <div className="container">
+    <section id="project-page-primary" className="section has-dark-background ">
+      <div className="container wrapper">
+        <section className="header">
           <h1 className="section--title">{heading}</h1>
           <p className="section--description">{description}</p>
-        </div>
         </section>
-        <section
-          id="key-project-factors"
-          className="sidebar has-dark-background"
-        >
+
+        <aside className="sidebar">
           <KeyProjectFactors keyFactors={keyFactors} />
-        </section>
-        <section id="project-content" className="content has-dark-background">
+        </aside>
+        <section className="content has-dark-background">
           <figure className="figure">
             <Img
               fluid={featuredImage.childImageSharp.fluid}
@@ -46,13 +41,14 @@ export const ProjectPageTemplate = ({
               {featuredImageCaption}
             </figcaption>
           </figure>
-          <PostContent id="project-page-post-content" content={content} />
+          <PostContent id="content" content={content} />
         </section>
-        <PartnersFooter
-          partners={partners}
-          className="partners is-hidden-mobile"
-        />
       </div>
+
+      <PartnersFooter
+        partners={partners}
+        className="partners is-hidden-mobile"
+      />
     </section>
   );
 };
@@ -95,7 +91,11 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        title
+        seoDescription
+        heading
         description
+
         featuredImage {
           childImageSharp {
             fluid(maxHeight: 600) {
@@ -105,7 +105,6 @@ export const pageQuery = graphql`
           }
         }
         featuredImageCaption
-        heading
         keyFactors {
           heading
           factorItems {
@@ -129,10 +128,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        title
-        templateKey
-        seoDescription
-        subheading
       }
     }
   }
