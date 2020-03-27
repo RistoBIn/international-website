@@ -202,18 +202,19 @@ body {
     height: 1px;
   }
   .content {
-    @include text_Dark;
-    p,
-    li,
-    a,
-    strong {
-      @include text_Dark;
+    h1, h2 {
+      color: $white;
     }
     p strong {
       font-weight: 700;
     }
     a {
       color: #3273dc;
+    }
+    @media screen and (max-width: $tablet) {
+      h1, h2 {
+        padding-top: 30px;
+      }
     }
   }
   .has-dark-background,
@@ -246,6 +247,7 @@ body {
   }
   .section--description {
     @include text_Light;
+    color: $body-light !important;
     font-size: 20px;
     @media screen and (max-width: $tablet) {
       font-size: $fontMedium;
@@ -260,12 +262,52 @@ body {
       margin-right: auto;
       text-align: left;
     }
-
   }
 
-  .content.is-left-aligned {
-    max-width: 930px;
-    margin-left: 0;
+  &.has-dark-background {
+    color: $white;
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    strong {
+      color: $white;
+    }
+  }
+  &.has-light-dark-background {
+    color: $white;
+    background-color: $background-color-light-dark;
+    strong,
+    h1,
+    h2,
+    h3,
+    li,
+    p,
+    p strong {
+      color: inherit !important;
+    }
+  }
+  .content {
+    &.centered-free-text {
+      max-width: 1022px;
+      margin: auto;
+      text-align: center;
+      padding: 1rem;
+      p {
+        font-size: $fontLarge;
+      }
+      strong {
+        font-weight: normal;
+        font-size: inherit;
+        color: $light-blue;
+      }
+    }
+    &.is-left-aligned {
+      max-width: 950px;
+      margin-right: auto;
+      margin-left: 0;
+    }
   }
 }
 
@@ -309,45 +351,6 @@ body {
   line-height: 100%;
 }
 
-.section.has-dark-background {
-  color: $white;
-  h1,
-  h2,
-  h3,
-  p,
-  li,
-  strong {
-    color: $white;
-  }
-}
-
-.section.has-light-dark-background {
-  color: $white;
-  background-color: $background-color-light-dark;
-  strong,
-  h1,
-  h2,
-  h3,
-  li,
-  p,
-  p strong {
-    color: inherit !important;
-  }
-}
-.section .centered-free-text.content {
-  max-width: 1022px;
-  margin: auto;
-  text-align: center;
-  padding: 1rem;
-  p {
-    font-size: $fontLarge;
-  }
-  strong {
-    font-weight: normal;
-    font-size: inherit;
-    color: $light-blue;
-  }
-}
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
@@ -683,7 +686,7 @@ footer.footer {
 
 section.about-page-template {
   .content {
-    h1 p,
+    p,
     li {
       font-size: 20px;
     }
@@ -695,10 +698,6 @@ section.about-page-template {
   }
 
   @media screen and (min-width: $desktop) {
-    .content {
-      padding: 0;
-    }
-
     .about-page-template-image .image {
       height: 100%;
     }
@@ -736,7 +735,7 @@ section.section#inspirational-quote {
     padding: 1.5rem;
     p {
       font-weight: 300;
-      font-size: 24px;
+      font-size: $fontLarge;
       line-height: 170%;
       strong#quote-author {
         font-size: 16px;
