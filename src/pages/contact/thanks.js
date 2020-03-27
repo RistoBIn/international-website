@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 export default () => (
   <Layout>
-    <section className="section">
+    <section className="section has-dark-background is-large">
       <div className="container">
         <div className="content">
           <h1>Thank you for reaching out!</h1>
