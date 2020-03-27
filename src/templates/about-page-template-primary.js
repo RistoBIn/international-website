@@ -19,8 +19,8 @@ export const AboutPageOSCTemplate = ({
       <section className="section has-dark-background about-page-template">
         <div className="container">
           <div className="content">
-            <h1>{heading}</h1>
-            <p>{description}</p>
+            <h1 className="section--title">{heading}</h1>
+            <p className="section--description">{description}</p>
           </div>
         </div>
       </section>
@@ -35,7 +35,7 @@ export const AboutPageOSCTemplate = ({
       </section>
       <section className="section has-dark-background about-page-template">
         <div className="container">
-          <PostContent content={content} className="content" />
+          <PostContent content={content} className="content is-left-aligned" />
         </div>
       </section>
     </>

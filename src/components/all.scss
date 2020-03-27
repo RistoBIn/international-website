@@ -233,9 +233,39 @@ body {
   }
 }
 
-.section .content.is-left-aligned {
-  max-width: 930px;
-  margin-left: 0;
+.section {
+  .section--title {
+    @include PageTitle;
+    font-size: 56px;
+    @media screen and (max-width: $tablet) {
+      font-size: 38px;
+      line-height: 46px;
+      padding-bottom: 20px;
+    }
+  }
+  .section--description {
+    @include text_Light;
+    font-size: 20px;
+    @media screen and (max-width: $tablet) {
+      font-size: $fontMedium;
+    }
+  }
+  .section--title, 
+  .section--description,
+  .section--subheading {
+    max-width: 950px;
+    &:not(.has-text-centered) {
+      margin-left: 0;
+      margin-right: auto;
+      text-align: left;
+    }
+
+  }
+
+  .content.is-left-aligned {
+    max-width: 930px;
+    margin-left: 0;
+  }
 }
 
 .section.is-small {
@@ -656,11 +686,11 @@ section.about-page-template {
     max-width: 930px;
     margin-right: auto;
     padding: 0 15px;
-    h1
-    p, li {
+    h1 p,
+    li {
       font-size: 20px;
     }
-  } 
+  }
 
   .about-page-template-image .image {
     width: 100%;
@@ -670,7 +700,7 @@ section.about-page-template {
   @media screen and (min-width: $desktop) {
     .content {
       padding: 0;
-    } 
+    }
 
     .about-page-template-image .image {
       height: 100%;
