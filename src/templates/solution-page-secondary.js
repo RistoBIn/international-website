@@ -3,23 +3,27 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+import Hero from '../components/Hero';
+import SectionList from '../components/SectionList';
 
 export const SolutionPageTemplate = ({
   content,
   contentComponent,
   description,
   heading,
+  splitSections,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section has-dark-background">
-      <div className="container">
-        <h1>{heading}</h1>
-        <p>{description}</p>
-        <p>This is soution-page-secondary</p>
-        <PostContent content={content} />
-      </div>
+    <section className="has-dark-background">
+      <Hero heading={heading} description={description} />
+      <SectionList items={splitSections} />
+      <section className="section is-medium has-dark-background">
+        <div className="container">
+          <PostContent content={content} className="content is-left-aligned" />
+        </div>
+      </section>
     </section>
   );
 };
@@ -27,7 +31,13 @@ export const SolutionPageTemplate = ({
 const SolutionPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   if (!frontmatter) return <></>;
-  const { title, seoDescription, heading, description } = frontmatter;
+  const {
+    title,
+    seoDescription,
+    heading,
+    description,
+    splitSections,
+  } = frontmatter;
 
   return (
     <Layout seoTitle={title} seoDescription={seoDescription}>
@@ -36,6 +46,7 @@ const SolutionPage = ({ data }) => {
         contentComponent={HTMLContent}
         heading={heading}
         description={description}
+        splitSections={splitSections}
       />
     </Layout>
   );
@@ -50,9 +61,24 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        heading
         seoDescription
         description
-        heading
+        splitSections {
+          heading
+          content
+          subheading
+          featuredimage {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxWidth: 600, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+        }
       }
     }
   }

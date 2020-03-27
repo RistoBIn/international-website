@@ -1,42 +1,49 @@
 ---
 menuPaths:
   - dropdown:
-      - path: /solutions/aquaculture
+      - path: /solutions/aquaculture/
         title: Aquaculture
+      - path: /solutions/military-and-defense/
+        title: Military & Defense
     path: '#'
     title: Solutions
   - dropdown:
-      - path: /products/edge-intelligence
+      - path: /products/edge-intelligence/
         title: Edge Intelligence
-      - path: /products/software-platform
+      - path: /products/software-platform/
         title: IoT Bridge
     path: '#'
     title: Products
   - dropdown:
-      - path: /projects/indisal
+      - path: /projects/indisal/
         title: Indisal
-      - path: /projects/5G-heart
+      - path: /projects/5G-heart/
         title: 5G Heart
-      - path: /projects/clean-ocean-iniative
+      - path: /projects/clean-ocean-iniative/
         title: Clean Ocean Initiative
+<<<<<<< HEAD
       - path: /projects/gem
         title: Environment Monitoring
+=======
+      - path: /projects/environmental-monitoring/
+        title: Environmental Monitoring
+>>>>>>> master
     path: '#'
     title: Projects
   - dropdown:
-      - path: /contact
+      - path: /contact/
         title: Contact
-      - path: /vision-strategy
+      - path: /vision-strategy/
         title: Vision & Strategy
-      - path: /leadership
+      - path: /leadership/
         title: Leadership
-      - path: /business-model
+      - path: /business-model/
         title: Business Model
-      - path: /about/sealab-osc
+      - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
-      - path: /social-responsibility
+      - path: /social-responsibility/
         title: Social Responsibility
-      - path: /locations
+      - path: /locations/
         title: Locations
     path: '#'
     title: About

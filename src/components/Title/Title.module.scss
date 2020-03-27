@@ -9,6 +9,7 @@ $spacing-between: 31px;
 }
 .subtitle {
   @include Subtitle;
+  font-weight: normal;
   padding-bottom: $spacing-between;
   line-height: 1.6rem;
 }

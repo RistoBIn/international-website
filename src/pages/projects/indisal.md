@@ -2,14 +2,29 @@
 templateKey: project-page-primary
 title: INDISAL
 heading: INDISAL
-seoDescription: >-
-  INDISAL seoDescription bla bla
-description: >-
-  INDISAL description bla bla
+seoDescription: INDISAL seoDescription bla bla
+subheading: >-
+  Enabling technology for recognition of individual salmon by using computer
+  vision and machine learning algorithms. 
+featuredImage: /img/LaksID2_INDISAL.png
+FeaturedImageCaption: Illustration of the INDISAL-project (A.M. Lien/SINTEF Ocean)
+keyFactors:
+  factorItems:
+    - description: Project duration
+      primaryInfo: 01.04.19 - 31.03.21
+    - description: Overall budget
+      primaryInfo: '€  1,514,669.11'
+  heading: Key-factors for the project
+partners:
+  heading: Partners
+  partnerItems:
+    - description: '""'
+      icon: /img/sintef.svg
 ---
+\# Melanophore spot-pattern in identification of individual salmon
 
+The goal for the INDISAL-project is to enable technology for identification of individual salmon in industrial sea based salmon farming. Based on the insight that Atlantic salmon maintain a unique spot pattern after they are moved from the hatchery to salt water, identification will be done by using the melanophore spot-pattern in the head region as a biometric fingerprint.
 
--------------------------- THIS IS ONLY A DUMMY MOCKUP PAGE --------------------------
+Innovative underwater light and camera solutions are developed and improved in order to receive high quality underwater video recordings. These allow computer vision and machine learning techniques to automatically identify individual fish and measure welfare indicators like growth, stress levels and physical damages on an individual level.
 
-Production of seafood has increased steadily over the last five decades and as of 2009, more than 50% of seafood was produced by INDISAL. The INDISAL industry is facing major challenges that must be rectified in order to ensure the quality and well being of the fish, while keeping the production at a responsible and sustainable level for present and future generations. Addressing these issues, requires comprehensive video surveillance in the fish cages so that the proper analysis of the fish welfare can be carried out.
-
+The innovation enables the salmon farming industry to have an overview of the current state of each individual salmon, while the collected time-line data of individual salmons can be used to analyze in detail which operational events had an impact on both individual fish and the whole fish-population.

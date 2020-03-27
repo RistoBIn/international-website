@@ -2,35 +2,34 @@
 /******  COLORS  *******/
 // REGULAR
 $midnight: #010a2e;
-$grey-light: #DBE0EA;
-$red: #E32938;
-$dark: #0E111B;
-$dark-light: #1B1F34;
+$grey-light: #dbe0ea;
+$red: #e32938;
+$dark: #0e111b;
+$dark-light: #1b1f34;
 $midnight-dark: $dark;
-$midnight-dark-light:#191C27;
+$midnight-dark-light: #191c27;
 
 //BACKGROUND COLORS
 $background-color-dark: $midnight-dark;
 $background-color-light-dark: $midnight-dark-light;
-$body-dark: #3E4045;
-$secondary-background: #191C27;
-$border-light-background: rgba(0,0,0,.15);
-$border-dark-background: rgba(255, 255, 255, 0.15);;
-$error: #ED1313;
-$success: #32B576;
-$warning: #F5D37C;
+$body-dark: #3e4045;
+$secondary-background: #191c27;
+$border-light-background: rgba(0, 0, 0, 0.15);
+$border-dark-background: rgba(255, 255, 255, 0.15);
+$error: #ed1313;
+$success: #32b576;
+$warning: #f5d37c;
 $footer-background: $midnight-dark-light;
-$light-blue: #3789B5;
+$light-blue: #3789b5;
 
 //TEXT COLORS
 $text-grey-light: $grey-light;
 $text-dark: $dark;
 $title: $dark;
-$body-light: #DBE0EA;
-$title-dark: #1F253A;
+$body-light: #dbe0ea;
+$title-dark: #1f253a;
 $text-light: $body-light;
-$text-light-meta: #C0C0C0;
-
+$text-light-meta: #c0c0c0;
 
 // SHADOWS
 $boxShadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.13);
@@ -41,10 +40,8 @@ $white: white;
 $primary: $red;
 $background: $body-dark;
 
-
 /******  EFFECTS  *******/
 $transition: all 0.25s ease;
-
 
 /******  SIZES  *******/
 
@@ -115,11 +112,11 @@ $fontSmall: 16px;
 }
 
 @mixin text_Light {
-font-family: $primaryFont;
-font-style: normal;
-font-weight: normal;
-line-height: 170%;
-color: $text-grey-light;
+  font-family: $primaryFont;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 170%;
+  color: $text-grey-light;
 }
 
 @mixin text_Dark {
@@ -129,7 +126,16 @@ color: $text-grey-light;
   font-size: 18px;
   line-height: 170%;
   color: $body-dark;
-  }
+}
+
+@mixin PageTitle {
+  font-family: $titleFont;
+  font-style: normal;
+  line-height: 120%;
+  color: $white;
+  font-weight: 300;
+  line-height: 110%;
+}
 
 @mixin Title {
   font-family: $titleFont;
@@ -183,6 +189,3 @@ color: $text-grey-light;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-
-
