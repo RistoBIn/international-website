@@ -228,7 +228,7 @@ body {
   }
   .section {
     @media screen and (max-width: $tablet) {
-      padding: 3rem 0.5rem;
+      padding: 3rem 15px;
     }
   }
 }
@@ -683,10 +683,6 @@ footer.footer {
 
 section.about-page-template {
   .content {
-    margin-left: 0;
-    max-width: 930px;
-    margin-right: auto;
-    padding: 0 15px;
     h1 p,
     li {
       font-size: 20px;
