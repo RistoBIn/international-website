@@ -66,14 +66,15 @@ export default class Index extends React.Component {
                       <h4 className="subtitle">Address</h4>
 
                       <div className="contact-information-item-content">
-                        <p>Transittgata 14, entrance A - 7042 Trondheim</p>
+                        <p>Transittgata 14, entrance A </p>
+                        <p>7042, Trondheim</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div id="form" className="column is-6 is-offset-1">
                   <form
-                    name="contact"
+                    name="contact-international"
                     method="post"
                     action="/contact/thanks"
                     data-netlify="true"

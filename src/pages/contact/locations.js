@@ -30,7 +30,6 @@ export default class Index extends React.Component {
       lng: 13.356678,
     };
     this.state = {
-      isValidated: false,
       activeMap: trondheimCoordinates,
       osloCoordinates,
       trondheimCoordinates,
@@ -38,25 +37,6 @@ export default class Index extends React.Component {
       berlinCoordinates,
     };
   }
-
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error));
-  };
 
   changeMap = location => {
     this.setState({ activeMap: location });
