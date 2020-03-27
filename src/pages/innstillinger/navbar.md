@@ -21,13 +21,8 @@ menuPaths:
         title: 5G Heart
       - path: /projects/clean-ocean-iniative/
         title: Clean Ocean Initiative
-<<<<<<< HEAD
-      - path: /projects/gem
+      - path: /projects/gem/
         title: Environment Monitoring
-=======
-      - path: /projects/environmental-monitoring/
-        title: Environmental Monitoring
->>>>>>> master
     path: '#'
     title: Projects
   - dropdown:
