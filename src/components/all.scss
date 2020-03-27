@@ -732,7 +732,7 @@ section.project-page-template {
 
 /****************     ABOUT PAGES     ********************/
 
-section.about-page-template {
+section.about-page-primary {
   .content {
     margin-left: 0;
     max-width: 930px;
@@ -744,7 +744,7 @@ section.about-page-template {
     }
   }
 
-  .about-page-template-image .image {
+  .about-page-primary-image .image {
     width: 100%;
     height: 375px;
   }
@@ -754,7 +754,7 @@ section.about-page-template {
       padding: 0;
     }
 
-    .about-page-template-image .image {
+    .about-page-primary-image .image {
       height: 100%;
     }
   }

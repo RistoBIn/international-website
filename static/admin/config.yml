@@ -27,18 +27,48 @@ collections:
       - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
       - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "Content", name: "body", widget: "markdown"}
-  
+
+#### PROJECT PAGE TEMPLATE 2 ####
+
+  - name: "project-page-secondary"
+    label: "Project Page 2"
+    folder: "src/pages/about/"
+    create: true
+    description: "This is a project page template."
+    filter: {field: "templateKey", value: "project-page-secondary"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-secondary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "text", hint: "Text."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
+      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image."}
+      - label: PrimarySection
+        name: primarySection
+        widget: "object"
+        fields:
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+      - label: Inspirational section
+        name: splitSection
+        widget: object
+        fields: 
+          - {label: "Large image", name: "bgimage", widget: image }
+      - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
+
 #### ABOUT PAGE TEMPLATE 1 ####
 
-  - name: "about-page-osc"
-    label: "About Pages"
+  - name: "about-page-primary"
+    label: "About Page 1"
     folder: "src/pages/about/"
     create: true
     description: "This is a about page template."
-    filter: {field: "templateKey", value: "about-page-osc"}
+    filter: {field: "templateKey", value: "about-page-primary"}
     identifier_field: name
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-osc"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-primary"}
       - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
       - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
       - {label: "Description", name: "description", widget: "text", hint: "Text."}
@@ -47,6 +77,7 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
 
 #### PRODUCT PAGE TEMPLATE 1 ####
+
   - name: "product-pages-primary"
     label: "Product pages 1 "
     folder: "src/pages/products/"
