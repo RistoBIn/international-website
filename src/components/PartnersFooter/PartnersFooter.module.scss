@@ -4,40 +4,32 @@
 $iconSize: 42px;
 
 .wrapper {
-  margin-right: 255;
-  margin-left: 255;
   max-width: 1412px;
-  justify-content: center;	
 
   .hrLine {
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
-  .header{
-    text-align: center;
+
+  .header {
     margin-bottom: 38px;
-    font-family: Open Sans;
-    font-style: normal;
+    text-align: center;
+    font-family: $primaryFont;
     font-weight: bold;
     font-size: 18px;
-    line-height: 100%;
     letter-spacing: 1px;
-    color: #FFFFFF;
   }
+
   .image {
-    margin: 0px;
+    margin: 0 auto;
     max-width: 130px;
-    margin-left: auto;
-    margin-right: auto;
   }
+
   .partnerDescription {
     text-align: center;
     margin-top: 30px;
-    font-family: "Open Sans";
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 170%;
-    letter-spacing: 1px;
     text-transform: uppercase;
   }
 }
