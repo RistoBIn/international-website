@@ -5,6 +5,9 @@ import SplittedSection from '../SplittedSection';
 import NonStretchedImage from '../NonStretchedImage';
 import generateHTML from '../../utils/generateHTML';
 import Content, { HTMLContent } from '../Content';
+import { idMaker } from '../../utils/id-maker';
+
+const gen = idMaker();
 
 const SectionList = ({ items }) => {
   if (!items || items.length < 1 || !items[0].content || !items[0].heading)
@@ -16,6 +19,7 @@ const SectionList = ({ items }) => {
       {items.map(item => {
         return (
           <section
+            key={gen.next().value}
             className={classNames(
               'section',
               'has-dark-background',
