@@ -157,6 +157,7 @@ body {
   h1 {
     @include Title;
     font-size: 34px;
+    padding-bottom: 20px;
     @media screen and (min-width: $desktop) {
       font-size: 52px;
     }
@@ -236,9 +237,9 @@ body {
       @include text_Light;
     }
   }
-  .section {
+  .section, .hero-body {
     @media screen and (max-width: $tablet) {
-      padding: 3rem 15px;
+      padding: 1.5rem 15px;
     }
   }
 }
@@ -968,6 +969,46 @@ section#contact-form {
   }
 }
 
+
+
+/****************     SOLUTION PAGES    ********************/
+
+.solution-page-secondary {
+
+  section.hero {
+    background-repeat: no-repeat !important;
+    background-position: unset !important;
+    background-size: cover !important;
+    .hero-body {
+      font-size: 20px;
+      h1, p {
+        max-width: 734px;
+        margin-left: 0;
+      }
+    }
+    @media only screen and (min-width: $tablet) {
+      .hero-body {
+        padding: 22rem 1.5rem;
+        padding-bottom: 8rem;
+      }
+    }
+  }
+  section#read-more {
+    display: none;
+    @media only screen and (min-width: $tablet) {
+      display: block;
+      padding: 0 1.5rem;
+      .read-more-button {
+        position: absolute;
+        overflow: visible;
+        z-index: 10;
+        top: -32px;
+      }
+    }
+  }
+}
+
+/****************     PROJECT PAGES    ********************/
 
 section#project-page-primary .wrapper {
   display: grid;

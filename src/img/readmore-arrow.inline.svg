@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>readmore</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="readmore" fill-rule="nonzero">
+            <g id="Ellipse-55" fill="#7BB7EF">
+                <circle id="Oval" cx="32" cy="32" r="32"></circle>
+            </g>
+            <g id="Arrow-(3)" transform="translate(26.000000, 26.000000)" fill="#FFFFFF">
+                <path d="M5.46967,11.5303 C5.76256,11.8232 6.23744,11.8232 6.53033,11.5303 L11.3033,6.75736 C11.5962,6.46447 11.5962,5.98959 11.3033,5.6967 C11.0104,5.40381 10.5355,5.40381 10.2426,5.6967 L6,9.93934 L1.75736,5.6967 C1.46447,5.40381 0.989593,5.40381 0.696699,5.6967 C0.403806,5.98959 0.403806,6.46447 0.696699,6.75736 L5.46967,11.5303 Z M5.25,-3.27835e-08 L5.25,11 L6.75,11 L6.75,-3.27835e-08 L5.25,-3.27835e-08 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
