@@ -984,6 +984,12 @@ section#contact-form {
         margin-left: 0;
       }
     }
+    @media only screen and (min-width: $tablet) {
+      .hero-body {
+        padding: 22rem 1.5rem;
+        padding-bottom: 8rem;
+      }
+    }
   }
   section#read-more {
     display: none;

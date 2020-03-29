@@ -2,35 +2,69 @@
 
 .section {
   .content {
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
     .leftColumn {
+
       .heading,
       .subheading {
-				margin-bottom: 0;
+        margin-bottom: 0;
       }
     }
-    .leftColumn, .rightColumn {
+
+    .leftColumn,
+    .rightColumn {
       padding: 0;
+    }
+    .titleAndImage {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .image {
+      grid-row: 1;
+      padding-bottom: 60px;
+    }
+    .subheading {
+      grid-row: 2;
+      font-weight: bold;
+      color: $white;
+    }
+    .heading {
+      grid-row: 3;
+      margin-top: 10px;
     }
 
     @media only screen and (min-width: $tablet) {
+
+      .subheading {
+        grid-row: 1;
+      }
+      .heading {
+        grid-row: 2;
+      }
+      .image {
+        grid-row: 3;
+      }
       .leftColumn {
         margin: 0;
         padding-left: 0 !important;
+
         .heading,
         .subheading {
           margin-top: 0;
           margin-bottom: .5em;
         }
+
         .image {
           padding-top: 3rem;
         }
       }
 
-    .leftColumn, .rightColumn {
-      padding: 0 1.5rem 1.5rem 1.5rem;
-    }
+      .leftColumn,
+      .rightColumn {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+      }
     }
   }
 }

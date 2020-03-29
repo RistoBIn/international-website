@@ -65,7 +65,7 @@ const TitleAndImage = ({ heading, subheading, featuredimage, className }) => {
     return <></>;
   };
   return (
-    <div className={className}>
+    <div className={classNames(className, styles.titleAndImage)}>
       <SubheadingResolved />
       <h2 className={classNames(styles.heading)}>{heading}</h2>
       <ImageResolved />
