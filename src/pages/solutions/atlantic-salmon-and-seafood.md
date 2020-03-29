@@ -3,15 +3,9 @@ templateKey: solution-page-secondary
 title: Atlantic Salmon and Seafood
 seoDescription: >-
   SEALABs machine vision and camera technology will increase automation and food
-  safety. We
-
-  have the products to help your business thrive. Optimizing the industry
-  require a slaughter
-
-  process that ensures that the salmon is safe to eat, without causing the fish
-  unnecessary stress
-
-  and pain.
+  safety. We have the products to help your business thrive. Optimizing the industry
+  require a slaughter process that ensures that the salmon is safe to eat, without causing the fish
+  unnecessary stress and pain.
 heading: Atlantic Salmon and Seafood
 description: >-
   There’s a growing market for food production in the sea. Norwegian salmon
@@ -37,6 +31,8 @@ splitSections:
       reduce the environmental damage caused by salmon feeding.
     heading: 'Measuring stress, better lining regime, and the entire state of the cage'
   - content: >-
+      ## Fish Industry and Processing
+
       SEALABs machine vision and camera technology will increase automation and
       food safety. We have the products to help your business thrive. Optimizing
       the industry require a slaughter process that ensures that the salmon is
@@ -48,8 +44,8 @@ splitSections:
       can affect the quality of the finished product. The fish is monitored by
       smart algorithms and SEALAB Respiratory Rate system in realtime and works
       both on land or on a boat.
-    heading: Fish Industry and Processing
     featuredimage: /img/cutted-salmon.jpg
+    heading:
     subheading: ''
   - content: >-
       Looking at the figures, there are at present 430 million live salmon in

@@ -35,7 +35,9 @@ const SectionList = ({ items, id }) => {
                 rightColumn={
                   <PostContent content={generateHTML(item.content)} />
                 }
-                rightColumnCSS={styles.rightColumn}
+                rightColumnCSS={classNames(styles.rightColumn, {
+                  [styles.subheading__exist]: item.subheading,
+                })}
                 className={styles.content}
               />
             </div>
@@ -47,6 +49,11 @@ const SectionList = ({ items, id }) => {
 };
 
 const TitleAndImage = ({ heading, subheading, featuredimage, className }) => {
+  const TitleResolved = () => {
+    if (!heading) return <></>;
+
+    return <h2 className={classNames(styles.heading)}>{heading}</h2>;
+  };
   const SubheadingResolved = () => {
     if (subheading)
       return <p className={classNames(styles.subheading)}>{subheading}</p>;
@@ -67,7 +74,7 @@ const TitleAndImage = ({ heading, subheading, featuredimage, className }) => {
   return (
     <div className={classNames(className, styles.titleAndImage)}>
       <SubheadingResolved />
-      <h2 className={classNames(styles.heading)}>{heading}</h2>
+      <TitleResolved />
       <ImageResolved />
     </div>
   );

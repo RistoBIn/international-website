@@ -4,6 +4,7 @@
   .content {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    font-size: 18px;
 
     .leftColumn {
 
@@ -59,11 +60,19 @@
         .image {
           padding-top: 3rem;
         }
+        & > .image, & > .heading {
+          margin-top: 0;
+          padding-top: 0;
+        }
       }
 
       .leftColumn,
       .rightColumn {
+        margin-top: 0;
         padding: 0 1.5rem 1.5rem 1.5rem;
+      }
+      .rightColumn.subheading__exist {
+        margin-top: 25px;
       }
     }
   }

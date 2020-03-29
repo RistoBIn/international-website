@@ -30,7 +30,7 @@ collections:
 
 #### SOLUTION PAGES TEMPLATE SECONDARY ####
   - name: "solution-page-secondary"
-    label: "Industries pages"
+    label: "Industries pages - Short"
     folder: "src/pages/solutions/"
     create: true
     description: "This is a solution page. Also known as industries and markets."
@@ -49,10 +49,36 @@ collections:
         widget: list
         fields:
             - {label: "Subheading", name: "subheading", widget: "string", required: false }
-            - {label: "Heading", name: "heading", widget: "string", }
+            - {label: "Heading", name: "heading", widget: "string", requred: false}
             - {label: "Content on the right", name: "content", widget: "markdown", }
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Content", name: "body", widget: "markdown", }
+
+#### SOLUTION PAGES TEMPLATE Primary ####
+  - name: "solution-page-primary"
+    label: "Industries pages - Long"
+    folder: "src/pages/solutions/"
+    create: true
+    description: "This is a solution page. Also known as industries and markets."
+    filter: {field: "templateKey", value: "solution-page-primary"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "solution-page-primary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is shown with the section image"}
+      - {label: "Description", name: "description", widget: "text", hint: "This is shown with the section image"}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "First section image."}
+      - label: "Sections"
+        hint: Create as many you like
+        name: splitSections
+        widget: list
+        fields:
+            - {label: "Subheading", name: "subheading", widget: "string", required: false }
+            - {label: "Heading", name: "heading", widget: "string", requred: false}
+            - {label: "Content on the right", name: "content", widget: "markdown", }
+            - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+
   
 #### ABOUT PAGE TEMPLATE 1 ####
 
