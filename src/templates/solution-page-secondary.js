@@ -74,7 +74,7 @@ const SolutionPage = ({ data }) => {
     seoDescription,
     heading,
     description,
-    featuredimage,
+    bgimage,
     splitSections,
   } = frontmatter;
 
@@ -85,7 +85,7 @@ const SolutionPage = ({ data }) => {
         contentComponent={HTMLContent}
         heading={heading}
         description={description}
-        featuredimage={featuredimage}
+        featuredimage={bgimage}
         splitSections={splitSections}
       />
     </Layout>
@@ -104,15 +104,9 @@ export const pageQuery = graphql`
         heading
         seoDescription
         description
-        featuredimage {
+        bgimage {
           publicURL
           extension
-          childImageSharp {
-            fluid(maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid_tracedSVG
-              presentationWidth
-            }
-          }
         }
         splitSections {
           heading

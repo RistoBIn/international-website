@@ -1,7 +1,8 @@
 ---
-templateKey: solution-page-secondary
+templateKey: solution-page-primary
 title: Aquaculture
 heading: Aquaculture
+bgimage: /img/military-defense.jpg
 seoDescription: >-
   Aquaculture seoDescription bla bla
 description: >-
