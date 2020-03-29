@@ -10,16 +10,12 @@
     .rightColumn.switchColumnsOnMobile {
         grid-row: 1;
     }
-    .leftColumn, .rightColumn {
-        padding: 1rem;
-        padding-left: 0;
-    }
 
     @media only screen and (min-width: $tablet) {
         grid-template-columns: 1fr 1fr;
         .leftColumn, .rightColumn {
             grid-row: 1 !important;
-            margin: auto 0;
+            margin: auto;
             padding: 2rem;
         }
         .leftColumn {

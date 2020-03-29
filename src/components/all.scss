@@ -202,13 +202,17 @@ body {
     background-color: $border-light-background;
     height: 1px;
   }
+  figcaption {
+    font-family: $primaryFont;
+    font-size: 14px;
+    font-style: normal !important;
+    color: $body-light;
+    margin-top: 12px;
+  }
+
   .content {
-    @include text_Dark;
-    p,
-    li,
-    a,
-    strong {
-      @include text_Dark;
+    h1, h2 {
+      color: $white;
     }
     p strong {
       font-weight: 700;
@@ -216,7 +220,13 @@ body {
     a {
       color: #3273dc;
     }
+    @media screen and (max-width: $tablet) {
+      h1, h2 {
+        padding-top: 30px;
+      }
+    }
   }
+  
   .has-dark-background,
   .has-dark-background .content,
   .has-dark-background.content {
@@ -229,7 +239,7 @@ body {
   }
   .section, .hero-body {
     @media screen and (max-width: $tablet) {
-      padding: 1.5rem 0.5rem;
+      padding: 1.5rem 15px;
     }
   }
 }
@@ -247,6 +257,7 @@ body {
   }
   .section--description {
     @include text_Light;
+    color: $body-light !important;
     font-size: 20px;
     @media screen and (max-width: $tablet) {
       font-size: $fontMedium;
@@ -261,12 +272,52 @@ body {
       margin-right: auto;
       text-align: left;
     }
-
   }
 
-  .content.is-left-aligned {
-    max-width: 930px;
-    margin-left: 0;
+  &.has-dark-background {
+    color: $white;
+    h1,
+    h2,
+    h3,
+    p,
+    li,
+    strong {
+      color: $white;
+    }
+  }
+  &.has-light-dark-background {
+    color: $white;
+    background-color: $background-color-light-dark;
+    strong,
+    h1,
+    h2,
+    h3,
+    li,
+    p,
+    p strong {
+      color: inherit !important;
+    }
+  }
+  .content {
+    &.centered-free-text {
+      max-width: 1022px;
+      margin: auto;
+      text-align: center;
+      padding: 1rem;
+      p {
+        font-size: $fontLarge;
+      }
+      strong {
+        font-weight: normal;
+        font-size: inherit;
+        color: $light-blue;
+      }
+    }
+    &.is-left-aligned {
+      max-width: 950px;
+      margin-right: auto;
+      margin-left: 0;
+    }
   }
 }
 
@@ -310,45 +361,6 @@ body {
   line-height: 100%;
 }
 
-.section.has-dark-background {
-  color: $white;
-  h1,
-  h2,
-  h3,
-  p,
-  li,
-  strong {
-    color: $white;
-  }
-}
-
-.section.has-light-dark-background {
-  color: $white;
-  background-color: $background-color-light-dark;
-  strong,
-  h1,
-  h2,
-  h3,
-  li,
-  p,
-  p strong {
-    color: inherit !important;
-  }
-}
-.section .centered-free-text.content {
-  max-width: 1022px;
-  margin: auto;
-  text-align: center;
-  padding: 1rem;
-  p {
-    font-size: $fontLarge;
-  }
-  strong {
-    font-weight: normal;
-    font-size: inherit;
-    color: $light-blue;
-  }
-}
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
@@ -684,11 +696,7 @@ footer.footer {
 
 section.about-page-template {
   .content {
-    margin-left: 0;
-    max-width: 930px;
-    margin-right: auto;
-    padding: 0 15px;
-    h1 p,
+    p,
     li {
       font-size: 20px;
     }
@@ -700,10 +708,6 @@ section.about-page-template {
   }
 
   @media screen and (min-width: $desktop) {
-    .content {
-      padding: 0;
-    }
-
     .about-page-template-image .image {
       height: 100%;
     }
@@ -741,7 +745,7 @@ section.section#inspirational-quote {
     padding: 1.5rem;
     p {
       font-weight: 300;
-      font-size: 24px;
+      font-size: $fontLarge;
       line-height: 170%;
       strong#quote-author {
         font-size: 16px;
@@ -832,11 +836,15 @@ section#offices {
     }
   }
   @media only screen and (min-width: $tablet) {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $border-dark-background;
     h1 {
       padding-top: 0;
     }
-    border-bottom: 1px solid $border-dark-background;
     .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       .office {
         padding: 1rem;
         border-right: 1px solid $border-dark-background;
@@ -844,9 +852,6 @@ section#offices {
           margin-bottom: 15px;
         }
       }
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 1fr 1fr 1fr;
     }
   }
   @media only screen and (min-width: $widescreen) {
@@ -865,21 +870,16 @@ section#offices {
       }
     }
   }
-  @media only screen and (min-width: $widescreen) {
-    .wrapper {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-  }
 }
 
 @media screen and (max-width: $tablet) {
   .button-wrapper {
     background-color: $white;
     width: 100%;
-    height: 58px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     button {
+      height: 58px;
       background-color: $white;
       color: $text-dark;
       font-size: 16px;
@@ -889,7 +889,9 @@ section#offices {
       &:hover,
       &:focus,
       &.is-active {
-        border-top: 4px solid $red;
+        color: $white;
+        border-top: 4px solid $grey-light;
+        background-color: $red;
       }
     }
   }
@@ -1001,6 +1003,68 @@ section#contact-form {
         overflow: visible;
         z-index: 10;
         top: -32px;
+      }
+    }
+  }
+}
+
+/****************     PROJECT PAGES    ********************/
+
+section#project-page-primary .wrapper {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+  "header"
+  "sidebar"
+  "content"
+  "partners";
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .partners {
+    grid-area: partners;
+  }
+  
+  .figure {
+    margin-left: 0px;
+    margin-bottom: 0;
+    figcaption {
+      text-align: left;
+    }
+  }
+
+  @media only screen and (min-width: $tablet)  {
+    grid-template-columns: 330px auto;
+    grid-template-areas:
+      "header header"
+      "sidebar  content"
+      "partners partners";
+    
+    .figure {
+      margin-right: 0px;
+      margin-bottom: 40px;
+      figcaption {
+        text-align: right;
+      }
+    }
+
+
+    .content {
+      margin-left: 0px;
+      max-width: 1050px;
+      p {
+        max-width: 930px;
+        margin-left: 0px;
       }
     }
   }

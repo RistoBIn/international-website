@@ -119,15 +119,6 @@ $fontSmall: 16px;
   color: $text-grey-light;
 }
 
-@mixin text_Dark {
-  font-family: $primaryFont;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 170%;
-  color: $body-dark;
-}
-
 @mixin PageTitle {
   font-family: $titleFont;
   font-style: normal;

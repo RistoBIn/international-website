@@ -26,8 +26,6 @@ menuPaths:
     path: '#'
     title: Projects
   - dropdown:
-      - path: /contact/
-        title: Contact
       - path: /vision-strategy/
         title: Vision & Strategy
       - path: /leadership/
@@ -38,7 +36,7 @@ menuPaths:
         title: SEALAB Ocean Space Center
       - path: /social-responsibility/
         title: Social Responsibility
-      - path: /locations/
+      - path: /contact/locations
         title: Locations
     path: '#'
     title: About

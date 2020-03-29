@@ -116,57 +116,97 @@ collections:
           - {label: "Left image", name: "featuredimage", widget: image }
           - {label: "Right content", name: "content", widget: "markdown"}
 
-  
+#### PROJECT PAGE TEMPLATE 1 ####
+  - name: "project-page-primary"
+    label: "Project Pages 1"
+    folder: "src/pages/projects/"
+    create: true
+    description: "This is the primary project page template."
+    filter: {field: "templateKey", value: "project-page-primary"}
+    identifier_field: projects-primary
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-primary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Featured image", name: "featuredImage", widget: image }
+      - {label: "Featured image caption", name: "featuredImageCaption", widget: "text", required: false }
+      - label: "Key factors"
+        name: "keyFactors"
+        widget: "object"
+        fields:
+          - {label: "Key features heading", name: "heading", widget: "string", hint: "Dette er overskriften i key factors-boksen"}
+          - label: "Key features"
+            name: "factorItems"
+            widget: list
+            fields:
+              - {label: "Factor", name: "primaryInfo", widget: "text" }
+              - {label: "Factor description", name: "description", widget: "text" }
+      - {label: "Content", name: "body", widget: "markdown"}
+      - label: "Partners"
+        name: "partners"
+        widget: "object"
+        fields:
+          - {label: "Partners heading", name: "heading", widget: "string" }
+          - label: "Partners list"
+            name: "partnerItems"
+            widget: list
+            fields:
+              - {label: "Partner logo", name: "icon", widget: image }
+              - {label: "Partner description", name: "description", widget: "text", required: false }
+
+
   - name: "settings"
     label: "Navigation & Footer"
     description: "Her kan du endre på lenker i navigasjon og footer. Hvis du ønsker å legge til, fjerne eller fikse på rekkefølge, har du kommet til rett sted."
     files: 
       - file: "src/pages/innstillinger/navbar.md"
-        label: "Navigasjon"
+        label: "Navigation"
         name: "navbar"
         fields: 
           - label: "Links"
-            name: "menuLinks"
+            name: "menuPaths"
             widget: "list"
             fields: 
               - {label: Title, name: title, widget: string}
-              - {label: Link, name: link, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
+              - {label: Link, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
               - label: Dropdown
                 name: dropdown
                 widget: list
                 hint: "Hvis tom, så vises det ingen dropdown eller pil."
                 fields:
                   - {label: Title, name: title, widget: string}
-                  - {label: Link, name: link, widget: string}
+                  - {label: Link, name: path, widget: string}
       - file: "src/pages/innstillinger/footer.md"
         label: "Footer"
         name: "footer"
         fields: 
-          - label: "1 - Hovedsider"
+          - label: "Main navigation"
             name: "mainNavigation"
             widget: "list"
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "2 - Apper"
-            name: "softwareNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "3 - Hardware"
-            name: "hardwareNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
-          - label: "4 - Om"
+          - label: "Products"
             name: "secondaryNavigation"
             widget: "list"
             fields: 
               - {label: Title, name: title, widget: string}
               - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "Bedriftskontorer"
+          - label: "Projects"
+            name: "thirdNavigation"
+            widget: "list"
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
+          - label: "About"
+            name: "fourthNavigation"
+            widget: "list"
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "Company offices"
             name: "companyOffices"
             widget: "list"
             fields: 

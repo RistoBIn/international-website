@@ -50,6 +50,11 @@ companyOffices:
       - EUREF-Campus 1-25
       - 10829 Berlin, Tyskland
     title: In Germany
+  - addressItems:
+      - Niš
+      - Bore Vukmirovića 9
+      - 18000 Niš, Serbia
+    title: In Serbia
 callToAction:
   buttonPath: /contact
   buttonText: Contact us
