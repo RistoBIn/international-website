@@ -1,8 +1,8 @@
 ---
 menuPaths:
   - dropdown:
-      - path: /solutions/aquaculture/
-        title: Aquaculture
+      - path: /solutions/atlantic-salmon-and-seafood/
+        title: Atlantic salmon
       - path: /solutions/military-and-defense/
         title: Military & Defense
     path: '#'
