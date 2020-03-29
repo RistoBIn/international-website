@@ -2,7 +2,7 @@
 templateKey: solution-page-secondary
 title: Military Applications of Machine Vision
 heading: Military Applications of Machine Vision
-bgimage: /img/military-defense.jpg
+featuredimage: /img/military-defense.jpg
 seoDescription: >-
   SEALAB is in an AI arms race. It’s happening in industry, and the big five Internet companies are pursuing this heavily.
 description: >-

@@ -74,7 +74,7 @@ const SolutionPage = ({ data }) => {
     seoDescription,
     heading,
     description,
-    bgimage,
+    featuredimage,
     splitSections,
   } = frontmatter;
 
@@ -85,7 +85,7 @@ const SolutionPage = ({ data }) => {
         contentComponent={HTMLContent}
         heading={heading}
         description={description}
-        featuredimage={bgimage}
+        featuredimage={featuredimage}
         splitSections={splitSections}
       />
     </Layout>
@@ -104,7 +104,7 @@ export const pageQuery = graphql`
         heading
         seoDescription
         description
-        bgimage {
+        featuredimage {
           publicURL
           extension
         }
