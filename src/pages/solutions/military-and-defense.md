@@ -74,11 +74,8 @@ splitSections:
     featuredimage: /img/military-innovation.svg
     subheading: Advanced FPGA technology for use under water
 ---
-
-
 ## Autonomous Vehicles
 
 Autonomous vehicles are trained with numerous mounted cameras all around them at various heights and angles that allow it to detect how the car is moving from every perspective. The software is trained on thousands of hours of human driving footage showing the proper and safe way a vehicle should operate from various angles, in various lighting conditions, and in different weather conditions. The vessel or the underwater drone could then get a command to move to a new location. 
 
-**Navies Needs Offensive Undersea Drones**, but the maritime domain has yet to see the kind of explosive innovation that UAVs have brought to land warfare. SEALABs superfast FPGA technology and smart 2D and 3D cameras will change everything in the ocean space.
-
+Navies Needs Offensive Undersea Drones, but the maritime domain has yet to see the kind of explosive innovation that UAVs have brought to land warfare. SEALABs superfast FPGA technology and smart 2D and 3D cameras will change everything in the ocean space.
