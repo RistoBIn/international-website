@@ -965,3 +965,29 @@ section#contact-form {
     }
   }
 }
+
+
+
+/****************     SOLUTION PAGES    ********************/
+
+.solution-page-secondary {
+
+  section.hero {
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
+  section#read-more {
+    display: none;
+    @media only screen and (min-width: $tablet) {
+      display: block;
+      padding: 0 1.5rem;
+      .read-more-button {
+        position: absolute;
+        overflow: visible;
+        z-index: 10;
+        top: -32px;
+      }
+    }
+  }
+}

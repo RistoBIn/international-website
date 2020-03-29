@@ -9,13 +9,13 @@ import { idMaker } from '../../utils/id-maker';
 
 const gen = idMaker();
 
-const SectionList = ({ items }) => {
+const SectionList = ({ items, id }) => {
   if (!items || items.length < 1 || !items[0].content || !items[0].heading)
     return <></>; // Heading and content is required
 
   const PostContent = HTMLContent || Content;
   return (
-    <>
+    <div id={id}>
       {items.map(item => {
         return (
           <section
@@ -42,7 +42,7 @@ const SectionList = ({ items }) => {
           </section>
         );
       })}
-    </>
+    </div>
   );
 };
 
