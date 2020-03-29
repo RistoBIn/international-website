@@ -157,6 +157,7 @@ body {
   h1 {
     @include Title;
     font-size: 34px;
+    padding-bottom: 20px;
     @media screen and (min-width: $desktop) {
       font-size: 52px;
     }
@@ -226,9 +227,9 @@ body {
       @include text_Light;
     }
   }
-  .section {
+  .section, .hero-body {
     @media screen and (max-width: $tablet) {
-      padding: 3rem 0.5rem;
+      padding: 1.5rem 0.5rem;
     }
   }
 }
@@ -973,9 +974,16 @@ section#contact-form {
 .solution-page-secondary {
 
   section.hero {
-    background-repeat: no-repeat;
-    background-position: unset;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: unset !important;
+    background-size: cover !important;
+    .hero-body {
+      font-size: 20px;
+      h1, p {
+        max-width: 734px;
+        margin-left: 0;
+      }
+    }
   }
   section#read-more {
     display: none;

@@ -2,21 +2,35 @@
 
 .section {
   .content {
+    padding-left: 0!important;
+    padding-right: 0!important;
     .leftColumn {
-      margin: 0;
       .heading,
       .subheading {
-        margin-top: 0;
-				margin-bottom: .5em;
-				max-width: 500px;
+				margin-bottom: 0;
       }
-      .image {
-        padding-top: 3rem;
-      }
+    }
+    .leftColumn, .rightColumn {
+      padding: 0;
     }
 
     @media only screen and (min-width: $tablet) {
+      .leftColumn {
+        margin: 0;
+        padding-left: 0 !important;
+        .heading,
+        .subheading {
+          margin-top: 0;
+          margin-bottom: .5em;
+        }
+        .image {
+          padding-top: 3rem;
+        }
+      }
 
+    .leftColumn, .rightColumn {
+      padding: 0 1.5rem 1.5rem 1.5rem;
+    }
     }
   }
 }

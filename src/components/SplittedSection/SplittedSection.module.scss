@@ -12,6 +12,7 @@
     }
     .leftColumn, .rightColumn {
         padding: 1rem;
+        padding-left: 0;
     }
 
     @media only screen and (min-width: $tablet) {
@@ -20,6 +21,9 @@
             grid-row: 1 !important;
             margin: auto 0;
             padding: 2rem;
+        }
+        .leftColumn {
+            padding-left: 0;
         }
     }
 }

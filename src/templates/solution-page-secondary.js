@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import Hero from '../components/Hero';
 import SectionList from '../components/SectionList';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 
@@ -47,18 +46,12 @@ export const SolutionPageTemplate = ({
   );
 };
 
-const SolutionHero = ({
-  className,
-  heading,
-  description,
-  anchorLink,
-  imageURL,
-}) => {
+const SolutionHero = ({ className, heading, description, imageURL }) => {
   return (
     <section
       className={classNames('hero', className)}
       style={{
-        backgroundImage: `url(${imageURL})`,
+        background: `linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3)), url(${imageURL})`,
       }}
     >
       <div className={classNames('hero-body')}>
