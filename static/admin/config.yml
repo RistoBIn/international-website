@@ -299,7 +299,7 @@ collections:
   - name: "pages"
     label: "Regular pages"
     files:
-      - file: "src/about/index.md"
+      - file: "src/pages/index.md"
         label: "Front page"
         name: "index"
         fields:
@@ -337,8 +337,6 @@ collections:
               - {label: "Product image", name: "featuredimage", widget: image }
               - {label: "Product background image", name: "featuredimageBackground", widget: image, required: false }
               - {label: Description, name: description, widget: text}
-
-
           - label: Quotes section
             widget: list
             name: quotes
@@ -348,7 +346,6 @@ collections:
               - {label: "Author position", name: authorPosition, widget: string, required: false}
               - {label: "Author image", name: "authorImage", widget: image, required: false}
               - {label: "Quote text", name: quoteText, widget: text, required: false}
-
           - label: Solutions
             widget: object
             name: itemsSection
@@ -374,7 +371,7 @@ collections:
               - {label: "Large image", name: "bgimage", widget: image }
           - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
 
-      - file: "src/pages/social-responsibility.md"
+      - file: "src/pages/about/social-responsibility.md"
         label: "Social responsibility"
         name: "about-social-responsibility"
         fields:
