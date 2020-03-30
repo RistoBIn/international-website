@@ -2,7 +2,7 @@
 templateKey: solution-page-primary
 title: Oil and Gas Industry
 seoDescription: Oil and Gas Industry
-heading: Oil & Gas Industry
+heading: Oil and Gas Industry
 description: description
 featuredimage: /img/Harbor Surveillance.jpg
 splitSections:
