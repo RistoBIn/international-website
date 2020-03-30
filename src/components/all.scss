@@ -239,7 +239,7 @@ body {
   }
   .section, .hero-body {
     @media screen and (max-width: $tablet) {
-      padding: 1.5rem 15px;
+      padding: 1.5rem $paddingHorizontalMobile;
     }
   }
 }
@@ -703,11 +703,6 @@ footer.footer {
 
 section.project-page-template {
   .content {
-    margin-left: 0;
-    max-width: 930px;
-    margin-right: auto;
-    padding: 0 15px;
-    h1
     p, li {
       font-size: 20px;
     }
@@ -723,21 +718,19 @@ section.project-page-template {
     .caption {
       font-size: 18px;
       line-height: 170%;
-      max-width: 375px;
+      margin: 0 auto;
+      padding: 0 $paddingHorizontalMobile;
     }
   }
 
   @media screen and (min-width: $desktop) {
-    .content {
-      padding: 0;
-    } 
     .figure {
       .image {
         width: 1410px;
         height: 100%;
       }
       .caption {
-        max-width: 1410px;
+        max-width: 1135px;
       }
     }
   }

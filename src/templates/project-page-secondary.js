@@ -45,7 +45,7 @@ export const ProjectPageTemplate = ({
         <div className="container">
           <PostContent
             content={generateHTML(primarySection.content)}
-            className="content"
+            className="content is-left-aligned"
           />
         </div>
       </section>
