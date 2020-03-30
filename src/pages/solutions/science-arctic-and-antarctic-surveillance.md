@@ -3,10 +3,13 @@ templateKey: solution-page-secondary
 title: Science Arctic and Antarctic Surveillance
 seoDescription: Science Arctic and Antarctic Surveillance
 heading: Science Arctic and Antarctic Surveillance
-description: description
+description: Ocean Space Surveillance
 featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
 splitSections:
   - content: >-
+      ## Antarctic Surveillance
+
+
       Underwater drones equipped with high-tech sensors and edge computing in
       participation with smart cameras could one day patrol the icy waters of
       both Arctic and Antarctic, to help keep an eye on the region’s growing
@@ -29,6 +32,16 @@ splitSections:
       monitoring applications in complex under-ice operations. The sensor
       capabilities are present and will allow for both smart cameras, edge
       computing and data transmitting to satellite.
+    heading: ' '
+  - content: >-
+      ## Project addressing Risk, Reliability and Ice data in the Arctic marine
+      environment
+
+
+      Data and knowledge about the marine environment in the Arctic and
+      Antarctic regions are lacking. Smart cameras, machine vision and edge
+      computing in combination with satellite communication could lowering the
+      risk and rise safety in the Arctic Marine and Coastal environment.
     heading: ' '
     featuredimage: /img/Science Arctic and Antarctic Surveillance.jpg
 ---
