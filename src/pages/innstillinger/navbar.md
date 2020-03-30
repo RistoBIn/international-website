@@ -62,7 +62,7 @@ menuPaths:
         title: Partners
       - path: /about/investors/
         title: Investors
-      - path: /about/partership/
+      - path: /about/partnership/
         title: Partnership
       - path: /about/press/
         title: Press
