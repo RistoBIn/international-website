@@ -202,7 +202,7 @@ collections:
       - {label: "Description", name: "description", widget: "text", hint: "Text."}
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
       - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
-      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image."}
+      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image.", required: false}
       - {label: "Content", name: "body", widget: "markdown"}
       - label: Inspirational section
         name: splitSection
