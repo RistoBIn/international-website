@@ -2,6 +2,8 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 const NonStretchedImage = props => {
+  console.log(props);
+
   let normalizedProps = props;
   /* eslint-disable */
   if (props.fluid && props.fluid.presentationWidth) {

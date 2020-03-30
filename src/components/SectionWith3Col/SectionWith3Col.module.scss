@@ -1,43 +1,47 @@
 @import '../_variables.scss';
 
 .heading {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .wrapper {
+  .box {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 0;
 
-
-    .box {
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-        .image {
-            width: 70px;
-            padding-bottom: 14px;
-            height: 100px;
-        }
-
-        .heading {
-            font-family: $primaryFont;
-            font-weight: bold;
-            font-size: 16px;
-            padding-bottom: 10px;
-            max-height: 64px;
-        }
-        .description {
-            max-width: 300px;
-            color: $body-light;
-            font-weight: normal;
-            letter-spacing: 0.5px;
-            line-height: 170%;
-            min-height: 250px;
-        }
-        .button {
-            margin-top: 20px;
-        }
+    .image {
+      width: 70px;
+      padding-bottom: 40px;
+      height: 100px;
+      margin: 0 auto;
     }
-    @media only screen and (min-width: $tablet) {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .heading, h3 {
+      font-family: $primaryFont;
+      font-weight: bold;
+      font-size: 18px;
+      padding-bottom: 10px;
+      max-height: 64px;
     }
+
+    .description {
+      max-width: 300px;
+      margin: 0 auto;
+      color: $body-light;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      line-height: 170%;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }

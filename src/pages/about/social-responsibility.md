@@ -10,12 +10,12 @@ description: >-
   space responsibly, thus laying the foundations for sustainable growth and
   development.
 featuredImages:
-  - image: /img/un_goal_02.png
-  - image: /img/un_goal_08.png
-  - image: /img/un_goal_09.png
-  - image: /img/un_goal_12.png
-  - image: /img/un_goal_13.png
-  - image: /img/un_goal_14.png
+  - image: /img/un_goal_02.svg
+  - image: /img/un_goal_08.svg
+  - image: /img/un_goal_09.svg
+  - image: /img/un_goal_12.svg
+  - image: /img/un_goal_13.svg
+  - image: /img/un_goal_14.svg
 splitSection:
   left: '##  UN''s Sustainable Development Goals'
   right: >-
@@ -29,26 +29,26 @@ splitSection:
     areas, such as; food production (SDG 2), responsible consumption and
     production (SDG 12), employment and economic growth (SDG 8), innovation and
     infrastructure (SDG 9) and climate action (SDG 13).
-three-col-section:
+threeColSection:
   - description: >-
       ### 5% of GDP
 
       Globally, the market value of marine and coastal resources and industries
       is estimated at $3 trillion per year or about 5 per cent of global GDP.
-    icon: /img/icon-CSR-1.svg
+    icon: '/img/icon-CSR.svg'
   - description: >-
       ### Over 38% of global population
 
       Over three billion people depend on marine and coastal biodiversity for
       their livelihoods.
-    icon: /img/icon-CSR-2.svg
+    icon: '/img/icon-CSR-2.svg'
   - description: >-
       ### 3/4 of Earth surface
 
       Oceans cover three quarters of the Earth’s surface, contain 97 per cent of
       the Earth’s water, and represent 99 per cent of the living space on the
       planet by volume.
-    icon: /img/icon-CSR-3.svg
+    icon: '/img/icon-CSR-3.svg'
 splitSection2:
   left: >-
     ## The three pillars of sustainability

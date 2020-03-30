@@ -392,7 +392,7 @@ collections:
                 - {label: "Content - left", name: "left", widget: "markdown", required: false }
                 - {label: "Content - right", name: "right", widget: "markdown", required: false }
           - label: "Three columns"
-            name: "three-col-section"
+            name: "threeColSection"
             required: false
             widget: list
             fields:
