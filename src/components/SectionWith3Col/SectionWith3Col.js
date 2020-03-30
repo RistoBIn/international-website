@@ -2,19 +2,26 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './SectionWith3Col.module.scss';
 import Button from '../Button';
+import generateHTML from '../../utils/generateHTML';
+import Content, { HTMLContent } from '../Content';
+import { idMaker } from '../../utils/id-maker';
+
+const gen = idMaker();
 
 const SectionWith3Col = ({ heading, columns, className }) => {
-  if (!heading || !columns || columns.length < 1) return <></>;
+  if (!columns || columns.length < 1) return <></>;
+
   return (
-    <section className={classNames('section', className)}>
+    <section className={classNames(className)}>
       <div className="container">
-        <h2 className={styles.heading}>{heading}</h2>
+        {heading ? <h2 className={styles.heading}>{heading}</h2> : <></>}
         <div className={classNames('wrapper', styles.wrapper)}>
           {columns.map(column => (
             <IconBox
+              key={gen.next().value}
               icon={column.icon.publicURL}
               heading={column.heading}
-              description={column.description}
+              content={column.description || column.content}
               cta={column.cta}
             />
           ))}
@@ -24,23 +31,30 @@ const SectionWith3Col = ({ heading, columns, className }) => {
   );
 };
 
-const IconBox = ({ icon, heading, description, cta }) => (
-  <div className={classNames('box', styles.box)}>
-    <figure className="image">
-      <img className={styles.image} src={icon} alt={`Icon for ${heading}`} />
-    </figure>
-    <h3 className={styles.heading}>{heading}</h3>
-    <p className={styles.description}>{description}</p>
-    {cta ? (
-      <Button
-        className={classNames('is-transparent medium', styles.button)}
-        text="Les mer"
-        link={cta}
+const IconBox = ({ icon, heading, content, cta }) => {
+  const PostContent = HTMLContent || Content;
+  return (
+    <div className={classNames('box', styles.box)}>
+      <figure className="image">
+        <img className={styles.image} src={icon} alt={`Icon for ${heading}`} />
+      </figure>
+
+      {heading ? <h3 className={styles.heading}>{heading}</h3> : <></>}
+      <PostContent
+        content={generateHTML(content)}
+        className={classNames(styles.description, 'content')}
       />
-    ) : (
-      <></>
-    )}
-  </div>
-);
+      {cta ? (
+        <Button
+          className={classNames('is-transparent medium', styles.button)}
+          text="Les mer"
+          link={cta}
+        />
+      ) : (
+        <></>
+      )}
+    </div>
+  );
+};
 
 export default SectionWith3Col;
