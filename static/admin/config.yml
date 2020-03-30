@@ -59,7 +59,6 @@ collections:
       - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
 
 #### SOLUTION PAGES TEMPLATE SECONDARY ####
-
   - name: "solution-page-secondary"
     label: "Industries pages - Short"
     folder: "src/pages/solutions/"
@@ -86,7 +85,6 @@ collections:
       - {label: "Content", name: "body", widget: "markdown", }
 
 #### SOLUTION PAGES TEMPLATE Primary ####
-
   - name: "solution-page-primary"
     label: "Industries pages - Long"
     folder: "src/pages/solutions/"
@@ -176,7 +174,6 @@ collections:
           - {label: "Right content", name: "content", widget: "markdown"}
 
 #### PROJECT PAGE TEMPLATE 1 ####
-
   - name: "project-page-primary"
     label: "Project Pages 1"
     folder: "src/pages/projects/"
