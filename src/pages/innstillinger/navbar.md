@@ -52,7 +52,7 @@ menuPaths:
         title: Vision & Strategy
       - path: /leadership/
         title: Leadership
-      - path: /business-model/
+      - path: /about/business-model/
         title: Business Model
       - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
