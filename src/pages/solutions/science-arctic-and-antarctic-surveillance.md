@@ -18,10 +18,6 @@ splitSections:
     heading: ' '
     featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
   - content: >-
-      ## Using Autonomous Underwater Vehicles as Sensor Platforms for
-      Ice-Monitoring
-
-
       Due to the presence of drifting sea-ice and icebergs, ice management (IM)
       becomes an important part both in Arctic and Antarctic. An important part
       of an IM system is the ability to reliably monitor the ice conditions.
@@ -32,7 +28,9 @@ splitSections:
       monitoring applications in complex under-ice operations. The sensor
       capabilities are present and will allow for both smart cameras, edge
       computing and data transmitting to satellite.
-    heading: ' '
+    heading: >-
+      Using Autonomous Underwater Vehicles as Sensor Platforms for
+      Ice-Monitoring
   - content: >-
       ## Project addressing Risk, Reliability and Ice data in the Arctic marine
       environment
