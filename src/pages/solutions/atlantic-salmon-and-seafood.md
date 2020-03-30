@@ -66,9 +66,28 @@ splitSections:
       ***We give everyone the opportunity to see under water.***
     heading: Full traceability throughout the entire production process
     subheading: 'With data collection, we provide'
+
+imageSection:
+  featuredimage: /img/boat-fish.jpg
+  left: >-
+    ### Seafood Production in the ocean
+  right: >-
+    All over the world, seafood is produced. From Atlantic salmon to whitefish, clams, shellfish production, shrimp farming and catching and cultivation of seaweed and kelp. The same technology that SEALAB supplies to the Norwegian aquaculture industry will be able to be used worldwide with simple adaptations.
+
+splitSection:
+  heading: Land based Fish Farming
+  left: >-
+    ### For a sustainable future
+
+    Globally land-based aquaculture facilities are increasingly being considered as a more sustainable alternative to open-water fish farms. Until just a few years ago, land-based fish farming was considered too costly, but this is changing as systems and technologies become increasingly sophisticated. Cutting edge technologies will be needed. 
+    
+    Optimizing water temperature and good access to groundwater is important, but sometimes expensive hydroelectric power rise the risk of the business. This is where better sensorics and machine vision from SEALAB come into play
+  right: >-
+    ### Setting a new standard
+    
+    Companies who seek new ways to make its facility as energy efficient and sustainable as possible will need real time surveillance systems for monitoring fish welfare and the production. SEALABs machine vision systems for biomass control, respiratory rate measuring, feeding control will help our customers to reach their goals. 
+    
+    Innovation drives the value we create. Whether hardware, software, processes or services, we’re dedicated to surpassing industry standards to ensure processors can provide food that is high quality, sustainable, and affordable. Our commitment to progress is highlighted by the fact that every year, we invest significantly more into research and development than the industry average.
 ---
-## Autonomous Vehicles
 
-Autonomous vehicles are trained with numerous mounted cameras all around them at various heights and angles that allow it to detect how the car is moving from every perspective. The software is trained on thousands of hours of human driving footage showing the proper and safe way a vehicle should operate from various angles, in various lighting conditions, and in different weather conditions. The vessel or the underwater drone could then get a command to move to a new location. 
 
-Navies Needs Offensive Undersea Drones, but the maritime domain has yet to see the kind of explosive innovation that UAVs have brought to land warfare. SEALABs superfast FPGA technology and smart 2D and 3D cameras will change everything in the ocean space.
