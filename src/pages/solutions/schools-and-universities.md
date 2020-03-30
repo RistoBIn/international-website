@@ -26,6 +26,8 @@ splitSections:
       ## Give everyone the opportunity to see under water
 
 
+      \
+
       SEALAB gives everyone the opportunity to see underwater, not least to the
       growing family that is more than ever concerned with the environment and
       knowledge of the sea.
