@@ -42,7 +42,7 @@ export const ProductPageTemplate = ({
       )}
 
       <SplittedSection
-        className="content has-dark-background"
+        className="section content has-dark-background"
         shouldReorderOnMobile
         leftColumn={<PostContent content={content} />}
         rightColumn={
@@ -60,7 +60,7 @@ export const ProductPageTemplate = ({
         </div>
       </section>
       <SplittedSection
-        className="content has-dark-background"
+        className="section content has-dark-background"
         rightColumn={
           <PostContent content={generateHTML(thirdSection.content)} />
         }

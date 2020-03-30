@@ -5,7 +5,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
+import NonStretchedImage from '../components/NonStretchedImage';
+import SplittedSection from '../components/SplittedSection';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
+import generateHTML from '../utils/generateHTML';
 
 export const SolutionPageTemplate = ({
   content,
@@ -14,11 +17,13 @@ export const SolutionPageTemplate = ({
   heading,
   featuredimage,
   splitSections,
+  imageSection,
+  splitSection,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="solution-page-Primary has-dark-background">
+    <section className="solution-page-primary solution-page has-dark-background">
       <SolutionHero
         className="is-large"
         heading={heading}
@@ -37,11 +42,67 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      <section className="section is-medium has-dark-background">
+      <section className="section has-dark-background">
         <div className="container">
-          <PostContent content={content} className="content is-left-aligned" />
+          <NonStretchedImage
+            fluid={imageSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt=""
+            className="image"
+          />
+          <SplittedSection
+            leftColumn={
+              <PostContent
+                content={generateHTML(imageSection.left)}
+                className="content is-left-aligned"
+              />
+            }
+            rightColumn={
+              <PostContent
+                content={generateHTML(imageSection.right)}
+                className="content is-left-aligned"
+              />
+            }
+          />
         </div>
       </section>
+
+      {splitSection ? (
+        <section className="section has-dark-background">
+          <div className="container">
+            <h2>{splitSection.heading}</h2>
+            <SplittedSection
+              leftColumn={
+                <PostContent
+                  content={generateHTML(splitSection.left)}
+                  className="content is-left-aligned"
+                />
+              }
+              rightColumn={
+                <PostContent
+                  content={generateHTML(splitSection.right)}
+                  className="content is-left-aligned"
+                />
+              }
+            />
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
+
+      {content ? (
+        <section className="section is-medium has-dark-background">
+          <div className="container">
+            <PostContent
+              content={content}
+              className="content is-left-aligned"
+            />
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
     </section>
   );
 };
@@ -76,6 +137,8 @@ const SolutionPage = ({ data }) => {
     description,
     featuredimage,
     splitSections,
+    imageSection,
+    splitSection,
   } = frontmatter;
 
   return (
@@ -87,6 +150,8 @@ const SolutionPage = ({ data }) => {
         description={description}
         featuredimage={featuredimage}
         splitSections={splitSections}
+        imageSection={imageSection}
+        splitSection={splitSection}
       />
     </Layout>
   );
@@ -117,11 +182,28 @@ export const pageQuery = graphql`
             extension
             childImageSharp {
               fluid(maxWidth: 600, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
             }
           }
+        }
+        imageSection {
+          left
+          right
+          featuredimage {
+            childImageSharp {
+              fluid(maxWidth: 1410, quality: 100) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        splitSection {
+          heading
+          left
+          right
         }
       }
     }

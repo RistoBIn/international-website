@@ -1,5 +1,5 @@
 ---
-templateKey: solution-page-secondary
+templateKey: solution-page-primary
 title: Atlantic Salmon and Seafood
 seoDescription: >-
   SEALABs machine vision and camera technology will increase automation and food

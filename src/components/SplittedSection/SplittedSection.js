@@ -12,7 +12,7 @@ const SplittedSection = ({
 }) => {
   if (!leftColumn || !rightColumn) return <></>;
   return (
-    <section className={classNames('section', className)}>
+    <section className={classNames(className)}>
       <div className="container">
         <div className={styles.wrapper}>
           <div

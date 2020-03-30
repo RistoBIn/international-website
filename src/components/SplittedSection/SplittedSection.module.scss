@@ -16,10 +16,12 @@
         .leftColumn, .rightColumn {
             grid-row: 1 !important;
             margin: auto;
+            margin-top: 0;
             padding: 2rem;
         }
         .leftColumn {
             padding-left: 0;
+            margin-left: 0;
         }
     }
 }
