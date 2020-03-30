@@ -13,6 +13,20 @@ menuPaths:
         title: Well and Fishing Boats
       - path: /solutions/seabed-mining/
         title: Seabed Mining
+      - path: /solutions/environmental-monitoring/
+        title: Environmental Monitoring
+      - path: /solutions/harbor-surveillance/
+        title: Harbor Surveillance
+      - path: /solutions/oil-and-gas-industry/
+        title: Oil & Gas Industry
+      - path: /solutions/underwater-drones-and-robotics/
+        title: Underwater Drones and Robotics
+      - path: /solutions/bridge-and-watercourse-monitoring/
+        title: Bridge and Watercourse Monitoring
+      - path: /solutions/river-and-wildlife-monitoring/
+        title: River and Wildlife monitoring
+      - path: /solutions/hydropower-plants/
+        title: Hydropower Plants
     path: '#'
     title: Solutions
   - dropdown:
