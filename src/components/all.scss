@@ -561,62 +561,80 @@ footer.footer {
   background: none;
   margin: 0;
   padding: 0;
-  section#related-articles {
-    background-color: $white;
-    border-bottom: 1px solid $border;
-    h1,
-    h2,
-    h3 {
-      color: $title-dark;
-    }
-    p {
-      color: $grey-light;
-    }
-    hr {
-      color: $border-light-background;
-      background-color: $border-light-background;
-      opacity: 0.15;
-      height: 0.5px;
-    }
-  }
   .has-dark-background {
     background-color: $footer-background;
 
     a,
     p {
-      font-family: $primaryFont;
-      font-style: normal;
       font-weight: 600;
-      font-size: 16px;
       line-height: 220%;
       color: $white;
     }
   }
   section#book-demo {
     border-top: 1px solid $border-dark-background;
+    .columns {width: 100%}
+    .cta {
+      margin-left: auto;
+      margin-right: 0;
+    }
     h3 {
       color: $white;
       font-weight: 600;
       font-size: 18px;
+      &.is-red {
+        color: $red;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: none;
+        opacity: unset;
+        padding-bottom: 20px;
+      }
     }
     p {
       @include text_Light;
-      font-size: 16px;
     }
+    .contact-info {
+      p {
+        margin: auto 0;
+        vertical-align: middle;
+        color: $white;
+        font-weight: 600;
+        line-height: 220%;
+        span {
+          padding-right: 22px;
+          margin: auto 0;
+          svg {
+            margin: auto;
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+    }
+
     .text {
-      padding: 20px 0;
+      padding-right: 20px;
     }
     @media only screen and (min-width: $desktop) {
-      text-align: right;
-      display: flex;
-      .text {
-        margin-left: auto;
-        padding: 0 60px;
+      .cta {
+        text-align: right;
+        display: flex;
+        .text, .button {
+          margin: auto;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+        .button {
+          max-width: 180px;
+          margin-left: 0;
+          align-self: flex-end;
+          line-height: 1em;
+        }
       }
-      .button {
-        align-self: flex-end;
-        line-height: 1em;
-      }
+
     }
   }
   section#company-information,
@@ -633,29 +651,6 @@ footer.footer {
       color: $white;
       opacity: 0.5;
       margin-bottom: 20px;
-
-      &.is-red {
-        color: $red;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
-        text-transform: none;
-        opacity: unset;
-      }
-    }
-    p {
-      margin: auto 0;
-      vertical-align: middle;
-      span {
-        padding-right: 22px;
-        margin: auto 0;
-        svg {
-          margin: auto;
-          height: 18px;
-          width: 18px;
-        }
-      }
     }
   }
   section#copyright {
@@ -668,9 +663,6 @@ footer.footer {
     .copyright-text {
       margin: auto 0;
       p {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 19px;
         color: $grey-light;
