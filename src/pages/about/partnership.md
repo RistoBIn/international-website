@@ -12,7 +12,8 @@ description: >-
 seoDescription: Partnership
 featuredimage: /img/Sealab.jpg
 ---
-**Our system is open to third parties**\
+## Our system is open to third parties
+
 \
 The BlueThink™ platform delivers any data or video required for software applications to perform their functions, while allowing the results from those applications to be presented back into the platform for use by other applications. With this, SEALAB is in a unique position to store and analyze data produced even by third-parties.
 
