@@ -22,7 +22,9 @@ splitSections:
       Antarctic regions are lacking. Smart cameras, machine vision and edge
       computing in combination with satellite communication could lowering the
       risk and rise safety in the Arctic Marine and Coastal environment.
-    heading: test
+    heading: >-
+      Project addressing Risk, Reliability and Ice data in the Arctic marine
+      environment
   - content: >-
       ## Using Autonomous Underwater Vehicles as Sensor Platforms for
       Ice-Monitoring
