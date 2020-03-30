@@ -23,6 +23,9 @@ splitSections:
     heading: SEALAB brings the Ocean to the Schools
     subheading: ' '
   - content: >-
+      ## SEALAB gives everyone the opportunity to see underwater
+
+
       SEALAB gives everyone the opportunity to see underwater, not least to the
       growing family that is more than ever concerned with the environment and
       knowledge of the sea.
@@ -32,8 +35,8 @@ splitSections:
       and out on the internet. Machine vision and AI will be able to tell in
       real time what fish you see, how the fish are doing and thus build
       knowledge for the recipient.
-    heading: SEALAB gives everyone the opportunity to see underwater
+    heading: ' '
     featuredimage: /img/Schools and Universities.jpg
     subheading: ' '
 ---
- test
+  test
