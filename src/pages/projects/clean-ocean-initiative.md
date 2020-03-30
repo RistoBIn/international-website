@@ -1,21 +1,24 @@
 ---
 templateKey: project-page-secondary
 title: Clean Ocean Initiative
-seoDescription: >-
-  Clean Ocean Initiative
 heading: Clean Ocean Initiative
 description: >-
-  This initiative is our contribution to keeping the oceans clean from plastic and other human waste.
+  This initiative is our contribution to keeping the oceans clean from plastic
+  and other human waste.
+seoDescription: Clean Ocean Initiative
 featuredimage: /img/clean-ocean-initiative-one.png
 featuredimageCaption: >-
-  SEALAB employees removing trash from the beaches at the SEALAB Ocean Space Center situated on Gjæsingen island off the Norwegian coast.
+  SEALAB employees removing trash from the beaches at the SEALAB Ocean Space
+  Center situated on Gjæsingen island off the Norwegian coast.
 splitSection:
   bgimage: /img/inspirational.jpg
   content: >-
-    *For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
+    *For most of history, man has had to fight nature to survive; in this
+    century he is beginning to realize that, in order to survive, he must
+    protect it.* 
+
 
     <strong id="quote-author">- Jacques-Yves Cousteau</strong>
-
 ---
 
 ## Social responsibility
