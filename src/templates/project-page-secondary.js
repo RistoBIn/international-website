@@ -3,6 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
+import generateHTML from '../utils/generateHTML';
 import Content, { HTMLContent } from '../components/Content';
 import SplitWithFullWidthImage from '../components/SplitWithFullWidthImage';
 
@@ -42,8 +43,10 @@ export const ProjectPageTemplate = ({
       </section>
       <section className="section has-dark-background project-page-template">
         <div className="container">
-          <h1 className="section--subheading">{primarySection.heading}</h1>
-          <p className="section--description">{primarySection.description}</p>
+          <PostContent
+            content={generateHTML(primarySection.content)}
+            className="content"
+          />
         </div>
       </section>
       <SplitWithFullWidthImage
@@ -109,8 +112,7 @@ export const pageQuery = graphql`
         }
         featuredimageCaption
         primarySection {
-          heading
-          description
+          content
         }
         splitSection {
           bgimage {

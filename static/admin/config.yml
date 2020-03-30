@@ -49,8 +49,7 @@ collections:
         name: primarySection
         widget: "object"
         fields:
-          - {label: "Heading", name: "heading", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Content", name: "content", widget: "markdown"}
       - label: Inspirational section
         name: splitSection
         widget: object
