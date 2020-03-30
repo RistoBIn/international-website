@@ -1,10 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
-import classNames from 'classnames';
-import Footer from '../../components/Footer';
-import GoogleMap from '../../components/GoogleMap';
 import Layout from '../../components/Layout';
-import Navbar from '../../components/Navbar';
 import ArrowRight from '../../img/Arrow.inline.svg';
 import EmailIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
@@ -18,19 +14,9 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props);
-    const trondheimCoordinates = {
-      lat: 63.440503,
-      lng: 10.414961,
-    };
-    const osloCoordinates = {
-      lat: 59.942468,
-      lng: 10.716228,
-    };
+
     this.state = {
       isValidated: false,
-      activeMap: trondheimCoordinates,
-      osloCoordinates,
-      trondheimCoordinates,
     };
   }
 
@@ -53,95 +39,18 @@ export default class Index extends React.Component {
       .catch(error => alert(error));
   };
 
-  changeMap = location => {
-    this.setState({ activeMap: location });
-  };
-
   render() {
-    const { trondheimCoordinates, osloCoordinates, activeMap } = this.state;
-
     return (
       <Layout
         seoTitle="Contact us"
         seoDescription="Reach out us. We're looking forward to it"
       >
-        <section className="map">
-          <div id="google-maps">
-            <GoogleMap
-              isMarkerShown
-              mapCoordinates={activeMap}
-              markers={[trondheimCoordinates, osloCoordinates]}
-            />
-          </div>
-        </section>
-        <div className="is-hidden-tablet">
-          <div className="button-wrapper">
-            <button
-              type="button"
-              className={classNames({
-                'is-active': activeMap === trondheimCoordinates,
-              })}
-              onClick={() => this.changeMap(trondheimCoordinates)}
-            >
-              Trondheim
-            </button>
-            <button
-              type="button"
-              className={classNames({
-                'is-active': activeMap === osloCoordinates,
-              })}
-              onClick={() => this.changeMap(osloCoordinates)}
-            >
-              Oslo
-            </button>
-          </div>
-        </div>
-        <section id="offices" className="section">
-          <div className="container">
-            <div className="wrapper">
-              <h1>Contact</h1>
-              <div
-                role="button"
-                tabIndex={0}
-                className={classNames('office', {
-                  'is-active': activeMap === trondheimCoordinates,
-                })}
-                onClick={() => this.changeMap(trondheimCoordinates)}
-                onKeyPress={() => this.changeMap(trondheimCoordinates)}
-              >
-                <h3>Main office</h3>
-                <p>
-                  SEALAB OCEAN GROUP <br />
-                  Transittgata 14, inngang A<br />
-                  7042 Trondheim
-                </p>
-              </div>
-              <div
-                role="button"
-                tabIndex={0}
-                className={classNames('office', {
-                  'is-active': activeMap === osloCoordinates,
-                })}
-                onClick={() => this.changeMap(osloCoordinates)}
-                onKeyPress={() => this.changeMap(osloCoordinates)}
-              >
-                <h3>Oslo</h3>
-                <p>
-                  Oslo Science Park
-                  <br />
-                  Gaustadalléen 21
-                  <br />
-                  0349 Oslo, Norway
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         <section id="contact-form" className="section is-medium">
           <div className="container">
             <div className="content">
               <div className="columns">
                 <div className="column is-4">
+                  <h1>Contact</h1>
                   <h2>
                     Please fill out the contact form, and we will contact you as
                     fast as we can.
@@ -153,11 +62,19 @@ export default class Index extends React.Component {
                     <ContactInformation title="Phone" Icon={PhoneIcon}>
                       <a href="tel:+4772909111">+47 729 09 111</a>
                     </ContactInformation>
+                    <div className="contact-information-item">
+                      <h4 className="subtitle">Address</h4>
+
+                      <div className="contact-information-item-content">
+                        <p>Transittgata 14, entrance A </p>
+                        <p>7042, Trondheim</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div id="form" className="column is-6 is-offset-1">
                   <form
-                    name="contact"
+                    name="contact-international"
                     method="post"
                     action="/contact/thanks"
                     data-netlify="true"
