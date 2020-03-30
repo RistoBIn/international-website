@@ -15,6 +15,12 @@ splitSections:
     heading: ' '
     featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
   - content: >-
+      Data and knowledge about the marine environment in the Arctic and
+      Antarctic regions are lacking. Smart cameras, machine vision and edge
+      computing in combination with satellite communication could lowering the
+      risk and rise safety in the Arctic Marine and Coastal environment.
+    heading: test
+  - content: >-
       ## Using Autonomous Underwater Vehicles as Sensor Platforms for
       Ice-Monitoring
 
@@ -31,11 +37,5 @@ splitSections:
       computing and data transmitting to satellite.
     heading: ' '
     featuredimage: /img/Science Arctic and Antarctic Surveillance.jpg
-  - content: >-
-      Data and knowledge about the marine environment in the Arctic and
-      Antarctic regions are lacking. Smart cameras, machine vision and edge
-      computing in combination with satellite communication could lowering the
-      risk and rise safety in the Arctic Marine and Coastal environment.
-    heading: test
 ---
 
