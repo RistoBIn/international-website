@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+import SplitWithFullWidthImage from '../components/SplitWithFullWidthImage';
 
 export const ProjectPageTemplate = ({
   content,
@@ -45,22 +46,13 @@ export const ProjectPageTemplate = ({
           <p className="section--description">{primarySection.description}</p>
         </div>
       </section>
-      <section id="inspirational-quote" className="section has-dark-background">
-        <div
-          className="wrapper-two-split"
-          style={{
-            background: `linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)),  url(${splitSectionImage.publicURL})`,
-          }}
-        >
-          <div
-            style={{ backgroundImage: `url(${splitSectionImage.publicURL})` }}
-            className="bg-image"
-          />
-          <>
-            <PostContent content={content} className="content" />
-          </>
-        </div>
-      </section>
+      <SplitWithFullWidthImage
+        id="inspirational-quote"
+        className="has-dark-background"
+        splitSectionImage={splitSectionImage}
+      >
+        <PostContent content={content} className="content" />
+      </SplitWithFullWidthImage>
     </>
   );
 };
