@@ -21,7 +21,7 @@ thirdNavigation:
 fourthNavigation:
   - path: /contact
     title: Contact
-  - path: /vision-strategy
+  - path: /about/vision-strategy
     title: Vision & Strategy
   - path: /leadership
     title: Leadership

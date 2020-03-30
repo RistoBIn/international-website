@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-export const AboutPageTemplate = ({
+export const AboutPagePrimaryTemplate = ({
   content,
   contentComponent,
   heading,
@@ -53,7 +53,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout seoTitle={title} seoDescription={seoDescription}>
-      <AboutPageTemplate
+      <AboutPagePrimaryTemplate
         content={data.markdownRemark.html}
         contentComponent={HTMLContent}
         heading={heading}
@@ -67,7 +67,7 @@ const AboutPage = ({ data }) => {
 export default AboutPage;
 
 export const pageQuery = graphql`
-  query AboutPageTemplateById($id: String!) {
+  query AboutPagePrimaryTemplateById($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
