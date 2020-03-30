@@ -770,9 +770,10 @@ section.about-page-secondary {
     }
   }
 
-  .about-page-secondary-image .image {
+  .image {
     width: 100%;
     height: 375px;
+    text-align: left;
   }
 
   @media screen and (min-width: $desktop) {
@@ -780,8 +781,9 @@ section.about-page-secondary {
       padding: 0;
     }
 
-    .about-page-secondary-image .image {
+    .image {
       height: 100%;
+      text-align: left;
     }
   }
 }

@@ -13,9 +13,14 @@ export const AboutPageSecondaryTemplate = ({
   heading,
   description,
   featuredimage,
-  primarySection,
+  primarySplitSection,
   centeredTextSection,
-  centeredImageSection,
+  primaryCenteredImageSection,
+  secondarySplitSection,
+  tertiarySplitSection,
+  quaternarySplitSection,
+  secondaryCenteredImageSection,
+  quinarySplitSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -41,13 +46,13 @@ export const AboutPageSecondaryTemplate = ({
           <SplittedSection
             leftColumn={
               <PostContent
-                content={generateHTML(primarySection.left.content)}
+                content={generateHTML(primarySplitSection.left.content)}
                 className="content is-left-aligned"
               />
             }
             rightColumn={
               <PostContent
-                content={generateHTML(primarySection.right.content)}
+                content={generateHTML(primarySplitSection.right.content)}
                 className="content is-left-aligned"
               />
             }
@@ -59,18 +64,140 @@ export const AboutPageSecondaryTemplate = ({
           <PostContent content={generateHTML(centeredTextSection.content)} />
         </div>
       </section>
-      <section className="has-dark-background project-page-template">
+      <section className="has-dark-background about-page-secondary">
         <div className="container">
           <figure className="figure">
             <Img
-              fluid={centeredImageSection.featuredimage.childImageSharp.fluid}
+              fluid={
+                primaryCenteredImageSection.featuredimage.childImageSharp.fluid
+              }
               alt="About image"
               className="image container"
             />
             <figcaption className="caption container">
-              {centeredImageSection.featuredimageCaption}
+              {primaryCenteredImageSection.featuredimageCaption}
             </figcaption>
           </figure>
+        </div>
+      </section>
+      <section className="section has-dark-background about-page-secondary">
+        <div className="container">
+          <SplittedSection
+            leftColumn={
+              <PostContent
+                content={generateHTML(secondarySplitSection.left.content)}
+                className="content is-left-aligned"
+              />
+            }
+            rightColumn={
+              <PostContent
+                content={generateHTML(secondarySplitSection.right.content)}
+                className="content is-left-aligned"
+              />
+            }
+          />
+        </div>
+      </section>
+      <section className="section has-dark-background about-page-secondary">
+        <div className="container">
+          <SplittedSection
+            leftColumn={
+              <PostContent
+                content={generateHTML(tertiarySplitSection.left.content)}
+                className="content is-left-aligned"
+              />
+            }
+            rightColumn={
+              <>
+                <SplittedSection
+                  leftColumn={
+                    <PostContent
+                      content={generateHTML(
+                        tertiarySplitSection.right.topNestedTertiarySplitSection
+                          .left.content,
+                      )}
+                      className="content is-left-aligned"
+                    />
+                  }
+                  rightColumn={
+                    <PostContent
+                      content={generateHTML(
+                        tertiarySplitSection.right.topNestedTertiarySplitSection
+                          .right.content,
+                      )}
+                      className="content is-left-aligned"
+                    />
+                  }
+                />
+                <SplittedSection
+                  leftColumn={
+                    <PostContent
+                      content={generateHTML(
+                        tertiarySplitSection.right
+                          .bottomNestedTertiarySplitSection.left.content,
+                      )}
+                      className="content is-left-aligned"
+                    />
+                  }
+                  rightColumn={
+                    <PostContent
+                      content={generateHTML(
+                        tertiarySplitSection.right
+                          .bottomNestedTertiarySplitSection.right.content,
+                      )}
+                      className="content is-left-aligned"
+                    />
+                  }
+                />
+              </>
+            }
+          />
+        </div>
+      </section>
+      <section className="section has-dark-background about-page-secondary">
+        <div className="container">
+          <SplittedSection
+            leftColumn={
+              <PostContent
+                content={generateHTML(quaternarySplitSection.left.content)}
+                className="content is-left-aligned"
+              />
+            }
+            rightColumn={
+              <PostContent
+                content={generateHTML(quaternarySplitSection.right.content)}
+                className="content is-left-aligned"
+              />
+            }
+          />
+        </div>
+      </section>
+      <section className="has-dark-background about-page-secondary">
+        <div className="container">
+          <figure className="figure">
+            <Img
+              fluid={
+                secondaryCenteredImageSection.featuredimage.childImageSharp
+                  .fluid
+              }
+              alt="About image"
+              className="image container"
+            />
+            <figcaption className="caption container" />
+          </figure>
+        </div>
+      </section>
+      <section className="section has-dark-background about-page-secondary">
+        <div className="container">
+          <SplittedSection
+            leftColumn={
+              <PostContent
+                content={generateHTML(quinarySplitSection.left.content)}
+                className="content is-left-aligned"
+              />
+            }
+            rightColumn={<></>}
+          />
         </div>
       </section>
     </>
@@ -86,9 +213,14 @@ const AboutPage = ({ data }) => {
     description,
     seoDescription,
     featuredimage,
-    primarySection,
+    primarySplitSection,
     centeredTextSection,
-    centeredImageSection,
+    primaryCenteredImageSection,
+    secondarySplitSection,
+    tertiarySplitSection,
+    quaternarySplitSection,
+    secondaryCenteredImageSection,
+    quinarySplitSection,
   } = frontmatter;
 
   return (
@@ -99,9 +231,14 @@ const AboutPage = ({ data }) => {
         heading={heading}
         description={description}
         featuredimage={featuredimage}
-        primarySection={primarySection}
+        primarySplitSection={primarySplitSection}
         centeredTextSection={centeredTextSection}
-        centeredImageSection={centeredImageSection}
+        primaryCenteredImageSection={primaryCenteredImageSection}
+        secondarySplitSection={secondarySplitSection}
+        tertiarySplitSection={tertiarySplitSection}
+        quaternarySplitSection={quaternarySplitSection}
+        secondaryCenteredImageSection={secondaryCenteredImageSection}
+        quinarySplitSection={quinarySplitSection}
       />
     </Layout>
   );
@@ -127,7 +264,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        primarySection {
+        primarySplitSection {
           left {
             content
           }
@@ -138,7 +275,7 @@ export const pageQuery = graphql`
         centeredTextSection {
           content
         }
-        centeredImageSection {
+        primaryCenteredImageSection {
           featuredimage {
             childImageSharp {
               fluid(maxHeight: 600) {
@@ -148,6 +285,60 @@ export const pageQuery = graphql`
             }
           }
           featuredimageCaption
+        }
+        secondarySplitSection {
+          left {
+            content
+          }
+          right {
+            content
+          }
+        }
+        tertiarySplitSection {
+          left {
+            content
+          }
+          right {
+            topNestedTertiarySplitSection {
+              left {
+                content
+              }
+              right {
+                content
+              }
+            }
+            bottomNestedTertiarySplitSection {
+              left {
+                content
+              }
+              right {
+                content
+              }
+            }
+          }
+        }
+        quaternarySplitSection {
+          left {
+            content
+          }
+          right {
+            content
+          }
+        }
+        secondaryCenteredImageSection {
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 600) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        quinarySplitSection {
+          left {
+            content
+          }
         }
       }
     }
