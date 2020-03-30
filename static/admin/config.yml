@@ -148,7 +148,7 @@ collections:
 
 #### PROJECT PAGE TEMPLATE 1 ####
   - name: "project-page-primary"
-    label: "Project Pages (Advanced with Key factors)"
+    label: "Project Pages (Advanced)"
     folder: "src/pages/projects/"
     create: true
     description: "This is the primary project page template."
