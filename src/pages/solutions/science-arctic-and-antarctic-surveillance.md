@@ -3,7 +3,7 @@ templateKey: solution-page-secondary
 title: Science Arctic and Antarctic Surveillance
 seoDescription: Science Arctic and Antarctic Surveillance
 heading: Science Arctic and Antarctic Surveillance
-description: description
+description: Ocean Space Surveillance
 featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
 splitSections:
   - content: >-
