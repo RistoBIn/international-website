@@ -6,7 +6,7 @@ heading: Schools and Universities
 description: >-
   New project at SEALAB R&D Lab to highlight importance of the Ocean Space to
   children.
-featuredimage: /img/Schools and Universities.jpg
+featuredimage: /img/_DSC7473.jpg
 splitSections:
   - content: >-
       Environmental education is one of the essential pillars to amaze, raise
@@ -26,13 +26,9 @@ splitSections:
       ## Give everyone the opportunity to see under water
 
 
-
-
       SEALAB gives everyone the opportunity to see underwater, not least to the
       growing family that is more than ever concerned with the environment and
       knowledge of the sea.
-
-
 
 
       Aquariums all over the world will be able to stream in broadcast quality
