@@ -23,7 +23,9 @@ splitSections:
     heading: SEALAB brings the Ocean to the Schools
     subheading: ' '
   - content: >-
-      ## SEALAB gives everyone the opportunity to see underwater
+      ## \
+
+      SEALAB gives everyone the opportunity to see underwater
 
 
 
