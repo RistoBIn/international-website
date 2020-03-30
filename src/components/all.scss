@@ -239,7 +239,7 @@ body {
   }
   .section, .hero-body {
     @media screen and (max-width: $tablet) {
-      padding: 1.5rem 15px;
+      padding: 1.5rem $paddingHorizontalMobile;
     }
   }
 }
@@ -261,6 +261,13 @@ body {
     font-size: 20px;
     @media screen and (max-width: $tablet) {
       font-size: $fontMedium;
+    }
+  }
+  .section--subheading {
+    @include text_Light;
+    padding-bottom: 20px;
+    @media screen and (max-width: $tablet) {
+      padding-bottom: 10px;
     }
   }
   .section--title, 
@@ -692,9 +699,46 @@ footer.footer {
   }
 }
 
+/****************     PROJECT PAGES     ********************/
+
+section.project-page-template {
+  .content {
+    p, li {
+      font-size: 20px;
+    }
+  } 
+
+  .figure {
+    text-align: center;
+    .image {
+      margin-bottom: 10px;
+      width: 100%;
+      height: 375px;
+    }
+    .caption {
+      font-size: 18px;
+      line-height: 170%;
+      margin: 0 auto;
+      padding: 0 $paddingHorizontalMobile;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    .figure {
+      .image {
+        width: 1410px;
+        height: 100%;
+      }
+      .caption {
+        max-width: 1135px;
+      }
+    }
+  }
+}
+
 /****************     ABOUT PAGES     ********************/
 
-section.about-page-template {
+section.about-page-primary {
   .content {
     p,
     li {
@@ -702,17 +746,22 @@ section.about-page-template {
     }
   }
 
-  .about-page-template-image .image {
+  .about-page-primary-image .image {
     width: 100%;
     height: 375px;
   }
 
   @media screen and (min-width: $desktop) {
-    .about-page-template-image .image {
+    .content {
+      padding: 0;
+    }
+
+    .about-page-primary-image .image {
       height: 100%;
     }
   }
 }
+
 /****************     HOME PAGE     ********************/
 
 .hero.front-page {

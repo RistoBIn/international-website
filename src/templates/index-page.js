@@ -12,6 +12,7 @@ import NonStretchedImage from '../components/NonStretchedImage';
 import HighlightedData from '../components/HighlightedData';
 import SectionBackgroundImage from '../components/SectionBackgroundImage';
 import QuotesList from '../components/QuotesList';
+import SplitWithFullWidthImage from '../components/SplitWithFullWidthImage';
 
 export const IndexPageTemplate = ({
   heading,
@@ -74,22 +75,13 @@ export const IndexPageTemplate = ({
         buttonText={solutions.button.text}
         buttonPath={solutions.button.path}
       />
-      <section id="inspirational-quote" className="section has-dark-background">
-        <div
-          className="wrapper-two-split"
-          style={{
-            background: `linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)),  url(${splitSectionImage.publicURL})`,
-          }}
-        >
-          <div
-            style={{ backgroundImage: `url(${splitSectionImage.publicURL})` }}
-            className="bg-image"
-          />
-          <>
-            <PostContent content={content} className="content" />
-          </>
-        </div>
-      </section>
+      <SplitWithFullWidthImage
+        id="inspirational-quote"
+        className="has-dark-background"
+        splitSectionImage={splitSectionImage}
+      >
+        <PostContent content={content} className="content" />
+      </SplitWithFullWidthImage>
     </>
   );
 };

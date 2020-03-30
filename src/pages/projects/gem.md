@@ -1,11 +1,12 @@
 ---
-templateKey: project-page-secondary
-title: Environmental Monitoring
-heading: Gjæsingen Environmental Monitoring
+templateKey: about-page-template-primary
+title: Environment Monitoring
 seoDescription: >-
-  Environmental Monitoring seoDescription bla bla
+  Environment Monitoring
+heading: Gjæsingen Environment Monitoring
 description: >-
-  Environmental Monitoring description bla bla
+  Environment Monitoring
+featuredimage: /img/SEALAB_OSC_Quintus_at_night.png
 ---
 
 

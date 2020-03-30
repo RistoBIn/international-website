@@ -41,10 +41,10 @@ menuPaths:
         title: Indisal
       - path: /projects/5G-heart/
         title: 5G Heart
-      - path: /projects/clean-ocean-iniative/
+      - path: /projects/clean-ocean-initiative/
         title: Clean Ocean Initiative
-      - path: /projects/environmental-monitoring/
-        title: Environmental Monitoring
+      - path: /projects/gem/
+        title: Environment Monitoring
     path: '#'
     title: Projects
   - dropdown:
