@@ -27,16 +27,18 @@ export const ProjectPageTemplate = ({
         </div>
       </section>
       <section className="has-dark-background project-page-template">
-        <figure className="figure">
-          <Img
-            fluid={featuredimage.childImageSharp.fluid}
-            alt="About image"
-            className="image container"
-          />
-          <figcaption className="caption container">
-            {featuredimageCaption}
-          </figcaption>
-        </figure>
+        <div className="container">
+          <figure className="figure">
+            <Img
+              fluid={featuredimage.childImageSharp.fluid}
+              alt="About image"
+              className="image container"
+            />
+            <figcaption className="caption container">
+              {featuredimageCaption}
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <section className="section has-dark-background project-page-template">
         <div className="container">
