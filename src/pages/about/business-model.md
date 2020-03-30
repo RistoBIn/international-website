@@ -14,13 +14,19 @@ description: >
 seoDescription: Business Model
 featuredimage: /img/Founders at Work.jpg
 ---
+
+
 **Investing in growth**
 
 SEALAB aims to achieve an average of 12% annual revenue growth over the next decade. Around a third of this will be organic growth, while two-thirds will be acquired growth. Through this growth, we will be able to enhance our product offering, gain additional industry knowledge and insight, and enter even more markets around the world.
 
+
+
 **Steady organic growth**
 
 The market for software, AI, analytics systems and equipment for the Ocean Space is expected to grow a lot in the long term. Driven by our extensive innovation investment and market penetration, we aim to grow organically faster than the market.
+
+
 
 **Acquired growth**
 
