@@ -46,13 +46,14 @@ collections:
       - label: "Sections"
         hint: Create as many you like
         name: splitSections
+        required: false
         widget: list
         fields:
             - {label: "Subheading", name: "subheading", widget: "string", required: false }
             - {label: "Heading", name: "heading", widget: "string", requred: false}
             - {label: "Content on the right", name: "content", widget: "markdown", }
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
-      - {label: "Content", name: "body", widget: "markdown", }
+      - {label: "Content", name: "body", widget: "markdown", required: false,}
 
 #### SOLUTION PAGES TEMPLATE Primary ####
   - name: "solution-page-primary"
