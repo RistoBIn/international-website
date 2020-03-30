@@ -24,7 +24,7 @@ export const AboutPageTemplate = ({
   );
 };
 ​
-const ProductPage = ({ data }) => {
+const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   if (!frontmatter) return <></>;
   const { title, seoDescription, heading, description } = frontmatter;
@@ -41,7 +41,7 @@ const ProductPage = ({ data }) => {
   );
 };
 ​
-export default ProductPage;
+export default AboutPage;
 ​
 export const pageQuery = graphql`
   query AboutPageTertiaryById($id: String!) {
