@@ -5,6 +5,8 @@ menuPaths:
         title: Atlantic salmon
       - path: /solutions/military-and-defense/
         title: Military & Defense
+      - path: /solutions/schools-and-universities/
+        title: Schools and Universities
     path: '#'
     title: Solutions
   - dropdown:
