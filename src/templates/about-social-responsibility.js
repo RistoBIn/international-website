@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
@@ -56,6 +57,42 @@ export const SocialResponsibilityPageTemplate = ({
         columns={threeColSection}
         className="section has-light-dark-background three-col"
       />
+      <SplittedSection
+        shouldReorderOnMobile
+        className="section is-medium"
+        leftColumn={
+          <PostContent
+            content={generateHTML(splitSection2.left)}
+            className="content"
+          />
+        }
+        rightColumn={
+          <NonStretchedImage
+            objectFit="contain"
+            alt=""
+            className="image"
+            {...splitSection2.right}
+          />
+        }
+      />
+      {/* <SplittedSection
+        shouldReorderOnMobile
+        className="section is-medium"
+        leftColumn={
+          <PostContent
+            content={generateHTML(splitSection3.left)}
+            className="content"
+          />
+        }
+        rightColumn={
+          <NonStretchedImage
+            objectFit="contain"
+            alt=""
+            className="image"
+            {...splitSection3.right}
+          />
+        }
+      /> */}
     </section>
   );
 };

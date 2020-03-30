@@ -61,6 +61,17 @@ splitSection2:
 
     SEALAB is therefor running a healthy business with a strong focus on the
     environment, economy and the responsibility for our employees and society.
+
+
+
+
+    ### International Organization for Standardization
+
+    SEALAB has chosen to follow the guidelines stated in ISO 9001: 2015 to
+    demonstrate our ability to consistently provide products and services that
+    meet customer and regulatory requirements and to demonstrate continuous
+    improvement, and Norwegian standard ISO 14001: 2015 concerning environmental
+    management of the company.
   right: /img/three_pilars_of_sustainability.svg
 responsibilities:
   - description: >-
