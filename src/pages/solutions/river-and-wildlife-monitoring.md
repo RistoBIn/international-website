@@ -17,7 +17,7 @@ splitSections:
 imageSection:
   featuredimage: /img/River and Wildlife monitoring.jpg
   left: >-
-    Escaping fish is one of the environmental challenges for the Norwegian
+    ### Escaping fish is one of the environmental challenges for the Norwegian
     aquaculture industry
   right: >-
     Fish can escape from both onshore plants (through the drain) and plants in
