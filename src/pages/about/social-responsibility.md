@@ -55,7 +55,7 @@ split-sections:
           
           SEALAB is therefor running a healthy business with a strong focus on the environment, economy and the responsibility for our employees and society.
     right:
-      featuredImage: /img/three-pilars-of-sustainability.png
+      featuredImage: /img/three-pilars-of-sustainability.svg
   - left:
       content: >-
         ### Certified ISO 9001 and ISO 14001 standards
