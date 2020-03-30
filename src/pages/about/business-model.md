@@ -1,5 +1,5 @@
 ---
-templateKey: about-page-osc
+templateKey: about-page-template-primary
 title: Business Model
 heading: Business Model
 description: >
