@@ -25,6 +25,9 @@ splitSections:
     heading: Bringing mineral riches and fears of epic extinctions
     subheading: 'Seabed mining is coming '
   - content: >-
+      ## The quiet place
+
+
       The deep sea — usually defined as the realm below 200 meters — is a world
       of extremes. Temperatures near the seabed in many places hover near 0 °C,
       there is next to no light, and pressures can exceed 1,000 bars, equivalent
@@ -37,6 +40,7 @@ splitSections:
       don’t even know how to define the risks. “What is serious harm? There are
       some clear red lines. Machine vision and superb image quality from SEALAB
       will be necessary when humanity starts mining deep sea.
-    heading: The quiet place
+    heading: ''
+    featuredimage: /img/seabed mining.jpg
 ---
 
