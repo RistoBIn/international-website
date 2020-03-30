@@ -716,6 +716,16 @@ section.about-page-template {
 }
 /****************     HOME PAGE     ********************/
 
+.hero.front-page {
+    @media only screen and (min-width: $tablet) {
+    h1 {
+      font-size: 8rem !important;
+      max-width: 1000px;
+      margin-left: 0 !important;
+    }
+  }
+}
+
 section#camera--image {
   .product-image {
     background-repeat: no-repeat;

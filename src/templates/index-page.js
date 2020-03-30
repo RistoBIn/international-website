@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({
   return (
     <>
       <Hero
-        className="is-fullheight"
+        className="is-fullheight front-page"
         heading={heading}
         subheading=""
         backgroundImage={bgimage.publicURL}
