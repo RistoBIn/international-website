@@ -7,13 +7,15 @@ description: description
 featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
 splitSections:
   - content: >-
-      Data and knowledge about the marine environment in arctic and Antarctic
-      regions are lacking. Smart cameras, machine vision and edge computing in
-      combination with satellite communication could lowering the risk and rise
-      safety in the Arctic Marine and Coastal environment.
+      Underwater drones equipped with high-tech sensors and edge computing in
+      participation with smart cameras could one day patrol the icy waters of
+      both Arctic and Antarctic, to help keep an eye on the region’s growing
+      shipping traffic—and to be on the lookout for foreign submarines. And on
+      top of that: environmental monitoring.
     heading: >-
       Project addressing Risk, Reliability and Ice data in the Arctic marine
       environment
+    featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
   - content: >-
       ## Using Autonomous Underwater Vehicles as Sensor Platforms for
       Ice-Monitoring
