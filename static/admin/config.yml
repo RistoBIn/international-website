@@ -106,7 +106,7 @@ collections:
   - name: "about-page-tertiary"
     label: "About Pages 3"
     folder: "src/pages/about/"
-    create: false
+    create: true
     description: "This is a about page template. (e.g. Leadership)"
     filter: {field: "templateKey", value: "about-page-tertiary"}
     identifier_field: name
