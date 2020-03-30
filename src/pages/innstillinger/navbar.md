@@ -60,7 +60,7 @@ menuPaths:
         title: Social Responsibility
       - path: /about/partners/
         title: Partners
-      - path: /about/investors
+      - path: /about/investors/
         title: Investors
       - path: /about/partership/
         title: Partnership
