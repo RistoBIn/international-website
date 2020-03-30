@@ -58,6 +58,8 @@ menuPaths:
         title: SEALAB Ocean Space Center
       - path: /social-responsibility/
         title: Social Responsibility
+      - path: /about/partners/
+        title: Partners
       - path: /about/investors
         title: Investors
       - path: /about/partership/
