@@ -13,50 +13,6 @@ display_url:  https://sealab-com.netlify.com
 
 collections:
 
-#### SIMPLE PAGES ####
-
-  - name: "simple-pages"
-    label: "Simple text pages"
-    folder: "src/pages/"
-    create: true
-    description: "Dette er enkle tekst sider, som vi kan lage flere av. Inneholder kun tittel og en tekst-editor."
-    filter: {field: "templateKey", value: "simple-page"}
-    identifier_field: name
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
-      - {label: "Content", name: "body", widget: "markdown"}
-
-#### PROJECT PAGE TEMPLATE 2 ####
-
-  - name: "project-page-secondary"
-    label: "Project Page 2"
-    folder: "src/pages/about/"
-    create: true
-    description: "This is a project page template."
-    filter: {field: "templateKey", value: "project-page-secondary"}
-    identifier_field: name
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-secondary"}
-      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
-      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
-      - {label: "Description", name: "description", widget: "text", hint: "Text."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
-      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
-      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image."}
-      - label: PrimarySection
-        name: primarySection
-        widget: "object"
-        fields:
-          - {label: "Content", name: "content", widget: "markdown"}
-      - label: Inspirational section
-        name: splitSection
-        widget: object
-        fields: 
-          - {label: "Large image", name: "bgimage", widget: image }
-      - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
-
 #### SOLUTION PAGES TEMPLATE SECONDARY ####
   - name: "solution-page-secondary"
     label: "Industries pages - Short"
@@ -192,7 +148,7 @@ collections:
 
 #### PROJECT PAGE TEMPLATE 1 ####
   - name: "project-page-primary"
-    label: "Project Pages 1"
+    label: "Project Pages (Advanced with Key factors)"
     folder: "src/pages/projects/"
     create: true
     description: "This is the primary project page template."
@@ -230,6 +186,46 @@ collections:
               - {label: "Partner logo", name: "icon", widget: image }
               - {label: "Partner description", name: "description", widget: "text", required: false }
 
+#### PROJECT PAGE TEMPLATE 2 ####
+
+  - name: "project-page-secondary"
+    label: "Project Page (Simple)"
+    folder: "src/pages/projects/"
+    create: true
+    description: "This is a project page template."
+    filter: {field: "templateKey", value: "project-page-secondary"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-secondary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "text", hint: "Text."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
+      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image."}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - label: Inspirational section
+        name: splitSection
+        widget: object
+        required: false
+        fields: 
+          - {label: "Large image", name: "bgimage", widget: image }
+          - {label: "Content", name: "content", widget: "markdown"}
+
+#### SIMPLE PAGES ####
+
+  - name: "simple-pages"
+    label: "Simple text pages"
+    folder: "src/pages/"
+    create: true
+    description: "Dette er enkle tekst sider, som vi kan lage flere av. Inneholder kun tittel og en tekst-editor."
+    filter: {field: "templateKey", value: "simple-page"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "Content", name: "body", widget: "markdown"}
 
   - name: "settings"
     label: "Navigation & Footer"

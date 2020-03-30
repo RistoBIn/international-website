@@ -711,7 +711,6 @@ section.project-page-template {
   .figure {
     text-align: center;
     .image {
-      margin-bottom: 10px;
       width: 100%;
       height: 375px;
     }
@@ -720,6 +719,7 @@ section.project-page-template {
       line-height: 170%;
       margin: 0 auto;
       padding: 0 $paddingHorizontalMobile;
+      padding-top: 10px;
     }
   }
 
