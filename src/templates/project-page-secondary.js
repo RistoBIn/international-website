@@ -41,8 +41,6 @@ export const ProjectPageTemplate = ({
       <section className="section has-dark-background project-page-template">
         <div className="container">
           <h1 className="section--subheading">{primarySection.heading}</h1>
-        </div>
-        <div className="container">
           <p className="section--description">{primarySection.description}</p>
         </div>
       </section>
