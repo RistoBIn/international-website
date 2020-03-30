@@ -75,13 +75,14 @@ collections:
       - label: "Sections"
         hint: Create as many you like
         name: splitSections
+        required: false
         widget: list
         fields:
             - {label: "Subheading", name: "subheading", widget: "string", required: false }
-            - {label: "Heading", name: "heading", widget: "string", requred: false}
+            - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Content on the right", name: "content", widget: "markdown", }
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
-      - {label: "Content", name: "body", widget: "markdown", }
+      - {label: "Content", name: "body", widget: "markdown", required: false,}
 
 #### SOLUTION PAGES TEMPLATE Primary ####
   - name: "solution-page-primary"
@@ -104,22 +105,39 @@ collections:
         widget: list
         fields:
             - {label: "Subheading", name: "subheading", widget: "string", required: false }
-            - {label: "Heading", name: "heading", widget: "string", requred: false}
+            - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Content on the right", name: "content", widget: "markdown", }
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+      - label: "Large image section"
+        name: imageSection
+        widget: object
+        required: false
+        fields:
+            - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+            - {label: "Content - left", name: "left", widget: "markdown", required: false}
+            - {label: "Content - right", name: "right", widget: "markdown", required: false }
+      - label: "Splitted section bottom of page"
+        name: splitSection
+        widget: object
+        required: false
+        fields:
+            - {label: "Heading", name: "heading", widget: "string", required: false}
+            - {label: "Content - left", name: "left", widget: "markdown", required: false }
+            - {label: "Content - right", name: "right", widget: "markdown", required: false }
+            
 
   
 #### ABOUT PAGE TEMPLATE 1 ####
 
-  - name: "about-page-primary"
-    label: "About Page 1"
+  - name: "about-page-template-primary"
+    label: "About Pages"
     folder: "src/pages/about/"
     create: true
     description: "This is a about page template."
-    filter: {field: "templateKey", value: "about-page-primary"}
+    filter: {field: "templateKey", value: "about-page-template-primary"}
     identifier_field: name
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-primary"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-template-primary"}
       - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
       - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
       - {label: "Description", name: "description", widget: "text", hint: "Text."}
@@ -281,7 +299,7 @@ collections:
               - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
 
 
-
+#### STATIC PAGES (FRONT PAGE for example) ####
   - name: "pages"
     label: "Regular pages"
     files:
@@ -328,11 +346,12 @@ collections:
           - label: Quotes section
             widget: list
             name: quotes
+            required: false
             fields:
-              - {label: "Author name", name: authorName, widget: string}
-              - {label: "Author position", name: authorPosition, widget: string}
+              - {label: "Author name", name: authorName, widget: string, required: false}
+              - {label: "Author position", name: authorPosition, widget: string, required: false}
               - {label: "Author image", name: "authorImage", widget: image, required: false}
-              - {label: "Quote text", name: quoteText, widget: text}
+              - {label: "Quote text", name: quoteText, widget: text, required: false}
 
           - label: Solutions
             widget: object

@@ -5,6 +5,28 @@ menuPaths:
         title: Atlantic salmon
       - path: /solutions/military-and-defense/
         title: Military & Defense
+      - path: /solutions/schools-and-universities/
+        title: Schools and Universities
+      - path: /solutions/science-arctic-and-antarctic-surveillance/
+        title: Science Arctic and Antarctic Surveillance
+      - path: /solutions/well-and-fishing-boats/
+        title: Well and Fishing Boats
+      - path: /solutions/seabed-mining/
+        title: Seabed Mining
+      - path: /solutions/environmental-monitoring/
+        title: Environmental Monitoring
+      - path: /solutions/harbor-surveillance/
+        title: Harbor Surveillance
+      - path: /solutions/oil-and-gas-industry/
+        title: Oil & Gas Industry
+      - path: /solutions/underwater-drones-and-robotics/
+        title: Underwater Drones and Robotics
+      - path: /solutions/bridge-and-watercourse-monitoring/
+        title: Bridge and Watercourse Monitoring
+      - path: /solutions/river-and-wildlife-monitoring/
+        title: River and Wildlife monitoring
+      - path: /solutions/hydropower-plants/
+        title: Hydropower Plants
     path: '#'
     title: Solutions
   - dropdown:
@@ -30,12 +52,20 @@ menuPaths:
         title: Vision & Strategy
       - path: /leadership/
         title: Leadership
-      - path: /business-model/
+      - path: /about/business-model/
         title: Business Model
       - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
       - path: /social-responsibility/
         title: Social Responsibility
+      - path: /about/partners/
+        title: Partners
+      - path: /about/investors/
+        title: Investors
+      - path: /about/partnership/
+        title: Partnership
+      - path: /about/press/
+        title: Press
       - path: /contact/locations
         title: Locations
     path: '#'

@@ -38,7 +38,7 @@ const SectionList = ({ items, id }) => {
                 rightColumnCSS={classNames(styles.rightColumn, {
                   [styles.subheading__exist]: item.subheading,
                 })}
-                className={styles.content}
+                className={classNames(styles.content, 'section')}
               />
             </div>
           </section>

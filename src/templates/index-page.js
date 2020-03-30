@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
   return (
     <>
       <Hero
-        className="is-fullheight"
+        className="is-fullheight front-page"
         heading={heading}
         subheading=""
         backgroundImage={bgimage.publicURL}
@@ -174,14 +174,6 @@ export const pageQuery = graphql`
           authorName
           authorPosition
           quoteText
-          authorImage {
-            childImageSharp {
-              fluid(maxWidth: 50, quality: 80) {
-                ...GatsbyImageSharpFluid
-                presentationWidth
-              }
-            }
-          }
         }
 
         itemsSection {

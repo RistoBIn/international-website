@@ -37,11 +37,18 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      <section className="section is-medium has-dark-background">
-        <div className="container">
-          <PostContent content={content} className="content is-left-aligned" />
-        </div>
-      </section>
+      {content ? (
+        <section className="section is-medium has-dark-background">
+          <div className="container">
+            <PostContent
+              content={content}
+              className="content is-left-aligned"
+            />
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
     </section>
   );
 };
