@@ -82,15 +82,15 @@ collections:
   
 #### ABOUT PAGE TEMPLATE 1 ####
 
-  - name: "about-page-osc"
+  - name: "about-page-template-primary"
     label: "About Pages"
     folder: "src/pages/about/"
     create: true
     description: "This is a about page template."
-    filter: {field: "templateKey", value: "about-page-osc"}
+    filter: {field: "templateKey", value: "about-page-template-primary"}
     identifier_field: name
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-osc"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-template-primary"}
       - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
       - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
       - {label: "Description", name: "description", widget: "text", hint: "Text."}
