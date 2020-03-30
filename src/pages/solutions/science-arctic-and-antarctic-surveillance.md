@@ -7,6 +7,9 @@ description: description
 featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
 splitSections:
   - content: >-
+      ## Antarctic Surveillance
+
+
       Underwater drones equipped with high-tech sensors and edge computing in
       participation with smart cameras could one day patrol the icy waters of
       both Arctic and Antarctic, to help keep an eye on the region’s growing
