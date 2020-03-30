@@ -176,6 +176,7 @@ collections:
           - {label: "Right content", name: "content", widget: "markdown"}
 
 #### PROJECT PAGE TEMPLATE 1 ####
+
   - name: "project-page-primary"
     label: "Project Pages 1"
     folder: "src/pages/projects/"
