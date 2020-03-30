@@ -268,7 +268,7 @@ collections:
               - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
 
 
-
+#### STATIC PAGES (FRONT PAGE for example) ####
   - name: "pages"
     label: "Regular pages"
     files:
@@ -315,11 +315,12 @@ collections:
           - label: Quotes section
             widget: list
             name: quotes
+            required: false
             fields:
-              - {label: "Author name", name: authorName, widget: string}
-              - {label: "Author position", name: authorPosition, widget: string}
+              - {label: "Author name", name: authorName, widget: string, required: false}
+              - {label: "Author position", name: authorPosition, widget: string, required: false}
               - {label: "Author image", name: "authorImage", widget: image, required: false}
-              - {label: "Quote text", name: quoteText, widget: text}
+              - {label: "Quote text", name: quoteText, widget: text, required: false}
 
           - label: Solutions
             widget: object

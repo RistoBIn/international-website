@@ -29,13 +29,13 @@ productSection:
   featuredimageBackground: /img/camera-background.png
   heading: You've Never Seen a Camera Like This
 quotes:
-  - authorImage: /img/sataya.jpg
-    authorName: Satya Nadella
-    authorPosition: CEO at Microsoft
+  - authorImage: ''
+    authorName: ''
+    authorPosition: ''
     quoteText: The Apple approach for harsh environments
-  - authorImage: /img/sataya.jpg
-    authorName: Name surname
-    authorPosition: CEO at Tullefabrikken
+  - authorImage: ''
+    authorName: ''
+    authorPosition: ''
     quoteText: >-
       We would really recommend SEALAB if you are in need - because electronics
       for these environments is hard to find.

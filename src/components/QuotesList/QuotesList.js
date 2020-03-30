@@ -28,11 +28,16 @@ const QuotesList = ({ quotes, className }) => {
         <div className="container">
           <div className={styles.quote__navbar}>
             <QuoteSVG />
-            <Author
-              name={authorName}
-              position={authorPosition}
-              profileImage={authorImage}
-            />
+            {authorName ? (
+              <Author
+                name={authorName}
+                position={authorPosition}
+                profileImage={authorImage}
+              />
+            ) : (
+              <></>
+            )}
+
             <div className={styles.button_navigation}>
               <ArrowIcon
                 className={styles.button_navigation__icon}
@@ -54,17 +59,29 @@ const QuotesList = ({ quotes, className }) => {
 };
 
 const Author = ({ name, position, profileImage }) => {
+  const ImageResolved = () => {
+    if (profileImage && profileImage.childImageSharp) {
+      return (
+        <figure>
+          <NonStretchedImage
+            fluid={profileImage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={name}
+          />
+        </figure>
+      );
+    }
+    return <></>;
+  };
   return (
     <div className={styles.author}>
-      <figure>
-        <NonStretchedImage
-          fluid={profileImage.childImageSharp.fluid}
-          objectFit="contain"
-          alt={name}
-        />
-      </figure>
+      <ImageResolved />
       <p className={styles.author__name}>{name}</p>
-      <p className={styles.author__position}>- {position}</p>
+      {position ? (
+        <p className={styles.author__position}>- {position}</p>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

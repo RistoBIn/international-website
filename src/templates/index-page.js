@@ -182,14 +182,6 @@ export const pageQuery = graphql`
           authorName
           authorPosition
           quoteText
-          authorImage {
-            childImageSharp {
-              fluid(maxWidth: 50, quality: 80) {
-                ...GatsbyImageSharpFluid
-                presentationWidth
-              }
-            }
-          }
         }
 
         itemsSection {
