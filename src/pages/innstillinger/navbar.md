@@ -18,7 +18,7 @@ menuPaths:
       - path: /solutions/harbor-surveillance/
         title: Harbor Surveillance
       - path: /solutions/oil-and-gas-industry/
-        title: Oil & Gas Industry
+        title: Oil and Gas Industry
       - path: /solutions/underwater-drones-and-robotics/
         title: Underwater Drones and Robotics
       - path: /solutions/bridge-and-watercourse-monitoring/
