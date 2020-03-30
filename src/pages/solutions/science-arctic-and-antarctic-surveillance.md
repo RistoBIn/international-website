@@ -12,9 +12,7 @@ splitSections:
       both Arctic and Antarctic, to help keep an eye on the region’s growing
       shipping traffic—and to be on the lookout for foreign submarines. And on
       top of that: environmental monitoring.
-    heading: >-
-      Project addressing Risk, Reliability and Ice data in the Arctic marine
-      environment
+    heading: ' '
     featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
   - content: >-
       ## Using Autonomous Underwater Vehicles as Sensor Platforms for
