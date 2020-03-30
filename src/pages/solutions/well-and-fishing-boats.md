@@ -18,8 +18,8 @@ splitSections:
       in the fish, you get a real-time reporting system on board and which
       constantly shows the stress factor in the fish. Here is an example of how
       the software works:
-    heading: Real time Reporting System
-  - content: >-
+
+
       For transferring the fishes from the cages into the boat, huge pipelines
       are connected to the fishes’ breeding enclosures in the high seas.
 
@@ -28,7 +28,7 @@ splitSections:
       disturbing the fishes in any manner whatsoever. SEALAB's sensor system
       monitors the fish in the well or tank for the storage and transport of
       live fish for the delivery to port and final processing on land.
-    heading: ' '
+    heading: Real time Reporting System
     featuredimage: /img/wellboats.jpg
 ---
 
