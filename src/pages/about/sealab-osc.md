@@ -1,5 +1,5 @@
 ---
-templateKey: about-page-primary
+templateKey: about-page-template-primary
 title: SEALAB Ocean Space Center
 seoDescription: >-
   SEALAB Ocean Space Center
