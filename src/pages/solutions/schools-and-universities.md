@@ -36,7 +36,7 @@ splitSections:
 
 
       Aquariums all over the world will be able to stream in broadcast quality
-      and out on the internet. Machine vision and AI will be able to tell in
+      and out on the internet. Computer vision and AI will be able to tell in
       real time what fish you see, how the fish are doing and thus build
       knowledge for the recipient.
     heading: ' '
