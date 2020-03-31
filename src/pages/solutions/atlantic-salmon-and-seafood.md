@@ -10,7 +10,7 @@ heading: Atlantic Salmon and Seafood
 description: >-
   There’s a growing market for food production in the sea. Norwegian salmon
   production accounts for 3% of the global seafood production.
-featuredimage: /img/IMG_0539_Adjusted.jpg
+featuredimage: /img/IMG_0539_Adjusted_topimage.jpg
 splitSections:
   - content: >-
       Atlantic salmon (Salmo Salar) and Norwegian fish farming are now Norway's
