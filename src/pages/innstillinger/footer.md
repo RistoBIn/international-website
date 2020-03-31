@@ -43,8 +43,6 @@ thirdNavigation:
   - path: /projects/gem
     title: Environment Monitoring
 fourthNavigation:
-  - path: /contact
-    title: Contact
   - path: /vision-strategy
     title: Vision & Strategy
   - path: /leadership
