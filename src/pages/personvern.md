@@ -115,19 +115,19 @@ Sensitive personal data should not be sent via email. Please note that regular e
 
 To ensure safety in the event of an evacuation of our office premises, SEALAB AS has introduced access control with registration of visitors to our offices. The information collected is stored in the solution (Name of the solution), and the information stored is name, email address and company.
 
-### Bruk av 3.part/underleverandører
+### Use of third parties/subcontractors
 
-SEALAB AS bruker underleverandører til å bistå med drift og lagring av innsamlede personopplysninger. Disse vil ved sin bistand til oss kunne få innsyn i personopplysninger. Det er inngått lovpålagte databehandleravtaler med disse.
+SEALAB AS uses subcontractors to assist with day-to-day operations and for the storage of collected personal data. Through their contracts with us, these subcontractors may be able to gain access to personal data. Statutory data processing agreements have been signed with these.
 
-## Rettigheter
+## Your rights
 
-Du har rett til innsyn i personopplysninger om deg og hvordan de behandles. Du har også rett til å få opplysningene rettet, slettet eller å begrense behandlingen av personopplysningene i henhold til personopplysningsloven.
+You have the right to access your personal data and to be informed about how they are being processed. You also have the right to have the information corrected, deleted or to limit the processing of personal data in accordance with the Personal Data Act.
 
-Du kan kontakte oss på contact@sealab.no for tilgang til, endring eller sletting av informasjon.
+You can contact us at contact@sealab.no for access to, change of or deletion of information.
 
-Behandling av personopplysningene er basert på samtykke, og du kan til enhver tid trekke samtykke tilbake.
+The processing of personal data is based on consent, and you can withdraw your consent at any time.
 
-Dersom du mener SEALAB AS ikke har overholdt dine rettigheter i henhold til personopplysningsloven, har du rett til å klage til aktuell tilsynsmyndighet som i Norge er Datatilsynet, du finner kontaktinfo på deres hjemmesider www.datatilsynet.no.
+If you believe SEALAB AS has not complied with your rights under the Personal Data Act, you have the right to appeal to the relevant supervisory authority, which in Norway is the Data Inspectorate. You can find contact info for the Data Inspectorate on their website www.datatilsynet.no.
 
 <!-- ## Hvilke personopplysninger behandler SEALAB? 
 
