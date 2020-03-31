@@ -5,7 +5,7 @@ const NonStretchedImage = props => {
   let normalizedProps = props;
 
   /* eslint-disable */
-  if (props.childImageSharp && props.childImageSharp.fluid && props.childImageSharp.presentationWidth) {
+  if (props.childImageSharp && props.childImageSharp.fluid && props.childImageSharp.fluid.presentationWidth) {
     normalizedProps = {
       ...props,
       style: {
