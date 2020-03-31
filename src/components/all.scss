@@ -762,7 +762,7 @@ section.about-page-primary {
   }
 }
 
-section.about-page-secondary {
+section.vision-strategy {
   .content {
     p,
     li {
@@ -774,6 +774,14 @@ section.about-page-secondary {
     width: 100%;
     height: 375px;
     text-align: left;
+  }
+
+  .rightWrapper {
+    grid-gap: 30px !important;
+    margin-left: auto;
+    background: linear-gradient(0deg, #1F2331, #1F2331), #191C27;
+    border-radius: 3px;
+    padding: 51px 43px !important;
   }
 
   @media screen and (min-width: $desktop) {

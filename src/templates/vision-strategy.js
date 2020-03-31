@@ -28,14 +28,14 @@ export const AboutPageSecondaryTemplate = ({
 
   return (
     <>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <h1 className="section--title">{heading}</h1>
           <p className="section--description">{description}</p>
         </div>
       </section>
-      <section className="has-dark-background about-page-secondary">
-        <div className="about-page-secondary-image">
+      <section className="has-dark-background vision-strategy">
+        <div className="vision-strategy-image">
           <Img
             fluid={featuredimage.childImageSharp.fluid}
             alt="About image"
@@ -43,19 +43,19 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <SplittedSection
             leftColumn={
               <PostContent
                 content={generateHTML(primarySplitSection.left.content)}
-                className="content is-left-aligned"
+                className="content is-left-aligned leftWrapper"
               />
             }
             rightColumn={
               <PostContent
                 content={generateHTML(primarySplitSection.right.content)}
-                className="content is-left-aligned"
+                className="content is-left-aligned rightWrapper"
               />
             }
           />
@@ -66,7 +66,7 @@ export const AboutPageSecondaryTemplate = ({
           <PostContent content={generateHTML(centeredTextSection.content)} />
         </div>
       </section>
-      <section className="has-dark-background about-page-secondary">
+      <section className="has-dark-background vision-strategy">
         <div className="container">
           <figure className="figure">
             <Img
@@ -82,7 +82,7 @@ export const AboutPageSecondaryTemplate = ({
           </figure>
         </div>
       </section>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <SplittedSection
             leftColumn={
@@ -100,7 +100,7 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <SplittedSection
             leftColumn={
@@ -152,7 +152,7 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <SplittedSection
             leftColumn={
@@ -170,7 +170,7 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <CollapsibleList
             collapsibleItems={primaryCollapsibleList.listItems}
@@ -178,7 +178,7 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="has-dark-background about-page-secondary">
+      <section className="has-dark-background vision-strategy">
         <div className="container">
           <figure className="figure">
             <Img
@@ -193,7 +193,7 @@ export const AboutPageSecondaryTemplate = ({
           </figure>
         </div>
       </section>
-      <section className="section has-dark-background about-page-secondary">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <SplittedSection
             leftColumn={
