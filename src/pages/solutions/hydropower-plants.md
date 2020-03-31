@@ -3,7 +3,7 @@ templateKey: solution-page-primary
 title: Hydropower Plants
 seoDescription: Surveillance of A Hydroelectric Power Plant
 heading: Hydropower Plants
-description: 'Description '
+description: Surveillance of Hydroelectric Power Plants
 featuredimage: /img/hydropower-plants.jpg
 splitSections:
   - content: >-
@@ -15,6 +15,9 @@ splitSections:
       system to system.
     heading: Surveillance of A Hydroelectric Power Plant
   - content: >-
+      ## Smart Cameras and Edge Computing
+
+
       The surveillance system can be superimposed with smart cameras and edge
       computing over the existing SCADA control and monitoring network. This
       aims to increase performance, efficiency and stability in the existing
