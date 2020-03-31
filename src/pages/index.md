@@ -60,9 +60,6 @@ itemsSection:
     - featuredimage: /img/AdobeStock_177426726.jpeg
       heading: Oil and Gas Industry
       path: /solutions/oil-gas-industry/
-    - featuredimage: /img/search-rescue.jpg
-      heading: Search & Rescue
-      path: /solutions/search-and-rescue
     - featuredimage: /img/AdobeStock_4649419.jpeg
       heading: Military & Defense
       path: /solutions/military-and-defense/
