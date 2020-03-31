@@ -63,6 +63,9 @@ itemsSection:
     - featuredimage: /img/search-rescue.jpg
       heading: Search & Rescue
       path: /solutions/search-and-rescue
+    - featuredimage: /img/AdobeStock_4649419.jpeg
+      heading: Military & Defense
+      path: /solutions/military-and-defense/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
