@@ -1206,3 +1206,30 @@ section#project-page-primary .wrapper {
     }
   }
 }
+
+/****************     PRODUCT PAGES    ********************/
+section.product-page-primary {
+
+  .content.centered-free-text {
+    max-width: 854px;
+    margin: 0 auto;
+    h3 {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h2:first-of-type {
+      margin-top: 0;
+      max-width: 770px;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .background-image-lines {
+    background-image: url('../img/zigzagLines.svg');
+    .image {
+      margin: 0 auto;
+    }
+  }
+}

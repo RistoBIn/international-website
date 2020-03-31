@@ -5,8 +5,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
-import NonStretchedImage from '../components/NonStretchedImage';
 import SplittedSection from '../components/SplittedSection';
+import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
 
@@ -42,31 +42,22 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      {imageSection && imageSection.featuredimage ? (
-        <section className="section has-dark-background">
-          <div className="container">
-            <NonStretchedImage
-              fluid={imageSection.featuredimage.childImageSharp.fluid}
-              objectFit="contain"
-              alt=""
-              className="image"
+      {imageSection ? (
+        <LargeImageWithSplitSection
+          image={imageSection.featuredimage}
+          leftColumn={
+            <PostContent
+              content={generateHTML(imageSection.left)}
+              className="content is-left-aligned"
             />
-            <SplittedSection
-              leftColumn={
-                <PostContent
-                  content={generateHTML(imageSection.left)}
-                  className="content is-left-aligned"
-                />
-              }
-              rightColumn={
-                <PostContent
-                  content={generateHTML(imageSection.right)}
-                  className="content is-left-aligned"
-                />
-              }
+          }
+          rightColumn={
+            <PostContent
+              content={generateHTML(imageSection.right)}
+              className="content is-left-aligned"
             />
-          </div>
-        </section>
+          }
+        />
       ) : (
         <></>
       )}

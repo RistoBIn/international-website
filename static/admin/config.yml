@@ -168,22 +168,18 @@ collections:
         fields:
           - {label: "Content - left", name: "left", widget: "markdown"}
           - {label: "Content - right", name: "right", widget: "markdown"}
-      - label: "Section 2"
-        name: "sectionTwo"
-        widget: "object"
-        fields:
-          - {label: "Content - centered", name: "content", widget: "markdown"}
+      - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
       - label: "Section 3"
         name: "sectionThree"
         widget: "object"
         fields:
           - {label: "Illustration background", name: "backgroundImage", widget: image }
-          - {label: "Illustration figure", name: "figureImage", widget: image }
+          - {label: "Illustration figure", name: "featuredimage", widget: image }
       - label: "Section 4"
         name: "sectionFour"
         widget: "object"
         fields:
-          - {label: "Centered image", name: "featuredImage", widget: image }
+          - {label: "Centered image", name: "featuredimage", widget: image }
           - label: "Left colomn"
             name: "left"
             widget: "object"
@@ -197,9 +193,7 @@ collections:
                   - {label: Link path, name: path, widget: string}
           - label: "Right colomn"
             name: "right"
-            widget: "object"
-            fields:
-              - {label: "Content", name: "content", widget: "markdown"}
+            widget: "markdown"
       - label: "Alternating sections"
         name: "alternatingSections"
         widget: "list"
@@ -208,14 +202,14 @@ collections:
             name: "content"
             widget: "object"
             fields:
-              - {label: "Content text", name: "content", widget: "markdown"}
+              - {label: "Content text", name: "description", widget: "markdown"}
               - label: "Button"
                 name: "button"
                 widget: "object"
                 fields:
                   - {label: Title, name: text, widget: string}
                   - {label: Link path, name: path, widget: string}
-          - {label: "Image", name: "featuredImage", widget: image }
+          - {label: "Image", name: "featuredimage", widget: image }
 
 #### PROJECT PAGE TEMPLATE 1 ####
   - name: "project-page-primary"
