@@ -54,9 +54,9 @@ itemsSection:
     - featuredimage: /img/AdobeStock_114071575.jpeg
       heading: Schools and Universities
       path: /solutions/schools-and-universities/
-    - featuredimage: /img/seafood.jpg
-      heading: Seafood Production
-      path: /solutions/seafood
+    - featuredimage: /img/AdobeStock_294165529.jpeg
+      heading: Science Arctic and Antarctic Surveillance
+      path: /solutions/science-arctic-and-antarctic-surveillance/
     - featuredimage: /img/oil-gas.jpg
       heading: Oil & Gas
       path: /solutions/oil-and-gas
@@ -66,9 +66,9 @@ itemsSection:
     - featuredimage: /img/AdobeStock_4649419.jpeg
       heading: Military & Defense
       path: /solutions/military-and-defense/
-    - featuredimage: /img/AdobeStock_294165529.jpeg
-      heading: Science Arctic and Antarctic Surveillance
-      path: /solutions/science-arctic-and-antarctic-surveillance/
+    - featuredimage: /img/AdobeStock_205257493.jpeg
+      heading: Well and Fishing Boats
+      path: /solutions/well-and-fishing-boats/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
