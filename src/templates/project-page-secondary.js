@@ -119,7 +119,12 @@ export const pageQuery = graphql`
         splitSection {
           content
           bgimage {
-            publicURL
+            childImageSharp {
+              fluid(maxHeight: 400, quality: 60) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
           }
         }
       }
