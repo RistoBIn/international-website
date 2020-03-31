@@ -15,7 +15,7 @@ splitSections:
       carbon dioxide we release into the atmosphere ends up in the ocean, but
       how it happens is still not fully understood.
     heading: Increasing Need for Environmental Monitoring
-    subheading: Key Reference for Climate Change
+    subheading: Key Reference for Climate Changes
 imageSection:
   featuredimage: /img/AdobeStock_224578518.jpeg
   left: '### Sustainable Exploitation of Marine Resources'
