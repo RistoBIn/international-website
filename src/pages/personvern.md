@@ -1,14 +1,13 @@
 ---
 templateKey: simple-page
-title: Personvernerklæring
-heading: Personvernerklæring
+title: Privacy Policy
+heading: Privacy Policy
 ---
+# About SEALAB
 
-## Om SEALAB
+SEALAB AS provides leading camera technology solutions for monitoring and analysis in the aquaculture industry. These solutions integrate cameras, lights, sensors, electronics, software, communication solutions and control rooms using “smart” (IoT) high-speed infrastructure.
 
-SEALAB AS leverer ledende kamerateknologiløsninger for overvåkning og analyse i havbruksnæringen. Løsningene integrerer kamera, lys, sensorikk, elektronikk, programvare, kommunikasjonsløsninger og kontrollrom ved hjelp av “smart”(IoT) høyhastighets infrastruktur.
-
-Denne erklæringen gjelder for den norske virksomheten. Hovedkontorets registrerte adresse er Transittgata 14, 7042 Trondheim. Kontaktopplysninger ang personvern er: contact@sealab.no
+This statement applies to the Norwegian business. The registered headquarter is Transittgata 14, 7042 Trondheim. For inquiries regarding privacy:[contact@sealab.no](mailto:contact@sealab.no)
 
 ## Behandling av personopplysninger på www.sealab.no
 
@@ -16,7 +15,7 @@ Daglig leder har det daglige ansvaret for SEALAB sin behandling av personopplysn
 
 SEALAB AS er behandlingsansvarlig for sine nettsider og står for vedlikehold og utvikling selv.
 
-## Nettstatistikk 
+## Nettstatistikk
 
 SEALAB AS samler inn opplysninger om besøkende på www.sealab.no Formålet med innsamlingen er å utarbeide statistikk som brukes for å forbedre og videreutvikle innhold på nettsted. Eksempler på hvilken informasjon som innhentes er: hvordan besøkende bruker nettstedet, hvilket nettsted brukeren kommer fra, hvor mange som besøker de ulike sidene, hvor lenge besøket varer, hva de klikker på og hvilke nettlesere som benyttes.
 
@@ -51,7 +50,6 @@ Hubspot cookien brukes til å registrere informasjon om bruken av nettsiden på 
 #### Sosiale medier
 
 Vi bruker cookies for å spore aktivitet fra sosiale medier som Facebook, Twitter og LinkedIn. Cookies fra disse plattformene gir oss ikke innsikt i hvem som er på siden men lar oss samle data i de ulike mediene for å bygge et annonsepublikum som vi kan annonsere mot senere.
-
 
 #### Annonser
 
@@ -130,7 +128,6 @@ Du kan kontakte oss på contact@sealab.no for tilgang til, endring eller slettin
 Behandling av personopplysningene er basert på samtykke, og du kan til enhver tid trekke samtykke tilbake.
 
 Dersom du mener SEALAB AS ikke har overholdt dine rettigheter i henhold til personopplysningsloven, har du rett til å klage til aktuell tilsynsmyndighet som i Norge er Datatilsynet, du finner kontaktinfo på deres hjemmesider www.datatilsynet.no.
-
 
 <!-- ## Hvilke personopplysninger behandler SEALAB? 
 
