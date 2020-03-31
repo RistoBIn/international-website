@@ -85,7 +85,7 @@ itemsSection:
       heading: Hydropower Plants
       path: /solutions/hydropower-plants/
 splitSection:
-  bgimage: /img/search-and-rescue.jpg
+  bgimage: /img/AdobeStock_174371043.jpeg
 ---
 *For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
 
