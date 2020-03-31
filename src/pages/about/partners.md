@@ -3,12 +3,10 @@ templateKey: about-page-partners
 title: Partners
 seoDescription: SEALAB Partners.
 heading: Partners
-description: >-
-    SEALAB partners bla bla bla...
 partnerItems:
   - icon: /img/telenor-logo-blue.png
     url: 'https://www.telenor.com/'
-  - icon: /img/microsoftAzure.png
+  - icon: /img/microsoft-azure-cropped.png
     url: 'https://www.azure.microsoft.com'
   - icon: /img/intel-logo-blue.png
     url: 'https://www.intel.com'
