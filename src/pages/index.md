@@ -66,6 +66,9 @@ itemsSection:
     - featuredimage: /img/AdobeStock_4649419.jpeg
       heading: Military & Defense
       path: /solutions/military-and-defense/
+    - featuredimage: /img/AdobeStock_294165529.jpeg
+      heading: Science Arctic and Antarctic Surveillance
+      path: /solutions/science-arctic-and-antarctic-surveillance/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
