@@ -30,7 +30,7 @@ export const AboutPagePartnersTemplate = ({
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="image"
+                className="image-container"
               >
                 <NonStretchedImage
                   alt=""
