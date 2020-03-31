@@ -2,8 +2,12 @@
 mainNavigation:
   - path: /
     title: Home
-  - path: /solutions/aquaculture
-    title: Aquaculture
+  - path: /solutions/atlantic-salmon-and-seafood/
+    title: Atlantic Salmon and Seafood
+  - path: /solutions/military-and-defense/
+    title: Military & Defense
+  - path: /solutions/schools-and-universities/
+    title: Schools and Universities
 secondaryNavigation:
   - path: /products/edge-intelligence
     title: Edge Intelligence
@@ -33,7 +37,6 @@ fourthNavigation:
     title: Social Responsibility
   - path: /locations
     title: Locations
-
 companyOffices:
   - addressItems:
       - SEALAB
@@ -48,12 +51,12 @@ companyOffices:
   - addressItems:
       - Berlin
       - EUREF-Campus 1-25
-      - 10829 Berlin, Tyskland
+      - '10829 Berlin, Tyskland'
     title: In Germany
   - addressItems:
       - Niš
       - Bore Vukmirovića 9
-      - 18000 Niš, Serbia
+      - '18000 Niš, Serbia'
     title: In Serbia
 callToAction:
   buttonPath: /contact
