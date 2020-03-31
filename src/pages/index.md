@@ -50,7 +50,7 @@ itemsSection:
       path: /solutions/harbor-surveillance/
     - featuredimage: /img/IMG_0539_Adjusted.jpg
       heading: Atlantic Salmon and Seafood
-      path: /solutions/aquaculture
+      path: /solutions/atlantic-salmon-and-seafood/
     - featuredimage: /img/AdobeStock_114071575.jpeg
       heading: Schools and Universities
       path: /solutions/schools-and-universities/
