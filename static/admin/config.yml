@@ -184,7 +184,7 @@ collections:
             name: "left"
             widget: "object"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Title", name: "heading", widget: "string"}
               - label: "Button"
                 name: "button"
                 widget: "object"

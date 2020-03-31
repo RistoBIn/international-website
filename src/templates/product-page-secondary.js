@@ -6,6 +6,8 @@ import Content, { HTMLContent } from '../components/Content';
 import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
 import generateHTML from '../utils/generateHTML';
 import NonStretchedImage from '../components/NonStretchedImage';
+import Button from '../components/Button';
+import SectionListAlternating from '../components/SectionListAlternating';
 
 export const ProductPageTemplate = ({
   contentComponent,
@@ -14,6 +16,8 @@ export const ProductPageTemplate = ({
   sectionOne,
   sectionTwo,
   imageSection,
+  sectionFour,
+  sectionList,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -72,6 +76,35 @@ export const ProductPageTemplate = ({
       ) : (
         <></>
       )}
+      {sectionFour ? (
+        <LargeImageWithSplitSection
+          className="section is-medium large-image product-page-primary"
+          image={sectionFour.featuredimage}
+          leftColumn={
+            <>
+              <h2>{sectionFour.left.heading}</h2>
+              <Button
+                className="is-primary"
+                text={sectionFour.left.button.text}
+                path={sectionFour.left.button.path}
+              />
+            </>
+          }
+          rightColumn={
+            <PostContent
+              content={generateHTML(sectionFour.right)}
+              className="content is-left-aligned large"
+            />
+          }
+        />
+      ) : (
+        <></>
+      )}
+
+      <SectionListAlternating
+        sections={sectionList}
+        className="section alternating-sections"
+      />
     </section>
   );
 };
@@ -149,7 +182,7 @@ export const pageQuery = graphql`
         }
         sectionFour {
           left {
-            title
+            heading
             button {
               path
               text

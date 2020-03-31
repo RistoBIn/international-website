@@ -36,25 +36,25 @@ sectionThree:
 sectionFour:
   featuredimage: /img/fieldIllustrationWithGrid.jpg
   left:
-    title: BlueThink and IoT in the aquaculture industry
+    heading: BlueThink and IoT in the aquaculture industry
     button:
       path: /solutions/atlantic-salmon-and-seafood/
       text: Norwegian Aquaculture
   right: >-
-        The Internet of Things is about all the things around us being connected to
-        the internet. When things are connected to the network, they can connect, talk
-        to each other and to the surroundings. This allows us to remotely control the
-        devices and collect data in a way that was previously impossible.
+    The Internet of Things is about all the things around us being connected to
+    the internet. When things are connected to the network, they can connect, talk
+    to each other and to the surroundings. This allows us to remotely control the
+    devices and collect data in a way that was previously impossible.
 
 
-        SEALAB delivers complete IoT-systems to the aquaculture industry. All components
-        installed in the cages and on the feed barge are connected through the Internet of
-        Things; Underwater Cameras, Underwater lights, environmental sensors, Winches,
-        Service Tablets, Control Rooms and more.
+    SEALAB delivers complete IoT-systems to the aquaculture industry. All components
+    installed in the cages and on the feed barge are connected through the Internet of
+    Things; Underwater Cameras, Underwater lights, environmental sensors, Winches,
+    Service Tablets, Control Rooms and more.
 alternatingSections:
   - content:
       description: >-
-        # IoT on 5G
+        ## IoT on 5G
 
         The new 5G network is on everyone’s minds these days, and for good reason.
         Not only will 5G improve how we use and communicate with technology, it will
@@ -70,7 +70,8 @@ alternatingSections:
   - content:
       description: >-
         ### A bridge between the physical and the digital world
-        # The Digital twin
+
+        ## The Digital twin
 
         The digitalization of the ocean space has come so far that the living conditions
         for digital twins are present in several industries.

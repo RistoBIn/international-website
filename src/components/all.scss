@@ -1219,7 +1219,7 @@ section.product-page-primary {
     }
     h2:first-of-type {
       margin-top: 0;
-      max-width: 770px;
+      max-width: 720px;
       margin: 0 auto;
     }
     p {
@@ -1228,8 +1228,27 @@ section.product-page-primary {
   }
   .background-image-lines {
     background-image: url('../img/zigzagLines.svg');
+    background-size: cover;
     .image {
       margin: 0 auto;
+    }
+  }
+  .large-image {
+    .button {max-width: 290px; }
+  }
+  .alternating-sections {
+    h3 {
+      font-size: 18px;
+      color: $body-light;
+      margin-bottom: 15px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+  }
+  @media only screen and (max-width: $tablet) {
+    .large-image {
+      .button {margin: 20px 0;}
     }
   }
 }
