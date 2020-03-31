@@ -35,7 +35,3 @@ persons:
     role: Founder & CEO
 ---
 > “It’s amazing how much extra effort one can get from joining a winning team. The pain threshold is lifted, we motivate each other, one dares to make unforeseen and pioneering achievements and finally; You have a lot of fun!”
-
-
-
-\## Testing
