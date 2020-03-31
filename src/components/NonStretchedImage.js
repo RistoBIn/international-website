@@ -14,6 +14,7 @@ const NonStretchedImage = props => {
         margin: '0 auto', // Used to center the image
       },
     };
+    return <Img {...normalizedProps} />;
   }
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {
@@ -24,6 +25,7 @@ const NonStretchedImage = props => {
         margin: '0 auto', // Used to center the image
       },
     };
+    return <Img {...normalizedProps} />;
   }
   if (!props.fluid && props.publicURL) {
     return (
