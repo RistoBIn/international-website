@@ -35,20 +35,20 @@ threeColSection:
 
       Globally, the market value of marine and coastal resources and industries
       is estimated at $3 trillion per year or about 5 per cent of global GDP.
-    icon: '/img/icon-CSR.svg'
+    icon: /img/icon-CSR.svg
   - description: >-
       ### Over 38% of global population
 
       Over three billion people depend on marine and coastal biodiversity for
       their livelihoods.
-    icon: '/img/icon-CSR-2.svg'
+    icon: /img/icon-CSR-2.svg
   - description: >-
       ### 3/4 of Earth surface
 
       Oceans cover three quarters of the Earth’s surface, contain 97 per cent of
       the Earth’s water, and represent 99 per cent of the living space on the
       planet by volume.
-    icon: '/img/icon-CSR-3.svg'
+    icon: /img/icon-CSR-3.svg
 splitSection2:
   left: >-
     ## The three pillars of sustainability
@@ -99,9 +99,11 @@ responsibilities:
       culture.
 splitSection3:
   left: >-
-    ### Certified ISO 9001 and ISO 14001 standards
+    ##### Certified ISO 9001 and ISO 14001 standards
+
 
     ## International Organization for Standardization
+
 
     SEALAB has chosen to follow the guidelines stated in ISO 9001: 2015 to
     demonstrate our ability to consistently provide products and services that
