@@ -1,7 +1,7 @@
 ---
 templateKey: solution-page-primary
 title: Hydropower Plants
-seoDescription: Hydropower Plants
+seoDescription: Surveillance of A Hydroelectric Power Plant
 heading: Hydropower Plants
 description: Description
 featuredimage: /img/Hydropower Plants.jpg
