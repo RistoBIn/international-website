@@ -78,6 +78,15 @@ itemsSection:
     - featuredimage: /img/AdobeStock_180592840.jpeg
       heading: Underwater Drones and Robotics
       path: /solutions/underwater-drones-and-robotics/
+    - featuredimage: /img/AdobeStock_232721946.jpeg
+      heading: Bridge and Watercourse Monitoring
+      path: /solutions/bridge-and-watercourse-monitoring/
+    - featuredimage: /img/AdobeStock_224942592.jpeg
+      heading: River and Wildlife monitoring
+      path: /solutions/river-and-wildlife-monitoring/
+    - featuredimage: /img/AdobeStock_59878462.jpeg
+      heading: Hydropower Plants
+      path: /solutions/hydropower-plants/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
