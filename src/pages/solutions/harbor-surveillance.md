@@ -6,7 +6,7 @@ seoDescription: >-
   rigs around the world be safeguarded against unwanted intruders, who may
   intend sabotage, unlawful entry, or terror attacks.
 heading: Harbor Surveillance
-description: Technical Needs and Challenges in Harbor Surveillance
+description: 'Challenges in Harbor Surveillance Requires '
 featuredimage: /img/AdobeStock_282750626.jpeg
 splitSections:
   - content: >-
@@ -27,5 +27,6 @@ splitSections:
       radar and Electro-optical devices (CCD and FLIR).
     heading: Safeguarded Against Unwanted Intruders
     featuredimage: /img/AdobeStock_187277566.jpeg
+    subheading: Realtime Camera Surveillance with Machine Vision
 ---
 
