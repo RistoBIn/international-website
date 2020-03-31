@@ -6,7 +6,7 @@ seoDescription: >-
   marine resources.
 heading: Environmental monitoring
 description: Increasing need for environmental monitoring
-featuredimage: /img/AdobeStock_68760718.jpeg
+featuredimage: /img/AdobeStock_68760718_topimage.jpeg
 splitSections:
   - content: >-
       Both watercourses and the ocean space will need more monitoring than ever.
