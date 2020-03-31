@@ -9,35 +9,35 @@ SEALAB AS provides leading camera technology solutions for monitoring and analys
 
 This statement applies to the Norwegian business. The registered headquarter is Transittgata 14, 7042 Trondheim. For inquiries regarding privacy:[contact@sealab.no](mailto:contact@sealab.no)
 
-## Behandling av personopplysninger på www.sealab.no
+### Processing of personal data at www.sealab.no
 
-Daglig leder har det daglige ansvaret for SEALAB sin behandling av personopplysninger på våre nettsider og vår blogg, med mindre annet er oppgitt under. Det er frivillig for de som besøker nettstedet å oppgi personopplysninger i forbindelse med tjenester, eksempelvis ved å sende oss forespørsler, påmelding på kurs, frokostmøter eller motta nyhetsbrev. Behandlingsgrunnlaget er samtykke fra den enkelte, med mindre annet er spesifisert.
+The CEO has the day-to-day responsibility for SEALAB's processing of personal data on our websites and our blog, unless otherwise stated below. It is optional for those who visit the site to provide personal information in connection with services, for example by sending us requests, enrolling in courses, breakfast meetings or receiving newsletters. The basis of treatment is the consent of the individual, unless otherwise specified.
 
-SEALAB AS er behandlingsansvarlig for sine nettsider og står for vedlikehold og utvikling selv.
+SEALAB AS is responsible for the treatment of information on the website, and is responsible for maintenance and development of the website themselves.
 
-## Nettstatistikk
+## Online statistics
 
-SEALAB AS samler inn opplysninger om besøkende på www.sealab.no Formålet med innsamlingen er å utarbeide statistikk som brukes for å forbedre og videreutvikle innhold på nettsted. Eksempler på hvilken informasjon som innhentes er: hvordan besøkende bruker nettstedet, hvilket nettsted brukeren kommer fra, hvor mange som besøker de ulike sidene, hvor lenge besøket varer, hva de klikker på og hvilke nettlesere som benyttes.
+SEALAB AS collects information about visitors at www.sealab.no The purpose of the collection is to compile statistics that are used to improve and further develop website content. Examples of what information is collected are: how visitors use the site, what website the user comes from, how many people visit the different pages, how long the visit lasts, what they click on and which browsers are used.
 
-SEALAB AS bruker analyseverktøyene til Google Inc («Google») på sin nettside og informasjonen lagres hos Google. Informasjon fra dette verktøyet deles ikke med andre aktører.
+SEALAB AS uses the analysis tools of Google Inc ("Google") on their website and the information gathered using these tools is stored using Google services. This information is not shared with any other parties.
 
-## Informasjonskapsler eller cookies
+## Cookies
 
-### Hva er en informasjonskapsel eller cookies?
+### What is a cookie?
 
-Cookies er små tekstfiler som lagres på din datamaskin, telefon eller nettbrett når du besøker et nettsted. Cookiene hjelper nettstedet til å huske dine innstillinger (eksempelvis brukernavn, språk, tekststørrelse og andre forhåndsvalg) for en viss periode. Cookies brukes også for å forbedre funksjonalitet, til å samle informasjon for analyseformål eller for markedsføringsformål.
+Cookies are small text files that are stored on your computer, phone or tablet when you visit a website. Cookies help websites to remember your settings (such as username, language preferences, text size and other presets) for a certain period of time. Cookies are also used to improve functionality, to collect information for analytics or marketing purposes.
 
-### Hvordan bruker vi Cookies?
+### How do we use Cookies?
 
-Vi bruker cookies for å få informasjon om hvordan nettstedet brukes. Vi bruker dette gjennom Google Analytics som er et verktøy for webanalyse fra Google. Informasjonen lagres på servere i USA. Informasjonskapslene samler informasjon om hvilke sider som besøkes, hvor lenge et besøk varer, antall besøk på nettstedet og hva som er kilden til besøket (eksempelvis Google Søk). Vi bruker også cookies til å se på brukeratferden, som klikk på lenker, klikk til artikler, innsendelse av kontaktskjema o.l.
+We use cookies to obtain information on how a site is being used. The cookies are set and the information analyzed using Google Analytics, which is a web analytics tool from Google. The information is stored on servers in the United States. The cookies collect information on which pages are visited, how long a visit lasts, the number of visits to the site and what the source of the visit is (for example, Google Search). We also use cookies to analyze user behavior, such as clicks on links, clicks to articles, submission of contact forms and the like.
 
-Ved hjelp av cookies samler vårt nettsted inn informasjon til bruk for senere annonsering (Remarketing). En anonymisert identitet blir lagret i egne lister som brukes til målrettet annonsering basert på din brukeratferd på nett. I tillegg til at informasjonen er anonymisert (avidentifisert) stilles det krav til et visst antall brukere på listen før listene tas i bruk.
+By using cookies, our site collects information for later advertising (Remarketing). An anonymized identity is stored in separate lists used for targeted advertising based on your online user behavior. In addition to the information being anonymized (de-identified), a certain number of users are required to be listed before the lists are used.
 
-Alle nettlesere gjør det mulig å begrense cookie atferd eller å deaktivere dem ved hjelp av nettleserens innstillinger. Nettleseren lar deg også se over hvilke cookies som er lagret på datamaskinen, og til å slette en enkelt cookie eller å fjerne alle sammen. Du finner en lenke lenger nede på siden til hvordan du kan gjøre dette.
+All browsers allow you to restrict cookie behavior or to disable them by changing the browser's settings. The browser also lets you review which cookies are stored on your computer, and to delete a single cookie or to remove all of them. You will find a link below on how to do this.
 
 #### Google Analytics
 
-For å gi oss informasjon og statistikk om hvordan nettstedet brukes, settes en cookie via Google Analytics.
+To provide us with information and statistics on how our site is being used, a cookie is set via Google Analytics.
 
 #### Google Tag Manager
 
