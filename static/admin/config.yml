@@ -363,8 +363,6 @@ collections:
               - {label: "Product image", name: "featuredimage", widget: image }
               - {label: "Product background image", name: "featuredimageBackground", widget: image, required: false }
               - {label: Description, name: description, widget: text}
-
-
           - label: Quotes section
             widget: list
             name: quotes
@@ -374,7 +372,6 @@ collections:
               - {label: "Author position", name: authorPosition, widget: string, required: false}
               - {label: "Author image", name: "authorImage", widget: image, required: false}
               - {label: "Quote text", name: quoteText, widget: text, required: false}
-
           - label: Solutions
             widget: object
             name: itemsSection
@@ -400,5 +397,51 @@ collections:
               - {label: "Large image", name: "bgimage", widget: image }
           - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
 
-        
-
+      - file: "src/pages/about/social-responsibility.md"
+        label: "Social responsibility"
+        name: "about-social-responsibility"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-social-responsibility"}
+          - {label: Title, name: title, widget: string}
+          - {label: SEO Description, name: seoDescription, widget: text, hint: "Important - Make a overall description"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - label: "UN Responsibility images"
+            name: featuredImages
+            widget: list
+            field: {label: Image, name: image, widget: image}
+          - label: "UN Sustainable"
+            name: splitSection
+            required: false
+            widget: object
+            fields:
+                - {label: "Content - left", name: "left", widget: "markdown", required: false }
+                - {label: "Content - right", name: "right", widget: "markdown", required: false }
+          - label: "Three columns"
+            name: "threeColSection"
+            required: false
+            widget: list
+            fields:
+                - {label: "Content - left", name: "description", widget: "markdown", required: false }
+                - {label: Icon, name: icon, widget: image, required: false }
+          - label: "Sustainability"
+            name: splitSection2
+            required: false
+            widget: object
+            fields:
+                - {label: "Content - left", name: "left", widget: "markdown", required: false }
+                - {label: "Image - right", name: "right", widget: "image", required: false }
+          - label: "Responsibilities"
+            name: "responsibilities"
+            required: false
+            widget: list
+            fields:
+                - {label: "Heading --->", name: "description", widget: "string", required: false }
+                - {label: "Content", name: "description", widget: "markdown", required: false }
+          - label: "ISO"
+            name: splitSection3
+            required: false
+            widget: object
+            fields:
+                - {label: "Content - left", name: "left", widget: "markdown", required: false }
+                - {label: "Image - right", name: "right", widget: "image", required: false }

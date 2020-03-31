@@ -3,7 +3,10 @@ import Img from 'gatsby-image';
 
 const NonStretchedImage = props => {
   let normalizedProps = props;
+
   /* eslint-disable */
+  if (props.childImageSharp)
+  normalizedProps = { ...normalizedProps, ...props.childImageSharp };
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {
       ...props,

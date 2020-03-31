@@ -216,7 +216,7 @@ body {
 
   .content {
     font-size: 18px;
-    h1, h2 {
+    h1, h2, h3, h4 {
       color: $white;
     }
     p strong {
@@ -226,11 +226,14 @@ body {
       color: #3273dc;
     }
   }
+
+  .has-dark-background {
+    background: $dark;
+  }
   
   .has-dark-background,
   .has-dark-background .content,
   .has-dark-background.content {
-    background: $dark;
     @include text_Light;
     p,
     li {
@@ -294,7 +297,7 @@ body {
   }
   &.has-light-dark-background {
     color: $white;
-    background-color: $background-color-light-dark;
+    background-color: $dark-light;
     strong,
     h1,
     h2,
@@ -753,6 +756,29 @@ section.about-page-primary {
     }
   }
 }
+
+section.images .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(142px,1fr));
+  grid-gap: 0;
+  @media only screen and (min-width: $desktop) { 
+    .image:nth-of-type(odd) {
+      margin-top: 20px;
+    }
+  }
+}
+
+section.social-responsibility {
+  .has-light-dark-background.three-col {
+    text-align: center;
+    font-size: 15px !important;
+    p {
+      font-size: 15px !important;
+    }
+  }
+}
+
+
 
 /****************     HOME PAGE     ********************/
 
