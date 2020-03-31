@@ -132,7 +132,7 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 600, quality: 100) {
+              fluid(maxWidth: 600, quality: 80) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }
