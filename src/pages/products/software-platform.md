@@ -52,16 +52,16 @@ sectionFive:
         SEALAB delivers complete IoT-systems to the aquaculture industry. All components
         installed in the cages and on the feed barge are connected through the Internet of
         Things; Underwater Cameras, Underwater lights, environmental sensors, Winches,
-        Service Tablets, Control Rooms and more. 
+        Service Tablets, Control Rooms and more.
 alternatingSections:
-  - Content:
+  - content:
       description: >-
         # IoT on 5G
 
         The new 5G network is on everyone’s minds these days, and for good reason.
         Not only will 5G improve how we use and communicate with technology, it will
         also change how various technologies communicate with one another.
-        
+
 
         Read more about how SEALAB contributes to develop new 5G solutions through 5G-HEART,
         a project founded by the European Union’s Horizon 2020 research and innovation programme.
@@ -69,14 +69,14 @@ alternatingSections:
         path: /projects/5G-heart/
         text: 5G HEART
     featuredImage: /img/IoT5icons.svg
-  - Content:
+  - content:
       description: >-
         ### A bridge between the physical and the digital world
         # The Digital twin
 
         The digitalization of the ocean space has come so far that the living conditions
         for digital twins are present in several industries.
-        
+
         BlueThink is designed to support this technology. This said based on the
         amount of data the platform is able to collect using from sensors (IoT), it’s
         ability to process large amounts of data (AI) and extract lessons from these huge
