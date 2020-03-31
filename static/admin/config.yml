@@ -165,6 +165,7 @@ collections:
       - label: "Section 1"
         name: "sectionOne"
         widget: "object"
+        required: false
         fields:
           - {label: "Content - left", name: "left", widget: "markdown"}
           - {label: "Content - right", name: "right", widget: "markdown"}
@@ -172,12 +173,14 @@ collections:
       - label: "Section 3"
         name: "sectionThree"
         widget: "object"
+        required: false
         fields:
           - {label: "Illustration background", name: "backgroundImage", widget: image }
           - {label: "Illustration figure", name: "featuredimage", widget: image }
       - label: "Section 4"
         name: "sectionFour"
         widget: "object"
+        required: false
         fields:
           - {label: "Centered image", name: "featuredimage", widget: image }
           - label: "Left colomn"
@@ -188,6 +191,7 @@ collections:
               - label: "Button"
                 name: "button"
                 widget: "object"
+                required: false
                 fields:
                   - {label: Title, name: text, widget: string}
                   - {label: Link path, name: path, widget: string}
@@ -197,6 +201,7 @@ collections:
       - label: "Alternating sections"
         name: "alternatingSections"
         widget: "list"
+        required: false
         fields:
           - label: "Content"
             name: "content"
@@ -206,6 +211,7 @@ collections:
               - label: "Button"
                 name: "button"
                 widget: "object"
+                required: false
                 fields:
                   - {label: Title, name: text, widget: string}
                   - {label: Link path, name: path, widget: string}
