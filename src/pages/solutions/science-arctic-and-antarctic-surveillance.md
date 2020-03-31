@@ -4,7 +4,7 @@ title: Science Arctic and Antarctic Surveillance
 seoDescription: Science Arctic and Antarctic Surveillance
 heading: Science Arctic and Antarctic Surveillance
 description: Ocean Space Surveillance
-featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
+featuredimage: /img/AdobeStock_77494336.jpeg
 splitSections:
   - content: >-
       ## Antarctic Surveillance
