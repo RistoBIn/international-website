@@ -101,6 +101,28 @@ collections:
       - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
       - {label: "Content", name: "body", widget: "markdown"}
 
+#### ABOUT PAGE TEMPLATE PARTNERS ####
+
+  - name: "about-page-partners"
+    label: "About Pages - Partners"
+    folder: "src/pages/about/"
+    create: false
+    description: "This is the template for the Partners page."
+    filter: {field: "templateKey", value: "about-page-partners"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-partners"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "markdown", hint: "Markdown text under title", required: false}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - label: "Partners"
+        name: "partnerItems"
+        widget: "list"
+        fields:
+          - {label: "Partner logo", name: "icon", widget: "image"}
+          - {label: "Partner website url", name: "url", widget: "string", hint: "The partner logo will be a link that directs to the url specified here."}
+      - {label: "Content", name: "body", widget: "markdown"}
 
 #### PRODUCT PAGE TEMPLATE 1 ####
 
