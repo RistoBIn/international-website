@@ -56,7 +56,7 @@ menuPaths:
         title: Business Model
       - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
-      - path: /social-responsibility/
+      - path: /about/social-responsibility/
         title: Social Responsibility
       - path: /about/partners/
         title: Partners
