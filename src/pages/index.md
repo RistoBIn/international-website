@@ -69,6 +69,12 @@ itemsSection:
     - featuredimage: /img/AdobeStock_205257493.jpeg
       heading: Well and Fishing Boats
       path: /solutions/well-and-fishing-boats/
+    - featuredimage: /img/AdobeStock_245001526.jpeg
+      heading: Seabed Mining
+      path: /solutions/seabed-mining/
+    - featuredimage: /img/AdobeStock_224578518.jpeg
+      heading: Environmental Monitoring
+      path: /solutions/environmental-monitoring/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
