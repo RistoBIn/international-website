@@ -4,7 +4,7 @@ title: Hydropower Plants
 seoDescription: Surveillance of A Hydroelectric Power Plant
 heading: Hydropower Plants
 description: Surveillance of Hydroelectric Power Plants
-featuredimage: /img/hydropower-plants.jpg
+featuredimage: /img/AdobeStock_59878462.jpeg
 splitSections:
   - content: >-
       Large systems, such as large manufacturing or power plants,
@@ -21,9 +21,9 @@ splitSections:
       The surveillance system can be superimposed with smart cameras and edge
       computing over the existing SCADA control and monitoring network. This
       aims to increase performance, efficiency and stability in the existing
-      monitoring system. Better detection of Corrosion, intruders, water
+      monitoring system. Better detection of corrosion, intruders, water
       reservoir and flow, dam movement monitoring, concrete monitoring, climate
       monitoring, lake filling and water distribution.
-    featuredimage: /img/hydropower-plants.jpg
+    featuredimage: /img/AdobeStock_332051395.jpeg
 ---
 
