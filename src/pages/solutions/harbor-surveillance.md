@@ -26,5 +26,6 @@ splitSections:
       very well in combination with ie Diver Detection Sonar (DDS), Surveillance
       radar and Electro-optical devices (CCD and FLIR).
     heading: Safeguarded Against Unwanted Intruders
+    featuredimage: /img/AdobeStock_187277566.jpeg
 ---
 
