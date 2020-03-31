@@ -25,11 +25,11 @@ splitSections:
       rubber boats, kayaks, etc. and of course larges vessels.
 
 
-      Realtime camera surveillance with machine vision from SEALAB will work
+      Realtime camera surveillance with computer vision from SEALAB will work
       very well in combination with ie Diver Detection Sonar (DDS), Surveillance
       radar and Electro-optical devices (CCD and FLIR).
     heading: Safeguarded Against Unwanted Intruders
     featuredimage: /img/AdobeStock_187277566.jpeg
-    subheading: Realtime Camera Surveillance with Machine Vision
+    subheading: Realtime Camera Surveillance with Computer Vision
 ---
 
