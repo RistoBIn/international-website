@@ -1,12 +1,14 @@
 ---
 templateKey: solution-page-secondary
 title: Underwater Drones and Robotics
-seoDescription: Underwater Drones and Robotics
+seoDescription: >-
+  SEALAB have a clear view that machine vision is an important enabling
+  technology in robotics and unmanned vehicles, i.e. underwater drones.
 heading: Underwater Drones and Robotics
 description: >-
   SEALAB have a clear view that machine vision is an important enabling
-  technology in robotics and unmanned vehicles, i.e. underwater drones.
-featuredimage: /img/Underwater Drones and Robotics.png
+  technology in robotics and unmanned vehicles.
+featuredimage: /img/AdobeStock_180592840.jpeg
 splitSections:
   - content: >-
       Underwater drones equipped with high-tech sensors and edge computing in
@@ -26,6 +28,6 @@ splitSections:
       aboard an unmanned underwater drone or vessel at the surface, for example,
       you then have to determine what to do about what is seen, which gets into
       autonomy.
-    featuredimage: /img/Underwater Drones and Robotics.png
+    featuredimage: /img/AdobeStock_180592840.jpeg
 ---
 
