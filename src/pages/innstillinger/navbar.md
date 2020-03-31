@@ -64,8 +64,6 @@ menuPaths:
         title: Investors
       - path: /about/partnership/
         title: Partnership
-      - path: /about/press/
-        title: Press
       - path: /contact/locations
         title: Locations
     path: '#'
