@@ -775,6 +775,31 @@ section.about-page-primary {
   }
 }
 
+section.about-page-partners {
+  background-color: white;
+  .section h1 {
+    color: black;
+  }
+  .section p {
+    color: black !important;
+  }
+  .logo-section {
+    background-color: white;
+  }
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    .image {
+      width: auto;//340px;
+      max-height: 130px;
+      padding: 20px;
+      margin: auto;
+    }
+  }
+}
+
 section.images .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
