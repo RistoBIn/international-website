@@ -10,12 +10,13 @@ const BackgroundImageSection = ({
   children,
   style,
   cssFilter,
+  htmlTag,
 }) => {
   if (image && image.childImageSharp && image.childImageSharp.fluid) {
     if (cssFilter)
       return (
         <BackgroundImage
-          Tag="section"
+          Tag={htmlTag || 'section'}
           className={classNames(className, styles.image__section)}
           fluid={image.childImageSharp.fluid}
           style={style}
@@ -29,9 +30,10 @@ const BackgroundImageSection = ({
           </div>
         </BackgroundImage>
       );
+
     return (
       <BackgroundImage
-        Tag="section"
+        Tag={htmlTag || 'section'}
         className={classNames(className, styles.image__section)}
         fluid={image.childImageSharp.fluid}
         style={style}

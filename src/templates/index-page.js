@@ -200,8 +200,8 @@ export const pageQuery = graphql`
             path
             featuredimage {
               childImageSharp {
-                fluid(maxHeight: 720, quality: 70) {
-                  ...GatsbyImageSharpFluid_tracedSVG
+                fluid(maxHeight: 404, quality: 50) {
+                  ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
               }
