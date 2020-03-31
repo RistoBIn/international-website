@@ -2,8 +2,8 @@
 templateKey: solution-page-primary
 title: Atlantic Salmon and Seafood
 seoDescription: >-
-  SEALABs machine vision and camera technology will increase automation and food
-  safety. We have the products to help your business thrive. Optimizing the
+  SEALABs computer vision and camera technology will increase automation and
+  food safety. We have the products to help your business thrive. Optimizing the
   industry require a slaughter process that ensures that the salmon is safe to
   eat, without causing the fish unnecessary stress and pain.
 heading: Atlantic Salmon and Seafood
@@ -89,14 +89,15 @@ splitSection:
 
     Optimizing water temperature and good access to groundwater is important,
     but sometimes expensive hydroelectric power rise the risk of the business.
-    This is where better sensorics and machine vision from SEALAB come into play
+    This is where better sensorics and computer vision from SEALAB come into
+    play
   right: >-
     ### Setting a new standard
 
 
     Companies who seek new ways to make its facility as energy efficient and
     sustainable as possible will need real time surveillance systems for
-    monitoring fish welfare and the production. SEALABs machine vision systems
+    monitoring fish welfare and the production. SEALABs computer vision systems
     for biomass control, respiratory rate measuring, feeding control will help
     our customers to reach their goals.  
 
