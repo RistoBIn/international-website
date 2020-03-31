@@ -3,23 +3,49 @@ import classNames from 'classnames';
 import BackgroundImage from 'gatsby-background-image';
 import styles from './BackgroundImage.module.scss';
 
-const BackgroundImageSection = ({ image, className, id, children }) => {
-  if (image && image.childImageSharp && image.childImageSharp.fluid)
+const BackgroundImageSection = ({
+  image,
+  className,
+  id,
+  children,
+  style,
+  cssFilter,
+}) => {
+  if (image && image.childImageSharp && image.childImageSharp.fluid) {
+    if (cssFilter)
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={classNames(className, styles.image__section)}
+          fluid={image.childImageSharp.fluid}
+          style={style}
+          id={id}
+        >
+          <div className={styles.filter} style={{ background: cssFilter }}>
+            {children}
+          </div>
+        </BackgroundImage>
+      );
     return (
       <BackgroundImage
         Tag="section"
         className={classNames(className, styles.image__section)}
         fluid={image.childImageSharp.fluid}
+        style={style}
+        id={id}
       >
         {children}
       </BackgroundImage>
     );
-  if (image.publicURL)
+  }
+
+  if (image && image.publicURL)
     return (
       <section
+        id={id}
         className={classNames(className)}
         style={{
-          background: `linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3)), url(${image.publicURL})`,
+          backgroundImage: `url(${image.publicURL})`,
         }}
       >
         {children}

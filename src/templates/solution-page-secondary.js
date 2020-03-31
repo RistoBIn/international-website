@@ -56,7 +56,14 @@ export const SolutionPageTemplate = ({
 
 const SolutionHero = ({ className, heading, description, image }) => {
   return (
-    <BackgroundImage className={classNames('hero', className)} image={image}>
+    <BackgroundImage
+      className={classNames('hero', className)}
+      image={image}
+      cssFilter="linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))"
+      style={{
+        backgroundPosition: 'bottom center !important',
+      }}
+    >
       <div className={classNames('hero-body')}>
         <div className="container">
           <div>
@@ -112,7 +119,7 @@ export const pageQuery = graphql`
           extension
           childImageSharp {
             fluid(maxHeight: 630, quality: 80) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_noBase64
               presentationWidth
             }
           }
