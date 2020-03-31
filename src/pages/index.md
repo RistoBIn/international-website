@@ -45,6 +45,9 @@ itemsSection:
     text: Show all solutions
   heading: Multiple applications in numerous industries
   items:
+    - featuredimage: /img/AdobeStock_114071575.jpeg
+      heading: Schools and Universities
+      path: /solutions/schools-and-universities/
     - featuredimage: /img/aquaculture.jpg
       heading: Atlantic Salmon and Seafood
       path: /solutions/aquaculture
