@@ -1,0 +1,45 @@
+@import '../_variables.scss';
+
+.section .wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0 30px;
+  padding: 2rem 0;
+
+
+  .image {
+    grid-row: 1;
+    margin: auto 0 !important;
+    padding-bottom: 20px;
+  }
+  .content {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+    grid-row: 2;
+    p {
+      max-width: 520px;
+      margin-left: 0;
+    }
+  }
+  @media only screen and (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr;
+    .content {
+      grid-column: 1;
+      grid-row: 1;
+      padding: 0 1rem;
+    }
+    .image {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    &.isOdd {
+      .content {
+        grid-column: 2;
+      }
+      .image {
+        grid-column: 1;
+      }
+    }
+  }
+}

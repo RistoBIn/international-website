@@ -9,7 +9,7 @@ description: >-
     do not have the ability to adapt to the changes, they will easily lose their
     position in the market.
 sectionOne:
-  featuredImage: /img/man-with-btgo-tablet.png
+  featuredimage: /img/man-with-btgo-tablet.png
   left: >-
       ## The Internet of Things
   right: >-
@@ -21,41 +21,40 @@ sectionOne:
       A “thing” is any object with embedded electronics that can transfer data over a
       network, without any human interaction. This could be underwater cameras,
       environmental sensors, devices in a control room, or components in a vessel.
-sectionTwo:
-  content: >-
-      ### Software Platform
-      # Software platform for video scaling and data handling
+sectionTwo: >-
+  ### Software Platform
 
-      SEALAB has developed a software platform that supports IoT. The BlueThink™ platform
-      delivers any data or video required for software applications to perform their
-      functions, while allowing the results from those applications to be presented back
-      into the platform for use by other applications.
+  ## Software platform for video scaling and data handling
+
+  SEALAB has developed a software platform that supports IoT. The BlueThink™ platform
+  delivers any data or video required for software applications to perform their
+  functions, while allowing the results from those applications to be presented back
+  into the platform for use by other applications.
 sectionThree:
   backgroundImage: /img/zigzagLines.svg
-  figureImage: /img/IoTKeyFeatures.svg
+  featuredimage: /img/IoTKeyFeatures.svg
 sectionFour:
-  featuredImage: /img/fieldIllustrationWithGrid.jpg
+  featuredimage: /img/fieldIllustrationWithGrid.jpg
   left:
-    title: BlueThink and IoT in the aquaculture industry
+    heading: BlueThink and IoT in the aquaculture industry
     button:
       path: /solutions/atlantic-salmon-and-seafood/
       text: Norwegian Aquaculture
-  right:
-    content: >-
-        The Internet of Things is about all the things around us being connected to
-        the internet. When things are connected to the network, they can connect, talk
-        to each other and to the surroundings. This allows us to remotely control the
-        devices and collect data in a way that was previously impossible.
+  right: >-
+    The Internet of Things is about all the things around us being connected to
+    the internet. When things are connected to the network, they can connect, talk
+    to each other and to the surroundings. This allows us to remotely control the
+    devices and collect data in a way that was previously impossible.
 
 
-        SEALAB delivers complete IoT-systems to the aquaculture industry. All components
-        installed in the cages and on the feed barge are connected through the Internet of
-        Things; Underwater Cameras, Underwater lights, environmental sensors, Winches,
-        Service Tablets, Control Rooms and more.
+    SEALAB delivers complete IoT-systems to the aquaculture industry. All components
+    installed in the cages and on the feed barge are connected through the Internet of
+    Things; Underwater Cameras, Underwater lights, environmental sensors, Winches,
+    Service Tablets, Control Rooms and more.
 alternatingSections:
   - content:
       description: >-
-        # IoT on 5G
+        ## IoT on 5G
 
         The new 5G network is on everyone’s minds these days, and for good reason.
         Not only will 5G improve how we use and communicate with technology, it will
@@ -67,11 +66,12 @@ alternatingSections:
       button:
         path: /projects/5G-heart/
         text: 5G HEART
-    featuredImage: /img/IoT5icons.svg
+    featuredimage: /img/IoT5icons.svg
   - content:
       description: >-
         ### A bridge between the physical and the digital world
-        # The Digital twin
+
+        ## The Digital twin
 
         The digitalization of the ocean space has come so far that the living conditions
         for digital twins are present in several industries.
@@ -80,5 +80,5 @@ alternatingSections:
         amount of data the platform is able to collect using from sensors (IoT), it’s
         ability to process large amounts of data (AI) and extract lessons from these huge
         amounts of data (Machine Learning).
-    featuredImage: /img/digitalOilPlatform.png
+    featuredimage: /img/digitalOilPlatform.png
 ---
