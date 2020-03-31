@@ -60,6 +60,9 @@ itemsSection:
     - featuredimage: /img/search-rescue.jpg
       heading: Search & Rescue
       path: /solutions/search-and-rescue
+    - featuredimage: /img/AdobeStock_187277566.jpeg
+      heading: Harbor Surveillance
+      path: /solutions/harbor-surveillance/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
