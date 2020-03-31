@@ -101,31 +101,6 @@ collections:
       - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
       - {label: "Content", name: "body", widget: "markdown"}
 
-#### ABOUT PAGE TEMPLATE 3 ####
-
-  - name: "about-page-tertiary"
-    label: "About Pages 3"
-    folder: "src/pages/about/"
-    create: true
-    description: "This is a about page template. (e.g. Leadership)"
-    filter: {field: "templateKey", value: "about-page-tertiary"}
-    identifier_field: name
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-tertiary"}
-      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
-      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
-      - {label: "Description", name: "description", widget: "text", hint: "Text."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
-      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - label: Persons
-        name: persons
-        widget: list
-        fields:
-          - {label: "Role", name: "role", widget: "string"}
-          - {label: "Name", name: "name", widget: "string"}
-          - {label: "Description", name: "description", widget: "markdown"}
-          - {label: "Image", name: "profilePicture", widget: "image", hint: "Profile picutre"}
 
 #### PRODUCT PAGE TEMPLATE 1 ####
 
@@ -445,3 +420,25 @@ collections:
             fields:
                 - {label: "Content - left", name: "left", widget: "markdown", required: false }
                 - {label: "Image - right", name: "right", widget: "image", required: false }
+
+      - file: "src/pages/leadership.md"
+        label: "Leadership"
+        name: "about-page-leadership"
+        description: "This is a about page template. (e.g. Leadership)"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-leadership"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+          - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+          - {label: "Description", name: "description", widget: "text", hint: "Text."}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+          - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
+          - {label: "Content", name: "body", widget: "markdown"}
+          - label: Persons
+            name: persons
+            widget: list
+            fields:
+              - {label: "Role", name: "role", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "markdown"}
+              - {label: "Image", name: "profilePicture", widget: "image", hint: "Profile picutre"}
+
