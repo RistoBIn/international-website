@@ -48,7 +48,7 @@ itemsSection:
     - featuredimage: /img/AdobeStock_187277566.jpeg
       heading: Harbor Surveillance
       path: /solutions/harbor-surveillance/
-    - featuredimage: /img/aquaculture.jpg
+    - featuredimage: /img/IMG_0539_Adjusted.jpg
       heading: Atlantic Salmon and Seafood
       path: /solutions/aquaculture
     - featuredimage: /img/AdobeStock_114071575.jpeg
