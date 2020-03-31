@@ -57,6 +57,8 @@ fourthNavigation:
     title: Social Responsibility
   - path: /locations
     title: Locations
+  - path: /about/partnership/
+    title: Partnership
 companyOffices:
   - addressItems:
       - SEALAB
