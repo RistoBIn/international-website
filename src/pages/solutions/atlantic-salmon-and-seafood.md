@@ -44,7 +44,7 @@ splitSections:
       can affect the quality of the finished product. The fish is monitored by
       smart algorithms and SEALAB Respiratory Rate system in realtime and works
       both on land or on a boat.
-    featuredimage: /img/cutted-salmon.jpg
+    featuredimage: /img/AdobeStock_267026504.jpeg
     subheading: ''
   - content: >-
       Looking at the figures, there are at present 430 million live salmon in
@@ -66,7 +66,7 @@ splitSections:
     heading: Full traceability throughout the entire production process
     subheading: 'With data collection, we provide'
 imageSection:
-  featuredimage: /img/boat-fish.jpg
+  featuredimage: /img/AdobeStock_135310009.jpeg
   left: '### Seafood Production in the ocean'
   right: >-
     All over the world, seafood is produced. From Atlantic salmon to whitefish,
