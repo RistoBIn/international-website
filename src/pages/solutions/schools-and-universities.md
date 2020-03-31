@@ -1,7 +1,11 @@
 ---
 templateKey: solution-page-secondary
 title: Schools and Universities
-seoDescription: Schools and Universities
+seoDescription: >-
+  Environmental education is one of the essential pillars to amaze, raise
+  awareness and inculcate new behaviors in children, the citizens of tomorrow.
+  SEALAB brings the Ocean in the School by broadcasting live from the deep and
+  into the classroom.
 heading: Schools and Universities
 description: >-
   New project at SEALAB R&D Lab to highlight importance of the Ocean Space to
