@@ -39,37 +39,37 @@ All browsers allow you to restrict cookie behavior or to disable them by changin
 
 To provide us with information and statistics on how our site is being used, a cookie is set via Google Analytics.
 
-#### Google Tag Manager
+#### Google Task Manager
 
-For å hjelpe oss distribuere forskjellige kodesnutter på nettstedet, bl.a. overnevnte Google Analytics, tar vi i bruk Google Tag Manager, som setter en cookie for å ivareta informasjon om inneværende sesjon.
+To help us distribute different code snippets on the site, including Google Analytics mentioned above, we use Google Tag Manager, which sets a cookie to handle information about the current session.
 
 #### Hubspot
 
-Hubspot cookien brukes til å registrere informasjon om bruken av nettsiden på samme måte som Google Analytics. Dersom du registrerer deg på våre nettsider vil vi med hjelp fra Hubspot cookien kunne lettere tilby deg relevant informasjon ved senere besøk.
+The Hubspot cookie is used to record information about the use of the website in the same way as the Google Analytics cookie. If you register as a user on our website we will be able to more easily offer you relevant information at later visits with the help of the Hubspot cookie.
 
-#### Sosiale medier
+#### Social media
 
-Vi bruker cookies for å spore aktivitet fra sosiale medier som Facebook, Twitter og LinkedIn. Cookies fra disse plattformene gir oss ikke innsikt i hvem som er på siden men lar oss samle data i de ulike mediene for å bygge et annonsepublikum som vi kan annonsere mot senere.
+We use cookies to track activity from social media such as Facebook, Twitter and LinkedIn. Cookies from these platforms do not give us insight into who is on the site but allow us to gather data in the various media to build an ad audience that we can advertise towards at a later time.
 
-#### Annonser
+### Advertisements
 
-Innimellom har vi annonser ute i andre medier som gjør at vi ønsker å spore trafikk fra disse. Derfor har vi cookies som sporer at disse annonsene gir oss trafikk. Det er ingen personlige data som spores i disse cookiesene.
+Occasionally, we have ads in other media that make us want to track traffic from these. For this reason we have cookies that track traffic to our site from these ads. No personal data is tracked in these cookies.
 
-Du kan lese mer om Googles policy for bruk av personopplysninger her:  https://www.google.com/intl/no/policies/privacy/
+You can read more about Google's privacy policy here: https://www.google.com/intl/en/policies/privacy/
 
-Du kan melde deg ut av Googles bruk av cookies (opt-out) for annonsering via Googles side om annonsering og personvern: http://www.google.com/policies/privacy/ads
+You can opt out of Google's use of cookies (opt-out) for advertising through the Google Advertising and Privacy page: http://www.google.com/policies/privacy/ads
 
-### SLIK DEAKTIVERER DU COOKIES I NETTLESEREN DIN
+### HOW TO DISABLE COOKIES IN YOUR BROWSER
 
-Det er i  mulig å reservere seg mot cookies ved å skru av for dette i nettleser. Dette finner du under innstillinger i nettleseren din. De fleste nettlesere tillater også inkognito modus der du surfer anonymt. Dersom du deaktiverer cookies i nettleseren din, er det viktig å vite at det kan påvirke brukeropplevelsen på nettsider. Her er en liste med hvordan du skrur av cookies i nettleser:
+It is possible to reserve against cookies by turning this off in the browser. Information on how to do this can be found under settings in your browser. Most browsers also allow incognito mode where you browse anonymously. If you disable cookies in your browser, it is important to note that this can affect the user experience on web pages. Here is a list of how to disable cookies in various browsers:
 
 * Chrome
 * Internet Explorer
 * Firefox
 * Safari
-* Safari Mobil
+* Safari Mobile
 * Android
-* Bruk av Facebook pixel: sporing på Facebook, Instagram, Messenger Instant Articles og Audience Network.
+* Use of Facebook pixel: tracking on Facebook, Instagram, Messenger Instant Articles and Audience Network.
 
 Facebook står som eier av Instagram, Messenger, Instant Articles og Audience Network, og bruk av Facebook pixel dekker derfor også disse kanalene.
 
