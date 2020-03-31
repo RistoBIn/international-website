@@ -42,30 +42,34 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      <section className="section has-dark-background">
-        <div className="container">
-          <NonStretchedImage
-            fluid={imageSection.featuredimage.childImageSharp.fluid}
-            objectFit="contain"
-            alt=""
-            className="image"
-          />
-          <SplittedSection
-            leftColumn={
-              <PostContent
-                content={generateHTML(imageSection.left)}
-                className="content is-left-aligned"
-              />
-            }
-            rightColumn={
-              <PostContent
-                content={generateHTML(imageSection.right)}
-                className="content is-left-aligned"
-              />
-            }
-          />
-        </div>
-      </section>
+      {imageSection && imageSection.featuredimage ? (
+        <section className="section has-dark-background">
+          <div className="container">
+            <NonStretchedImage
+              fluid={imageSection.featuredimage.childImageSharp.fluid}
+              objectFit="contain"
+              alt=""
+              className="image"
+            />
+            <SplittedSection
+              leftColumn={
+                <PostContent
+                  content={generateHTML(imageSection.left)}
+                  className="content is-left-aligned"
+                />
+              }
+              rightColumn={
+                <PostContent
+                  content={generateHTML(imageSection.right)}
+                  className="content is-left-aligned"
+                />
+              }
+            />
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
 
       {splitSection ? (
         <section className="section has-dark-background">

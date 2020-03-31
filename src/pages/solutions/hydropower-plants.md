@@ -4,7 +4,7 @@ title: Hydropower Plants
 seoDescription: Surveillance of A Hydroelectric Power Plant
 heading: Hydropower Plants
 description: 'Description '
-featuredimage: /img/Hydropower Plants.jpg
+featuredimage: /img/hydropower-plants.jpg
 splitSections:
   - content: >-
       Large systems, such as large manufacturing or power plants,
@@ -21,6 +21,6 @@ splitSections:
       monitoring system. Better detection of Corrosion, intruders, water
       reservoir and flow, dam movement monitoring, concrete monitoring, climate
       monitoring, lake filling and water distribution.
-    featuredimage: /img/Hydropower Plants.jpg
+    featuredimage: /img/hydropower-plants.jpg
 ---
 
