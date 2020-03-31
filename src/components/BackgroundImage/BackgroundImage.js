@@ -21,7 +21,10 @@ const BackgroundImageSection = ({
           style={style}
           id={id}
         >
-          <div className={styles.filter} style={{ background: cssFilter }}>
+          <div
+            className={styles.filter}
+            style={{ background: cssFilter, height: '100%' }}
+          >
             {children}
           </div>
         </BackgroundImage>

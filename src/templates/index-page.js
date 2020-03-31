@@ -34,10 +34,10 @@ export const IndexPageTemplate = ({
         className="is-fullheight front-page"
         heading={heading}
         subheading=""
-        backgroundImage={bgimage.publicURL}
+        backgroundImage={bgimage}
         buttonText="Learn more"
         anchorLink="#facts"
-        backgroundCSS={`linear-gradient(177.9deg, #0E111B 8.35%, rgba(14, 17, 27, 0.21) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%), url(${bgimage.publicURL})`}
+        backgroundCSS="linear-gradient(177.9deg, #0E111B 8.35%, rgba(14, 17, 27, 0.21) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%)"
       />
       <HighlightedData highlighted={facts} id="facts" />
       <SectionBackgroundImage
@@ -134,6 +134,12 @@ export const pageQuery = graphql`
         bgimage {
           publicURL
           extension
+          childImageSharp {
+            fluid(maxHeight: 920, quality: 80) {
+              ...GatsbyImageSharpFluid_noBase64
+              presentationWidth
+            }
+          }
         }
 
         items {
@@ -151,6 +157,13 @@ export const pageQuery = graphql`
           }
           bgimage {
             publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 920, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
           }
         }
 
@@ -186,7 +199,6 @@ export const pageQuery = graphql`
             heading
             path
             featuredimage {
-              publicURL
               childImageSharp {
                 fluid(maxHeight: 720, quality: 70) {
                   ...GatsbyImageSharpFluid_tracedSVG

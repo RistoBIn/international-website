@@ -6,6 +6,7 @@ import Button from '../Button';
 import ArrowButton from '../ArrowButton';
 import useArrayNavigation from '../../hooks/useArrayNavigation';
 import { idMaker } from '../../utils/id-maker';
+import BackgroundImage from '../BackgroundImage';
 
 const gen = idMaker();
 
@@ -18,7 +19,7 @@ const ImageBoxesWithNavigation = ({
   if (
     !items ||
     items.length < 1 ||
-    !items[0].featuredimage.publicURL ||
+    !items[0].featuredimage ||
     !items[0].heading ||
     !items[0].path
   )
@@ -94,36 +95,109 @@ const CarouselItem = ({
 }) => {
   const [isHovering, setHovering] = useState(false);
   const getBackgroundCSS = () => {
-    if (isHovering) return `url(${featuredimage.publicURL})`;
-    return `linear-gradient(0deg, rgba(14, 17, 27, 0.5), rgba(14, 17, 27, 0.5)), url(${featuredimage.publicURL})`;
+    if (isHovering) return ``;
+    return `linear-gradient(0deg, rgba(14, 17, 27, 0.5), rgba(14, 17, 27, 0.5))`;
   };
-
   return (
     <Link
       to={path}
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
       style={{
-        backgroundImage: getBackgroundCSS(),
         gridColumn: gridColumnNumber,
       }}
-      className={classNames(styles.carousel__item, className, {
-        [styles.carousel__item__active]: isHovering,
-      })}
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
     >
-      <h3 className={classNames(styles.carousel__item__heading)}>{heading}</h3>
-      <div
-        aria-hidden="true"
-        className={classNames(
-          'button',
-          'is-transparent',
-          styles.carousel__item__button,
-        )}
+      <BackgroundImage
+        image={featuredimage}
+        cssFilter={getBackgroundCSS()}
+        className={classNames(styles.carousel__item, className, {
+          [styles.carousel__item__active]: isHovering,
+        })}
+        style={{
+          backgroundPosition: 'bottom center !important',
+          gridColumn: gridColumnNumber,
+        }}
       >
-        Read more
-      </div>
+        <div className={styles.carousel__item__content}>
+          <h3 className={classNames(styles.carousel__item__heading)}>
+            {heading}
+          </h3>
+          <div
+            aria-hidden="true"
+            className={classNames(
+              'button',
+              'is-transparent',
+              styles.carousel__item__button,
+            )}
+          >
+            Read more
+          </div>
+        </div>
+      </BackgroundImage>
     </Link>
   );
+
+  // return (
+  //   <BackgroundImage
+  //     className={classNames('hero', styles.hero, className)}
+  //     image={featuredimage}
+  //     cssFilter={getBackgroundCSS()}
+  //     style={{
+  //       backgroundPosition: 'bottom center !important',
+  //       gridColumn: gridColumnNumber,
+  //     }}
+  //   >
+  //     <Link
+  //       to={path}
+  //       onMouseEnter={() => setHovering(true)}
+  //       onMouseLeave={() => setHovering(false)}
+  //       className={classNames(styles.carousel__item, className, {
+  //         [styles.carousel__item__active]: isHovering,
+  //       })}
+  //     >
+  //       <h3 className={classNames(styles.carousel__item__heading)}>
+  //         {heading}
+  //       </h3>
+  //       <div
+  //         aria-hidden="true"
+  //         className={classNames(
+  //           'button',
+  //           'is-transparent',
+  //           styles.carousel__item__button,
+  //         )}
+  //       >
+  //         Read more
+  //       </div>
+  //     </Link>
+  //   </BackgroundImage>
+  // );
+
+  // return (
+  //   <Link
+  //     to={path}
+  //     onMouseEnter={() => setHovering(true)}
+  //     onMouseLeave={() => setHovering(false)}
+  //     style={{
+  //       backgroundImage: getBackgroundCSS(),
+  //       gridColumn: gridColumnNumber,
+  //     }}
+  //     className={classNames(styles.carousel__item, className, {
+  //       [styles.carousel__item__active]: isHovering,
+  //     })}
+  //   >
+  //     <h3 className={classNames(styles.carousel__item__heading)}>{heading}</h3>
+  //     <div
+  //       aria-hidden="true"
+  //       className={classNames(
+  //         'button',
+  //         'is-transparent',
+  //         styles.carousel__item__button,
+  //       )}
+  //     >
+  //       Read more
+  //     </div>
+  //   </Link>
+  // );
 };
 
 export default ImageBoxesWithNavigation;
