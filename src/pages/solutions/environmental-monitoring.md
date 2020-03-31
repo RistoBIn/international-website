@@ -4,7 +4,7 @@ title: Environmental monitoring
 seoDescription: Environmental monitoring
 heading: Environmental monitoring
 description: Increasing need for environmental monitoring
-featuredimage: /img/environmental-monitoring.jpg
+featuredimage: /img/AdobeStock_68760718.jpeg
 splitSections:
   - content: >-
       Both watercourses and the ocean space will need more monitoring than ever.
