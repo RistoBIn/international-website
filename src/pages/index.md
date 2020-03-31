@@ -75,6 +75,9 @@ itemsSection:
     - featuredimage: /img/AdobeStock_224578518.jpeg
       heading: Environmental Monitoring
       path: /solutions/environmental-monitoring/
+    - featuredimage: /img/AdobeStock_180592840.jpeg
+      heading: Underwater Drones and Robotics
+      path: /solutions/underwater-drones-and-robotics/
 splitSection:
   bgimage: /img/inspirational.jpg
 ---
