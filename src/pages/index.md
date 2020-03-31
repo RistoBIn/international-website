@@ -57,9 +57,9 @@ itemsSection:
     - featuredimage: /img/AdobeStock_294165529.jpeg
       heading: Science Arctic and Antarctic Surveillance
       path: /solutions/science-arctic-and-antarctic-surveillance/
-    - featuredimage: /img/oil-gas.jpg
-      heading: Oil & Gas
-      path: /solutions/oil-and-gas
+    - featuredimage: /img/AdobeStock_177426726.jpeg
+      heading: Oil and Gas Industry
+      path: /solutions/oil-gas-industry/
     - featuredimage: /img/search-rescue.jpg
       heading: Search & Rescue
       path: /solutions/search-and-rescue
