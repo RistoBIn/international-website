@@ -1,10 +1,13 @@
 ---
 templateKey: solution-page-secondary
 title: Harbor Surveillance
-seoDescription: Harbor Surveillance
+seoDescription: >-
+  It has become increasingly critical that ports, coastal installations, and oil
+  rigs around the world be safeguarded against unwanted intruders, who may
+  intend sabotage, unlawful entry, or terror attacks.
 heading: Harbor Surveillance
 description: Technical Needs and Challenges in Harbor Surveillance
-featuredimage: /img/Harbor Surveillance.jpg
+featuredimage: /img/AdobeStock_282750626.jpeg
 splitSections:
   - content: >-
       It has become increasingly critical that ports, coastal installations, and
