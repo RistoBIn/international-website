@@ -5,6 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
+import BackgroundImage from '../components/BackgroundImage';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 
 export const SolutionPageTemplate = ({
@@ -23,7 +24,7 @@ export const SolutionPageTemplate = ({
         className="is-large"
         heading={heading}
         description={description}
-        imageURL={featuredimage.publicURL}
+        image={featuredimage}
         anchorLink="#first-section"
       />
       <section id="read-more" className="section" aria-hidden="true">
@@ -53,14 +54,9 @@ export const SolutionPageTemplate = ({
   );
 };
 
-const SolutionHero = ({ className, heading, description, imageURL }) => {
+const SolutionHero = ({ className, heading, description, image }) => {
   return (
-    <section
-      className={classNames('hero', className)}
-      style={{
-        background: `linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3)), url(${imageURL})`,
-      }}
-    >
+    <BackgroundImage className={classNames('hero', className)} image={image}>
       <div className={classNames('hero-body')}>
         <div className="container">
           <div>
@@ -69,7 +65,7 @@ const SolutionHero = ({ className, heading, description, imageURL }) => {
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundImage>
   );
 };
 
@@ -114,6 +110,12 @@ export const pageQuery = graphql`
         featuredimage {
           publicURL
           extension
+          childImageSharp {
+            fluid(maxHeight: 630, quality: 80) {
+              ...GatsbyImageSharpFluid_withWebp
+              presentationWidth
+            }
+          }
         }
         splitSections {
           heading
