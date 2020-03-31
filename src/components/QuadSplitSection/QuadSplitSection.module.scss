@@ -1,0 +1,27 @@
+@import '../_variables.scss';
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .leftColumn.switchColumnsOnMobile {
+        grid-row: 2;
+    }
+    .rightColumn.switchColumnsOnMobile {
+        grid-row: 1;
+    }
+
+    @media only screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+        .leftColumn, .rightColumn {
+            grid-row: 1 !important;
+            margin: auto;
+            margin-top: 0;
+            padding: 2rem;
+        }
+        .leftColumn {
+            padding-left: 0;
+            margin-left: 0;
+        }
+    }
+}

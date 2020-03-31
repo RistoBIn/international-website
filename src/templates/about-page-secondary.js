@@ -5,6 +5,8 @@ import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SplittedSection from '../components/SplittedSection';
+import QuadSplitSection from '../components/QuadSplitSection';
+import CollapsibleList from '../components/CollapsibleList';
 import generateHTML from '../utils/generateHTML';
 
 export const AboutPageSecondaryTemplate = ({
@@ -19,6 +21,7 @@ export const AboutPageSecondaryTemplate = ({
   secondarySplitSection,
   tertiarySplitSection,
   quaternarySplitSection,
+  primaryCollapsibleList,
   secondaryCenteredImageSection,
   quinarySplitSection,
 }) => {
@@ -108,48 +111,44 @@ export const AboutPageSecondaryTemplate = ({
               />
             }
             rightColumn={
-              <>
-                <SplittedSection
-                  leftColumn={
-                    <PostContent
-                      content={generateHTML(
-                        tertiarySplitSection.right.topNestedTertiarySplitSection
-                          .left.content,
-                      )}
-                      className="content is-left-aligned"
-                    />
-                  }
-                  rightColumn={
-                    <PostContent
-                      content={generateHTML(
-                        tertiarySplitSection.right.topNestedTertiarySplitSection
-                          .right.content,
-                      )}
-                      className="content is-left-aligned"
-                    />
-                  }
-                />
-                <SplittedSection
-                  leftColumn={
-                    <PostContent
-                      content={generateHTML(
-                        tertiarySplitSection.right
-                          .bottomNestedTertiarySplitSection.left.content,
-                      )}
-                      className="content is-left-aligned"
-                    />
-                  }
-                  rightColumn={
-                    <PostContent
-                      content={generateHTML(
-                        tertiarySplitSection.right
-                          .bottomNestedTertiarySplitSection.right.content,
-                      )}
-                      className="content is-left-aligned"
-                    />
-                  }
-                />
-              </>
+              <QuadSplitSection
+                topRowLeftColumn={
+                  <PostContent
+                    content={generateHTML(
+                      tertiarySplitSection.right.primaryQuadSplitSection.topRow
+                        .leftColumn.content,
+                    )}
+                    className="content is-left-aligned"
+                  />
+                }
+                topRowRightColumn={
+                  <PostContent
+                    content={generateHTML(
+                      tertiarySplitSection.right.primaryQuadSplitSection.topRow
+                        .rightColumn.content,
+                    )}
+                    className="content is-left-aligned"
+                  />
+                }
+                bottomRowLeftColumn={
+                  <PostContent
+                    content={generateHTML(
+                      tertiarySplitSection.right.primaryQuadSplitSection
+                        .bottomRow.leftColumn.content,
+                    )}
+                    className="content is-left-aligned"
+                  />
+                }
+                bottomRowRightColumn={
+                  <PostContent
+                    content={generateHTML(
+                      tertiarySplitSection.right.primaryQuadSplitSection
+                        .bottomRow.rightColumn.content,
+                    )}
+                    className="content is-left-aligned"
+                  />
+                }
+              />
             }
           />
         </div>
@@ -169,6 +168,14 @@ export const AboutPageSecondaryTemplate = ({
                 className="content is-left-aligned"
               />
             }
+          />
+        </div>
+      </section>
+      <section className="section has-dark-background about-page-secondary">
+        <div className="container">
+          <CollapsibleList
+            collapsibleItems={primaryCollapsibleList.listItems}
+            className="has-dark-background is-medium"
           />
         </div>
       </section>
@@ -219,6 +226,7 @@ const AboutPage = ({ data }) => {
     secondarySplitSection,
     tertiarySplitSection,
     quaternarySplitSection,
+    primaryCollapsibleList,
     secondaryCenteredImageSection,
     quinarySplitSection,
   } = frontmatter;
@@ -237,6 +245,7 @@ const AboutPage = ({ data }) => {
         secondarySplitSection={secondarySplitSection}
         tertiarySplitSection={tertiarySplitSection}
         quaternarySplitSection={quaternarySplitSection}
+        primaryCollapsibleList={primaryCollapsibleList}
         secondaryCenteredImageSection={secondaryCenteredImageSection}
         quinarySplitSection={quinarySplitSection}
       />
@@ -299,20 +308,22 @@ export const pageQuery = graphql`
             content
           }
           right {
-            topNestedTertiarySplitSection {
-              left {
-                content
+            primaryQuadSplitSection {
+              topRow {
+                leftColumn {
+                  content
+                }
+                rightColumn {
+                  content
+                }
               }
-              right {
-                content
-              }
-            }
-            bottomNestedTertiarySplitSection {
-              left {
-                content
-              }
-              right {
-                content
+              bottomRow {
+                leftColumn {
+                  content
+                }
+                rightColumn {
+                  content
+                }
               }
             }
           }
@@ -322,6 +333,12 @@ export const pageQuery = graphql`
             content
           }
           right {
+            content
+          }
+        }
+        primaryCollapsibleList {
+          listItems {
+            heading
             content
           }
         }

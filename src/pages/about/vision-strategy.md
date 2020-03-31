@@ -56,41 +56,102 @@ tertiarySplitSection:
     content: >-
       ## Some of the Unfair<br />Competitive Advantages<br/> of SEALAB
   right:
-    topNestedTertiarySplitSection:
-      left:
-        content: >-
-          #### Unfair advantage
-          <br />
-          
-          We have developed an unfair advantage that hurts our opponents so badly that they have to submit— and yells “Back off” to others stepping into the cage
-      right:
-        content: >-
-          #### Development of smart algorithms
+    primaryQuadSplitSection:
+      topRow:
+        leftColumn:
+          content: >-
+            #### Unfair advantage
+            <br />
+            
+            We have developed an unfair advantage that hurts our opponents so badly that they have to submit— and yells “Back off” to others stepping into the cage
+        rightColumn:
+          content: >-
+            #### Development of smart algorithms
 
-          We know our rivals, down to each tattoo and have done the right prep work to take down any opponent until we hit the exit. Beta testing and close collaboration with our customers. Additionally, we gather data to continue the development of smart algorithms and software packages.
-    bottomNestedTertiarySplitSection:
-      left:
-        content: >-
-          #### New sensors and software
+            We know our rivals, down to each tattoo and have done the right prep work to take down any opponent until we hit the exit. Beta testing and close collaboration with our customers. Additionally, we gather data to continue the development of smart algorithms and software packages.
+      bottomRow:
+        leftColumn:
+          content: >-
+            #### New sensors and software
 
-          We’ve nailed the timing and have the self-control to think strategically enough to build a great product. SEALAB have the right momentum to launch another sensor and software package as soon as we reach the next funding milestone.
-      right:
-        content: >-
-          #### Entrepreneurial stamina
+            We’ve nailed the timing and have the self-control to think strategically enough to build a great product. SEALAB have the right momentum to launch another sensor and software package as soon as we reach the next funding milestone.
+        rightColumn:
+          content: >-
+            #### Entrepreneurial stamina
 
-          We *get* that the clock is ticking and understand the urgency to make real progress fast. Our entrepreneurial stamina and endurance prove that we will be alive next year.
+            We *get* that the clock is ticking and understand the urgency to make real progress fast. Our entrepreneurial stamina and endurance prove that we will be alive next year.
   
 quaternarySplitSection:
   left:
     content: >-
-      ## Our first products are ready for the market
+      ## SEALAB’s products are already selling to the market.
   right:
     content: >-
       We have a fully developed and tested system. Thanks to previous investments and product development, we can introduce a smart and winning system this year, thus meeting the growing demand in the market. 
       
 
-      SEALAB’s modular concept can solve the growing needs of different markets: Aquaculture, Subsea Oil &amp; Gas, Seabed Mining, Underwater Drones, Military and Defense, Environmental Monitoring.
+      SEALAB’s modular concept can solve the growing needs of different markets:
 
+
+      - Schools and Universities
+
+      - Science Arctic and Antarctic Surveillance
+
+      - Atlantic Salmon and Seafood
+
+      - Well and Fishing Boats
+
+      - Seabed Mining
+
+      - Military & Defense
+
+      - Environmental Monitoring
+
+      - Harbor Surveillance
+
+      - Oil & Gas Industry
+
+      - Underwater Drones and Robotics
+
+      - Bridge and Watercourse Monitoring
+
+      - River and Wildlife monitoring
+
+      - Hydropower Plants
+
+primaryCollapsibleList:
+  listItems:
+    - heading: Branding, marketing and sales
+      content: >-
+        We’re developing media attention internationally through exciting and relevant marketing information.
+      
+    - heading: How much will it cost?
+      content: >-
+        To reach customers over the next three years, extensive branding, sales and marketing will be budgeted and spent. We expect to spend a lot.
+
+    - heading: How will we measure success?
+      content: >-
+        Measuring our marketing efforts continuously will optimize our marketing strategy to continuously seal the gaps in which customers and sales slip. There will be emphasis on continuous changes and optimization to sell more; we will research what it costs to market, evaluate which products are easier to sell and what makes the most money - all measured against the company&#39;s costs. This strategy will ensure growth. <br/ >
+        <br/ >
+        
+        According to the Norwegian Directory of Fishing there are about 4000 cages with Atlantic Salmon and Rainbow Trout operating per 2020. The number of cages is expected to increase, and we target doing business in 40 % of them by 2022.
+    
+    - heading: Multi-disciplinary - Key Success Factor
+      content: >-
+        We have focused on multiple success factors.
+        
+
+        When all these come together, we have real force.
+        
+
+        Our system have a *cool* identity.
+        
+
+        It is scalable with plug-and-play.
+        
+        
+        Partnership with international leading partners and players ensures global access.
+        
 secondaryCenteredImageSection:
   featuredimage: /img/CompletedMasterTheses.png
 
@@ -99,5 +160,5 @@ quinarySplitSection:
     content: >-
       ### We’ve established a creative and hardworking team
 
-      Our management team has many years of relevant experience. We are built on four years of experience and innovation - SEALAB is much more than a start-up. Key people who have developed global businesses previously are in place. Partnership with International leading partners and players ensures global access ISO 14001: 2015 and 9001: 2015 have been implemented.
+      Our management team has many years of relevant experience. We are built on four years of experience and innovation - SEALAB is much more than a start-up. Key people who have developed global businesses previously are in place. Partnership with International leading partners and players ensures global access. ISO 14001: 2015 and 9001: 2015 have been implemented.
 ---
