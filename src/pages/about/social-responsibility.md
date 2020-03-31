@@ -110,6 +110,6 @@ splitSection3:
     meet customer and regulatory requirements and to demonstrate continuous
     improvement, and Norwegian standard ISO 14001: 2015 concerning environmental
     management of the company.
-  right: /img/smart-winch.jpg
+  right: /img/_DSC1019 1.jpg
 ---
 
