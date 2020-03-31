@@ -51,6 +51,9 @@ itemsSection:
     - featuredimage: /img/IMG_0539_Adjusted.jpg
       heading: Atlantic Salmon and Seafood
       path: /solutions/atlantic-salmon-and-seafood/
+    - featuredimage: /img/AdobeStock_180592840.jpeg
+      heading: Underwater Drones and Robotics
+      path: /solutions/underwater-drones-and-robotics/
     - featuredimage: /img/AdobeStock_114071575.jpeg
       heading: Schools and Universities
       path: /solutions/schools-and-universities/
@@ -72,9 +75,6 @@ itemsSection:
     - featuredimage: /img/AdobeStock_224578518.jpeg
       heading: Environmental Monitoring
       path: /solutions/environmental-monitoring/
-    - featuredimage: /img/AdobeStock_180592840.jpeg
-      heading: Underwater Drones and Robotics
-      path: /solutions/underwater-drones-and-robotics/
     - featuredimage: /img/AdobeStock_232721946.jpeg
       heading: Bridge and Watercourse Monitoring
       path: /solutions/bridge-and-watercourse-monitoring/
@@ -85,7 +85,7 @@ itemsSection:
       heading: Hydropower Plants
       path: /solutions/hydropower-plants/
 splitSection:
-  bgimage: /img/inspirational.jpg
+  bgimage: /img/search-and-rescue.jpg
 ---
 *For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
 
