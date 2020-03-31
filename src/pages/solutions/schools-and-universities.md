@@ -6,7 +6,7 @@ heading: Schools and Universities
 description: >-
   New project at SEALAB R&D Lab to highlight importance of the Ocean Space to
   children.
-featuredimage: /img/_DSC7473.jpg
+featuredimage: /img/AdobeStock_114071575.jpeg
 splitSections:
   - content: >-
       Environmental education is one of the essential pillars to amaze, raise
@@ -36,7 +36,7 @@ splitSections:
       real time what fish you see, how the fish are doing and thus build
       knowledge for the recipient.
     heading: ' '
-    featuredimage: /img/Schools and Universities.jpg
+    featuredimage: /img/AdobeStock_114075445.jpeg
     subheading: ' '
 ---
 
