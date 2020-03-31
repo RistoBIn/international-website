@@ -55,10 +55,10 @@ fourthNavigation:
     title: SEALAB Ocean Space Center
   - path: /social-responsibility
     title: Social Responsibility
-  - path: /locations
-    title: Locations
   - path: /about/partnership/
     title: Partnership
+  - path: /locations
+    title: Locations
 companyOffices:
   - addressItems:
       - SEALAB
