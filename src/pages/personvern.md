@@ -71,49 +71,49 @@ It is possible to reserve against cookies by turning this off in the browser. In
 * Android
 * Use of Facebook pixel: tracking on Facebook, Instagram, Messenger Instant Articles and Audience Network.
 
-Facebook står som eier av Instagram, Messenger, Instant Articles og Audience Network, og bruk av Facebook pixel dekker derfor også disse kanalene.
+Facebook is listed as the owner of Instagram, Messenger, Instant Articles and Audience Network, and therefore the use of Facebook pixels also cover these channels.
 
-En Facebook pixel er et script som ligger på vårt nettsted og som samler informasjon til Facebook. Pixelen samler informasjon fra informasjonskapslene (cookies) som ligger i din nettleser, og sender dette tilbake til Facebook hvor informasjonen blir samlet sammen med data fra din Facebookprofil.
+A Facebook pixel is a script located on our site that collects information for Facebook. The pixel collects information from the cookies contained in your browser and sends it back to Facebook where the information is collected together with data from your Facebook profile.
 
-Informasjon som samles kan være knyttet til din brukeratferd (demografiske data som alder, kjønn, interesser) eller handlinger du utfører som klikk på lenker. Informasjonen er kun tilgjengelig på et anonymisert og aggregert nivå. Informasjonen brukes til analyseformål, målrettet annonsering basert på din brukeratferd (remarketing) samt til å identifisere målgrupper for annonsering som har en profil som er lik din og derfor har en potensiell mulighet for å ha et likt handlingsmønster eller behov.
+The Information collected may be demographic data such as age, gender and interests, or may be related to your user behavior. The information is only available on an anonymized and aggregated level. The information is used for analysis purposes, targeted advertising based on your user behavior (remarketing) as well as identifying target audiences that have a profile that is similar to yours and therefore have a potential opportunity to have a similar pattern of action or need.
 
-Informasjon samlet inn via Facebook pixel, lagres fra 90 dager til 2 år. Informasjonen lagres på servere hos Facebook i USA.
+Information collected via Facebook pixels is stored in a period from 90 days to 2 years. The information is stored on Facebook servers in the United States.
 
-Ved bruk av Facebook i forbindelse med annonsering vil Facebook i de aller fleste tilfeller være behandlingsansvarlig. Det er dog noen unntak:
+When using Facebook for advertising purposes, Facebook will in most cases be responsible for the processing of data. However, there are some exceptions:
 
-Bruk av Facebook Lead Ads, et verktøy for å samle inn epostadresser via Facebooksidene, der både Facebook og SEALAB vil være behandlingsansvarlige. Dersom SEALAB AS vil ta i bruk dette verktøyet, vil informasjon om brukerens rettigheter være tydelig angitt i annonsen hvor brukeren frivillig legger fra seg persondata.
+The use of Facebook Lead Ads, a tool for collecting email addresses through Facebook pages, where both Facebook and SEALAB AS will be responsible for processing. If SEALAB AS wants to use this tool, information about the user's rights will be clearly stated in the advertisement where the user voluntarily discloses personal data.
 
-Opplasting av eksisterende e-postlister for målrettet annonsering på Facebook. Dersom SEALAB AS vil bruke dette verktøyet vil det kun være rettet mot potensielle kunder som frivillig har gitt sitt samtykke til dette.
+Uploading existing email lists for targeted advertising on Facebook. If SEALAB AS wants to use this tool, it will only target potential customers who have voluntarily given their consent.
 
-### Annen informasjon samlet inn via vårt nettsted.
+## Other information collected through our website
 
-#### Bruk av kontaktskjema på våre nettsider
+### Use of contact forms on our website
 
-Når du bruker kontaktskjema på våre hjemmesider ber vi om følgende informasjon: Navn, e-postadresse, firma, telefonnummer, hva din henvendelse handler om.
+When you use the contact form on our website we ask for the following information: Name, email address, company, telephone number,  and what your inquiry is about.
 
-Formålet med innhenting og lagring av informasjon er å kunne svare og ha en dialog rundt din henvendelse. All informasjon om deg lagres på sikre servere, i tråd med Hubspots datalagringsrutiner
+The purpose of collecting and storing information is to be able to respond and have a dialogue around your inquiry. All personal information is stored on secure servers, in accordance with Hubspot's data storage routines.
 
-#### Påmelding nyhetsbrev
+### Sign up for newsletter
 
-SEALAB AS sender ut nyhetsbrev få ganger per år via e-post. For å kunne motta dette må du registrere din e-postadresse hos oss. Dersom du melder deg av nyhetsbrevet vil din informasjon bli slettet.
+SEALAB AS sends out newsletters a few times a year via email. To receive these, you must register your email address with us. If you unsubscribe from the newsletter, your information will be deleted.
 
-#### Serverlogg på nettsted
+### Server log on website
 
-Alle besøk på våre nettsteder lagres i en logg på vår server. Informasjonen som lagres er IP-adresse fra enheten som besøker nettstedet. Opplysningene samles inn for å sikre drift. Ved angrep mot nettstedet vil IP-adressen som er brukt i forbindelse med angrepet bli blokkert.
+All visits to our sites are stored in a log on our server. The information stored is the IP address of the device visiting the site. This information is collected to ensure continuous operation of our sites. In the event of an attack on a site,  the IP address(es) connected to the attack will be blocked.
 
-#### E-post og telefon
+### Email and telephone
 
-SEALAB AS bruker e-post og telefon som en del av sitt daglige arbeide for å kunne ha dialog og svare på forespørsler fra potensielle kunder, kunder, tidligere kunder og andre samarbeidspartnere.
+SEALAB AS uses e-mail and telephone as part of its day-to-day work to engage in dialogue and respond to requests from potential customers, customers, former customers and other business partners.
 
-Den enkelte ansatte har ansvar for å slette meldinger som ikke lenger er aktuelle, og skal minst en gang i året gå gjennom og slette unødvendig innhold i e-postkassen. Ved fratredelse slettes e-postkonto Relevante e-poster vil normalt bli overført til kolleger.
+Each employee is responsible for deleting messages that are no longer relevant, and should at least once a year review and delete unnecessary content in their respective email box. Upon resignation the email account of the former employee is deleted. Relevant emails will normally be forwarded to colleagues.
 
-Sensitive personopplysninger skal ikke sendes over e-post. Vi gjør oppmerksom på at vanlig e-post ikke er kryptert. Vi oppfordrer deg derfor til å vise varsomhet, og ikke sende taushetsbelagt informasjon, sensitive data eller fortrolige opplysninger på e-post.
+Sensitive personal data should not be sent via email. Please note that regular email is not encrypted. We therefore encourage you to exercise caution and to not send sensitive data or confidential information via email.
 
-## Andre forhold der vi registrerer personopplysninger
+## Other circumstances in which we record personal data 
 
-### Registrering av besøkende på SEALAB AS sine kontorer
+### Registration of visitors to SEALAB AS's offices
 
-Av hensyn til brann eller evakuering av våre kontorlokaler har Selab AS innført adgangskontroll med registrering av besøkende ved våre kontor. Informasjonen lagres i løsningen (Navn på løsningen), og informasjonen som lagres er navn, e-postadresse og firma.
+To ensure safety in the event of an evacuation of our office premises, SEALAB AS has introduced access control with registration of visitors to our offices. The information collected is stored in the solution (Name of the solution), and the information stored is name, email address and company.
 
 ### Bruk av 3.part/underleverandører
 
