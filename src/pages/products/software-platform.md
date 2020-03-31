@@ -35,7 +35,6 @@ sectionThree:
   figureImage: /img/IoTKeyFeatures.svg
 sectionFour:
   featuredImage: /img/fieldIllustrationWithGrid.jpg
-sectionFive:
   left:
     title: BlueThink and IoT in the aquaculture industry
     button:

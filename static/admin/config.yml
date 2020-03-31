@@ -184,10 +184,6 @@ collections:
         widget: "object"
         fields:
           - {label: "Centered image", name: "featuredImage", widget: image }
-      - label: "Section 5"
-        name: "sectionFive"
-        widget: "object"
-        fields:
           - label: "Left colomn"
             name: "left"
             widget: "object"
