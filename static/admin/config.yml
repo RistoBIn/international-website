@@ -432,7 +432,6 @@ collections:
           - {label: "Description", name: "description", widget: "text", hint: "Text."}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
           - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
-          - {label: "Content", name: "body", widget: "markdown"}
           - label: Persons
             name: persons
             widget: list
@@ -441,4 +440,4 @@ collections:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Description", name: "description", widget: "markdown"}
               - {label: "Image", name: "profilePicture", widget: "image", hint: "Profile picutre"}
-
+          - {label: "Quote centered", name: "body", widget: "markdown", required: false}
