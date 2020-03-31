@@ -2,7 +2,7 @@
 menuPaths:
   - dropdown:
       - path: /solutions/atlantic-salmon-and-seafood/
-        title: Atlantic salmon
+        title: Atlantic Salmon and Seafood
       - path: /solutions/military-and-defense/
         title: Military & Defense
       - path: /solutions/schools-and-universities/
