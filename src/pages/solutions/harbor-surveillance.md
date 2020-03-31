@@ -6,7 +6,10 @@ seoDescription: >-
   rigs around the world be safeguarded against unwanted intruders, who may
   intend sabotage, unlawful entry, or terror attacks.
 heading: Harbor Surveillance
-description: 'Challenges in Harbor Surveillance Requires '
+description: >-
+  It has become increasingly critical that ports, coastal installations, and oil
+  rigs around the world be safeguarded against unwanted intruders, who may
+  intend sabotage, unlawful entry, or terror attacks.
 featuredimage: /img/AdobeStock_282750626.jpeg
 splitSections:
   - content: >-
@@ -17,7 +20,7 @@ splitSections:
 
       Smart cameras for monitoring both in harsh environment, both above surface
       and submerged, will work well in shallow or deep water, daytime or
-      nighttime, all weather conditions. It can detect Divers, swimmers,
+      nighttime, all weather conditions. It can detect divers, swimmers,
       submersibles - including mini-subs, small surface vessels, including
       rubber boats, kayaks, etc. and of course larges vessels.
 
