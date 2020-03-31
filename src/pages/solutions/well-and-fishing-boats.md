@@ -1,13 +1,16 @@
 ---
 templateKey: solution-page-secondary
 title: Well and Fishing Boats
-seoDescription: Well and Fishing Boats
+seoDescription: >-
+  SEALAB's sensor system monitors the fish in the well or tank for the storage
+  and transport of live fish for the delivery to port and final processing on
+  land. 
 heading: Well and Fishing Boats
 description: >-
   SEALAB's sensor system monitors the fish in the well or tank for the storage
   and transport of live fish for the delivery to port and final processing on
   land. 
-featuredimage: /img/_DSC0761.jpg
+featuredimage: /img/AdobeStock_276243200.jpeg
 splitSections:
   - content: >-
       A wellboat carries live fish and has a great need for fish welfare to be
@@ -29,6 +32,6 @@ splitSections:
       monitors the fish in the well or tank for the storage and transport of
       live fish for the delivery to port and final processing on land.
     heading: Real time Reporting System
-    featuredimage: /img/wellboats.jpg
+    featuredimage: /img/AdobeStock_205257493.jpeg
 ---
 
