@@ -45,7 +45,7 @@ splitSections:
 
 
       Data and knowledge about the marine environment in the Arctic and
-      Antarctic regions are lacking. Smart cameras, machine vision and edge
+      Antarctic regions are lacking. Smart cameras, computer vision and edge
       computing in combination with satellite communication could lowering the
       risk and rise safety in the Arctic Marine and Coastal environment.
     heading: ' '
