@@ -4,7 +4,7 @@ title: Bridge and Watercourse Monitoring
 seoDescription: Climate Changes are increasing the need for bridge and watercourse monitoring
 heading: Bridge and Watercourse Monitoring
 description: Climate Changes are increasing the need for bridge and watercourse monitoring
-featuredimage: /img/bridge-watercourse.gif
+featuredimage: /img/AdobeStock_242526706.jpeg
 splitSections:
   - content: >-
       Earth’s climate is now changing faster than at any point in the history of
@@ -23,7 +23,7 @@ splitSections:
       bridge failure. Edge computing, sensors and smart cameras could report in
       real-time what’s going on.
     heading: ' An increasing need for bridge and watercourse monitoring'
-    featuredimage: /img/bridge-watercourse.gif
+    featuredimage: /img/AdobeStock_232721946.jpeg
     subheading: Climate Changes
 ---
 
