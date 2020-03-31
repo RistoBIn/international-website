@@ -7,9 +7,7 @@ description: >-
   and other human waste.
 seoDescription: Clean Ocean Initiative
 featuredimage: /img/AdobeStock_194067101.jpeg
-featuredimageCaption: >-
-  SEALAB employees removing trash from the beaches at the SEALAB Ocean Space
-  Center situated on Gjæsingen island off the Norwegian coast.
+featuredimageCaption: ''
 splitSection:
   bgimage: /img/search-and-rescue.jpg
   content: >-
