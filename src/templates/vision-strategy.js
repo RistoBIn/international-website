@@ -10,7 +10,6 @@ import CollapsibleList from '../components/CollapsibleList';
 import generateHTML from '../utils/generateHTML';
 
 export const AboutPageSecondaryTemplate = ({
-  content,
   contentComponent,
   heading,
   description,

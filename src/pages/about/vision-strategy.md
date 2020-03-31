@@ -1,5 +1,5 @@
 ---
-templateKey: about-page-secondary
+templateKey: vision-strategy
 title: Vision & Strategy
 seoDescription: >-
   Vision & Strategy
@@ -149,7 +149,7 @@ primaryCollapsibleList:
 
         It is scalable with plug-and-play.
         
-        
+
         Partnership with international leading partners and players ensures global access.
         
 secondaryCenteredImageSection:

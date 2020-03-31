@@ -57,7 +57,8 @@ collections:
           - {label: "Large image", name: "bgimage", widget: image }
       - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
 
-#### SOLUTION PAGES TEMPLATE SECONDARY ####
+#### SOLUTION PAGES TEMPLATE 2 ####
+
   - name: "solution-page-secondary"
     label: "Industries pages - Short"
     folder: "src/pages/solutions/"
@@ -84,7 +85,8 @@ collections:
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
       - {label: "Content", name: "body", widget: "markdown", required: false,}
 
-#### SOLUTION PAGES TEMPLATE Primary ####
+#### SOLUTION PAGES TEMPLATE 1 ####
+
   - name: "solution-page-primary"
     label: "Industries pages - Long"
     folder: "src/pages/solutions/"
@@ -125,8 +127,6 @@ collections:
             - {label: "Content - left", name: "left", widget: "markdown", required: false }
             - {label: "Content - right", name: "right", widget: "markdown", required: false }
             
-
-  
 #### ABOUT PAGE TEMPLATE 1 ####
 
   - name: "about-page-primary"
@@ -144,11 +144,11 @@ collections:
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
       - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
       - {label: "Content", name: "body", widget: "markdown"}
-
+  
 #### PRODUCT PAGE TEMPLATE 1 ####
 
   - name: "product-pages-primary"
-    label: "Product pages"
+    label: "Product Page 1"
     folder: "src/pages/products/"
     create: true
     description: "This is the primary product page template."
@@ -191,8 +191,9 @@ collections:
           - {label: "Right content", name: "content", widget: "markdown"}
 
 #### PROJECT PAGE TEMPLATE 1 ####
+
   - name: "project-page-primary"
-    label: "Project Pages 1"
+    label: "Project Page 1"
     folder: "src/pages/projects/"
     create: true
     description: "This is the primary project page template."
@@ -230,6 +231,7 @@ collections:
               - {label: "Partner logo", name: "icon", widget: image }
               - {label: "Partner description", name: "description", widget: "text", required: false }
 
+#### NAVIGATION & FOOTER ####
 
   - name: "settings"
     label: "Navigation & Footer"
@@ -298,8 +300,8 @@ collections:
               - {label: "Button text", name: "buttonText", widget: "string"}
               - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
 
-
 #### STATIC PAGES (FRONT PAGE for example) ####
+
   - name: "pages"
     label: "Regular pages"
     files:
@@ -378,5 +380,142 @@ collections:
               - {label: "Large image", name: "bgimage", widget: image }
           - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
 
-        
+  - name: "vision-strategy"
+    label: "Regular Pages"
+    folder: "src/pages/about/"
+    create: true
+    description: "This is a about page template."
+    filter: {field: "templateKey", value: "about-page-primary"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-primary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "text", hint: "Text."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
 
+      - label: Primary Split Section
+        name: primarySplitSection
+        widget: object
+        fields:
+          - label: Left
+            name: left
+            fields:
+              - {label: "Left Content", name: "content", widget: "markdown"}
+
+          - label: Right
+            name: right
+            fields:
+              - {label: "Right Content", name: "content", widget: "markdown"}
+
+      - label: Centered Text Section
+        name: centeredTextSection
+        widget: object
+        fields:
+          - {label: "Text", name: "content", widget: "markdown"}
+
+      - label: Primary Centered Image Section
+        name: primaryCenteredImageSection
+        widget: object
+        fields:
+          - {label: "Image", name: "featuredimage", widget: "image"}
+          - {label: Caption, name: "featuredimagecaption", widget: "text"}
+      
+      - label: Secondary Split Section
+        name: secondarySplitSection
+        widget: object
+        fields:
+          - label: Left
+            name: left
+            fields:
+              - {label: "Left Content", name: "content", widget: "markdown"}
+
+          - label: Right
+            name: right
+            fields:
+              - {label: "Right Content", name: "content", widget: "markdown"}
+      
+      - label: Tertiary Split Section
+        name: tertiarySplitSection
+        widget: object
+        fields:
+          - label: Left
+            name: left
+            fields:
+              - {label: "Left Content", name: "content", widget: "markdown"}
+
+          - label: Right
+            name: right
+            fields:
+              - label: Right Content
+                name: primaryQuadSplitSection
+                widget: object
+                fields:
+                  - label: Top Row
+                    name: topRow
+                    fields:
+                      - label: Left Column
+                        name: leftColumn
+                        fields: 
+                          - {label: "Content", name: "content", widget: "markdown"}
+                      - label: Right Column
+                        name: rightColumn
+                        fields: 
+                          - {label: "Content", name: "content", widget: "markdown"}
+                  - label: Bottom Row
+                    name: bottomRow
+                    fields:
+                      - label: Left Column
+                        name: leftColumn
+                        fields: 
+                          - {label: "Content", name: "content", widget: "markdown"}
+                      - label: Right Column
+                        name: rightColumn
+                        fields: 
+                          - {label: "Content", name: "content", widget: "markdown"}
+      
+      - label: Quaternary Split Section
+        name: quaternarySplitSection
+        widget: object
+        fields:
+          - label: Left
+            name: left
+            fields:
+              - {label: "Left Content", name: "content", widget: "markdown"}
+
+          - label: Right
+            name: right
+            fields:
+              - {label: "Right Content", name: "content", widget: "markdown"}
+
+      - label: Primary Collapsible List
+        name: primaryCollapsibleList
+        widget: object
+        fields:
+          - label: List Items
+            name: listItems
+            widget: list
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Content", name: "content", widget: "markdown"}
+
+      - label: Secondary Centered Image Section
+        name: secondaryCenteredImageSection
+        widget: object
+        fields:
+          - {label: "Image", name: "featuredimage", widget: "image"}
+
+      - label: Quinary Split Section
+        name: quinarySplitSection
+        widget: object
+        fields:
+          - label: Left
+            name: left
+            fields:
+              - {label: "Left Content", name: "content", widget: "markdown"}
+
+          - label: Right
+            name: right
+            fields:
+              - {label: "Right Content", name: "content", widget: "markdown"}
