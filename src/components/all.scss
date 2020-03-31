@@ -7,7 +7,15 @@ $gridColumnWidth: 200px;
 $gridTemplateAuto: repeat(auto-fill, minmax($gridColumnWidth, 1fr));
 
 $primary: $midnight;
-
+blockquote, blockquote p {
+  background: red !important;
+  max-width: 1370px;
+  font-family: $titleFont;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+}
 html,
 body {
   height: 100%;
@@ -225,7 +233,9 @@ body {
     a {
       color: #3273dc;
     }
+
   }
+
 
   .has-dark-background {
     background: $dark;
