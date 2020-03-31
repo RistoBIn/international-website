@@ -49,13 +49,13 @@ export const AboutPageSecondaryTemplate = ({
             leftColumn={
               <PostContent
                 content={generateHTML(primarySplitSection.left.content)}
-                className="content is-left-aligned leftWrapper"
+                className="content is-left-aligned left-wrapper"
               />
             }
             rightColumn={
               <PostContent
                 content={generateHTML(primarySplitSection.right.content)}
-                className="content is-left-aligned rightWrapper"
+                className="content is-left-aligned right-wrapper"
               />
             }
           />
@@ -117,7 +117,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection.topRow
                         .leftColumn.content,
                     )}
-                    className="content is-left-aligned"
+                    className="content is-left-aligned quad-wrapper"
                   />
                 }
                 topRowRightColumn={
@@ -126,7 +126,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection.topRow
                         .rightColumn.content,
                     )}
-                    className="content is-left-aligned"
+                    className="content is-left-aligned quad-wrapper"
                   />
                 }
                 bottomRowLeftColumn={
@@ -135,7 +135,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection
                         .bottomRow.leftColumn.content,
                     )}
-                    className="content is-left-aligned"
+                    className="content is-left-aligned quad-wrapper"
                   />
                 }
                 bottomRowRightColumn={
@@ -144,7 +144,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection
                         .bottomRow.rightColumn.content,
                     )}
-                    className="content is-left-aligned"
+                    className="content is-left-aligned quad-wrapper"
                   />
                 }
               />

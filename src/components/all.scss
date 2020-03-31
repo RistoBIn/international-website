@@ -768,6 +768,9 @@ section.vision-strategy {
     li {
       font-size: 20px;
     }
+    h4 {
+      color: #dbe0ea;
+    }
   }
 
   .image {
@@ -776,12 +779,19 @@ section.vision-strategy {
     text-align: left;
   }
 
-  .rightWrapper {
+  .right-wrapper, .quad-wrapper {
     grid-gap: 30px !important;
     margin-left: auto;
     background: linear-gradient(0deg, #1F2331, #1F2331), #191C27;
     border-radius: 3px;
-    padding: 51px 43px !important;
+  }
+
+  .right-wrapper {
+    padding: 32px 43px !important;
+  }
+
+  .quad-wrapper {
+    padding: 32px 24px !important;
   }
 
   @media screen and (min-width: $desktop) {
@@ -792,6 +802,14 @@ section.vision-strategy {
     .image {
       height: 100%;
       text-align: left;
+    }
+
+    .right-wrapper {
+      padding: 51px 43px !important;
+    }
+
+    .quad-wrapper {
+      padding: 32px 24px !important;
     }
   }
 }
