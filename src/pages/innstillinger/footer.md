@@ -8,6 +8,12 @@ mainNavigation:
     title: Military & Defense
   - path: /solutions/schools-and-universities/
     title: Schools and Universities
+  - path: /solutions/science-arctic-and-antarctic-surveillance/
+    title: Science Arctic and Antarctic Surveillance
+  - path: /solutions/well-and-fishing-boats/
+    title: Well and Fishing Boats
+  - path: /solutions/seabed-mining/
+    title: Seabed Mining
 secondaryNavigation:
   - path: /products/edge-intelligence
     title: Edge Intelligence
