@@ -18,7 +18,7 @@ export const SolutionPageTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="solution-page-secondary has-dark-background">
+    <section className="solution-page-secondary solution-page has-dark-background">
       <SolutionHero
         className="is-large"
         heading={heading}
