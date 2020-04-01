@@ -95,21 +95,87 @@ const StringList = ({ items }) => (
   </ul>
 );
 
-const List = ({ title, navigationItems }) => (
-  <div className="column is-3">
-    <h3>{title}</h3>
-    <ul>
-      {navigationItems.map(item => (
-        <li key={gen.next().value}>
-          {item.path ? (
-            <Link to={cleanPath(item.path)}>{item.title}</Link>
-          ) : (
-            <p>{item}</p>
-          )}
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+const List = ({ title, navigationItems }) =>
+  navigationItems.length <= 4 ? (
+    <div className="column is-3">
+      <h3>{title}</h3>
+      <ul>
+        {navigationItems.map(item => (
+          <li key={gen.next().value}>
+            {item.path ? (
+              <Link to={cleanPath(item.path)}>{item.title}</Link>
+            ) : (
+              <p>{item}</p>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  ) : (
+    <>
+      <div className="column is-3">
+        <h3>{title}</h3>
+        <ul>
+          {navigationItems.slice(0, 4).map(item => (
+            <li key={gen.next().value}>
+              {item.path ? (
+                <Link to={cleanPath(item.path)}>{item.title}</Link>
+              ) : (
+                <p>{item}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="column is-3">
+        <h3 role="presentation" className="is-hidden-mobile">
+          <br />
+        </h3>
+        <ul>
+          {navigationItems.slice(4, 8).map(item => (
+            <li key={gen.next().value}>
+              {item.path ? (
+                <Link to={cleanPath(item.path)}>{item.title}</Link>
+              ) : (
+                <p>{item}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="column is-3">
+        <h3 role="presentation" className="is-hidden-mobile">
+          <br />
+        </h3>
+        <ul>
+          {navigationItems.slice(8, 12).map(item => (
+            <li key={gen.next().value}>
+              {item.path ? (
+                <Link to={cleanPath(item.path)}>{item.title}</Link>
+              ) : (
+                <p>{item}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="column is-3">
+        <h3 role="presentation" className="is-hidden-mobile">
+          <br />
+        </h3>
+        <ul>
+          {navigationItems.slice(12, 16).map(item => (
+            <li key={gen.next().value}>
+              {item.path ? (
+                <Link to={cleanPath(item.path)}>{item.title}</Link>
+              ) : (
+                <p>{item}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
 
 export default Footer;
