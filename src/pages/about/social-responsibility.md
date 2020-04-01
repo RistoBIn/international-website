@@ -29,8 +29,6 @@ splitSection:
     and knowledge creation about human impact on the world’s largest ecosystems.
 
 
-    \
-
     In addition to the specific goal of sustainable management of sea life (SDG
     14), activities related to the sea make important contributions to other
     goals, such as; food security (SDG 2), responsible consumption and
