@@ -7,6 +7,7 @@ import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
 import SplittedSection from '../components/SplittedSection';
 import SectionWith3Col from '../components/SectionWith3Col';
+import SplitWithHalfWidthImage from '../components/SplitWithHalfWidthImage';
 import { idMaker } from '../utils/id-maker';
 
 import generateHTML from '../utils/generateHTML';
@@ -59,7 +60,7 @@ export const SocialResponsibilityPageTemplate = ({
       />
       <SplittedSection
         shouldReorderOnMobile
-        className="section is-medium"
+        className="section is-small"
         leftColumn={
           <PostContent
             content={generateHTML(splitSection2.left)}
@@ -75,16 +76,16 @@ export const SocialResponsibilityPageTemplate = ({
           />
         }
       />
-      {/* <SplittedSection
+      <SplitWithHalfWidthImage
         shouldReorderOnMobile
-        className="section is-medium"
+        className="section no-padding"
         leftColumn={
           <PostContent
             content={generateHTML(splitSection3.left)}
             className="content"
           />
         }
-        rightColumn={
+        rightImage={
           <NonStretchedImage
             objectFit="contain"
             alt=""
@@ -92,7 +93,7 @@ export const SocialResponsibilityPageTemplate = ({
             {...splitSection3.right}
           />
         }
-      /> */}
+      />
     </section>
   );
 };

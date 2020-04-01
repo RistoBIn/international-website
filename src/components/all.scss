@@ -261,7 +261,9 @@ body {
     }
   }
 }
-
+section.no-padding{
+  padding:0;
+}
 .section {
   .section--title {
     @include PageTitle;
@@ -273,6 +275,7 @@ body {
       padding-bottom: 20px;
     }
   }
+  
   .section--description {
     @include text_Light;
     color: $body-light !important;
@@ -659,7 +662,6 @@ footer.footer {
   }
   section#company-information,
   section#footer-navigation {
-    border-top: 1px solid $border-dark-background;
     h3 {
       font-family: $primaryFont;
       font-style: normal;
@@ -672,6 +674,9 @@ footer.footer {
       opacity: 0.5;
       margin-bottom: 20px;
     }
+  }
+  section#company-information{
+    border-top: 1px solid $border-dark-background;
   }
   section#copyright {
     border-top: 1px solid $border-dark-background;
