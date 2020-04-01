@@ -33,11 +33,9 @@ export const ProjectPageTemplate = ({
             <Img
               fluid={featuredimage.childImageSharp.fluid}
               alt="About image"
-              className="image container"
+              className="image"
             />
-            <figcaption className="caption container">
-              {featuredimageCaption}
-            </figcaption>
+            <figcaption className="caption">{featuredimageCaption}</figcaption>
           </figure>
         </div>
       </section>

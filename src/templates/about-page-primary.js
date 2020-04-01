@@ -27,7 +27,7 @@ export const AboutPagePrimaryTemplate = ({
           <Img
             fluid={featuredImage.childImageSharp.fluid}
             alt="About image"
-            className="image"
+            className="image full-width"
           />
         </div>
       </section>

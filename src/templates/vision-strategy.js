@@ -39,7 +39,7 @@ export const AboutPageSecondaryTemplate = ({
           <Img
             fluid={featuredimage.childImageSharp.fluid}
             alt="About image"
-            className="image"
+            className="image full-width"
           />
         </div>
       </section>
@@ -55,7 +55,7 @@ export const AboutPageSecondaryTemplate = ({
             rightColumn={
               <PostContent
                 content={generateHTML(primarySplitSection.right.content)}
-                className="content is-left-aligned right-wrapper"
+                className="content is-left-aligned right-wrapper grey-background"
               />
             }
           />
@@ -74,9 +74,9 @@ export const AboutPageSecondaryTemplate = ({
                 primaryCenteredImageSection.featuredimage.childImageSharp.fluid
               }
               alt="About image"
-              className="image container"
+              className="image"
             />
-            <figcaption className="caption container">
+            <figcaption className="caption">
               {primaryCenteredImageSection.featuredimageCaption}
             </figcaption>
           </figure>
@@ -117,7 +117,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection.topRow
                         .leftColumn.content,
                     )}
-                    className="content is-left-aligned quad-wrapper"
+                    className="content is-left-aligned quad-wrapper grey-background"
                   />
                 }
                 topRowRightColumn={
@@ -126,7 +126,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection.topRow
                         .rightColumn.content,
                     )}
-                    className="content is-left-aligned quad-wrapper"
+                    className="content is-left-aligned quad-wrapper grey-background"
                   />
                 }
                 bottomRowLeftColumn={
@@ -135,7 +135,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection
                         .bottomRow.leftColumn.content,
                     )}
-                    className="content is-left-aligned quad-wrapper"
+                    className="content is-left-aligned quad-wrapper grey-background"
                   />
                 }
                 bottomRowRightColumn={
@@ -144,7 +144,7 @@ export const AboutPageSecondaryTemplate = ({
                       tertiarySplitSection.right.primaryQuadSplitSection
                         .bottomRow.rightColumn.content,
                     )}
-                    className="content is-left-aligned quad-wrapper"
+                    className="content is-left-aligned quad-wrapper grey-background"
                   />
                 }
               />
@@ -178,7 +178,7 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="has-dark-background vision-strategy">
+      <section className="has-dark-background is-medium vision-strategy">
         <div className="container">
           <figure className="figure">
             <Img
@@ -187,13 +187,15 @@ export const AboutPageSecondaryTemplate = ({
                   .fluid
               }
               alt="About image"
-              className="image container"
+              className="image"
             />
-            <figcaption className="caption container" />
           </figure>
         </div>
       </section>
-      <section className="section has-dark-background vision-strategy">
+      <section
+        id="vision-last"
+        className="section has-dark-background vision-strategy"
+      >
         <div className="container">
           <SplittedSection
             leftColumn={
