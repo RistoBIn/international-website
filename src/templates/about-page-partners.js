@@ -93,9 +93,8 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 405, quality: 100) {
+              fluid(maxWidth: 405, quality: 80) {
                 ...GatsbyImageSharpFluid
-                presentationWidth
               }
             }
           }
