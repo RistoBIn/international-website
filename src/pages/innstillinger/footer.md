@@ -23,7 +23,7 @@ mainNavigation:
   - path: /solutions/bridge-and-watercourse-monitoring/
     title: Bridge and Watercourse Monitoring
   - path: /solutions/river-and-wildlife-monitoring/
-    title: River and Wildlife monitoring
+    title: River and Wildlife Monitoring
   - path: /solutions/hydropower-plants/
     title: Hydropower Plants
 secondaryNavigation:
