@@ -15,7 +15,7 @@ centeredSection:
   heading: The oceans affect us all but entering the deep is not for everyone.
   bgimage: /img/subsea-plant.jpg
   button:
-    path: /solutions/aquaculture
+    path: /solutions/
     text: See solutions
   description: >-
     SEALAB cameras and products can be used in many areas and industries, from
@@ -41,7 +41,7 @@ quotes:
       for these environments is hard to find.
 itemsSection:
   button:
-    path: /solutions/aquaculture
+    path: /solutions/
     text: Show all solutions
   heading: Multiple applications in numerous industries
   items:

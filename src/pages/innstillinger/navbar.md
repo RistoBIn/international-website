@@ -27,7 +27,7 @@ menuPaths:
         title: River and Wildlife Monitoring
       - path: /solutions/hydropower-plants/
         title: Hydropower Plants
-    path: '#'
+    path: '/solutions/'
     title: Solutions
   - dropdown:
       - path: /products/edge-intelligence/
