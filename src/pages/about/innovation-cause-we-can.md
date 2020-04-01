@@ -1,5 +1,5 @@
 ---
-templateKey: about-page-template-primary
+templateKey: about-page-primary
 title: 'Innovation cause we can '
 heading: 'Innovation ‘cause we can '
 description: >-
