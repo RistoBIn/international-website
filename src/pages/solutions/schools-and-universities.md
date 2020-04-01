@@ -24,10 +24,10 @@ splitSections:
       Teachers easily get a toolkit needed to engage children to engage in
       future solutions that must be developed to safeguard the ocean and the
       global environment.
-    heading: SEALAB brings the Ocean to the Schools
+    heading: SEALAB Brings the Ocean to the Schools
     subheading: ' '
   - content: >-
-      ## Give everyone the opportunity to see under water
+      ## Give Everyone the Opportunity to See Under Water
 
 
       SEALAB gives everyone the opportunity to see underwater, not least to the
