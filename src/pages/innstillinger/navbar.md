@@ -24,7 +24,7 @@ menuPaths:
       - path: /solutions/bridge-and-watercourse-monitoring/
         title: Bridge and Watercourse Monitoring
       - path: /solutions/river-and-wildlife-monitoring/
-        title: River and Wildlife monitoring
+        title: River and Wildlife Monitoring
       - path: /solutions/hydropower-plants/
         title: Hydropower Plants
     path: '#'
@@ -47,17 +47,17 @@ menuPaths:
     title: Projects
   - dropdown:
       - path: /about/vision-strategy/
-        title: Vision & Strategy
+        title: Vision and Strategy
       - path: /leadership/
         title: Leadership
       - path: /about/business-model/
         title: Business Model
       - path: /about/innovation-cause-we-can/
-        title: Innovation ‘cause we can
+        title: Innovation ‘Cause We Can
       - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
       - path: /about/social-responsibility/
-        title: Sustainability impact
+        title: Sustainability Impact
       - path: /about/partners/
         title: Partners
       - path: /about/investors/

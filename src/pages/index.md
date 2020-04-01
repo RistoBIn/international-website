@@ -18,13 +18,13 @@ centeredSection:
     path: /solutions/aquaculture
     text: See solutions
   description: >-
-    Sealab cameras and products can be used in many areas and industries, from
-    Seafood factories to Military, Underwater diving operations.
+    SEALAB cameras and products can be used in many areas and industries, from
+    seafood factories to military underwater diving operations.
   subheading: Deep Sea and Marine Applications
 productSection:
   description: >-
-    Superfast FPGA technology and smart 2D and 3D cameras will change everything
-    in the ocean space.
+    Superfast FPGA technology together with smart 2D and 3D cameras will change
+    everything in the ocean space.
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: You've Never Seen a Camera Like This

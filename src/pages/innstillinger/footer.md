@@ -45,6 +45,8 @@ fourthNavigation:
     title: Leadership
   - path: /business-model
     title: Business Model
+  - path: /about/innovation-cause-we-can/
+    title: Innovation ‘cause we can
   - path: /about/sealab-osc
     title: SEALAB Ocean Space Center
   - path: /social-responsibility
