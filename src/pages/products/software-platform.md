@@ -8,6 +8,7 @@ description: >-
   businesses do not have the ability to adapt to the changes, they will easily
   lose their position in the market.
 sectionOne:
+  featuredimage: /img/man-with-btgo-tablet.png
   left: '## Internet of Things'
   right: >-
     IoT, The Internet of Things is now a reality in the ocean space industries

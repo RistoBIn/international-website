@@ -166,6 +166,7 @@ collections:
         required: false
         fields:
           - {label: "Content - left", name: "left", widget: "markdown"}
+          - {label: "Illustration figure", name: "featuredimage", widget: image }
           - {label: "Content - right", name: "right", widget: "markdown"}
       - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
       - label: "Section 3"

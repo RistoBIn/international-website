@@ -130,7 +130,7 @@ const NavbarItems = ({ menuPaths, activeMenuItem, onClick }) => {
 
 const MenuDropDown = ({ menuItem, onClick }) => (
   <div className={classNames('navbar-item', 'has-dropdown', 'is-hoverable')}>
-    <a href="#dropdown" className="navbar-link">
+    <a href={menuItem.path || '#dropdown'} className="navbar-link">
       {menuItem.title}
     </a>
     <div className="navbar-dropdown is-boxed">
