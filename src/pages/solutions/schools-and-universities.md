@@ -1,12 +1,16 @@
 ---
 templateKey: solution-page-secondary
 title: Schools and Universities
-seoDescription: Schools and Universities
+seoDescription: >-
+  Environmental education is one of the essential pillars to amaze, raise
+  awareness and inculcate new behaviors in children, the citizens of tomorrow.
+  SEALAB brings the Ocean in the School by broadcasting live from the deep and
+  into the classroom.
 heading: Schools and Universities
 description: >-
   New project at SEALAB R&D Lab to highlight importance of the Ocean Space to
   children.
-featuredimage: /img/_DSC7473.jpg
+featuredimage: /img/AdobeStock_114071575.jpeg
 splitSections:
   - content: >-
       Environmental education is one of the essential pillars to amaze, raise
@@ -32,11 +36,11 @@ splitSections:
 
 
       Aquariums all over the world will be able to stream in broadcast quality
-      and out on the internet. Machine vision and AI will be able to tell in
+      and out on the internet. Computer vision and AI will be able to tell in
       real time what fish you see, how the fish are doing and thus build
       knowledge for the recipient.
     heading: ' '
-    featuredimage: /img/Schools and Universities.jpg
+    featuredimage: /img/AdobeStock_114075445.jpeg
     subheading: ' '
 ---
 

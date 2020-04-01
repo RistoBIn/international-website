@@ -2,7 +2,7 @@
 menuPaths:
   - dropdown:
       - path: /solutions/atlantic-salmon-and-seafood/
-        title: Atlantic salmon
+        title: Atlantic Salmon and Seafood
       - path: /solutions/military-and-defense/
         title: Military & Defense
       - path: /solutions/schools-and-universities/
@@ -17,8 +17,8 @@ menuPaths:
         title: Environmental Monitoring
       - path: /solutions/harbor-surveillance/
         title: Harbor Surveillance
-      - path: /solutions/oil-and-gas-industry/
-        title: Oil & Gas Industry
+      - path: /solutions/oil-gas-industry/
+        title: Oil and Gas Industry
       - path: /solutions/underwater-drones-and-robotics/
         title: Underwater Drones and Robotics
       - path: /solutions/bridge-and-watercourse-monitoring/
@@ -43,8 +43,6 @@ menuPaths:
         title: 5G Heart
       - path: /projects/clean-ocean-initiative/
         title: Clean Ocean Initiative
-      - path: /projects/gem/
-        title: Environment Monitoring
     path: '#'
     title: Projects
   - dropdown:
@@ -56,16 +54,14 @@ menuPaths:
         title: Business Model
       - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
-      - path: /social-responsibility/
-        title: Social Responsibility
+      - path: /about/social-responsibility/
+        title: Sustainability impact
       - path: /about/partners/
         title: Partners
       - path: /about/investors/
         title: Investors
       - path: /about/partnership/
         title: Partnership
-      - path: /about/press/
-        title: Press
       - path: /contact/locations
         title: Locations
     path: '#'

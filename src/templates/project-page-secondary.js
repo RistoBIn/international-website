@@ -14,8 +14,7 @@ export const ProjectPageTemplate = ({
   description,
   featuredimage,
   featuredimageCaption,
-  primarySection,
-  splitSectionImage,
+  splitSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -35,25 +34,35 @@ export const ProjectPageTemplate = ({
               alt="About image"
               className="image"
             />
-            <figcaption className="caption">{featuredimageCaption}</figcaption>
+            {featuredimageCaption ? (
+              <figcaption className="caption container">
+                {featuredimageCaption}
+              </figcaption>
+            ) : (
+              <></>
+            )}
           </figure>
         </div>
       </section>
-      <section className="section has-dark-background project-page-template">
+      <section className="section is-medium has-dark-background project-page-template">
         <div className="container">
-          <PostContent
-            content={generateHTML(primarySection.content)}
-            className="content is-left-aligned"
-          />
+          <PostContent content={content} className="content is-left-aligned" />
         </div>
       </section>
-      <SplitWithFullWidthImage
-        id="inspirational-quote"
-        className="has-dark-background"
-        splitSectionImage={splitSectionImage}
-      >
-        <PostContent content={content} className="content" />
-      </SplitWithFullWidthImage>
+      {splitSection ? (
+        <SplitWithFullWidthImage
+          id="inspirational-quote"
+          className="has-dark-background"
+          splitSectionImage={splitSection.bgimage}
+        >
+          <PostContent
+            content={generateHTML(splitSection.content)}
+            className="content"
+          />
+        </SplitWithFullWidthImage>
+      ) : (
+        <></>
+      )}
     </>
   );
 };
@@ -68,7 +77,6 @@ const ProjectPage = ({ data }) => {
     seoDescription,
     featuredimage,
     featuredimageCaption,
-    primarySection,
     splitSection,
   } = frontmatter;
 
@@ -81,8 +89,7 @@ const ProjectPage = ({ data }) => {
         description={description}
         featuredimage={featuredimage}
         featuredimageCaption={featuredimageCaption}
-        primarySection={primarySection}
-        splitSectionImage={splitSection.bgimage}
+        splitSection={splitSection}
       />
     </Layout>
   );
@@ -109,12 +116,15 @@ export const pageQuery = graphql`
           }
         }
         featuredimageCaption
-        primarySection {
-          content
-        }
         splitSection {
+          content
           bgimage {
-            publicURL
+            childImageSharp {
+              fluid(maxHeight: 400, quality: 60) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
           }
         }
       }

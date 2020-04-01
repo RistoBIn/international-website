@@ -1,10 +1,18 @@
 ---
 templateKey: solution-page-secondary
 title: Science Arctic and Antarctic Surveillance
-seoDescription: Science Arctic and Antarctic Surveillance
+seoDescription: >-
+  Underwater drones equipped with high-tech sensors and edge computing in
+  participation with smart cameras could one day patrol the icy waters of both
+  Arctic and Antarctic, to help keep an eye on the region’s growing shipping
+  traffic—and to be on the lookout for foreign submarines. And on top of that:
+  environmental monitoring.
 heading: Science Arctic and Antarctic Surveillance
-description: Ocean Space Surveillance
-featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
+description: >-
+  Underwater drones equipped with high-tech sensors and edge computing in
+  participation with smart cameras could one day patrol the icy waters of both
+  Arctic and Antarctic
+featuredimage: /img/AdobeStock_19279258.jpeg
 splitSections:
   - content: >-
       ## Antarctic Surveillance
@@ -16,7 +24,7 @@ splitSections:
       shipping traffic—and to be on the lookout for foreign submarines. And on
       top of that: environmental monitoring.
     heading: ' '
-    featuredimage: /img/Science Arctic and Antarctic Surveillance2.jpg
+    featuredimage: /img/AdobeStock_294165529.jpeg
   - content: >-
       Due to the presence of drifting sea-ice and icebergs, ice management (IM)
       becomes an important part both in Arctic and Antarctic. An important part
@@ -37,10 +45,10 @@ splitSections:
 
 
       Data and knowledge about the marine environment in the Arctic and
-      Antarctic regions are lacking. Smart cameras, machine vision and edge
+      Antarctic regions are lacking. Smart cameras, computer vision and edge
       computing in combination with satellite communication could lowering the
       risk and rise safety in the Arctic Marine and Coastal environment.
     heading: ' '
-    featuredimage: /img/Science Arctic and Antarctic Surveillance.jpg
+    featuredimage: /img/AdobeStock_328910195.jpeg
 ---
 

@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styles from './Hero.module.scss';
-// import ArrowDown from '../../img/angle-down.inline.svg';
+import BackgroundImage from '../BackgroundImage';
 
 const ArrowDown = () => (
   <svg
@@ -31,7 +31,6 @@ const Hero = ({
 }) => {
   if (!backgroundImage) return <></>;
 
-  const bgCSS = backgroundCSS || `url(${backgroundImage})`;
   const Button = () => {
     if (anchorLink) {
       return (
@@ -55,29 +54,29 @@ const Hero = ({
     );
   };
   return (
-    <section
+    <BackgroundImage
       className={classNames('hero', styles.hero, className)}
+      image={backgroundImage}
       style={{
-        background: bgCSS,
+        backgroundPosition: 'bottom center !important',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className={classNames(styles.content, 'hero-body')}>
+      <div
+        style={{ background: backgroundCSS }}
+        className={classNames(styles.content, 'hero-body')}
+      >
         <div className="container">
           <div>
             <h1 className={styles.content__heading}>{heading}</h1>
-            <p
-              className={classNames(
-                // 'big-paragraph',
-                styles.content__subheading,
-              )}
-            >
+            <p className={classNames(styles.content__subheading)}>
               {subheading}
             </p>
             <Button />
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundImage>
   );
 };
 

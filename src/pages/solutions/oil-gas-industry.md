@@ -1,10 +1,14 @@
 ---
 templateKey: solution-page-primary
 title: Oil and Gas Industry
-seoDescription: Oil and Gas Industry
-heading: Oil & Gas Industry
-description: description
-featuredimage: /img/Harbor Surveillance.jpg
+seoDescription: >-
+  AI, IoT, Edge Computing and smart camera technology from SEALAB can minimize
+  the risk of accidents on drilling rigs in the Oil & Gas Industry.
+heading: Oil and Gas Industry
+description: >-
+  AI, IoT, Edge Computing and smart camera technology from SEALAB can minimize
+  the risk of accidents on drilling rigs in the Oil & Gas Industry.
+featuredimage: /img/AdobeStock_177426726.jpeg
 splitSections:
   - content: >-
       AI, IoT, Edge Computing and smart camera technology from SEALAB can
@@ -21,7 +25,7 @@ splitSections:
       radio contact and visual monitoring or by being equipped with sensors.
     heading: A Secure Rig is an Effective Rig
 imageSection:
-  featuredimage: /img/oil and gas.webp
+  featuredimage: /img/AdobeStock_222573876.jpeg
   left: '### Artificial intelligence'
   right: >-
     Monitoring using artificial intelligence helps the system monitor all

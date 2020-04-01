@@ -5,8 +5,9 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
-import NonStretchedImage from '../components/NonStretchedImage';
 import SplittedSection from '../components/SplittedSection';
+import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
+import BackgroundImage from '../components/BackgroundImage';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
 
@@ -28,7 +29,7 @@ export const SolutionPageTemplate = ({
         className="is-large"
         heading={heading}
         description={description}
-        imageURL={featuredimage.publicURL}
+        image={featuredimage}
         anchorLink="#first-section"
       />
       <section id="read-more" className="section" aria-hidden="true">
@@ -42,30 +43,25 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      <section className="section has-dark-background">
-        <div className="container">
-          <NonStretchedImage
-            fluid={imageSection.featuredimage.childImageSharp.fluid}
-            objectFit="contain"
-            alt=""
-            className="image"
-          />
-          <SplittedSection
-            leftColumn={
-              <PostContent
-                content={generateHTML(imageSection.left)}
-                className="content is-left-aligned"
-              />
-            }
-            rightColumn={
-              <PostContent
-                content={generateHTML(imageSection.right)}
-                className="content is-left-aligned"
-              />
-            }
-          />
-        </div>
-      </section>
+      {imageSection ? (
+        <LargeImageWithSplitSection
+          image={imageSection.featuredimage}
+          leftColumn={
+            <PostContent
+              content={generateHTML(imageSection.left)}
+              className="content is-left-aligned"
+            />
+          }
+          rightColumn={
+            <PostContent
+              content={generateHTML(imageSection.right)}
+              className="content is-left-aligned"
+            />
+          }
+        />
+      ) : (
+        <></>
+      )}
 
       {splitSection ? (
         <section className="section has-dark-background">
@@ -107,12 +103,14 @@ export const SolutionPageTemplate = ({
   );
 };
 
-const SolutionHero = ({ className, heading, description, imageURL }) => {
+const SolutionHero = ({ className, heading, description, image }) => {
   return (
-    <section
+    <BackgroundImage
       className={classNames('hero', className)}
+      image={image}
+      cssFilter="linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))"
       style={{
-        background: `linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3)), url(${imageURL})`,
+        backgroundPosition: 'bottom center !important',
       }}
     >
       <div className={classNames('hero-body')}>
@@ -123,7 +121,7 @@ const SolutionHero = ({ className, heading, description, imageURL }) => {
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundImage>
   );
 };
 
@@ -172,6 +170,12 @@ export const pageQuery = graphql`
         featuredimage {
           publicURL
           extension
+          childImageSharp {
+            fluid(maxHeight: 630, quality: 80) {
+              ...GatsbyImageSharpFluid_noBase64
+              presentationWidth
+            }
+          }
         }
         splitSections {
           heading
@@ -181,7 +185,7 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 600, quality: 100) {
+              fluid(maxWidth: 600, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
@@ -193,7 +197,7 @@ export const pageQuery = graphql`
           right
           featuredimage {
             childImageSharp {
-              fluid(maxWidth: 1410, quality: 100) {
+              fluid(maxWidth: 1410, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }

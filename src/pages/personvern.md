@@ -1,136 +1,133 @@
 ---
 templateKey: simple-page
-title: Personvernerklæring
-heading: Personvernerklæring
+title: Privacy Policy
+heading: Privacy Policy
 ---
+# About SEALAB
 
-## Om SEALAB
+SEALAB AS provides leading camera technology solutions for monitoring and analysis in the aquaculture industry. These solutions integrate cameras, lights, sensors, electronics, software, communication solutions and control rooms using “smart” (IoT) high-speed infrastructure.
 
-SEALAB AS leverer ledende kamerateknologiløsninger for overvåkning og analyse i havbruksnæringen. Løsningene integrerer kamera, lys, sensorikk, elektronikk, programvare, kommunikasjonsløsninger og kontrollrom ved hjelp av “smart”(IoT) høyhastighets infrastruktur.
+This statement applies to the Norwegian business. The registered headquarter is Transittgata 14, 7042 Trondheim. For inquiries regarding privacy:[contact@sealab.no](mailto:contact@sealab.no)
 
-Denne erklæringen gjelder for den norske virksomheten. Hovedkontorets registrerte adresse er Transittgata 14, 7042 Trondheim. Kontaktopplysninger ang personvern er: contact@sealab.no
+### Processing of personal data at www.sealab.no
 
-## Behandling av personopplysninger på www.sealab.no
+The CEO has the day-to-day responsibility for SEALAB's processing of personal data on our websites and our blog, unless otherwise stated below. It is optional for those who visit the site to provide personal information in connection with services, for example by sending us requests, enrolling in courses, breakfast meetings or receiving newsletters. The basis of treatment is the consent of the individual, unless otherwise specified.
 
-Daglig leder har det daglige ansvaret for SEALAB sin behandling av personopplysninger på våre nettsider og vår blogg, med mindre annet er oppgitt under. Det er frivillig for de som besøker nettstedet å oppgi personopplysninger i forbindelse med tjenester, eksempelvis ved å sende oss forespørsler, påmelding på kurs, frokostmøter eller motta nyhetsbrev. Behandlingsgrunnlaget er samtykke fra den enkelte, med mindre annet er spesifisert.
+SEALAB AS is responsible for the treatment of information on the website, and is responsible for maintenance and development of the website themselves.
 
-SEALAB AS er behandlingsansvarlig for sine nettsider og står for vedlikehold og utvikling selv.
+## Online statistics
 
-## Nettstatistikk 
+SEALAB AS collects information about visitors at www.sealab.no The purpose of the collection is to compile statistics that are used to improve and further develop website content. Examples of what information is collected are: how visitors use the site, what website the user comes from, how many people visit the different pages, how long the visit lasts, what they click on and which browsers are used.
 
-SEALAB AS samler inn opplysninger om besøkende på www.sealab.no Formålet med innsamlingen er å utarbeide statistikk som brukes for å forbedre og videreutvikle innhold på nettsted. Eksempler på hvilken informasjon som innhentes er: hvordan besøkende bruker nettstedet, hvilket nettsted brukeren kommer fra, hvor mange som besøker de ulike sidene, hvor lenge besøket varer, hva de klikker på og hvilke nettlesere som benyttes.
+SEALAB AS uses the analysis tools of Google Inc ("Google") on their website and the information gathered using these tools is stored using Google services. This information is not shared with any other parties.
 
-SEALAB AS bruker analyseverktøyene til Google Inc («Google») på sin nettside og informasjonen lagres hos Google. Informasjon fra dette verktøyet deles ikke med andre aktører.
+## Cookies
 
-## Informasjonskapsler eller cookies
+### What is a cookie?
 
-### Hva er en informasjonskapsel eller cookies?
+Cookies are small text files that are stored on your computer, phone or tablet when you visit a website. Cookies help websites to remember your settings (such as username, language preferences, text size and other presets) for a certain period of time. Cookies are also used to improve functionality, to collect information for analytics or marketing purposes.
 
-Cookies er små tekstfiler som lagres på din datamaskin, telefon eller nettbrett når du besøker et nettsted. Cookiene hjelper nettstedet til å huske dine innstillinger (eksempelvis brukernavn, språk, tekststørrelse og andre forhåndsvalg) for en viss periode. Cookies brukes også for å forbedre funksjonalitet, til å samle informasjon for analyseformål eller for markedsføringsformål.
+### How do we use Cookies?
 
-### Hvordan bruker vi Cookies?
+We use cookies to obtain information on how a site is being used. The cookies are set and the information analyzed using Google Analytics, which is a web analytics tool from Google. The information is stored on servers in the United States. The cookies collect information on which pages are visited, how long a visit lasts, the number of visits to the site and what the source of the visit is (for example, Google Search). We also use cookies to analyze user behavior, such as clicks on links, clicks to articles, submission of contact forms and the like.
 
-Vi bruker cookies for å få informasjon om hvordan nettstedet brukes. Vi bruker dette gjennom Google Analytics som er et verktøy for webanalyse fra Google. Informasjonen lagres på servere i USA. Informasjonskapslene samler informasjon om hvilke sider som besøkes, hvor lenge et besøk varer, antall besøk på nettstedet og hva som er kilden til besøket (eksempelvis Google Søk). Vi bruker også cookies til å se på brukeratferden, som klikk på lenker, klikk til artikler, innsendelse av kontaktskjema o.l.
+By using cookies, our site collects information for later advertising (Remarketing). An anonymized identity is stored in separate lists used for targeted advertising based on your online user behavior. In addition to the information being anonymized (de-identified), a certain number of users are required to be listed before the lists are used.
 
-Ved hjelp av cookies samler vårt nettsted inn informasjon til bruk for senere annonsering (Remarketing). En anonymisert identitet blir lagret i egne lister som brukes til målrettet annonsering basert på din brukeratferd på nett. I tillegg til at informasjonen er anonymisert (avidentifisert) stilles det krav til et visst antall brukere på listen før listene tas i bruk.
-
-Alle nettlesere gjør det mulig å begrense cookie atferd eller å deaktivere dem ved hjelp av nettleserens innstillinger. Nettleseren lar deg også se over hvilke cookies som er lagret på datamaskinen, og til å slette en enkelt cookie eller å fjerne alle sammen. Du finner en lenke lenger nede på siden til hvordan du kan gjøre dette.
+All browsers allow you to restrict cookie behavior or to disable them by changing the browser's settings. The browser also lets you review which cookies are stored on your computer, and to delete a single cookie or to remove all of them. You will find a link below on how to do this.
 
 #### Google Analytics
 
-For å gi oss informasjon og statistikk om hvordan nettstedet brukes, settes en cookie via Google Analytics.
+To provide us with information and statistics on how our site is being used, a cookie is set via Google Analytics.
 
-#### Google Tag Manager
+#### Google Task Manager
 
-For å hjelpe oss distribuere forskjellige kodesnutter på nettstedet, bl.a. overnevnte Google Analytics, tar vi i bruk Google Tag Manager, som setter en cookie for å ivareta informasjon om inneværende sesjon.
+To help us distribute different code snippets on the site, including Google Analytics mentioned above, we use Google Tag Manager, which sets a cookie to handle information about the current session.
 
 #### Hubspot
 
-Hubspot cookien brukes til å registrere informasjon om bruken av nettsiden på samme måte som Google Analytics. Dersom du registrerer deg på våre nettsider vil vi med hjelp fra Hubspot cookien kunne lettere tilby deg relevant informasjon ved senere besøk.
+The Hubspot cookie is used to record information about the use of the website in the same way as the Google Analytics cookie. If you register as a user on our website we will be able to more easily offer you relevant information at later visits with the help of the Hubspot cookie.
 
-#### Sosiale medier
+#### Social media
 
-Vi bruker cookies for å spore aktivitet fra sosiale medier som Facebook, Twitter og LinkedIn. Cookies fra disse plattformene gir oss ikke innsikt i hvem som er på siden men lar oss samle data i de ulike mediene for å bygge et annonsepublikum som vi kan annonsere mot senere.
+We use cookies to track activity from social media such as Facebook, Twitter and LinkedIn. Cookies from these platforms do not give us insight into who is on the site but allow us to gather data in the various media to build an ad audience that we can advertise towards at a later time.
 
+### Advertisements
 
-#### Annonser
+Occasionally, we have ads in other media that make us want to track traffic from these. For this reason we have cookies that track traffic to our site from these ads. No personal data is tracked in these cookies.
 
-Innimellom har vi annonser ute i andre medier som gjør at vi ønsker å spore trafikk fra disse. Derfor har vi cookies som sporer at disse annonsene gir oss trafikk. Det er ingen personlige data som spores i disse cookiesene.
+You can read more about Google's privacy policy here: https://www.google.com/intl/en/policies/privacy/
 
-Du kan lese mer om Googles policy for bruk av personopplysninger her:  https://www.google.com/intl/no/policies/privacy/
+You can opt out of Google's use of cookies (opt-out) for advertising through the Google Advertising and Privacy page: http://www.google.com/policies/privacy/ads
 
-Du kan melde deg ut av Googles bruk av cookies (opt-out) for annonsering via Googles side om annonsering og personvern: http://www.google.com/policies/privacy/ads
+### HOW TO DISABLE COOKIES IN YOUR BROWSER
 
-### SLIK DEAKTIVERER DU COOKIES I NETTLESEREN DIN
-
-Det er i  mulig å reservere seg mot cookies ved å skru av for dette i nettleser. Dette finner du under innstillinger i nettleseren din. De fleste nettlesere tillater også inkognito modus der du surfer anonymt. Dersom du deaktiverer cookies i nettleseren din, er det viktig å vite at det kan påvirke brukeropplevelsen på nettsider. Her er en liste med hvordan du skrur av cookies i nettleser:
+It is possible to reserve against cookies by turning this off in the browser. Information on how to do this can be found under settings in your browser. Most browsers also allow incognito mode where you browse anonymously. If you disable cookies in your browser, it is important to note that this can affect the user experience on web pages. Here is a list of how to disable cookies in various browsers:
 
 * Chrome
 * Internet Explorer
 * Firefox
 * Safari
-* Safari Mobil
+* Safari Mobile
 * Android
-* Bruk av Facebook pixel: sporing på Facebook, Instagram, Messenger Instant Articles og Audience Network.
+* Use of Facebook pixel: tracking on Facebook, Instagram, Messenger Instant Articles and Audience Network.
 
-Facebook står som eier av Instagram, Messenger, Instant Articles og Audience Network, og bruk av Facebook pixel dekker derfor også disse kanalene.
+Facebook is listed as the owner of Instagram, Messenger, Instant Articles and Audience Network, and therefore the use of Facebook pixels also cover these channels.
 
-En Facebook pixel er et script som ligger på vårt nettsted og som samler informasjon til Facebook. Pixelen samler informasjon fra informasjonskapslene (cookies) som ligger i din nettleser, og sender dette tilbake til Facebook hvor informasjonen blir samlet sammen med data fra din Facebookprofil.
+A Facebook pixel is a script located on our site that collects information for Facebook. The pixel collects information from the cookies contained in your browser and sends it back to Facebook where the information is collected together with data from your Facebook profile.
 
-Informasjon som samles kan være knyttet til din brukeratferd (demografiske data som alder, kjønn, interesser) eller handlinger du utfører som klikk på lenker. Informasjonen er kun tilgjengelig på et anonymisert og aggregert nivå. Informasjonen brukes til analyseformål, målrettet annonsering basert på din brukeratferd (remarketing) samt til å identifisere målgrupper for annonsering som har en profil som er lik din og derfor har en potensiell mulighet for å ha et likt handlingsmønster eller behov.
+The Information collected may be demographic data such as age, gender and interests, or may be related to your user behavior. The information is only available on an anonymized and aggregated level. The information is used for analysis purposes, targeted advertising based on your user behavior (remarketing) as well as identifying target audiences that have a profile that is similar to yours and therefore have a potential opportunity to have a similar pattern of action or need.
 
-Informasjon samlet inn via Facebook pixel, lagres fra 90 dager til 2 år. Informasjonen lagres på servere hos Facebook i USA.
+Information collected via Facebook pixels is stored in a period from 90 days to 2 years. The information is stored on Facebook servers in the United States.
 
-Ved bruk av Facebook i forbindelse med annonsering vil Facebook i de aller fleste tilfeller være behandlingsansvarlig. Det er dog noen unntak:
+When using Facebook for advertising purposes, Facebook will in most cases be responsible for the processing of data. However, there are some exceptions:
 
-Bruk av Facebook Lead Ads, et verktøy for å samle inn epostadresser via Facebooksidene, der både Facebook og SEALAB vil være behandlingsansvarlige. Dersom SEALAB AS vil ta i bruk dette verktøyet, vil informasjon om brukerens rettigheter være tydelig angitt i annonsen hvor brukeren frivillig legger fra seg persondata.
+The use of Facebook Lead Ads, a tool for collecting email addresses through Facebook pages, where both Facebook and SEALAB AS will be responsible for processing. If SEALAB AS wants to use this tool, information about the user's rights will be clearly stated in the advertisement where the user voluntarily discloses personal data.
 
-Opplasting av eksisterende e-postlister for målrettet annonsering på Facebook. Dersom SEALAB AS vil bruke dette verktøyet vil det kun være rettet mot potensielle kunder som frivillig har gitt sitt samtykke til dette.
+Uploading existing email lists for targeted advertising on Facebook. If SEALAB AS wants to use this tool, it will only target potential customers who have voluntarily given their consent.
 
-### Annen informasjon samlet inn via vårt nettsted.
+## Other information collected through our website
 
-#### Bruk av kontaktskjema på våre nettsider
+### Use of contact forms on our website
 
-Når du bruker kontaktskjema på våre hjemmesider ber vi om følgende informasjon: Navn, e-postadresse, firma, telefonnummer, hva din henvendelse handler om.
+When you use the contact form on our website we ask for the following information: Name, email address, company, telephone number,  and what your inquiry is about.
 
-Formålet med innhenting og lagring av informasjon er å kunne svare og ha en dialog rundt din henvendelse. All informasjon om deg lagres på sikre servere, i tråd med Hubspots datalagringsrutiner
+The purpose of collecting and storing information is to be able to respond and have a dialogue around your inquiry. All personal information is stored on secure servers, in accordance with Hubspot's data storage routines.
 
-#### Påmelding nyhetsbrev
+### Sign up for newsletter
 
-SEALAB AS sender ut nyhetsbrev få ganger per år via e-post. For å kunne motta dette må du registrere din e-postadresse hos oss. Dersom du melder deg av nyhetsbrevet vil din informasjon bli slettet.
+SEALAB AS sends out newsletters a few times a year via email. To receive these, you must register your email address with us. If you unsubscribe from the newsletter, your information will be deleted.
 
-#### Serverlogg på nettsted
+### Server log on website
 
-Alle besøk på våre nettsteder lagres i en logg på vår server. Informasjonen som lagres er IP-adresse fra enheten som besøker nettstedet. Opplysningene samles inn for å sikre drift. Ved angrep mot nettstedet vil IP-adressen som er brukt i forbindelse med angrepet bli blokkert.
+All visits to our sites are stored in a log on our server. The information stored is the IP address of the device visiting the site. This information is collected to ensure continuous operation of our sites. In the event of an attack on a site,  the IP address(es) connected to the attack will be blocked.
 
-#### E-post og telefon
+### Email and telephone
 
-SEALAB AS bruker e-post og telefon som en del av sitt daglige arbeide for å kunne ha dialog og svare på forespørsler fra potensielle kunder, kunder, tidligere kunder og andre samarbeidspartnere.
+SEALAB AS uses e-mail and telephone as part of its day-to-day work to engage in dialogue and respond to requests from potential customers, customers, former customers and other business partners.
 
-Den enkelte ansatte har ansvar for å slette meldinger som ikke lenger er aktuelle, og skal minst en gang i året gå gjennom og slette unødvendig innhold i e-postkassen. Ved fratredelse slettes e-postkonto Relevante e-poster vil normalt bli overført til kolleger.
+Each employee is responsible for deleting messages that are no longer relevant, and should at least once a year review and delete unnecessary content in their respective email box. Upon resignation the email account of the former employee is deleted. Relevant emails will normally be forwarded to colleagues.
 
-Sensitive personopplysninger skal ikke sendes over e-post. Vi gjør oppmerksom på at vanlig e-post ikke er kryptert. Vi oppfordrer deg derfor til å vise varsomhet, og ikke sende taushetsbelagt informasjon, sensitive data eller fortrolige opplysninger på e-post.
+Sensitive personal data should not be sent via email. Please note that regular email is not encrypted. We therefore encourage you to exercise caution and to not send sensitive data or confidential information via email.
 
-## Andre forhold der vi registrerer personopplysninger
+## Other circumstances in which we record personal data 
 
-### Registrering av besøkende på SEALAB AS sine kontorer
+### Registration of visitors to SEALAB AS's offices
 
-Av hensyn til brann eller evakuering av våre kontorlokaler har Selab AS innført adgangskontroll med registrering av besøkende ved våre kontor. Informasjonen lagres i løsningen (Navn på løsningen), og informasjonen som lagres er navn, e-postadresse og firma.
+To ensure safety in the event of an evacuation of our office premises, SEALAB AS has introduced access control with registration of visitors to our offices. The information collected is stored in the solution (Name of the solution), and the information stored is name, email address and company.
 
-### Bruk av 3.part/underleverandører
+### Use of third parties/subcontractors
 
-SEALAB AS bruker underleverandører til å bistå med drift og lagring av innsamlede personopplysninger. Disse vil ved sin bistand til oss kunne få innsyn i personopplysninger. Det er inngått lovpålagte databehandleravtaler med disse.
+SEALAB AS uses subcontractors to assist with day-to-day operations and for the storage of collected personal data. Through their contracts with us, these subcontractors may be able to gain access to personal data. Statutory data processing agreements have been signed with these.
 
-## Rettigheter
+## Your rights
 
-Du har rett til innsyn i personopplysninger om deg og hvordan de behandles. Du har også rett til å få opplysningene rettet, slettet eller å begrense behandlingen av personopplysningene i henhold til personopplysningsloven.
+You have the right to access your personal data and to be informed about how they are being processed. You also have the right to have the information corrected, deleted or to limit the processing of personal data in accordance with the Personal Data Act.
 
-Du kan kontakte oss på contact@sealab.no for tilgang til, endring eller sletting av informasjon.
+You can contact us at contact@sealab.no for access to, change of or deletion of information.
 
-Behandling av personopplysningene er basert på samtykke, og du kan til enhver tid trekke samtykke tilbake.
+The processing of personal data is based on consent, and you can withdraw your consent at any time.
 
-Dersom du mener SEALAB AS ikke har overholdt dine rettigheter i henhold til personopplysningsloven, har du rett til å klage til aktuell tilsynsmyndighet som i Norge er Datatilsynet, du finner kontaktinfo på deres hjemmesider www.datatilsynet.no.
-
+If you believe SEALAB AS has not complied with your rights under the Personal Data Act, you have the right to appeal to the relevant supervisory authority, which in Norway is the Data Inspectorate. You can find contact info for the Data Inspectorate on their website www.datatilsynet.no.
 
 <!-- ## Hvilke personopplysninger behandler SEALAB? 
 

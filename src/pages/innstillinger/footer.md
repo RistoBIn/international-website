@@ -2,8 +2,32 @@
 mainNavigation:
   - path: /
     title: Home
-  - path: /solutions/aquaculture
-    title: Aquaculture
+  - path: /solutions/atlantic-salmon-and-seafood/
+    title: Atlantic Salmon and Seafood
+  - path: /solutions/military-and-defense/
+    title: Military & Defense
+  - path: /solutions/schools-and-universities/
+    title: Schools and Universities
+  - path: /solutions/science-arctic-and-antarctic-surveillance/
+    title: Science Arctic and Antarctic Surveillance
+  - path: /solutions/well-and-fishing-boats/
+    title: Well and Fishing Boats
+  - path: /solutions/seabed-mining/
+    title: Seabed Mining
+  - path: /solutions/environmental-monitoring/
+    title: Environmental Monitoring
+  - path: /solutions/harbor-surveillance/
+    title: Harbor Surveillance
+  - path: /solutions/oil-gas-industry/
+    title: Oil and Gas Industry
+  - path: /solutions/underwater-drones-and-robotics/
+    title: Underwater Drones and Robotics
+  - path: /solutions/bridge-and-watercourse-monitoring/
+    title: Bridge and Watercourse Monitoring
+  - path: /solutions/river-and-wildlife-monitoring/
+    title: River and Wildlife monitoring
+  - path: /solutions/hydropower-plants/
+    title: Hydropower Plants
 secondaryNavigation:
   - path: /products/edge-intelligence
     title: Edge Intelligence
@@ -16,12 +40,8 @@ thirdNavigation:
     title: 5G Heart
   - path: /projects/clean-ocean-initiative
     title: Clean Ocean Initiative
-  - path: /projects/gem
-    title: Environment Monitoring
 fourthNavigation:
-  - path: /contact
-    title: Contact
-  - path: /about/vision-strategy
+  - path: /vision-strategy
     title: Vision & Strategy
   - path: /leadership
     title: Leadership
@@ -30,10 +50,15 @@ fourthNavigation:
   - path: /about/sealab-osc
     title: SEALAB Ocean Space Center
   - path: /social-responsibility
-    title: Social Responsibility
+    title: Sustainability impact
+  - path: /about/partners/
+    title: Partners
+  - path: /about/investors/
+    title: Investors
+  - path: /about/partnership/
+    title: Partnership
   - path: /locations
     title: Locations
-
 companyOffices:
   - addressItems:
       - SEALAB
@@ -48,12 +73,12 @@ companyOffices:
   - addressItems:
       - Berlin
       - EUREF-Campus 1-25
-      - 10829 Berlin, Tyskland
+      - '10829 Berlin, Tyskland'
     title: In Germany
   - addressItems:
       - Niš
       - Bore Vukmirovića 9
-      - 18000 Niš, Serbia
+      - '18000 Niš, Serbia'
     title: In Serbia
 callToAction:
   buttonPath: /contact

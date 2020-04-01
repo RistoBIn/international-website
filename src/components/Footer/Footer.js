@@ -25,7 +25,7 @@ const Footer = ({
       <div className="has-dark-background">
         <div className="container">
           <section id="footer-navigation" className="section is-small">
-            <div className="columns">
+            <div className="columns is-multiline">
               <List title="Solutions" navigationItems={mainNavigation} />
               <List title="Products" navigationItems={secondaryNavigation} />
               <List title="Project" navigationItems={thirdNavigation} />
@@ -34,7 +34,17 @@ const Footer = ({
           </section>
           <section id="company-information" className="section is-small">
             <div className="columns">
-              <div className="column is-3">
+              {companyOffices.map(office => (
+                <div key={gen.next().value} className="column is-3">
+                  <h3>{office.title}</h3>
+                  <StringList items={office.addressItems} />
+                </div>
+              ))}
+            </div>
+          </section>
+          <section id="book-demo" className="section is-small">
+            <div className="columns">
+              <div className="column is-3 contact-info">
                 <h3 className="is-red">Contact</h3>
                 <p>
                   <span>
@@ -49,24 +59,18 @@ const Footer = ({
                   {phone}
                 </p>
               </div>
-              {companyOffices.map(office => (
-                <div key={gen.next().value} className="column is-3">
-                  <h3>{office.title}</h3>
-                  <StringList items={office.addressItems} />
+              <div className="column cta is-9">
+                <div className="text">
+                  <h3>{callToAction.title}</h3>
+                  <p>{callToAction.description}</p>
                 </div>
-              ))}
+                <Button
+                  text={callToAction.buttonText}
+                  className="is-primary medium"
+                  path={callToAction.buttonPath}
+                />
+              </div>
             </div>
-          </section>
-          <section id="book-demo" className="section is-small">
-            <div className="text">
-              <h3>{callToAction.title}</h3>
-              <p>{callToAction.description}</p>
-            </div>
-            <Button
-              text={callToAction.buttonText}
-              className="is-primary large"
-              path={callToAction.buttonPath}
-            />
           </section>
           <section id="copyright" className="section is-small">
             <SealabLogo />

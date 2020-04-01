@@ -3,7 +3,11 @@ import Img from 'gatsby-image';
 
 const NonStretchedImage = props => {
   let normalizedProps = props;
+
   /* eslint-disable */
+  if (props.childImageSharp && props.childImageSharp.fluid && props.childImageSharp.fluid.presentationWidth) {
+    return <Img fluid={props.childImageSharp.fluid} style={{maxWidth: props.childImageSharp.fluid.presentationWidth}} />;
+  }
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {
       ...props,
@@ -13,6 +17,7 @@ const NonStretchedImage = props => {
         margin: '0 auto', // Used to center the image
       },
     };
+    return <Img {...normalizedProps} />;
   }
   if (!props.fluid && props.publicURL) {
     return (
