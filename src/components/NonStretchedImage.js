@@ -6,15 +6,7 @@ const NonStretchedImage = props => {
 
   /* eslint-disable */
   if (props.childImageSharp && props.childImageSharp.fluid && props.childImageSharp.fluid.presentationWidth) {
-    normalizedProps = {
-      ...props,
-      style: {
-        ...(props.style || {}),
-        maxWidth: props.childImageSharp.fluid.presentationWidth,
-        margin: '0 auto', // Used to center the image
-      },
-    };
-    return <Img fluid={props.childImageSharp.fluid} {...normalizedProps} />;
+    return <Img fluid={props.childImageSharp.fluid} style={{maxWidth: props.childImageSharp.fluid.presentationWidth}} />;
   }
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {
