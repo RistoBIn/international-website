@@ -30,7 +30,7 @@ splitSections:
       expected to provide robust geometric pattern-matching with several degrees
       of freedom, compensate for extreme illumination and perform 3D analysis of
       complex shapes.
-    heading: Human vision simulation and objects recognition
+    heading: Human Vision Simulation and Objects Recognition
   - content: >-
       Both color tracking and motion or range of images can be used. To have
       robotic vision, we need to combine those techniques to use the appropriate
@@ -71,7 +71,7 @@ splitSections:
       determine risks in humans.
     heading: Current Innovations
     featuredimage: /img/military-innovation.svg
-    subheading: Advanced FPGA technology for use under water
+    subheading: Advanced FPGA Technology for Use Under Water
 ---
 ## Autonomous Vehicles
 
