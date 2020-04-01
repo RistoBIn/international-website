@@ -52,6 +52,8 @@ menuPaths:
         title: Leadership
       - path: /about/business-model/
         title: Business Model
+      - path: /about/innovation-cause-we-can/
+        title: Innovation ‘cause we can
       - path: /about/sealab-osc/
         title: SEALAB Ocean Space Center
       - path: /about/social-responsibility/
