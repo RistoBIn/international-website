@@ -62,7 +62,7 @@ export const AboutPageSecondaryTemplate = ({
         </div>
       </section>
       <section className="section has-dark-background centered-free-text">
-        <div className="container content centered-free-text">
+        <div className="content centered-free-text">
           <PostContent content={generateHTML(centeredTextSection.content)} />
         </div>
       </section>
@@ -88,13 +88,13 @@ export const AboutPageSecondaryTemplate = ({
             leftColumn={
               <PostContent
                 content={generateHTML(secondarySplitSection.left.content)}
-                className="content is-left-aligned"
+                className="content"
               />
             }
             rightColumn={
               <PostContent
                 content={generateHTML(secondarySplitSection.right.content)}
-                className="content is-left-aligned"
+                className="content padding-top-header"
               />
             }
           />

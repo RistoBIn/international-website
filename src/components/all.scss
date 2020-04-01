@@ -758,14 +758,18 @@ section.vision-strategy {
       color: #dbe0ea;
     }
   }
+  figcaption {
+    padding: 0 $paddingHorizontalMobile;
+  }
 
   .grey-background {
     background: linear-gradient(0deg, #1f2331, #1f2331), #191c27;
     border-radius: 3px;
   }
 
-  .right-wrapper.grey-background {
-    padding: 32px 43px !important;
+  .right-wrapper {
+    margin-top: 30px;
+    padding: 20px;
     p {font-weight: 300;}
     h3 {
       margin-bottom: 0;
@@ -774,23 +778,28 @@ section.vision-strategy {
   }
 
   .quad-wrapper {
-    padding: 32px 24px !important;
+    padding: 32px 24px;
+  }
+
+  br { 
+    display: none;
   }
 
   @media screen and (min-width: $desktop) {
     .right-wrapper {
-      padding: 51px 43px !important;
+      margin-top: 0;
+      padding: 51px 43px;
     }
 
     .quad-wrapper {
-      padding: 32px 24px !important;
+      padding: 32px 24px;
     }
+    br{display: block;}
   }
   
 }
-section#vision-last {
-  padding-top: .5rem;
-}
+section.centered-free-text p {font-size: 20px !important;}
+section#vision-last {padding-top: .5rem;}
 
 /****************     HOME PAGE     ********************/
 
