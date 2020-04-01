@@ -29,17 +29,14 @@ partners:
 ---
 ## Utility, efficient processes, safety
 
-Healthcare, transport and aquaculture, verticals are hugely important in Europe, in terms of jobs, size and export trade. Moreover, they are vital from a social
-perspective, for better patient outcomes, safer transportation and safer and
+Healthcare, transport and aquaculture, verticals are hugely important in Europe, in terms of jobs, size and export trade. Moreover, they are vital from a social perspective, for better patient outcomes, safer transportation and safer and
 more sustainable food production. 5G is important for these verticals, in terms
 of improvements for utility, efficient processes, safety among others.
 
-The main motivation of the aquaculture vertical trials are to bring to market a new and cost-effective, networked solution to optimize the aquaculture
-producers’ activity, through successful deployment and operation, from both
+The main motivation of the aquaculture vertical trials are to bring to market a new and cost-effective, networked solution to optimize the aquaculture producers’ activity, through successful deployment and operation, from both
 the network operator and the end-to-end user-experienced perspectives.
 
-The Norwegian pilot site is a commercial production site of Atlantic Salmon in the Mid-Norway Atlantic coast, owned and operated by Sinkaberg-Hansen AS.
-SEALAB and Telenor are the two partners responsible for carrying out several
+The Norwegian pilot site is a commercial production site of Atlantic Salmon in the Mid-Norway Atlantic coast, owned and operated by Sinkaberg-Hansen AS. SEALAB and Telenor are the two partners responsible for carrying out several
 user cases related to remote monitoring of water and fish quality on this
 site.
 
@@ -53,7 +50,7 @@ We have also revolutionized data transfer from location to control rooms at land
 
 Here you can see the difference in image quality. This is the same Atlantic salmon, same cage, same day and time. Both are raw data and unedited. The image to the right comes from SEALAB BlueThink:
 
-![](/img/Illustration image different quality.png)
+![](/img/Illustration_image_different_quality2.png)
 
 Edge computing will power the aquaculture industry, no doubt about that. Edge computing is a crucial part of the 5G platform and provides a first-mover advantage for communication service providers in grabbing new business opportunities.
 
