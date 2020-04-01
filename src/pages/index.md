@@ -41,7 +41,7 @@ quotes:
     quoteText: The Apple approach for harsh environments
 itemsSection:
   button:
-    path: /solutions/aquaculture
+    path: /solutions/
     text: Show all solutions
   heading: Multiple Applications in Numerous Industries
   items:
