@@ -10,7 +10,7 @@ const LargeImageWithSplitContent = ({
   className,
   image,
 }) => {
-  if (!image || !image.childImageSharp || !image.publicURL) return <></>;
+  if (!image || !image.childImageSharp) return <></>;
   return (
     <section className={classNames(styles.section, className)}>
       <div className="container">
