@@ -1,8 +1,8 @@
 ---
 templateKey: about-social-responsibility
-title: Sustainability impact
+title: Sustainability Impact
 seoDescription: Social responsibility is important to SEALAB. Learn why.
-heading: Sustainability impact
+heading: Sustainability Impact
 description: >-
   SEALAB is dedicated to contributing to sustainable development, and
   safeguarding the ocean space is integral to our vision of giving everyone the
