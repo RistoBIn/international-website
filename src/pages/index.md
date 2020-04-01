@@ -3,7 +3,7 @@ templateKey: index-page
 title: SEALAB
 seoDescription: SEALAB's international website
 heading: More than meets the eye
-bgimage: /img/Stocksy_txpb92bbbf3NFf200_OriginalDelivery_1350246.jpg
+bgimage: /img/sealab-water-hero.jpg
 items:
   - description: Billion USD yearly impact for poor ocean management
     heading: '200'
