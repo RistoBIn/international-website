@@ -1,11 +1,11 @@
 ---
-templateKey: about-page-primary
+templateKey: about-page-template-primary
 title: 'Innovation cause we can '
 heading: 'Innovation ‘cause we can '
 description: >-
   Excellence is what differentiates us. We craft pioneering solutions that drive
   value, increase efficiency, and allow our customers to succeed in an
-  increasingly competitive environment.
+  increasingly competitive environment. 
 seoDescription: >-
   SEALAB offers a comprehensive portfolio of IT solutions and programming for
   use in the ocean space. Employees have experience in a vast range of sectors,
