@@ -50,7 +50,7 @@ We have also revolutionized data transfer from location to control rooms at land
 
 Here you can see the difference in image quality. This is the same Atlantic salmon, same cage, same day and time. Both are raw data and unedited. The image to the right comes from SEALAB BlueThink:
 
-![](/img/Illustration_image_different_quality2.png)
+![](/img/Illustration_image_different_quality3.png)
 
 Edge computing will power the aquaculture industry, no doubt about that. Edge computing is a crucial part of the 5G platform and provides a first-mover advantage for communication service providers in grabbing new business opportunities.
 
