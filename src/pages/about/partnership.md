@@ -12,7 +12,7 @@ description: >-
 seoDescription: Partnership
 featuredimage: /img/Sealab.jpg
 ---
-### Our system is open to third parties
+## Our system is open to third parties
 
 \
 The BlueThink™ platform delivers any data or video required for software applications to perform their functions, while allowing the results from those applications to be presented back into the platform for use by other applications. With this, SEALAB is in a unique position to store and analyze data produced even by third-parties.
@@ -21,7 +21,7 @@ For third parties, BlueThink™ removes the complexity of integrating with other
 
 SEALAB is currently working on several BlueThink™-enabled applications and AIs, including Individual Salmon Identification, Fish Welfare estimation through respiratory rate analysis, Network Monitoring, Feeding Response Analysis and Salmon Lice detection.
 
-Growing third-party communities:
+#### Growing third-party communities:
 
 * 3D Biomass Estimation
 * Image Enhancer
