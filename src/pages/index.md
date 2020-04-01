@@ -12,7 +12,7 @@ items:
   - description: Billion USD required yearly to sustain the ocean
     heading: '21'
 centeredSection:
-  heading: The oceans affect us all but entering the deep is not for everyone.
+  heading: The Oceans Affect us all but Entering the Deep is not for Everyone
   bgimage: /img/subsea-plant.jpg
   button:
     path: /solutions/
@@ -32,18 +32,18 @@ quotes:
   - authorImage: ''
     authorName: ''
     authorPosition: ''
-    quoteText: The Apple approach for harsh environments
-  - authorImage: ''
-    authorName: ''
-    authorPosition: ''
     quoteText: >-
       We would really recommend SEALAB if you are in need - because electronics
       for these environments is hard to find.
+  - authorImage: ''
+    authorName: ''
+    authorPosition: ''
+    quoteText: The Apple approach for harsh environments
 itemsSection:
   button:
     path: /solutions/
     text: Show all solutions
-  heading: Multiple applications in numerous industries
+  heading: Multiple Applications in Numerous Industries
   items:
     - featuredimage: /img/AdobeStock_187277566.jpeg
       heading: Harbor Surveillance

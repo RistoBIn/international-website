@@ -48,7 +48,7 @@ fourthNavigation:
   - path: /about/innovation-cause-we-can/
     title: Innovation ‘cause we can
   - path: /about/sealab-osc
-    title: SEALAB Ocean Space Center
+    title: Ocean Space Center
   - path: /social-responsibility
     title: Sustainability impact
   - path: /about/partners/

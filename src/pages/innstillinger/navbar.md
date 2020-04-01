@@ -27,7 +27,7 @@ menuPaths:
         title: River and Wildlife Monitoring
       - path: /solutions/hydropower-plants/
         title: Hydropower Plants
-    path: '/solutions/'
+    path: /solutions/
     title: Solutions
   - dropdown:
       - path: /products/edge-intelligence/
@@ -55,7 +55,7 @@ menuPaths:
       - path: /about/innovation-cause-we-can/
         title: Innovation ‘Cause We Can
       - path: /about/sealab-osc/
-        title: SEALAB Ocean Space Center
+        title: Ocean Space Center
       - path: /about/social-responsibility/
         title: Sustainability Impact
       - path: /about/partners/

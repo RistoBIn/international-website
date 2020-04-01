@@ -40,8 +40,8 @@ splitSections:
       Using Autonomous Underwater Vehicles as Sensor Platforms for
       Ice-Monitoring
   - content: >-
-      ## Project addressing Risk, Reliability and Ice data in the Arctic marine
-      environment
+      ## Project Addressing Risk, Reliability and Ice Data in the Arctic Marine
+      Environment
 
 
       Data and knowledge about the marine environment in the Arctic and

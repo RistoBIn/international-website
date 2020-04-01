@@ -1,7 +1,7 @@
 ---
 templateKey: about-page-primary
-title: 'Innovation cause we can '
-heading: 'Innovation ‘cause we can '
+title: 'Innovation Cause we can '
+heading: 'Innovation ‘Cause we can '
 description: >-
   Excellence is what differentiates us. We craft pioneering solutions that drive
   value, increase efficiency, and allow our customers to succeed in an
@@ -11,7 +11,7 @@ seoDescription: >-
   use in the ocean space. Employees have experience in a vast range of sectors,
   markets and technical disciplines, which gives SEALAB an unrivaled level of
   knowledge and expertise.
-featuredimage: /img/sealab-innovation.webp
+featuredimage: /img/Innovation_V1.1.png
 ---
 SEALAB offers a comprehensive portfolio of IT solutions and programming for use in the ocean space. Employees have experience in a vast range of sectors, markets and technical disciplines, which gives SEALAB an unrivalled level of knowledge and expertise.
 

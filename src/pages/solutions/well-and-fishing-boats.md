@@ -31,7 +31,7 @@ splitSections:
       disturbing the fishes in any manner whatsoever. SEALAB's sensor system
       monitors the fish in the well or tank for the storage and transport of
       live fish for the delivery to port and final processing on land.
-    heading: Real time Reporting System
+    heading: Real Time Reporting System
     featuredimage: /img/AdobeStock_205257493.jpeg
 ---
 
