@@ -100,56 +100,18 @@ export const AboutPageSecondaryTemplate = ({
           />
         </div>
       </section>
-      <section className="section has-dark-background vision-strategy">
+      <section className="section has-dark-background vision-strategy boxes">
         <div className="container">
-          <SplittedSection
-            leftColumn={
-              <PostContent
-                content={generateHTML(tertiarySplitSection.left.content)}
-                className="content is-left-aligned"
-              />
-            }
-            rightColumn={
-              <QuadSplitSection
-                topRowLeftColumn={
-                  <PostContent
-                    content={generateHTML(
-                      tertiarySplitSection.right.primaryQuadSplitSection.topRow
-                        .leftColumn.content,
-                    )}
-                    className="content is-left-aligned quad-wrapper grey-background"
-                  />
-                }
-                topRowRightColumn={
-                  <PostContent
-                    content={generateHTML(
-                      tertiarySplitSection.right.primaryQuadSplitSection.topRow
-                        .rightColumn.content,
-                    )}
-                    className="content is-left-aligned quad-wrapper grey-background"
-                  />
-                }
-                bottomRowLeftColumn={
-                  <PostContent
-                    content={generateHTML(
-                      tertiarySplitSection.right.primaryQuadSplitSection
-                        .bottomRow.leftColumn.content,
-                    )}
-                    className="content is-left-aligned quad-wrapper grey-background"
-                  />
-                }
-                bottomRowRightColumn={
-                  <PostContent
-                    content={generateHTML(
-                      tertiarySplitSection.right.primaryQuadSplitSection
-                        .bottomRow.rightColumn.content,
-                    )}
-                    className="content is-left-aligned quad-wrapper grey-background"
-                  />
-                }
-              />
-            }
-          />
+          <div className="wrapper">
+            <PostContent
+              content={generateHTML(tertiarySplitSection.left.content)}
+              className="content is-left-aligned"
+            />
+            <QuadSplitSection
+              contentItems={tertiarySplitSection.right.contentItems}
+              contentItemsCss="grey-background quad-wrapper"
+            />
+          </div>
         </div>
       </section>
       <section className="section has-dark-background vision-strategy">
@@ -309,23 +271,8 @@ export const pageQuery = graphql`
             content
           }
           right {
-            primaryQuadSplitSection {
-              topRow {
-                leftColumn {
-                  content
-                }
-                rightColumn {
-                  content
-                }
-              }
-              bottomRow {
-                leftColumn {
-                  content
-                }
-                rightColumn {
-                  content
-                }
-              }
+            contentItems {
+              content
             }
           }
         }

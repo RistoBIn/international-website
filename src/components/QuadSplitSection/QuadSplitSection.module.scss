@@ -2,26 +2,19 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 30px;
 
-    .leftColumn.switchColumnsOnMobile {
-        grid-row: 2;
-    }
-    .rightColumn.switchColumnsOnMobile {
-        grid-row: 1;
-    }
-
-    @media only screen and (min-width: $tablet) {
-        grid-template-columns: 1fr 1fr;
-        .leftColumn, .rightColumn {
-            grid-row: 1 !important;
-            margin: auto;
-            margin-top: 0;
-            padding: 2rem;
+    .box {
+        & > * {
+            padding-bottom: 0 !important;
         }
-        .leftColumn {
-            padding-left: 0;
-            margin-left: 0;
+        .content {
+            background-color: transparent;
         }
     }
+
+    // @media only screen and (min-width: $tablet) {
+
+    // }
 }

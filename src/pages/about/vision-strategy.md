@@ -54,32 +54,27 @@ secondarySplitSection:
 tertiarySplitSection:
   left:
     content: >-
-      ## Some of the Unfair<br />Competitive Advantages<br/> of SEALAB
+      ## Some of the Unfair Competitive Advantages of SEALAB
   right:
-    primaryQuadSplitSection:
-      topRow:
-        leftColumn:
-          content: >-
-            #### Unfair advantage
-            <br />
-            
-            We have developed an unfair advantage that hurts our opponents so badly that they have to submit— and yells “Back off” to others stepping into the cage
-        rightColumn:
-          content: >-
-            #### Development of smart algorithms
+    contentItems:
+      - content: >-
+          #### Unfair advantage
 
-            We know our rivals, down to each tattoo and have done the right prep work to take down any opponent until we hit the exit. Beta testing and close collaboration with our customers. Additionally, we gather data to continue the development of smart algorithms and software packages.
-      bottomRow:
-        leftColumn:
-          content: >-
-            #### New sensors and software
+          We have developed an unfair advantage that hurts our opponents so badly that they have to submit— and yells “Back off” to others stepping into the cage
+      - content: >-
+          #### Development of smart algorithms
 
-            We’ve nailed the timing and have the self-control to think strategically enough to build a great product. SEALAB have the right momentum to launch another sensor and software package as soon as we reach the next funding milestone.
-        rightColumn:
-          content: >-
-            #### Entrepreneurial stamina
+          We know our rivals, down to each tattoo and have done the right prep work to take down any opponent until we hit the exit. Beta testing and close collaboration with our customers. Additionally, we gather data to continue the development of smart algorithms and software packages.
+      - content: >-
+          #### New sensors and software
 
-            We *get* that the clock is ticking and understand the urgency to make real progress fast. Our entrepreneurial stamina and endurance prove that we will be alive next year.
+          We’ve nailed the timing and have the self-control to think strategically enough to build a great product. SEALAB have the right momentum to launch another sensor and software package as soon as we reach the next funding milestone.
+      - content: >-
+          #### Entrepreneurial stamina
+
+          We *get* that the clock is ticking and understand the urgency to make real progress fast. Our entrepreneurial stamina and endurance prove that we will be alive next year.
+
+
   
 quaternarySplitSection:
   left:
