@@ -1,14 +1,16 @@
 ---
 templateKey: about-social-responsibility
-title: Corporate social responsibility
+title: Sustainability impact
 seoDescription: Social responsibility is important to SEALAB. Learn why.
-heading: Corporate social responsibility
+heading: Sustainability impact
 description: >-
-  SEALAB are focused on more than just digitization of the ocean space. We want
-  to ensure that everything we do is done in the right way, and ultimately leads
-  to positive change. We are focused on helping the industry to manage the ocean
-  space responsibly, thus laying the foundations for sustainable growth and
-  development.
+  SEALAB is dedicated to contributing to sustainable development, and
+  safeguarding the ocean space is integral to our vision of giving everyone the
+  opportunity to see under water. We are focused on helping industries manage
+  the ocean space responsibly, thus laying the foundations for sustainable
+  growth and development. Our corporate social responsibility standards cover
+  environmental, social and economic sustainability, proven through ISO 9001 and
+  ISO 14001 certifications. 
 featuredImages:
   - image: /img/un_goal_02.svg
   - image: /img/un_goal_08.svg
@@ -19,14 +21,19 @@ featuredImages:
 splitSection:
   left: '##  UN''s Sustainable Development Goals'
   right: >-
-    Safeguarding the ocean space is integral to our vision of giving everyone
-    the opportunity to see under water. SEALAB is therefore dedicated to
-    contributing to the UN's Sustainable Development Goals. 
+    The ocean space is a key resource for energy, food, minerals, leisure, and
+    transportation. It represents huge potential for value creation. Yet data
+    and knowledge about the ocean space is scarce, and concerns are rising over
+    its’ health and sustainability. SEALAB solutions are not just investments in
+    growth and economic sustainability, they provide a leap in data acquisition
+    and knowledge creation about human impact on the world’s largest ecosystems.
 
+
+    \
 
     In addition to the specific goal of sustainable management of sea life (SDG
     14), activities related to the sea make important contributions to other
-    areas, such as; food production (SDG 2), responsible consumption and
+    goals, such as; food security (SDG 2), responsible consumption and
     production (SDG 12), employment and economic growth (SDG 8), innovation and
     infrastructure (SDG 9) and climate action (SDG 13).
 threeColSection:
@@ -51,21 +58,23 @@ threeColSection:
     icon: /img/icon-CSR-3.svg
 splitSection2:
   left: >-
-    ## The three pillars of sustainability
-
-    The ocean space is a key resource for energy, food, minerals, leisure, and
-    transportation. It represents huge potential for value creation. Yet data
-    and knowledge about the ocean space is scarce, and concerns are rising over
-    its health and sustainability. 
+    ## Corporate Social Responsibility
 
 
-    SEALAB is therefor running a healthy business with a strong focus on the
-    environment, economy and the responsibility for our employees and society.
+    ### The three pillars of sustainability
+
+
+    SEALAB is focused on more than just digitization of the ocean space. We want
+    to ensure that everything we do is done in the right way, and ultimately
+    leads to positive change. SEALAB is therefore running a healthy business
+    with a strong focus on the environment, economy and the responsibility for
+    our employees and society.
 
 
 
 
     ### International Organization for Standardization
+
 
     SEALAB has chosen to follow the guidelines stated in ISO 9001: 2015 to
     demonstrate our ability to consistently provide products and services that
