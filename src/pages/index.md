@@ -15,7 +15,7 @@ centeredSection:
   heading: The Oceans Affect us all but Entering the Deep is not for Everyone.
   bgimage: /img/subsea-plant.jpg
   button:
-    path: /solutions/aquaculture
+    path: /solutions/
     text: See solutions
   description: >-
     SEALAB cameras and products can be used in many areas and industries, from
