@@ -136,11 +136,10 @@ export const AboutPageSecondaryTemplate = ({
         <div className="container">
           <CollapsibleList
             collapsibleItems={primaryCollapsibleList.listItems}
-            className="has-dark-background is-medium"
           />
         </div>
       </section>
-      <section className="has-dark-background is-medium vision-strategy">
+      <section className="section has-dark-background vision-strategy">
         <div className="container">
           <figure className="figure">
             <Img
@@ -230,7 +229,7 @@ export const pageQuery = graphql`
         seoDescription
         featuredimage {
           childImageSharp {
-            fluid(maxHeight: 600) {
+            fluid(maxHeight: 600, quality: 80) {
               ...GatsbyImageSharpFluid_noBase64
               presentationWidth
             }
@@ -250,7 +249,7 @@ export const pageQuery = graphql`
         primaryCenteredImageSection {
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 600) {
+              fluid(maxHeight: 600, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
@@ -293,7 +292,7 @@ export const pageQuery = graphql`
         secondaryCenteredImageSection {
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 600) {
+              fluid(maxHeight: 600, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
