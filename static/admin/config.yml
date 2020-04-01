@@ -211,8 +211,8 @@ collections:
                 widget: "object"
                 required: false
                 fields:
-                  - {label: Title, name: text, widget: string}
-                  - {label: Link path, name: path, widget: string}
+                  - {label: Title, name: text, widget: string, required: false}
+                  - {label: Link path, name: path, widget: string, required: false}
           - {label: "Image", name: "featuredimage", widget: image }
 
 #### PROJECT PAGE TEMPLATE 1 ####
