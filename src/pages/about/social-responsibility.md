@@ -46,7 +46,7 @@ threeColSection:
 
       Over three billion people depend on marine and coastal biodiversity for
       their livelihoods.
-    icon: /img/icon-CSR-2.svg
+    icon: /img/global-population.svg
   - description: >-
       ### 3/4 of Earth surface
 
