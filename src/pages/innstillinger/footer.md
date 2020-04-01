@@ -1,7 +1,5 @@
 ---
 mainNavigation:
-  - path: /
-    title: Home
   - path: /solutions/atlantic-salmon-and-seafood/
     title: Atlantic Salmon and Seafood
   - path: /solutions/military-and-defense/
