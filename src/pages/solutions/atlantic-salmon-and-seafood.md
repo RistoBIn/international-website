@@ -29,7 +29,7 @@ splitSections:
       cage. All of this helps to reduce losses and can provide a better survival
       rate. The economic benefits are increased at the farms while managing to
       reduce the environmental damage caused by salmon feeding.
-    heading: 'Measuring stress, better lining regime, and the entire state of the cage'
+    heading: 'Measuring Stress, Better Lining Regime, and the Entire State of the Cage'
   - content: >-
       ## Fish Industry and Processing
 
@@ -63,11 +63,11 @@ splitSections:
 
 
       ***We give everyone the opportunity to see under water.***
-    heading: Full traceability throughout the entire production process
-    subheading: 'With data collection, we provide'
+    heading: Full Traceability Throughout the Entire Production Process
+    subheading: 'With Data Collection, we Provide'
 imageSection:
   featuredimage: /img/AdobeStock_135310009.jpeg
-  left: '### Seafood Production in the ocean'
+  left: '### Seafood Production in the Ocean'
   right: >-
     All over the world, seafood is produced. From Atlantic salmon to whitefish,
     clams, shellfish production, shrimp farming and catching and cultivation of
@@ -75,9 +75,9 @@ imageSection:
     aquaculture industry will be able to be used worldwide with simple
     adaptations.
 splitSection:
-  heading: Land based Fish Farming
+  heading: Land Based Fish Farming
   left: >-
-    ### For a sustainable future
+    ### For a Sustainable Future
 
 
     Globally land-based aquaculture facilities are increasingly being considered
@@ -92,7 +92,7 @@ splitSection:
     This is where better sensorics and computer vision from SEALAB come into
     play
   right: >-
-    ### Setting a new standard
+    ### Setting a new Standard
 
 
     Companies who seek new ways to make its facility as energy efficient and
