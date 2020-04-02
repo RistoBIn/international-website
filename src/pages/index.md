@@ -45,7 +45,9 @@ itemsSection:
   button:
     path: /solutions/
     text: Show all solutions
-  heading: Multiple Applications in Numerous Industries
+  heading: >-
+    We believe we are able to develop and deploy our technology to several
+    verticals such as
   items:
     - featuredimage: /img/AdobeStock_187277566.jpeg
       heading: Harbor Surveillance

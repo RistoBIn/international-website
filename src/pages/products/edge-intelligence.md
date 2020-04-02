@@ -1,7 +1,7 @@
 ---
 templateKey: product-page-primary
 title: Edge intelligence
-heading: SEALAB`s Edge Computing will power the Ocean Space. Anywhere. Anytime.
+heading: SEALAB's Edge Computing will power the Ocean Space. Anywhere. Anytime.
 seoDescription: >-
   Edge computing is a crucial part of the 5G platform and provides a first-mover
   advantage for communication service providers in grabbing new business
