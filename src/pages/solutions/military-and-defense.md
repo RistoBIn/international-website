@@ -2,12 +2,14 @@
 templateKey: solution-page-secondary
 title: Military & Defense
 seoDescription: >-
-  SEALAB is in an AI arms race. It’s happening in industry, and the big five
-  Internet companies are pursuing this heavily.
+  With underwater computer vision from SEALAB you can compare camera images with
+  photographic databases. In each case, human operators — not machines — make
+  final judgments before anyone takes action.
 heading: Military & Defense
 description: >-
-  SEALAB is in an AI arms race. It’s happening in industry, and the big five
-  Internet companies are pursuing this heavily.
+  With underwater computer vision from SEALAB you can compare camera images with
+  photographic databases. In each case, human operators — not machines — make
+  final judgments before anyone takes action.
 featuredimage: /img/AdobeStock_4649419.jpeg
 splitSections:
   - content: >-

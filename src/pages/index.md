@@ -44,10 +44,8 @@ quotes:
 itemsSection:
   button:
     path: /solutions/
-    text: Show all solutions
-  heading: >-
-    We believe we are able to develop and deploy our technology to several
-    verticals such as
+    text: Show all industries
+  heading: We are able to develop and deploy our technology to several industries
   items:
     - featuredimage: /img/AdobeStock_187277566.jpeg
       heading: Harbor Surveillance

@@ -1,8 +1,10 @@
 ---
 templateKey: product-page-secondary
-title: IoT Bridge
-heading: IoT Bridge
-seoDescription: SEALAB software platform.
+title: "BlueThink |\_Internet of Things"
+heading: BlueThink IoT Bridge
+seoDescription: >-
+  The world, and especially the IT industry, is rapidly changing. We know this.
+  That's why SEALAB has developed a software platform that supports IoT.
 description: >-
   The world, and especially the IT industry, is rapidly changing and if
   businesses do not have the ability to adapt to the changes, they will easily
@@ -33,10 +35,10 @@ sectionThree:
   backgroundImage: /img/zigzagLines.svg
   featuredimage: /img/IoTKeyFeatures.svg
 sectionFour:
-  featuredimage: /img/fieldIllustrationWithGrid.jpg
   button:
     path: /solutions/atlantic-salmon-and-seafood/
     text: Norwegian Aquaculture
+  featuredimage: /img/fieldIllustrationWithGrid.jpg
   heading: BlueThink and IoT in the aquaculture industry
   right: >-
     The Internet of Things is about all the things around us being connected to
@@ -52,33 +54,32 @@ sectionFour:
     environmental sensors, Winches, Service Tablets, Control Rooms and more.
 alternatingSections:
   - button:
-        path: /projects/5G-heart/
-        text: 5G HEART
+      path: /projects/5G-heart/
+      text: 5G HEART
     description: >-
       ## IoT on 5G
 
-      The new 5G network is on everyone’s minds these days, and for good
-      reason. Not only will 5G improve how we use and communicate with
-      technology, it will also change how various technologies communicate
-      with one another.
+      The new 5G network is on everyone’s minds these days, and for good reason.
+      Not only will 5G improve how we use and communicate with technology, it
+      will also change how various technologies communicate with one another.
 
 
-      Read more about how SEALAB contributes to develop new 5G solutions
-      through 5G-HEART, a project founded by the European Union’s Horizon 2020
-      research and innovation programme.
+      Read more about how SEALAB contributes to develop new 5G solutions through
+      5G-HEART, a project founded by the European Union’s Horizon 2020 research
+      and innovation programme.
     featuredimage: /img/IoT5icons.svg
   - description: >-
-        ### A bridge between the physical and the digital world
+      ### A bridge between the physical and the digital world
 
-        ## The Digital twin
+      ## The Digital twin
 
-        The digitalization of the ocean space has come so far that the living
-        conditions for digital twins are present in several industries.
+      The digitalization of the ocean space has come so far that the living
+      conditions for digital twins are present in several industries.
 
-        BlueThink is designed to support this technology. This said based on the
-        amount of data the platform is able to collect using from sensors (IoT),
-        it’s ability to process large amounts of data (AI) and extract lessons
-        from these huge amounts of data (Machine Learning).
+      BlueThink is designed to support this technology. This said based on the
+      amount of data the platform is able to collect using from sensors (IoT),
+      it’s ability to process large amounts of data (AI) and extract lessons
+      from these huge amounts of data (Machine Learning).
     featuredimage: /img/digitalOilPlatform.png
 ---
 

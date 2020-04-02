@@ -9,7 +9,9 @@ description: >-
   goal. We are willing to invest time and resources to develop such a
   partnership. A desirable relationship could be mutually dependent and
   beneficial to us, to our partners and our customers.
-seoDescription: Partnership
+seoDescription: >-
+  Our partnership philosophy is simple - if entering a partnership creates a
+  better and easier experience for our customers, we will do it.
 featuredimage: /img/Sealab.jpg
 ---
 ## Our system is open to third parties

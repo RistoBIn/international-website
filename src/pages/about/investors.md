@@ -9,7 +9,10 @@ description: >
   software development expertise and technology services. This has led to an
   Effective business model that commercializes the combination of SEALAB
   software, hardware and third-party Apps.
-seoDescription: Investors
+seoDescription: >-
+  SEALAB is in the sweet spot where Profitability meets Technology. The
+  company’s specialized Software and Hardware competence creates high-impact
+  delivery of new smart sensors for Ocean Space.
 featuredimage: /img/Developing Cameras.PNG
 ---
 Software from others are going to provide a 30% revenue share and unique competitive advantage in service delivery. Third party developers accelerate service delivery and open new markets worldwide These Apps give SEALAB a competitive edge in service delivery & drives the Blue Economy.
