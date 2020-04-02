@@ -262,13 +262,13 @@ collections:
               - {label: "Centered image", name: "featuredimage", widget: image }
               - {label: "Left Title", name: "heading", widget: "string", hint: "Aligned left."}
               - label: "Left Button"
-                    name: "button"
-                    widget: "object"
-                    hint: "Aligned left."
-                    required: false
-                    fields:
-                      - {label: Title, name: text, required: false, widget: string}
-                      - {label: Link path, name: path, required: false, widget: string}
+                name: "button"
+                widget: "object"
+                hint: "Aligned left."
+                required: false
+                fields:
+                  - {label: Title, name: text, required: false, widget: string}
+                  - {label: Link path, name: path, required: false, widget: string}
               - label: "Right column"
                 name: "right"
                 widget: "markdown"
