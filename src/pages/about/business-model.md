@@ -11,7 +11,10 @@ description: >
   the company is directed and controlled – including the interaction between the
   CEO, who is responsible for day-to-day management, the Board of Directors,
   shareholders, regulators and other stakeholders.
-seoDescription: Business Model
+seoDescription: >-
+  Norwegian law and the company’s corporate governance framework determine the
+  duties of the various bodies within the company. They define and dictate how
+  the company is directed and controlled.
 featuredimage: /img/Founders at Work.jpg
 ---
 
