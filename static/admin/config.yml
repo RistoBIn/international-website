@@ -101,13 +101,13 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
   
 #### PRODUCT PAGE TEMPLATE 1 ####
-  - name: "product-pages"
-    label: "Product pages"
-    files:
-      - file: "src/pages/products/edge-intelligence.md"
-        label: "Edge intelligence"
-        name: "product-pages-primary"
-        fields:
+  # - name: "product-pages"
+  #   label: "Product pages"
+  #   files:
+  #     - file: "src/pages/products/edge-intelligence.md"
+  #       label: "Edge intelligence"
+  #       name: "product-pages-primary"
+  #       fields:
   - name: "product-pages-primary"
     label: "Products"
     folder: "src/pages/products/"
