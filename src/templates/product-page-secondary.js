@@ -82,11 +82,11 @@ export const ProductPageTemplate = ({
           image={sectionFour.featuredimage}
           leftColumn={
             <>
-              <h2>{sectionFour.left.heading}</h2>
+              <h2>{sectionFour.heading}</h2>
               <Button
                 className="is-primary"
-                text={sectionFour.left.button.text}
-                path={sectionFour.left.button.path}
+                text={sectionFour.button.text}
+                path={sectionFour.button.path}
               />
             </>
           }
@@ -181,13 +181,12 @@ export const pageQuery = graphql`
           }
         }
         sectionFour {
-          left {
-            heading
-            button {
-              path
-              text
-            }
+          heading
+          button {
+            path
+            text
           }
+
           right
           featuredimage {
             publicURL
@@ -201,13 +200,12 @@ export const pageQuery = graphql`
           }
         }
         alternatingSections {
-          content {
-            description
-            button {
-              text
-              path
-            }
+          description
+          button {
+            text
+            path
           }
+
           featuredimage {
             publicURL
             extension

@@ -81,32 +81,14 @@ collections:
             - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Content - left", name: "left", widget: "markdown", required: false }
             - {label: "Content - right", name: "right", widget: "markdown", required: false }
-            
-#### ABOUT PAGE TEMPLATE 1 ####
-
-  - name: "about-page-primary"
-    label: "About"
-    folder: "src/pages/about/"
-    create: true
-    description: "You can create/edit/delete About pages here. If you cannot find the page you're looking for, go to Regular pages.  New pages will be added at top-level of the pages, under www.sealab.blue/about/name-of-your-page/. Remember to also add link to the page in Navbar or Footer."
-    filter: {field: "templateKey", value: "about-page-primary"}
-    identifier_field: name
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-primary"}
-      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
-      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
-      - {label: "Description", name: "description", widget: "text", hint: "Text."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
-      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
-      - {label: "Content", name: "body", widget: "markdown"}
 
 #### PROJECT PAGE TEMPLATE 1 ####
 
   - name: "project-page-primary"
-    label: "Project Pages (Advanced)"
+    label: "Projects (Advanced)"
     folder: "src/pages/projects/"
     create: true
-    description: "This is the primary project page template. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
+    description: "This is the primary project page template. Include your key numbers here. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
     filter: {field: "templateKey", value: "project-page-primary"}
     identifier_field: projects-primary
     fields:
@@ -144,7 +126,7 @@ collections:
 #### PROJECT PAGE TEMPLATE 2 ####
 
   - name: "project-page-secondary"
-    label: "Project Page (Simple)"
+    label: "Projects (Simple)"
     folder: "src/pages/projects/"
     create: true
     description: "This is the secondary project page template, which only contains bare minimum content. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
@@ -167,19 +149,39 @@ collections:
           - {label: "Large image", name: "bgimage", widget: image }
           - {label: "Content", name: "content", widget: "markdown"}
 
+            
+#### ABOUT PAGE TEMPLATE 1 ####
+
+  - name: "about-page-primary"
+    label: "About pages (Simple)"
+    folder: "src/pages/about/"
+    create: true
+    description: "You can create/edit/delete About pages here. If you cannot find the page you're looking for, go to Regular pages.  New pages will be added at top-level of the pages, under www.sealab.blue/about/name-of-your-page/. Remember to also add link to the page in Navbar or Footer."
+    filter: {field: "templateKey", value: "about-page-primary"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page-primary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "text", hint: "Text."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
+      - {label: "Content", name: "body", widget: "markdown"}
+
+
 #### SIMPLE PAGES ####
 
   - name: "simple-pages"
-    label: "Simple text pages"
+    label: "Simple pages"
     folder: "src/pages/"
     create: true
-    description: "These are simple pages with pure content. Create as many you'd like. They will be added at top-level of the pages: sealab.blue/name-of-your-page/"
+    description: "These are simple pages with pure content. Create as many you'd like. They will be added at top-level of the pages: sealab.blue/name-of-your-page/. Fields: heading and content"
     filter: {field: "templateKey", value: "simple-page"}
     identifier_field: name
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
       - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "Content", name: "body", widget: "markdown"}
 
   
@@ -275,21 +277,19 @@ collections:
           - label: "Alternating sections"
             name: "alternatingSections"
             widget: "list"
+            hint: "Images and text are mirrored on each section, for more dynamic look. Split in two"
             required: false
             fields:
-              - label: "Content"
-                name: "content"
+              - {label: "Content text", name: "description", widget: "markdown", hint: "Every other section is left and right"}
+              - label: "Content Button"
+                name: "button"
+                hint: "Is placed right under Content text"
                 widget: "object"
+                required: false
                 fields:
-                  - {label: "Content text", name: "description", widget: "markdown"}
-                  - label: "Button"
-                    name: "button"
-                    widget: "object"
-                    required: false
-                    fields:
-                      - {label: Title, name: text, widget: string, required: false}
-                      - {label: Link path, name: path, widget: string, required: false}
-              - {label: "Image", name: "featuredimage", widget: image }
+                  - {label: Title, name: text, widget: string, required: false}
+                  - {label: Link path, name: path, widget: string, required: false}
+              - {label: "Image", name: "featuredimage", widget: image, hint: "Is horizontal aligned with content" }
 
 
 #### SETTINGS ####

@@ -34,11 +34,10 @@ sectionThree:
   featuredimage: /img/IoTKeyFeatures.svg
 sectionFour:
   featuredimage: /img/fieldIllustrationWithGrid.jpg
-  left:
-    button:
-      path: /solutions/atlantic-salmon-and-seafood/
-      text: Norwegian Aquaculture
-    heading: BlueThink and IoT in the aquaculture industry
+  button:
+    path: /solutions/atlantic-salmon-and-seafood/
+    text: Norwegian Aquaculture
+  heading: BlueThink and IoT in the aquaculture industry
   right: >-
     The Internet of Things is about all the things around us being connected to
     the internet. When things are connected to the network, they can connect,
@@ -52,25 +51,23 @@ sectionFour:
     through the Internet of Things; Underwater Cameras, Underwater lights,
     environmental sensors, Winches, Service Tablets, Control Rooms and more.
 alternatingSections:
-  - content:
-      button:
+  - button:
         path: /projects/5G-heart/
         text: 5G HEART
-      description: >-
-        ## IoT on 5G
+    description: >-
+      ## IoT on 5G
 
-        The new 5G network is on everyone’s minds these days, and for good
-        reason. Not only will 5G improve how we use and communicate with
-        technology, it will also change how various technologies communicate
-        with one another.
+      The new 5G network is on everyone’s minds these days, and for good
+      reason. Not only will 5G improve how we use and communicate with
+      technology, it will also change how various technologies communicate
+      with one another.
 
 
-        Read more about how SEALAB contributes to develop new 5G solutions
-        through 5G-HEART, a project founded by the European Union’s Horizon 2020
-        research and innovation programme.
+      Read more about how SEALAB contributes to develop new 5G solutions
+      through 5G-HEART, a project founded by the European Union’s Horizon 2020
+      research and innovation programme.
     featuredimage: /img/IoT5icons.svg
-  - content:
-      description: >-
+  - description: >-
         ### A bridge between the physical and the digital world
 
         ## The Digital twin

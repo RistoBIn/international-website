@@ -13,7 +13,7 @@ const SectionListAlternating = ({ sections, id, className }) => {
   if (
     !sections ||
     sections.length < 1 ||
-    !sections[0].content ||
+    !sections[0].description ||
     !sections[0].featuredimage
   )
     return <></>; // featuredimage and content is required
@@ -31,8 +31,8 @@ const SectionListAlternating = ({ sections, id, className }) => {
             <div className="container">
               <div className={styles.wrapper}>
                 <ContentColumn
-                  content={item.content.description}
-                  button={item.content.button}
+                  content={item.description}
+                  button={item.button}
                 />
                 <NonStretchedImage
                   objectFit="contain"
