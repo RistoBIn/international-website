@@ -9,7 +9,13 @@ description: >-
   conditions at sea. Realizing this, the Ocean Space Center was established in
   2018, located about 25 miles west of the Norwegian coastline among the rocky
   islands of Froan.
-seoDescription: Ocean Space Center
+seoDescription: >-
+  When the waves come crashing in, the wind is blowing and the salt starts
+  eating away at your hardware, no simulation will ever come close to the real
+  thing. There’s simply no substitution for the unpredictable, ruthless
+  conditions at sea. Realizing this, the Ocean Space Center was established in
+  2018, located about 25 miles west of the Norwegian coastline among the rocky
+  islands of Froan.
 featuredimage: /img/SEALAB_OSC_Quintus_at_night.png
 ---
 
