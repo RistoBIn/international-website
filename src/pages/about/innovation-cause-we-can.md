@@ -1,7 +1,7 @@
 ---
 templateKey: about-page-primary
-title: 'Innovation Cause we can '
-heading: 'Innovation ‘Cause we can '
+title: 'Innovation Cause we Can '
+heading: 'Innovation ‘Cause we Can '
 description: >-
   Excellence is what differentiates us. We craft pioneering solutions that drive
   value, increase efficiency, and allow our customers to succeed in an
