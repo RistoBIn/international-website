@@ -2,7 +2,9 @@
 templateKey: product-page-secondary
 title: BlueThink IoT Bridge
 heading: BlueThink IoT Bridge
-seoDescription: SEALAB software platform.
+seoDescription: >-
+  The world, and especially the IT industry, is rapidly changing. We know this.
+  That's why SEALAB has developed a software platform that supports IoT.
 description: >-
   The world, and especially the IT industry, is rapidly changing and if
   businesses do not have the ability to adapt to the changes, they will easily
