@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children, seoTitle, seoDescription }) => {
   return (
     <div>
       <Helmet>
-        <html lang="no" />
+        <html lang="en" />
         <title>{seoTitle || title}</title>
         <link
           rel="apple-touch-icon"
