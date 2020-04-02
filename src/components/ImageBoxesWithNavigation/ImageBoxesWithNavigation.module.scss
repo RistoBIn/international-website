@@ -8,6 +8,8 @@
   "cta"
   "carousel"
   "navigation";
+  padding-top: 30px;
+
   .container {
     display: contents !important;
   }
@@ -19,7 +21,6 @@
   }
   .heading {
     grid-area: heading;
-    max-width: 320px;
     font-weight: 500;
     text-align: center;
     margin: auto;
@@ -38,16 +39,16 @@
   @media only screen and (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "heading ..."
+    "heading heading"
     "cta navigation"
     "carousel carousel";
+    padding-top: unset;
     .cta {
       grid-area: cta;
       max-height: 52px;
       margin: 0;
     }
     .heading {
-      max-width: 510px;
       text-align: left;
       margin: 0;
     }
