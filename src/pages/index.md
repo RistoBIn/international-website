@@ -12,7 +12,7 @@ items:
   - description: Billion USD required yearly to sustain the ocean
     heading: '21'
 centeredSection:
-  heading: The Oceans Affect us all but Entering the Deep is not for Everyone
+  heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
   bgimage: /img/subsea-plant.jpg
   button:
     path: /solutions/
@@ -20,7 +20,7 @@ centeredSection:
   description: >-
     SEALAB cameras and products can be used in many areas and industries, from
     seafood factories to military underwater diving operations.
-  subheading: Deep Sea and Marine Applications
+  subheading: Deep Sea & Marine Applications
 productSection:
   description: >-
     Superfast FPGA technology together with smart 2D and 3D cameras will change
@@ -49,25 +49,25 @@ itemsSection:
       heading: Harbor Surveillance
       path: /solutions/harbor-surveillance/
     - featuredimage: /img/IMG_0539_Adjusted.jpg
-      heading: Atlantic Salmon and Seafood
+      heading: Atlantic Salmon & Seafood
       path: /solutions/atlantic-salmon-and-seafood/
     - featuredimage: /img/AdobeStock_180592840.jpeg
-      heading: Underwater Drones and Robotics
+      heading: Underwater Drones & Robotics
       path: /solutions/underwater-drones-and-robotics/
     - featuredimage: /img/AdobeStock_114071575.jpeg
-      heading: Schools and Universities
+      heading: Schools & Universities
       path: /solutions/schools-and-universities/
     - featuredimage: /img/AdobeStock_294165529.jpeg
-      heading: Science Arctic and Antarctic Surveillance
+      heading: Science Arctic & Antarctic Surveillance
       path: /solutions/science-arctic-and-antarctic-surveillance/
     - featuredimage: /img/AdobeStock_177426726.jpeg
-      heading: Oil and Gas Industry
+      heading: Oil & Gas Industry
       path: /solutions/oil-gas-industry/
     - featuredimage: /img/AdobeStock_4649419.jpeg
       heading: Military & Defense
       path: /solutions/military-and-defense/
     - featuredimage: /img/AdobeStock_205257493.jpeg
-      heading: Well and Fishing Boats
+      heading: Well & Fishing Boats
       path: /solutions/well-and-fishing-boats/
     - featuredimage: /img/AdobeStock_245001526.jpeg
       heading: Seabed Mining
@@ -76,10 +76,10 @@ itemsSection:
       heading: Environmental Monitoring
       path: /solutions/environmental-monitoring/
     - featuredimage: /img/AdobeStock_232721946.jpeg
-      heading: Bridge and Watercourse Monitoring
+      heading: Bridge & Watercourse Monitoring
       path: /solutions/bridge-and-watercourse-monitoring/
     - featuredimage: /img/AdobeStock_224942592.jpeg
-      heading: River and Wildlife monitoring
+      heading: River & Wildlife monitoring
       path: /solutions/river-and-wildlife-monitoring/
     - featuredimage: /img/AdobeStock_59878462.jpeg
       heading: Hydropower Plants
