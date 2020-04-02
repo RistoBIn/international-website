@@ -28,7 +28,7 @@ const Footer = ({
             <div className="columns is-multiline">
               <List title="Solutions" navigationItems={mainNavigation} />
               <List title="Products" navigationItems={secondaryNavigation} />
-              <List title="Project" navigationItems={thirdNavigation} />
+              <List title="Projects" navigationItems={thirdNavigation} />
               <List title="About" navigationItems={fourthNavigation} />
             </div>
           </section>

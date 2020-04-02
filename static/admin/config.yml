@@ -19,7 +19,7 @@ collections:
     label_singular: 'Industry (Short)'
     folder: "src/pages/solutions/"
     create: true
-    description: "You can create/edit/delete Industries here. This is the short version. "
+    description: "You can create/edit/delete Industries here. This is the short version. New pages will be added at top-level of the pages, under www.sealab.blue/solutions/name-of-your-page/. Remember to also add link to the page in Navbar or Footer. "
     filter: {field: "templateKey", value: "solution-page-secondary"}
     identifier_field: name
     fields:
@@ -88,7 +88,7 @@ collections:
     label: "About"
     folder: "src/pages/about/"
     create: true
-    description: "You can create/edit/delete About pages here. If you cannot find the page you're looking for, go to Regular pages"
+    description: "You can create/edit/delete About pages here. If you cannot find the page you're looking for, go to Regular pages.  New pages will be added at top-level of the pages, under www.sealab.blue/about/name-of-your-page/. Remember to also add link to the page in Navbar or Footer."
     filter: {field: "templateKey", value: "about-page-primary"}
     identifier_field: name
     fields:
@@ -111,7 +111,7 @@ collections:
   - name: "product-pages-primary"
     label: "Products"
     folder: "src/pages/products/"
-    description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence."
+    description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence. New pages will be added at top-level of the pages, under www.sealab.blue/products/name-of-your-page/"
     create: true
     filter: {field: "templateKey", value: "product-page-primary"}
     identifier_field: products-primary
@@ -291,7 +291,7 @@ collections:
     label: "Project Pages (Advanced)"
     folder: "src/pages/projects/"
     create: true
-    description: "This is the primary project page template."
+    description: "This is the primary project page template. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
     filter: {field: "templateKey", value: "project-page-primary"}
     identifier_field: projects-primary
     fields:
@@ -358,7 +358,7 @@ collections:
     label: "Simple text pages"
     folder: "src/pages/"
     create: true
-    description: "Dette er enkle tekst sider, som vi kan lage flere av. Inneholder kun tittel og en tekst-editor."
+    description: "These are simple pages with pure content. Create as many you'd like. They will be added at top-level of the pages."
     filter: {field: "templateKey", value: "simple-page"}
     identifier_field: name
     fields:
