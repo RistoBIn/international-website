@@ -1,15 +1,15 @@
 ---
 mainNavigation:
   - path: /solutions/atlantic-salmon-and-seafood/
-    title: Atlantic Salmon and Seafood
+    title: Atlantic Salmon & Seafood
   - path: /solutions/military-and-defense/
     title: Military & Defense
   - path: /solutions/schools-and-universities/
-    title: Schools and Universities
+    title: Schools & Universities
   - path: /solutions/science-arctic-and-antarctic-surveillance/
-    title: Science Arctic and Antarctic Surveillance
+    title: Science Arctic & Antarctic Surveillance
   - path: /solutions/well-and-fishing-boats/
-    title: Well and Fishing Boats
+    title: Well & Fishing Boats
   - path: /solutions/seabed-mining/
     title: Seabed Mining
   - path: /solutions/environmental-monitoring/
@@ -17,13 +17,13 @@ mainNavigation:
   - path: /solutions/harbor-surveillance/
     title: Harbor Surveillance
   - path: /solutions/oil-gas-industry/
-    title: Oil and Gas Industry
+    title: Oil & Gas Industry
   - path: /solutions/underwater-drones-and-robotics/
-    title: Underwater Drones and Robotics
+    title: Underwater Drones & Robotics
   - path: /solutions/bridge-and-watercourse-monitoring/
-    title: Bridge and Watercourse Monitoring
+    title: Bridge & Watercourse Monitoring
   - path: /solutions/river-and-wildlife-monitoring/
-    title: River and Wildlife Monitoring
+    title: River & Wildlife Monitoring
   - path: /solutions/hydropower-plants/
     title: Hydropower Plants
 secondaryNavigation:
@@ -46,7 +46,7 @@ fourthNavigation:
   - path: /business-model
     title: Business Model
   - path: /about/innovation-cause-we-can/
-    title: Innovation ‘cause we can
+    title: Innovation ‘Cause We Can
   - path: /about/sealab-osc
     title: Ocean Space Center
   - path: /social-responsibility
