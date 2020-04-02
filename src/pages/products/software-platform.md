@@ -1,6 +1,6 @@
 ---
 templateKey: product-page-secondary
-title: BlueThink IoT Bridge
+title: "BlueThink |\_Internet of Things"
 heading: BlueThink IoT Bridge
 seoDescription: >-
   The world, and especially the IT industry, is rapidly changing. We know this.
