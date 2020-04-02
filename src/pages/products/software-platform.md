@@ -82,6 +82,6 @@ alternatingSections:
         amount of data the platform is able to collect using from sensors (IoT),
         it’s ability to process large amounts of data (AI) and extract lessons
         from these huge amounts of data (Machine Learning).
-    featuredimage: /img/digital-twin.jpg
+    featuredimage: /img/digitalOilPlatform.png
 ---
 
