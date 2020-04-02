@@ -39,7 +39,7 @@ thirdNavigation:
   - path: /projects/clean-ocean-initiative
     title: Clean Ocean Initiative
 fourthNavigation:
-  - path: /vision-strategy
+  - path: /about/vision-strategy/
     title: Vision & Strategy
   - path: /leadership
     title: Leadership
