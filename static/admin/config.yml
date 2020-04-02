@@ -13,12 +13,13 @@ display_url:  https://sealab-com.netlify.com
 
 collections:
 
-#### SOLUTION PAGES TEMPLATE SECONDARY ####
+#### SOLUTION PAGES TEMPLATES ####
   - name: "solution-page-secondary"
-    label: "Industries pages - Short"
+    label: "Industries (Short)"
+    label_singular: 'Industry (Short)'
     folder: "src/pages/solutions/"
     create: true
-    description: "This is a solution page. Also known as industries and markets."
+    description: "You can create/edit/delete Industries here. This is the short version. "
     filter: {field: "templateKey", value: "solution-page-secondary"}
     identifier_field: name
     fields:
@@ -40,13 +41,12 @@ collections:
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
       - {label: "Content", name: "body", widget: "markdown", required: false,}
 
-#### SOLUTION PAGES TEMPLATE 1 ####
-
   - name: "solution-page-primary"
-    label: "Industries pages - Long"
+    label: "Industries (Long)"
+    label_singular: 'Industry (Long)'
     folder: "src/pages/solutions/"
     create: true
-    description: "This is a solution page. Also known as industries and markets."
+    description: "You can create/edit/delete Industries here. This is the long version where you also can add large image in last section."
     filter: {field: "templateKey", value: "solution-page-primary"}
     identifier_field: name
     fields:
@@ -85,10 +85,10 @@ collections:
 #### ABOUT PAGE TEMPLATE 1 ####
 
   - name: "about-page-primary"
-    label: "About Pages"
+    label: "About"
     folder: "src/pages/about/"
     create: true
-    description: "This is a about page template."
+    description: "You can create/edit/delete About pages here. If you cannot find the page you're looking for, go to Regular pages"
     filter: {field: "templateKey", value: "about-page-primary"}
     identifier_field: name
     fields:
@@ -101,12 +101,18 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
   
 #### PRODUCT PAGE TEMPLATE 1 ####
-
+  - name: "product-pages"
+    label: "Product pages"
+    files:
+      - file: "src/pages/products/edge-intelligence.md"
+        label: "Edge intelligence"
+        name: "product-pages-primary"
+        fields:
   - name: "product-pages-primary"
-    label: "Product Page 1"
+    label: "Products"
     folder: "src/pages/products/"
+    description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence."
     create: true
-    description: "This is the primary product page template."
     filter: {field: "templateKey", value: "product-page-primary"}
     identifier_field: products-primary
     fields:
@@ -144,77 +150,140 @@ collections:
         fields:
           - {label: "Left image", name: "featuredimage", widget: image }
           - {label: "Right content", name: "content", widget: "markdown"}
-
-#### PRODUCT PAGE TEMPLATE 2 ####
-
-  - name: "product-pages-secondary"
-    label: "Product pages 2"
-    folder: "src/pages/products/"
-    create: true
-    description: "This is the secondary product page template."
-    filter: {field: "templateKey", value: "product-page-secondary"}
-    identifier_field: products-secondary
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-secondary"}
-      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
-      - {label: "Description", name: "description", widget: "text"}
-      - label: "Section 1"
-        name: "sectionOne"
-        widget: "object"
-        required: false
+    files:
+      - file: "src/pages/products/software-platform.md"
+        label: "BlueThink Bridge"
+        name: "product-pages-secondary"
         fields:
-          - {label: "Content - left", name: "left", widget: "markdown"}
-          - {label: "Illustration figure", name: "featuredimage", widget: image }
-          - {label: "Content - right", name: "right", widget: "markdown"}
-      - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
-      - label: "Section 3"
-        name: "sectionThree"
-        widget: "object"
-        required: false
-        fields:
-          - {label: "Illustration background", name: "backgroundImage", widget: image }
-          - {label: "Illustration figure", name: "featuredimage", widget: image }
-      - label: "Section 4"
-        name: "sectionFour"
-        widget: "object"
-        required: false
-        fields:
-          - {label: "Centered image", name: "featuredimage", widget: image }
-          - label: "Left colomn"
-            name: "left"
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-secondary"}
+          - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+          - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Section 1"
+            name: "sectionOne"
             widget: "object"
+            required: false
             fields:
-              - {label: "Title", name: "heading", widget: "string"}
-              - label: "Button"
-                name: "button"
-                widget: "object"
-                required: false
-                fields:
-                  - {label: Title, name: text, widget: string}
-                  - {label: Link path, name: path, widget: string}
-          - label: "Right colomn"
-            name: "right"
-            widget: "markdown"
-      - label: "Alternating sections"
-        name: "alternatingSections"
-        widget: "list"
-        required: false
-        fields:
-          - label: "Content"
-            name: "content"
+              - {label: "Content - left", name: "left", widget: "markdown"}
+              - {label: "Illustration figure", name: "featuredimage", widget: image }
+              - {label: "Content - right", name: "right", widget: "markdown"}
+          - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
+          - label: "Section 3"
+            name: "sectionThree"
             widget: "object"
+            required: false
             fields:
-              - {label: "Content text", name: "description", widget: "markdown"}
-              - label: "Button"
-                name: "button"
+              - {label: "Illustration background", name: "backgroundImage", widget: image }
+              - {label: "Illustration figure", name: "featuredimage", widget: image }
+          - label: "Section 4"
+            name: "sectionFour"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Centered image", name: "featuredimage", widget: image }
+              - label: "Left column"
+                name: "left"
                 widget: "object"
-                required: false
                 fields:
-                  - {label: Title, name: text, widget: string, required: false}
-                  - {label: Link path, name: path, widget: string, required: false}
-          - {label: "Image", name: "featuredimage", widget: image }
+                  - {label: "Title", name: "heading", widget: "string"}
+                  - label: "Button"
+                    name: "button"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: Title, name: text, widget: string}
+                      - {label: Link path, name: path, widget: string}
+              - label: "Right column"
+                name: "right"
+                widget: "markdown"
+          - label: "Alternating sections"
+            name: "alternatingSections"
+            widget: "list"
+            required: false
+            fields:
+              - label: "Content"
+                name: "content"
+                widget: "object"
+                fields:
+                  - {label: "Content text", name: "description", widget: "markdown"}
+                  - label: "Button"
+                    name: "button"
+                    widget: "object"
+                    required: false
+                    fields:
+                      - {label: Title, name: text, widget: string, required: false}
+                      - {label: Link path, name: path, widget: string, required: false}
+              - {label: "Image", name: "featuredimage", widget: image }
+
+  # - name: "product-pages-secondary"
+  #   label: "Product pages 2"
+  #   folder: "src/pages/products/"
+  #   create: true
+  #   description: "This is the secondary product page template."
+  #   filter: {field: "templateKey", value: "product-page-secondary"}
+  #   identifier_field: products-secondary
+  #   fields:
+      # - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-secondary"}
+      # - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      # - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      # - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
+      # - {label: "Description", name: "description", widget: "text"}
+      # - label: "Section 1"
+      #   name: "sectionOne"
+      #   widget: "object"
+      #   required: false
+      #   fields:
+      #     - {label: "Content - left", name: "left", widget: "markdown"}
+      #     - {label: "Illustration figure", name: "featuredimage", widget: image }
+      #     - {label: "Content - right", name: "right", widget: "markdown"}
+      # - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
+      # - label: "Section 3"
+      #   name: "sectionThree"
+      #   widget: "object"
+      #   required: false
+      #   fields:
+      #     - {label: "Illustration background", name: "backgroundImage", widget: image }
+      #     - {label: "Illustration figure", name: "featuredimage", widget: image }
+      # - label: "Section 4"
+      #   name: "sectionFour"
+      #   widget: "object"
+      #   required: false
+      #   fields:
+      #     - {label: "Centered image", name: "featuredimage", widget: image }
+      #     - label: "Left column"
+      #       name: "left"
+      #       widget: "object"
+      #       fields:
+      #         - {label: "Title", name: "heading", widget: "string"}
+      #         - label: "Button"
+      #           name: "button"
+      #           widget: "object"
+      #           required: false
+      #           fields:
+      #             - {label: Title, name: text, widget: string}
+      #             - {label: Link path, name: path, widget: string}
+      #     - label: "Right column"
+      #       name: "right"
+      #       widget: "markdown"
+      # - label: "Alternating sections"
+      #   name: "alternatingSections"
+      #   widget: "list"
+      #   required: false
+      #   fields:
+      #     - label: "Content"
+      #       name: "content"
+      #       widget: "object"
+      #       fields:
+      #         - {label: "Content text", name: "description", widget: "markdown"}
+      #         - label: "Button"
+      #           name: "button"
+      #           widget: "object"
+      #           required: false
+      #           fields:
+      #             - {label: Title, name: text, widget: string, required: false}
+      #             - {label: Link path, name: path, widget: string, required: false}
+      #     - {label: "Image", name: "featuredimage", widget: image }
 
 #### PROJECT PAGE TEMPLATE 1 ####
 
