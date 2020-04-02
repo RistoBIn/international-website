@@ -99,58 +99,133 @@ collections:
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
       - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
       - {label: "Content", name: "body", widget: "markdown"}
-  
-#### PRODUCT PAGE TEMPLATE 1 ####
-  # - name: "product-pages"
-  #   label: "Product pages"
-  #   files:
-  #     - file: "src/pages/products/edge-intelligence.md"
-  #       label: "Edge intelligence"
-  #       name: "product-pages-primary"
-  #       fields:
-  - name: "product-pages-primary"
-    label: "Products"
-    folder: "src/pages/products/"
-    description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence. New pages will be added at top-level of the pages, under www.sealab.blue/products/name-of-your-page/"
+
+#### PROJECT PAGE TEMPLATE 1 ####
+
+  - name: "project-page-primary"
+    label: "Project Pages (Advanced)"
+    folder: "src/pages/projects/"
     create: true
-    filter: {field: "templateKey", value: "product-page-primary"}
-    identifier_field: products-primary
+    description: "This is the primary project page template. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
+    filter: {field: "templateKey", value: "project-page-primary"}
+    identifier_field: projects-primary
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-primary"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-primary"}
       - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
       - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
       - {label: "Description", name: "description", widget: "text"}
-      - label: Comparison
-        name: item1vsitem2
+      - {label: "Featured image", name: "featuredImage", widget: image }
+      - {label: "Featured image caption", name: "featuredImageCaption", widget: "text", required: false }
+      - label: "Key factors"
+        name: "keyFactors"
+        widget: "object"
+        fields:
+          - {label: "Key features heading", name: "heading", widget: "string", hint: "Dette er overskriften i key factors-boksen"}
+          - label: "Key features"
+            name: "factorItems"
+            widget: list
+            fields:
+              - {label: "Factor", name: "primaryInfo", widget: "text" }
+              - {label: "Factor description", name: "description", widget: "text" }
+      - {label: "Content", name: "body", widget: "markdown"}
+      - label: "Partners"
+        name: "partners"
+        widget: "object"
+        fields:
+          - {label: "Partners heading", name: "heading", widget: "string" }
+          - label: "Partners list"
+            name: "partnerItems"
+            widget: list
+            fields:
+              - {label: "Partner logo", name: "icon", widget: image }
+              - {label: "Partner description", name: "description", widget: "text", required: false }
+
+#### PROJECT PAGE TEMPLATE 2 ####
+
+  - name: "project-page-secondary"
+    label: "Project Page (Simple)"
+    folder: "src/pages/projects/"
+    create: true
+    description: "This is the secondary project page template, which only contains bare minimum content. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
+    filter: {field: "templateKey", value: "project-page-secondary"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-secondary"}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+      - {label: "Description", name: "description", widget: "text", hint: "Text."}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
+      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image.", required: false}
+      - {label: "Content", name: "body", widget: "markdown"}
+      - label: Inspirational section
+        name: splitSection
+        widget: object
         required: false
-        widget: object
-        fields:
-          - {label: "Heading", name: "heading", widget: "string"}
-          - {label: "Subheading", name: "subheading", widget: "string"}
-          - label: "Item 1"
-            name: item1
-            widget: object
-            fields:
-              - {label: "Comparison list", name: "items", widget: "list"}
-          - label: "Item 2"
-            name: item2
-            widget: object
-            fields:
-              - {label: "Comparison list", name: "items", widget: "list"}
+        fields: 
+          - {label: "Large image", name: "bgimage", widget: image }
+          - {label: "Content", name: "content", widget: "markdown"}
 
-      - {label: "First section image", name: "featuredimageSecondary", widget: image }
-      - {label: "First section content", name: "body", widget: "markdown"}
+#### SIMPLE PAGES ####
 
-      - {label: "Centered text", name: "centeredText", widget: "markdown"}
+  - name: "simple-pages"
+    label: "Simple text pages"
+    folder: "src/pages/"
+    create: true
+    description: "These are simple pages with pure content. Create as many you'd like. They will be added at top-level of the pages: sealab.blue/name-of-your-page/"
+    filter: {field: "templateKey", value: "simple-page"}
+    identifier_field: name
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+      - {label: "Content", name: "body", widget: "markdown"}
 
-      - label: "Last section"
-        widget: object
-        name: thirdSection
-        fields:
-          - {label: "Left image", name: "featuredimage", widget: image }
-          - {label: "Right content", name: "content", widget: "markdown"}
+  
+#### PRODUCT PAGE TEMPLATE 1 ####
+  - name: "product-pages-primary"
+    label: "Products"
+    description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence. New pages will be added at top-level of the pages, under www.sealab.blue/products/name-of-your-page/" 
     files:
+      - file: "src/pages/products/edge-intelligence.md"
+        label: "Edge Intelligence"
+        name: "product-pages-primary"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-primary"}
+          - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+          - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: Comparison
+            name: item1vsitem2
+            required: false
+            widget: object
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Subheading", name: "subheading", widget: "string"}
+              - label: "Item 1"
+                name: item1
+                widget: object
+                fields:
+                  - {label: "Comparison list", name: "items", widget: "list"}
+              - label: "Item 2"
+                name: item2
+                widget: object
+                fields:
+                  - {label: "Comparison list", name: "items", widget: "list"}
+
+          - {label: "First section image", name: "featuredimageSecondary", widget: image }
+          - {label: "First section content", name: "body", widget: "markdown"}
+
+          - {label: "Centered text", name: "centeredText", widget: "markdown"}
+
+          - label: "Last section"
+            widget: object
+            name: thirdSection
+            fields:
+              - {label: "Left image", name: "featuredimage", widget: image }
+              - {label: "Right content", name: "content", widget: "markdown"}
       - file: "src/pages/products/software-platform.md"
         label: "BlueThink Bridge"
         name: "product-pages-secondary"
@@ -216,156 +291,8 @@ collections:
                       - {label: Link path, name: path, widget: string, required: false}
               - {label: "Image", name: "featuredimage", widget: image }
 
-  # - name: "product-pages-secondary"
-  #   label: "Product pages 2"
-  #   folder: "src/pages/products/"
-  #   create: true
-  #   description: "This is the secondary product page template."
-  #   filter: {field: "templateKey", value: "product-page-secondary"}
-  #   identifier_field: products-secondary
-  #   fields:
-      # - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-secondary"}
-      # - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      # - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
-      # - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
-      # - {label: "Description", name: "description", widget: "text"}
-      # - label: "Section 1"
-      #   name: "sectionOne"
-      #   widget: "object"
-      #   required: false
-      #   fields:
-      #     - {label: "Content - left", name: "left", widget: "markdown"}
-      #     - {label: "Illustration figure", name: "featuredimage", widget: image }
-      #     - {label: "Content - right", name: "right", widget: "markdown"}
-      # - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
-      # - label: "Section 3"
-      #   name: "sectionThree"
-      #   widget: "object"
-      #   required: false
-      #   fields:
-      #     - {label: "Illustration background", name: "backgroundImage", widget: image }
-      #     - {label: "Illustration figure", name: "featuredimage", widget: image }
-      # - label: "Section 4"
-      #   name: "sectionFour"
-      #   widget: "object"
-      #   required: false
-      #   fields:
-      #     - {label: "Centered image", name: "featuredimage", widget: image }
-      #     - label: "Left column"
-      #       name: "left"
-      #       widget: "object"
-      #       fields:
-      #         - {label: "Title", name: "heading", widget: "string"}
-      #         - label: "Button"
-      #           name: "button"
-      #           widget: "object"
-      #           required: false
-      #           fields:
-      #             - {label: Title, name: text, widget: string}
-      #             - {label: Link path, name: path, widget: string}
-      #     - label: "Right column"
-      #       name: "right"
-      #       widget: "markdown"
-      # - label: "Alternating sections"
-      #   name: "alternatingSections"
-      #   widget: "list"
-      #   required: false
-      #   fields:
-      #     - label: "Content"
-      #       name: "content"
-      #       widget: "object"
-      #       fields:
-      #         - {label: "Content text", name: "description", widget: "markdown"}
-      #         - label: "Button"
-      #           name: "button"
-      #           widget: "object"
-      #           required: false
-      #           fields:
-      #             - {label: Title, name: text, widget: string, required: false}
-      #             - {label: Link path, name: path, widget: string, required: false}
-      #     - {label: "Image", name: "featuredimage", widget: image }
 
-#### PROJECT PAGE TEMPLATE 1 ####
-
-  - name: "project-page-primary"
-    label: "Project Pages (Advanced)"
-    folder: "src/pages/projects/"
-    create: true
-    description: "This is the primary project page template. New pages will be added at top-level of the pages, under www.sealab.blue/projects/name-of-your-page/"
-    filter: {field: "templateKey", value: "project-page-primary"}
-    identifier_field: projects-primary
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-primary"}
-      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured image", name: "featuredImage", widget: image }
-      - {label: "Featured image caption", name: "featuredImageCaption", widget: "text", required: false }
-      - label: "Key factors"
-        name: "keyFactors"
-        widget: "object"
-        fields:
-          - {label: "Key features heading", name: "heading", widget: "string", hint: "Dette er overskriften i key factors-boksen"}
-          - label: "Key features"
-            name: "factorItems"
-            widget: list
-            fields:
-              - {label: "Factor", name: "primaryInfo", widget: "text" }
-              - {label: "Factor description", name: "description", widget: "text" }
-      - {label: "Content", name: "body", widget: "markdown"}
-      - label: "Partners"
-        name: "partners"
-        widget: "object"
-        fields:
-          - {label: "Partners heading", name: "heading", widget: "string" }
-          - label: "Partners list"
-            name: "partnerItems"
-            widget: list
-            fields:
-              - {label: "Partner logo", name: "icon", widget: image }
-              - {label: "Partner description", name: "description", widget: "text", required: false }
-
-#### PROJECT PAGE TEMPLATE 2 ####
-
-  - name: "project-page-secondary"
-    label: "Project Page (Simple)"
-    folder: "src/pages/projects/"
-    create: true
-    description: "This is a project page template."
-    filter: {field: "templateKey", value: "project-page-secondary"}
-    identifier_field: name
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-secondary"}
-      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
-      - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
-      - {label: "Description", name: "description", widget: "text", hint: "Text."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
-      - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
-      - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image.", required: false}
-      - {label: "Content", name: "body", widget: "markdown"}
-      - label: Inspirational section
-        name: splitSection
-        widget: object
-        required: false
-        fields: 
-          - {label: "Large image", name: "bgimage", widget: image }
-          - {label: "Content", name: "content", widget: "markdown"}
-
-#### SIMPLE PAGES ####
-
-  - name: "simple-pages"
-    label: "Simple text pages"
-    folder: "src/pages/"
-    create: true
-    description: "These are simple pages with pure content. Create as many you'd like. They will be added at top-level of the pages."
-    filter: {field: "templateKey", value: "simple-page"}
-    identifier_field: name
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
-      - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-      - {label: "Description", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
-      - {label: "Content", name: "body", widget: "markdown"}
+#### SETTINGS ####
 
   - name: "settings"
     label: "Navigation & Footer"
@@ -697,7 +624,7 @@ collections:
           - {label: "Quote centered", name: "body", widget: "markdown", required: false}
 
       - file: "src/pages/about/partners.md"
-        label: "About Pages - Partners"
+        label: "About - Partners"
         name: "about-page-partners"
         description: "This is the template for the Partners page."
         fields:
