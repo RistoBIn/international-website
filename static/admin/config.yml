@@ -9,7 +9,7 @@ public_folder: /img
 logo_url: /img/sealab-blue.svg
 editor:
   preview: false
-display_url:  https://sealab-com.netlify.com
+display_url:  https://www.sealab.blue/
 
 collections:
 
