@@ -181,6 +181,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "simple-page"}
       - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
       - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
       - {label: "Content", name: "body", widget: "markdown"}
 
