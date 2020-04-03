@@ -3,12 +3,12 @@ templateKey: solution-page-secondary
 title: Military & Defense
 seoDescription: >-
   With underwater computer vision from SEALAB you can compare camera images with
-  photographic databases. In each case, human operators — not machines — make
+  photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
 heading: Military & Defense
 description: >-
   With underwater computer vision from SEALAB you can compare camera images with
-  photographic databases. In each case, human operators — not machines — make
+  photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
 featuredimage: /img/AdobeStock_4649419.jpeg
 splitSections:
