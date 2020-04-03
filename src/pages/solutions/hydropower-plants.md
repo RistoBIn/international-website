@@ -1,7 +1,12 @@
 ---
 templateKey: solution-page-primary
 title: Hydropower Plants
-seoDescription: Surveillance of A Hydroelectric Power Plant
+seoDescription: >-
+  Large systems, such as large manufacturing or power plants, telecommunication
+  or computer networks, require distributed control, monitoring and diagnosis. A
+  combination with AI and cameras, intelligent agents are software modules able
+  to make decisions on their own, communicate with each other, learn new things
+  and even “travel” from system to system.
 heading: Hydropower Plants
 description: Surveillance of Hydroelectric Power Plants
 featuredimage: /img/AdobeStock_59878462.jpeg
