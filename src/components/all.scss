@@ -496,19 +496,6 @@ nav.navbar {
       .navbar-item.has-buttons {
         border: none;
       }
-      .navbar-item.has-dropdown {
-        .navbar-dropdown {
-          display: none;
-        }
-        &.is-active,
-        &:focus,
-        &:hover {
-          background-color: transparent;
-          .navbar-dropdown {
-            display: block;
-          }
-        }
-      }
     }
 
     .navbar-burger {
@@ -580,6 +567,7 @@ nav.navbar {
   nav.navbar .navbar-menu.is-active .navbar-item.has-dropdown,
   nav.navbar .navbar-menu.is-active .navbar-link.has-dropdown {
     background-color: transparent !important;
+    outline: none;
   }
 }
 
