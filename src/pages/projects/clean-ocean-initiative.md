@@ -5,7 +5,9 @@ heading: Clean Ocean Initiative
 description: >-
   This initiative is our contribution to keeping the oceans clean from plastic
   and other human waste.
-seoDescription: Clean Ocean Initiative
+seoDescription: >-
+  The Clean Ocean Initiative is SEALABs contribution to keeping the oceans clean
+  from plastic and other human waste.
 featuredimage: /img/AdobeStock_194067101.jpeg
 featuredimageCaption: ''
 splitSection:
