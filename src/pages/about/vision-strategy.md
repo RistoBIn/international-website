@@ -9,24 +9,22 @@ description: >-
 featuredimage: /img/_DSC3974.png
 
 primarySplitSection:
-  left:
-    content: >-
-      ## Leading complex and challenging processes
+  left: >-
+    ## Leading complex and challenging processes
 
-      Our next step in 2020 is market expansion through marketing and sales as well as initiating software development projects. Our management team has proven its strength and ability for endurance. We have a proven track record of leading complex and challenging processes while driving innovation. Our integrity gives us confidence that we will succeed.
-  right:
-    content: >-
-      ### Empathy
+    Our next step in 2020 is market expansion through marketing and sales as well as initiating software development projects. Our management team has proven its strength and ability for endurance. We have a proven track record of leading complex and challenging processes while driving innovation. Our integrity gives us confidence that we will succeed.
+  right: >-
+    ### Empathy
 
-      We will understand customer needs better than any other company
+    We will understand customer needs better than any other company
 
-      ### Image
+    ### Image
 
-      The actual touch should reflect the tone of how you perceive the product
+    The actual touch should reflect the tone of how you perceive the product
 
-      ### Focus
+    ### Focus
 
-      We remove everything that is insignificant
+    We remove everything that is insignificant
       
 centeredTextSection:
   content: >-
@@ -37,51 +35,43 @@ centeredTextSection:
 primaryCenteredImageSection:
   featuredimage: /img/_DSC7691.png
   featuredimageCaption: Milan Marković and Oscar Marković
-
-secondarySplitSection:
-  left:
-    content: >-
+  left: >-
       ### About Quality, Creativity, User Friendliness and Low Environmental Impact
 
       We revolutionize the underwater camera market by fulfilling large sales and high production volumes SEALAB develops novel 2D and 3D multi-camera systems and computer vision technology with machine learning and artificial intelligence (AI) algorithms for the Ocean Space.
-  right:
-    content: >-
+  right: >-
       ###  <br />
       <br />
 
       We believe good design is about more than creating beautiful products. Our brand values of Quality, Creativity, User Friendliness, and Low Environmental Impact are reflected in our product designs. We are delighted that our design team under the leadership of Milan Marković and Oscar Marković is among the best in the Ocean Space supplier industry. 8 years of development – thousands of hours with hard work by the Founders is now behind us.
 
 tertiarySplitSection:
-  left:
-    content: >-
-      ## Some of the Unfair Competitive Advantages of SEALAB
+  left: >-
+    ## Some of the Unfair Competitive Advantages of SEALAB
   right:
-    contentItems:
-      - content: >-
-          #### Unfair advantage
+    - content: >-
+        #### Unfair advantage
 
-          We have developed an unfair advantage that hurts our opponents so badly that they have to submit— and yells “Back off” to others stepping into the cage
-      - content: >-
-          #### Development of smart algorithms
+        We have developed an unfair advantage that hurts our opponents so badly that they have to submit— and yells “Back off” to others stepping into the cage
+    - content: >-
+        #### Development of smart algorithms
 
-          We know our rivals, down to each tattoo and have done the right prep work to take down any opponent until we hit the exit. Beta testing and close collaboration with our customers. Additionally, we gather data to continue the development of smart algorithms and software packages.
-      - content: >-
-          #### New sensors and software
+        We know our rivals, down to each tattoo and have done the right prep work to take down any opponent until we hit the exit. Beta testing and close collaboration with our customers. Additionally, we gather data to continue the development of smart algorithms and software packages.
+    - content: >-
+        #### New sensors and software
 
-          We’ve nailed the timing and have the self-control to think strategically enough to build a great product. SEALAB have the right momentum to launch another sensor and software package as soon as we reach the next funding milestone.
-      - content: >-
-          #### Entrepreneurial stamina
+        We’ve nailed the timing and have the self-control to think strategically enough to build a great product. SEALAB have the right momentum to launch another sensor and software package as soon as we reach the next funding milestone.
+    - content: >-
+        #### Entrepreneurial stamina
 
-          We *get* that the clock is ticking and understand the urgency to make real progress fast. Our entrepreneurial stamina and endurance prove that we will be alive next year.
+        We *get* that the clock is ticking and understand the urgency to make real progress fast. Our entrepreneurial stamina and endurance prove that we will be alive next year.
 
 
   
 quaternarySplitSection:
-  left:
-    content: >-
+  left: >-
       ## SEALAB’s products are already selling to the market.
-  right:
-    content: >-
+  right: >-
       We have a fully developed and tested system. Thanks to previous investments and product development, we can introduce a smart and winning system this year, thus meeting the growing demand in the market. 
       
 
@@ -146,14 +136,12 @@ primaryCollapsibleList:
         
 
         Partnership with international leading partners and players ensures global access.
-        
-secondaryCenteredImageSection:
-  featuredimage: /img/CompletedMasterTheses.png
+
 
 quinarySplitSection:
-  left:
-    content: >-
-      ### We’ve established a creative and hardworking team
+  featuredimage: /img/CompletedMasterTheses.png
+  left: >-
+    ### We’ve established a creative and hardworking team
 
-      Our management team has many years of relevant experience. We are built on four years of experience and innovation - SEALAB is much more than a start-up. Key people who have developed global businesses previously are in place. Partnership with International leading partners and players ensures global access. ISO 14001: 2015 and 9001: 2015 have been implemented.
+    Our management team has many years of relevant experience. We are built on four years of experience and innovation - SEALAB is much more than a start-up. Key people who have developed global businesses previously are in place. Partnership with International leading partners and players ensures global access. ISO 14001: 2015 and 9001: 2015 have been implemented.
 ---

@@ -21,7 +21,6 @@ export const AboutPageSecondaryTemplate = ({
   tertiarySplitSection,
   quaternarySplitSection,
   primaryCollapsibleList,
-  secondaryCenteredImageSection,
   quinarySplitSection,
 }) => {
   const PostContent = contentComponent || Content;
@@ -48,13 +47,13 @@ export const AboutPageSecondaryTemplate = ({
           <SplittedSection
             leftColumn={
               <PostContent
-                content={generateHTML(primarySplitSection.left.content)}
+                content={generateHTML(primarySplitSection.left)}
                 className="content is-left-aligned left-wrapper"
               />
             }
             rightColumn={
               <PostContent
-                content={generateHTML(primarySplitSection.right.content)}
+                content={generateHTML(primarySplitSection.right)}
                 className="content is-left-aligned right-wrapper grey-background"
               />
             }
@@ -87,13 +86,13 @@ export const AboutPageSecondaryTemplate = ({
           <SplittedSection
             leftColumn={
               <PostContent
-                content={generateHTML(secondarySplitSection.left.content)}
+                content={generateHTML(primaryCenteredImageSection.left)}
                 className="content"
               />
             }
             rightColumn={
               <PostContent
-                content={generateHTML(secondarySplitSection.right.content)}
+                content={generateHTML(primaryCenteredImageSection.right)}
                 className="content padding-top-header"
               />
             }
@@ -104,11 +103,11 @@ export const AboutPageSecondaryTemplate = ({
         <div className="container">
           <div className="wrapper">
             <PostContent
-              content={generateHTML(tertiarySplitSection.left.content)}
+              content={generateHTML(tertiarySplitSection.left)}
               className="content is-left-aligned"
             />
             <QuadSplitSection
-              contentItems={tertiarySplitSection.right.contentItems}
+              contentItems={tertiarySplitSection.right}
               contentItemsCss="grey-background quad-wrapper"
             />
           </div>
@@ -119,13 +118,13 @@ export const AboutPageSecondaryTemplate = ({
           <SplittedSection
             leftColumn={
               <PostContent
-                content={generateHTML(quaternarySplitSection.left.content)}
+                content={generateHTML(quaternarySplitSection.left)}
                 className="content is-left-aligned"
               />
             }
             rightColumn={
               <PostContent
-                content={generateHTML(quaternarySplitSection.right.content)}
+                content={generateHTML(quaternarySplitSection.right)}
                 className="content is-left-aligned"
               />
             }
@@ -143,10 +142,7 @@ export const AboutPageSecondaryTemplate = ({
         <div className="container">
           <figure className="figure">
             <Img
-              fluid={
-                secondaryCenteredImageSection.featuredimage.childImageSharp
-                  .fluid
-              }
+              fluid={quinarySplitSection.featuredimage.childImageSharp.fluid}
               alt="About image"
               className="image"
             />
@@ -161,11 +157,16 @@ export const AboutPageSecondaryTemplate = ({
           <SplittedSection
             leftColumn={
               <PostContent
-                content={generateHTML(quinarySplitSection.left.content)}
+                content={generateHTML(quinarySplitSection.left)}
                 className="content is-left-aligned"
               />
             }
-            rightColumn={<></>}
+            rightColumn={
+              <PostContent
+                content={generateHTML(quinarySplitSection.right)}
+                className="content is-left-aligned"
+              />
+            }
           />
         </div>
       </section>
@@ -236,12 +237,8 @@ export const pageQuery = graphql`
           }
         }
         primarySplitSection {
-          left {
-            content
-          }
-          right {
-            content
-          }
+          left
+          right
         }
         centeredTextSection {
           content
@@ -256,32 +253,18 @@ export const pageQuery = graphql`
             }
           }
           featuredimageCaption
-        }
-        secondarySplitSection {
-          left {
-            content
-          }
-          right {
-            content
-          }
+          left
+          right
         }
         tertiarySplitSection {
-          left {
-            content
-          }
+          left
           right {
-            contentItems {
-              content
-            }
+            content
           }
         }
         quaternarySplitSection {
-          left {
-            content
-          }
-          right {
-            content
-          }
+          left
+          right
         }
         primaryCollapsibleList {
           listItems {
@@ -289,19 +272,16 @@ export const pageQuery = graphql`
             content
           }
         }
-        secondaryCenteredImageSection {
+        quinarySplitSection {
+          left
+          right
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 600, quality: 80) {
+              fluid(maxHeight: 800, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
             }
-          }
-        }
-        quinarySplitSection {
-          left {
-            content
           }
         }
       }

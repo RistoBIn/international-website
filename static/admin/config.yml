@@ -452,15 +452,8 @@ collections:
             name: primarySplitSection
             widget: object
             fields:
-              - label: Left
-                name: left
-                fields:
-                  - {label: "Left Content", name: "content", widget: "markdown"}
-
-              - label: Right
-                name: right
-                fields:
-                  - {label: "Right Content", name: "content", widget: "markdown"}
+              - {label: "Left Content", name: "left", widget: "markdown"}
+              - {label: "Right Content", name: "right", widget: "markdown"}
 
           - label: Centered Text Section
             name: centeredTextSection
@@ -472,55 +465,29 @@ collections:
             name: primaryCenteredImageSection
             widget: object
             fields:
-              - {label: "Image", name: "featuredimage", widget: "image"}
-              - {label: Caption, name: "featuredimagecaption", widget: "text", required: false}
-          
-          - label: Secondary Split Section
-            name: secondarySplitSection
-            widget: object
-            fields:
-              - label: Left
-                name: left
-                fields:
-                  - {label: "Left Content", name: "content", widget: "markdown"}
-
-              - label: Right
-                name: right
-                fields:
-                  - {label: "Right Content", name: "content", widget: "markdown"}
+              - {label: "Centered Image", name: "featuredimage", widget: "image"}
+              - {label: Caption, name: "featuredimageCaption", widget: "string", required: false}
+              - {label: "Left Content", name: "left", widget: "markdown"}
+              - {label: "Right Content", name: "right", widget: "markdown"}
           
           - label: Tertiary Split Section
             name: tertiarySplitSection
             widget: object
             required: false
             fields:
-              - label: Left
-                name: left
-                fields:
-                  - {label: "Left Content", name: "content", widget: "markdown"}
-
-              - label: Right
+              - {label: "Left Content", name: "left", widget: "markdown"}
+              - label: "Right - Advantages list"
                 name: right
-                widget: object
-                fields:
-                  - label: "Advantages list"
-                    name: contentItems
-                    widget: list
-                    field: {label: "Content", name: "content", widget: "markdown"}
+                widget: list
+                hint: "Should number of items should be 2, 4, 6 or 8 to create a balanced design."
+                field: {label: "Content", name: "content", widget: "markdown"}
           
           - label: Quaternary Split Section
             name: quaternarySplitSection
             widget: object
             fields:
-              - label: Left
-                name: left
-                fields:
-                  - {label: "Left Content", name: "content", widget: "markdown"}
-
-              - label: Right
-                name: right
-                fields:
-                  - {label: "Right Content", name: "content", widget: "markdown"}
+              - {label: "Left Content", name: "left", widget: "markdown"}
+              - {label: "Right Content", name: "right", widget: "markdown"}
 
           - label: Primary Collapsible List
             name: primaryCollapsibleList
@@ -533,25 +500,13 @@ collections:
                   - {label: "Heading", name: "heading", widget: "string"}
                   - {label: "Content", name: "content", widget: "markdown"}
 
-          - label: Secondary Centered Image Section
-            name: secondaryCenteredImageSection
-            widget: object
-            fields:
-              - {label: "Image", name: "featuredimage", widget: "image"}
-
           - label: Quinary Split Section
             name: quinarySplitSection
             widget: object
             fields:
-              - label: Left
-                name: left
-                fields:
-                  - {label: "Left Content", name: "content", widget: "markdown"}
-
-              - label: Right
-                name: right
-                fields:
-                  - {label: "Right Content", name: "content", widget: "markdown", required: false}
+              - {label: "Centered Image", name: "featuredimage", widget: "image"}
+              - {label: "Left Content", name: "left", widget: "markdown"}
+              - {label: "Right Content", name: "right", widget: "markdown", required: false}
 
       - file: "src/pages/about/social-responsibility.md"
         label: "Social responsibility"
