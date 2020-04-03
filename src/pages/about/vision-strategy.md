@@ -140,6 +140,7 @@ primaryCollapsibleList:
 
 quinarySplitSection:
   featuredimage: /img/CompletedMasterTheses.png
+  right: ''
   left: >-
     ### We’ve established a creative and hardworking team
 
