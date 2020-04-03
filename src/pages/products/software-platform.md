@@ -38,7 +38,7 @@ sectionFour:
   button:
     path: /solutions/atlantic-salmon-and-seafood/
     text: Norwegian Aquaculture
-  featuredimage: /img/fieldIllustrationWithGrid.jpg
+  featuredimage: /img/SEALAB Feed Barge Control Room.png
   heading: BlueThink and IoT in the aquaculture industry
   right: >-
     The Internet of Things is about all the things around us being connected to
@@ -80,6 +80,6 @@ alternatingSections:
       amount of data the platform is able to collect using from sensors (IoT),
       it’s ability to process large amounts of data (AI) and extract lessons
       from these huge amounts of data (Machine Learning).
-    featuredimage: /img/digitalOilPlatform.png
+    featuredimage: /img/digital-twin.jpg
 ---
 
