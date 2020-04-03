@@ -68,18 +68,20 @@ alternatingSections:
       5G-HEART, a project founded by the European Union’s Horizon 2020 research
       and innovation programme.
     featuredimage: /img/IoT5icons.svg
-  - description: >-
-      ### A bridge between the physical and the digital world
 
-      ## The Digital twin
+centeredSection:
+  featuredimage: /img/digital-twin.jpg
+  left: >-
+    ### A bridge between the physical and the digital world
 
-      The digitalization of the ocean space has come so far that the living
-      conditions for digital twins are present in several industries.
+    ## The Digital twin
+  right: >-
+    The digitalization of the ocean space has come so far that the living
+    conditions for digital twins are present in several industries.
 
-      BlueThink is designed to support this technology. This said based on the
-      amount of data the platform is able to collect using from sensors (IoT),
-      it’s ability to process large amounts of data (AI) and extract lessons
-      from these huge amounts of data (Machine Learning).
-    featuredimage: /img/digital-twin.jpg
+    BlueThink is designed to support this technology. This said based on the
+    amount of data the platform is able to collect using from sensors (IoT),
+    it’s ability to process large amounts of data (AI) and extract lessons
+    from these huge amounts of data (Machine Learning).
 ---
 

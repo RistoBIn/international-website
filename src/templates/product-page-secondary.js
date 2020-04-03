@@ -18,6 +18,7 @@ export const ProductPageTemplate = ({
   imageSection,
   sectionFour,
   sectionList,
+  centeredSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -105,6 +106,39 @@ export const ProductPageTemplate = ({
         sections={sectionList}
         className="section alternating-sections"
       />
+      {centeredSection ? (
+        <LargeImageWithSplitSection
+          className="section is-medium large-image product-page-primary"
+          image={centeredSection.featuredimage}
+          leftColumn={
+            <>
+              <h2>
+                <PostContent
+                  content={generateHTML(centeredSection.left)}
+                  className="content"
+                />
+              </h2>
+              {centeredSection.button && centeredSection.button.text ? (
+                <Button
+                  className="is-primary"
+                  text={centeredSection.button.text}
+                  path={centeredSection.button.path}
+                />
+              ) : (
+                <></>
+              )}
+            </>
+          }
+          rightColumn={
+            <PostContent
+              content={generateHTML(centeredSection.right)}
+              className="content"
+            />
+          }
+        />
+      ) : (
+        <></>
+      )}
     </section>
   );
 };
@@ -122,6 +156,7 @@ const ProductPage = ({ data }) => {
     sectionThree,
     sectionFour,
     alternatingSections,
+    centeredSection,
   } = frontmatter;
 
   return (
@@ -136,6 +171,7 @@ const ProductPage = ({ data }) => {
         imageSection={sectionThree}
         sectionFour={sectionFour}
         sectionList={alternatingSections}
+        centeredSection={centeredSection}
       />
     </Layout>
   );
@@ -210,7 +246,25 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 671, quality: 90) {
+              fluid(maxWidth: 671, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        centeredSection {
+          left
+          button {
+            path
+            text
+          }
+          right
+          featuredimage {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxWidth: 1920, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }

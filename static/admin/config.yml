@@ -288,7 +288,24 @@ collections:
                   - {label: Title, name: text, widget: string, required: false}
                   - {label: Link path, name: path, widget: string, required: false}
               - {label: "Image", name: "featuredimage", widget: image, hint: "Is horizontal aligned with content" }
-
+          - label: "Centered section"
+            name: "centeredSection"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Centered image", name: "featuredimage", widget: image }
+              - {label: "Left content", name: "left", widget: "markdown", hint: "Aligned left."}
+              - label: "Left Button"
+                name: "button"
+                widget: "object"
+                hint: "Aligned left."
+                required: false
+                fields:
+                  - {label: Title, name: text, required: false, widget: string}
+                  - {label: Link path, name: path, required: false, widget: string}
+              - label: "Right column"
+                name: "right"
+                widget: "markdown"
 
 #### SETTINGS ####
 
