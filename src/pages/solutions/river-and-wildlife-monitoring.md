@@ -3,7 +3,7 @@ templateKey: solution-page-primary
 title: River and Wildlife Monitoring
 seoDescription: >-
   Environmental Challenges in the Aquaculture Industry Increases the Need for
-  River and Wildlife Monitoring 
+  River and Wildlife Monitoring.
 heading: River and Wildlife Monitoring
 description: >-
   Environmental Challenges in the Aquaculture Industry Increases the Need for
