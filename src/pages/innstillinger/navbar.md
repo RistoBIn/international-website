@@ -33,7 +33,7 @@ menuPaths:
       - path: /products/edge-intelligence/
         title: Edge Intelligence
       - path: /products/software-platform/
-        title: IoT Bridge
+        title: BlueThink IoT Bridge
     path: '#'
     title: Products
   - dropdown:
