@@ -62,18 +62,22 @@ fourthNavigation:
 companyOffices:
   - addressItems:
       - SEALAB
-      - 'Transittgata 14, inngang A'
+      - Transittgata 14
+      - Entrance A
       - 7042 Trondheim
-    title: Main office
+      - Norway
+    title: Main office in Norway
   - addressItems:
       - Oslo Science Park
       - Gaustadalléen 21
-      - '0349 Oslo, Norge'
-    title: In Oslo
+      - 0349 Oslo
+      - Norway
+    title: In Norway
   - addressItems:
       - Berlin
       - EUREF-Campus 1-25
-      - '10829 Berlin, Tyskland'
+      - 10829 Berlin
+      - Germany
     title: In Germany
   - addressItems:
       - Niš
