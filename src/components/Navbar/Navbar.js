@@ -6,6 +6,7 @@ import EnvelopeIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
 import { cleanPath } from '../../utils/paths';
 import { idMaker } from '../../utils/id-maker';
+import styles from './Navbar.module.scss';
 
 const gen = idMaker();
 
@@ -16,7 +17,6 @@ export const Navbar = ({
   email = 'contact@sealab.no',
 }) => {
   const [isHamburgerMenuActive, setHamburgerMenuActive] = useState(false);
-  const [activeNavbarItem, setActiveNavbarItem] = useState('');
 
   return (
     <nav
@@ -53,11 +53,7 @@ export const Navbar = ({
         })}
       >
         <div className="navbar-end">
-          <NavbarItems
-            menuPaths={menuPaths}
-            activeNavbarItem={activeNavbarItem}
-            onClick={setActiveNavbarItem}
-          />
+          <NavbarItems menuPaths={menuPaths} />
 
           <div id="contact" className="is-hidden-tablet">
             <div className="info">
@@ -87,18 +83,12 @@ export const Navbar = ({
   );
 };
 
-const NavbarItems = ({ menuPaths, onClick }) => {
+const NavbarItems = ({ menuPaths }) => {
   return (
     <>
       {menuPaths.map(menuItem => {
         if (menuItem.dropdown) {
-          return (
-            <MenuDropDown
-              key={gen.next().value}
-              menuItem={menuItem}
-              onClick={onClick}
-            />
-          );
+          return <MenuDropDown key={gen.next().value} menuItem={menuItem} />;
         }
         return (
           <Link
@@ -106,7 +96,6 @@ const NavbarItems = ({ menuPaths, onClick }) => {
             activeClassName="is-active"
             className={classNames('navbar-item', 'is-tab')}
             to={cleanPath(menuItem.path)}
-            onClick={() => onClick()}
           >
             {menuItem.title}
           </Link>
@@ -116,31 +105,38 @@ const NavbarItems = ({ menuPaths, onClick }) => {
   );
 };
 
-const MenuDropDown = ({ menuItem, onClick }) => (
-  <div className={classNames('navbar-item', 'has-dropdown', 'is-hoverable')}>
-    <div
-      onKeyDown={() => onClick()}
-      role="button"
-      tabIndex={0}
-      onClick={() => onClick()}
-      className="navbar-link"
-    >
-      {menuItem.title}
+const MenuDropDown = ({ menuItem, onClick }) => {
+  const [isExpandedMobile, setExpandedMobile] = useState(false);
+  return (
+    <div className={classNames('navbar-item', 'has-dropdown', 'is-hoverable')}>
+      <div
+        onKeyDown={() => onClick()}
+        role="button"
+        tabIndex={0}
+        onClick={() => setExpandedMobile(!isExpandedMobile)}
+        className={classNames('navbar-link')}
+      >
+        {menuItem.title}
+      </div>
+      <div
+        className={classNames('navbar-dropdown', 'is-boxed', styles.dropdown, {
+          [styles.dropdown__isActive]: isExpandedMobile,
+        })}
+      >
+        {menuItem.dropdown.map(subitem => (
+          <Link
+            key={gen.next().value}
+            className={classNames('navbar-item', 'is-tab')}
+            activeClassName="is-active"
+            to={cleanPath(subitem.path)}
+            onClick={() => onClick()}
+          >
+            {subitem.title}
+          </Link>
+        ))}
+      </div>
     </div>
-    <div className="navbar-dropdown is-boxed">
-      {menuItem.dropdown.map(subitem => (
-        <Link
-          key={gen.next().value}
-          className={classNames('navbar-item', 'is-tab')}
-          activeClassName="is-active"
-          to={cleanPath(subitem.path)}
-          onClick={() => onClick()}
-        >
-          {subitem.title}
-        </Link>
-      ))}
-    </div>
-  </div>
-);
+  );
+};
 
 export default Navbar;

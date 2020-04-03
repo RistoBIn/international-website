@@ -1,0 +1,13 @@
+@import '../_variables.scss';
+
+@media only screen and (max-width: $tablet) {
+  .dropdown {
+    outline: none;
+    transition: $transition;
+    display: none;
+    &.dropdown__isActive {
+      background-color: transparent;
+      display: block;
+    }
+  }
+}
