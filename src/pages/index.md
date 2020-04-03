@@ -1,30 +1,32 @@
 ---
 templateKey: index-page
 title: SEALAB
-seoDescription: SEALAB's international website
+seoDescription: 'SEALAB - More than meets the eye. '
 heading: More than meets the eye
-bgimage: /img/subsea-waves.jpg
+bgimage: /img/sealab-water-hero.jpg
 items:
-  - description: Billion USD yearly impact for poor ocean management
+  - description: Billion USD yearly negative impact for poor ocean management
     heading: '200'
   - description: Billion people rely on the ocean
     heading: '7.8'
-  - description: Billion USD required yearly to sustain the ocean
+  - description: >-
+      Billion USD needed yearly to reduce the negative impact and sustain the
+      ocean from now, to infinity and beyond
     heading: '21'
 centeredSection:
-  heading: The oceans affect us all but entering the deep is not for everyone.
+  heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
   bgimage: /img/subsea-plant.jpg
   button:
-    path: /solutions/aquaculture
+    path: /solutions/
     text: See solutions
   description: >-
-    Sealab cameras and products can be used in many areas and industries, from
-    Seafood factories to Military, Underwater diving operations.
-  subheading: Deep Sea and Marine Applications
+    SEALAB cameras and products can be used in many areas and industries, from
+    seafood factories to military underwater diving operations.
+  subheading: Deep Sea & Marine Applications
 productSection:
   description: >-
-    Superfast FPGA technology and smart 2D and 3D cameras will change everything
-    in the ocean space.
+    Superfast FPGA technology together with smart 2D and 3D cameras will change
+    everything in the ocean space.
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: You've Never Seen a Camera Like This
@@ -32,42 +34,42 @@ quotes:
   - authorImage: ''
     authorName: ''
     authorPosition: ''
-    quoteText: The Apple approach for harsh environments
-  - authorImage: ''
-    authorName: ''
-    authorPosition: ''
     quoteText: >-
       We would really recommend SEALAB if you are in need - because electronics
       for these environments is hard to find.
+  - authorImage: ''
+    authorName: ''
+    authorPosition: ''
+    quoteText: The Apple approach for harsh environments
 itemsSection:
   button:
-    path: /solutions/aquaculture
-    text: Show all solutions
-  heading: Multiple applications in numerous industries
+    path: /solutions/
+    text: Show all industries
+  heading: We are able to develop and deploy our technology to several industries
   items:
     - featuredimage: /img/AdobeStock_187277566.jpeg
       heading: Harbor Surveillance
       path: /solutions/harbor-surveillance/
-    - featuredimage: /img/aquaculture.jpg
-      heading: Atlantic Salmon and Seafood
-      path: /solutions/aquaculture
+    - featuredimage: /img/IMG_0539_Adjusted.jpg
+      heading: Atlantic Salmon & Seafood
+      path: /solutions/atlantic-salmon-and-seafood/
+    - featuredimage: /img/AdobeStock_180592840.jpeg
+      heading: Underwater Drones & Robotics
+      path: /solutions/underwater-drones-and-robotics/
     - featuredimage: /img/AdobeStock_114071575.jpeg
-      heading: Schools and Universities
+      heading: Schools & Universities
       path: /solutions/schools-and-universities/
     - featuredimage: /img/AdobeStock_294165529.jpeg
-      heading: Science Arctic and Antarctic Surveillance
+      heading: Science Arctic & Antarctic Surveillance
       path: /solutions/science-arctic-and-antarctic-surveillance/
     - featuredimage: /img/AdobeStock_177426726.jpeg
-      heading: Oil and Gas Industry
+      heading: Oil & Gas Industry
       path: /solutions/oil-gas-industry/
-    - featuredimage: /img/search-rescue.jpg
-      heading: Search & Rescue
-      path: /solutions/search-and-rescue
     - featuredimage: /img/AdobeStock_4649419.jpeg
       heading: Military & Defense
       path: /solutions/military-and-defense/
     - featuredimage: /img/AdobeStock_205257493.jpeg
-      heading: Well and Fishing Boats
+      heading: Well & Fishing Boats
       path: /solutions/well-and-fishing-boats/
     - featuredimage: /img/AdobeStock_245001526.jpeg
       heading: Seabed Mining
@@ -75,8 +77,17 @@ itemsSection:
     - featuredimage: /img/AdobeStock_224578518.jpeg
       heading: Environmental Monitoring
       path: /solutions/environmental-monitoring/
+    - featuredimage: /img/AdobeStock_232721946.jpeg
+      heading: Bridge & Watercourse Monitoring
+      path: /solutions/bridge-and-watercourse-monitoring/
+    - featuredimage: /img/AdobeStock_224942592.jpeg
+      heading: River & Wildlife monitoring
+      path: /solutions/river-and-wildlife-monitoring/
+    - featuredimage: /img/AdobeStock_59878462.jpeg
+      heading: Hydropower Plants
+      path: /solutions/hydropower-plants/
 splitSection:
-  bgimage: /img/inspirational.jpg
+  bgimage: /img/AdobeStock_174371043.jpeg
 ---
 *For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
 

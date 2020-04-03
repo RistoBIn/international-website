@@ -8,6 +8,8 @@
   "cta"
   "carousel"
   "navigation";
+  padding-top: 30px;
+
   .container {
     display: contents !important;
   }
@@ -19,10 +21,10 @@
   }
   .heading {
     grid-area: heading;
-    max-width: 320px;
+    max-width: 820px;
+    margin: auto;
     font-weight: 500;
     text-align: center;
-    margin: auto;
   }
   .carousel {
     grid-area: carousel;
@@ -38,16 +40,16 @@
   @media only screen and (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "heading ..."
+    "heading heading"
     "cta navigation"
     "carousel carousel";
+    padding-top: unset;
     .cta {
       grid-area: cta;
       max-height: 52px;
       margin: 0;
     }
     .heading {
-      max-width: 510px;
       text-align: left;
       margin: 0;
     }
@@ -72,7 +74,7 @@
 
   .carousel__item {
     width: 320px;
-    padding: 60px 0;
+    height: 404px;
     grid-row: 1;
     background-position: center;
     background-size: cover;
@@ -82,6 +84,11 @@
 
     &.carousel__item__active {
       background-size: cover;
+    }
+    .carousel__item__content {
+      height: 100%;
+      margin: auto 0 !important;
+      padding-top: 120px;
     }
     .carousel__item__button,
     .carousel__item__heading {
@@ -115,7 +122,6 @@
     width: 100vw;
     padding-top: 60px;
     .carousel__item {
-      padding: 120px 0;
       width: 450px;
   
     }

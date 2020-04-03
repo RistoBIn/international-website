@@ -1,17 +1,15 @@
 ---
 mainNavigation:
-  - path: /
-    title: Home
   - path: /solutions/atlantic-salmon-and-seafood/
-    title: Atlantic Salmon and Seafood
+    title: Atlantic Salmon & Seafood
   - path: /solutions/military-and-defense/
     title: Military & Defense
   - path: /solutions/schools-and-universities/
-    title: Schools and Universities
+    title: Schools & Universities
   - path: /solutions/science-arctic-and-antarctic-surveillance/
-    title: Science Arctic and Antarctic Surveillance
+    title: Science Arctic & Antarctic Surveillance
   - path: /solutions/well-and-fishing-boats/
-    title: Well and Fishing Boats
+    title: Well & Fishing Boats
   - path: /solutions/seabed-mining/
     title: Seabed Mining
   - path: /solutions/environmental-monitoring/
@@ -19,13 +17,13 @@ mainNavigation:
   - path: /solutions/harbor-surveillance/
     title: Harbor Surveillance
   - path: /solutions/oil-gas-industry/
-    title: Oil and Gas Industry
+    title: Oil & Gas Industry
   - path: /solutions/underwater-drones-and-robotics/
-    title: Underwater Drones and Robotics
+    title: Underwater Drones & Robotics
   - path: /solutions/bridge-and-watercourse-monitoring/
-    title: Bridge and Watercourse Monitoring
+    title: Bridge & Watercourse Monitoring
   - path: /solutions/river-and-wildlife-monitoring/
-    title: River and Wildlife monitoring
+    title: River & Wildlife Monitoring
   - path: /solutions/hydropower-plants/
     title: Hydropower Plants
 secondaryNavigation:
@@ -40,19 +38,19 @@ thirdNavigation:
     title: 5G Heart
   - path: /projects/clean-ocean-initiative
     title: Clean Ocean Initiative
-  - path: /projects/gem
-    title: Environment Monitoring
 fourthNavigation:
-  - path: /vision-strategy
+  - path: /about/vision-strategy/
     title: Vision & Strategy
   - path: /leadership
     title: Leadership
   - path: /business-model
     title: Business Model
+  - path: /about/innovation-cause-we-can/
+    title: Innovation ‘Cause We Can
   - path: /about/sealab-osc
-    title: SEALAB Ocean Space Center
+    title: Ocean Space Center
   - path: /social-responsibility
-    title: Social Responsibility
+    title: Sustainability impact
   - path: /about/partners/
     title: Partners
   - path: /about/investors/

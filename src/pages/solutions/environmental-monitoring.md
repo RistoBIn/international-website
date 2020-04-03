@@ -1,10 +1,12 @@
 ---
 templateKey: solution-page-primary
 title: Environmental monitoring
-seoDescription: Environmental monitoring
+seoDescription: >-
+  Environmental monitoring is a key element in the sustainable exploitation of
+  marine resources.
 heading: Environmental monitoring
 description: Increasing need for environmental monitoring
-featuredimage: /img/AdobeStock_68760718.jpeg
+featuredimage: /img/AdobeStock_68760718_topimage.jpeg
 splitSections:
   - content: >-
       Both watercourses and the ocean space will need more monitoring than ever.
@@ -13,9 +15,9 @@ splitSections:
       carbon dioxide we release into the atmosphere ends up in the ocean, but
       how it happens is still not fully understood.
     heading: Increasing Need for Environmental Monitoring
-    subheading: Key Reference for Climate Change
+    subheading: Key Reference for Climate Changes
 imageSection:
-  featuredimage: /img/environmental-monitoring.jpg
+  featuredimage: /img/AdobeStock_224578518.jpeg
   left: '### Sustainable Exploitation of Marine Resources'
   right: >-
     Environmental monitoring is a key element in the sustainable exploitation of

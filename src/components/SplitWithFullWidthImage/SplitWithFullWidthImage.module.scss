@@ -1,1 +1,13 @@
 @import '../_variables.scss';
+
+
+@media only screen and (min-width: $tablet) {
+    .hidden__tablet_up {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: $tablet) {
+    .hidden__mobile_only {
+        display: none !important;
+    }
+}

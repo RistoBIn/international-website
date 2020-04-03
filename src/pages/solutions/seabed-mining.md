@@ -1,10 +1,12 @@
 ---
 templateKey: solution-page-secondary
 title: Seabed Mining
-seoDescription: Seabed Mining
+seoDescription: >-
+  SEALAB can help the industry to start mining by bringing visual information on
+  how operators can avoid causing serious environmental harm.
 heading: Seabed Mining
 description: Exploration and production of high-end minerals and metals
-featuredimage: /img/seabed mining.jpg
+featuredimage: /img/AdobeStock_245001526.jpeg
 splitSections:
   - content: >-
       The plans are advancing to harvest precious ores from the ocean floor and
@@ -41,6 +43,6 @@ splitSections:
       some clear red lines. Machine vision and superb image quality from SEALAB
       will be necessary when humanity starts mining deep sea.
     heading: ''
-    featuredimage: /img/seabed mining.jpg
+    featuredimage: /img/AdobeStock_245001526.jpeg
 ---
 

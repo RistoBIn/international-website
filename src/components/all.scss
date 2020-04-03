@@ -352,7 +352,7 @@ section.no-padding{
 .section.is-small {
   padding: 2rem 1.5rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $tablet) {
   .hero.is-large .hero-body {
     padding: 18rem 1.5rem;
   }
@@ -387,6 +387,16 @@ section.no-padding{
   @include text_Light;
   font-size: 16px;
   line-height: 100%;
+}
+
+.image.full-width {
+  width: 100%;
+  height: 375px;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    height: 100%;
+  }
 }
 
 /****************     NAVIGATION    ********************/
@@ -729,8 +739,7 @@ section.project-page-template {
   .figure {
     text-align: center;
     .image {
-      width: 100%;
-      height: 375px;
+      margin-bottom: 10px;
     }
     .caption {
       font-size: 18px;
@@ -742,14 +751,8 @@ section.project-page-template {
   }
 
   @media screen and (min-width: $desktop) {
-    .figure {
-      .image {
-        width: 1410px;
-        height: 100%;
-      }
-      .caption {
-        max-width: 1135px;
-      }
+    .figure .caption {
+      max-width: 1135px;
     }
   }
 }
@@ -763,19 +766,102 @@ section.about-page-primary {
       font-size: 20px;
     }
   }
+}
 
-  .about-page-primary-image .image {
-    width: 100%;
-    height: 375px;
+section.vision-strategy {
+  .content {
+    font-size: 18px;
+    h4 {
+      color: #dbe0ea;
+    }
+  }
+  figcaption {
+    padding: 0 $paddingHorizontalMobile;
+  }
+
+  .grey-background {
+    background: linear-gradient(0deg, #1f2331, #1f2331), #191c27;
+    border-radius: 3px;
+  }
+
+  .right-wrapper {
+    margin-top: 30px;
+    padding: 20px;
+    p {font-weight: 300;}
+    h3 {
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+  }
+
+  .quad-wrapper {
+    padding: 32px 24px;
+  }
+
+  br { 
+    display: none;
   }
 
   @media screen and (min-width: $desktop) {
-    .content {
-      padding: 0;
+    .right-wrapper {
+      margin-top: 0;
+      padding: 51px 43px;
     }
 
-    .about-page-primary-image .image {
-      height: 100%;
+    .quad-wrapper {
+      padding: 32px 24px;
+    }
+    br{display: block;}
+  }
+}
+section.centered-free-text p {font-size: 20px !important;}
+section.boxes {
+  .is-left-aligned {
+    h2, h1, h3 {
+      max-width: 510px;
+      margin-left: 0;
+    }
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 40px;
+    @media screen and (min-width: $widescreen) {
+      grid-template-columns: 2fr 3fr;
+    }
+    @media screen and (min-width: $fullhd) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+section#vision-last {padding-top: .5rem;}
+
+section.about-page-partners {
+  background-color: white;
+  .section h1 {
+    color: black;
+  }
+  .section p {
+    color: black !important;
+  }
+  .logo-section {
+    background-color: white;
+  }
+  .wrapper {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: 1fr;
+    .image-container {
+      margin: auto;
+      .image {
+        width: auto;
+        max-height: 100px;
+        max-width: 180px;
+      }
+    }
+    @media only screen and (min-width: $tablet) {
+      grid-gap: 50px;
     }
   }
 }
@@ -1118,9 +1204,6 @@ section#contact-form {
 
 .solution-page {
   section.hero {
-    background-repeat: no-repeat !important;
-    background-position: unset !important;
-    background-size: cover !important;
     .hero-body {
       font-size: 20px;
       h1,
@@ -1208,6 +1291,52 @@ section#project-page-primary .wrapper {
         max-width: 930px;
         margin-left: 0px;
       }
+    }
+  }
+}
+
+/****************     PRODUCT PAGES    ********************/
+section.product-page-primary {
+
+  .content.centered-free-text {
+    max-width: 854px;
+    margin: 0 auto;
+    h3 {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    h2:first-of-type {
+      margin-top: 0;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .background-image-lines {
+    background-image: url('../img/zigzagLines.svg');
+    background-size: cover;
+    .image {
+      margin: 0 auto;
+    }
+  }
+  .large-image {
+    .button {max-width: 290px; }
+  }
+  .alternating-sections {
+    h3 {
+      font-size: 18px;
+      color: $body-light;
+      margin-bottom: 15px;
+    }
+    h1, h2 {
+      margin-top: 0;
+    }
+  }
+  @media only screen and (max-width: $tablet) {
+    .large-image {
+      .button {margin: 20px 0;}
     }
   }
 }

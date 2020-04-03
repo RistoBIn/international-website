@@ -1,12 +1,14 @@
 ---
 templateKey: solution-page-primary
-title: River and Wildlife monitoring
-seoDescription: River and Wildlife monitoring
-heading: River and Wildlife monitoring
+title: River and Wildlife Monitoring
+seoDescription: >-
+  Environmental Challenges in the Aquaculture Industry Increases the Need for
+  River and Wildlife Monitoring.
+heading: River and Wildlife Monitoring
 description: >-
-  Environmental Challenges for the Norwegian Aquaculture iIndustry Increases the
-  Need for Monitoring
-featuredimage: /img/River and Wildlife monitoring.jpg
+  Environmental Challenges in the Aquaculture Industry Increases the Need for
+  River and Wildlife Monitoring 
+featuredimage: /img/AdobeStock_245120319.jpeg
 splitSections:
   - content: >-
       Increased production of farmed Atlantic salmon (Salmo salar) worldwide and
@@ -15,7 +17,7 @@ splitSections:
       populations.
     heading: Farmed Salmon Threatens the Wild Salmonids
 imageSection:
-  featuredimage: /img/River and Wildlife monitoring.jpg
+  featuredimage: /img/AdobeStock_224942592.jpeg
   left: >-
     ### Escaping fish is one of the environmental challenges for the Norwegian
     aquaculture industry

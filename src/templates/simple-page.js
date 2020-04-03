@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-export const BlogPostTemplate = ({
+export const SimplePageTemplate = ({
   content,
   contentComponent,
   description,
-  title,
+  heading,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -21,7 +20,7 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
+              {heading}
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
@@ -32,46 +31,39 @@ export const BlogPostTemplate = ({
   );
 };
 
-BlogPostTemplate.propTypes = {
+SimplePageTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
+  heading: PropTypes.string,
   helmet: PropTypes.object,
 };
 
-const BlogPost = ({ data }) => {
+const SimplePage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
-      <BlogPostTemplate
+    <Layout
+      seoDescription={post.frontmatter.seoDescription}
+      seoTitle={post.frontmatter.title}
+    >
+      <SimplePageTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        heading={post.frontmatter.heading}
       />
     </Layout>
   );
 };
 
-BlogPost.propTypes = {
+SimplePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 };
 
-export default BlogPost;
+export default SimplePage;
 
 export const pageQuery = graphql`
   query SimplePageById($id: String!) {
@@ -81,6 +73,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
+        heading
+        seoDescription
       }
     }
   }

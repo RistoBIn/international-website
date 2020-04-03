@@ -1,0 +1,57 @@
+@import '../../_variables.scss';
+$itemHeightDesktop: 404px;
+$itemWidthDesktop: 450px;
+$itemHeightMobile: 284px;
+$itemWidthMobile: 320px;
+.carousel__item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: all 1s ease;
+  min-height: $itemHeightMobile;
+  min-width: $itemWidthMobile;
+
+  &.carousel__item__active {
+    background-size: cover;
+  }
+  .carousel__item__content {
+    height: $itemHeightMobile;
+    margin: auto 0 !important;
+    padding-top: 15%;
+  }
+  .carousel__item__button,
+  .carousel__item__heading {
+    margin: auto;
+  }
+  .carousel__item__button {
+    max-width: 158px;
+    border: 1px solid $white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+  }
+  .carousel__item__heading {
+    font-weight: bold;
+    line-height: 200%;
+    font-family: $primaryFont;
+    font-size: 24px;
+    padding: 0 40px;
+    padding-bottom: 11px;
+  }
+  &:hover {
+    .carousel__item__button {
+      background-color: $white;
+      border: 1px solid $grey-light;
+      color: $dark;
+    }
+  }
+  @media only screen and (min-width: $tablet) {
+    min-height: $itemHeightDesktop;
+    min-width: $itemWidthDesktop;
+    .carousel__item__content {
+      height: $itemHeightDesktop;
+      padding-top: 25%;
+    }
+  }
+}

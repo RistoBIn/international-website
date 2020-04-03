@@ -1,23 +1,25 @@
 ---
 templateKey: solution-page-secondary
-title: Military Applications of Machine Vision
+title: Military & Defense
 seoDescription: >-
-  SEALAB is in an AI arms race. It’s happening in industry, and the big five
-  Internet companies are pursuing this heavily.
-heading: Military Applications of Machine Vision
+  With underwater computer vision from SEALAB you can compare camera images with
+  photographic databases. In each case, human operators — not machines — make
+  final judgments before anyone takes action.
+heading: Military & Defense
 description: >-
-  SEALAB is in an AI arms race. It’s happening in industry, and the big five
-  Internet companies are pursuing this heavily.
-featuredimage: /img/military-defense.jpg
+  With underwater computer vision from SEALAB you can compare camera images with
+  photographic databases. In each case, human operators — not machines — make
+  final judgments before anyone takes action.
+featuredimage: /img/AdobeStock_4649419.jpeg
 splitSections:
   - content: >-
-      With underwater machine vision from SEALAB you can compare camera images
+      With underwater computer vision from SEALAB you can compare camera images
       with photographic databases. In each case, human operators — not machines
       — make final judgments before anyone takes action. 
 
 
       When an image is captured in an electronic form, it can be treated as a
-      piece of data. Machine vision techniques use this data to simulate human
+      piece of data. Computer vision techniques use this data to simulate human
       vision by recognizing objects within the image and by interpreting aspects
       of the scene. The raw image is now commonly captured in a purely digital
       form using Charge Coupled Devices. But high-end cameras in 2D and 3D from
@@ -25,13 +27,12 @@ splitSections:
       frame-grabbing techniques, will play the key role.
 
 
-
       Continued developments in algorithms promise to enable the economical use
-      of machine vision in newer applications. The latest algorithms are
+      of computer vision in newer applications. The latest algorithms are
       expected to provide robust geometric pattern-matching with several degrees
       of freedom, compensate for extreme illumination and perform 3D analysis of
       complex shapes.
-    heading: Human vision simulation and objects recognition
+    heading: Human Vision Simulation and Objects Recognition
   - content: >-
       Both color tracking and motion or range of images can be used. To have
       robotic vision, we need to combine those techniques to use the appropriate
@@ -45,10 +46,10 @@ splitSections:
       algorithms.
 
 
-      There’s already a wide array of real-world use cases of machine vision in
+      There’s already a wide array of real-world use cases of computer vision in
       the military above surface. But to deliver AI solutions under water, we
       need smart cameras. There’s a wide breadth of current and near-term
-      military applications where machine vision can be uses under water, i.e.
+      military applications where computer vision can be uses under water, i.e.
       surveillance, Autonomous Vehicles and Automation and Robotics. Smart 2D
       and 3D cameras from SEALAB in combination with AI flags vessels and
       people, as well as tracks objects of interest, for human analyst
@@ -72,7 +73,7 @@ splitSections:
       determine risks in humans.
     heading: Current Innovations
     featuredimage: /img/military-innovation.svg
-    subheading: Advanced FPGA technology for use under water
+    subheading: Advanced FPGA Technology for Use Under Water
 ---
 ## Autonomous Vehicles
 

@@ -2,11 +2,13 @@
 templateKey: project-page-primary
 title: INDISAL
 heading: INDISAL
-seoDescription: INDISAL seoDescription bla bla
+seoDescription: >-
+  Enabling technology for recognition of individual salmon by using computer
+  vision and machine learning algorithms. 
 description: >-
   Enabling technology for recognition of individual salmon by using computer
   vision and machine learning algorithms. 
-featuredImage: /img/LaksID2_INDISAL.png
+featuredImage: /img/LaksID-01.jpg
 featuredImageCaption: Illustration of the INDISAL-project (A.M. Lien/SINTEF Ocean)
 keyFactors:
   factorItems:
