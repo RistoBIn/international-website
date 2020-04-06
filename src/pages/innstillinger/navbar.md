@@ -46,24 +46,27 @@ menuPaths:
     path: '#'
     title: Projects
   - dropdown:
+      - path: /about/investors/
+        title: Investing in SEALAB
       - path: /about/vision-strategy/
         title: Vision & Strategy
-      - path: /leadership/
-        title: Leadership
       - path: /about/business-model/
         title: Business Model
-      - path: /about/innovation-cause-we-can/
-        title: Innovation ‘Cause We Can
-      - path: /about/sealab-osc/
-        title: Ocean Space Center
-      - path: /about/social-responsibility/
-        title: Sustainability Impact
-      - path: /about/partners/
-        title: Partners
-      - path: /about/investors/
-        title: Investors
+      - path: /leadership/
+        title: Leadership
+    path: '#'
+    title: Investors
+  - dropdown:
       - path: /about/partnership/
         title: Partnership
+      - path: /about/social-responsibility/
+        title: Sustainability Impact
+      - path: /about/sealab-osc/
+        title: Ocean Space Center
+      - path: /about/innovation-cause-we-can/
+        title: Innovation ‘Cause We Can
+      - path: /about/partners/
+        title: Partners
       - path: /contact/locations
         title: Locations
     path: '#'
