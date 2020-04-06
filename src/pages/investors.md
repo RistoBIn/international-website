@@ -68,8 +68,11 @@ highlights:
     path: /contact/
     text: Contact us
   content: >-
-    ## Financial highlights *** Striving for high profitability, revenue quality
-    and visibility ***
+    ## Financial highlights 
+
+
+    ***Striving for high profitability, revenue quality and visibility*** 
+
 
     SEALAB has started preparations for a series B fundraising, scheduled to
     take place within mid-year 2020. Potential partners and investors with
