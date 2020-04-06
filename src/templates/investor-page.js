@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+import PieChartShareholders from '../components/PieChartShareholders';
 import generateHTML from '../utils/generateHTML';
 
 export const InvestorPageTemplate = ({
@@ -11,6 +12,7 @@ export const InvestorPageTemplate = ({
   heading,
   description,
   featuredimage,
+  shareholders,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -20,8 +22,10 @@ export const InvestorPageTemplate = ({
         <div className="container">
           <h1 className="section--title">{heading}</h1>
           <p className="section--description">{description}</p>
-          <p className="section--description">Investor-page</p>
         </div>
+      </section>
+      <section className="has-dark-background investors piechart">
+        <PieChartShareholders items={shareholders} />
       </section>
     </>
   );
@@ -46,6 +50,7 @@ const InvestorPage = ({ data }) => {
         heading={heading}
         description={description}
         featuredimage={featuredimage}
+        shareholders={shareholders}
       />
     </Layout>
   );
@@ -70,6 +75,13 @@ export const pageQuery = graphql`
               presentationWidth
             }
           }
+        }
+        shareholders {
+          name
+          shares
+          percentage
+          country
+          accountType
         }
       }
     }
