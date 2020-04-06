@@ -31,7 +31,7 @@ productSection:
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: >-
-    You've never seen a camera technology for harsh environment like this. Now
+    You've never seen camera technology for harsh environment like this. Now
     let's create a better world
 quotes:
   - authorImage: ''
