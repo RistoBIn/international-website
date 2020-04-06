@@ -38,8 +38,8 @@ const HighlightedSpec = ({
         className={styles.highlighted__specification__title}
         prefix={keyNumberBefore}
         suffix={keyNumberAfter}
-        delay={3}
-        duration={5}
+        delay={4}
+        duration={10}
         end={keyNumber}
       />
       <p className={styles.highlighted__specification__description}>
