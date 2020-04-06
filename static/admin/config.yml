@@ -211,12 +211,17 @@ collections:
                 name: item1
                 widget: object
                 fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Image", name: "featuredimage", widget: image }
                   - {label: "Comparison list", name: "items", widget: "list"}
               - label: "Item 2"
                 name: item2
                 widget: object
                 fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Image", name: "featuredimage", widget: image }
                   - {label: "Comparison list", name: "items", widget: "list"}
+                  
 
           - {label: "First section image", name: "featuredimageSecondary", widget: image }
           - {label: "First section content", name: "body", widget: "markdown"}

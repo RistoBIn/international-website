@@ -13,6 +13,8 @@ description: >-
 item1vsitem2:
   heading: Cloud vs Edge
   item1:
+    heading: Cloud computing
+    featuredimage: /img/cloud.svg
     items:
       - 'Massive, scalable compute power'
       - Unlimited storage
@@ -23,6 +25,8 @@ item1vsitem2:
       - Data sent over internet
       - Relatively high cost
   item2:
+    heading: Edge computing
+    featuredimage: /img/edge-computing.svg
     items:
       - Limited compute power
       - Limited storage
