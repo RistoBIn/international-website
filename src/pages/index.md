@@ -22,7 +22,9 @@ centeredSection:
   description: 'SEALAB provides a space for people to connect, create and communicate'
   subheading: ''
 productSection:
-  description: ' You''ve never seen camera technology for harsh environment like this. Now let''s create a better world'
+  description: |2-
+     You've never seen camera technology for harsh environment like this. 
+    Now let's create a better world
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: >-
