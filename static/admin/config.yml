@@ -379,7 +379,8 @@ collections:
 #### STATIC PAGES (FRONT PAGE for example) ####
 
   - name: "pages"
-    label: "Regular pages"
+    label: "Regular pages (Home, leadership, vision etc)"
+    description: "These are static pages, which means you cannot create more with the same layout. However, let Fredrik (or anyone at the software team) know if you want a similar page with similar layout."
     files:
       - file: "src/pages/index.md"
         label: "Front page"
@@ -452,6 +453,96 @@ collections:
             fields: 
               - {label: "Large image", name: "bgimage", widget: image }
           - {label: "Content next to inspirational image", name: "body", widget: "markdown"}
+
+      - file: "src/pages/investors.md"
+        label: "Investors page"
+        name: "investors"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "investor-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: SEO Description, name: seoDescription, widget: text, hint: "Important - Make a overall description"}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: text}
+          - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
+          - {label: "Image caption", name: featuredimageCaption, widget: text}
+          - label: "Shareholders in SEALAB"
+            name: shareholders
+            widget: list
+            hint: "This is also showed in a table on the Investor page."
+            fields:
+              - {label: "Company/Person name", name: name, widget: string}
+              - {label: "Number of shares", name: shares, widget: number}
+              - {label: "Percentage of shares", name: percentage, widget: number, valueType: "float", max: 1, min: 0, step: 0.1}
+              - {label: "Account type", name: accountType, widget: string, default: "A"}
+              - {label: "Country", name: country, widget: string, default: "NOR"}
+          - label: "Financial highlights"
+            name: highlights
+            widget: object
+            fields: 
+              - {label: "Left content", name: content, widget: markdown}
+              - label: "Call to action button"
+                widget: object
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
+              - label: "Highlighted financials"
+                widget: list
+                name: items
+                hint: "Try to keep it at a maximum of 4 highlights."
+                  - {label: "Content", name: content, widget: markdown}
+                  - {label: "Percentage", name: percentage, widget: number, valueType: "float", max: 1, min: 0, step: 0.1}
+          - label: "SEALAB Highlighted Partners"
+            name: partners
+            widget: object
+            fields: 
+              - {label: "Centered content", name: content, widget: markdown}
+              - label: "Partner logos"
+                widget: list
+                name: logos
+                field: {label: "Logo", name: "image", widget: "image"}
+          - label: "Cooperation"
+            name: splitSection
+            widget: object
+            fields: 
+              - {label: Heading, name: heading, widget: string}
+              - {label: "Left content", name: left, widget: markdown, required: false}
+              - {label: "Right content", name: right, widget: markdown, required: false}
+              - label: "Call to action buttons"
+                widget: list
+                name: buttons
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
+          - label: "Table section with shareholder information"
+            name: table
+            widget: object
+            fields: 
+              - {label: Title, name: content, widget: markdown, required: false}
+              label: "Key numbers"
+              name: boxes
+              widget: list
+              fields:
+                - {label: Heading, name: heading, widget: string}
+                - {label: Description, name: description, widget: text}
+          - label: "Presentation files"
+            name: presentations
+            widget: object
+            fields: 
+              - {label: Heading, name: heading, widget: string}
+              - label: Files
+                name: items
+                widget: list
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: File, name: file, widget: file}
+                  - {label: Icon, name: icon, widget: image, default: "/img/icon-sealab-logo-dark.svg"}
+                  - {label: Description, name: description, widget: string, default: "Download PDF", hint: "Remember to change this, if uploading a different file like Powerpoints"}
+
+
+              
+
 
       - file: "src/pages/about/vision-strategy.md"
         name: "vision-strategy"
