@@ -28,9 +28,8 @@ productSection:
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: >-
-    With edge-processing methods to identify and report essential information
-    from any events in each unit. This enables mission analysis once the data
-    reaches the cloud.
+    Edge Processing - Anywhere - Anytime - Analysis - Identify and Report -
+    Cloud Computing
 quotes:
   - authorImage: ''
     authorName: ''
