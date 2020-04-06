@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: SEALAB
-seoDescription: 'SEALAB - More than meets the eye. '
+seoDescription: SEALAB - More than meets the eye
 heading: More than meets the eye
 bgimage: /img/sealab-water-hero.jpg
 items:
