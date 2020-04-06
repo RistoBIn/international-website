@@ -27,7 +27,7 @@ productSection:
     Now let's create a better world
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
-  heading: Edge to Cloud. Anywhere. Anytime
+  heading: Edge to Cloud. Anywhere. Anytime.
 quotes:
   - authorImage: ''
     authorName: ''
