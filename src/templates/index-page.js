@@ -143,7 +143,9 @@ export const pageQuery = graphql`
         }
 
         items {
-          heading
+          keyNumber
+          keyNumberBefore
+          keyNumberAfter
           description
         }
 

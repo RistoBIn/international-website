@@ -400,7 +400,9 @@ collections:
             widget: list
             name: items
             fields:
-              - {label: Heading, name: heading, widget: string, hint: "Try to keep it to one word"}
+              - {label: Number, name: keyNumber, widget: number, hint: "Try to keep it to one word"}
+              - {label: Pre Number, name: keyNumberBefore, widget: string, required: false, hint: "This will appear in title, before number."}
+              - {label: "After Number", name: keyNumberAfter, widget: string, required: false, hint: "This will appear in title, after number."}
               - {label: Description, name: description, widget: text}
           - label: Centered section
             widget: object

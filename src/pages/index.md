@@ -6,13 +6,15 @@ heading: More than meets the eye
 bgimage: /img/sealab-water-hero.jpg
 items:
   - description: Billion USD yearly negative impact for poor ocean management
-    heading: '200'
+    keyNumber: 200
+    keyNumberBefore: ''
+    keyNumberAfter: ''
   - description: Billion people rely on the ocean
-    heading: '7.8'
+    keyNumber: 7.8
   - description: >-
       Billion USD needed yearly to reduce the negative impact and sustain the
       ocean from now, to infinity and beyond
-    heading: '21'
+    keyNumber: 21
 centeredSection:
   heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
   bgimage: /img/subsea-plant.jpg
