@@ -1,7 +1,7 @@
 ---
 templateKey: about-page-primary
-title: Partnership
-heading: Partnership
+title: App Community
+heading: Want to join our App Community?
 description: >-
   Our partnership philosophy is simple - if entering a partnership creates a
   better and easier experience for our customers, we will do it. An attractive

@@ -56,7 +56,7 @@ fourthNavigation:
   - path: /about/investors/
     title: Investors
   - path: /about/partnership/
-    title: Partnership
+    title: App Community
   - path: /locations
     title: Locations
 companyOffices:

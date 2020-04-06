@@ -37,11 +37,12 @@ centeredTextSection:
   content: >-
     ## Our story
 
+
     In 2015 the entrepreneurs Oscar Marković and Milan Marković had a
     breakthrough. They were the first in the World to 3D measure a salmon’s
     biomass using Light Field Technology. This breakthrough changed everything!
     The World has a huge need for new and smart sensors for food production in
-    the sea and on land.
+    the sea and on land. Our BlueThink IoT Bridge is what you need.
 primaryCenteredImageSection:
   featuredimage: /img/_DSC7691.png
   featuredimageCaption: Milan Marković and Oscar Marković
