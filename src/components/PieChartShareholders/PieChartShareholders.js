@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 
-import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from 'recharts';
+import {
+  PieChart,
+  Pie,
+  Sector,
+  ResponsiveContainer,
+  Cell,
+  Label,
+} from 'recharts';
 import styles from './PieChartShareholders.module.scss';
 
 const COLORS = [
@@ -23,9 +30,9 @@ const PieChartShareholders = ({ items }) => {
     const { name, percentage: value } = item;
     return { name, value, index };
   });
+  const RADIAN = Math.PI / 180;
 
   const renderActiveShape = props => {
-    const RADIAN = Math.PI / 180;
     const {
       cx,
       cy,
@@ -50,25 +57,16 @@ const PieChartShareholders = ({ items }) => {
     const textAnchor = cos >= 0 ? 'start' : 'end';
 
     return (
-      <g>
-        <text
-          className={styles.pieChart__title__percentage}
-          x={cx}
-          y={cy}
-          dy={8}
-          textAnchor="middle"
-        >
-          {`${(value * 100).toFixed(2)}%`}
+      <g className={styles.pieChart__hover}>
+        <text x={cx} y={cy} textAnchor="middle">
+          <tspan x={cx} className={styles.pieChart__title__percentage}>{`${(
+            value * 100
+          ).toFixed(2)}%`}</tspan>
+          <tspan x={cx} className={styles.pieChart__title__company} dy="1.2em">
+            {payload.name}
+          </tspan>
         </text>
-        <text
-          className={styles.pieChart__title__company}
-          x={cx}
-          y={cy}
-          dy={40}
-          textAnchor="middle"
-        >
-          {payload.name}
-        </text>
+        <text x={cx} y={cy} textAnchor="middle" />
         <Sector
           cx={cx}
           cy={cy}
@@ -95,24 +93,67 @@ const PieChartShareholders = ({ items }) => {
         <circle cx={ex} cy={ey} r={2} fill={fill} stroke="none" />
         <text
           x={ex + (cos >= 0 ? 1 : -1) * 12}
-          y={ey + (cos >= 0 ? -20 : 0)}
-          dy={18}
-          textAnchor={textAnchor}
-          fill="#FFF"
-          style={{ fontWeight: 'bold' }}
-        >
-          {`${(value * 100).toFixed(2)}%`}
-        </text>
-        <text
-          x={ex + (cos >= 0 ? 1 : -1) * 12}
           y={ey + (cos >= 0 ? -26 : 0)}
-          dy={45}
+          dy={15}
           textAnchor={textAnchor}
           fill="#FFF"
         >
           {`${payload.name}`}
         </text>
+        <text
+          x={ex + (cos >= 0 ? 1 : -1) * 12}
+          y={ey + (cos >= 0 ? -20 : 5)}
+          dy={30}
+          textAnchor={textAnchor}
+          fill="#FFF"
+          className={styles.label}
+        >
+          {`${(value * 100).toFixed(2)}%`}
+        </text>
       </g>
+    );
+  };
+
+  const renderLabel = props => {
+    const {
+      cx,
+      cy,
+      midAngle,
+      outerRadius,
+      fill,
+      payload,
+      value,
+      index,
+    } = props;
+
+    if (activeIndex === index) return <></>;
+    const sin = Math.sin(-RADIAN * midAngle);
+    const cos = Math.cos(-RADIAN * midAngle);
+    const sx = cx + (outerRadius + 5) * cos;
+    const sy = cy + (outerRadius + 5) * sin;
+    const mx = cx + (outerRadius + 15) * cos;
+    const my = cy + (outerRadius + 15) * sin;
+    const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+    const ey = my;
+    const textAnchor = cos >= 0 ? 'start' : 'end';
+    return (
+      <>
+        <path
+          d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
+          stroke={fill}
+          fill="none"
+        />
+        <text
+          x={ex + (cos >= 0 ? 1 : -1) * 12}
+          y={ey + (cos >= 0 ? -20 : 0)}
+          dy={20}
+          textAnchor={textAnchor}
+          fill="#FFF"
+          className={styles.label}
+        >
+          {`${(value * 100).toFixed(2)}%`}
+        </text>
+      </>
     );
   };
 
@@ -122,7 +163,11 @@ const PieChartShareholders = ({ items }) => {
   };
 
   return (
-    <ResponsiveContainer width="100%" height={500}>
+    <ResponsiveContainer
+      className={styles.chartContainer}
+      width="100%"
+      height="100%"
+    >
       <PieChart>
         <Pie
           activeIndex={activeIndex}
@@ -130,7 +175,8 @@ const PieChartShareholders = ({ items }) => {
           data={data}
           innerRadius="74%"
           outerRadius="80%"
-          paddingAngle={2}
+          label={renderLabel}
+          paddingAngle={5}
           fill={COLORS[activeIndex]}
           dataKey="value"
           onMouseEnter={event => handlePieHovering(event)}

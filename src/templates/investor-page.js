@@ -24,7 +24,7 @@ export const InvestorPageTemplate = ({
           <p className="section--description">{description}</p>
         </div>
       </section>
-      <section className="has-dark-background investors piechart">
+      <section className="section has-dark-background investors piechart">
         <PieChartShareholders items={shareholders} />
       </section>
     </>
