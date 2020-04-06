@@ -19,9 +19,7 @@ centeredSection:
   button:
     path: /solutions/
     text: See solutions
-  description: >-
-    SEALAB provides a space for people to connect, create and communicate; with
-    and for our blue planet
+  description: 'SEALAB provides a space for people to connect, create and communicate'
   subheading: Deep Sea & Marine Applications
 productSection:
   description: >-
