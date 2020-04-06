@@ -20,16 +20,19 @@ centeredSection:
     path: /solutions/
     text: See solutions
   description: >-
-    SEALAB cameras and products can be used in many areas and industries, from
-    seafood factories to military underwater diving operations.
+    SEALAB provides a space for people to connect, create and communicate; with
+    and for our blue planet
   subheading: Deep Sea & Marine Applications
 productSection:
   description: >-
-    Superfast FPGA technology together with smart 2D and 3D cameras will change
-    everything in the ocean space.
+    With edge-processing methods to identify and report essential information
+    from any events in each unit. This enables mission analysis once the data
+    reaches the cloud. 
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
-  heading: You've Never Seen a Camera Like This
+  heading: >-
+    You've never seen a camera technology for harsh environment like this. Now
+    let's create a better world
 quotes:
   - authorImage: ''
     authorName: ''
