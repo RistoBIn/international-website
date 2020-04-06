@@ -58,7 +58,7 @@ menuPaths:
     title: Investors
   - dropdown:
       - path: /about/partnership/
-        title: Partnership
+        title: App Community
       - path: /about/social-responsibility/
         title: Sustainability Impact
       - path: /about/sealab-osc/
