@@ -40,6 +40,7 @@ const InvestorPage = ({ data }) => {
     description,
     seoDescription,
     featuredimage,
+    shareholders,
   } = frontmatter;
 
   return (
