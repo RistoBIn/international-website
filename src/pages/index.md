@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: SEALAB
-seoDescription: 'SEALAB - More than meets the eye. '
+seoDescription: SEALAB - More than meets the eye
 heading: More than meets the eye
 bgimage: /img/sealab-water-hero.jpg
 items:
@@ -19,20 +19,16 @@ centeredSection:
   button:
     path: /solutions/
     text: See solutions
-  description: >-
-    SEALAB provides a space for people to connect, create and communicate; with
-    and for our blue planet
+  description: 'SEALAB provides a space for people to connect, create and communicate'
   subheading: Deep Sea & Marine Applications
 productSection:
-  description: >-
-    With edge-processing methods to identify and report essential information
-    from any events in each unit. This enables mission analysis once the data
-    reaches the cloud. 
+  description: ' You''ve never seen camera technology for harsh environment like this. Now let''s create a better world'
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: >-
-    You've never seen camera technology for harsh environment like this. Now
-    let's create a better world
+    With edge-processing methods to identify and report essential information
+    from any events in each unit. This enables mission analysis once the data
+    reaches the cloud.
 quotes:
   - authorImage: ''
     authorName: ''
