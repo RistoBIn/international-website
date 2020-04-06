@@ -176,7 +176,7 @@ export default class Index extends React.Component {
               >
                 <h3>Serbia</h3>
                 <p>
-                  In Niš
+                  Niš
                   <br />
                   Bore Vukmirovića 9
                   <br />
