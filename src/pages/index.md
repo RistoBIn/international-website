@@ -22,15 +22,13 @@ centeredSection:
   description: 'SEALAB provides a space for people to connect, create and communicate'
   subheading: Deep Sea & Marine Applications
 productSection:
-  description: >-
-    With edge-processing methods to identify and report essential information
-    from any events in each unit. This enables mission analysis once the data
-    reaches the cloud. 
+  description: ' You''ve never seen camera technology for harsh environment like this. Now let''s create a better world'
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: >-
-    You've never seen camera technology for harsh environment like this. Now
-    let's create a better world
+    With edge-processing methods to identify and report essential information
+    from any events in each unit. This enables mission analysis once the data
+    reaches the cloud.
 quotes:
   - authorImage: ''
     authorName: ''
