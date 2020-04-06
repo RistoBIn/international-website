@@ -482,6 +482,7 @@ collections:
               - {label: "Left content", name: content, widget: markdown}
               - label: "Call to action button"
                 widget: object
+                name: button
                 required: false
                 fields:
                   - {label: "Button text", name: text, widget: string, required: false}
@@ -490,6 +491,7 @@ collections:
                 widget: list
                 name: items
                 hint: "Try to keep it at a maximum of 4 highlights."
+                fields:
                   - {label: "Content", name: content, widget: markdown}
                   - {label: "Percentage", name: percentage, widget: number, valueType: "float", max: 1, min: 0, step: 0.1}
           - label: "SEALAB Highlighted Partners"
@@ -520,12 +522,12 @@ collections:
             widget: object
             fields: 
               - {label: Title, name: content, widget: markdown, required: false}
-              label: "Key numbers"
-              name: boxes
-              widget: list
-              fields:
-                - {label: Heading, name: heading, widget: string}
-                - {label: Description, name: description, widget: text}
+              - label: "Key numbers"
+                name: boxes
+                widget: list
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Description, name: description, widget: text}
           - label: "Presentation files"
             name: presentations
             widget: object
