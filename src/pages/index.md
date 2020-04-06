@@ -20,7 +20,7 @@ centeredSection:
     path: /solutions/
     text: See solutions
   description: 'SEALAB provides a space for people to connect, create and communicate'
-  subheading: Deep Sea & Marine Applications
+  subheading: ''
 productSection:
   description: ' You''ve never seen camera technology for harsh environment like this. Now let''s create a better world'
   featuredimage: /img/camera_render.png
