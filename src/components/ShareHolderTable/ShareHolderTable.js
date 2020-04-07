@@ -63,7 +63,7 @@ const TableItem = ({
       </td>
       <td className="is-hidden-mobile">
         <p className={styles.tableItem__percentOfShares}>
-          {`${(percentOfShares * 100).toFixed(0)}`}
+          {`${(percentOfShares * 100).toFixed(2)}`}
         </p>
       </td>
       <td className="is-hidden-mobile">
