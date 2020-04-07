@@ -92,6 +92,9 @@ highlights:
         60% from SEALAB software, 40% from hardware rental.
       percentage: 0.6
 partners:
+  button:
+    text: Partnerships
+    path: /about/partnerships/
   content: >-
     ## Open to third parties 
 

@@ -220,6 +220,8 @@ body {
     h3,
     h4 {
       color: $white;
+      margin-bottom: 0;
+      padding-bottom: 20px;
     }
     p strong {
       font-weight: 700;
@@ -262,6 +264,33 @@ body {
   }
 }
 
+.has-dark-background {
+  color: $white;
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  strong {
+    color: $white;
+  }
+}
+.has-light-dark-background {
+  color: $white;
+  background-color: $dark-light;
+  h1,
+  h2,
+  h3 {
+    color: $white;
+  }
+  strong,
+  li,
+  p,
+  p strong {
+    color: inherit !important;
+  }
+}
+
 .section {
   .section--title {
     @include PageTitle;
@@ -299,30 +328,7 @@ body {
     }
   }
 
-  &.has-dark-background {
-    color: $white;
-    h1,
-    h2,
-    h3,
-    p,
-    li,
-    strong {
-      color: $white;
-    }
-  }
-  &.has-light-dark-background {
-    color: $white;
-    background-color: $dark-light;
-    strong,
-    h1,
-    h2,
-    h3,
-    li,
-    p,
-    p strong {
-      color: inherit !important;
-    }
-  }
+
   .content {
     &.centered-free-text {
       max-width: 1022px;
@@ -336,6 +342,10 @@ body {
         font-weight: normal;
         font-size: inherit;
         color: $light-blue;
+      }
+      .button {
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     &.is-left-aligned {
