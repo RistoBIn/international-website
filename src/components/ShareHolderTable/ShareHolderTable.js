@@ -52,22 +52,24 @@ const TableItem = ({
   return (
     <tr className={classNames(styles.tableItem)}>
       <td>
-        <p className={styles.rank}>{rank}</p>
+        <p className={styles.tableItem__rank}>{rank}</p>
       </td>
       <td>
-        <p className={classNames(styles.shareholder)}>{shareholder}</p>
+        <p className={classNames(styles.tableItem__shareholder)}>
+          {shareholder}
+        </p>
       </td>
       <td>
-        <p className={classNames(styles.shares)}>{shares}</p>
+        <p className={classNames(styles.tableItem__shares)}>{shares}</p>
       </td>
       <td className="is-hidden-mobile">
-        <p className={styles.percentOfShares}>{percentOfShares}</p>
+        <p className={styles.tableItem__percentOfShares}>{percentOfShares}</p>
       </td>
       <td className="is-hidden-mobile">
-        <p className={styles.accountType}>{accountType}</p>
+        <p className={styles.tableItem__accountType}>{accountType}</p>
       </td>
       <td className="is-hidden-mobile">
-        <p className={styles.country}>{country}</p>
+        <p className={styles.tableItem__country}>{country}</p>
       </td>
     </tr>
   );
