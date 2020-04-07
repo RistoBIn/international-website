@@ -92,6 +92,9 @@ highlights:
         60% from SEALAB software, 40% from hardware rental.
       percentage: 0.6
 partners:
+  button:
+    text: Partnerships
+    path: /about/partnerships/
   content: >-
     ## Open to third parties 
 
@@ -132,13 +135,13 @@ splitSection:
 table:
   boxes:
     - heading: Total of shares
-      description: 1.453.262
+      description: '1.453.262'
     - heading: Share Capital
-      description: 49.5 mil NOK
+      description: '49.5 mil NOK'
     - heading: Total of investors
       description: '9'
     - heading: Updated
-      description: 30.03.2020
+      description: '30.03.2020'
   content: >-
     ## Always striving for excellence, SEALAB staff represents broad expertise
     and experience. 

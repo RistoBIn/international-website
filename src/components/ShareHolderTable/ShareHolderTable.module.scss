@@ -1,0 +1,62 @@
+@import '../_variables.scss';
+
+@mixin tableContent {
+  font-family: $primaryFont;
+  font-weight: 600;
+  font-size: 15px;
+  color: $body-light;
+}
+
+.table {
+  background-color: transparent !important;
+  border: 1px solid $border-dark-background;
+  overflow-x: auto;
+  width: 100%;
+  .head {
+    th {
+      font-family: $primaryFont;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 200%;
+      color: $white !important;
+      padding: 20px 17px 42px 17px;
+      border: 1px solid $border-dark-background;
+    }
+  }
+  .body {
+    tr.tableItem td {
+      border: 1px solid $border-dark-background;
+      padding: 15px 10px;
+      .tableItem__shareholder {
+        color: $white;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet) {
+    thead {
+      th {
+        font-size: 4vw !important;
+        line-height: 200%;
+        padding: 10px 5px;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 5px 3px;
+          width: 48vw;
+          max-width: 48vw;
+          .tableItem__shareholder,
+          .tableItem__shares {
+            font-size: 3vw !important;
+            word-wrap: break-word;
+            white-space: initial;
+          }
+        }
+      }
+    }
+  }
+}
