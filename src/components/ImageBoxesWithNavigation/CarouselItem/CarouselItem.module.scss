@@ -16,9 +16,7 @@ $itemWidthMobile: 320px;
     background-size: cover;
   }
   .carousel__item__content {
-    height: $itemHeightMobile;
     margin: auto 0 !important;
-    padding-top: 15%;
   }
   .carousel__item__button,
   .carousel__item__heading {
@@ -49,9 +47,5 @@ $itemWidthMobile: 320px;
   @media only screen and (min-width: $tablet) {
     min-height: $itemHeightDesktop;
     min-width: $itemWidthDesktop;
-    .carousel__item__content {
-      height: $itemHeightDesktop;
-      padding-top: 25%;
-    }
   }
 }
