@@ -63,7 +63,9 @@ const TableItem = ({
         <p className={classNames(styles.tableItem__shares)}>{shares}</p>
       </td>
       <td className="is-hidden-mobile">
-        <p className={styles.tableItem__percentOfShares}>{percentOfShares}</p>
+        <p className={styles.tableItem__percentOfShares}>
+          {percentOfShares * 100}
+        </p>
       </td>
       <td className="is-hidden-mobile">
         <p className={styles.tableItem__accountType}>{accountType}</p>
