@@ -1,5 +1,5 @@
-import CarouselItem from './Carousel';
+import HorizontalView from './Horizontal';
+import GridView from './Grid';
 
-export { default } from './AllSolutions';
-
-export { CarouselItem };
+export default HorizontalView;
+export { HorizontalView, GridView };

@@ -12,6 +12,7 @@ import Button from '../components/Button';
 import PercentageItems from '../components/PercentageItems';
 import NonStretchedImage from '../components/NonStretchedImage';
 import ShareHolderTable from '../components/ShareHolderTable';
+import { HorizontalView as SolutionsHorizontalSection } from '../components/AllSolutions';
 
 const PieChartSection = styled.section`
   padding: 3rem 0;
@@ -83,10 +84,6 @@ const TableHeaders = styled.div`
       font-weight: 300;
     }
   }
-`;
-
-const Table = styled.table`
-  height: 100%;
 `;
 
 export const InvestorPageTemplate = ({
@@ -236,6 +233,7 @@ export const InvestorPageTemplate = ({
           <ShareHolderTable shareholders={shareholders} />
         </div>
       </section>
+      <SolutionsHorizontalSection />
     </>
   );
 };
