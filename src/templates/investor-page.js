@@ -2,10 +2,21 @@ import React from 'react';
 
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import PieChartShareholders from '../components/PieChartShareholders';
 import generateHTML from '../utils/generateHTML';
+
+const PieChartSection = styled.section`
+  padding: 3rem 0;
+  @media only screen and (min-width: 1408px) {
+    background-image: url('/img/hidden/cloud-and-shareholders.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+  }
+`;
 
 export const InvestorPageTemplate = ({
   contentComponent,
@@ -24,9 +35,9 @@ export const InvestorPageTemplate = ({
           <p className="section--description">{description}</p>
         </div>
       </section>
-      <section className="section has-dark-background investors piechart">
+      <PieChartSection className="section has-dark-background piechart">
         <PieChartShareholders items={shareholders} />
-      </section>
+      </PieChartSection>
     </>
   );
 };
