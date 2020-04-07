@@ -53,7 +53,7 @@ fourthNavigation:
     title: Sustainability impact
   - path: /about/partners/
     title: Partners
-  - path: /about/investors/
+  - path: /investors/
     title: Investors
   - path: /about/partnership/
     title: App Community
