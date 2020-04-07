@@ -46,7 +46,7 @@ menuPaths:
     path: '#'
     title: Projects
   - dropdown:
-      - path: /about/investors/
+      - path: /investors/
         title: Investing in SEALAB
       - path: /about/vision-strategy/
         title: Vision & Strategy
