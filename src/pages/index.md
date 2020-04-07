@@ -7,16 +7,16 @@ bgimage: /img/sealab-water-hero.jpg
 items:
   - description: Yearly negative impact for poor ocean management
     keyNumber: 200
-    keyNumberAfter: Billion
+    keyNumberAfter: '  Billion'
     keyNumberBefore: $
   - description: People rely on the ocean
     keyNumber: 7.8
-    keyNumberAfter: Billion
+    keyNumberAfter: '  Billion'
   - description: >-
       Needed yearly to reduce the negative impact and sustain the ocean from
       now, to infinity and beyond
     keyNumber: 21
-    keyNumberAfter: Billion
+    keyNumberAfter: '  Billion'
     keyNumberBefore: $
 centeredSection:
   heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
