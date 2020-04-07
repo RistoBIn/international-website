@@ -12,7 +12,6 @@ const ShareHolderTable = ({ shareholders }) => {
     return <></>;
   return (
     <>
-      {/* <ColorDescription /> */}
       <table className={classNames('table', 'is-fullwidth', styles.table)}>
         <thead className={styles.head}>
           <tr>
@@ -64,7 +63,7 @@ const TableItem = ({
       </td>
       <td className="is-hidden-mobile">
         <p className={styles.tableItem__percentOfShares}>
-          {percentOfShares * 100}
+          {`${(percentOfShares * 100).toFixed(0)}`}
         </p>
       </td>
       <td className="is-hidden-mobile">
