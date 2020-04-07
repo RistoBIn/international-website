@@ -8,12 +8,14 @@ import { idMaker } from '../../../utils/id-maker';
 const gen = idMaker();
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, [col] 440px);
+  grid-template-columns: repeat(auto-fill, [col] 330px);
   grid-gap: 20px;
-  //   .item {
-  //     height: 404px;
-  //     width: 440px;
-  //   }
+  .item {
+    height: 280px !important;
+    width: 330px !important;
+    min-height: 280px !important;
+    min-width: 330px !important;
+  }
 `;
 
 const Grid = props => {
