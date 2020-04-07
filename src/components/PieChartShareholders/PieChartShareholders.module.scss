@@ -17,25 +17,39 @@
   }
   tspan.pieChart__title__company {
     fill: $body-light;
-    font-size: 10px;
+    font-size: 7px;
     font-weight: bold;
     text-transform: uppercase;
   }
-  text.label {
+  text.label__text {
     font-weight: bold;
     font-size: 10px;
+  }
+  text.label__company {
+    font-size: 10px;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    .hidden__mobile {
+      display: none !important;
+      stroke: transparent !important;
+      fill: transparent !important;
+    }
   }
 
   @media only screen and (min-width: $tablet) {
     height: 450px !important;
-    text.pieChart__title__percentage {
-      font-size: 32px;
+    tspan.pieChart__title__percentage {
+      font-size: 32px !important;
     }
-    text.pieChart__title__company {
+    tspan.pieChart__title__company {
+      font-size: 14px !important;
+    }
+    text.label__text {
+      font-weight: bold;
       font-size: 14px;
     }
-    text.label {
-      font-weight: bold;
+    text.label__company {
       font-size: 14px;
     }
   }

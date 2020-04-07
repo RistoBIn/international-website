@@ -1326,15 +1326,21 @@ section.product-page-primary {
 
 section.piechart {
   padding: 3rem 0;
-  @media only screen and (min-width: $tablet) {
-    background-repeat: no-repeat;
-    background-size: 120% contain;
-    background-position: center;
-    z-index: 10;
-    position: relative;
-    text {
-      z-index: 100 !important;
-      position: relative !important;
+  @media only screen and (max-width: $tablet) {
+    svg {
+      path.recharts-curve.recharts-pie-label-line {display: none !important;}
     }
   }
+  @media only screen and (min-width: $fullhd + 60) {
+    background-image: url('/img/hidden/cloud-and-shareholders.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.recharts-layer {
+  display: none !important;
+  fill: none !important;
+  stroke: none !important;
 }
