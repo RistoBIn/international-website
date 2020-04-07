@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="57px" viewBox="0 0 57 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>percentage-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="percentage-icon" transform="translate(2.000000, 3.000000)">
+            <path d="M52,26 C52,35.3307 47.085,43.5133 39.7027,48.1002 C35.724,50.5723 31.0287,52 26,52 C11.6406,52 0,40.3594 0,26 C0,11.6406 11.6406,0 26,0 C40.3594,0 52,11.6406 52,26 Z" id="full-percentage" stroke="#7BB7EF" stroke-width="3" opacity="0.3"></path>
+            <path d="M26,0 C39.4876,0 50.5904,10.0689 52,23" id="percentage" stroke="#7BB7EF" stroke-width="5" stroke-linecap="round"></path>
+            <text id="44-%" font-family="Ubuntu-Bold, Ubuntu" font-size="12" font-weight="bold" fill="#FFFFFF">
+                <tspan x="12.736" y="31">44 %</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import {
-  PieChart,
-  Pie,
-  Sector,
-  ResponsiveContainer,
-  Cell,
-  Label,
-  ReferenceLine,
-} from 'recharts';
+import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from 'recharts';
 import { useMedia } from 'react-use';
-
+import { idMaker } from '../../utils/id-maker';
 import styles from './PieChartShareholders.module.scss';
+
+const gen = idMaker();
 
 const COLORS = [
   '#7BB7EF',
@@ -28,7 +22,6 @@ const COLORS = [
 const PieChartShareholders = ({ items }) => {
   if (!items || items.length < 1) return <></>;
   const [activeIndex, setactiveIndex] = useState(0);
-  const [isHoveringPieChart, setHoveringPieChart] = useState(false);
   const data = items.map((item, index) => {
     const { name, percentage: value } = item;
     return { name, value, index };
@@ -47,7 +40,6 @@ const PieChartShareholders = ({ items }) => {
       endAngle,
       fill,
       payload,
-      percent,
       value,
     } = props;
     const sin = Math.sin(-RADIAN * midAngle);
@@ -140,15 +132,7 @@ const PieChartShareholders = ({ items }) => {
     const ey = my;
     const textAnchor = cos >= 0 ? 'start' : 'end';
     return (
-      <g className="testing-label">
-        {/* <ReferenceLine
-          stroke="red"
-          label={{
-            position: 'top',
-            fill: 'red',
-            fontSize: 14,
-          }}
-        /> */}
+      <>
         <path
           d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
           stroke={fill}
@@ -169,7 +153,7 @@ const PieChartShareholders = ({ items }) => {
         >
           {`${(value * 100).toFixed(2)}%`}
         </text>
-      </g>
+      </>
     );
   };
 
@@ -198,7 +182,11 @@ const PieChartShareholders = ({ items }) => {
           onMouseEnter={event => handlePieHovering(event)}
         >
           {data.map((entry, index) => (
-            <Cell fill={COLORS[index % COLORS.length]} stroke="transparent" />
+            <Cell
+              key={gen.next().value}
+              fill={COLORS[index % COLORS.length]}
+              stroke="transparent"
+            />
           ))}
         </Pie>
       </PieChart>
