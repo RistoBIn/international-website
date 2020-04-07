@@ -5,16 +5,19 @@ seoDescription: SEALAB - More than meets the eye
 heading: More than meets the eye
 bgimage: /img/sealab-water-hero.jpg
 items:
-  - description: Billion USD yearly negative impact for poor ocean management
+  - description: Yearly negative impact for poor ocean management
     keyNumber: 200
-    keyNumberBefore: ''
-    keyNumberAfter: ''
-  - description: Billion people rely on the ocean
+    keyNumberAfter: Billion
+    keyNumberBefore: $
+  - description: People rely on the ocean
     keyNumber: 7.8
+    keyNumberAfter: Billion
   - description: >-
-      Billion USD needed yearly to reduce the negative impact and sustain the
-      ocean from now, to infinity and beyond
+      Needed yearly to reduce the negative impact and sustain the ocean from
+      now, to infinity and beyond
     keyNumber: 21
+    keyNumberAfter: Billion
+    keyNumberBefore: $
 centeredSection:
   heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
   bgimage: /img/subsea-plant.jpg
