@@ -23,4 +23,4 @@ SEALAB has unique cooperation with BI, NTNU University and other research instit
 
 SEALAB is a well-managed business with solid operations and a strong management team in place.
 
-Never-give-up-strategy for 4 years, with a strong focus on technology development, now moving toward growth and profitability.
+Never-give-up-strategy for 5 years, with a strong focus on technology development, now moving toward growth and profitability.
