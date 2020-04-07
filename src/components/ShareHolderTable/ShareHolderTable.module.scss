@@ -30,42 +30,12 @@
       td {
         border: 1px solid $border-dark-background;
         padding: 15px 10px;
-        .domain {
+        .shareholder {
           @include tableContent;
         }
-        .company {
+        .shares {
           @include tableContent;
           opacity: 0.7;
-        }
-      }
-      &.green {
-        .status {
-          color: $success;
-        }
-        @media only screen and (max-width: $tablet) {
-          .domain {
-            color: $success;
-          }
-        }
-      }
-      &.yellow {
-        .status {
-          color: $warning;
-        }
-        @media only screen and (max-width: $tablet) {
-          .domain {
-            color: $warning;
-          }
-        }
-      }
-      &.red {
-        .status {
-          color: $error;
-        }
-        @media only screen and (max-width: $tablet) {
-          .domain {
-            color: $error;
-          }
         }
       }
     }
@@ -85,8 +55,8 @@
           padding: 5px 3px;
           width: 48vw;
           max-width: 48vw;
-          .domain,
-          .company {
+          .shareholder,
+          .shares {
             font-size: 3vw !important;
             word-wrap: break-word;
             white-space: initial;
@@ -94,41 +64,5 @@
         }
       }
     }
-  }
-}
-
-.colorDescriptionItem {
-  display: flex;
-  padding: 5px 0;
-  .redDot,
-  .greenDot,
-  .yellowDot {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: auto 0;
-    margin-right: 10px;
-  }
-  .redDot {
-    background-color: $error;
-  }
-  .greenDot {
-    background-color: $success;
-  }
-  .yellowDot {
-    background-color: $warning;
-  }
-  p {
-    color: $text-light;
-    opacity: 0.9;
-  }
-}
-
-.link {
-  text-decoration: underline;
-  transition: $transition;
-  &:hover, &:focus {
-    opacity: 0.7;
   }
 }

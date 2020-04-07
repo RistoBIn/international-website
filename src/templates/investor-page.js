@@ -11,6 +11,7 @@ import SplittedSection from '../components/SplittedSection';
 import Button from '../components/Button';
 import PercentageItems from '../components/PercentageItems';
 import NonStretchedImage from '../components/NonStretchedImage';
+import ShareHolderTable from '../components/ShareHolderTable';
 
 const PieChartSection = styled.section`
   padding: 3rem 0;
@@ -65,6 +66,29 @@ const ButtonFlex = styled.div`
   }
 `;
 
+const TableHeaders = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 8px;
+  padding-bottom: 60px;
+
+  .table-header {
+    padding: 10px 16px;
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      padding-bottom: 28px;
+    }
+    h3 {
+      font-weight: 300;
+    }
+  }
+`;
+
+const Table = styled.table`
+  height: 100%;
+`;
+
 export const InvestorPageTemplate = ({
   contentComponent,
   heading,
@@ -75,6 +99,7 @@ export const InvestorPageTemplate = ({
   highlights,
   partners,
   splitSection,
+  table,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -193,6 +218,24 @@ export const InvestorPageTemplate = ({
           />
         </div>
       </section>
+      <section className="section has-dark-background">
+        <div className="container">
+          <PostContent
+            content={generateHTML(table.content)}
+            className="content centered-free-text"
+          />
+          <TableHeaders>
+            {table.boxes.map(boxItem => (
+              <div className="table-header has-light-dark-background">
+                <p>{boxItem.heading}</p>
+                <h3>{boxItem.description}</h3>
+              </div>
+            ))}
+          </TableHeaders>
+
+          <ShareHolderTable shareholders={shareholders} />
+        </div>
+      </section>
     </>
   );
 };
@@ -211,6 +254,7 @@ const InvestorPage = ({ data }) => {
     highlights,
     partners,
     splitSection,
+    table,
   } = frontmatter;
 
   return (
@@ -226,6 +270,7 @@ const InvestorPage = ({ data }) => {
         highlights={highlights}
         partners={partners}
         splitSection={splitSection}
+        table={table}
       />
     </Layout>
   );
@@ -297,6 +342,33 @@ export const pageQuery = graphql`
           heading
           left
           right
+        }
+        table {
+          content
+          boxes {
+            heading
+            description
+          }
+        }
+        presentations {
+          heading
+          items {
+            file {
+              publicURL
+            }
+            heading
+            description
+            icon {
+              publicURL
+              extension
+              childImageSharp {
+                fluid(maxWidth: 250, quality: 50) {
+                  ...GatsbyImageSharpFluid_noBase64
+                  presentationWidth
+                }
+              }
+            }
+          }
         }
       }
     }
