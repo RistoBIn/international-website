@@ -9,11 +9,11 @@ const BackgroundImageSection = ({
   id,
   children,
   style,
-  cssFilter,
+  filterStyle,
   htmlTag,
 }) => {
   if (image && image.childImageSharp && image.childImageSharp.fluid) {
-    if (cssFilter)
+    if (filterStyle)
       return (
         <BackgroundImage
           Tag={htmlTag || 'section'}
@@ -24,7 +24,11 @@ const BackgroundImageSection = ({
         >
           <div
             className={styles.filter}
-            style={{ background: cssFilter, height: '100%' }}
+            style={{
+              height: '102%',
+              width: '100%',
+              ...filterStyle,
+            }}
           >
             {children}
           </div>

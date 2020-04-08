@@ -9,14 +9,15 @@ $itemWidthMobile: 320px;
   background-repeat: no-repeat;
   text-align: center;
   transition: all 1s ease;
-  min-height: $itemHeightMobile;
-  min-width: $itemWidthMobile;
+  height: $itemHeightMobile;
+  width: $itemWidthMobile;
 
   &.carousel__item__active {
     background-size: cover;
   }
   .carousel__item__content {
-    margin: auto 0 !important;
+    display: table-cell;
+    vertical-align: middle;
   }
   .carousel__item__button,
   .carousel__item__heading {
@@ -34,7 +35,7 @@ $itemWidthMobile: 320px;
     line-height: 200%;
     font-family: $primaryFont;
     font-size: 24px;
-    padding: 0 40px;
+    padding: 0 15px;
     padding-bottom: 11px;
   }
   &:hover {
@@ -45,7 +46,7 @@ $itemWidthMobile: 320px;
     }
   }
   @media only screen and (min-width: $tablet) {
-    min-height: $itemHeightDesktop;
-    min-width: $itemWidthDesktop;
+    height: $itemHeightDesktop;
+    width: $itemWidthDesktop;
   }
 }

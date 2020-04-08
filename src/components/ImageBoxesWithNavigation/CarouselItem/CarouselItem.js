@@ -30,14 +30,16 @@ const CarouselItem = ({
       <BackgroundImage
         image={featuredimage}
         htmlTag="div"
-        cssFilter={getBackgroundCSS()}
+        // cssFilter={}
         className={classNames(styles.carousel__item, className, {
           [styles.carousel__item__active]: isHovering,
         })}
         style={{
           backgroundPosition: 'bottom center !important',
+
           ...backgroundImageStyle,
         }}
+        filterStyle={{ background: getBackgroundCSS(), display: 'table' }}
       >
         <div className={styles.carousel__item__content}>
           <h3 className={classNames(styles.carousel__item__heading)}>
