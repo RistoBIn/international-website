@@ -103,7 +103,7 @@ const FilesWrapper = styled.div`
     transition: all 0.25s ease;
     .icon {
       height: 150px !important;
-      width: 100%;
+      width: auto;
     }
     .text {
       padding: 0 24px;
