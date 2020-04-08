@@ -88,20 +88,27 @@ const TableHeaders = styled.div`
 `;
 
 const PresentationSection = styled.section`
-  height: 100%;
+  h2 {
+    font-size: 32px;
+  }
 `;
 
 const FilesWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px 16px;
   .file-item {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    transition: all 0.25s ease;
     .icon {
-      height: 224px;
+      height: 150px !important;
+      width: 100%;
     }
     .text {
       padding: 0 24px;
       margin: auto;
-      margin-bottom: 0;
+      margin-right: 0;
     }
     h3 {
       font-size: 28px;
@@ -109,14 +116,22 @@ const FilesWrapper = styled.div`
       padding-bottom: 18px;
     }
     p {
+      padding-bottom: 18px;
       font-size: 14px;
       font-weight: bold;
       color: white !important;
-      padding-bottom: 18px;
+      transition: all 0.25s ease;
       svg {
         margin-left: 16px;
         margin-bottom: -2px;
       }
+    }
+  }
+  .file-item:hover,
+  .file-item:focus {
+    filter: brightness(1.5);
+    p {
+      text-decoration: underline;
     }
   }
 
@@ -128,6 +143,15 @@ const FilesWrapper = styled.div`
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
       height: 389px;
+      .icon {
+        height: 224px !important;
+        width: 100%;
+      }
+      .text {
+        padding: 0 24px;
+        margin: auto 0;
+        margin-bottom: 0;
+      }
     }
   }
 `;
@@ -285,7 +309,11 @@ export const InvestorPageTemplate = ({
           <h2>{presentations.heading}</h2>
           <FilesWrapper>
             {presentations.items.map(fileItem => (
-              <div className="file-item has-dark-background">
+              <a
+                href={fileItem.file.publicURL}
+                download
+                className="file-item has-dark-background"
+              >
                 <NonStretchedImage
                   objectFit="contain"
                   alt=""
@@ -299,7 +327,7 @@ export const InvestorPageTemplate = ({
                     <DownloadIcon />
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
           </FilesWrapper>
         </div>
