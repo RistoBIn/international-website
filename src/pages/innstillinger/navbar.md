@@ -65,6 +65,8 @@ menuPaths:
         title: Ocean Space Center
       - path: /about/innovation-cause-we-can/
         title: Innovation ‘Cause We Can
+      - path: /research-laboratories/
+        title: Research Laboratories
       - path: /about/partners/
         title: Partners
       - path: /contact/locations
