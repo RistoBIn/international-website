@@ -262,7 +262,6 @@ body {
       padding: 1.5rem $paddingHorizontalMobile;
     }
   }
-
 }
 
 .has-dark-background {
@@ -328,7 +327,6 @@ body {
       text-align: left;
     }
   }
-
 
   .content {
     &.centered-free-text {
@@ -418,6 +416,7 @@ body {
 .centered {
   margin: auto !important;
   text-align: center;
+  max-width: 850px;
 }
 
 /****************     NAVIGATION    ********************/
@@ -794,7 +793,9 @@ section.vision-strategy {
   .right-wrapper {
     margin-top: 30px;
     padding: 20px;
-    p {font-weight: 300;}
+    p {
+      font-weight: 300;
+    }
     h3 {
       margin-bottom: 0;
       font-size: 24px;
@@ -805,7 +806,7 @@ section.vision-strategy {
     padding: 32px 24px;
   }
 
-  br { 
+  br {
     display: none;
   }
 
@@ -818,13 +819,19 @@ section.vision-strategy {
     .quad-wrapper {
       padding: 32px 24px;
     }
-    br{display: block;}
+    br {
+      display: block;
+    }
   }
 }
-section.centered-free-text p {font-size: 20px !important;}
+section.centered-free-text p {
+  font-size: 20px !important;
+}
 section.boxes {
   .is-left-aligned {
-    h2, h1, h3 {
+    h2,
+    h1,
+    h3 {
       max-width: 510px;
       margin-left: 0;
     }
@@ -841,7 +848,9 @@ section.boxes {
     }
   }
 }
-section#vision-last {padding-top: .5rem;}
+section#vision-last {
+  padding-top: 0.5rem;
+}
 
 section.about-page-partners {
   background-color: white;
@@ -905,9 +914,9 @@ section.about-page-leadership {
         display: grid;
         grid-template-columns: 65px auto;
         grid-gap: 0 20px;
-        grid-template-areas: 
-        "image role"
-        "image name";
+        grid-template-areas:
+          'image role'
+          'image name';
         .image {
           grid-area: image;
           height: 63px !important;
@@ -933,7 +942,7 @@ section.about-page-leadership {
   }
   @media only screen and (min-width: $tablet) {
     .wrapper {
-      grid-template-columns: repeat(auto-fill, minmax(580px,1fr));
+      grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
       .name {
         margin-top: 0 !important;
       }
@@ -1304,7 +1313,6 @@ section#project-page-primary .wrapper {
 
 /****************     PRODUCT PAGES    ********************/
 section.product-page-primary {
-
   .content.centered-free-text {
     max-width: 854px;
     margin: 0 auto;
@@ -1329,7 +1337,9 @@ section.product-page-primary {
     }
   }
   .large-image {
-    .button {max-width: 290px; }
+    .button {
+      max-width: 290px;
+    }
   }
   .alternating-sections {
     h3 {
@@ -1337,13 +1347,16 @@ section.product-page-primary {
       color: $body-light;
       margin-bottom: 15px;
     }
-    h1, h2 {
+    h1,
+    h2 {
       margin-top: 0;
     }
   }
   @media only screen and (max-width: $tablet) {
     .large-image {
-      .button {margin: 20px 0;}
+      .button {
+        margin: 20px 0;
+      }
     }
   }
 }

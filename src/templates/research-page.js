@@ -244,8 +244,9 @@ export const ResearchPageTemplate = ({
       />
       <BackgroundImage
         image={backgroundSection.bgimage}
-        className="section is-large"
-        filterStyle={{ boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.07)' }}
+        className="section is-large has-dark-background"
+        filterStyle={{ opacity: '0.3 !important' }}
+        style={{ opacity: '0.3' }}
         htmlTag="section"
       >
         <div className="content centered">
