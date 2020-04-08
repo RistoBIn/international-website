@@ -152,25 +152,9 @@ table:
 presentations:
   heading: Presentations and files
   items:
-    - file: /img/5g-bluethink.png
-      heading: Introduction of SEALAB
-      description: Download PDF
-      icon: /img/icon-sealab-logo-dark.svg
-    - file: /img/5g-bluethink.png
-      heading: Business scenarios
-      description: Download PDF
-      icon: /img/icon-business-scenarios.svg
-    - file: /img/5g-bluethink.png
-      heading: Growth scenarios
-      description: Download PDF
-      icon: /img/icon-growth-scenarios.svg
-    - file: /img/5g-bluethink.png
+    - file: /img/SEALAB Elevator Pitch 06.04.2020.pdf
       heading: Elevator pitch
       description: Download PDF
       icon: /img/icon-elevator-pitch.svg
-    - file: /img/5g-bluethink.png
-      heading: Design and Application
-      description: Download PDF
-      icon: /img/icon-design-and-applications.svg
 ---
 

@@ -553,10 +553,7 @@ collections:
                   - {label: Icon, name: icon, widget: image, default: "/img/icon-sealab-logo-dark.svg"}
                   - {label: Description, name: description, widget: string, default: "Download PDF", hint: "Remember to change this, if uploading a different file like Powerpoints"}
 
-
-              
-
-
+       
       - file: "src/pages/about/vision-strategy.md"
         name: "vision-strategy"
         label: "Vision & Strategy"
@@ -699,6 +696,8 @@ collections:
               - {label: "Image", name: "profilePicture", widget: "image", hint: "Profile picutre"}
           - {label: "Quote centered", name: "body", widget: "markdown", required: false}
 
+
+
       - file: "src/pages/about/partners.md"
         label: "About - Partners"
         name: "about-page-partners"
@@ -716,3 +715,76 @@ collections:
               - {label: "Partner logo", name: "icon", widget: "image"}
               - {label: "Partner website url", name: "url", widget: "string", hint: "The partner logo will be a link that directs to the url specified here."}
           - {label: "Content", name: "body", widget: "markdown"}
+
+      - file: "src/pages/research-laboratories.md"
+        name: "research-laboratories"
+        label: "Research laboratories"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "research-page"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+          - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+          - {label: "Description", name: "description", widget: "markdown", hint: "Markdown text under title", required: false}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+          - label: "Featured images - GRID"
+            name: featuredimages
+            widget: list
+            hint: "Try to keep it at a maximum 6"
+            field: {label: "Image", name: "image", widget: image}
+          - label: "Research section"
+            name: centeredSection
+            widget: object
+            fields:
+              - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Call to action button"
+                widget: object
+                name: button
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
+              - label: "Images GRID"
+                name: images
+                widget: list
+                hint: "Try to keep it at a maximum 6"
+                field: {label: "Image", name: "image", widget: image}
+          
+
+
+          - label: "Career"
+            name: careers
+            widget: object
+            fields: 
+              - {label: "Subheading", name: subheading, widget: string, required: false}
+              - {label: "Heading", name: heading, widget: string}
+              - {label: "Left content", name: left, widget: markdown}
+              - label: "Call to action buttons"
+                widget: list
+                name: buttons
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
+              - label: "Positions - SEALAB"
+                widget: object
+                name: positions
+                fields:
+                  - {label: "Heading", name: heading, widget: string}
+                  - label: "Positions list"
+                    widget: list
+                    name: items
+                    required: false
+          - {label: "Content", name: body, widget: markdown, required: false}
+          - label: "Split section"
+            widget: object
+            name: splitSection
+            fields:
+              - {label: "Left Content", name: "left", widget: "markdown"}
+              - {label: "Right Image", name: "right", widget: "image"}
+          - label: "Section with background image"
+            name: backgroundSection
+            widget: object
+            fields:
+              - {label: "Background image", name: "bgimage", widget: "image", required: false}
+              - {label: "Heading", name: heading, widget: string}
+              - {label: "Description", name: "description", widget: "markdown"}
+
