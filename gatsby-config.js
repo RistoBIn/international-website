@@ -58,6 +58,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-styled-components`,
     'gatsby-plugin-netlify-cache',
     {
       resolve: 'gatsby-plugin-netlify-cms',
