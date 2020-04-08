@@ -51,6 +51,8 @@ fourthNavigation:
     title: Ocean Space Center
   - path: /social-responsibility
     title: Sustainability impact
+  - path: /research-laboratories/
+    title: Research Laboratories
   - path: /about/partners/
     title: Partners
   - path: /investors/
