@@ -6,6 +6,7 @@ seoDescription: >-
   and transport of live fish for the delivery to port and final processing on
   land. 
 heading: Well and Fishing Boats
+priority: 7
 description: >-
   SEALAB's sensor system monitors the fish in the well or tank for the storage
   and transport of live fish for the delivery to port and final processing on

@@ -7,6 +7,7 @@ import ArrowButton from '../ArrowButton';
 import useArrayNavigation from '../../hooks/useArrayNavigation';
 import { idMaker } from '../../utils/id-maker';
 import BackgroundImage from '../BackgroundImage';
+import CarouselItem from './CarouselItem';
 
 const gen = idMaker();
 
@@ -78,130 +79,12 @@ const Carousel = ({ items, activeIndex }) => {
             featuredimage={featuredimage}
             index={index}
             activeIndex={activeIndex}
-            gridColumnNumber={resolveGridColumnNumber(index)}
+            style={{ gridColumn: resolveGridColumnNumber(index), gridRow: '1' }}
           />
         );
       })}
     </div>
   );
-};
-
-const CarouselItem = ({
-  heading,
-  featuredimage,
-  path,
-  className,
-  gridColumnNumber,
-}) => {
-  const [isHovering, setHovering] = useState(false);
-  const getBackgroundCSS = () => {
-    if (isHovering) return ``;
-    return `linear-gradient(0deg, rgba(14, 17, 27, 0.5), rgba(14, 17, 27, 0.5))`;
-  };
-  return (
-    <Link
-      to={path}
-      style={{
-        gridColumn: gridColumnNumber,
-      }}
-      className={classNames(styles.carousel__item, className, {
-        [styles.carousel__item__active]: isHovering,
-      })}
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
-    >
-      <BackgroundImage
-        image={featuredimage}
-        htmlTag="div"
-        cssFilter={getBackgroundCSS()}
-        className={classNames(styles.carousel__item, className, {
-          [styles.carousel__item__active]: isHovering,
-        })}
-        style={{
-          backgroundPosition: 'bottom center !important',
-          gridColumn: gridColumnNumber,
-        }}
-      >
-        <div className={styles.carousel__item__content}>
-          <h3 className={classNames(styles.carousel__item__heading)}>
-            {heading}
-          </h3>
-          <div
-            aria-hidden="true"
-            className={classNames(
-              'button',
-              'is-transparent',
-              styles.carousel__item__button,
-            )}
-          >
-            Read more
-          </div>
-        </div>
-      </BackgroundImage>
-    </Link>
-  );
-
-  // return (
-  //   <BackgroundImage
-  //     className={classNames('hero', styles.hero, className)}
-  //     image={featuredimage}
-  //     cssFilter={getBackgroundCSS()}
-  //     style={{
-  //       backgroundPosition: 'bottom center !important',
-  //       gridColumn: gridColumnNumber,
-  //     }}
-  //   >
-  //     <Link
-  //       to={path}
-  //       onMouseEnter={() => setHovering(true)}
-  //       onMouseLeave={() => setHovering(false)}
-  //       className={classNames(styles.carousel__item, className, {
-  //         [styles.carousel__item__active]: isHovering,
-  //       })}
-  //     >
-  //       <h3 className={classNames(styles.carousel__item__heading)}>
-  //         {heading}
-  //       </h3>
-  //       <div
-  //         aria-hidden="true"
-  //         className={classNames(
-  //           'button',
-  //           'is-transparent',
-  //           styles.carousel__item__button,
-  //         )}
-  //       >
-  //         Read more
-  //       </div>
-  //     </Link>
-  //   </BackgroundImage>
-  // );
-
-  // return (
-  //   <Link
-  //     to={path}
-  //     onMouseEnter={() => setHovering(true)}
-  //     onMouseLeave={() => setHovering(false)}
-  //     style={{
-  //       backgroundImage: getBackgroundCSS(),
-  //       gridColumn: gridColumnNumber,
-  //     }}
-  //     className={classNames(styles.carousel__item, className, {
-  //       [styles.carousel__item__active]: isHovering,
-  //     })}
-  //   >
-  //     <h3 className={classNames(styles.carousel__item__heading)}>{heading}</h3>
-  //     <div
-  //       aria-hidden="true"
-  //       className={classNames(
-  //         'button',
-  //         'is-transparent',
-  //         styles.carousel__item__button,
-  //       )}
-  //     >
-  //       Read more
-  //     </div>
-  //   </Link>
-  // );
 };
 
 export default ImageBoxesWithNavigation;

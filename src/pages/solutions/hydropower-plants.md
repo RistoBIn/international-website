@@ -8,6 +8,7 @@ seoDescription: >-
   to make decisions on their own, communicate with each other, learn new things
   and even “travel” from system to system.
 heading: Hydropower Plants
+priority: 7
 description: Surveillance of Hydroelectric Power Plants
 featuredimage: /img/AdobeStock_59878462.jpeg
 splitSections:

@@ -9,8 +9,8 @@ const CarouselItem = ({
   featuredimage,
   path,
   className,
-  gridColumnNumber,
   style,
+  backgroundImageStyle,
 }) => {
   const [isHovering, setHovering] = useState(false);
   const getBackgroundCSS = () => {
@@ -30,14 +30,15 @@ const CarouselItem = ({
       <BackgroundImage
         image={featuredimage}
         htmlTag="div"
-        cssFilter={getBackgroundCSS()}
         className={classNames(styles.carousel__item, className, {
           [styles.carousel__item__active]: isHovering,
         })}
         style={{
           backgroundPosition: 'bottom center !important',
-          gridColumn: gridColumnNumber,
+
+          ...backgroundImageStyle,
         }}
+        filterStyle={{ background: getBackgroundCSS(), display: 'table' }}
       >
         <div className={styles.carousel__item__content}>
           <h3 className={classNames(styles.carousel__item__heading)}>

@@ -5,6 +5,7 @@ seoDescription: Climate Changes are increasing the need for bridge and watercour
 heading: Bridge and Watercourse Monitoring
 description: Climate Changes are increasing the need for bridge and watercourse monitoring
 featuredimage: /img/AdobeStock_242526706.jpeg
+priority: 7
 splitSections:
   - content: >-
       Earth’s climate is now changing faster than at any point in the history of

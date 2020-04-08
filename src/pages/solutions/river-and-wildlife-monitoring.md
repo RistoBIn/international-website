@@ -9,6 +9,7 @@ description: >-
   Environmental Challenges in the Aquaculture Industry Increases the Need for
   River and Wildlife Monitoring 
 featuredimage: /img/AdobeStock_245120319.jpeg
+priority: 7
 splitSections:
   - content: >-
       Increased production of farmed Atlantic salmon (Salmo salar) worldwide and

@@ -7,6 +7,7 @@ seoDescription: >-
   industry require a slaughter process that ensures that the salmon is safe to
   eat, without causing the fish unnecessary stress and pain.
 heading: Atlantic Salmon and Seafood
+priority: 2
 description: >-
   There’s a growing market for food production in the sea. Norwegian salmon
   production accounts for 3% of the global seafood production.

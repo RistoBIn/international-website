@@ -6,6 +6,7 @@ seoDescription: >-
   marine resources.
 heading: Environmental monitoring
 description: Increasing need for environmental monitoring
+priority: 7
 featuredimage: /img/AdobeStock_68760718_topimage.jpeg
 splitSections:
   - content: >-

@@ -6,6 +6,7 @@ seoDescription: >-
   rigs around the world be safeguarded against unwanted intruders, who may
   intend sabotage, unlawful entry, or terror attacks.
 heading: Harbor Surveillance
+priority: 1
 description: >-
   It has become increasingly critical that ports, coastal installations, and oil
   rigs around the world be safeguarded against unwanted intruders, who may

@@ -7,6 +7,7 @@ seoDescription: >-
   SEALAB brings the Ocean in the School by broadcasting live from the deep and
   into the classroom.
 heading: Schools and Universities
+priority: 3
 description: >-
   New project at SEALAB R&D Lab to highlight importance of the Ocean Space to
   children.

@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Title from '../components/Title';
-import Button from '../components/Button';
+import { HorizontalView as SolutionsHorizontal } from '../components/AllSolutions';
 import ImageBoxesWithNavigation from '../components/ImageBoxesWithNavigation';
 import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/HeroBackgroundImage';
@@ -69,8 +69,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <QuotesList quotes={quotes} className="section has-dark-background" />
-      <ImageBoxesWithNavigation
-        items={solutions.items}
+      <SolutionsHorizontal
         heading={solutions.heading}
         buttonText={solutions.button.text}
         buttonPath={solutions.button.path}
@@ -196,18 +195,6 @@ export const pageQuery = graphql`
           button {
             text
             path
-          }
-          items {
-            heading
-            path
-            featuredimage {
-              childImageSharp {
-                fluid(maxHeight: 404, quality: 50) {
-                  ...GatsbyImageSharpFluid_noBase64
-                  presentationWidth
-                }
-              }
-            }
           }
         }
         splitSection {
