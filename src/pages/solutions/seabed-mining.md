@@ -7,6 +7,7 @@ seoDescription: >-
 heading: Seabed Mining
 description: Exploration and production of high-end minerals and metals
 featuredimage: /img/AdobeStock_245001526.jpeg
+priority: 7
 splitSections:
   - content: >-
       The plans are advancing to harvest precious ores from the ocean floor and

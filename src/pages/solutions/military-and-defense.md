@@ -6,6 +6,8 @@ seoDescription: >-
   photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
 heading: Military & Defense
+
+priority: 7
 description: >-
   With underwater computer vision from SEALAB you can compare camera images with
   photographic databases. In each case, human operators - not machines - make

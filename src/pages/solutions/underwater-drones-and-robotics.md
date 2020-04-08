@@ -5,6 +5,7 @@ seoDescription: >-
   SEALAB have a clear view that machine vision is an important enabling
   technology in robotics and unmanned vehicles, i.e. underwater drones.
 heading: Underwater Drones and Robotics
+priority: 2
 description: >-
   SEALAB have a clear view that machine vision is an important enabling
   technology in robotics and unmanned vehicles.

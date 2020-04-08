@@ -8,7 +8,10 @@ const GridSection = props => {
       query={graphql`
         query GridSolutionsQuery {
           solutionItems: allMarkdownRemark(
-            sort: { order: ASC, fields: [frontmatter___title] }
+            sort: {
+              fields: [frontmatter___priority, frontmatter___title]
+              order: [ASC, ASC]
+            }
             filter: {
               frontmatter: { templateKey: { regex: "/solution-page-/" } }
             }

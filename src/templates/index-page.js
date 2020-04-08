@@ -196,18 +196,6 @@ export const pageQuery = graphql`
             text
             path
           }
-          items {
-            heading
-            path
-            featuredimage {
-              childImageSharp {
-                fluid(maxHeight: 404, quality: 50) {
-                  ...GatsbyImageSharpFluid_noBase64
-                  presentationWidth
-                }
-              }
-            }
-          }
         }
         splitSection {
           bgimage {

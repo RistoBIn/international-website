@@ -26,7 +26,9 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "solution-page-secondary"}
       - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Priority - How important", name: "priority", widget: "number", hint: "How important is this solution? 1 is the highest priority. This is used to sort solutions on the front page and investor page", default: 9}
       - {label: "Heading", name: "heading", widget: "string", hint: "This is shown with the section image"}
+      
       - {label: "Description", name: "description", widget: "text", hint: "This is shown with the section image"}
       - {label: "Image", name: "featuredimage", widget: "image", hint: "First section image."}
       - label: "Sections"
@@ -53,6 +55,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "solution-page-primary"}
       - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
       - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+      - {label: "Priority - How important", name: "priority", widget: "number", hint: "How important is this solution? 1 is the highest priority. This is used to sort solutions on the front page and investor page", default: 9}
       - {label: "Heading", name: "heading", widget: "string", hint: "This is shown with the section image"}
       - {label: "Description", name: "description", widget: "text", hint: "This is shown with the section image"}
       - {label: "Image", name: "featuredimage", widget: "image", hint: "First section image."}
@@ -440,20 +443,14 @@ collections:
             widget: object
             name: itemsSection
             fields:
-              - {label: Heading, name: heading, widget: string}
+              - {label: Heading, name: heading, widget: string, required: false}
               - label: Button
                 widget: object
                 name: button
+                required: false
                 fields:
-                  - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
-                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
-              - label: "Solution items"
-                widget: list
-                name: items
-                fields:
-                  - {label: Heading, name: heading, widget: string}
-                  - {label: "Solution image", name: "featuredimage", widget: image }
-                  - {label: "Path to page", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+                  - {label: "Button text", name: text, widget: string, hint: "Keep it short", required: false}
+                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence", required: false}
           - label: Inspirational section
             name: splitSection
             widget: object

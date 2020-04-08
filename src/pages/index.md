@@ -49,46 +49,6 @@ itemsSection:
     path: /solutions/
     text: Show all industries
   heading: We are able to develop and deploy our technology to several industries
-  items:
-    - featuredimage: /img/AdobeStock_187277566.jpeg
-      heading: Harbor Surveillance
-      path: /solutions/harbor-surveillance/
-    - featuredimage: /img/IMG_0539_Adjusted.jpg
-      heading: Atlantic Salmon & Seafood
-      path: /solutions/atlantic-salmon-and-seafood/
-    - featuredimage: /img/AdobeStock_180592840.jpeg
-      heading: Underwater Drones & Robotics
-      path: /solutions/underwater-drones-and-robotics/
-    - featuredimage: /img/AdobeStock_114071575.jpeg
-      heading: Schools & Universities
-      path: /solutions/schools-and-universities/
-    - featuredimage: /img/AdobeStock_294165529.jpeg
-      heading: Science Arctic & Antarctic Surveillance
-      path: /solutions/science-arctic-and-antarctic-surveillance/
-    - featuredimage: /img/AdobeStock_177426726.jpeg
-      heading: Oil & Gas Industry
-      path: /solutions/oil-gas-industry/
-    - featuredimage: /img/AdobeStock_4649419.jpeg
-      heading: Military & Defense
-      path: /solutions/military-and-defense/
-    - featuredimage: /img/AdobeStock_205257493.jpeg
-      heading: Well & Fishing Boats
-      path: /solutions/well-and-fishing-boats/
-    - featuredimage: /img/AdobeStock_245001526.jpeg
-      heading: Seabed Mining
-      path: /solutions/seabed-mining/
-    - featuredimage: /img/AdobeStock_224578518.jpeg
-      heading: Environmental Monitoring
-      path: /solutions/environmental-monitoring/
-    - featuredimage: /img/AdobeStock_232721946.jpeg
-      heading: Bridge & Watercourse Monitoring
-      path: /solutions/bridge-and-watercourse-monitoring/
-    - featuredimage: /img/AdobeStock_224942592.jpeg
-      heading: River & Wildlife monitoring
-      path: /solutions/river-and-wildlife-monitoring/
-    - featuredimage: /img/AdobeStock_59878462.jpeg
-      heading: Hydropower Plants
-      path: /solutions/hydropower-plants/
 splitSection:
   bgimage: /img/AdobeStock_174371043.jpeg
 ---

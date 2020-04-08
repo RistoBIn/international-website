@@ -8,6 +8,7 @@ seoDescription: >-
   traffic—and to be on the lookout for foreign submarines. And on top of that:
   environmental monitoring.
 heading: Science Arctic and Antarctic Surveillance
+priority: 5
 description: >-
   Underwater drones equipped with high-tech sensors and edge computing in
   participation with smart cameras could one day patrol the icy waters of both
