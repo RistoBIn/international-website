@@ -503,6 +503,13 @@ collections:
             widget: object
             fields: 
               - {label: "Centered content", name: content, widget: markdown}
+              - label: "Call to action button"
+                widget: object
+                name: button
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
               - label: "Partner logos"
                 widget: list
                 name: logos
