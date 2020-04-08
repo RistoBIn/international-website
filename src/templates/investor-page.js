@@ -13,6 +13,7 @@ import PercentageItems from '../components/PercentageItems';
 import NonStretchedImage from '../components/NonStretchedImage';
 import ShareHolderTable from '../components/ShareHolderTable';
 import { HorizontalView as SolutionsHorizontalSection } from '../components/AllSolutions';
+import DownloadIcon from '../img/icon-download.inline.svg';
 
 const PieChartSection = styled.section`
   padding: 3rem 0;
@@ -88,6 +89,47 @@ const TableHeaders = styled.div`
 
 const PresentationSection = styled.section`
   height: 100%;
+`;
+
+const FilesWrapper = styled.div`
+  .file-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .icon {
+      height: 224px;
+    }
+    .text {
+      padding: 0 24px;
+      margin: auto;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: bold;
+      padding-bottom: 18px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: bold;
+      color: white !important;
+      padding-bottom: 18px;
+      svg {
+        margin-left: 16px;
+        margin-bottom: -2px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 8px 16px;
+    .file-item {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 389px;
+    }
+  }
 `;
 
 export const InvestorPageTemplate = ({
@@ -241,6 +283,25 @@ export const InvestorPageTemplate = ({
       <PresentationSection className="section has-light-dark-background">
         <div className="container">
           <h2>{presentations.heading}</h2>
+          <FilesWrapper>
+            {presentations.items.map(fileItem => (
+              <div className="file-item has-dark-background">
+                <NonStretchedImage
+                  objectFit="contain"
+                  alt=""
+                  className="image icon"
+                  {...fileItem.icon}
+                />
+                <div className="text">
+                  <h3>{fileItem.heading}</h3>
+                  <p>
+                    {fileItem.description}
+                    <DownloadIcon />
+                  </p>
+                </div>
+              </div>
+            ))}
+          </FilesWrapper>
         </div>
       </PresentationSection>
       <SolutionsHorizontalSection />
