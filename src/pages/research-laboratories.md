@@ -62,7 +62,7 @@ splitSection:
     employees to work for the company. Not only work, but to create incredible
     underwater technology for AI, Edge Computing, underwater cameras and data
     traffic between Edge and Cloud.
-  right: /img/research_assembly_in_hand.PNG
+  featuredimage: /img/research_assembly_in_hand.PNG
 backgroundSection:
   bgimage: /img/water_dark_light_technology.jpg
   heading: Can creativity be stimulated if we do not set boundaries?

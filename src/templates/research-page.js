@@ -12,11 +12,42 @@ import NonStretchedImage from '../components/NonStretchedImage';
 
 const ImageGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
-  grid-gap: 30px 60px;
-  padding-top: 5rem;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1fr;
+  .image-item:first-of-type {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  .image-item:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .image-item:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
   .image-item {
-    margin: auto;
+    .image {
+      height: 100% !important;
+      width: 100% !important;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .image-item:first-of-type {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+    }
+    .image-item:nth-of-type(2) {
+      grid-column: 3;
+      grid-row: 1;
+    }
+    .image-item:nth-of-type(3) {
+      grid-column: 3;
+      grid-row: 2;
+    }
   }
 `;
 
@@ -32,10 +63,12 @@ const ButtonFlex = styled.div`
 `;
 
 export const ResearchPageTemplate = ({
+  content,
   contentComponent,
   heading,
   description,
   featuredimages,
+  centeredSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -47,17 +80,35 @@ export const ResearchPageTemplate = ({
           <p className="section--description">{description}</p>
         </div>
       </section>
-
-      {/* <ImageGrid>
-        {featuredimages.map(imageItem => (
-          <NonStretchedImage
-            objectFit="contain"
-            alt=""
-            className="image image-item"
-            {...imageItem.image}
+      <section className="section has-dark-background">
+        <div className="container">
+          <ImageGrid>
+            {featuredimages.map(imageItem => (
+              <div className="image-item">
+                <NonStretchedImage
+                  objectFit="contain"
+                  alt=""
+                  className="image"
+                  {...imageItem.image}
+                />
+              </div>
+            ))}
+          </ImageGrid>
+        </div>
+      </section>
+      <section className="section has-dark-background">
+        <div className="container has-text-centered content centered-free-text">
+          <PostContent
+            content={generateHTML(centeredSection.content)}
+            className="content "
           />
-        ))}
-      </ImageGrid> */}
+          <Button
+            className="is-primary"
+            text={centeredSection.button.text}
+            path={centeredSection.button.path}
+          />
+        </div>
+      </section>
     </>
   );
 };
@@ -71,6 +122,10 @@ const ResearchPage = ({ data }) => {
     description,
     seoDescription,
     featuredimages,
+    centeredSection,
+    careers,
+    splitSection,
+    backgroundSection,
   } = frontmatter;
 
   return (
@@ -81,6 +136,10 @@ const ResearchPage = ({ data }) => {
         heading={heading}
         description={description}
         featuredimages={featuredimages}
+        centeredSection={centeredSection}
+        careers={careers}
+        splitSection={splitSection}
+        backgroundSection={backgroundSection}
       />
     </Layout>
   );
@@ -101,7 +160,60 @@ export const pageQuery = graphql`
         featuredimages {
           image {
             childImageSharp {
-              fluid(maxHeight: 600, quality: 80) {
+              fluid(maxWidth: 900, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        centeredSection {
+          button {
+            path
+            text
+          }
+          content
+          images {
+            image {
+              childImageSharp {
+                fluid(maxWidth: 900, quality: 80) {
+                  ...GatsbyImageSharpFluid_noBase64
+                  presentationWidth
+                }
+              }
+            }
+          }
+        }
+        careers {
+          buttons {
+            path
+            text
+          }
+          heading
+          subheading
+          left
+          positions {
+            heading
+            items
+          }
+        }
+        splitSection {
+          left
+          featuredimage {
+            childImageSharp {
+              fluid(maxWidth: 600, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        backgroundSection {
+          heading
+          description
+          bgimage {
+            childImageSharp {
+              fluid(maxWidth: 1920, quality: 70) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
