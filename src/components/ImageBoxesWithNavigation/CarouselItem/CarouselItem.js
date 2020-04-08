@@ -30,7 +30,6 @@ const CarouselItem = ({
       <BackgroundImage
         image={featuredimage}
         htmlTag="div"
-        // cssFilter={}
         className={classNames(styles.carousel__item, className, {
           [styles.carousel__item__active]: isHovering,
         })}
