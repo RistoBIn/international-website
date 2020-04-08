@@ -7,7 +7,7 @@ seoDescription: >-
   final judgments before anyone takes action.
 heading: Military & Defense
 
-priority: 7
+priority: 5
 description: >-
   With underwater computer vision from SEALAB you can compare camera images with
   photographic databases. In each case, human operators - not machines - make
