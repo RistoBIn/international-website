@@ -137,7 +137,7 @@ const FilesWrapper = styled.div`
 
   @media only screen and (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 385px));
     grid-gap: 8px 16px;
     .file-item {
       grid-template-columns: 1fr;
