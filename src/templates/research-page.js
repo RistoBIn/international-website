@@ -3,6 +3,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
+import BackgroundImage from '../components/BackgroundImage';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import generateHTML from '../utils/generateHTML';
@@ -130,6 +131,7 @@ export const ResearchPageTemplate = ({
   centeredSection,
   careers,
   splitSection,
+  backgroundSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -241,6 +243,20 @@ export const ResearchPageTemplate = ({
         className="section has-dark-background"
         shouldReorderOnMobile
       />
+      <BackgroundImage
+        image={backgroundSection.bgimage}
+        className="section is-large"
+        filterStyle={{ boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.07)' }}
+        htmlTag="section"
+      >
+        <div className="content centered">
+          <h2>{backgroundSection.heading}</h2>
+          <PostContent
+            content={generateHTML(backgroundSection.description)}
+            className="content"
+          />
+        </div>
+      </BackgroundImage>
     </>
   );
 };

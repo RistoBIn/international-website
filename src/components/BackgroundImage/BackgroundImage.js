@@ -60,6 +60,7 @@ const BackgroundImageSection = ({
         {children}
       </section>
     );
+  console.error('Check props for BackgroundImage');
   return <></>;
 };
 
