@@ -152,7 +152,7 @@ table:
 presentations:
   heading: Presentations and files
   items:
-    - file: static/img/SEALAB Elevator Pitch 06.04.2020.pdf
+    - file: /img/SEALAB Elevator Pitch 06.04.2020.pdf
       heading: Elevator pitch
       description: Download PDF
       icon: /img/icon-elevator-pitch.svg
