@@ -24,8 +24,7 @@ partners:
     - icon: /img/ntnu-logo-white.svg
     - icon: /img/safepath-logo-white.svg
 ---
-## \
-Melanophore spot-pattern in identification of individual salmon
+## Melanophore spot-pattern in identification of individual salmon
 
 The goal for the INDISAL-project is to enable technology for identification of individual salmon in industrial sea based salmon farming. Based on the insight that Atlantic salmon maintain a unique spot pattern after they are moved from the hatchery to salt water, identification will be done by using the melanophore spot-pattern in the head region as a biometric fingerprint.
 
