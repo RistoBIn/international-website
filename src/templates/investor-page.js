@@ -86,6 +86,10 @@ const TableHeaders = styled.div`
   }
 `;
 
+const PresentationSection = styled.section`
+  height: 100%;
+`;
+
 export const InvestorPageTemplate = ({
   contentComponent,
   heading,
@@ -97,6 +101,7 @@ export const InvestorPageTemplate = ({
   partners,
   splitSection,
   table,
+  presentations,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -233,6 +238,11 @@ export const InvestorPageTemplate = ({
           <ShareHolderTable shareholders={shareholders} />
         </div>
       </section>
+      <PresentationSection className="section has-light-dark-background">
+        <div className="container">
+          <h2>{presentations.heading}</h2>
+        </div>
+      </PresentationSection>
       <SolutionsHorizontalSection />
     </>
   );
@@ -253,6 +263,7 @@ const InvestorPage = ({ data }) => {
     partners,
     splitSection,
     table,
+    presentations,
   } = frontmatter;
 
   return (
@@ -269,6 +280,7 @@ const InvestorPage = ({ data }) => {
         partners={partners}
         splitSection={splitSection}
         table={table}
+        presentations={presentations}
       />
     </Layout>
   );
