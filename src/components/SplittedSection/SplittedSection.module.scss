@@ -12,6 +12,7 @@
     }
     .leftColumn, .rightColumn {
         padding-bottom: 20px;
+        width: 100%;
     }
 
     @media only screen and (min-width: $tablet) {

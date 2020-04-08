@@ -262,6 +262,7 @@ body {
       padding: 1.5rem $paddingHorizontalMobile;
     }
   }
+
 }
 
 .has-dark-background {
@@ -404,6 +405,19 @@ body {
   @media screen and (min-width: $tablet) {
     height: 100%;
   }
+}
+
+.subheading {
+  font-size: 18px !important;
+  font-family: $titleFont !important;
+  font-weight: bold !important;
+  line-height: 110%;
+  color: $white !important;
+}
+
+.centered {
+  margin: auto !important;
+  text-align: center;
 }
 
 /****************     NAVIGATION    ********************/
