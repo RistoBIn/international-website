@@ -13,7 +13,7 @@ description: >
   software development expertise and technology services. This has led to an
   Effective business model that commercializes the combination of SEALAB
   software, hardware and third-party Apps.
-featuredimage: /img/Developing Cameras.PNG
+featuredimage: /img/Innovation_V1.1.png
 featuredimageCaption: >-
   SEALAB is a well-managed business with solid operations and a strong
   management team in place.
