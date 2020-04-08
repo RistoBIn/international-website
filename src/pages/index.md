@@ -5,7 +5,7 @@ seoDescription: SEALAB - More than meets the eye
 heading: More than meets the eye
 bgimage: /img/sealab-water-hero.jpg
 items:
-  - description: Yearly negative impact for poor ocean management
+  - description: Yearly negative impact due to poor ocean management
     keyNumber: 200
     keyNumberAfter: '  Billion'
     keyNumberBefore: $
