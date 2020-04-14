@@ -21,8 +21,8 @@ shareholders:
   - accountType: A
     country: NOR
     name: Slottvarden Invest AS
-    percentage: 0.4819
-    shares: 700399
+    percentage: 0.4131
+    shares: 600399
   - accountType: A
     country: NOR
     name: Haspro AS
