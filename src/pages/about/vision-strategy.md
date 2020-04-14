@@ -100,36 +100,6 @@ quaternarySplitSection:
     We have a fully developed and tested system. Thanks to previous investments
     and product development, we can introduce a smart and winning system this
     year, thus meeting the growing demand in the market. 
-
-
-    SEALAB’s modular concept can solve the growing needs of different markets:
-
-
-    - Schools and Universities
-
-    - Science Arctic and Antarctic Surveillance
-
-    - Atlantic Salmon and Seafood
-
-    - Well and Fishing Boats
-
-    - Seabed Mining
-
-    - Military & Defense
-
-    - Environmental Monitoring
-
-    - Harbor Surveillance
-
-    - Oil & Gas Industry
-
-    - Underwater Drones and Robotics
-
-    - Bridge and Watercourse Monitoring
-
-    - River and Wildlife monitoring
-
-    - Hydropower Plants
 primaryCollapsibleList:
   listItems:
     - content: >-
