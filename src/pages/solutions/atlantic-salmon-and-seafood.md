@@ -6,8 +6,8 @@ seoDescription: >-
   food safety. We have the products to help your business thrive. Optimizing the
   industry require a slaughter process that ensures that the salmon is safe to
   eat, without causing the fish unnecessary stress and pain.
-heading: Atlantic Salmon and Seafood
 priority: 2
+heading: Atlantic Salmon and Seafood
 description: >-
   There’s a growing market for food production in the sea. Norwegian salmon
   production accounts for 3% of the global seafood production.
@@ -31,22 +31,6 @@ splitSections:
       rate. The economic benefits are increased at the farms while managing to
       reduce the environmental damage caused by salmon feeding.
     heading: 'Measuring Stress, Better Lining Regime, and the Entire State of the Cage'
-  - content: >-
-      ## Fish Industry and Processing
-
-      SEALABs machine vision and camera technology will increase automation and
-      food safety. We have the products to help your business thrive. Optimizing
-      the industry require a slaughter process that ensures that the salmon is
-      safe to eat, without causing the fish unnecessary stress and pain.
-
-
-      While the salmon is waiting to be slaughtered, it is placed in a holding
-      pen. It’s then important to avoid unnecessary suffering and stress that
-      can affect the quality of the finished product. The fish is monitored by
-      smart algorithms and SEALAB Respiratory Rate system in realtime and works
-      both on land or on a boat.
-    featuredimage: /img/AdobeStock_267026504.jpeg
-    subheading: ''
   - content: >-
       Looking at the figures, there are at present 430 million live salmon in
       Norwegian cages. Machine vision and AI will have tremendous positive
