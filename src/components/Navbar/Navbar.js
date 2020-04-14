@@ -87,7 +87,11 @@ const NavbarItems = ({ menuPaths }) => {
   return (
     <>
       {menuPaths.map(menuItem => {
-        if (menuItem.dropdown) {
+        if (
+          menuItem.dropdown &&
+          typeof menuItem.dropdown !== 'string' &&
+          menuItem.dropdown.length > 0
+        ) {
           return <MenuDropDown key={gen.next().value} menuItem={menuItem} />;
         }
         return (

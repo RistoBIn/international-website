@@ -3,8 +3,6 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import Title from '../components/Title';
-import { HorizontalView as SolutionsHorizontal } from '../components/AllSolutions';
-import ImageBoxesWithNavigation from '../components/ImageBoxesWithNavigation';
 import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/HeroBackgroundImage';
 
@@ -21,7 +19,6 @@ export const IndexPageTemplate = ({
   centeredSection,
   productSection,
   quotes,
-  solutions,
   splitSectionImage,
   content,
   contentComponent,
@@ -69,11 +66,6 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <QuotesList quotes={quotes} className="section has-dark-background" />
-      <SolutionsHorizontal
-        heading={solutions.heading}
-        buttonText={solutions.button.text}
-        buttonPath={solutions.button.path}
-      />
       <SplitWithFullWidthImage
         id="inspirational-quote"
         className="has-dark-background"
@@ -112,7 +104,6 @@ const IndexPage = ({ data }) => {
         centeredSection={centeredSection}
         productSection={productSection}
         quotes={quotes}
-        solutions={itemsSection}
         splitSectionImage={splitSection.bgimage}
       />
     </Layout>
@@ -190,13 +181,6 @@ export const pageQuery = graphql`
           quoteText
         }
 
-        itemsSection {
-          heading
-          button {
-            text
-            path
-          }
-        }
         splitSection {
           bgimage {
             childImageSharp {

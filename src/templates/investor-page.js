@@ -12,7 +12,6 @@ import Button from '../components/Button';
 import PercentageItems from '../components/PercentageItems';
 import NonStretchedImage from '../components/NonStretchedImage';
 import ShareHolderTable from '../components/ShareHolderTable';
-import { HorizontalView as SolutionsHorizontalSection } from '../components/AllSolutions';
 import DownloadIcon from '../img/icon-download.inline.svg';
 
 const PieChartSection = styled.section`
@@ -332,7 +331,6 @@ export const InvestorPageTemplate = ({
           </FilesWrapper>
         </div>
       </PresentationSection>
-      <SolutionsHorizontalSection />
     </>
   );
 };
