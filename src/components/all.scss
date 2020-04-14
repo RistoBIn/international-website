@@ -419,6 +419,13 @@ body {
   max-width: 850px;
 }
 
+section.background-section {
+  .content.centered {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
