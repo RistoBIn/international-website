@@ -121,6 +121,11 @@ const ButtonFlex = styled.div`
   }
 `;
 
+const CenteredContent = styled.div`
+  display: table-cell;
+  vertical-align: middle;
+`;
+
 export const ResearchPageTemplate = ({
   content,
   contentComponent,
@@ -244,18 +249,17 @@ export const ResearchPageTemplate = ({
       />
       <BackgroundImage
         image={backgroundSection.bgimage}
-        className="section is-large has-dark-background"
-        filterStyle={{ opacity: '0.3 !important' }}
-        style={{ opacity: '0.3' }}
+        className="has-dark-background"
+        filterStyle={{ background: 'rgba(0, 0, 0, 0.4', display: 'flex' }}
         htmlTag="section"
       >
-        <div className="content centered">
+        <CenteredContent className="section is-large content centered">
           <h2>{backgroundSection.heading}</h2>
           <PostContent
             content={generateHTML(backgroundSection.description)}
             className="content"
           />
-        </div>
+        </CenteredContent>
       </BackgroundImage>
     </>
   );
