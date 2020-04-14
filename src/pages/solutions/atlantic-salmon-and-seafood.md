@@ -2,12 +2,11 @@
 templateKey: solution-page-primary
 title: Atlantic Salmon and Seafood
 seoDescription: >-
-  SEALABs computer vision and camera technology will increase automation and
-  food safety. We have the products to help your business thrive. Optimizing the
-  industry require a slaughter process that ensures that the salmon is safe to
-  eat, without causing the fish unnecessary stress and pain.
+  SEALAB underwater camera combined with computer vision and specially developed
+  software give you unique insight into environmental conditions, fish welfare,
+  feeding processes and biomass estimation.
 priority: 2
-heading: Atlantic Salmon and Seafood
+heading: Aquaculture
 description: >-
   There’s a growing market for food production in the sea. Norwegian salmon
   production accounts for 3% of the global seafood production.
@@ -32,9 +31,12 @@ splitSections:
       reduce the environmental damage caused by salmon feeding.
     heading: 'Measuring Stress, Better Lining Regime, and the Entire State of the Cage'
   - content: >-
-      Looking at the figures, there are at present 430 million live salmon in
-      Norwegian cages. Machine vision and AI will have tremendous positive
-      significance and be able to monitor every single fish in real time.
+      ## Full Traceability Throughout the Entire Production Process
+
+
+      There are currently 430 million live salmon in Norwegian cages. Machine
+      vision and AI will have tremendous positive significance and be able to
+      monitor every single fish in real time.
 
 
       We’re talking about Blue Economy and Visual Analytics for the aquaculture
@@ -48,8 +50,9 @@ splitSections:
 
 
       ***We give everyone the opportunity to see under water.***
-    heading: Full Traceability Throughout the Entire Production Process
-    subheading: 'With Data Collection, we Provide'
+    heading: ''
+    featuredimage: /img/Laksebilde_2.jpg
+    subheading: ''
 imageSection:
   featuredimage: /img/AdobeStock_135310009.jpeg
   left: '### Seafood Production in the Ocean'

@@ -22,8 +22,8 @@ centeredSection:
   heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
   bgimage: /img/subsea-plant.jpg
   button:
-    path: /solutions/
-    text: See solutions
+    path: /products/software-platform/
+    text: Read more
   description: 'SEALAB provides a space for people to connect, create and communicate'
   subheading: ''
 productSection:
