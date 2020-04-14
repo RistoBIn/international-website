@@ -788,7 +788,7 @@ collections:
             name: splitSection
             fields:
               - {label: "Left Content", name: "left", widget: "markdown"}
-              - {label: "Right Image", name: "right", widget: "image"}
+              - {label: "Right Image", name: "featuredimage", widget: "image"}
           - label: "Section with background image"
             name: backgroundSection
             widget: object
