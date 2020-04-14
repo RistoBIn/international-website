@@ -63,6 +63,11 @@ shareholders:
     name: Hakar Invest AS
     percentage: 0.0028
     shares: 4060
+  - accountType: A
+    country: NOR
+    name: FCMI AS
+    percentage: 0.0688
+    shares: 100000
 highlights:
   button:
     path: /contact/
