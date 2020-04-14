@@ -73,7 +73,7 @@ export const Navbar = ({
           </div>
 
           <div className="navbar-item has-buttons">
-            <Link className="button is-white" to="/contact">
+            <Link className="button is-white" to="/contact/">
               Contact
             </Link>
           </div>

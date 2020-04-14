@@ -10,7 +10,7 @@ SEALAB AS provides leading camera technology solutions for monitoring and analys
 
 This statement applies to the Norwegian business. The registered headquarter is Transittgata 14, 7042 Trondheim. For inquiries regarding privacy:[contact@sealab.no](mailto:contact@sealab.no)
 
-### Processing of personal data at www.sealab.blue
+### Processing of personal data at www.sealab.no
 
 The CEO has the day-to-day responsibility for SEALAB's processing of personal data on our websites and our blog, unless otherwise stated below. It is optional for those who visit the site to provide personal information in connection with services, for example by sending us requests, enrolling in courses, breakfast meetings or receiving newsletters. The basis of treatment is the consent of the individual, unless otherwise specified.
 
@@ -18,7 +18,7 @@ SEALAB AS is responsible for the treatment of information on the website, and is
 
 ## Online statistics
 
-SEALAB AS collects information about visitors at www.sealab.blue The purpose of the collection is to compile statistics that are used to improve and further develop website content. Examples of what information is collected are: how visitors use the site, what website the user comes from, how many people visit the different pages, how long the visit lasts, what they click on and which browsers are used.
+SEALAB AS collects information about visitors at www.sealab.no The purpose of the collection is to compile statistics that are used to improve and further develop website content. Examples of what information is collected are: how visitors use the site, what website the user comes from, how many people visit the different pages, how long the visit lasts, what they click on and which browsers are used.
 
 SEALAB AS uses the analysis tools of Google Inc ("Google") on their website and the information gathered using these tools is stored using Google services. This information is not shared with any other parties.
 

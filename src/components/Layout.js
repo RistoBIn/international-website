@@ -39,7 +39,7 @@ const TemplateWrapper = ({ children, seoTitle, seoDescription }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta name="description" content={seoDescription || description} />
-        <meta property="og:url" content="https://sealab.blue" />
+        <meta property="og:url" content="https://sealab.no" />
         <meta property="og:title" content={seoTitle || title} />
         <meta
           property="og:description"
