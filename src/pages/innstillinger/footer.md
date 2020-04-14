@@ -1,31 +1,7 @@
 ---
 mainNavigation:
   - path: /solutions/atlantic-salmon-and-seafood/
-    title: Atlantic Salmon & Seafood
-  - path: /solutions/military-and-defense/
-    title: Military & Defense
-  - path: /solutions/schools-and-universities/
-    title: Schools & Universities
-  - path: /solutions/science-arctic-and-antarctic-surveillance/
-    title: Science Arctic & Antarctic Surveillance
-  - path: /solutions/well-and-fishing-boats/
-    title: Well & Fishing Boats
-  - path: /solutions/seabed-mining/
-    title: Seabed Mining
-  - path: /solutions/environmental-monitoring/
-    title: Environmental Monitoring
-  - path: /solutions/harbor-surveillance/
-    title: Harbor Surveillance
-  - path: /solutions/oil-gas-industry/
-    title: Oil & Gas Industry
-  - path: /solutions/underwater-drones-and-robotics/
-    title: Underwater Drones & Robotics
-  - path: /solutions/bridge-and-watercourse-monitoring/
-    title: Bridge & Watercourse Monitoring
-  - path: /solutions/river-and-wildlife-monitoring/
-    title: River & Wildlife Monitoring
-  - path: /solutions/hydropower-plants/
-    title: Hydropower Plants
+    title: Aquaculture
 secondaryNavigation:
   - path: /products/edge-intelligence
     title: Edge Intelligence
