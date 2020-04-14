@@ -141,10 +141,10 @@ table:
   boxes:
     - heading: Total of shares
       description: 1.453.262
+    - heading: Total of investors
+      description: '10'
     - heading: Share Capital
       description: 49.5 mil NOK
-    - heading: Total of investors
-      description: '9'
     - heading: Updated
       description: 30.03.2020
   content: >-
