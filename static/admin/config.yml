@@ -342,30 +342,6 @@ collections:
         label: "Footer"
         name: "footer"
         fields: 
-          - label: "Main navigation"
-            name: "mainNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "Products"
-            name: "secondaryNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
-          - label: "Projects"
-            name: "thirdNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
-          - label: "About"
-            name: "fourthNavigation"
-            widget: "list"
-            fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
           - label: "Company offices"
             name: "companyOffices"
             widget: "list"
@@ -383,6 +359,38 @@ collections:
               - {label: "Short description", name: "description", widget: "string"}
               - {label: "Button text", name: "buttonText", widget: "string"}
               - {label: "URL - CALL TO ACTION", name: "buttonPath", widget: "string"}
+          - label: "Main navigation"
+            name: "mainNavigation"
+            widget: "list"
+            required: false
+            hint: "This is currently hidden."
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "Products"
+            name: "secondaryNavigation"
+            widget: "list"
+            required: false
+            hint: "This is currently hidden."
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
+          - label: "Projects"
+            name: "thirdNavigation"
+            widget: "list"
+            required: false
+            hint: "This is currently hidden."
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}          
+          - label: "About"
+            name: "fourthNavigation"
+            widget: "list"
+            required: false
+            hint: "This is currently hidden."
+            fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Link, name: path, widget: string, hint: "Dette er linken. Husk å test denne. Dette vil være f.eks: /navn-på-siden"}
 
 #### STATIC PAGES (FRONT PAGE for example) ####
 
@@ -439,18 +447,19 @@ collections:
               - {label: "Author position", name: authorPosition, widget: string, required: false}
               - {label: "Author image", name: "authorImage", widget: image, required: false}
               - {label: "Quote text", name: quoteText, widget: text, required: false}
-          - label: Solutions
-            widget: object
-            name: itemsSection
-            fields:
-              - {label: Heading, name: heading, widget: string, required: false}
-              - label: Button
-                widget: object
-                name: button
-                required: false
-                fields:
-                  - {label: "Button text", name: text, widget: string, hint: "Keep it short", required: false}
-                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence", required: false}
+          # - label: "Solutions - Currently hidden"
+          #   widget: object
+          #   name: itemsSection
+          #   required: false
+          #   fields:
+          #     - {label: Heading, name: heading, widget: string, required: false}
+          #     - label: Button
+          #       widget: object
+          #       name: button
+          #       required: false
+          #       fields:
+          #         - {label: "Button text", name: text, widget: string, hint: "Keep it short", required: false}
+          #         - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence", required: false}
           - label: Inspirational section
             name: splitSection
             widget: object
