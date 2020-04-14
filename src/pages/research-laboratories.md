@@ -53,6 +53,7 @@ careers:
       - Marketing and Creative Storytellers
   subheading: SEALAB’s Research Laboratory is growing
 splitSection:
+  featuredimage: /img/research_assembly_in_hand.PNG
   left: >-
     ### What does it mean to give everyone the opportunity to see underwater?
 
@@ -62,7 +63,6 @@ splitSection:
     employees to work for the company. Not only work, but to create incredible
     underwater technology for AI, Edge Computing, underwater cameras and data
     traffic between Edge and Cloud.
-  featuredimage: /img/research_assembly_in_hand.PNG
 backgroundSection:
   bgimage: /img/water_dark_light_technology.jpg
   heading: Can creativity be stimulated if we do not set boundaries?
@@ -70,8 +70,6 @@ backgroundSection:
     *The founders of SEALAB already looking at various opportunities to develop
     technology to do research under the ice on Jupiter’s moon, Europa.*
 ---
-
 ![](/img/research_hardware.JPG)
 
-** SEALAB is convinced that investing in technology and software that helps solve the major challenges facing the world - are also investments that make the earth be a better place. **
-
+**SEALAB is convinced that investing in technology and software that helps solve the major challenges facing the world - are also investments that make the earth be a better place.**
