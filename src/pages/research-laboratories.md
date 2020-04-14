@@ -73,5 +73,5 @@ backgroundSection:
 
 ![](/img/research_hardware.JPG)
 
-*** SEALAB is convinced that investing in technology and software that helps solve the major challenges facing the world - are also investments that make the earth be a better place. ***
+** SEALAB is convinced that investing in technology and software that helps solve the major challenges facing the world - are also investments that make the earth be a better place. **
 
