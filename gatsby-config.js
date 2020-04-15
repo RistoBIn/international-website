@@ -62,6 +62,7 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-netlify-cache',
+    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
