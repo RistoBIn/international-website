@@ -16,7 +16,7 @@ const TVChannelSection = styled.section`
 `;
 
 const LivestreamSection = styled.section`
-  // padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
   .container:first-of-type {
     padding-bottom: 70px;
   }
