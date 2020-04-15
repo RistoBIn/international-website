@@ -1,1 +1,11 @@
 @import '../../_variables.scss';
+
+progress.progress {
+  height: 100px;
+  width: 100%;
+  &[value] {
+      background-color: #7BB7EF !important;
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+
+  }
+}

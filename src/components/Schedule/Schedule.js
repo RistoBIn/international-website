@@ -1,26 +1,29 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './Schedule.module.scss';
-import 'moment/locale/nb';
-import { idMaker } from '../../utils/id-maker';
 import CurrentTimeLine from './CurrentTimeline';
 import NextEvent from './NextEvent';
 import Program from './Program';
-
-const gen = idMaker();
+import dummyData from './dummyData.json';
 
 const Slideshow = () => {
   return (
     <section className={classNames(styles.scheduleWrapper)}>
       <CurrentTimeLine
         heading="Currently streaming"
+        event={dummyData[0]}
         className={classNames(styles.currentTimeline)}
       />
       <NextEvent
         heading="Coming up next"
+        event={dummyData[1]}
         className={classNames(styles.nextEvent)}
       />
-      <Program heading="TV Schedule" className={classNames(styles.program)} />
+      <Program
+        events={dummyData}
+        heading="TV Schedule"
+        className={classNames(styles.program)}
+      />
     </section>
   );
 };
