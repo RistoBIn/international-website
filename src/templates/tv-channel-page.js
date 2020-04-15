@@ -13,8 +13,8 @@ const TVChannelSection = styled.section`
   h2 {
     padding-top: 50px;
   }
-  .button.large {
-    max-width: 350px;
+  .section.cta {
+    padding: 0;
   }
 `;
 
@@ -53,15 +53,15 @@ export const TVChannelTemplate = ({
           <Schedule />
         </div>
       </section>
-      <section className="">
+      <section className="section cta">
         <div className="container centered">
           <a
-            className="button is-primary large"
+            className="button is-primary "
             target="_blank"
             rel="noopener noreferrer"
             href="http://sealab.live/"
           >
-            Check out our demo at sealab.live
+            See sealab.live
           </a>
         </div>
       </section>
