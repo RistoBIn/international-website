@@ -9,7 +9,7 @@ menuPaths:
       - path: /products/software-platform/
         title: BlueThink IoT Bridge
     path: '#'
-    title: Products
+    title: Core Technologies
   - dropdown:
       - path: /projects/indisal/
         title: Indisal
