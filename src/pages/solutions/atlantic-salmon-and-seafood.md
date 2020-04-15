@@ -90,15 +90,12 @@ splitSection:
     Companies who seek new ways to make its facility as energy efficient and
     sustainable as possible will need real time surveillance systems for
     monitoring fish welfare and the production. SEALABs computer vision systems
-    for biomass control, respiratory rate measuring, feeding control will help
-    our customers to reach their goals.  
+    for biomass control, respiratory rate measuring and feeding control will
+    help our customers to reach their goals.  
 
 
-    Innovation drives the value we create. Whether hardware, software, processes
-    or services, we’re dedicated to surpassing industry standards to ensure
-    processors can provide food that is high quality, sustainable, and
-    affordable. Our commitment to progress is highlighted by the fact that every
-    year, we invest significantly more into research and development than the
-    industry average.
+    Innovation drives the value we create. Our commitment to progress is
+    highlighted by the fact that every year, we invest significantly more into
+    research and development than the industry average.
 ---
 
