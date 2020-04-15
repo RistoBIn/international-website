@@ -1,34 +1,42 @@
 @import '../../_variables.scss';
 
 .event__text {
-    position: relative;
-    z-index: 20;
-    padding: 10px 18px;
+  position: relative;
+  z-index: 20;
+  padding: 10px 18px;
 
-    .event__text__time, .event__text__heading {
-        font-family: $primaryFont;
-        color: $white;
-        font-weight: bold;
-        font-size: 14px;
-        padding-bottom: 5px;
+  .event__text__time,
+  .event__text__heading {
+    font-family: $primaryFont;
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .event__text__camera {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 170%;
+    text-transform: uppercase;
+    margin: auto 0;
+    svg {
+      width: 12px;
+      margin-right: 10px;
     }
-    .event__text__camera {
-      padding-top: 10px;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 170%;
-      text-transform: uppercase;
-      margin: auto 0;
-      &.is__active {
-          color: #569F6B;
-          svg {
-              fill: #569F6B;
-              stroke: #569F6B;
-          }
-      }
-      svg {
-          width: 12px;
-          margin-right: 10px;
+    &.is__active {
+      color: #569f6b;
+      svg, svg path {
+        fill: #569f6b;
+
       }
     }
+    &:not(.is-active) {
+      color: $white !important;
+
+      svg, svg path {
+        fill: rgba(255, 255, 255, 0.8) !important;
+      }
+    }
+  }
 }
