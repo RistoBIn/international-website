@@ -27,11 +27,11 @@
     &.is__active {
       color: #569f6b;
       svg, svg path {
-        fill: #569f6b;
+        fill: #569f6b !important;
 
       }
     }
-    &:not(.is-active) {
+    &:not(.is__active) {
       color: $white !important;
 
       svg, svg path {
