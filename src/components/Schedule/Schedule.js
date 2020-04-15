@@ -10,12 +10,14 @@ const Slideshow = () => {
   return (
     <section className={classNames(styles.scheduleWrapper)}>
       <CurrentTimeLine
-        heading="Currently streaming"
+        heading={
+          <h3 className={styles.timeline__heading}>Currently streaming</h3>
+        }
         event={dummyData[0]}
         className={classNames(styles.currentTimeline)}
       />
       <NextEvent
-        heading="Coming up next"
+        heading={<h3 className={styles.timeline__heading}>Coming up next</h3>}
         event={dummyData[1]}
         className={classNames(styles.nextEvent)}
       />

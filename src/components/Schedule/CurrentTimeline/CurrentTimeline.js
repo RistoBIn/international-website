@@ -1,15 +1,7 @@
 import React from 'react';
-import classNames from 'classnames';
-import moment from 'moment';
 import styles from './CurrentTimeline.module.scss';
-import CameraIcon from '../../../img/camera.inline.svg';
-import 'moment/locale/nb';
-
-const getDigitalTime = dateObject => {
-  return moment(dateObject)
-    .locale('nb')
-    .format('LT');
-};
+import { getDigitalTime } from '../../../utils/date';
+import EventText from '../TimelineText';
 
 const CurrentTimeline = ({ heading, event }) => {
   if (!heading || !event || !event.friendlyName) return <></>;
@@ -21,15 +13,15 @@ const CurrentTimeline = ({ heading, event }) => {
   } = event;
 
   const calculateProgress = () => {
-    return 0.5;
+    return 0.4;
   };
 
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
   return (
     <div className={styles.currentTimeline}>
-      <h3>{heading}</h3>
-
+      {heading}
+      <TimeLine times={['00.00', '00.30', '01:00', '01:30']} />
       <div className={styles.progress}>
         <div
           style={{ width: `${calculateProgress() * 100}%` }}
@@ -47,25 +39,20 @@ const CurrentTimeline = ({ heading, event }) => {
   );
 };
 
-export const EventText = ({
-  startTime,
-  endTime,
-  heading,
-  camName,
-  isActive,
-}) => (
-  <div className={styles.event__text}>
-    <p className={styles.event__text__time}>{`${startTime} - ${endTime}`}</p>
-    <h4 className={styles.event__text__heading}>{heading}</h4>
-    <p
-      className={classNames(styles.event__text__camera, {
-        [styles.is__active]: isActive,
-      })}
+export const TimeLine = ({ times }) => {
+  if (!times && typeof times[0] !== 'string') return <></>;
+  return (
+    <div
+      className={styles.timeline}
+      style={{ gridTemplateColumns: `repeat(${times.length}, [col] 1fr)` }}
     >
-      <CameraIcon />
-      {camName}
-    </p>
-  </div>
-);
+      {times.map(time => (
+        <div className={styles.timeline__time}>
+          <p>{time}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default CurrentTimeline;

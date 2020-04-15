@@ -1,5 +1,27 @@
 @import '../../_variables.scss';
 
+
+
+.timeline {
+    display: none;
+    @media only screen and (min-width: $tablet) {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+        margin-bottom: 10px;
+        border-bottom: 1px solid $border-dark-background;
+        .timeline__time {
+            margin: 0 auto;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 .progress {
   height: 100px;
   width: 100%;
@@ -7,6 +29,7 @@
   z-index: 0;
   background: linear-gradient(89.45deg, #1F2331 0.07%, #192446 99.96%);
   border-left: 4px solid #569F6B;
+  border-radius: 3px;
 
   .progress__bar {
     background: #7BB7EF;
@@ -14,37 +37,5 @@
     height: 100%;
     position: absolute;
     z-index: 5;
-  }
-  .event__text {
-      position: relative;
-      z-index: 20;
-      padding: 10px 18px;
-
-      .event__text__time, .event__text__heading {
-          font-family: $primaryFont;
-          color: $white;
-          font-weight: bold;
-          font-size: 14px;
-          padding-bottom: 5px;
-      }
-      .event__text__camera {
-        padding-top: 10px;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 170%;
-        text-transform: uppercase;
-        margin: auto 0;
-        &.is__active {
-            color: #569F6B;
-            svg {
-                fill: #569F6B;
-                stroke: #569F6B;
-            }
-        }
-        svg {
-            width: 12px;
-            margin-right: 10px;
-        }
-      }
   }
 }
