@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
@@ -12,6 +12,9 @@ import generateHTML from '../utils/generateHTML';
 const TVChannelSection = styled.section`
   h2 {
     padding-top: 50px;
+  }
+  .button.large {
+    max-width: 350px;
   }
 `;
 
@@ -48,6 +51,18 @@ export const TVChannelTemplate = ({
       <section className="section">
         <div className="container">
           <Schedule />
+        </div>
+      </section>
+      <section className="">
+        <div className="container centered">
+          <a
+            className="button is-primary large"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="http://sealab.live/"
+          >
+            Check out our demo at sealab.live
+          </a>
         </div>
       </section>
 
