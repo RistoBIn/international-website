@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
+import classNames from 'classnames';
+import styles from './Livestream.module.scss';
 // import { ReactComponent as LivestreamIcon } from '../../../images/sealabIcons/livestream_play.svg';
+import LivestreamPlayIcon from '../../img/icon-livestream-play.inline.svg';
+import PreviewImage from '../../img/seagulls_nest.jpg';
 
 const Livestream = () => {
   const [playerKey, setPlayerKey] = useState(null);
@@ -13,7 +17,7 @@ const Livestream = () => {
   return (
     <ReactPlayer
       key={playerKey}
-      className="react-player"
+      className={classNames('react-player', styles.video)}
       url={buildStreamUri(
         'sealab',
         'teamgaeff',
@@ -22,12 +26,13 @@ const Livestream = () => {
         'bluethink-go',
         siteUID,
       )}
+      light={PreviewImage}
       playing
       muted
       controls
       width="100%"
       height="100%"
-      // playIcon={<LivestreamIcon />}
+      playIcon={<LivestreamPlayIcon />}
       onError={(err, errorDetails) => {
         try {
           if (errorDetails.fatal) setPlayerKey(playerKey + 1);

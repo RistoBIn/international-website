@@ -1,0 +1,24 @@
+@import '../_variables.scss';
+
+.scheduleWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media only screen and (min-width: $tablet) {
+    grid-template-columns: 2fr 1fr;
+
+    .currentTimeline {
+      grid-row: 1;
+      grid-column: 1 / span 2;
+    }
+
+    .nextEvent {
+      grid-row: 1;
+      grid-column: 3;
+    }
+
+    .program {
+      grid-row: 2;
+    }
+  }
+}
