@@ -8,19 +8,13 @@ seoDescription: >-
 priority: 2
 heading: Aquaculture
 description: >-
-  There’s a growing market for food production in the sea. Norwegian salmon
-  production accounts for 3% of the global seafood production.
+  Digitization of the aquaculture industry - SEALAB underwater camera combined
+  with computer vision and a customised software gives you unique insight into
+  environmental conditions, fish welfare, feeding processes and biomass
+  estimations.
 featuredimage: /img/IMG_0539_Adjusted_topimage.jpg
 splitSections:
   - content: >-
-      Atlantic salmon (Salmo Salar) and Norwegian fish farming are now Norway's
-      next largest industry, beaten only by the oil and gas industry.
-      Aquaculture is also growing internationally, but the Norwegian government
-      has put the brakes on demand that the industry must develop better
-      technology and new solutions to improve fish welfare, prevent escapes and
-      at the same time reduce the environmental impact.
-
-
       Aquaculture in Norway is already being improved by SEALAB's solutions
       through sharp images which in turn provides a better basis for the
       customer. And now comes many new innovations thanks to our unique edge
@@ -29,7 +23,9 @@ splitSections:
       cage. All of this helps to reduce losses and can provide a better survival
       rate. The economic benefits are increased at the farms while managing to
       reduce the environmental damage caused by salmon feeding.
-    heading: 'Measuring Stress, Better Lining Regime, and the Entire State of the Cage'
+    heading: How is SEALAB Innovating the Aquaculture Industry?
+    featuredimage: /img/Laksebilde_2.jpg
+    subheading: ''
   - content: >-
       ## Full Traceability Throughout the Entire Production Process
 
@@ -49,12 +45,12 @@ splitSections:
       completely new opportunities in the ocean. 
 
 
-      ***We give everyone the opportunity to see under water.***
-    heading: ''
-    featuredimage: /img/Laksebilde_2.jpg
-    subheading: ''
+      Curious about Sealab's core technologies?
+    heading: Full Traceability Throughout the Entire Production Process
+    featuredimage: ''
+    subheading: 'With Data Collection we Provide '
 imageSection:
-  featuredimage: /img/AdobeStock_135310009.jpeg
+  featuredimage: /img/aquaculture_algaes_cut.jpeg
   left: '### Seafood Production in the Ocean'
   right: >-
     All over the world, seafood is produced. From Atlantic salmon to whitefish,
@@ -62,6 +58,9 @@ imageSection:
     seaweed and kelp. The same technology that SEALAB supplies to the Norwegian
     aquaculture industry will be able to be used worldwide with simple
     adaptations.
+
+
+    ***We give everyone the opportunity to see under water.***
 splitSection:
   heading: Land Based Fish Farming
   left: >-
