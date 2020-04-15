@@ -8,10 +8,9 @@ seoDescription: >-
 priority: 2
 heading: Aquaculture
 description: >-
-  Digitization of the aquaculture industry - SEALAB underwater camera combined
-  with computer vision and a customised software gives you unique insight into
-  environmental conditions, fish welfare, feeding processes and biomass
-  estimations.
+  SEALAB underwater camera combined with computer vision and a customised
+  software gives you an unique insight into environmental conditions, fish
+  welfare, feeding processes and biomass estimations.
 featuredimage: /img/IMG_0539_Adjusted_topimage.jpg
 splitSections:
   - content: >-
@@ -83,7 +82,7 @@ splitSection:
     Optimizing water temperature and good access to groundwater is important,
     but sometimes expensive hydroelectric power rise the risk of the business.
     This is where better sensorics and computer vision from SEALAB come into
-    play
+    play.
   right: >-
     ### Setting a new Standard
 
