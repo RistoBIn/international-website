@@ -5,6 +5,15 @@ import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import Livestream from '../components/Livestream';
 import Schedule from '../components/Schedule';
+import SplittedSection from '../components/SplittedSection';
+import NonStretchedImage from '../components/NonStretchedImage';
+import generateHTML from '../utils/generateHTML';
+
+const TVChannelSection = styled.section`
+  h2 {
+    padding-top: 50px;
+  }
+`;
 
 const LivestreamSection = styled.section`
   // padding-bottom: 0 !important;
@@ -18,11 +27,13 @@ export const TVChannelTemplate = ({
   contentComponent,
   description,
   heading,
+  featuredimage,
+  splitSection,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="has-dark-background tv-channel">
+    <TVChannelSection className="has-dark-background tv-channel">
       <LivestreamSection className="section is-medium has-dark-background">
         <div className="container centered">
           <h1 className="section--title has-text-centered">{heading}</h1>
@@ -34,28 +45,78 @@ export const TVChannelTemplate = ({
           <Livestream />
         </div>
       </LivestreamSection>
-      {/* <section className="section">
+      <section className="section">
         <div className="container">
           <Schedule />
         </div>
-      </section> */}
-    </section>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          {featuredimage ? (
+            <NonStretchedImage
+              fluid={featuredimage.childImageSharp.fluid}
+              objectFit="contain"
+              alt=""
+              className="image"
+            />
+          ) : (
+            <></>
+          )}
+          {splitSection ? (
+            <>
+              <h2>{splitSection.heading}</h2>
+              <SplittedSection
+                leftColumn={
+                  <PostContent
+                    content={generateHTML(splitSection.left)}
+                    className="content"
+                  />
+                }
+                rightColumn={
+                  <PostContent
+                    content={generateHTML(splitSection.right)}
+                    className="content"
+                  />
+                }
+              />
+            </>
+          ) : (
+            <></>
+          )}
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <PostContent content={content} className="content" />
+        </div>
+      </section>
+    </TVChannelSection>
   );
 };
 
 const TVChannel = ({ data }) => {
   const { markdownRemark: post } = data;
+  const { frontmatter } = data.markdownRemark;
+  if (!frontmatter) return <></>;
+  const {
+    title,
+    heading,
+    description,
+    seoDescription,
+    featuredimage,
+    splitSection,
+  } = frontmatter;
 
   return (
-    <Layout
-      seoDescription={post.frontmatter.seoDescription}
-      seoTitle={post.frontmatter.title}
-    >
+    <Layout seoDescription={seoDescription} seoTitle={title}>
       <TVChannelTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        heading={post.frontmatter.heading}
+        description={description}
+        heading={heading}
+        featuredimage={featuredimage}
+        splitSection={splitSection}
       />
     </Layout>
   );
