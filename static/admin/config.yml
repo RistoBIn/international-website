@@ -705,7 +705,24 @@ collections:
               - {label: "Image", name: "profilePicture", widget: "image", hint: "Profile picutre"}
           - {label: "Quote centered", name: "body", widget: "markdown", required: false}
 
-
+      - file: "src/pages/sealab-tv-channel.md"
+        label: "SEALAB TV Channel"
+        name: "sealab-tv-channel"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "tv-channel-page"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+          - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+          - {label: "Description", name: "description", widget: "text", hint: "Text."}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+          - {label: "Image below livestream and schedule", name: "featuredimage", widget: "image", required: false}
+          - label: "Split section"
+            name: splitSection
+            required: false
+            widget: object
+            fields:
+                - {label: "Heading", name: "heading", widget: "string", required: false, hint: "This is the title you see on the top of a page."}
+                - {label: "Content - left", name: "left", widget: "markdown", required: false }
+                - {label: "Image - right", name: "right", widget: "markdown", required: false }
 
       - file: "src/pages/about/partners.md"
         label: "About - Partners"
