@@ -17,11 +17,11 @@ splitSections:
       Aquaculture in Norway is already being improved by SEALAB's solutions
       through sharp images which in turn provides a better basis for the
       customer. And now comes many new innovations thanks to our unique edge
-      computing technology combined with smart 2D and 3D sea cameras: measuring
-      stress in fish, better lining regime, monitoring the entire state of the
-      cage. All of this helps to reduce losses and can provide a better survival
-      rate. The economic benefits are increased at the farms while managing to
-      reduce the environmental damage caused by salmon feeding.
+      computing technology combined with smart 2D and 3D sea cameras: measure
+      stress levels, better the lining regime and monitoring the entire state of
+      the cage. All of this helps to reduce losses and can provide a better
+      survival rate. The economic benefits are increased while the environmental
+      impacts are reduced.
     heading: How is SEALAB Innovating the Aquaculture Industry?
     featuredimage: ''
     subheading: ''
