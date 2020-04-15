@@ -24,12 +24,9 @@ splitSections:
       rate. The economic benefits are increased at the farms while managing to
       reduce the environmental damage caused by salmon feeding.
     heading: How is SEALAB Innovating the Aquaculture Industry?
-    featuredimage: /img/Laksebilde_2.jpg
+    featuredimage: ''
     subheading: ''
   - content: >-
-      ## Full Traceability Throughout the Entire Production Process
-
-
       There are currently 430 million live salmon in Norwegian cages. Machine
       vision and AI will have tremendous positive significance and be able to
       monitor every single fish in real time.
@@ -47,7 +44,7 @@ splitSections:
 
       Curious about Sealab's core technologies?
     heading: Full Traceability Throughout the Entire Production Process
-    featuredimage: ''
+    featuredimage: /img/Laksebilde_2.jpg
     subheading: 'With Data Collection we Provide '
 imageSection:
   featuredimage: /img/aquaculture_algaes_cut.jpeg
