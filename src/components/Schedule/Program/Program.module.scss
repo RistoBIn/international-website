@@ -1,8 +1,9 @@
 @import '../../_variables.scss';
 
 .program {
-  background-color: $dark-light;
   margin-top: 50px;
+  background-color: $dark-light;
+  border-radius: 3px;
   h3 {
     padding: 16px;
     font-size: 18px;
@@ -16,8 +17,8 @@
     font-weight: bold;
     .event__time,
     .event__heading,
-    .event__duration,
-    .event__cam {
+    .event__duration p,
+    .event__cam p {
       color: white !important;
       font-weight: bold;
       line-height: 100%;
@@ -33,10 +34,10 @@
     }
     .event__duration,
     .event__cam {
+      display: flex;
       height: 16px !important;
       font-size: 12px !important;
-      svg {
-        height: auto;
+      svg, p {
         margin: auto 0;
         margin-right: 9px;
       }
@@ -48,5 +49,8 @@
     &:nth-of-type(odd) {
       background-color: #171a25;
     }
+  }
+  @media only screen and (min-width: $tablet) {
+    margin-top: 0;
   }
 }

@@ -1,17 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
 import styles from './Program.module.scss';
 import { getDigitalTime } from '../../../utils/date';
 import ClockIcon from '../../../img/clock.inline.svg';
 import CameraIcon from '../../../img/camera.inline.svg';
 
-const Program = ({ heading, events }) => {
+const Program = ({ className, heading, events }) => {
   if (!heading || !events || events.length < 1) return <></>;
   return (
-    <div className={styles.program}>
+    <div className={classNames(styles.program, className)}>
       <h3>{heading}</h3>
       {events.map(eventItem => {
-        console.log(eventItem);
-
         return (
           <EventItem
             startTime={eventItem.start_time}
@@ -35,14 +34,14 @@ const EventItem = ({ startTime, endTime, friendlyName, cam }) => {
         className={styles.event__time}
       >{`${friendlyStartTime} - ${friendlyEndTime}`}</p>
       <h4 className={styles.event__heading}>{friendlyName}</h4>
-      <p className={styles.event__duration}>
+      <div className={styles.event__duration}>
         <ClockIcon />
-        {duration}
-      </p>
-      <p className={styles.event__cam}>
+        <p>{duration}</p>
+      </div>
+      <div className={styles.event__cam}>
         <CameraIcon />
-        {cam}
-      </p>
+        <p>{cam}</p>
+      </div>
     </div>
   );
 };
