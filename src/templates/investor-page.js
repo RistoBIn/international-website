@@ -17,7 +17,7 @@ import DownloadIcon from '../img/icon-download.inline.svg';
 const PieChartSection = styled.section`
   padding: 3rem 0;
   @media only screen and (min-width: 1468px) {
-    background-image: url('/img/hidden/cloud-and-shareholders.jpg') !important;
+    background-image: url('/img/hidden/cloud-and-shareholders.png') !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     background-position: center !important;

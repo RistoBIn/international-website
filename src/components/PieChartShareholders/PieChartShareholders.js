@@ -17,6 +17,7 @@ const COLORS = [
   '#A527E0',
   '#CACCFF',
   '#BE8080',
+  '#E7BA78',
 ];
 
 const PieChartShareholders = ({ items }) => {
