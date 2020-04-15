@@ -4,6 +4,9 @@ import styles from './Program.module.scss';
 import { getDigitalTime } from '../../../utils/date';
 import ClockIcon from '../../../img/clock.inline.svg';
 import CameraIcon from '../../../img/camera.inline.svg';
+import { idMaker } from '../../../utils/id-maker';
+
+const gen = idMaker();
 
 const Program = ({ className, heading, events }) => {
   if (!heading || !events || events.length < 1) return <></>;
@@ -13,6 +16,7 @@ const Program = ({ className, heading, events }) => {
       {events.map(eventItem => {
         return (
           <EventItem
+            key={gen.next().value}
             startTime={eventItem.start_time}
             endTime={eventItem.stop_time}
             friendlyName={eventItem.friendlyName}

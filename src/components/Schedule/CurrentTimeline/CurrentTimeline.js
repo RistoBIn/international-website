@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './CurrentTimeline.module.scss';
 import { getDigitalTime } from '../../../utils/date';
 import EventText from '../TimelineText';
+import { idMaker } from '../../../utils/id-maker';
+
+const gen = idMaker();
 
 const CurrentTimeline = ({ heading, event }) => {
   if (!heading || !event || !event.friendlyName) return <></>;
@@ -47,7 +50,7 @@ export const TimeLine = ({ times }) => {
       style={{ gridTemplateColumns: `repeat(${times.length}, [col] 1fr)` }}
     >
       {times.map(time => (
-        <div className={styles.timeline__time}>
+        <div key={gen.next().value} className={styles.timeline__time}>
           <p>{time}</p>
         </div>
       ))}

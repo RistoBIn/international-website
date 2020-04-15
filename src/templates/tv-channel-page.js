@@ -101,11 +101,15 @@ export const TVChannelTemplate = ({
           )}
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <PostContent content={content} className="content" />
-        </div>
-      </section>
+      {content ? (
+        <section className="section">
+          <div className="container">
+            <PostContent content={content} className="content" />
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
     </TVChannelSection>
   );
 };
