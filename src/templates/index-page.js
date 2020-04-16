@@ -64,6 +64,16 @@ const FrontPage = styled.section`
       max-width: 520px;
     }
   }
+  .quote {
+    .content {
+      max-width: 650px;
+    }
+    p#author {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+    }
+  }
 `;
 
 const ProductFeatures = styled.div`
@@ -283,6 +293,19 @@ export const IndexPageTemplate = ({
           </div>
         </section>
       </BackgroundImage>
+      <section className="section has-dark-background is-medium quote">
+        <div className="container">
+          <PostContent
+            className="content"
+            content={generateHTML(quoteSection.content)}
+          />
+          <Button
+            className="is-secondary small"
+            text={quoteSection.button.text}
+            path={quoteSection.button.path}
+          />
+        </div>
+      </section>
       {/* 
       <QuotesList quotes={quotes} className="section has-dark-background" /> */}
     </FrontPage>

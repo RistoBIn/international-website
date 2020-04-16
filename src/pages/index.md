@@ -98,9 +98,9 @@ quoteSection:
     text: Innovation ‘cause we can
     path: /about/innovation-cause-we-can/
   content: >-
-    *The little things in life matter. If you can’t do the little things right, you’ll never be able to do the big things right.*
+    **The little things in life matter. If you can’t do the little things right, you’ll never be able to do the big things right.**
 
-    <strong id="quote-author">- Oscar Markovic and Milan Markovic, Founders at Work</strong>
+    <p id="author">- Oscar Markovic and Milan Markovic, Founders at Work</p>
 
 ---
 
