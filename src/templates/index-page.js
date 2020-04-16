@@ -83,6 +83,10 @@ const ProductFeatures = styled.div`
   .feature-item {
     margin-top: 30px;
     display: flex;
+    p,
+    .image {
+      margin: auto 0;
+    }
     .image {
       max-height: 40px;
       margin-right: 25px;
@@ -90,7 +94,8 @@ const ProductFeatures = styled.div`
   }
   @media screen and (min-width: 768px) {
     margin-top: 5rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
 `;
 
