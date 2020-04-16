@@ -55,7 +55,7 @@ thirdSection:
     for any service provider.
 
 
-    \[5G-HEART](/projects/5G-heart/)
+    > \[5G-HEART](/projects/5G-heart/)
   featuredimage: /img/role-of-edge-in5g.svg
 ---
 
