@@ -4,7 +4,7 @@ title: Atlantic Salmon and Seafood
 seoDescription: >-
   SEALAB underwater camera combined with computer vision and specially developed
   software give you unique insight into environmental conditions, fish welfare,
-  feeding processes and biomass estimation. 
+  feeding processes and biomass estimation.  
 priority: 2
 heading: Aquaculture
 description: >-
