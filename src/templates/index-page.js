@@ -2,16 +2,15 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import styled from 'styled-components';
-import BackgroundImage from 'gatsby-background-image';
+import BackgroundImage from '../components/BackgroundImage';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
 import Content, { HTMLContent } from '../components/Content';
 import Hero from '../components/HeroBackgroundImage';
 
+import generateHTML from '../utils/generateHTML';
 import NonStretchedImage from '../components/NonStretchedImage';
 import HighlightedData from '../components/HighlightedData';
-import QuotesList from '../components/QuotesList';
-import SplitWithFullWidthImage from '../components/SplitWithFullWidthImage';
 import Button from '../components/Button';
 import SplittedSection from '../components/SplittedSection';
 import productBackgroundImage from '../img/product-background-frontpage.png';
@@ -37,6 +36,23 @@ const FrontPage = styled.section`
       padding-top: 5rem;
     }
   }
+  .success-factors {
+    h1,
+    h2 {
+      font-weight: bold;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .button {
+      margin: 3rem 0;
+    }
+    @media screen and (min-width: 768px) {
+      h1,
+      h2 {
+        font-size: 56px;
+      }
+    }
+  }
 `;
 
 const ProductFeatures = styled.div`
@@ -57,18 +73,36 @@ const ProductFeatures = styled.div`
   }
 `;
 
+const SuccessFactors = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 16px 20px;
+  padding-top: 1rem;
+  text-align: center;
+  .centered {
+    width: 100%;
+    height: 110px;
+    p {
+      margin: auto;
+      padding: 1rem;
+    }
+  }
+`;
+
 export const IndexPageTemplate = ({
   heading,
   bgimage,
   facts,
   centeredSection,
   productSection,
-  quotes,
-  splitSectionImage,
-  content,
+  successFactors,
+  splitSection,
+  partnering,
+  quoteSection,
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content;
+  console.log(successFactors);
 
   return (
     <FrontPage>
@@ -142,7 +176,41 @@ export const IndexPageTemplate = ({
           </div>
         }
       />
-      <BackgroundImage image className id children style filterStyle htmlTag />
+      <BackgroundImage
+        image={successFactors.bgimage}
+        id
+        style
+        filterStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
+        htmlTag="div"
+      >
+        <section className="section is-large success-factors">
+          <div className="container centered">
+            {successFactors.subheading ? (
+              <p className="subheading">{successFactors.subheading}</p>
+            ) : (
+              <></>
+            )}
+            <PostContent
+              className="highlighted large"
+              content={generateHTML(successFactors.content)}
+            />
+            <Button
+              className="is-primary small"
+              text={successFactors.button.text}
+              path={successFactors.button.path}
+            />
+          </div>
+          <div className="container">
+            <SuccessFactors>
+              {successFactors.features.map(textItem => (
+                <div className="centered border-top-bottom">
+                  <p className="bold">{textItem.text}</p>
+                </div>
+              ))}
+            </SuccessFactors>
+          </div>
+        </section>
+      </BackgroundImage>
       {/* 
       <QuotesList quotes={quotes} className="section has-dark-background" /> */}
     </FrontPage>
@@ -160,6 +228,10 @@ const IndexPage = ({ data }) => {
     items,
     centeredSection,
     productSection,
+    successFactors,
+    splitSection,
+    partnering,
+    quoteSection,
   } = frontmatter;
 
   return (
@@ -172,6 +244,10 @@ const IndexPage = ({ data }) => {
         facts={items}
         centeredSection={centeredSection}
         productSection={productSection}
+        successFactors={successFactors}
+        splitSection={splitSection}
+        partnering={partnering}
+        quoteSection={quoteSection}
       />
     </Layout>
   );
@@ -221,7 +297,7 @@ export const pageQuery = graphql`
           description
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 1180, quality: 100) {
+              fluid(maxHeight: 1180, quality: 80) {
                 ...GatsbyImageSharpFluid_tracedSVG
                 presentationWidth
               }
@@ -239,6 +315,64 @@ export const pageQuery = graphql`
                 }
               }
             }
+          }
+        }
+        successFactors {
+          content
+          subheading
+          button {
+            text
+            path
+          }
+          features {
+            text
+          }
+          bgimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        splitSection {
+          content
+          subheading
+          button {
+            text
+            path
+          }
+          featuredimage {
+            childImageSharp {
+              fluid(maxWidth: 700, quality: 80) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
+        }
+        partnering {
+          content
+          subheading
+          buttons {
+            text
+            path
+          }
+          bgimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        quoteSection {
+          content
+          button {
+            text
+            path
           }
         }
       }

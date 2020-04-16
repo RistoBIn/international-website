@@ -53,8 +53,9 @@ quotes:
     authorName: ''
     authorPosition: ''
     quoteText: The Apple approach for harsh environments
-sucessFactors:
+successFactors:
   bgimage: /img/ice-mountain-blue.jpeg
+  subheading: ''
   content: >-
     ## App Ecosystem and Key Success Factors
 
@@ -70,6 +71,7 @@ sucessFactors:
     
 splitSection:
   featuredimage: /img/sealab-tv-channel.jpg
+  subheading: ''
   content: >-
     ## SEALAB TV Channel
 

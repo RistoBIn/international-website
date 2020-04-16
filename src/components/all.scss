@@ -27,13 +27,13 @@ body {
       transition: $transition;
     }
     &.small {
-      padding: 0.8rem 1rem;
+      padding: 0.8rem 1rem !important;
     }
     &.medium {
-      padding: 1rem 1rem;
+      padding: 1rem 1rem !important;
     }
     &.large {
-      padding: 1.1rem 1rem;
+      padding: 1.1rem 1rem !important;
     }
     &.is-primary {
       background-color: $red;
@@ -168,8 +168,16 @@ body {
     font-size: 32px;
     line-height: 1.3em;
     padding-bottom: 16px;
+
+    &.large {
+      font-weight: 38px;
+    }
     @media screen and (min-width: $desktop) {
       font-size: 46px;
+
+      &.large {
+        font-weight: 56px;
+      }
     }
   }
 
@@ -398,6 +406,9 @@ body {
   font-size: 16px;
   line-height: 100%;
 }
+.bold {
+  font-weight: bold;
+}
 
 .image.full-width {
   width: 100%;
@@ -432,6 +443,11 @@ section.background-section {
     display: table-cell;
     vertical-align: middle;
   }
+}
+
+.border-top-bottom {
+  border-top: 1px solid $border-dark-background;
+  border-bottom: 1px solid $border-dark-background;
 }
 
 /****************     NAVIGATION    ********************/
