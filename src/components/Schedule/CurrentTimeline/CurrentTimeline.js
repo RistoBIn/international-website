@@ -22,7 +22,7 @@ const CurrentTimeline = ({ heading, event }) => {
     const stop = new Date(Date.parse(endTime)).getTime();
     const duration = stop - start;
     const elapsed = new Date().getTime() - start;
-    const progress = elapsed / duration;
+    const progress = Math.min(elapsed / duration, 1.0);
     setEventProgress(progress);
   };
 
@@ -50,11 +50,13 @@ const CurrentTimeline = ({ heading, event }) => {
   };
 
   useEffect(() => {
-    calculateProgress();
-    setInterval(() => {
+    const intervalId = setTimeout(() => {
       calculateProgress();
-    }, 60000);
-  }, []);
+    }, 1000);
+    return () => {
+      clearTimeout(intervalId);
+    };
+  }, [eventProgress]);
 
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
