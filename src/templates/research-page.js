@@ -9,6 +9,7 @@ import generateHTML from '../utils/generateHTML';
 import SplittedSection from '../components/SplittedSection';
 import Button from '../components/Button';
 import NonStretchedImage from '../components/NonStretchedImage';
+import { ButtonFlex } from '../styles';
 
 const ImageGrid = styled.div`
   display: grid;
@@ -107,17 +108,6 @@ const FreeText = styled.section`
   p strong {
     color: #dbe0ea !important;
     font-size: 32px !important;
-  }
-`;
-
-const ButtonFlex = styled.div`
-  .button {
-    margin-top: 20px;
-  }
-  @media only screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 200px));
-    grid-gap: 12px;
   }
 `;
 

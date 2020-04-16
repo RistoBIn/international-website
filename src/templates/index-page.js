@@ -14,8 +14,13 @@ import HighlightedData from '../components/HighlightedData';
 import Button from '../components/Button';
 import SplittedSection from '../components/SplittedSection';
 import productBackgroundImage from '../img/product-background-frontpage.png';
+import { ButtonFlexCentered } from '../styles';
 
 const FrontPage = styled.section`
+  h1,
+  h2 {
+    font-weight: bold !important;
+  }
   .camera-section {
     padding-top: 4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -37,9 +42,9 @@ const FrontPage = styled.section`
     }
   }
   .success-factors {
+    font-size: 18px;
     h1,
     h2 {
-      font-weight: bold;
       max-width: 700px;
       margin: 0 auto;
     }
@@ -51,6 +56,12 @@ const FrontPage = styled.section`
       h2 {
         font-size: 56px;
       }
+    }
+  }
+  .tv-channel {
+    padding-top: 6rem;
+    .content {
+      max-width: 520px;
     }
   }
 `;
@@ -81,10 +92,12 @@ const SuccessFactors = styled.div`
   text-align: center;
   .centered {
     width: 100%;
-    height: 110px;
+    height: 90px;
     p {
+      color: white;
       margin: auto;
       padding: 1rem;
+      line-height: 120%;
     }
   }
 `;
@@ -102,7 +115,7 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content;
-  console.log(successFactors);
+  console.log(partnering);
 
   return (
     <FrontPage>
@@ -204,10 +217,69 @@ export const IndexPageTemplate = ({
             <SuccessFactors>
               {successFactors.features.map(textItem => (
                 <div className="centered border-top-bottom">
-                  <p className="bold">{textItem.text}</p>
+                  <p className="bold paragraph">{textItem.text}</p>
                 </div>
               ))}
             </SuccessFactors>
+          </div>
+        </section>
+      </BackgroundImage>
+      <SplittedSection
+        className="section is-medium has-dark-background tv-channel"
+        shouldReorderOnMobile
+        leftColumn={
+          <>
+            <PostContent
+              className="content"
+              content={generateHTML(splitSection.content)}
+            />
+            <Button
+              className="is-primary"
+              text={splitSection.button.text}
+              path={splitSection.button.path}
+            />
+          </>
+        }
+        rightColumn={
+          <NonStretchedImage
+            fluid={splitSection.featuredimage.childImageSharp.fluid}
+            objectFit="contain"
+            alt={splitSection.heading}
+            className="image"
+          />
+        }
+      />
+      <BackgroundImage
+        image={partnering.bgimage}
+        id
+        style
+        filterStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
+        htmlTag="div"
+      >
+        <section className="section is-large success-factors">
+          <div className="container centered">
+            {partnering.subheading ? (
+              <p className="subheading">{partnering.subheading}</p>
+            ) : (
+              <></>
+            )}
+            <PostContent
+              className="highlighted large"
+              content={generateHTML(partnering.content)}
+            />
+            {partnering.buttons.length > 0 ? (
+              <ButtonFlexCentered>
+                {partnering.buttons.map(buttonItem => (
+                  <Button
+                    className="is-secondary small"
+                    text={buttonItem.text}
+                    path={buttonItem.path}
+                  />
+                ))}
+              </ButtonFlexCentered>
+            ) : (
+              <></>
+            )}
           </div>
         </section>
       </BackgroundImage>
