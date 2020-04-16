@@ -8,58 +8,75 @@ import fetchFromResourceApi from '../../utils/bluethink-resourcefile-api'
 import dummyData from './dummyData.json';
 
 const Slideshow = () => {
-  const [currentSchedule, setCurrentSchedule] = useState(undefined);
-  const [currentEvent, setCurrentEvent] = useState(undefined);
-  const getCurrrentEvent = async schedule => {
+  const [currentSchedule, setCurrentSchedule] = useState([]);
+  const [currentEvent, setCurrentEvent] = useState(0);
+  const [currentDate, setCurrentDate] = useState(
+    new Date().toISOString().split('T')[0],
+  );
+
+  function updateCurrrentEvent() {
+    if (typeof currentSchedule === 'undefined') {
+      return;
+    }
     let i = 0;
     let elemStartTime;
     let elemStopTime;
     const now = new Date();
-    while (i < schedule.length) {
-      elemStartTime = new Date(Date.parse(schedule[i].start_time));
-      elemStopTime = new Date(Date.parse(schedule[i].stop_time));
+    while (i < currentSchedule.length) {
+      elemStartTime = new Date(Date.parse(currentSchedule[i].start_time));
+      elemStopTime = new Date(Date.parse(currentSchedule[i].stop_time));
       if (elemStartTime < now && elemStopTime > now) {
-        return schedule[i];
+        const eventDuration = elemStopTime.getTime() - now.getTime();
+        setTimeout(() => {
+          updateCurrrentEvent();
+        }, eventDuration);
+        setCurrentEvent(i);
+        return;
       }
       i += 1;
     }
-    return undefined;
-  };
+    setCurrentEvent(undefined);
+  }
 
   async function fetchSchedule() {
     const apiResponse = await fetchFromResourceApi(
-      `/site-info/livestream-schedules/c1be1ead-81dc-4202-80b2-ab0b4beb5778/2020-04-15.json`,
+      `/site-info/livestream-schedules/c1be1ead-81dc-4202-80b2-ab0b4beb5778/${currentDate}.json`,
     );
+    if (!apiResponse || !apiResponse.data) {
+      return;
+    }
     setCurrentSchedule(apiResponse.data);
   }
 
   useEffect(() => {
-    if (typeof currentSchedule === 'undefined') {
-      fetchSchedule();
-    }
-    if (typeof currentSchedule !== 'undefined') {
-      const theEvent = getCurrrentEvent(currentSchedule);
-      setCurrentEvent(theEvent);
-    }
-    console.log('type: ', typeof currentSchedule);
-    console.log('Current event: ', cusrrentEvent);
-  }, [currentSchedule, currentEvent]);
+    setCurrentDate(new Date().toISOString().split('T')[0]);
+    fetchSchedule();
+  }, []);
+
+  useEffect(() => {
+    updateCurrrentEvent();
+  }, [currentSchedule]);
+
   return (
     <section className={classNames(styles.scheduleWrapper)}>
       <CurrentTimeLine
         heading={
           <h3 className={styles.timeline__heading}>Currently streaming</h3>
         }
-        event={dummyData[0]}
+        event={currentSchedule[currentEvent]}
         className={classNames(styles.currentTimeline)}
       />
       <NextEvent
         heading={<h3 className={styles.timeline__heading}>Coming up next</h3>}
-        event={dummyData[1]}
+        event={
+          currentEvent === currentSchedule.length
+            ? undefined
+            : currentSchedule[currentEvent + 1]
+        }
         className={classNames(styles.nextEvent)}
       />
       <Program
-        events={dummyData}
+        events={currentSchedule}
         heading="TV Schedule"
         className={classNames(styles.program)}
       />

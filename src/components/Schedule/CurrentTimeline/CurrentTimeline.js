@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CurrentTimeline.module.scss';
 import { getDigitalTime } from '../../../utils/date';
 import EventText from '../TimelineText';
@@ -15,19 +15,56 @@ const CurrentTimeline = ({ heading, event }) => {
     stop_time: endTime,
   } = event;
 
+  const [eventProgress, setEventProgress] = useState(0);
+
   const calculateProgress = () => {
-    return 0.4;
+    const start = new Date(Date.parse(startTime)).getTime();
+    const stop = new Date(Date.parse(endTime)).getTime();
+    const duration = stop - start;
+    const elapsed = new Date().getTime() - start;
+    const progress = elapsed / duration;
+    setEventProgress(progress);
   };
+
+  const generateTimeline = () => {
+    const timeList = [];
+    const targetLength = 4;
+
+    const start = new Date(Date.parse(startTime));
+    const stop = new Date(Date.parse(endTime));
+    const duration = stop.getTime() - start.getTime();
+    const timeStep = duration / (targetLength - 1);
+
+    let i = 1;
+    timeList.push(start);
+    while (timeList.length < targetLength - 1) {
+      timeList.push(new Date(start.getTime() + i * timeStep));
+      i += 1;
+    }
+    timeList.push(stop);
+
+    const strTimeList = timeList.map(dateObj => {
+      return getDigitalTime(dateObj.toISOString());
+    });
+    return strTimeList;
+  };
+
+  useEffect(() => {
+    calculateProgress();
+    setInterval(() => {
+      calculateProgress();
+    }, 60000);
+  }, []);
 
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
   return (
     <div className={styles.currentTimeline}>
       {heading}
-      <TimeLine times={['00.00', '00.30', '01:00', '01:30']} />
+      <TimeLine times={generateTimeline()} />
       <div className={styles.progress}>
         <div
-          style={{ width: `${calculateProgress() * 100}%` }}
+          style={{ width: `${eventProgress * 100}%` }}
           className={styles.progress__bar}
         />
         <EventText
