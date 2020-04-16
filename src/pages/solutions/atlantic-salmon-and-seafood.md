@@ -23,7 +23,6 @@ splitSections:
       survival rate. The economic benefits are increased while the environmental
       impacts are reduced.
     heading: How is SEALAB Innovating the Aquaculture Industry?
-    featuredimage: ''
     subheading: ''
   - content: >-
       There are currently 430 million live salmon in Norwegian cages. Machine
