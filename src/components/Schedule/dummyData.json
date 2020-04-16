@@ -1,0 +1,98 @@
+[
+    {
+        "sceneKey": "dock",
+        "priority": 0,
+        "start_time": "2020-04-14T00:00:00+02:00",
+        "stop_time": "2020-04-14T01:30:00+02:00",
+        "friendlyName": "Dock from surface camera",
+        "state": {
+            "cage": 1,
+            "camera": "surface",
+            "preset": 4
+        }
+    },
+    {
+        "sceneKey": "tideCrossing",
+        "priority": 4,
+        "start_time": "2020-04-14T01:30:00+02:00",
+        "stop_time": "2020-04-14T01:50:00+02:00",
+        "friendlyName": "Tide crossing camera",
+        "state": {
+            "cage": 3,
+            "camera": "subsea",
+            "preset": null
+        }
+    },
+    {
+        "sceneKey": "lobsterHouse",
+        "priority": 2,
+        "start_time": "2020-04-14T01:50:00+02:00",
+        "stop_time": "2020-04-14T08:10:00+02:00",
+        "friendlyName": "Life in the lobster house",
+        "state": {
+            "cage": 3,
+            "camera": "subsea",
+            "preset": null
+        }
+    },
+    {
+        "sceneKey": "seagullsNest",
+        "priority": 1,
+        "start_time": "2020-04-14T08:10:00+02:00",
+        "stop_time": "2020-04-14T14:30:00+02:00",
+        "friendlyName": "Seagulls nest",
+        "state": {
+            "cage": 4,
+            "camera": "subsea",
+            "preset": null
+        }
+    },
+    {
+        "sceneKey": "tideCrossing",
+        "priority": 4,
+        "start_time": "2020-04-14T14:30:00+02:00",
+        "stop_time": "2020-04-14T14:50:00+02:00",
+        "friendlyName": "Tide crossing camera",
+        "state": {
+            "cage": 3,
+            "camera": "subsea",
+            "preset": null
+        }
+    },
+    {
+        "sceneKey": "lobsterHouse",
+        "priority": 2,
+        "start_time": "2020-04-14T14:50:00+02:00",
+        "stop_time": "2020-04-14T20:50:00+02:00",
+        "friendlyName": "Life in the lobster house",
+        "state": {
+            "cage": 3,
+            "camera": "subsea",
+            "preset": null
+        }
+    },
+    {
+        "sceneKey": "seagullsNest",
+        "priority": 1,
+        "start_time": "2020-04-14T20:50:00+02:00",
+        "stop_time": "2020-04-14T20:55:29+02:00",
+        "friendlyName": "Seagulls nest",
+        "state": {
+            "cage": 4,
+            "camera": "subsea",
+            "preset": null
+        }
+    },
+    {
+        "sceneKey": "dock",
+        "priority": 0,
+        "start_time": "2020-04-14T20:55:29+02:00",
+        "stop_time": "2020-04-14T23:59:59+02:00",
+        "friendlyName": "Dock from surface camera",
+        "state": {
+            "cage": 1,
+            "camera": "surface",
+            "preset": 4
+        }
+    }
+]
