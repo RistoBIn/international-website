@@ -14,6 +14,7 @@
       }
     }
 
+
     .leftColumn,
     .rightColumn {
       padding: 0;
@@ -34,6 +35,23 @@
     .heading {
       grid-row: 3;
       margin-top: 10px;
+    }
+    .rightColumn {
+      a {
+        display: inline-flex;
+        padding: .8rem 1rem;
+        background-color: $red;
+        font-size: 14px;
+        border-radius: 3px;
+        color: $white;
+        transition: $transition;
+        &:hover,
+        &:focus {
+          opacity: 0.85;
+          background-color: $red;
+          color: $white;
+        }
+      }
     }
 
     @media only screen and (min-width: $tablet) {
