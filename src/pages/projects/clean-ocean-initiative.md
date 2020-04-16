@@ -11,7 +11,7 @@ seoDescription: >-
 featuredimage: /img/AdobeStock_194067101.jpeg
 featuredimageCaption: ''
 splitSection:
-  bgimage: /img/search-and-rescue.jpg
+  bgimage: /img/AdobeStock_174371043.jpeg
   content: >-
     *For most of history, man has had to fight nature to survive; in this
     century he is beginning to realize that, in order to survive, he must
