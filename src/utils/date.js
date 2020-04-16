@@ -7,4 +7,9 @@ export const getDigitalTime = dateObject => {
     .format('LT');
 };
 
-export default getDigitalTime;
+export const getDuration = seconds => {
+  return moment
+    .duration(seconds)
+    .locale('en')
+    .humanize();
+};
