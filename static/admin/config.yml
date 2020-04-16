@@ -419,7 +419,6 @@ collections:
             widget: object
             name: centeredSection
             fields:
-              - {label: "Background image", name: "bgimage", widget: image }
               - {label: Subheading, name: subheading, widget: string, required: false}
               - {label: Heading, name: heading, widget: string}
               - {label: Description, name: description, widget: text}
@@ -438,6 +437,13 @@ collections:
               - {label: "Product image", name: "featuredimage", widget: image }
               - {label: "Product background image", name: "featuredimageBackground", widget: image, required: false }
               - {label: Description, name: description, widget: text}
+              - label: Product features
+                name: features
+                widget: list
+                required: false
+                fields: 
+                  - {label: Heading, name: heading, widget: text}
+                  - {label: "Icon", name: "icon", widget: image, hint: "Try to keep the image extension in SVG" }
           - label: Quotes section
             widget: list
             name: quotes
@@ -447,19 +453,6 @@ collections:
               - {label: "Author position", name: authorPosition, widget: string, required: false}
               - {label: "Author image", name: "authorImage", widget: image, required: false}
               - {label: "Quote text", name: quoteText, widget: text, required: false}
-          # - label: "Solutions - Currently hidden"
-          #   widget: object
-          #   name: itemsSection
-          #   required: false
-          #   fields:
-          #     - {label: Heading, name: heading, widget: string, required: false}
-          #     - label: Button
-          #       widget: object
-          #       name: button
-          #       required: false
-          #       fields:
-          #         - {label: "Button text", name: text, widget: string, hint: "Keep it short", required: false}
-          #         - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence", required: false}
           - label: Inspirational section
             name: splitSection
             widget: object

@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
 import Content, { HTMLContent } from '../components/Content';
@@ -8,10 +9,48 @@ import Hero from '../components/HeroBackgroundImage';
 
 import NonStretchedImage from '../components/NonStretchedImage';
 import HighlightedData from '../components/HighlightedData';
-import SectionBackgroundImage from '../components/SectionBackgroundImage';
 import QuotesList from '../components/QuotesList';
 import SplitWithFullWidthImage from '../components/SplitWithFullWidthImage';
 import Button from '../components/Button';
+import SplittedSection from '../components/SplittedSection';
+import productBackgroundImage from '../img/product-background-frontpage.png';
+
+const FrontPage = styled.section`
+  .camera-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    .product-image {
+      background-image: url(${productBackgroundImage});
+      background-size: 120%;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 0 50px;
+      @media screen and (min-width: 1200px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 100px;
+      }
+    }
+  }
+`;
+
+const ProductFeatures = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  .feature-item {
+    margin-top: 30px;
+    display: flex;
+    .image {
+      max-height: 40px;
+      margin-right: 25px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+`;
 
 export const IndexPageTemplate = ({
   heading,
@@ -27,7 +66,7 @@ export const IndexPageTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <>
+    <FrontPage>
       <Hero
         className="is-fullheight front-page"
         heading={heading}
@@ -53,30 +92,52 @@ export const IndexPageTemplate = ({
         </div>
       </section>
       <HighlightedData highlighted={facts} id="facts" />
-      <section id="camera--title" className="section has-dark-background">
-        <div className="container">
-          <Title
-            title={productSection.heading}
-            description={productSection.description}
-            position="center"
-          />
-        </div>
-      </section>
-      <section id="camera--image" className="has-dark-background">
-        <div
-          className="product-image"
-          style={{
-            backgroundImage: `url(${productSection.featuredimageBackground.publicURL})`,
-          }}
-        >
-          <NonStretchedImage
-            fluid={productSection.featuredimage.childImageSharp.fluid}
-            objectFit="contain"
-            alt={productSection.heading}
-            className="image"
-          />
-        </div>
-      </section>
+      <SplittedSection
+        className="section is-medium has-dark-background camera-section"
+        shouldReorderOnMobile
+        leftColumn={
+          <>
+            <Title
+              title={productSection.heading}
+              description={productSection.description}
+              position="left"
+            />
+            <Button
+              className="is-secondary"
+              text="Read more"
+              path="/products/edge-intelligence"
+            />
+            {productSection.features && productSection.features.length > 0 ? (
+              <ProductFeatures>
+                {productSection.features.map(featureItem => (
+                  <div className="feature-item">
+                    <NonStretchedImage
+                      objectFit="contain"
+                      alt={featureItem.heading}
+                      className="image"
+                      {...featureItem.icon}
+                    />
+                    <p>{featureItem.heading}</p>
+                  </div>
+                ))}
+              </ProductFeatures>
+            ) : (
+              <></>
+            )}
+          </>
+        }
+        rightColumn={
+          <div className="product-image">
+            <NonStretchedImage
+              fluid={productSection.featuredimage.childImageSharp.fluid}
+              objectFit="contain"
+              alt={productSection.heading}
+              className="image"
+            />
+          </div>
+        }
+      />
+
       <QuotesList quotes={quotes} className="section has-dark-background" />
       <SplitWithFullWidthImage
         id="inspirational-quote"
@@ -85,7 +146,7 @@ export const IndexPageTemplate = ({
       >
         <PostContent content={content} className="content" />
       </SplitWithFullWidthImage>
-    </>
+    </FrontPage>
   );
 };
 
@@ -158,16 +219,6 @@ export const pageQuery = graphql`
             text
             path
           }
-          bgimage {
-            publicURL
-            extension
-            childImageSharp {
-              fluid(maxHeight: 920, quality: 80) {
-                ...GatsbyImageSharpFluid_noBase64
-                presentationWidth
-              }
-            }
-          }
         }
 
         productSection {
@@ -181,8 +232,18 @@ export const pageQuery = graphql`
               }
             }
           }
-          featuredimageBackground {
-            publicURL
+          features {
+            heading
+            icon {
+              publicURL
+              extension
+              childImageSharp {
+                fluid(maxWidth: 90, quality: 80) {
+                  ...GatsbyImageSharpFluid_noBase64
+                  presentationWidth
+                }
+              }
+            }
           }
         }
 

@@ -33,6 +33,15 @@ productSection:
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   heading: Edge to Cloud. Anywhere. Anytime.
+  features:
+    - heading: 3D
+      icon: /img/icon-3d.svg
+    - heading: FPGA Technology
+      icon: /img/icon-fpga.svg
+    - heading: AI Solutions under water
+      icon: /img/icon-ai.svg
+    - heading: Machine vision techniques
+      icon: /img/icon-eye.svg
 quotes:
   - authorImage: ''
     authorName: ''
