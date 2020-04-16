@@ -1,5 +1,9 @@
-
+@import '../_variables.scss';
 
 .video {
-    height: 790px !important;
+    height: 40vh !important;
+
+    @media only screen and (min-width: $tablet) {
+        height: 790px !important;
+    }
 }
