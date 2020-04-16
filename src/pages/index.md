@@ -53,14 +53,52 @@ quotes:
     authorName: ''
     authorPosition: ''
     quoteText: The Apple approach for harsh environments
-itemsSection:
-  button:
-    path: /solutions/
-    text: Show all industries
-  heading: We are able to develop and deploy our technology to several industries
-splitSection:
-  bgimage: /img/AdobeStock_174371043.jpeg
----
-*For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
+sucessFactors:
+  bgimage: /img/ice-mountain-blue.jpeg
+  content: >-
+    ## App Ecosystem and Key Success Factors
 
-<strong id="quote-author">- Jacques-Yves Cousteau</strong>
+    Our ambition is to continue to generate extensive amounts of data from the ocean and scale up our App community. Not only collecting images and data but collecting the right data. Only in this way will smart and effective apps and AI solutions be created.
+  button:
+    text: Collaborate with SEALAB
+    path: /about/partnership/
+  features:
+    - text: Enabling easy access to quality machine vision technology, images, expertise and support
+    - text: Apply state of the art machine learning to different industries.
+    - text: Our ideas will change everything in the Ocean Space.
+
+    
+splitSection:
+  featuredimage: /img/sealab-tv-channel.jpg
+  content: >-
+    ## SEALAB TV Channel
+
+    The monitored areas include both a gulls nest, an eagles aerie and our own custom built lobster shelter. The goal for this project is simply to satisfy our own curiosity and to provide the inhabitants of Gjæsingen island with a new way to enjoy their local environment.
+  button: 
+    text: TV Schedule
+    path: /sealab-tv-channel/
+
+partnering:
+  bgimage: /img/water_dark_light_technology.jpg
+  subheading: X-factor
+  buttons:
+    - text: Partnerships
+      path: /about/partnership/
+    - text: Working in SEALAB
+      path: /research-laboratories/
+  content: >-
+    ## Partnering with SEALAB
+    
+    Our Research Laboratories are constantly developing and testing new technological solutions. SEALAB’s DNA is very strong when we talk about creativity and different ways of thinking. We need more Rockstars on the team. If you have X-factor and what is needed – launch your career at SEALAB.
+
+quoteSection:
+  button: 
+    text: Innovation ‘cause we can
+    path: /about/innovation-cause-we-can/
+  content: >-
+    *The little things in life matter. If you can’t do the little things right, you’ll never be able to do the big things right.*
+
+    <strong id="quote-author">- Oscar Markovic and Milan Markovic, Founders at Work</strong>
+
+---
+

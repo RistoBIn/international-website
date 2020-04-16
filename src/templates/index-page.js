@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import styled from 'styled-components';
+import BackgroundImage from 'gatsby-background-image';
 import Layout from '../components/Layout';
 import Title from '../components/Title';
 import Content, { HTMLContent } from '../components/Content';
@@ -17,6 +18,7 @@ import productBackgroundImage from '../img/product-background-frontpage.png';
 
 const FrontPage = styled.section`
   .camera-section {
+    padding-top: 4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     .product-image {
       background-image: url(${productBackgroundImage});
@@ -30,6 +32,9 @@ const FrontPage = styled.section`
         background-position: center;
         padding: 0 100px;
       }
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 5rem;
     }
   }
 `;
@@ -137,15 +142,9 @@ export const IndexPageTemplate = ({
           </div>
         }
       />
-
-      <QuotesList quotes={quotes} className="section has-dark-background" />
-      <SplitWithFullWidthImage
-        id="inspirational-quote"
-        className="has-dark-background"
-        splitSectionImage={splitSectionImage}
-      >
-        <PostContent content={content} className="content" />
-      </SplitWithFullWidthImage>
+      <BackgroundImage image className id children style filterStyle htmlTag />
+      {/* 
+      <QuotesList quotes={quotes} className="section has-dark-background" /> */}
     </FrontPage>
   );
 };
@@ -161,8 +160,6 @@ const IndexPage = ({ data }) => {
     items,
     centeredSection,
     productSection,
-    quotes,
-    splitSection,
   } = frontmatter;
 
   return (
@@ -175,8 +172,6 @@ const IndexPage = ({ data }) => {
         facts={items}
         centeredSection={centeredSection}
         productSection={productSection}
-        quotes={quotes}
-        splitSectionImage={splitSection.bgimage}
       />
     </Layout>
   );
@@ -242,23 +237,6 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
-              }
-            }
-          }
-        }
-
-        quotes {
-          authorName
-          authorPosition
-          quoteText
-        }
-
-        splitSection {
-          bgimage {
-            childImageSharp {
-              fluid(maxHeight: 400, quality: 60) {
-                ...GatsbyImageSharpFluid_noBase64
-                presentationWidth
               }
             }
           }
