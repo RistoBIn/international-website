@@ -228,6 +228,8 @@ body {
     }
     a {
       color: $red;
+      font-weight: bold;
+      font-size: inherit;
     }
     blockquote p {
       background: red;
