@@ -64,7 +64,7 @@ body {
       &:focus {
         opacity: 1;
       }
-      svg {
+      svg, svg path {
         fill: $text-dark;
         stroke: $text-dark;
       }
@@ -424,6 +424,9 @@ body {
   margin: auto !important;
   text-align: center;
   max-width: 850px;
+  .button  {
+    margin: 0 auto;
+  }
 }
 
 section.background-section {

@@ -1,5 +1,5 @@
 @import '../_variables.scss';
-
+$padding-between-content: 25px 20px;
 .highlighted__wrapper {
   display: grid;
   position: relative;
@@ -8,22 +8,26 @@
   grid-gap: 10px;
 
   .highlighted__specification {
-    text-align: center;
-    padding: 15px 0;
     width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    border: 1px solid $border-dark-background;
 
     .highlighted__specification__title {
-      font-weight: 300;
-      font-size: 56px;
+      color: $white;
+      font-weight: bold;
+      font-size: 32px;
       line-height: 170%;
-      padding-bottom: 20px;
+      margin-top: 20px;
+      padding: $padding-between-content;
+      padding-top: 40px;
     }
     .highlighted__specification__description {
-      max-width: 274px;
       margin: auto;
+      margin-bottom: 0;
       font-weight: bold;
-      font-size: 18px;
       line-height: 170%;
+      padding: $padding-between-content;
     }
   }
   @media only screen and(min-width: $tablet) {
@@ -31,7 +35,15 @@
     text-align: center;
     margin: auto;
     .highlighted__specification {
-      padding: 44px 0;
+      padding-top: 20px;
+  
+      // .highlighted__specification__title {
+
+      // }
+      .highlighted__specification__description {
+        padding-top: 3rem;
+        // padding-bottom: 0;
+      }
     }
   }
 }

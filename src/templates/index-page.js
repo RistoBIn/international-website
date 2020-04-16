@@ -11,6 +11,7 @@ import HighlightedData from '../components/HighlightedData';
 import SectionBackgroundImage from '../components/SectionBackgroundImage';
 import QuotesList from '../components/QuotesList';
 import SplitWithFullWidthImage from '../components/SplitWithFullWidthImage';
+import Button from '../components/Button';
 
 export const IndexPageTemplate = ({
   heading,
@@ -36,11 +37,22 @@ export const IndexPageTemplate = ({
         anchorLink="#facts"
         backgroundCSS="linear-gradient(177.9deg, #0E111B 8.35%, rgba(14, 17, 27, 0.21) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%)"
       />
+      <section className="section has-dark-background">
+        <div className="container centered">
+          <Title
+            title={centeredSection.heading}
+            description={centeredSection.description}
+            subheading={centeredSection.subheading}
+            position="center"
+          />
+          <Button
+            className="is-secondary"
+            text={centeredSection.button.text}
+            path={centeredSection.button.path}
+          />
+        </div>
+      </section>
       <HighlightedData highlighted={facts} id="facts" />
-      <SectionBackgroundImage
-        {...centeredSection}
-        backgroundCSS={`linear-gradient(186.69deg, #0E111B 22.36%, rgba(14, 17, 27, 0.21) 37.8%), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%),  url(${centeredSection.bgimage.publicURL})`}
-      />
       <section id="camera--title" className="section has-dark-background">
         <div className="container">
           <Title
@@ -89,7 +101,6 @@ const IndexPage = ({ data }) => {
     centeredSection,
     productSection,
     quotes,
-    itemsSection,
     splitSection,
   } = frontmatter;
 
