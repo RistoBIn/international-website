@@ -31,13 +31,13 @@ history:
     featuredimage: /img/Innovation_V1.1.png
   - content: “This camera will change everything in the Ocean Space”
     position: 'center'
-    year: 'few seconds later'
+    year: '2010'
     featuredimage: /img/Innovation_V1.1.png
     highlighted: true
     subheading: Oscar’s words in a fieldtrip where we lifted the project to a new level
   - content: Give everyone the opportunity to see under water
     position: 'center'
-    year: 'few seconds later'
+    year: '2010'
     subheading: A few seconds later we landed our strong vision
   - content: 3D biomass estimation – we did it!
     position: 'left'
