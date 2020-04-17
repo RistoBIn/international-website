@@ -17,26 +17,23 @@ body {
   font-family: 'Open Sans';
 
   .button {
-    width: 100%;
     padding: 1rem 1rem;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     height: auto;
+
     @include buttonText;
-    @media only screen and (min-width: $desktop) {
-      max-width: 260px;
-    }
     & svg {
       transition: $transition;
     }
     &.small {
-      padding: 0.8rem 1rem;
+      padding: 0.8rem 1rem !important;
     }
     &.medium {
-      padding: 1rem 1rem;
+      padding: 1rem 1rem !important;
     }
     &.large {
-      padding: 1.1rem 1rem;
+      padding: 1.1rem 1rem !important;
     }
     &.is-primary {
       background-color: $red;
@@ -64,7 +61,7 @@ body {
       &:focus {
         opacity: 1;
       }
-      svg {
+      svg, svg path {
         fill: $text-dark;
         stroke: $text-dark;
       }
@@ -171,8 +168,16 @@ body {
     font-size: 32px;
     line-height: 1.3em;
     padding-bottom: 16px;
+
+    &.large {
+      font-weight: 38px;
+    }
     @media screen and (min-width: $desktop) {
       font-size: 46px;
+
+      &.large {
+        font-weight: 56px;
+      }
     }
   }
 
@@ -404,6 +409,9 @@ body {
   font-size: 16px;
   line-height: 100%;
 }
+.bold {
+  font-weight: bold;
+}
 
 .image.full-width {
   width: 100%;
@@ -427,6 +435,10 @@ body {
   margin: auto !important;
   text-align: center;
   max-width: 850px;
+
+  .button {
+    margin: 0 auto;
+  }
 }
 
 section.background-section {
@@ -434,6 +446,11 @@ section.background-section {
     display: table-cell;
     vertical-align: middle;
   }
+}
+
+.border-top-bottom {
+  border-top: 1px solid $border-dark-background;
+  border-bottom: 1px solid $border-dark-background;
 }
 
 /****************     NAVIGATION    ********************/
@@ -978,73 +995,6 @@ section.about-page-leadership {
   }
 }
 
-section#camera--image {
-  .product-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  @media only screen and (min-width: $tablet) {
-    .product-image {
-      background-size: contain;
-    }
-  }
-}
-
-section.section#inspirational-quote {
-  .wrapper-two-split {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
-  .bg-image {
-    width: 100%;
-    height: 100%;
-  }
-  .content {
-    margin: auto;
-    padding: 1.5rem;
-    p {
-      font-weight: 300;
-      font-size: $fontLarge;
-      line-height: 170%;
-      strong#quote-author {
-        font-size: 16px;
-      }
-    }
-  }
-  @media only screen and (min-width: $tablet) {
-    padding: 3rem 0;
-    .wrapper-two-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background-size: 0 !important;
-    }
-    .bg-image {
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    .content {
-      padding: 3rem;
-      max-width: 650px;
-      margin-left: 0;
-      p {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 170%;
-        strong#quote-author {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-
 /****************     CONTACT PAGE    ********************/
 
 section.map {
@@ -1350,11 +1300,6 @@ section.product-page-primary {
     background-size: cover;
     .image {
       margin: 0 auto;
-    }
-  }
-  .large-image {
-    .button {
-      max-width: 290px;
     }
   }
   .alternating-sections {

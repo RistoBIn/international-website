@@ -16,5 +16,3 @@ splitSection:
     The monitored areas include both a gulls nest, an eagles aerie and our own custom built lobster shelter. The goal for this project is simply to satisfy our own curiosity and to provide the inhabitants of Gjæsingen island with a new way to enjoy their local environment
 
 ---
-
-### Testing
