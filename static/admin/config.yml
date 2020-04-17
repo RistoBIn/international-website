@@ -446,7 +446,7 @@ collections:
                   - {label: "Icon", name: "icon", widget: image, hint: "Try to keep the image extension in SVG" }
 
           - label: "Success factors section"
-            name: sucessFactors
+            name: successFactors
             widget: object
             fields: 
               - {label: Subheading, name: subheading, widget: text, hint: "Small text above title", required: false}
