@@ -4,36 +4,27 @@ title: Atlantic Salmon and Seafood
 seoDescription: >-
   SEALAB underwater camera combined with computer vision and specially developed
   software give you unique insight into environmental conditions, fish welfare,
-  feeding processes and biomass estimation.
+  feeding processes and biomass estimation.  
 priority: 2
 heading: Aquaculture
 description: >-
-  There’s a growing market for food production in the sea. Norwegian salmon
-  production accounts for 3% of the global seafood production.
+  SEALAB underwater camera combined with computer vision and a customised
+  software gives you an unique insight into environmental conditions, fish
+  welfare, feeding processes and biomass estimations.
 featuredimage: /img/IMG_0539_Adjusted_topimage.jpg
 splitSections:
   - content: >-
-      Atlantic salmon (Salmo Salar) and Norwegian fish farming are now Norway's
-      next largest industry, beaten only by the oil and gas industry.
-      Aquaculture is also growing internationally, but the Norwegian government
-      has put the brakes on demand that the industry must develop better
-      technology and new solutions to improve fish welfare, prevent escapes and
-      at the same time reduce the environmental impact.
-
-
       Aquaculture in Norway is already being improved by SEALAB's solutions
       through sharp images which in turn provides a better basis for the
       customer. And now comes many new innovations thanks to our unique edge
-      computing technology combined with smart 2D and 3D sea cameras: measuring
-      stress in fish, better lining regime, monitoring the entire state of the
-      cage. All of this helps to reduce losses and can provide a better survival
-      rate. The economic benefits are increased at the farms while managing to
-      reduce the environmental damage caused by salmon feeding.
-    heading: 'Measuring Stress, Better Lining Regime, and the Entire State of the Cage'
+      computing technology combined with smart 2D and 3D sea cameras: measure
+      stress levels, better the lining regime and monitoring the entire state of
+      the cage. All of this helps to reduce losses and can provide a better
+      survival rate. The economic benefits are increased while the environmental
+      impacts are reduced.
+    heading: How is SEALAB Innovating the Aquaculture Industry?
+    subheading: ''
   - content: >-
-      ## Full Traceability Throughout the Entire Production Process
-
-
       There are currently 430 million live salmon in Norwegian cages. Machine
       vision and AI will have tremendous positive significance and be able to
       monitor every single fish in real time.
@@ -49,12 +40,17 @@ splitSections:
       completely new opportunities in the ocean. 
 
 
-      ***We give everyone the opportunity to see under water.***
-    heading: ''
+      Curious about Sealab's core technologies?
+
+
+      [Edge Intelligence](/products/edge-intelligence/)
+
+      [BlueThink IoT Bridge](/products/software-platform/)
+    heading: Full Traceability Throughout the Entire Production Process
     featuredimage: /img/Laksebilde_2.jpg
-    subheading: ''
+    subheading: 'With Data Collection we Provide '
 imageSection:
-  featuredimage: /img/AdobeStock_135310009.jpeg
+  featuredimage: /img/aquaculture_algaes_cut.jpeg
   left: '### Seafood Production in the Ocean'
   right: >-
     All over the world, seafood is produced. From Atlantic salmon to whitefish,
@@ -62,6 +58,9 @@ imageSection:
     seaweed and kelp. The same technology that SEALAB supplies to the Norwegian
     aquaculture industry will be able to be used worldwide with simple
     adaptations.
+
+
+    ***We give everyone the opportunity to see under water.***
 splitSection:
   heading: Land Based Fish Farming
   left: >-
@@ -78,7 +77,7 @@ splitSection:
     Optimizing water temperature and good access to groundwater is important,
     but sometimes expensive hydroelectric power rise the risk of the business.
     This is where better sensorics and computer vision from SEALAB come into
-    play
+    play.
   right: >-
     ### Setting a new Standard
 
@@ -86,15 +85,12 @@ splitSection:
     Companies who seek new ways to make its facility as energy efficient and
     sustainable as possible will need real time surveillance systems for
     monitoring fish welfare and the production. SEALABs computer vision systems
-    for biomass control, respiratory rate measuring, feeding control will help
-    our customers to reach their goals.  
+    for biomass control, respiratory rate measuring and feeding control will
+    help our customers to reach their goals.  
 
 
-    Innovation drives the value we create. Whether hardware, software, processes
-    or services, we’re dedicated to surpassing industry standards to ensure
-    processors can provide food that is high quality, sustainable, and
-    affordable. Our commitment to progress is highlighted by the fact that every
-    year, we invest significantly more into research and development than the
-    industry average.
+    Innovation drives the value we create. Our commitment to progress is
+    highlighted by the fact that every year, we invest significantly more into
+    research and development than the industry average.
 ---
 

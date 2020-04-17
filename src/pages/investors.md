@@ -21,8 +21,8 @@ shareholders:
   - accountType: A
     country: NOR
     name: Slottvarden Invest AS
-    percentage: 0.4819
-    shares: 700399
+    percentage: 0.4131
+    shares: 600399
   - accountType: A
     country: NOR
     name: Haspro AS
@@ -63,6 +63,11 @@ shareholders:
     name: Hakar Invest AS
     percentage: 0.0028
     shares: 4060
+  - accountType: A
+    country: NOR
+    name: FCMI AS
+    percentage: 0.0688
+    shares: 100000
 highlights:
   button:
     path: /contact/
@@ -136,10 +141,10 @@ table:
   boxes:
     - heading: Total of shares
       description: 1.453.262
+    - heading: Total of investors
+      description: '10'
     - heading: Share Capital
       description: 49.5 mil NOK
-    - heading: Total of investors
-      description: '9'
     - heading: Updated
       description: 30.03.2020
   content: >-

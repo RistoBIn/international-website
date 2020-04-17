@@ -232,7 +232,10 @@ body {
       font-weight: 700;
     }
     a {
-      color: #3273dc;
+      color: $red;
+      font-weight: bold;
+      font-size: inherit;
+      text-decoration: underline;
     }
     blockquote p {
       background: red;
