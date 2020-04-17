@@ -19,7 +19,7 @@ const BackgroundImageSection = ({
           Tag={htmlTag || 'section'}
           className={classNames(className, styles.image__section)}
           fluid={image.childImageSharp.fluid}
-          style={style}
+          style={{ ...style }}
           id={id}
         >
           <div
@@ -40,7 +40,7 @@ const BackgroundImageSection = ({
         Tag={htmlTag || 'section'}
         className={classNames(className, styles.image__section)}
         fluid={image.childImageSharp.fluid}
-        style={style}
+        style={{ ...style }}
         id={id}
       >
         {children}
@@ -55,6 +55,7 @@ const BackgroundImageSection = ({
         className={classNames(className)}
         style={{
           backgroundImage: `url(${image.publicURL})`,
+          ...style,
         }}
       >
         {children}
