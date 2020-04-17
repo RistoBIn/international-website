@@ -22,7 +22,6 @@ const FrontPage = styled.section`
     font-weight: bold !important;
   }
   .camera-section {
-    padding-top: 4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     .product-image {
       background-image: url(${productBackgroundImage});
@@ -160,7 +159,7 @@ export const IndexPageTemplate = ({
       </section>
       <HighlightedData highlighted={facts} id="facts" />
       <SplittedSection
-        className="section is-medium has-dark-background camera-section"
+        className="section is-large has-dark-background camera-section"
         shouldReorderOnMobile
         leftColumn={
           <>
