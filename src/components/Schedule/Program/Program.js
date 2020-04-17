@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './Program.module.scss';
-import { getDigitalTime } from '../../../utils/date';
+import { getDigitalTime, getDuration } from '../../../utils/date';
 import ClockIcon from '../../../img/clock.inline.svg';
 import CameraIcon from '../../../img/camera.inline.svg';
 import { idMaker } from '../../../utils/id-maker';
@@ -31,7 +31,10 @@ const Program = ({ className, heading, events }) => {
 const EventItem = ({ startTime, endTime, friendlyName, cam }) => {
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
-  const duration = '4 hours';
+
+  const start = new Date(Date.parse(startTime)).getTime();
+  const stop = new Date(Date.parse(endTime)).getTime();
+  const duration = getDuration(stop - start);
   return (
     <div className={styles.event}>
       <p
