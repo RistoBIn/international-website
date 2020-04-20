@@ -91,7 +91,7 @@ history:
     year: '2018'
   - content: >-
       ### World’s largest Data harvesting of Aquaculture Images for Artificial
-      Intelligence)
+      Intelligence
     position: right
     year: '2018'
   - content: '### First round of funding from investors'
