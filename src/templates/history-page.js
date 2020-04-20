@@ -10,6 +10,19 @@ import generateHTML from '../utils/generateHTML';
 import { idMaker } from '../utils/id-maker';
 
 const gen = idMaker();
+
+const StyledHistoryPage = styled.section`
+  @media only screen and (max-width: 768px) {
+    section.pre-history {
+      padding-bottom: 0;
+      .centered .content h2 {
+        text-align: left;
+        margin-left: 0;
+      }
+    }
+  }
+`;
+
 const HistorySection = styled.section`
   .timeline::after {
     content: '';
@@ -30,17 +43,23 @@ const HistorySection = styled.section`
 `;
 
 const StyledHistoryItem = styled.div`
-
   position: relative;
   background-color: inherit;
   padding-top: 4rem;
+
+  &:first-of-type {
+    padding-top: 0;
+    &::after {
+      margin-top: -4rem;
+    }
+  }
   
   &::after, &.is-center::before {
     content: '${props => props.content}';
     position: absolute;
     right: unset;
     top: 60px;
-    left: -11px;
+    left: 0;
     z-index: 20;
     padding: 2px 10px;
     background-color: #0e111b;
@@ -99,6 +118,12 @@ const StyledHistoryItem = styled.div`
   }
   @media only screen and (min-width: 768px) {
     padding: 40px 40px;
+    &:first-of-type {
+      padding-top: 4rem;
+      &::after {
+        margin-top: 0;
+      }
+    }
     &.is-right, &.is-left {
       width: 50%;
       .history--content {
@@ -242,7 +267,7 @@ export const HistoryPageTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="has-dark-background">
+    <StyledHistoryPage className="has-dark-background">
       <HeroFaded
         className="is-large"
         image={featuredimage}
@@ -257,7 +282,7 @@ export const HistoryPageTemplate = ({
       </HeroFaded>
 
       {content ? (
-        <section className="section has-dark-background">
+        <section className="section has-dark-background pre-history">
           <div className="container centered">
             <PostContent content={content} className="content" />
           </div>
@@ -315,7 +340,7 @@ export const HistoryPageTemplate = ({
       ) : (
         <></>
       )}
-    </section>
+    </StyledHistoryPage>
   );
 };
 
