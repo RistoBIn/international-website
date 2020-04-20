@@ -71,10 +71,27 @@ export const Navbar = ({
               </a>
             </div>
           </div>
-
-          <div className="navbar-item has-buttons">
+          <div
+            className={classNames(
+              styles.navbar__button,
+              'navbar-item',
+              'has-buttons',
+              'is-hidden-tablet',
+            )}
+          >
             <Link className="button is-white" to="/contact/">
               Contact
+            </Link>
+          </div>
+          <div
+            className={classNames(
+              styles.navbar__button,
+              'navbar-item',
+              'has-buttons',
+            )}
+          >
+            <Link className="button is-white" to="/sealab-tv-channel/">
+              SEALAB TV
             </Link>
           </div>
         </div>
