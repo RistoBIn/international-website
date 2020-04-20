@@ -67,7 +67,7 @@ history:
     position: right
     year: '2016'
   - content: >-
-      \### Eight completed master theses. 
+      ### Eight completed master theses. 
 
 
       Eight master theses in underwater technology under our wings. These
@@ -76,7 +76,7 @@ history:
     position: left
     year: '2017'
   - content: >-
-      \### Top score: 
+      ### Top score: 
 
 
       SEALAB and SINTEF Ocean got awarded by the Research Council of Norway –
@@ -92,7 +92,7 @@ history:
     position: left
     year: '2018'
   - content: >-
-      World’s largest Data harvesting of Aquaculture Images for Artificial
+      ### World’s largest Data harvesting of Aquaculture Images for Artificial
       Intelligence)
     position: right
     year: '2018'
