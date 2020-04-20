@@ -62,11 +62,11 @@ const StyledHistoryItem = styled.div`
       z-index: 20;
       margin-bottom: 16px !important;
     }
-    .content, .subheading {
+    .content {
       font-size: 16px;
       padding-left: 30px; 
       p {
-        color: white;
+        color: #DBE0EA;
       }
       h1, h2, h3 {
         font-size: 18px;
@@ -74,8 +74,22 @@ const StyledHistoryItem = styled.div`
       }
     }
   }
-  &.is-highlighted .content {
-    font-size: 24px;
+  .subheading {
+    position: relative;
+    z-index: 49;
+    padding-bottom: 10px;
+    background-color: #0e111b;
+    font-weight: normal !important;
+    color: #DBE0EA !important;
+    line-height: 140%;
+  }
+  &.is-highlighted .history--content {
+    .content {
+      h1, h2, h3 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
   }
   &.has-no-image .history--content {
     padding-top: 2rem;
@@ -171,8 +185,25 @@ const StyledHistoryItem = styled.div`
       .content {
         background-color: #0E111B;
         z-index: 50;
-        font-size: 26px;
         padding-left: 0;
+        h1, h2, h3 {
+          font-size: 26px;
+          font-weight: normal;
+        }
+        p {
+          color: white;
+          line-height: 130%;
+          font-size: 18px;
+          font-weight: normal;
+        }
+      }
+    }
+    &.is-highlighted .history--content {
+      .content {
+        h1, h2, h3 {
+          font-size: 36px;
+          font-weight: bold;
+        }
       }
     }
     &.has-no-image .history--content {
