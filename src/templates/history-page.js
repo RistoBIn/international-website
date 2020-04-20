@@ -178,9 +178,10 @@ const StyledHistoryItem = styled.div`
     &.has-no-image .history--content {
       margin-bottom: 6rem;
     }
-    &.has-no-image.is-right .history--content {
+    &.has-no-image.is-right .history--content,
+    &.has-no-image.is-left .history--content {
       position: relative;
-      top: 60px;
+      margin-top: 0;
       .content {
         text-align: left;
       }
