@@ -5,7 +5,7 @@ heading: History
 description: |
   A risk worth taking - born to engineer
 seoDescription: 'A risk worth taking - born to engineer. '
-featuredimage: /img/Innovation_V1.1.png
+featuredimage: /img/old_sealab.camera.JPG
 history:
   - content: >-
       A discovery under water. A little kid discovers a new world under water
@@ -22,15 +22,16 @@ history:
   - content: >-
       Starting from zero, got nothing to lose. Maybe we will make something.
       (Oscar Marković joins the team)
+    featuredimage: ''
     highlighted: true
     position: center
     year: '2009'
   - content: Prototyping a new underwater camera for machine vision
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/Developing Cameras.PNG
     position: left
     year: '2010'
   - content: Breakthrough! Our first underwater images for AI.
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/salmon_subsea_camera_old.jpg
     position: right
     year: '2010'
   - content: “This camera will change everything in the Ocean Space”
