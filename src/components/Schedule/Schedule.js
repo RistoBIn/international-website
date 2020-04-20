@@ -39,7 +39,7 @@ const Slideshow = () => {
 
   async function fetchSchedule() {
     const apiResponse = await fetchFromResourceApi(
-      `/site-info/livestream-schedules/c1be1ead-81dc-4202-80b2-ab0b4beb5778/${currentDate}.json`,
+      `/site-info/livestream-schedules/${process.env.GATSBY_UID}/${currentDate}.json`,
     );
     if (!apiResponse || !apiResponse.data) {
       return;
