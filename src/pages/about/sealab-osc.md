@@ -20,7 +20,8 @@ seoDescription: >-
   islands of Froan.
 featuredimage: /img/SEALAB_OSC_Quintus_at_night.png
 ---
-
 Having the open sea at one's constant disposal has time and again proven to be one of our most valued resources, as well as a popular destination for our employees and partners. Constantly exposed to extreme weather conditions, the Ocean Space Center serves as the ultimate test facility featuring fiber network infrastructure, housing facilities and our very own bay with several service vessels ready for expeditions at a moments notice.
 
 Numerous experiments are constantly being conducted under close supervision using SEALAB surveillance technology, quickly revealing which ideas can withstand the elements and flushing out the ones that can't.
+
+[SEALAB.LIVE](http://sealab.live/)  [SEALAB TV CHANNEL](/sealab-tv-channel/)
