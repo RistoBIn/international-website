@@ -24,4 +24,6 @@ Having the open sea at one's constant disposal has time and again proven to be o
 
 Numerous experiments are constantly being conducted under close supervision using SEALAB surveillance technology, quickly revealing which ideas can withstand the elements and flushing out the ones that can't.
 
-[SEALAB.LIVE](http://sealab.live/)  [SEALAB TV CHANNEL](/sealab-tv-channel/)
+Want to know more about SEALAB and innovation?
+
+[SEALAB.LIVE](http://sealab.live/)  [SEALAB TV CHANNEL](/sealab-tv-channel/)  [INNOVATION](/about/innovation-cause-we-can/)
