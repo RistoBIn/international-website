@@ -48,7 +48,7 @@ history:
     position: left
     year: '2014'
   - content: 'SEALAB AS founded, the company was established.'
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/sealab-factory.png
     highlighted: true
     position: center
     year: '2015'
@@ -62,7 +62,7 @@ history:
       Eight completed master theses. Eight master theses in underwater
       technology under our wings. These amazing people lifted the company to a
       new level
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/CompletedMasterTheses.png
     position: left
     year: '2017'
   - content: >-
