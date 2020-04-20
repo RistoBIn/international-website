@@ -13,7 +13,7 @@ history:
 
       A little kid discovers a new world under water (That kid was Milan
       Marković).
-    featuredimage: /img/old_image_men_preparing.jpg
+    featuredimage: /img/snorkeling_old_black_and_white.png
     position: left
     year: '1968'
   - content: |-
