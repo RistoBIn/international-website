@@ -62,23 +62,26 @@ const StyledHistoryItem = styled.div`
       z-index: 20;
       margin-bottom: 16px !important;
     }
+    .content, .subheading {
+      padding-left: 30px; 
+      color: #DBE0EA;
+      p {
+        color: inherit;
+      }
+
+    }
     .content {
       font-size: 16px;
-      padding-left: 30px; 
-      p {
-        color: #DBE0EA;
-      }
       h1, h2, h3 {
         font-size: 18px;
         color: white;
       }
     }
   }
+  .history--content, .subheading {
+
+  }
   .subheading {
-    position: relative;
-    z-index: 49;
-    padding-bottom: 10px;
-    background-color: #0e111b;
     font-weight: normal !important;
     color: #DBE0EA !important;
     line-height: 140%;
@@ -197,6 +200,12 @@ const StyledHistoryItem = styled.div`
           font-weight: normal;
         }
       }
+    }
+    .subheading {
+      position: relative;
+      z-index: 49;
+      padding-bottom: 10px;
+      background-color: #0e111b;
     }
     &.is-highlighted .history--content {
       .content {
