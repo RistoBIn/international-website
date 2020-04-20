@@ -106,7 +106,7 @@ history:
     highlighted: true
     position: center
     year: '2018'
-  - content: SEALABWORLD and broadcasting 24/7 from underwater started.
+  - content: SEALAB Ocean Space Center and broadcasting 24/7 from underwater started.
     featuredimage: /img/quintus_night_gjæsingen.jpg
     position: right
     year: '2019'
