@@ -150,7 +150,6 @@ const MenuDropDown = ({ menuItem, onClick }) => {
             className={classNames('navbar-item', 'is-tab')}
             activeClassName="is-active"
             to={cleanPath(subitem.path)}
-            onClick={() => onClick()}
           >
             {subitem.title}
           </Link>
