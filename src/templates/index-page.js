@@ -130,7 +130,6 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content;
-  console.log(partnering);
 
   return (
     <FrontPage>
