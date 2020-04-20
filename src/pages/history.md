@@ -8,7 +8,7 @@ seoDescription: 'A risk worth taking - born to engineer. '
 featuredimage: /img/old_sealab.camera.JPG
 history:
   - content: >-
-      ### A discovery under water. 
+      ### A discovery under water 
 
 
       A little kid discovers a new world under water (That kid was Milan
@@ -16,7 +16,7 @@ history:
     featuredimage: /img/snorkeling_old_black_and_white.png
     position: left
     year: '1968'
-  - content: '### 20 years later. SCUBA diving at last'
+  - content: '### 20 years later - SCUBA diving at last'
     featuredimage: /img/scuba_diving_black_and_white.jpg
     position: right
     year: '1986'
@@ -29,11 +29,11 @@ history:
     highlighted: true
     position: center
     year: '2009'
-  - content: '### Prototyping a new underwater camera for machine vision'
+  - content: '### Prototyping a new underwater camera for camera vision'
     featuredimage: /img/Developing Cameras.PNG
     position: left
     year: '2010'
-  - content: '### Breakthrough! Our first underwater images for AI.'
+  - content: '### Breakthrough! Our first underwater images for AI'
     featuredimage: /img/salmon_subsea_camera_old.jpg
     position: right
     year: '2011'
@@ -59,14 +59,14 @@ history:
     position: center
     year: '2015'
   - content: |-
-      ### Hard work in the R&D Lab. 
+      ### Hard work in the R&D Lab 
 
       The first LED lights that enable underwater machine vision was developed.
     featuredimage: /img/sealab_light_old_r&D_led.JPG
     position: right
     year: '2016'
   - content: >-
-      ### Eight completed master theses. 
+      ### Eight completed master theses 
 
 
       Eight master theses in underwater technology under our wings. These
@@ -91,7 +91,7 @@ history:
     position: left
     year: '2018'
   - content: >-
-      ### World’s largest Data harvesting of Aquaculture Images for Artificial
+      ### World’s largest data harvesting of Aquaculture images for Artificial
       Intelligence
     position: right
     year: '2018'
@@ -100,14 +100,14 @@ history:
     position: left
     year: '2018'
   - content: |-
-      ### SEALAB factory and a new R&D Lab opened. 
+      ### SEALAB factory and a new R&D Lab opened 
 
       (Asbjørn Marković joins the team)
     featuredimage: /img/asbjorn_camera_edit.jpg
     highlighted: true
     position: center
     year: '2018'
-  - content: SEALAB Ocean Space Center and broadcasting 24/7 from underwater started.
+  - content: SEALAB Ocean Space Center and broadcasting 24/7 from underwater started
     featuredimage: /img/quintus_night_gjæsingen.jpg
     position: right
     year: '2019'
@@ -122,7 +122,7 @@ history:
     highlighted: true
     position: center
     year: '2020'
-lastContent: '### More to come...'
+lastContent: More to come...
 ---
 
 ## Once upon a time...
