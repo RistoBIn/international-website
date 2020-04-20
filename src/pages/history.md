@@ -17,9 +17,8 @@ history:
     position: left
     year: '1968'
   - content: |-
-      ### 20 years later 
-
-      ### SCUBA diving at last.
+      ### 20 years later \
+      SCUBA diving at last
     featuredimage: /img/scuba_diving_black_and_white.jpg
     position: right
     year: '1986'
