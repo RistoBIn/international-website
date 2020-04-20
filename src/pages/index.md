@@ -54,9 +54,7 @@ successFactors:
     but collecting the right data. Only in this way will smart and effective
     apps and AI solutions be created.
   features:
-    - text: >-
-        Enabling easy access to quality machine vision technology, images,
-        expertise and support
+    - Enabling easy access to quality machine vision technology, images, expertise and support
     - Apply state of the art machine learning to different industries
     - Our ideas will change everything in the Ocean Space
   subheading: ''

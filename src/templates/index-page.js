@@ -229,7 +229,7 @@ export const IndexPageTemplate = ({
             <SuccessFactors>
               {successFactors.features.map(textItem => (
                 <div className="centered border-top-bottom">
-                  <p className="bold paragraph">{textItem.text}</p>
+                  <p className="bold paragraph">{textItem.text || textItem}</p>
                 </div>
               ))}
             </SuccessFactors>
@@ -268,7 +268,7 @@ export const IndexPageTemplate = ({
         filterStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
         htmlTag="div"
       >
-        <section className="section is-large success-factors">
+        <section className="section is-large">
           <div className="container centered">
             {partnering.subheading ? (
               <p className="subheading">{partnering.subheading}</p>
@@ -421,9 +421,7 @@ export const pageQuery = graphql`
             text
             path
           }
-          features {
-            text
-          }
+          features
           bgimage {
             childImageSharp {
               fluid(maxHeight: 1180, quality: 80) {
