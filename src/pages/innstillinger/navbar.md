@@ -45,6 +45,8 @@ menuPaths:
         title: Partners
       - path: /contact/locations
         title: Locations
+      - path: /history/
+        title: History
     path: '#'
     title: About
 ---
