@@ -20,7 +20,9 @@ history:
     position: right
     year: '1986'
   - content: >-
-      Starting from zero, got nothing to lose. Maybe we will make something.
+      ### Starting from zero, got nothing to lose. Maybe we will make
+      something. 
+
       (Oscar Marković joins the team)
     featuredimage: ''
     highlighted: true
@@ -33,17 +35,17 @@ history:
   - content: Breakthrough! Our first underwater images for AI.
     featuredimage: /img/salmon_subsea_camera_old.jpg
     position: right
-    year: '2010'
+    year: '2011'
   - content: “This camera will change everything in the Ocean Space”
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/sealab_team_employees.JPG
     highlighted: true
     position: center
     subheading: Oscar’s words in a fieldtrip where we lifted the project to a new level
-    year: '2010'
+    year: '2012'
   - content: Give everyone the opportunity to see under water
     position: center
     subheading: A few seconds later we landed our strong vision
-    year: '2010'
+    year: '2012'
   - content: 3D biomass estimation – we did it!
     featuredimage: /img/Innovation_V1.1.png
     position: left
