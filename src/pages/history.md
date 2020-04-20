@@ -52,7 +52,8 @@ history:
     featuredimage: /img/3d_biomass_estimation.jpg
     position: left
     year: '2014'
-  - content: '### SEALAB AS founded, the company was established.'
+  - content: |
+      ### The company SEALAB was established
     featuredimage: /img/sealab-factory.png
     highlighted: true
     position: center
