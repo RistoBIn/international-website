@@ -58,7 +58,7 @@ history:
   - content: >-
       Hard work in the R&D Lab. The first LED lights that enable underwater
       machine vision was developed.
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/sealab_light_old_r&D_led.JPG
     position: right
     year: '2016'
   - content: >-
@@ -76,7 +76,7 @@ history:
     position: right
     year: '2017'
   - content: First sale to a customer (and nighttime recording of images underwater)
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/oscar_first_sale_camera_magnus.JPG
     position: left
     year: '2018'
   - content: >-
@@ -94,15 +94,17 @@ history:
     position: center
     year: '2018'
   - content: SEALABWORLD and broadcasting 24/7 from underwater started.
-    featuredimage: /img/SEALAB_OSC_Quintus_at_night.png
+    featuredimage: /img/quintus_night_gjæsingen.jpg
     position: right
     year: '2019'
   - content: >-
-      In collaboration with Intel, an innovation with disruptive technology saw
-      the light of day. A smart camera with six lenses and super-fast edge
-      computing is changing how we process data in the Ocean Space. (Håkon
-      Marković joins the team)
-    featuredimage: /img/SEALAB_OSC_Quintus_at_night.png
+      ### In collaboration with Intel, an innovation with disruptive technology
+      saw the light of day. A smart camera with six lenses and super-fast edge
+      computing is changing how we process data in the Ocean Space. 
+
+
+      (Håkon Marković joins the team)
+    featuredimage: /img/Innovation_V1.1.png
     highlighted: true
     position: center
     year: '2020'
