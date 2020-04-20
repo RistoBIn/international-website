@@ -21,7 +21,7 @@ history:
     position: right
     year: '1986'
   - content: >-
-      ### Starting from zero, got nothing to lose. Maybe we will make
+      ### Starting from zero, got nothing to lose. Maybe we'll create
       something. 
 
       (Oscar Marković joins the team)
