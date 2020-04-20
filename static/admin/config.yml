@@ -878,7 +878,7 @@ collections:
             name: history
             fields:
               - {label: "Time", name: "year", widget: "string", hint: "Could be the year. Keep it at 4 (!!) characters."}
-              - {label: "Subheading", name: "subheading", widget: "markdown", required: false}
+              - {label: "Subheading", name: "subheading", widget: "string", required: false}
               - {label: "Content", name: "content", widget: "markdown"}
               - {label: "Position", name: "position", widget: "select", options: ["left", "center", "right"], default: ["left"]}
               - {label: "Highlighted", name: "highlighted", widget: "boolean", required: false, hint: "Makes the background behind year in red color, and some of the text bold"}
