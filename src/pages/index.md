@@ -26,9 +26,9 @@ centeredSection:
   heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
   subheading: ''
 productSection:
-  description: |2-
-     You've never seen camera technology for harsh environment like this. 
-    Now let's create a better world
+  description: |-
+    You've never seen camera technology for harsh environment like this. 
+    Now let's create a better world.
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
   features:
@@ -36,9 +36,9 @@ productSection:
       icon: /img/icon-3d.svg
     - heading: FPGA Technology
       icon: /img/icon-fpga.svg
-    - heading: AI Solutions under water
+    - heading: AI Solutions Under Water
       icon: /img/icon-ai.svg
-    - heading: Machine vision techniques
+    - heading: Computer Vision Techniques
       icon: /img/icon-eye.svg
   heading: Edge to Cloud. Anywhere. Anytime.
 successFactors:
@@ -57,8 +57,8 @@ successFactors:
     - text: >-
         Enabling easy access to quality machine vision technology, images,
         expertise and support
-    - text: Apply state of the art machine learning to different industries.
-    - text: Our ideas will change everything in the Ocean Space.
+    - Apply state of the art machine learning to different industries
+    - Our ideas will change everything in the Ocean Space
   subheading: ''
 splitSection:
   button:
