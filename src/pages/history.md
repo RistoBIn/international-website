@@ -13,14 +13,14 @@ history:
 
       A little kid discovers a new world under water (That kid was Milan
       Marković).
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/old_image_men_preparing.jpg
     position: left
     year: '1968'
   - content: |-
       ### 20 years later 
 
       ### SCUBA diving at last.
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/scuba_diving_black_and_white.jpg
     position: right
     year: '1986'
   - content: >-
@@ -51,7 +51,7 @@ history:
     subheading: A few seconds later we landed our strong vision
     year: '2012'
   - content: '### 3D biomass estimation – we did it!'
-    featuredimage: /img/Innovation_V1.1.png
+    featuredimage: /img/3d_biomass_estimation.jpg
     position: left
     year: '2014'
   - content: '### SEALAB AS founded, the company was established.'
