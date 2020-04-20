@@ -7,32 +7,41 @@ import Content, { HTMLContent } from '../components/Content';
 import HeroFaded from '../components/HeroBackgroundImageFaded';
 import NonStretchedImage from '../components/NonStretchedImage';
 import generateHTML from '../utils/generateHTML';
+import { idMaker } from '../utils/id-maker';
 
+const gen = idMaker();
 const HistorySection = styled.section`
   .timeline::after {
     content: '';
     position: absolute;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.15);
-    top: 15px;
     bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+    top: 60px;
+    left: 15px;
+  }
+  @media only screen and (min-width: 768px) {
+    .timeline::after {
+      top: 15px;
+      bottom: 0;
+      left: 50%;
+    }
   }
 `;
 
 const StyledHistoryItem = styled.div`
-  padding: 10px 40px;
+
   position: relative;
   background-color: inherit;
   padding-top: 4rem;
-
+  
   &::after, &.is-center::before {
     content: '${props => props.content}';
     position: absolute;
-    right: -25px;
+    right: unset;
+    top: 60px;
+    left: -11px;
     z-index: 20;
-    top: 15px;
     padding: 2px 10px;
     background-color: #0e111b;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -46,85 +55,33 @@ const StyledHistoryItem = styled.div`
     background-color: #E32938 !important;
     border: 1px solid transparent;
   }
-  &.is-left {
-    .history--content {
-      padding-right: 50px;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      top: 30px;
-      z-index: 30;
-      right: 35px;
-      width: 100px;
-      border-top: 2px solid white;
-    }
-  }
-  &.is-right {
-    left: 50%;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 30px;
-      z-index: 30;
-      left: 35px;
-      width: 100px;
-      border-top: 2px solid white;
-    }
-    &::after {
-      left: -28px;
-      right: auto;
-    }
-    .history--content {
-      padding-left: 50px;
-      .content {
-        text-align: right;
-      }
-    }
-  }
-  &.is-center {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    .history--content {
-      position: relative;
-      z-index: 11;
-      background-color: #0e111b;
-      padding-bottom: 30px !important;
-      .image-item {
-        margin-top: -45px !important;
-      }
-      .content {
-        max-width: 800px;
-        margin: 0 auto;
-        p, h1, h2, h3 {
-          color: white;
-          font-weight: bold;    
-        }
-      }
-    }
-    &::before {
-      position: relative;
-      width: fit-content;
-      left: -2px;
-      margin: 0 auto;
-    }
-    &::after {
-      display: none;
-    }
-
-
-  }
   .history--content {
-    padding-top: 50px;
+    padding-top: 16px;
     .image-item {
-      margin-bottom: 30px !important;
+      position: relative;
+      z-index: 20;
+      margin-bottom: 16px !important;
     }
-    .content {
-      font-size: 26px;
+    .content, .subheading {
+      font-size: 16px;
+      padding-left: 30px; 
+      p {
+        color: white;
+      }
+      h1, h2, h3 {
+        font-size: 18px;
+        color: white;
+      }
     }
+  }
+  &.is-highlighted .content {
+    font-size: 24px;
+  }
+  &.has-no-image .history--content {
+    padding-top: 2rem;
   }
   @media only screen and (min-width: 768px) {
+    padding: 40px 40px;
     &.is-right, &.is-left {
       width: 50%;
       .history--content {
@@ -133,6 +90,97 @@ const StyledHistoryItem = styled.div`
       }
       .image-item {
         max-width: 600px !important;
+      }
+    }
+    &::after, &.is-center::before {
+      right: -25px;
+      top: 15px;
+      left: unset;
+    } 
+    &.is-left {
+      .history--content {
+        padding-right: 50px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        z-index: 30;
+        right: 35px;
+        width: 100px;
+        border-top: 2px solid white;
+      }
+    }
+    &.is-right {
+      left: 50%;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        z-index: 30;
+        left: 35px;
+        width: 100px;
+        border-top: 2px solid white;
+      }
+      &::after {
+        left: -28px;
+        right: auto;
+      }
+      .history--content {
+        padding-left: 50px;
+        .content {
+          text-align: right;
+        }
+      }
+    }
+    &.is-center {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      .history--content {
+        position: relative;
+        z-index: 11;
+        padding-bottom: 30px !important;
+        .image-item {
+          margin-top: -45px !important;
+        }
+        .content {
+          max-width: 800px;
+          margin: 0 auto;
+          p, h1, h2, h3 {
+            color: white;
+            font-weight: bold;    
+          }
+        }
+      }
+      &::before {
+        position: relative;
+        width: fit-content;
+        left: 1px;
+        margin: 0 auto;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .history--content {
+      padding-top: 50px;
+      .image-item {
+        margin-bottom: 30px !important;
+      }
+      .content {
+        font-size: 26px;
+        padding-left: 0;
+      }
+    }
+    &.has-no-image .history--content {
+      margin-bottom: 6rem;
+    }
+    &.has-no-image.is-right .history--content {
+      position: relative;
+      top: 60px;
+      .content {
+        text-align: left;
       }
     }
   }
@@ -185,12 +233,14 @@ export const HistoryPageTemplate = ({
               highlighted,
               subheading,
             } = historyItem;
-
+            const hasImage = !!historyImage;
             return (
               <HistoryItem
                 year={year}
+                key={gen.next().value}
                 featuredimage={historyImage}
                 className={classNames(
+                  { 'has-no-image': !hasImage },
                   { 'is-highlighted': highlighted },
                   `is-${position}`,
                 )}
@@ -203,6 +253,10 @@ export const HistoryPageTemplate = ({
               </HistoryItem>
             );
           })}
+          <StyledHistoryItem
+            className="is-center is-highlighted"
+            content="...."
+          />
         </div>
       </HistorySection>
 
