@@ -8,14 +8,18 @@ seoDescription: 'A risk worth taking - born to engineer. '
 featuredimage: /img/old_sealab.camera.JPG
 history:
   - content: >-
-      A discovery under water. A little kid discovers a new world under water
-      (That kid was Milan Marković).
+      ### A discovery under water. 
+
+
+      A little kid discovers a new world under water (That kid was Milan
+      Marković).
     featuredimage: /img/Innovation_V1.1.png
     position: left
     year: '1968'
-  - content: >-
-      20 years later SCUBA diving at last. A little kid discovers a new world
-      under water (That kid was Milan Marković).
+  - content: |-
+      ### 20 years later 
+
+      ### SCUBA diving at last.
     featuredimage: /img/Innovation_V1.1.png
     position: right
     year: '1986'
@@ -28,54 +32,62 @@ history:
     highlighted: true
     position: center
     year: '2009'
-  - content: Prototyping a new underwater camera for machine vision
+  - content: '### Prototyping a new underwater camera for machine vision'
     featuredimage: /img/Developing Cameras.PNG
     position: left
     year: '2010'
-  - content: Breakthrough! Our first underwater images for AI.
+  - content: '### Breakthrough! Our first underwater images for AI.'
     featuredimage: /img/salmon_subsea_camera_old.jpg
     position: right
     year: '2011'
-  - content: “This camera will change everything in the Ocean Space”
+  - content: '### “This camera will change everything in the Ocean Space”'
     featuredimage: /img/sealab_team_employees.JPG
     highlighted: true
     position: center
     subheading: Oscar’s words in a fieldtrip where we lifted the project to a new level
     year: '2012'
-  - content: Give everyone the opportunity to see under water
+  - content: '### Give everyone the opportunity to see under water'
     position: center
     subheading: A few seconds later we landed our strong vision
     year: '2012'
-  - content: 3D biomass estimation – we did it!
+  - content: '### 3D biomass estimation – we did it!'
     featuredimage: /img/Innovation_V1.1.png
     position: left
     year: '2014'
-  - content: 'SEALAB AS founded, the company was established.'
+  - content: '### SEALAB AS founded, the company was established.'
     featuredimage: /img/sealab-factory.png
     highlighted: true
     position: center
     year: '2015'
-  - content: >-
-      Hard work in the R&D Lab. The first LED lights that enable underwater
-      machine vision was developed.
+  - content: |-
+      ### Hard work in the R&D Lab. 
+
+      The first LED lights that enable underwater machine vision was developed.
     featuredimage: /img/sealab_light_old_r&D_led.JPG
     position: right
     year: '2016'
   - content: >-
-      Eight completed master theses. Eight master theses in underwater
-      technology under our wings. These amazing people lifted the company to a
-      new level
+      \### Eight completed master theses. 
+
+
+      Eight master theses in underwater technology under our wings. These
+      amazing people lifted the company to a new level
     featuredimage: /img/CompletedMasterTheses.png
     position: left
     year: '2017'
   - content: >-
-      Top score: SEALAB and SINTEF Ocean got awarded by the Research Council of
-      Norway – the project “Indisal” was a reality – biometric identification of
-      each salmon individs.
+      \### Top score: 
+
+
+      SEALAB and SINTEF Ocean got awarded by the Research Council of Norway –
+      the project “Indisal” was a reality – biometric identification of each
+      salmon individs.
     featuredimage: /img/Innovation_V1.1.png
     position: right
     year: '2017'
-  - content: First sale to a customer (and nighttime recording of images underwater)
+  - content: >-
+      ### First sale to a customer (and nighttime recording of images
+      underwater)
     featuredimage: /img/oscar_first_sale_camera_magnus.JPG
     position: left
     year: '2018'
@@ -84,11 +96,14 @@ history:
       Intelligence)
     position: right
     year: '2018'
-  - content: First round of funding from investors
+  - content: '### First round of funding from investors'
     highlighted: true
     position: left
     year: '2018'
-  - content: SEALAB factory and a new R&D Lab opened. (Asbjørn Marković joins the team)
+  - content: |-
+      ### SEALAB factory and a new R&D Lab opened. 
+
+      (Asbjørn Marković joins the team)
     featuredimage: /img/asbjorn_camera_edit.jpg
     highlighted: true
     position: center
