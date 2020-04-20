@@ -4,8 +4,7 @@ import styles from './Schedule.module.scss';
 import CurrentTimeLine from './CurrentTimeline';
 import NextEvent from './NextEvent';
 import Program from './Program';
-import fetchFromResourceApi from '../../utils/bluethink-resourcefile-api'
-import dummyData from './dummyData.json';
+import { fetchFromResourceApi } from '../../utils/bluethink-resourcefile-api';
 
 const Slideshow = () => {
   const [currentSchedule, setCurrentSchedule] = useState([]);

@@ -169,6 +169,8 @@ const StyledHistoryItem = styled.div`
         margin-bottom: 30px !important;
       }
       .content {
+        background-color: #0E111B;
+        z-index: 50;
         font-size: 26px;
         padding-left: 0;
       }
