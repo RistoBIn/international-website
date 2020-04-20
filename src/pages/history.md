@@ -47,6 +47,7 @@ history:
     subheading: Oscar’s words in a fieldtrip where we lifted the project to a new level
     year: '2012'
   - content: '### Give everyone the opportunity to see under water'
+    highlighted: true
     position: center
     subheading: A few seconds later we landed our strong vision
     year: '2012'
