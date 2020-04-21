@@ -916,5 +916,5 @@ collections:
                   - {label: "Size", name: "size", widget: "string", hint: "e.g. 1.2MB"}
                   - {label: "Dimensions", name: "dimensions", widget: "string", hint: "e.g. 1080x720px"}
                   - {label: "File type", name: "fileType", widget: "string", hint: "e.g. JPG", default: "JPG"}
-
+  
 

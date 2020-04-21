@@ -15,62 +15,52 @@ subPages:
   - heading: SEALAB logos
     files:
       - displayName: "SEALAB logo: White"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: white
       - displayName: "SEALAB logo: Blue"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: dark
+        featuredimage: /img/sealab-blue.png
       - displayName: "SEALAB logo: White"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: dark
   - heading: ISO Certificates
     files:
       - displayName: "SEALAB : ISO 14001 : White"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: light
       - displayName: "SEALAB : ISO 14001 : Green"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: light
       - displayName: "SEALAB : ISO 9001 : White"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: light
       - displayName: "SEALAB : ISO 9001 : Black"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: light
   - heading: Images
     files:
       - displayName: "BlueThink™ Control Room"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: dark
       - displayName: "Internet of Things"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: dark
       - displayName: "BluetThink™ GO"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: dark
       - displayName: "BlueThink™ Control Room"
-        size: 1.2MB
         dimensions: 2000x1000px
-        type: JPG
         path: /img/sealab-blue.png
+        backgroundColor: dark
 ---
