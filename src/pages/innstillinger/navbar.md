@@ -1,8 +1,5 @@
 ---
 menuPaths:
-  - dropdown: []
-    path: /solutions/atlantic-salmon-and-seafood/
-    title: Aquaculture
   - dropdown:
       - path: /products/edge-intelligence/
         title: Edge Intelligence
