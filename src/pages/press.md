@@ -1,5 +1,5 @@
 ---
-templateKey: about-page-press
+templateKey: press-page
 title: Press
 seoDescription: SEALAB Press. SEALAB logo. SEALAB Resources.
 heading: Press
