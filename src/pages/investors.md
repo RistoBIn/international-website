@@ -148,12 +148,11 @@ table:
     - heading: Updated
       description: 30.03.2020
   content: >-
-    ## Always striving for excellence, SEALAB staff represents broad expertise
-    and experience. 
+    ## Share Information
 
 
-    Find out more about the App store for third party software developers and
-    recurring revenues below.
+    SEALAB provides all shareholders and potential investors with relevant
+    financial information in a consistent and transparent manner.
 presentations:
   heading: Presentations and files
   items:

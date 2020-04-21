@@ -231,7 +231,7 @@ body {
     p strong {
       font-weight: 700;
     }
-    a {
+    a:not(.button) {
       color: $red;
       font-weight: bold;
       font-size: inherit;

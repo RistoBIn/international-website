@@ -4,8 +4,7 @@ import styles from './Schedule.module.scss';
 import CurrentTimeLine from './CurrentTimeline';
 import NextEvent from './NextEvent';
 import Program from './Program';
-import fetchFromResourceApi from '../../utils/bluethink-resourcefile-api'
-import dummyData from './dummyData.json';
+import { fetchFromResourceApi } from '../../utils/bluethink-resourcefile-api';
 
 const Slideshow = () => {
   const [currentSchedule, setCurrentSchedule] = useState([]);
@@ -40,7 +39,7 @@ const Slideshow = () => {
 
   async function fetchSchedule() {
     const apiResponse = await fetchFromResourceApi(
-      `/site-info/livestream-schedules/c1be1ead-81dc-4202-80b2-ab0b4beb5778/${currentDate}.json`,
+      `/site-info/livestream-schedules/${process.env.GATSBY_UID}/${currentDate}.json`,
     );
     if (!apiResponse || !apiResponse.data) {
       return;

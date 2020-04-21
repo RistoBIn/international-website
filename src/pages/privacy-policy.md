@@ -1,8 +1,8 @@
 ---
 templateKey: simple-page
 title: Privacy Policy
+seoDescription: SEALABs Privacy Policy.
 heading: Privacy Policy
-seoDescription: Our Privacy Policy. 
 ---
 # About SEALAB
 
@@ -110,7 +110,7 @@ Each employee is responsible for deleting messages that are no longer relevant, 
 
 Sensitive personal data should not be sent via email. Please note that regular email is not encrypted. We therefore encourage you to exercise caution and to not send sensitive data or confidential information via email.
 
-## Other circumstances in which we record personal data 
+## Other circumstances in which we record personal data
 
 ### Registration of visitors to SEALAB AS's offices
 

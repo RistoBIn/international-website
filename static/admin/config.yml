@@ -476,7 +476,7 @@ collections:
                   - {label: "Icon", name: "icon", widget: image, hint: "Try to keep the image extension in SVG" }
 
           - label: "Success factors section"
-            name: sucessFactors
+            name: successFactors
             widget: object
             fields: 
               - {label: Subheading, name: subheading, widget: text, hint: "Small text above title", required: false}
@@ -891,4 +891,33 @@ collections:
               - {label: "Background image", name: "bgimage", widget: "image", required: false}
               - {label: "Heading", name: heading, widget: string}
               - {label: "Description", name: "description", widget: "markdown"}
+
+      - file: "src/pages/history.md"
+        label: "History - SEALAB"
+        name: "history"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "history-page"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+          - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+          - {label: "Description", name: "description", widget: "markdown", hint: "Markdown text under title", required: false}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+          - {label: "Hero image", name: "featuredimage", widget: image }
+          - {label: "Content", name: "body", widget: "markdown", required: false, hint: "Showed before history."}
+          - label: "History"
+            widget: list
+            name: history
+            fields:
+              - {label: "Time", name: "year", widget: "string", hint: "Could be the year. Keep it at 4 (!!) characters."}
+              - {label: "Subheading", name: "subheading", widget: "string", required: false}
+              - {label: "Content", name: "content", widget: "markdown"}
+              - {label: "Position", name: "position", widget: "select", options: ["left", "center", "right"], default: ["left"]}
+              - {label: "Highlighted", name: "highlighted", widget: "boolean", required: false, hint: "Makes the background behind year in red color, and some of the text bold"}
+              - {label: "Image", name: "featuredimage", widget: image, required: false }
+
+
+  
+
+          - {label: "Content", name: "lastContent", widget: "markdown", required: false, hint: "Showed before history."}
+
+
 

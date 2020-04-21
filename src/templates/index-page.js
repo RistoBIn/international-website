@@ -22,7 +22,6 @@ const FrontPage = styled.section`
     font-weight: bold !important;
   }
   .camera-section {
-    padding-top: 4rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     .product-image {
       background-image: url(${productBackgroundImage});
@@ -130,8 +129,6 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   const PostContent = contentComponent || Content;
-  console.log(partnering);
-
   return (
     <FrontPage>
       <Hero
@@ -141,7 +138,7 @@ export const IndexPageTemplate = ({
         backgroundImage={bgimage}
         buttonText="Learn more"
         anchorLink="#facts"
-        backgroundCSS="linear-gradient(177.9deg, #0E111B 8.35%, rgba(14, 17, 27, 0.21) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)), linear-gradient(180deg, rgba(4, 5, 10, 0) 49.95%, #0E111B 100%)"
+        backgroundCSS="linear-gradient(177.9deg, #0E111B 8.35%, rgba(14, 17, 27, 0.21) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21)), linear-gradient(180deg, rgba(4, 5, 10, 0) 80.95%, #0E111B 100%)"
       />
       <section className="section has-dark-background">
         <div className="container centered">
@@ -160,7 +157,7 @@ export const IndexPageTemplate = ({
       </section>
       <HighlightedData highlighted={facts} id="facts" />
       <SplittedSection
-        className="section is-medium has-dark-background camera-section"
+        className="section is-large has-dark-background camera-section"
         shouldReorderOnMobile
         leftColumn={
           <>
@@ -232,7 +229,7 @@ export const IndexPageTemplate = ({
             <SuccessFactors>
               {successFactors.features.map(textItem => (
                 <div className="centered border-top-bottom">
-                  <p className="bold paragraph">{textItem.text}</p>
+                  <p className="bold paragraph">{textItem.text || textItem}</p>
                 </div>
               ))}
             </SuccessFactors>
@@ -271,7 +268,7 @@ export const IndexPageTemplate = ({
         filterStyle={{ background: 'rgba(0, 0, 0, 0.4)' }}
         htmlTag="div"
       >
-        <section className="section is-large success-factors">
+        <section className="section is-large">
           <div className="container centered">
             {partnering.subheading ? (
               <p className="subheading">{partnering.subheading}</p>
@@ -424,9 +421,7 @@ export const pageQuery = graphql`
             text
             path
           }
-          features {
-            text
-          }
+          features
           bgimage {
             childImageSharp {
               fluid(maxHeight: 1180, quality: 80) {
