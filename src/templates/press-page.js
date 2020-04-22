@@ -119,7 +119,7 @@ const StyledFileGrid = styled.div`
     background-color: #1f2331;
     div.image-wrapper {
       width: 100%;
-      height: 100%;
+      height: 203px;
       display: table;
       figure {
         height: 203px;
