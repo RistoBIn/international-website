@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c901c293-b48f-479d-a089-271485455ae0/deploy-status)](https://app.netlify.com/sites/sealab-com/deploys)
 
+At SEALAB we take pride in being open on how we create great solutions. Therefore we've chosen to make the source code for our website open. A huge thanks to Github and Netlify for offering free services for open-source projects! 
+
 # SEALAB INTERNATIONAL WEBSITE - Built with Gatsbyjs
 **Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
 
