@@ -80,7 +80,7 @@ export const ProductPageTemplate = ({
       />
       <section
         id="btgo-page-content"
-        className="section has-dark-background free-text-centered"
+        className="section has-dark-background free-text-centered has-text-centered"
       >
         <div className="container">
           <PostContent content={content} />
