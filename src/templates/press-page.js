@@ -125,6 +125,9 @@ const StyledFileGrid = styled.div`
         height: 203px;
         display: table-cell;
         vertical-align: middle;
+        .image {
+          margin: auto;
+        }
       }
 
       &.is-light {
@@ -321,15 +324,7 @@ export const pageQuery = graphql`
               size
               publicURL
               childImageSharp {
-                fluid(maxWidth: 320, quality: 60) {
-                  ...GatsbyImageSharpFluid_noBase64
-                  presentationWidth
-                }
-              }
-            }
-            featuredimage {
-              childImageSharp {
-                fluid(maxWidth: 320, quality: 60) {
+                fluid(maxHeight: 148, quality: 60) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
@@ -341,3 +336,12 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+// featuredimage {
+//   childImageSharp {
+//     fluid(maxWidth: 320, quality: 60) {
+//       ...GatsbyImageSharpFluid_noBase64
+//       presentationWidth
+//     }
+//   }
+// }
