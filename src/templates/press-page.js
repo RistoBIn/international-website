@@ -112,8 +112,9 @@ export const PressPageTemplate = ({
 
 const StyledFileGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  grid-gap: 8px 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 330px));
+  grid-gap: 8px 20px;
+  margin: 0 auto;
   .card-item {
     max-height: 355px;
     background-color: #1f2331;
@@ -122,9 +123,11 @@ const StyledFileGrid = styled.div`
       height: 203px;
       display: table;
       figure {
-        height: 203px;
+        max-height: 203px;
+        width: 100%;
         display: table-cell;
         vertical-align: middle;
+        overflow: hidden;
         .image {
           margin: auto;
         }
@@ -158,8 +161,9 @@ const StyledFileGrid = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @media only screen and (max-width: 868px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+    grid-gap: 8px 10px;
     .text {
       padding: 10px 15px;
       color: #dbe0ea;
@@ -364,7 +368,7 @@ export const pageQuery = graphql`
                 }
               }
               fullwidth: childImageSharp {
-                fluid(maxWidth: 400, maxHeight: 210, quality: 70) {
+                fluid(maxWidth: 350, maxHeight: 203, quality: 70) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
