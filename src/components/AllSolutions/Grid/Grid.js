@@ -46,7 +46,7 @@ const Grid = props => {
             key={gen.next().value}
             heading={item.heading}
             featuredimage={item.featuredimage}
-            path={item.slug}
+            path={item.path}
             className="item"
           />
         );
