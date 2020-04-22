@@ -59,52 +59,52 @@ export default class ContactFormProduct extends Component {
             </label>
           </div>
           <div className="field">
-            <label className="label" htmlFor="navn">
-              Navn
+            <label className="label" htmlFor="name">
+              Name
             </label>
             <div className="control">
               <input
                 className="input"
                 type="text"
-                name="navn"
+                name="name"
                 onChange={this.handleChange}
-                id="navn"
+                id="name"
                 required
               />
             </div>
           </div>
           <div className="field">
-            <label className="label" htmlFor="firma">
-              Firma
+            <label className="label" htmlFor="company">
+              Company
             </label>
             <div className="control">
               <input
                 className="input"
                 type="text"
-                name="firma"
+                name="company"
                 onChange={this.handleChange}
-                id="firma"
+                id="company"
                 required
               />
             </div>
           </div>
           <div className="field">
-            <label className="label" htmlFor="lokasjon">
-              Lokasjonsnavn
+            <label className="label" htmlFor="location">
+              Location name
             </label>
             <div className="control">
               <input
                 className="input"
                 type="text"
-                name="lokasjon"
+                name="location"
                 onChange={this.handleChange}
-                id="lokasjon"
+                id="location"
               />
             </div>
           </div>
           <div className="field">
             <label className="label" htmlFor="email">
-              E-post
+              Email
             </label>
             <div className="control">
               <input
@@ -118,16 +118,16 @@ export default class ContactFormProduct extends Component {
             </div>
           </div>
           <div className="field">
-            <label className="label" htmlFor="mobil">
-              Mobilnummer
+            <label className="label" htmlFor="mobile">
+              Mobile number
             </label>
             <div className="control">
               <input
                 className="input"
                 type="tel"
-                name="mobil"
+                name="mobile"
                 onChange={this.handleChange}
-                id="mobil"
+                id="mobile"
                 required
               />
             </div>
