@@ -5,8 +5,10 @@ mainNavigation:
 secondaryNavigation:
   - path: /products/edge-intelligence
     title: Edge Intelligence
+  - path: /products/bluethink-go
+    title: BlueThink™ GO
   - path: /products/software-platform
-    title: IoT Bridge
+    title: BlueThink™ IoT Bridge
 thirdNavigation:
   - path: /projects/indisal
     title: Indisal

@@ -18,7 +18,8 @@
       margin: 0 auto;
     }
 
-    .heading, h3 {
+    .box__heading, h3 {
+      padding-bottom: 10px;
       font-family: $primaryFont;
       font-weight: bold;
       font-size: 18px;
@@ -36,6 +37,12 @@
 
     .button {
       margin-top: 20px;
+    }
+
+    &.is_left {
+      .image, .description {
+        margin-left: 0;
+      }
     }
   }
 
