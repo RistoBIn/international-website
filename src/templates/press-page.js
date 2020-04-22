@@ -138,9 +138,24 @@ const StyledFileGrid = styled.div`
       font-size: 18px;
       font-weight: bold;
       padding: 19px 0 15px 0;
+      margin: 0;
     }
     .text {
       padding: 15px 16px 16px 13px;
+      color: #dbe0ea;
+      font-size: 14px;
+      .size-type {
+        p strong {
+          text-transform: uppercase;
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    .text {
+      padding: 10px 15px;
       color: #dbe0ea;
       font-size: 14px;
       .size-type {
