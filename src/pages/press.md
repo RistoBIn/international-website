@@ -32,22 +32,22 @@ subPages:
         path: /img/sealab_logo_white.png
     heading: SEALAB logos
   - files:
-      - backgroundColor: light
+      - backgroundColor: dark
         dimensions: 2000x1000px
         displayName: 'SEALAB : ISO 14001 : White'
-        path: /img/sealab-blue.png
+        path: /img/SEALAB ISO 14001 White.png
       - backgroundColor: light
         dimensions: 2000x1000px
         displayName: 'SEALAB : ISO 14001 : Green'
-        path: /img/sealab-blue.png
-      - backgroundColor: light
+        path: /img/SEALAB ISO 14001 GREEN.png
+      - backgroundColor: dark
         dimensions: 2000x1000px
         displayName: 'SEALAB : ISO 9001 : White'
-        path: /img/sealab-blue.png
+        path: /img/SEALAB ISO 9001 WHITE.png
       - backgroundColor: light
         dimensions: 2000x1000px
         displayName: 'SEALAB : ISO 9001 : Black'
-        path: /img/sealab-blue.png
+        path: /img/SEALAB ISO 9001 BLACK.png
     heading: ISO Certificates
   - files:
       - backgroundColor: dark
