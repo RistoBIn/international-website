@@ -59,13 +59,13 @@ subPages:
         displayName: Internet of Things
         path: /img/sealab-blue.png
       - backgroundColor: dark
-        dimensions: 2000x1000px
-        displayName: BluetThink™ GO
-        path: /img/sealab-blue.png
+        dimensions: ''
+        displayName: Milan Marković
+        path: /img/milan-founder.jpg
       - backgroundColor: dark
-        dimensions: 2000x1000px
-        displayName: BlueThink™ Control Room
-        path: /img/sealab-blue.png
+        dimensions: ''
+        displayName: Oscar Marković
+        path: /img/oscar-founder.jpg
     heading: Images
 ---
 
