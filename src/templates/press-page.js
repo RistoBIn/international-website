@@ -153,7 +153,7 @@ const StyledFileGrid = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     .text {
       padding: 10px 15px;
       color: #dbe0ea;
