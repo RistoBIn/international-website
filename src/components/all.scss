@@ -17,10 +17,11 @@ body {
   font-family: 'Open Sans';
 
   .button, .content.links-are-buttons a {
+    height: auto;
     padding: 1rem 1rem;
     display: inline-flex;
     align-items: center;
-    height: auto;
+    border-radius: 3px;
 
     @include buttonText;
     & svg {
