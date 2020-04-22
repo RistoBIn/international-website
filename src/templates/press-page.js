@@ -186,11 +186,11 @@ const FileView = ({ items }) => {
               >
                 <figure>
                   <NonStretchedImage
-                    fluid={fileItem.path.childImageSharp.fluid}
                     objectFit="contain"
                     alt=""
                     className="image image-item"
                     style={{ margin: 'auto !important' }}
+                    {...fileItem.path}
                   />
                 </figure>
               </div>
