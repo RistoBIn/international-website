@@ -11,7 +11,7 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 
 - Node (I recommend using v8.2.0 or higher)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
-- `.env.development` file containing following environment variables: `GOOGLE_MAPS_KEY`, `GTM`, `GOOGLE_ANALYTICS_KEY`, `GOOGLE_TAG_MANAGER_ID`. Ask maintainer for these secrets. 
+- `.env.development` file containing following environment variables: `GOOGLE_MAPS_KEY`, `GTM`, `GOOGLE_ANALYTICS_KEY`, `GOOGLE_TAG_MANAGER_ID`, `GATSBY_UID`. Ask maintainer for these secrets. 
 
 ## Getting Started (Recommended)
 
@@ -25,8 +25,8 @@ After clicking that button, you’ll authenticate with GitHub and choose a repos
 ```
 $ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
 $ cd [REPO_NAME]
-$ yarn
-$ npm run start
+$ npm install
+$ gatsby clean && gatsby build && gatsby develop -H 0.0.0.0
 ```
 To test the CMS locally, you'll need run a production build of the site:
 ```
