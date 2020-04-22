@@ -1,66 +1,71 @@
 ---
 templateKey: press-page
 title: Press
-seoDescription: SEALAB Press. SEALAB logo. SEALAB Resources.
 heading: Press
 description: >-
   SEALAB loves a good story and is more than happy to contribute with content to
-  your stories! You are more than welcome to use our logos and images! At the same
-  time, we appreciate that you follow these guidelines:
+  your stories! You are more than welcome to use our logos and images! At the
+  same time, we appreciate that you follow these guidelines:
+seoDescription: SEALAB Press. SEALAB logo. SEALAB Resources.
 guidelines:
   - Always credit SEALAB
   - Do not edit the images
   - Use in a non-commercial context only
 subPages:
-  - heading: SEALAB logos
-    files:
-      - displayName: "SEALAB logo: White"
-        dimensions: 2000x1000px
-        path: /img/sealab-blue.png
-        backgroundColor: light
-      - displayName: "SEALAB logo: Blue"
-        dimensions: 2000x1000px
-        path: /img/sealab-blue.png
-        backgroundColor: dark
+  - files:
+      - backgroundColor: light
+        dimensions: 4000x800
+        displayName: 'SEALAB logo: Blue'
+        path: /img/sealab-blue.svg
+      - backgroundColor: dark
+        dimensions: 4000x800
+        displayName: 'SEALAB logo: White'
         featuredimage: /img/sealab-blue.png
-      - displayName: "SEALAB logo: White"
-        dimensions: 2000x1000px
+        path: /img/sealab-logo-white.svg
+      - backgroundColor: light
+        dimensions: 4000x800
+        displayName: 'SEALAB logo: Blue'
         path: /img/sealab-blue.png
-        backgroundColor: dark
-  - heading: ISO Certificates
-    files:
-      - displayName: "SEALAB : ISO 14001 : White"
+      - backgroundColor: dark
+        dimensions: 4000x800
+        displayName: 'SEALAB logo: White'
+        path: /img/sealab_logo_white.png
+    heading: SEALAB logos
+  - files:
+      - backgroundColor: light
         dimensions: 2000x1000px
+        displayName: 'SEALAB : ISO 14001 : White'
         path: /img/sealab-blue.png
-        backgroundColor: light
-      - displayName: "SEALAB : ISO 14001 : Green"
+      - backgroundColor: light
         dimensions: 2000x1000px
+        displayName: 'SEALAB : ISO 14001 : Green'
         path: /img/sealab-blue.png
-        backgroundColor: light
-      - displayName: "SEALAB : ISO 9001 : White"
+      - backgroundColor: light
         dimensions: 2000x1000px
+        displayName: 'SEALAB : ISO 9001 : White'
         path: /img/sealab-blue.png
-        backgroundColor: light
-      - displayName: "SEALAB : ISO 9001 : Black"
+      - backgroundColor: light
         dimensions: 2000x1000px
+        displayName: 'SEALAB : ISO 9001 : Black'
         path: /img/sealab-blue.png
-        backgroundColor: light
-  - heading: Images
-    files:
-      - displayName: "BlueThink™ Control Room"
+    heading: ISO Certificates
+  - files:
+      - backgroundColor: dark
         dimensions: 2000x1000px
+        displayName: BlueThink™ Control Room
         path: /img/sealab-blue.png
-        backgroundColor: dark
-      - displayName: "Internet of Things"
+      - backgroundColor: dark
         dimensions: 2000x1000px
+        displayName: Internet of Things
         path: /img/sealab-blue.png
-        backgroundColor: dark
-      - displayName: "BluetThink™ GO"
+      - backgroundColor: dark
         dimensions: 2000x1000px
+        displayName: BluetThink™ GO
         path: /img/sealab-blue.png
-        backgroundColor: dark
-      - displayName: "BlueThink™ Control Room"
+      - backgroundColor: dark
         dimensions: 2000x1000px
+        displayName: BlueThink™ Control Room
         path: /img/sealab-blue.png
-        backgroundColor: dark
+    heading: Images
 ---
+
