@@ -3,10 +3,10 @@ menuPaths:
   - dropdown:
       - path: /products/edge-intelligence/
         title: Edge Intelligence
-      - path: /products/bluethink-go/
-        title: BlueThink™ GO
       - path: /products/software-platform/
         title: BlueThink™ IoT Bridge
+      - path: /products/bluethink-go/
+        title: BlueThink™ GO
     path: '#'
     title: Core Technologies
   - dropdown:
