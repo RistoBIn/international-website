@@ -20,7 +20,6 @@ subPages:
       - backgroundColor: dark
         dimensions: 4000x800
         displayName: 'SEALAB logo: White'
-        featuredimage: /img/sealab-blue.png
         path: /img/sealab-logo-white.svg
       - backgroundColor: light
         dimensions: 4000x800
@@ -62,10 +61,12 @@ subPages:
         dimensions: ''
         displayName: Milan Marković
         path: /img/milan-founder.jpg
+        isImageFullwidth: true
       - backgroundColor: dark
         dimensions: ''
         displayName: Oscar Marković
         path: /img/oscar-founder.jpg
+        isImageFullwidth: true
     heading: Images
 ---
 

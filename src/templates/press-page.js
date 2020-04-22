@@ -88,7 +88,7 @@ export const PressPageTemplate = ({
         <div className="container centered">
           <Guidelines>
             {guidelines.map(guidelineText => (
-              <div className="guideline-item">
+              <div key={gen.next().value} className="guideline-item">
                 <Checkmark />
                 <p>{guidelineText}</p>
               </div>
@@ -127,6 +127,9 @@ const StyledFileGrid = styled.div`
         vertical-align: middle;
         .image {
           margin: auto;
+        }
+        &.is-fullheight {
+          background-color: #1f2331;
         }
       }
 
@@ -180,21 +183,50 @@ const FileView = ({ items }) => {
       <StyledFileGrid>
         {items.map(fileItem => {
           return (
-            <a href={fileItem.path.publicURL} download className="card-item">
+            <a
+              key={gen.next().value}
+              href={fileItem.path.publicURL}
+              download
+              className="card-item"
+            >
               <div
                 className={classNames(
                   'image-wrapper',
                   `is-${fileItem.backgroundColor}`,
                 )}
               >
-                <figure>
-                  <NonStretchedImage
-                    objectFit="contain"
-                    alt=""
-                    className="image image-item"
-                    style={{ margin: 'auto !important' }}
-                    {...fileItem.path}
-                  />
+                <figure
+                  className={classNames({
+                    'is-fullheight': fileItem.isImageFullwidth,
+                  })}
+                >
+                  {fileItem.isImageFullwidth ? (
+                    <NonStretchedImage
+                      objectFit="contain"
+                      fluid={
+                        fileItem.path.fullwidth
+                          ? fileItem.path.fullwidth.fluid
+                          : undefined
+                      }
+                      alt=""
+                      className="image image-item"
+                      style={{ margin: 'auto !important' }}
+                      {...fileItem.path}
+                    />
+                  ) : (
+                    <NonStretchedImage
+                      objectFit="contain"
+                      fluid={
+                        fileItem.path.regular
+                          ? fileItem.path.regular.fluid
+                          : undefined
+                      }
+                      alt=""
+                      className="image image-item"
+                      style={{ margin: 'auto !important' }}
+                      {...fileItem.path}
+                    />
+                  )}
                 </figure>
               </div>
               <div className="text">
@@ -260,6 +292,7 @@ const FileNavigation = ({ headings, activeIndex, onClick }) => {
       <div className="container centered">
         {headings.map((navigationItem, index) => (
           <button
+            key={gen.next().value}
             onClick={() => onClick(index)}
             className={classNames('link', {
               'is-active': activeIndex === index,
@@ -319,12 +352,19 @@ export const pageQuery = graphql`
             displayName
             dimensions
             backgroundColor
+            isImageFullwidth
             path {
               extension
               size
               publicURL
-              childImageSharp {
+              regular: childImageSharp {
                 fluid(maxHeight: 148, quality: 60) {
+                  ...GatsbyImageSharpFluid_noBase64
+                  presentationWidth
+                }
+              }
+              fullwidth: childImageSharp {
+                fluid(maxWidth: 400, maxHeight: 210, quality: 70) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
