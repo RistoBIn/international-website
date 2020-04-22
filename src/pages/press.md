@@ -17,7 +17,7 @@ subPages:
       - displayName: "SEALAB logo: White"
         dimensions: 2000x1000px
         path: /img/sealab-blue.png
-        backgroundColor: white
+        backgroundColor: light
       - displayName: "SEALAB logo: Blue"
         dimensions: 2000x1000px
         path: /img/sealab-blue.png
