@@ -97,15 +97,16 @@ subPages:
         path: /img/SEALAB_Ocean_Space_Center_Sunset.jpg
     heading: Images
   - files:
-      - backgroundColor: light
+      - backgroundColor: dark
         displayName: BlueThink Control Room
         path: /img/BlueThink_Control_Room.png
       - backgroundColor: light
         displayName: Winch
         isImageFullwidth: true
         path: /img/ISO_9001_Winch_1.jpg
-      - backgroundColor: light
+      - backgroundColor: dark
         displayName: 'Winch '
+        isImageFullwidth: true
         path: /img/ISO_9001_Winch_2.jpg
       - backgroundColor: light
         displayName: 'Subsea light: Quintus'
@@ -127,6 +128,16 @@ subPages:
         displayName: Subsea Camera
         isImageFullwidth: true
         path: /img/Underwater_Camera.jpg
+      - backgroundColor:
+          - light
+        displayName: Subsea Camera
+        isImageFullwidth: true
+        path: /img/Quintus_Submerged_in_Sea.jpg
+      - backgroundColor:
+          - light
+        displayName: Subsea Camera
+        isImageFullwidth: true
+        path: /img/Quintus_Submerged_in_Cage.jpg
     heading: Product images
 ---
 
