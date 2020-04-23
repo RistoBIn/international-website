@@ -63,18 +63,20 @@ menuPaths:
         title: App Community
       - path: /about/social-responsibility/
         title: Sustainability Impact
+      - path: /history/
+        title: History
+      - path: /research-laboratories/
+        title: Research Laboratories
       - path: /about/sealab-osc/
         title: Ocean Space Center
       - path: /about/innovation-cause-we-can/
         title: Innovation ‘Cause We Can
-      - path: /research-laboratories/
-        title: Research Laboratories
       - path: /about/partners/
         title: Partners
       - path: /contact/locations
         title: Locations
-      - path: /history/
-        title: History
+      - path: /press/
+        title: Press
     path: '#'
     title: About
 ---
