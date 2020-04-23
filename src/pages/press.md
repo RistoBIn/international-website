@@ -60,13 +60,52 @@ subPages:
       - backgroundColor: dark
         dimensions: ''
         displayName: Milan Marković
-        path: /img/milan-founder.jpg
         isImageFullwidth: true
+        path: /img/milan-founder.jpg
       - backgroundColor: dark
         dimensions: ''
         displayName: Oscar Marković
-        path: /img/oscar-founder.jpg
         isImageFullwidth: true
+        path: /img/oscar-founder.jpg
+      - backgroundColor: dark
+        displayName: 'SEALAB Ocean Space Center: Wildlife'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Harbour_Porpoise_1.jpg
+      - backgroundColor: dark
+        displayName: 'SEALAB Ocean Space Center: Wildlife'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Harbour_Porpoise_2.jpg
+      - backgroundColor: dark
+        displayName: 'SEALAB Ocean Space Center: Wildlife'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Harbour_Porpoise_3.jpg
+      - backgroundColor: dark
+        displayName: 'SEALAB Ocean Space Center: Nature'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Nature_2.jpg
+      - backgroundColor: dark
+        displayName: 'SEALAB Ocean Space Center: Nature'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Nature.jpg
+      - backgroundColor: dark
+        displayName: 'SEALAB Ocean Space Center: Wildlife'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Seagull_2.jpg
+      - backgroundColor:
+          - light
+        displayName: 'SEALAB Ocean Space Center: Wildlife'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Seagull.jpg
+      - backgroundColor:
+          - light
+        displayName: 'SEALAB Ocean Space Center: Wildlife'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Seal.jpg
+      - backgroundColor:
+          - light
+        displayName: 'SEALAB Ocean Space Center: Nature'
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Sunset.jpg
     heading: Images
 ---
 
