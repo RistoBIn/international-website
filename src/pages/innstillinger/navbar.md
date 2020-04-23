@@ -11,6 +11,22 @@ menuPaths:
         title: Schools and Universities
       - path: /solutions/military-and-defense/
         title: Military & Defense
+      - path: /solutions/science-arctic-and-antarctic-surveillance/
+        title: Science Arctic and Antarctic Surveillance
+      - path: /solutions/oil-gas-industry/
+        title: Oil and Gas Industry
+      - path: /solutions/bridge-and-watercourse-monitoring/
+        title: Bridge and Watercourse Monitoring
+      - path: /solutions/environmental-monitoring/
+        title: Environmental Monitoring
+      - path: /solutions/hydropower-plants/
+        title: Hydropower Plants
+      - path: /solutions/river-and-wildlife-monitoring/
+        title: River and Wildlife Monitoring
+      - path: /solutions/seabed-mining/
+        title: Seabed Mining
+      - path: /solutions/well-and-fishing-boats/
+        title: Well and Fishing Boats
     path: '#'
     title: Solutions
   - dropdown:
