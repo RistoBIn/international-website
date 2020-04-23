@@ -48,5 +48,7 @@ menuPaths:
         title: History
     path: '#'
     title: About
+  - path: '#'
+    title: Solutions
 ---
 
