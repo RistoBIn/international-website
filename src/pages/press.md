@@ -128,13 +128,11 @@ subPages:
         displayName: Subsea Camera
         isImageFullwidth: true
         path: /img/Underwater_Camera.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: Subsea Camera
         isImageFullwidth: true
         path: /img/Quintus_Submerged_in_Sea.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: Subsea Camera
         isImageFullwidth: true
         path: /img/Quintus_Submerged_in_Cage.jpg
