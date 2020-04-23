@@ -1,5 +1,7 @@
 ---
 menuPaths:
+  - path: '#'
+    title: Solutions
   - dropdown:
       - path: /products/edge-intelligence/
         title: Edge Intelligence
@@ -48,7 +50,5 @@ menuPaths:
         title: History
     path: '#'
     title: About
-  - path: '#'
-    title: Solutions
 ---
 
