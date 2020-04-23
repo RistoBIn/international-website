@@ -83,58 +83,47 @@ subPages:
         displayName: 'SEALAB Ocean Space Center: Wildlife'
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Seagull_2.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: 'SEALAB Ocean Space Center: Wildlife'
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Seagull.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: 'SEALAB Ocean Space Center: Wildlife'
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Seal.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: 'SEALAB Ocean Space Center: Nature'
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Sunset.jpg
     heading: Images
   - files:
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: BlueThink Control Room
         path: /img/BlueThink_Control_Room.png
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: Winch
         isImageFullwidth: true
         path: /img/ISO_9001_Winch_1.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: 'Winch '
         path: /img/ISO_9001_Winch_2.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: 'Subsea light: Quintus'
         isImageFullwidth: true
         path: /img/Quintus_Testing.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: 'Subsea light: Quintus'
         isImageFullwidth: true
         path: /img/Quintus.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: Subsea light at SEALAB Ocean Space Center
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Quintus_Lighting_up_Sea.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: Subsea light at SEALAB Ocean Space Center
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Quintus_Pier.jpg
-      - backgroundColor:
-          - light
+      - backgroundColor: light
         displayName: Subsea Camera
         isImageFullwidth: true
         path: /img/Underwater_Camera.jpg
