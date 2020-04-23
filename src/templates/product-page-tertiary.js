@@ -36,7 +36,7 @@ export const ProductPageTemplate = ({
         heading={heading}
         subheading={subheading}
         gatsbyImageObject={featuredimage}
-        buttonText="Report interest"
+        buttonText="Order"
         buttonPath="/products/bluethink-go/interested/"
         heroId="btgo-hero"
       >
