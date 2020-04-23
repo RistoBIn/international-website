@@ -121,6 +121,8 @@ const StyledFileGrid = styled.div`
     div.image-wrapper {
       width: 100%;
       height: 203px;
+      max-height: 203px;
+      overflow: hidden;
       display: table;
       figure {
         max-height: 203px;
@@ -130,6 +132,8 @@ const StyledFileGrid = styled.div`
         overflow: hidden;
         .image {
           margin: auto;
+          max-height: 203px;
+          overflow: hidden;
         }
         &.is-fullheight {
           background-color: #1f2331;
@@ -150,6 +154,7 @@ const StyledFileGrid = styled.div`
       margin: 0;
     }
     .text {
+      height: 152px;
       padding: 15px 16px 16px 13px;
       color: #dbe0ea;
       font-size: 14px;
@@ -368,7 +373,7 @@ export const pageQuery = graphql`
                 }
               }
               fullwidth: childImageSharp {
-                fluid(maxWidth: 350, maxHeight: 203, quality: 70) {
+                fluid(maxWidth: 350, maxHeight: 220, quality: 70) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
@@ -380,12 +385,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-// featuredimage {
-//   childImageSharp {
-//     fluid(maxWidth: 320, quality: 60) {
-//       ...GatsbyImageSharpFluid_noBase64
-//       presentationWidth
-//     }
-//   }
-// }
