@@ -50,14 +50,6 @@ subPages:
     heading: ISO Certificates
   - files:
       - backgroundColor: dark
-        dimensions: 2000x1000px
-        displayName: BlueThink™ Control Room
-        path: /img/sealab-blue.png
-      - backgroundColor: dark
-        dimensions: 2000x1000px
-        displayName: Internet of Things
-        path: /img/sealab-blue.png
-      - backgroundColor: dark
         dimensions: ''
         displayName: Milan Marković
         isImageFullwidth: true
@@ -107,5 +99,45 @@ subPages:
         isImageFullwidth: true
         path: /img/SEALAB_Ocean_Space_Center_Sunset.jpg
     heading: Images
+  - files:
+      - backgroundColor:
+          - light
+        displayName: BlueThink Control Room
+        path: /img/BlueThink_Control_Room.png
+      - backgroundColor:
+          - light
+        displayName: Winch
+        isImageFullwidth: true
+        path: /img/ISO_9001_Winch_1.jpg
+      - backgroundColor:
+          - light
+        displayName: 'Winch '
+        path: /img/ISO_9001_Winch_2.jpg
+      - backgroundColor:
+          - light
+        displayName: 'Subsea light: Quintus'
+        isImageFullwidth: true
+        path: /img/Quintus_Testing.jpg
+      - backgroundColor:
+          - light
+        displayName: 'Subsea light: Quintus'
+        isImageFullwidth: true
+        path: /img/Quintus.jpg
+      - backgroundColor:
+          - light
+        displayName: Subsea light at SEALAB Ocean Space Center
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Quintus_Lighting_up_Sea.jpg
+      - backgroundColor:
+          - light
+        displayName: Subsea light at SEALAB Ocean Space Center
+        isImageFullwidth: true
+        path: /img/SEALAB_Ocean_Space_Center_Quintus_Pier.jpg
+      - backgroundColor:
+          - light
+        displayName: Subsea Camera
+        isImageFullwidth: true
+        path: /img/Underwater_Camera.jpg
+    heading: Product images
 ---
 
