@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import HeroFaded from '../components/HeroBackgroundImageFaded';
 import NonStretchedImage from '../components/NonStretchedImage';
 import generateHTML from '../utils/generateHTML';
 import { idMaker } from '../utils/id-maker';
@@ -55,7 +54,6 @@ const Flex = styled.div`
 `;
 
 export const PressPageTemplate = ({
-  // content,
   contentComponent,
   description,
   heading,
