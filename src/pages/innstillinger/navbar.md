@@ -1,12 +1,25 @@
 ---
 menuPaths:
   - dropdown:
+      - path: /solutions/atlantic-salmon-and-seafood/
+        title: Aquaculture
+      - path: /solutions/harbor-surveillance/
+        title: Harbor Surveillance
+      - path: /solutions/underwater-drones-and-robotics/
+        title: Underwater Drones and Robotics
+      - path: /solutions/schools-and-universities/
+        title: Schools and Universities
+      - path: /solutions/military-and-defense/
+        title: Military & Defense
+    path: '#'
+    title: Solutions
+  - dropdown:
       - path: /products/edge-intelligence/
         title: Edge Intelligence
       - path: /products/software-platform/
         title: BlueThink™ IoT Bridge
       - path: /products/bluethink-go/
-        title: BlueThink™ GO
+        title: 'BlueThink™ GO '
     path: '#'
     title: Core Technologies
   - dropdown:
