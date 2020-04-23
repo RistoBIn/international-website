@@ -6,7 +6,7 @@ menuPaths:
       - path: /products/software-platform/
         title: BlueThink™ IoT Bridge
       - path: /products/bluethink-go/
-        title: BlueThink™ GO
+        title: 'BlueThink™ GO '
     path: '#'
     title: Core Technologies
   - dropdown:
