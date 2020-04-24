@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import Select from 'react-select';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
@@ -10,6 +11,7 @@ import { idMaker } from '../utils/id-maker';
 import filesizeConverter from '../utils/filesize-converter';
 import Checkmark from '../img/icon-checkmark.inline.svg';
 import DownloadIcon from '../img/icon-download.inline.svg';
+import arrowDownIcon from '../img/angle-down.svg';
 
 const gen = idMaker();
 
@@ -279,7 +281,22 @@ const StyledFileNavigation = styled.nav`
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
+  select {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(${arrowDownIcon});
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+  }
   .link {
     padding: 20px 30px;
     font-family: Ubuntu;
@@ -298,23 +315,70 @@ const StyledFileNavigation = styled.nav`
   }
 `;
 
+const customStylesReactSelect = {
+  option: (provided, state) => ({
+    ...provided,
+    backgroundColor: '#272a33',
+    color: 'white',
+    border: 'none',
+    padding: 15,
+    borderBottom: '1px solid',
+    borderColor: state.isSelected ? 'white' : 'transparent',
+    filter: state.isSelected ? 'brightness(1.4)' : 'none',
+  }),
+  control: () => ({
+    display: 'flex',
+    backgroundColor: '#272a33',
+    border: 'none',
+    borderBottom: '2px solid',
+    borderColor: 'white',
+    color: 'white',
+    padding: 8,
+  }),
+  singleValue: provided => {
+    return { ...provided, color: 'white !important' };
+  },
+  menu: provided => ({
+    ...provided,
+    backgroundColor: '#272a33',
+    borderRadius: 0,
+    textAlign: 'left',
+    padding: 0,
+    margin: 0,
+  }),
+};
+
 const FileNavigation = ({ headings, activeIndex, onClick }) => {
   if (!headings || headings.length < 1 || !headings[0]) return <></>;
+  const selectOptions = headings.map((navigationItem, index) => {
+    return { value: index, label: navigationItem };
+  });
   return (
     <StyledFileNavigation>
       <div className="container centered">
-        {headings.map((navigationItem, index) => (
-          <button
-            key={gen.next().value}
-            onClick={() => onClick(index)}
-            className={classNames('link', {
-              'is-active': activeIndex === index,
-            })}
-            type="button"
-          >
-            {navigationItem}
-          </button>
-        ))}
+        <div className="is-hidden-mobile">
+          {headings.map((navigationItem, index) => (
+            <button
+              key={gen.next().value}
+              onClick={() => onClick(index)}
+              className={classNames('link', {
+                'is-active': activeIndex === index,
+              })}
+              type="button"
+            >
+              {navigationItem}
+            </button>
+          ))}
+        </div>
+        <Select
+          defaultValue={selectOptions[0]}
+          isClearable={false}
+          isSearchable={false}
+          styles={customStylesReactSelect}
+          onChange={event => onClick(event.value)}
+          className="is-hidden-tablet"
+          options={selectOptions}
+        />
       </div>
     </StyledFileNavigation>
   );
@@ -389,3 +453,19 @@ export const pageQuery = graphql`
     }
   }
 `;
+// <select
+// >
+//   {headings.map((navigationItem, index) => (
+//     <option
+//       key={gen.next().value}
+//       onClick={() => onClick(index)}
+//       selected={activeIndex === index}
+//       className={classNames('link', {
+//         'is-active': activeIndex === index,
+//       })}
+//       value={index}
+//     >
+//       {navigationItem}
+//     </option>
+//   ))}
+// </select>

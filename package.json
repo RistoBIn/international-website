@@ -57,6 +57,7 @@
     "react-items-carousel": "^2.8.0",
     "react-markdown": "^4.3.1",
     "react-player": "^1.15.2",
+    "react-select": "^3.1.0",
     "react-use": "^13.27.1",
     "react-youtube": "^7.9.0",
     "recharts": "^1.8.5",
