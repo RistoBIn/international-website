@@ -3,10 +3,13 @@ templateKey: press-page
 title: Press
 heading: Press
 description: >-
-  SEALAB loves a good story and is more than happy to contribute with content to
-  your stories! You are more than welcome to use our logos and images! At the
+  SEALAB loves a good story and are more than happy to contribute with content
+  to your stories! You are more than welcome to use our logos and images! At the
   same time, we appreciate that you follow these guidelines:
-seoDescription: SEALAB Press. SEALAB logo. SEALAB Resources.
+seoDescription: >-
+  Sharing is caring and we love a good story and are more than happy to
+  contribute with content to your stories! You are more than welcome to use our
+  logos and images. 
 guidelines:
   - Always credit SEALAB
   - Do not edit the images
@@ -29,7 +32,7 @@ subPages:
         dimensions: 4000x800
         displayName: 'SEALAB logo: White'
         path: /img/sealab_logo_white.png
-    heading: SEALAB logos
+    heading: SEALAB Branding
   - files:
       - backgroundColor: dark
         dimensions: 2000x1000px
@@ -136,6 +139,6 @@ subPages:
         displayName: Subsea Camera
         isImageFullwidth: true
         path: /img/Quintus_Submerged_in_Cage.jpg
-    heading: Product images
+    heading: Product Images
 ---
 
