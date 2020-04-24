@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import HeroFaded from '../components/HeroBackgroundImageFaded';
 import NonStretchedImage from '../components/NonStretchedImage';
 import generateHTML from '../utils/generateHTML';
 import { idMaker } from '../utils/id-maker';
@@ -56,7 +55,6 @@ const Flex = styled.div`
 `;
 
 export const PressPageTemplate = ({
-  // content,
   contentComponent,
   description,
   heading,
@@ -89,7 +87,7 @@ export const PressPageTemplate = ({
         <div className="container centered">
           <Guidelines>
             {guidelines.map(guidelineText => (
-              <div className="guideline-item">
+              <div key={gen.next().value} className="guideline-item">
                 <Checkmark />
                 <p>{guidelineText}</p>
               </div>
@@ -113,19 +111,33 @@ export const PressPageTemplate = ({
 
 const StyledFileGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  grid-gap: 8px 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 330px));
+  grid-gap: 20px;
+  margin: 0 auto;
   .card-item {
     max-height: 355px;
     background-color: #1f2331;
+    transition: all 0.5s ease;
     div.image-wrapper {
       width: 100%;
-      height: 100%;
+      height: 203px;
+      max-height: 203px;
+      overflow: hidden;
       display: table;
       figure {
-        height: 203px;
+        max-height: 203px;
+        width: 100%;
         display: table-cell;
         vertical-align: middle;
+        overflow: hidden;
+        .image {
+          margin: auto;
+          max-height: 203px;
+          overflow: hidden;
+        }
+        &.is-fullheight {
+          background-color: #1f2331;
+        }
       }
 
       &.is-light {
@@ -142,6 +154,7 @@ const StyledFileGrid = styled.div`
       margin: 0;
     }
     .text {
+      height: 152px;
       padding: 15px 16px 16px 13px;
       color: #dbe0ea;
       font-size: 14px;
@@ -152,9 +165,14 @@ const StyledFileGrid = styled.div`
         }
       }
     }
+    &:hover,
+    &:focus {
+      filter: brightness(1.5);
+    }
   }
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  @media only screen and (max-width: 868px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+    grid-gap: 10px;
     .text {
       padding: 10px 15px;
       color: #dbe0ea;
@@ -178,21 +196,50 @@ const FileView = ({ items }) => {
       <StyledFileGrid>
         {items.map(fileItem => {
           return (
-            <a href={fileItem.path.publicURL} download className="card-item">
+            <a
+              key={gen.next().value}
+              href={fileItem.path.publicURL}
+              download
+              className="card-item"
+            >
               <div
                 className={classNames(
                   'image-wrapper',
                   `is-${fileItem.backgroundColor}`,
                 )}
               >
-                <figure>
-                  <NonStretchedImage
-                    objectFit="contain"
-                    alt=""
-                    className="image image-item"
-                    style={{ margin: 'auto !important' }}
-                    {...fileItem.path}
-                  />
+                <figure
+                  className={classNames({
+                    'is-fullheight': fileItem.isImageFullwidth,
+                  })}
+                >
+                  {fileItem.isImageFullwidth ? (
+                    <NonStretchedImage
+                      objectFit="contain"
+                      fluid={
+                        fileItem.path.fullwidth
+                          ? fileItem.path.fullwidth.fluid
+                          : undefined
+                      }
+                      alt=""
+                      className="image image-item"
+                      style={{ margin: 'auto !important' }}
+                      {...fileItem.path}
+                    />
+                  ) : (
+                    <NonStretchedImage
+                      objectFit="contain"
+                      fluid={
+                        fileItem.path.regular
+                          ? fileItem.path.regular.fluid
+                          : undefined
+                      }
+                      alt=""
+                      className="image image-item"
+                      style={{ margin: 'auto !important' }}
+                      {...fileItem.path}
+                    />
+                  )}
                 </figure>
               </div>
               <div className="text">
@@ -258,6 +305,7 @@ const FileNavigation = ({ headings, activeIndex, onClick }) => {
       <div className="container centered">
         {headings.map((navigationItem, index) => (
           <button
+            key={gen.next().value}
             onClick={() => onClick(index)}
             className={classNames('link', {
               'is-active': activeIndex === index,
@@ -317,20 +365,19 @@ export const pageQuery = graphql`
             displayName
             dimensions
             backgroundColor
+            isImageFullwidth
             path {
               extension
               size
               publicURL
-              childImageSharp {
-                fluid(maxWidth: 320, quality: 60) {
+              regular: childImageSharp {
+                fluid(maxHeight: 148, quality: 60) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
               }
-            }
-            featuredimage {
-              childImageSharp {
-                fluid(maxWidth: 320, quality: 60) {
+              fullwidth: childImageSharp {
+                fluid(maxWidth: 350, maxHeight: 220, quality: 70) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }
