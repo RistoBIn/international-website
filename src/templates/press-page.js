@@ -111,11 +111,12 @@ export const PressPageTemplate = ({
 const StyledFileGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 330px));
-  grid-gap: 8px 20px;
+  grid-gap: 20px;
   margin: 0 auto;
   .card-item {
     max-height: 355px;
     background-color: #1f2331;
+    transition: all 0.5s ease;
     div.image-wrapper {
       width: 100%;
       height: 203px;
@@ -163,10 +164,14 @@ const StyledFileGrid = styled.div`
         }
       }
     }
+    &:hover,
+    &:focus {
+      filter: brightness(1.5);
+    }
   }
   @media only screen and (max-width: 868px) {
     grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
-    grid-gap: 8px 10px;
+    grid-gap: 10px;
     .text {
       padding: 10px 15px;
       color: #dbe0ea;
