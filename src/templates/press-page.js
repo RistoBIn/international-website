@@ -36,6 +36,7 @@ const Guidelines = styled.div`
       margin: auto 0;
       font-weight: bold;
       color: white;
+      text-align: left;
     }
     svg {
       margin-right: 15px;
