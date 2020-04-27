@@ -1,10 +1,16 @@
 @import '../_variables.scss';
 
+.dropdown {
+  @include text_Navbar;
+  padding: 18px 0;
+}
+
 @media only screen and (max-width: $tablet) {
   .dropdown {
+    display: none;
     outline: none;
     transition: $transition;
-    display: none;
+    background-color: transparent !important;
     &.dropdown__isActive {
       background-color: transparent;
       display: block;
@@ -13,6 +19,116 @@
   .navbar__button {
     a {
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  nav.navbar {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    color: $white;
+    background-color: transparent;
+    .navbar__item {
+      transition: opacity 1s ease;
+      outline: none;
+      &::after {
+        border-color: inherit;
+      }
+      &:not(:hover):not(:focus) {
+        opacity: 0.5;
+      }
+    }
+  }
+  .dropdown {
+    outline: none;
+    z-index: 10;
+    .dropdown__button {
+      background-color: transparent;
+      color: $body-light !important;
+      &:focus,
+      &:hover,
+      .dropdown__isActive {
+        color: white !important;
+      }
+    }
+    .dropdown__content {
+      position: absolute;
+      width: 100vw;
+      left: 0;
+      height: 0;
+      top: 76px;
+      z-index: 10;
+      justify-items: end;
+      align-items: flex-end;
+      outline: none;
+      transition: height .25s;
+      .container {
+        float: right !important;
+      }
+      .dropdown__column {
+        display: none;
+        float: left;
+        width: 33.33%;
+        min-width: 250px;
+        margin: 1rem 0;
+        padding: 0 2rem;
+        .dropdown__item {
+          display: flex;
+          align-items: center;
+          flex-grow: 0;
+          flex-shrink: 0;
+          min-height: 0;
+          margin: 0;
+          padding-bottom: 25px;
+          color: $body-light;
+        }
+      }
+      .dropdown__column_highlighted {
+        min-width: 400px;
+        max-width: 100%;
+        .dropdown__item__highlighted {
+          font-size: 28px;
+          padding-bottom: 40px;
+        }
+      }
+    }
+    &:hover,
+    &:focus {
+      .dropdown__content {
+        height: 350px;
+        padding: 2rem;
+        & .dropdown__column {
+          display: block;
+          margin-right: 0;
+          margin-left: auto;
+          border-left: 1px solid $border-dark-background;
+          text-align: left;
+          &:first-of-type {
+            border: none;
+          }
+          .dropdown__item {
+            &:hover,
+            &:focus {
+              color: white;
+            }
+          }
+        }
+        &.dropdown__content_oneColumn {
+          padding-right: 6rem !important;
+        }
+      }
+    }
+  }
+
+  .navbar:hover,
+  .navbar:focus,
+  .dropdown:hover,
+  .dropdown:focus {
+    background-color: $secondary-background !important;
+    @at-root .dropdown__content {
+      background-color: $secondary-background !important;
     }
   }
 }

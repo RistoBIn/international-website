@@ -24,8 +24,14 @@ const DynamicNavbar = ({ props }) => {
                     title
                     path
                     dropdown {
-                      title
-                      path
+                      regular {
+                        title
+                        path
+                      }
+                      highlighted {
+                        title
+                        path
+                      }
                     }
                   }
                 }

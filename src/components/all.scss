@@ -15,6 +15,7 @@ body {
   min-width: 100% !important;
   width: 100% !important;
   font-family: 'Open Sans';
+  background-color: $background-color-dark;
 
   .button, .content.links-are-buttons a {
     height: auto;
@@ -458,9 +459,6 @@ section.background-section {
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
-  color: $white;
-  background-color: $dark;
-  border-bottom: 1px solid $border-dark-background;
 
   &.is-transparent {
     background-color: transparent;
@@ -478,16 +476,13 @@ nav.navbar {
     font-size: 1rem;
 
     .navbar-dropdown {
-      background-color: $background-color-dark;
+      background-color: transparent;
       color: $white;
       .navbar-item:hover,
       .navbar-item:focus {
         color: $white !important;
         background-color: transparent;
       }
-    }
-    &::after {
-      border-color: #fff;
     }
     &:focus,
     &:hover,
@@ -499,20 +494,22 @@ nav.navbar {
         background-color: transparent;
       }
     }
-
-    &.is-active {
-      filter: brightness(1.3);
-      background-color: #131826 !important;
-      border-bottom: 2px solid $border-dark-background;
-      margin-bottom: -1px;
-      color: $white;
-    }
+  }
+  a.is-active, div[role=button].is-active {
+    color: $white !important;
+    opacity: 1 !important;
   }
   .navbar-item.has-dropdown:focus .navbar-link,
   .navbar-item.has-dropdown:hover .navbar-link,
   .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: transparent;
   }
+
+  .navbar-background {
+    background: $secondary-background
+  } 
+
+  
 
   /****************     MOBILE MENU     ********************/
 
@@ -525,12 +522,8 @@ nav.navbar {
         padding-left: 0;
         padding-right: 0;
       }
-      &.is-active {
-        background-color: $background-color-dark;
-      }
     }
     .navbar-menu.is-active {
-      background-color: $background-color-dark;
       position: absolute;
       height: 800vh;
       width: 100%;
@@ -540,18 +533,10 @@ nav.navbar {
       .navbar-link {
         @include text_Navbar;
         padding: 18px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-        &.has-dropdown {
-          background-color: $midnight;
-          .navbar-item {
-            padding-left: 20px;
-          }
-        }
+        color: white;
+        font-weight: bold;
       }
-      .navbar-item.has-dropdown {
-        border: none;
-        padding: 0;
-      }
+
       .navbar-item.has-buttons {
         border: none;
       }
@@ -622,13 +607,7 @@ nav.navbar {
   }
 }
 
-@media only screen and (max-width: $tablet) {
-  nav.navbar .navbar-menu.is-active .navbar-item.has-dropdown,
-  nav.navbar .navbar-menu.is-active .navbar-link.has-dropdown {
-    background-color: transparent !important;
-    outline: none;
-  }
-}
+
 
 /****************     FOOTER PAGE     ********************/
 
