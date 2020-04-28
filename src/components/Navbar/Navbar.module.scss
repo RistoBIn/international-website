@@ -184,6 +184,9 @@
       .dropdown__column {
         margin: 2rem 0;
         padding: 0 2rem;
+        .navbar__item {
+          min-width: 380px;
+        }
       }
     }
   }
