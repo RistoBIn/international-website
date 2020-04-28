@@ -15,8 +15,10 @@ body {
   min-width: 100% !important;
   width: 100% !important;
   font-family: 'Open Sans';
+  background-color: $background-color-dark;
 
-  .button, .content.links-are-buttons a {
+  .button,
+  .content.links-are-buttons a {
     height: auto;
     padding: 1rem 1rem;
     display: inline-flex;
@@ -36,7 +38,8 @@ body {
     &.large {
       padding: 1.1rem 1rem !important;
     }
-    &.is-primary, &:not(.is-secondary):not(.is-transparent):not(.is-white) {
+    &.is-primary,
+    &:not(.is-secondary):not(.is-transparent):not(.is-white) {
       background-color: $red;
       color: $white;
       text-decoration: none !important;
@@ -63,7 +66,8 @@ body {
       &:focus {
         opacity: 1;
       }
-      svg, svg path {
+      svg,
+      svg path {
         fill: $text-dark;
         stroke: $text-dark;
       }
@@ -458,10 +462,6 @@ section.background-section {
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
-  color: $white;
-  background-color: $dark;
-  border-bottom: 1px solid $border-dark-background;
-
   &.is-transparent {
     background-color: transparent;
   }
@@ -474,49 +474,23 @@ nav.navbar {
   .navbar-item,
   .navbar-link {
     color: $white;
-    border: none;
-    font-size: 1rem;
 
-    .navbar-dropdown {
-      background-color: $background-color-dark;
-      color: $white;
-      .navbar-item:hover,
-      .navbar-item:focus {
-        color: $white !important;
-        background-color: transparent;
-      }
-    }
-    &::after {
-      border-color: #fff;
-    }
     &:focus,
     &:hover,
-    &:active {
+    &:active{
       background-color: transparent;
-      color: $white;
-      border: none;
-      b .navbar-link {
-        background-color: transparent;
-      }
-    }
-
-    &.is-active {
-      filter: brightness(1.3);
-      background-color: #131826 !important;
-      border-bottom: 2px solid $border-dark-background;
-      margin-bottom: -1px;
-      color: $white;
     }
   }
-  .navbar-item.has-dropdown:focus .navbar-link,
-  .navbar-item.has-dropdown:hover .navbar-link,
-  .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: transparent;
+  a.is-active,
+  div[role='button'].is-active {
+    color: $white !important;
+    opacity: 1 !important;
   }
 
   /****************     MOBILE MENU     ********************/
 
   @media only screen and (max-width: $desktop) {
+    background-color: $background-color-dark;
     .navbar-brand {
       figure.image svg {
         width: 200px;
@@ -524,9 +498,6 @@ nav.navbar {
       .navbar-item {
         padding-left: 0;
         padding-right: 0;
-      }
-      &.is-active {
-        background-color: $background-color-dark;
       }
     }
     .navbar-menu.is-active {
@@ -540,21 +511,18 @@ nav.navbar {
       .navbar-link {
         @include text_Navbar;
         padding: 18px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-        &.has-dropdown {
-          background-color: $midnight;
-          .navbar-item {
-            padding-left: 20px;
-          }
-        }
+        color: white;
+        font-weight: bold;
       }
-      .navbar-item.has-dropdown {
-        border: none;
-        padding: 0;
-      }
+
       .navbar-item.has-buttons {
         border: none;
       }
+    }
+    a.is-active {
+      filter: brightness(1.4);
+      background-color: $secondary-background;
+      font-weight: bold;
     }
 
     .navbar-burger {
@@ -619,14 +587,6 @@ nav.navbar {
         @include text_Bold;
       }
     }
-  }
-}
-
-@media only screen and (max-width: $tablet) {
-  nav.navbar .navbar-menu.is-active .navbar-item.has-dropdown,
-  nav.navbar .navbar-menu.is-active .navbar-link.has-dropdown {
-    background-color: transparent !important;
-    outline: none;
   }
 }
 
