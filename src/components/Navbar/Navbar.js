@@ -145,7 +145,6 @@ const MenuDropDown = ({ menuItem }) => {
   if (menuItem.dropdown.regular)
     regularColumns = chunk(menuItem.dropdown.regular, 5);
   const numberOfColumns = regularColumns.length + highlightColumns.length;
-  console.log(numberOfColumns);
 
   return (
     <div className={classNames(styles.dropdown)}>
@@ -169,6 +168,7 @@ const MenuDropDown = ({ menuItem }) => {
             [styles.dropdown__isActive]: isExpandedMobile,
           },
           { [styles.dropdown__content_oneColumn]: numberOfColumns === 1 },
+          { [styles.dropdown__content_twoColumns]: numberOfColumns === 2 },
         )}
       >
         <div className={classNames('container', styles.container)}>

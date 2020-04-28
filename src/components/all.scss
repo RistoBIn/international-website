@@ -17,7 +17,8 @@ body {
   font-family: 'Open Sans';
   background-color: $background-color-dark;
 
-  .button, .content.links-are-buttons a {
+  .button,
+  .content.links-are-buttons a {
     height: auto;
     padding: 1rem 1rem;
     display: inline-flex;
@@ -37,7 +38,8 @@ body {
     &.large {
       padding: 1.1rem 1rem !important;
     }
-    &.is-primary, &:not(.is-secondary):not(.is-transparent):not(.is-white) {
+    &.is-primary,
+    &:not(.is-secondary):not(.is-transparent):not(.is-white) {
       background-color: $red;
       color: $white;
       text-decoration: none !important;
@@ -64,7 +66,8 @@ body {
       &:focus {
         opacity: 1;
       }
-      svg, svg path {
+      svg,
+      svg path {
         fill: $text-dark;
         stroke: $text-dark;
       }
@@ -459,7 +462,6 @@ section.background-section {
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
-
   &.is-transparent {
     background-color: transparent;
   }
@@ -472,48 +474,23 @@ nav.navbar {
   .navbar-item,
   .navbar-link {
     color: $white;
-    border: none;
-    font-size: 1rem;
 
-    .navbar-dropdown {
-      background-color: transparent;
-      color: $white;
-      .navbar-item:hover,
-      .navbar-item:focus {
-        color: $white !important;
-        background-color: transparent;
-      }
-    }
     &:focus,
     &:hover,
-    &:active {
+    &:active{
       background-color: transparent;
-      color: $white;
-      border: none;
-      b .navbar-link {
-        background-color: transparent;
-      }
     }
   }
-  a.is-active, div[role=button].is-active {
+  a.is-active,
+  div[role='button'].is-active {
     color: $white !important;
     opacity: 1 !important;
   }
-  .navbar-item.has-dropdown:focus .navbar-link,
-  .navbar-item.has-dropdown:hover .navbar-link,
-  .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: transparent;
-  }
-
-  .navbar-background {
-    background: $secondary-background
-  } 
-
-  
 
   /****************     MOBILE MENU     ********************/
 
   @media only screen and (max-width: $desktop) {
+    background-color: $background-color-dark;
     .navbar-brand {
       figure.image svg {
         width: 200px;
@@ -524,6 +501,7 @@ nav.navbar {
       }
     }
     .navbar-menu.is-active {
+      background-color: $background-color-dark;
       position: absolute;
       height: 800vh;
       width: 100%;
@@ -606,8 +584,6 @@ nav.navbar {
     }
   }
 }
-
-
 
 /****************     FOOTER PAGE     ********************/
 
