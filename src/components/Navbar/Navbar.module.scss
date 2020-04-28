@@ -3,12 +3,9 @@
 .dropdown {
   @include text_Navbar;
   .navbar__item {
-    display: block;
     color: white;
     font-size: 16px;
     font-weight: 600;
-    padding: 18px 0 18px 40px;
-    border-bottom: 1px solid $border-dark-background;
   }
 }
 .navbar__item {
@@ -21,17 +18,26 @@
 }
 
 @media only screen and (max-width: $tablet) {
-  .dropdown__content {
-    display: none;
-    outline: none;
-    transition: $transition;
-    background-color: transparent !important;
-    &.dropdown__isActive {
-      background-color: transparent;
-      display: block;
+  .dropdown {
+    @include text_Navbar;
+    .dropdown__content {
+      display: none;
+      outline: none;
+      transition: $transition;
+      background-color: transparent !important;
+      &.dropdown__isActive {
+        background-color: transparent;
+        display: block;
+      }
+      
     }
-    
+    .navbar__item {
+      display: block;
+      padding: 18px 0 18px 40px;
+      border-bottom: 1px solid $border-dark-background;
+    }
   }
+
   .navbar__button {
     a {
       width: 100%;
