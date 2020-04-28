@@ -179,18 +179,11 @@
     .dropdown__content {
       .container {
         float: right !important;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
       }
       .dropdown__column {
         margin: 2rem 0;
         padding: 0 2rem;
-      }
-    }
-    &:hover,
-    &:focus {
-      .dropdown__content {
-        .container {
-          grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        }
       }
     }
   }
