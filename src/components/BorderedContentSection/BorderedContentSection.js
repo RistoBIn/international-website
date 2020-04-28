@@ -8,15 +8,15 @@ const BorderedContentSection = ({
   heading,
   subheading,
   fluidImage,
-  description,
+  children,
   className,
 }) => {
-  if (!heading || !description || !fluidImage) return <></>;
+  if (!heading || !children || !fluidImage) return <></>;
 
   return (
     <section
-      id={'BorderedContent'}
-      className={classNames('section', 'is-small', className, styles.section)}
+      id="BorderedContent"
+      className={classNames(className, styles.section)}
     >
       <div className="container">
         {sectionHeading ? (
@@ -36,9 +36,9 @@ const BorderedContentSection = ({
           <div className={classNames('box', styles.wrapper__content)}>
             <p className={styles.wrapper__content__subheading}>{subheading}</p>
             <h2 className={styles.wrapper__content__heading}>{heading}</h2>
-            <p className={styles.wrapper__content__description}>
-              {description}
-            </p>
+            <div className={styles.wrapper__content__description}>
+              {children}
+            </div>
           </div>
         </div>
       </div>
