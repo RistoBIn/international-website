@@ -12,8 +12,7 @@
   transition: opacity 1s ease;
   outline: none;
   &::after {
-    border-color: white
-     !important;
+    border-color: white !important;
   }
 }
 
@@ -29,7 +28,6 @@
         background-color: transparent;
         display: block;
       }
-      
     }
     .navbar__item {
       display: block;
@@ -73,17 +71,20 @@
     }
     .dropdown__content {
       position: absolute;
-      width: 100vw;
+      width: 100%;
       left: 0;
-      height: 0;
-      top: 76px;
+      max-height: 0px;
+      // top: 76px;
       z-index: 10;
       justify-items: end;
       align-items: flex-end;
       outline: none;
-      transition: height 0.25s;
+      overflow: hidden;
+      transition: .5s ease;
       .container {
         float: right !important;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       }
       &.dropdown__content_twoColumns .container > *:first-of-type {
         grid-column: 1 / span 2;
@@ -96,9 +97,9 @@
         margin-right: 0;
       }
       .dropdown__column {
-        display: none;
         margin: 2rem 0;
         padding: 0 2rem;
+        display: block;
         .dropdown__item {
           display: flex;
           align-items: center;
@@ -112,6 +113,7 @@
         .navbar__item {
           opacity: 1 !important;
           color: $body-light !important;
+          
           &.dropdown__item_active,
           &:hover,
           &:focus {
@@ -127,22 +129,20 @@
         .dropdown__item__highlighted {
           font-size: 28px;
           padding-bottom: 40px;
+          min-width: 350px;
         }
       }
     }
     &:hover,
     &:focus {
       .dropdown__content {
-        height: 350px !important;
+        max-height: 400px !important;
         padding: 1rem;
-        .container {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        }
+        transition: .5s ease;
         & .dropdown__column {
-          display: block;
           border-left: 1px solid $border-dark-background;
           text-align: left;
+          display: block;
           &:first-of-type {
             border: none;
           }
