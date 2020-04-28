@@ -50,11 +50,6 @@
     z-index: 1;
     color: $white;
     background-color: transparent;
-    .navbar__item {
-      &:not(:hover):not(:focus) {
-        opacity: 0.5;
-      }
-    }
   }
   .dropdown {
     outline: none;
@@ -63,6 +58,7 @@
     .dropdown__button {
       background-color: transparent;
       color: $body-light !important;
+      font-size: 14px;
       &:focus,
       &:hover,
       .dropdown__isActive {
@@ -74,13 +70,14 @@
       width: 100%;
       left: 0;
       max-height: 0px;
-      top: 76px;
+      top: 70px;
       z-index: 10;
       justify-items: end;
       align-items: flex-end;
       outline: none;
       overflow: hidden;
       transition: .5s ease;
+      
       .container {
         float: right !important;
         display: grid;
@@ -97,9 +94,11 @@
         margin-right: 0;
       }
       .dropdown__column {
+        display: block !important;
         margin: 2rem 0;
         padding: 0 2rem;
-        display: block;
+        border-left: 1px solid transparent;
+        text-align: left;
         .dropdown__item {
           display: flex;
           align-items: center;
@@ -109,6 +108,10 @@
           margin: 0;
           padding-bottom: 25px;
           color: $body-light;
+          &:hover,
+          &:focus {
+            color: white;
+          }
         }
         .navbar__item {
           opacity: 1 !important;
@@ -132,30 +135,22 @@
           min-width: 350px;
         }
       }
+      &.dropdown__content_oneColumn {
+        padding-right: 6rem !important;
+      }
     }
     &:hover,
     &:focus {
       .dropdown__content {
         max-height: 400px !important;
-        padding: 1rem;
         transition: .5s ease;
         & .dropdown__column {
           border-left: 1px solid $border-dark-background;
-          text-align: left;
-          display: block;
           &:first-of-type {
             border: none;
           }
-          .dropdown__item {
-            &:hover,
-            &:focus {
-              color: white;
-            }
-          }
         }
-        &.dropdown__content_oneColumn {
-          padding-right: 6rem !important;
-        }
+
       }
     }
   }
@@ -168,10 +163,19 @@
     @at-root .dropdown__content {
       background-color: $secondary-background !important;
     }
+    .navbar__item {
+      &:not(:hover):not(:focus) {
+        opacity: 0.5;
+      }
+    }
   }
 }
 @media only screen and (min-width: $fullhd) {
+
   .dropdown {
+    .dropdown__button {
+      font-size: 16px;
+    }
     .dropdown__content {
       .container {
         float: right !important;
