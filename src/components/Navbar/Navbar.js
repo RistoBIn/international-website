@@ -19,7 +19,6 @@ export const Navbar = ({
   email = 'contact@sealab.no',
 }) => {
   const [isHamburgerMenuActive, setHamburgerMenuActive] = useState(false);
-  const [isDropdownActive, setDropdownActive] = useState(false);
 
   return (
     <>
@@ -57,10 +56,7 @@ export const Navbar = ({
           })}
         >
           <div className="navbar-end">
-            <NavbarItems
-              setDropdownActive={setDropdownActive}
-              menuPaths={menuPaths}
-            />
+            <NavbarItems menuPaths={menuPaths} />
 
             <div id="contact" className="is-hidden-tablet">
               <div className="info">
@@ -121,16 +117,22 @@ const NavbarItems = ({ menuPaths }) => {
         ) {
           return <MenuDropDown key={gen.next().value} menuItem={menuItem} />;
         }
-        return (
-          <Link
-            key={gen.next().value}
-            activeClassName="is-active"
-            className={classNames('navbar-item', 'is-tab', styles.navbar__item)}
-            to={cleanPath(menuItem.path)}
-          >
-            {menuItem.title}
-          </Link>
-        );
+        if (menuItem.path && menuItem.title)
+          return (
+            <Link
+              key={gen.next().value}
+              activeClassName="is-active"
+              className={classNames(
+                'navbar-item',
+                'is-tab',
+                styles.navbar__item,
+              )}
+              to={cleanPath(menuItem.path)}
+            >
+              {menuItem.title}
+            </Link>
+          );
+        return <></>;
       })}
     </>
   );

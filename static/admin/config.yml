@@ -333,11 +333,23 @@ collections:
               - {label: Link, name: path, widget: string, hint: "Hvis den har dropdown, så legg kun til: #", default: "#"}
               - label: Dropdown
                 name: dropdown
-                widget: list
+                widget: object
                 hint: "Hvis tom, så vises det ingen dropdown eller pil."
-                fields:
-                  - {label: Title, name: title, widget: string}
-                  - {label: Link, name: path, widget: string}
+                fields: 
+                  - label: Highlighted links 
+                    name: highlighted
+                    required: false
+                    hint: "If error message, delete all items"
+                      fields:
+                        - {label: Title, name: title, widget: string}
+                        - {label: Link, name: path, widget: string}
+                  - label: Regular links 
+                    name: regular
+                    required: false
+                    hint: "If error message, delete all items"
+                      fields:
+                        - {label: Title, name: title, widget: string}
+                        - {label: Link, name: path, widget: string}
       - file: "src/pages/innstillinger/footer.md"
         label: "Footer"
         name: "footer"
