@@ -519,6 +519,11 @@ nav.navbar {
         border: none;
       }
     }
+    a.is-active {
+      filter: brightness(1.4);
+      background-color: $secondary-background;
+      font-weight: bold;
+    }
 
     .navbar-burger {
       color: $white;

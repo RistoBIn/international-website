@@ -15,7 +15,8 @@
   transition: opacity 1s ease;
   outline: none;
   &::after {
-    border-color: white !important;
+    border-color: white
+     !important;
   }
 }
 
