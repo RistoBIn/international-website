@@ -959,7 +959,7 @@ collections:
             widget: object
             fields: 
               - {label: "Heading", name: heading, widget: string}
-              - {label: "Subheading", name: heading, widget: text, required: false}
+              - {label: "Subheading", name: subheading, widget: text, required: false}
               - label: "Call to action buttons"
                 widget: list
                 name: buttons

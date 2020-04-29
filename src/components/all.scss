@@ -265,6 +265,7 @@ body {
   .has-dark-background .content,
   .has-dark-background.content {
     @include text_Light;
+    color: $body-light;
     p,
     li {
       @include text_Light;
@@ -415,8 +416,15 @@ body {
   font-size: 16px;
   line-height: 100%;
 }
+.small-paragraph {
+  font-size: 14px !important;
+}
 .bold {
   font-weight: bold;
+}
+.heading {
+  font-weight: bold;
+  text-transform: none;
 }
 
 .image.full-width {
