@@ -17,13 +17,15 @@ export const PartnershipPagePrimaryTemplate = ({
   return (
     <>
       <section className="section has-dark-background about-page-primary">
-        <div className="container">
-          <h1 className="section--title">{heading}</h1>
-          <p className="section--description">{description}</p>
+        <div className="container centered has-text-centered">
+          <h1 className="section--title has-text-centered">{heading}</h1>
+          <p className="section--description has-text-centered">
+            {description}
+          </p>
         </div>
       </section>
-      <section className="has-dark-background about-page-primary">
-        <div className="about-page-primary-image">
+      <section className="section has-dark-background about-page-primary">
+        <div className="container about-page-primary-image">
           <Img
             fluid={featuredImage.childImageSharp.fluid}
             alt="About image"
@@ -81,7 +83,7 @@ export const pageQuery = graphql`
         seoDescription
         featuredimage {
           childImageSharp {
-            fluid(maxHeight: 600) {
+            fluid(maxHeight: 600, quality: 80) {
               ...GatsbyImageSharpFluid_noBase64
               presentationWidth
             }
@@ -101,7 +103,7 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 600) {
+              fluid(maxWidth: 600, quality: 80) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
@@ -112,7 +114,16 @@ export const pageQuery = graphql`
           content
           items {
             heading
-            icon
+            icon {
+              publicURL
+              extension
+              childImageSharp {
+                fluid(maxWidth: 100, quality: 50) {
+                  ...GatsbyImageSharpFluid_noBase64
+                  presentationWidth
+                }
+              }
+            }
             description
           }
         }
@@ -124,7 +135,16 @@ export const pageQuery = graphql`
             text
           }
           items {
-            logo
+            logo {
+              publicURL
+              extension
+              childImageSharp {
+                fluid(maxWidth: 300, quality: 50) {
+                  ...GatsbyImageSharpFluid_noBase64
+                  presentationWidth
+                }
+              }
+            }
             content
           }
         }

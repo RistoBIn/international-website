@@ -8,7 +8,7 @@ description: >-
 seoDescription: >-
   Our partnership philosophy is simple - if entering a partnership creates a
   better and easier experience for our customers, we will do it.
-featuredimage: /img/oscar_milan_biomass_estimation.jpg
+featuredimage: /img/oscar_milan_biomass_estimation_cropped.jpg
 featuredimageSection:
   content: >-
     An attractive
