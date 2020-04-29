@@ -4,7 +4,8 @@ module.exports = {
     description:
       'Ta merden med inn i kontrollrommet; SEALAB sine undervannskamera kombinert med maskinsyn og spesialutviklet software gir deg en unik innsikt i miljøforhold, fiskevelferd, fôringsprosess og biomasse.',
     email: 'contact@sealab.no',
-    phone: '+47 729 09 111'
+    phone: '+47 729 09 111',
+    siteUrl: `https://www.sealab.no/`,
     },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -63,6 +64,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-netlify-cache',
     'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-plugin-netlify-cms',
