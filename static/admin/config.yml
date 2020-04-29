@@ -910,6 +910,72 @@ collections:
           - {label: "Content", name: "lastContent", widget: "markdown", required: false, hint: "Showed before history."}
 
 
+      - file: "src/pages/about/partnership.md"
+        label: "Partnership / App community"
+        name: "partnership"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "partnership-page"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title."}
+          - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+          - {label: "Description", name: "description", widget: "markdown", hint: "Markdown text under title", required: false}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines."}
+          - {label: "Featured image", name: "featuredimage", widget: image }
+          - label: "Content below section"
+            name: featuredimageSection
+            widget: object
+            fields: 
+              - {label: "Content", name: "content", widget: "markdown", required: false, hint: "Showed below image, left aligned"}
+              - label: "Call to action buttons"
+                widget: list
+                name: buttons
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
+
+          - label: "Content below section"
+            name: splitSection
+            widget: object
+            fields: 
+              - {label: "Subheading", name: subheading, widget: string, required: false}
+              - {label: "Content", name: "content", widget: "markdown", hint: "Aligned left"}
+              - {label: "Featured image", name: "featuredimage", widget: image }
+
+          - label: "AI Systems"
+            name: features
+            widget: object
+            fields: 
+              - {label: "Content", name: "content", widget: "markdown", hint: "Is centered"}
+              - label: Systems
+                widget: list
+                name: items
+                fields:
+                  - {label: "Heading", name: heading, widget: string}
+                  - {label: "Additional description", name: description, widget: text, required: false}
+                  - {label: "Icon", name: "icon", widget: image, hint: "Try to upload SVG's, they look nicer." }
+         
+          - label: "Partnerships examples"
+            name: partnering
+            widget: object
+            fields: 
+              - {label: "Heading", name: heading, widget: string}
+              - {label: "Subheading", name: heading, widget: text, required: false}
+              - label: "Call to action buttons"
+                widget: list
+                name: buttons
+                required: false
+                fields:
+                  - {label: "Button text", name: text, widget: string, required: false}
+                  - {label: "Button path", name: path, widget: string, required: false}
+              - label: Partnerships
+                widget: list
+                name: items
+                fields:
+                  - {label: "Content", name: content, widget: markdown}
+                  - {label: "Logo", name: "logo", widget: image, hint: "Try to upload SVG's, they look nicer." }           
+                    
+
+          - {label: "Content", name: "body", widget: "markdown", required: false, hint: "Showed at the end of the section"}
 
 #### ABOUT PAGE PRESS ####
       - file: "src/pages/press.md"
