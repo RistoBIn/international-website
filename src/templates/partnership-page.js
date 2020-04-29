@@ -142,7 +142,7 @@ export const PartnershipPagePrimaryTemplate = ({
             fluid={featuredImage.childImageSharp.fluid}
             alt="About image"
             className="image full-width"
-            style={{ maxHeight: '100%', height: '700px' }}
+            style={{ maxHeight: '100%', height: '800px' }}
           />
           <PostContent
             content={generateHTML(featuredimageSection.content)}
@@ -205,7 +205,7 @@ export const PartnershipPagePrimaryTemplate = ({
           </IconsGrid>
         </div>
       </section>
-      <section className="section has-dark-background partnering">
+      <section className="section is-medium has-dark-background partnering">
         <div className="container is-left-aligned">
           <h2>{partnering.heading}</h2>
           <p className="subheading">{partnering.subheading}</p>
