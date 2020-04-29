@@ -67,7 +67,7 @@ const Footer = ({ phone, email, callToAction, companyOffices }) => {
             <SealabLogo />
             <div className="copyright-text">
               <p>Copyright © SEALAB AS {year}</p>
-              <Link to="/personvern">Privacy Policy</Link>
+              <Link to="/privacy-policy/">Privacy Policy</Link>
             </div>
           </section>
         </div>
