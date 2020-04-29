@@ -1,13 +1,14 @@
 ---
 templateKey: partnership-page
-title: App Community
+title: Partnering with SEALAB
 heading: Want to join our App Community?
 description: >-
   Our partnership philosophy is simple - if entering a partnership creates a
   better and easier experience for our customers, we will do it. 
 seoDescription: >-
-  Our partnership philosophy is simple - if entering a partnership creates a
-  better and easier experience for our customers, we will do it!
+  None of us is as strong as all of us. Our partnership philosophy is simple -
+  if entering a partnership creates a better and easier experience for our
+  customers, we will do it! 
 featuredimage: /img/oscar_milan_biomass_estimation_cropped.jpg
 featuredimageSection:
   buttons:
@@ -42,7 +43,7 @@ features:
       icon: /img/individual-salmon-identification.svg
     - heading: Salmon Lice detection
       icon: /img/lice-counting.svg
-    - heading: Fish Welfare estimation through respiratory rate analysis
+    - heading: Fish Welfare estimation
       description: through respiratory rate analysis
       icon: /img/health.svg
     - heading: Feeding Response Analysis
@@ -56,23 +57,27 @@ partnering:
       text: Contact us
   heading: None of us is as smart as all of us
   items:
-    - logo: /img/monitorfish-logo-white.svg
-      content: >-
+    - content: >-
         ### 3D Biomass Estimation + MonitorFish
 
+
         SEALAB and MonitorFish have entered into an exciting collaboration on
-        biomass estimation.
+        biomass estimation. 
+
 
         MonitorFish is a multicultural team of innovation-driven experts
         offering cognitive capabilities of Artificial Intelligence in fish
         farming. They provide fish farmers with a precise action plan in
         real-time to maintain the highest quantity and quality of the fish.
+      logo: /img/monitorfish-logo-white.svg
     - content: >-
         ### Image Enhancer + Intel
 
-        SEALAB and Intel are collaborating on image enhancement using FPGA.
 
-        FPGA is an acronym for field programmable gate array—a
+        SEALAB and Intel are collaborating on image enhancement using FPGA. 
+
+
+        FPGA is an acronym for Field Programmable Gate Array—a
         semiconductor-integrated circuit where a large majority of the
         electrical functionality inside the device can be changed, even after
         the equipment has been shipped to customers out in the ‘field’. These
@@ -84,3 +89,4 @@ partnering:
     Want to collaborate with SEALAB? These are some examples of successful
     collaborations with SEALAB.
 ---
+
