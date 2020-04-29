@@ -37,7 +37,7 @@ menuPaths:
         - path: /products/software-platform/
           title: BlueThink™ IoT Bridge
         - path: /products/bluethink-go/
-          title: 'BlueThink™ GO'
+          title: BlueThink™ GO
     path: '#'
     title: Core Technologies
   - dropdown:
@@ -81,7 +81,7 @@ menuPaths:
           title: Ocean Space Center
         - path: /about/partners/
           title: Partners
-        - path: /contact/locations
+        - path: /contact/locations/
           title: Locations
     path: '#'
     title: About
