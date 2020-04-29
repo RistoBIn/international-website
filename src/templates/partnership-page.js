@@ -31,6 +31,16 @@ const StyledPartnershipPage = styled.section`
   .ai-systems {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   }
+  section.partnering {
+    .container.is-left-aligned {
+      h2 {
+        max-width: 900px;
+      }
+      .subheading {
+        max-width: 620px;
+      }
+    }
+  }
 `;
 
 const IconsGrid = styled.div`
@@ -59,6 +69,14 @@ const IconsGrid = styled.div`
         padding-bottom: 40px;
       }
     }
+  }
+`;
+
+const PartnerItem = styled.div`
+  @media only screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 `;
 
@@ -152,6 +170,37 @@ export const PartnershipPagePrimaryTemplate = ({
               </div>
             ))}
           </IconsGrid>
+        </div>
+      </section>
+      <section className="section has-dark-background partnering">
+        <div className="container is-left-aligned">
+          <h2>{partnering.heading}</h2>
+          <p className="subheading">{partnering.subheading}</p>
+          <ButtonFlex className="button-flex">
+            {partnering.buttons.map(buttonObject => (
+              <Button
+                className="is-primary"
+                text={buttonObject.text}
+                path={buttonObject.path}
+              />
+            ))}
+          </ButtonFlex>
+        </div>
+        <div className="container">
+          {partnering.items.map(partnerItem => (
+            <PartnerItem>
+              <NonStretchedImage
+                objectFit="contain"
+                alt=""
+                className="image"
+                {...partnerItem.logo}
+              />
+              <PostContent
+                content={generateHTML(partnerItem.content)}
+                className="content is-left-aligned"
+              />
+            </PartnerItem>
+          ))}
         </div>
       </section>
       <section className="section has-dark-background about-page-primary">
