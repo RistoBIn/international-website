@@ -41,6 +41,18 @@ const StyledPartnershipPage = styled.section`
       }
     }
   }
+  section.free-content {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  @media only screen and (min-width: 768px) {
+    section.partnering {
+      .container.is-left-aligned {
+        .button-flex {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
 `;
 
 const IconsGrid = styled.div`
@@ -73,10 +85,27 @@ const IconsGrid = styled.div`
 `;
 
 const PartnerItem = styled.div`
+  padding: 1rem 0;
+  .image {
+    margin: auto;
+    padding: 2rem 0;
+  }
+  .content {
+    margin: auto 0;
+    h1,
+    h2,
+    h3 {
+      font-weight: normal;
+    }
+  }
   @media only screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    padding: 5rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
+    .image {
+      padding: 0;
+    }
   }
 `;
 
@@ -203,14 +232,18 @@ export const PartnershipPagePrimaryTemplate = ({
           ))}
         </div>
       </section>
-      <section className="section has-dark-background about-page-primary">
-        <div className="container">
-          <PostContent
-            content={content}
-            className="content is-left-aligned links-are-buttons"
-          />
-        </div>
-      </section>
+      {content ? (
+        <section className="section has-dark-background free-content">
+          <div className="container">
+            <PostContent
+              content={content}
+              className="content is-left-aligned links-are-buttons"
+            />
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
     </StyledPartnershipPage>
   );
 };
@@ -317,7 +350,7 @@ export const pageQuery = graphql`
               publicURL
               extension
               childImageSharp {
-                fluid(maxWidth: 300, quality: 50) {
+                fluid(maxWidth: 300, maxHeight: 140, quality: 50) {
                   ...GatsbyImageSharpFluid_noBase64
                   presentationWidth
                 }

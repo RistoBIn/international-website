@@ -54,7 +54,7 @@ partnering:
     - path: /contact/
       text: Contact us
   items:
-    - logo: /img/monitorfish-logo.svg
+    - logo: /img/monitorfish-logo-white.svg
       content: >-
         ### 3D Biomass Estimation + MonitorFish
 
@@ -70,16 +70,3 @@ partnering:
         FPGA is an acronym for field programmable gate array—a semiconductor-integrated circuit where a large majority of the electrical functionality inside the device can be changed, even after the equipment has been shipped to customers out in the ‘field’. These powerful devices can be customized to accelerate key workloads and enable design engineers to adapt to emerging standards or changing requirements.
 
 ---
-## Our system is open to third parties
-
-\
-The BlueThink™ platform delivers any data or video required for software applications to perform their functions, while allowing the results from those applications to be presented back into the platform for use by other applications. With this, SEALAB is in a unique position to store and analyze data produced even by third-parties.
-
-For third parties, BlueThink™ removes the complexity of integrating with other systems by providing a single, uniform, and robust communication interface.
-
-SEALAB is currently working on several BlueThink™-enabled applications and AIs, including Individual Salmon Identification, Fish Welfare estimation through respiratory rate analysis, Network Monitoring, Feeding Response Analysis and Salmon Lice detection.
-
-#### Growing third-party communities:
-
-* 3D Biomass Estimation
-* Image Enhancer
