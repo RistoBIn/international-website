@@ -47,14 +47,16 @@ successFactors:
     path: /about/partnership/
     text: Collaborate with SEALAB
   content: >-
-    ## App Ecosystem and Key Success Factors
+    ## None of us is as smart as all of us
 
     Our ambition is to continue to generate extensive amounts of data from the
     ocean and scale up our App community. Not only collecting images and data
-    but collecting the right data. Only in this way will smart and effective
+    but collecting the right data. Only in this way, will smart and effective
     apps and AI solutions be created.
   features:
-    - Enabling easy access to quality machine vision technology, images, expertise and support
+    - >-
+      Enabling easy access to quality machine vision technology, images,
+      expertise and support
     - Apply state of the art machine learning to different industries
     - Our ideas will change everything in the Ocean Space
   subheading: ''
