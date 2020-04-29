@@ -105,6 +105,10 @@ const PartnerItem = styled.div`
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     .image {
       padding: 0;
+      max-width: 250px;
+    }
+    .content {
+      padding-left: 40px;
     }
   }
 `;
