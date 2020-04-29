@@ -1,7 +1,10 @@
 ---
 templateKey: index-page
-title: SEALAB
-seoDescription: SEALAB - More than meets the eye
+title: 'SEALAB '
+seoDescription: >-
+  You've never seen camera technology for harsh environment like this. We're
+  offering AI Solutions under water with great computer vision techniques. Our
+  system is open to third parties. 
 heading: More than meets the eye
 bgimage: /img/sealab-water-hero-edit.jpg
 items:
