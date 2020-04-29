@@ -7,6 +7,7 @@ import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
 import SplittedSection from '../components/SplittedSection';
 import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
+import BorderedContentSection from '../components/BorderedContentSection';
 import BackgroundImage from '../components/BackgroundImage';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
@@ -19,6 +20,7 @@ export const SolutionPageTemplate = ({
   featuredimage,
   splitSections,
   imageSection,
+  btgo,
   splitSection,
 }) => {
   const PostContent = contentComponent || Content;
@@ -43,6 +45,22 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
+      {btgo ? (
+        <BorderedContentSection
+          heading={btgo.heading}
+          subheading={btgo.subheading}
+          fluidImage={btgo.featuredimage.childImageSharp.fluid}
+          className="section is-medium"
+        >
+          <PostContent
+            content={generateHTML(btgo.description)}
+            className="content links-are-buttons"
+          />
+        </BorderedContentSection>
+      ) : (
+        <></>
+      )}
+
       {imageSection ? (
         <LargeImageWithSplitSection
           image={imageSection.featuredimage}
@@ -140,6 +158,7 @@ const SolutionPage = ({ data }) => {
     splitSections,
     imageSection,
     splitSection,
+    btgo,
   } = frontmatter;
 
   return (
@@ -153,6 +172,7 @@ const SolutionPage = ({ data }) => {
         splitSections={splitSections}
         imageSection={imageSection}
         splitSection={splitSection}
+        btgo={btgo}
       />
     </Layout>
   );
@@ -211,6 +231,19 @@ export const pageQuery = graphql`
           heading
           left
           right
+        }
+        btgo {
+          subheading
+          heading
+          description
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 1180, quality: 100) {
+                ...GatsbyImageSharpFluid_tracedSVG
+                presentationWidth
+              }
+            }
+          }
         }
       }
     }

@@ -68,6 +68,16 @@ collections:
             - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Content on the right", name: "content", widget: "markdown", }
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+      - label: "Bordered section"
+        name: btgo
+        widget: object
+        hint: "If image, heading or description is missing the section will not be displayed."
+        required: false
+        fields:
+          - {label: Subheading, name: subheading, widget: string, required: false}
+          - {label: "H2 Title", name: heading, widget: string, required: false}
+          - {label: "Description", name: description, widget: text, required: false}
+          - {label: "Image", name: "featuredimage", widget: image, required: false}
       - label: "Large image section"
         name: imageSection
         widget: object

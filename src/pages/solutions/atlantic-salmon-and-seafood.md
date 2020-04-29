@@ -1,5 +1,5 @@
 ---
-templateKey: aquaculture-page
+templateKey: solution-page-primary
 title: Atlantic Salmon and Seafood
 seoDescription: >-
   SEALAB underwater camera combined with computer vision and specially developed
