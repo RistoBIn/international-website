@@ -15,32 +15,34 @@ body {
   min-width: 100% !important;
   width: 100% !important;
   font-family: 'Open Sans';
+  background-color: $background-color-dark;
 
-  .button {
-    width: 100%;
-    padding: 1rem 1rem;
-    display: flex;
-    align-items: center;
+  .button,
+  .content.links-are-buttons a {
     height: auto;
+    padding: 1rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 3px;
+
     @include buttonText;
-    @media only screen and (min-width: $desktop) {
-      max-width: 260px;
-    }
     & svg {
       transition: $transition;
     }
     &.small {
-      padding: 0.8rem 1rem;
+      padding: 0.8rem 1rem !important;
     }
     &.medium {
-      padding: 1rem 1rem;
+      padding: 1rem 1rem !important;
     }
     &.large {
-      padding: 1.1rem 1rem;
+      padding: 1.1rem 1rem !important;
     }
-    &.is-primary {
+    &.is-primary,
+    &:not(.is-secondary):not(.is-transparent):not(.is-white) {
       background-color: $red;
       color: $white;
+      text-decoration: none !important;
       svg {
         fill: $white;
         stroke: $white;
@@ -64,7 +66,8 @@ body {
       &:focus {
         opacity: 1;
       }
-      svg {
+      svg,
+      svg path {
         fill: $text-dark;
         stroke: $text-dark;
       }
@@ -171,8 +174,16 @@ body {
     font-size: 32px;
     line-height: 1.3em;
     padding-bottom: 16px;
+
+    &.large {
+      font-weight: 38px;
+    }
     @media screen and (min-width: $desktop) {
       font-size: 46px;
+
+      &.large {
+        font-weight: 56px;
+      }
     }
   }
 
@@ -220,12 +231,17 @@ body {
     h3,
     h4 {
       color: $white;
+      margin-bottom: 0;
+      padding-bottom: 20px;
     }
     p strong {
       font-weight: 700;
     }
-    a {
-      color: #3273dc;
+    a:not(.button) {
+      color: $red;
+      font-weight: bold;
+      font-size: inherit;
+      text-decoration: underline;
     }
     blockquote p {
       background: red;
@@ -249,6 +265,7 @@ body {
   .has-dark-background .content,
   .has-dark-background.content {
     @include text_Light;
+    color: $body-light;
     p,
     li {
       @include text_Light;
@@ -261,9 +278,37 @@ body {
     }
   }
 }
-section.no-padding{
-  padding:0;
+section.no-padding {
+  padding: 0;
 }
+
+.has-dark-background {
+  color: $white;
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  strong {
+    color: $white;
+  }
+}
+.has-light-dark-background {
+  color: $white;
+  background-color: $dark-light;
+  h1,
+  h2,
+  h3 {
+    color: $white;
+  }
+  strong,
+  li,
+  p,
+  p strong {
+    color: inherit !important;
+  }
+}
+
 .section {
   .section--title {
     @include PageTitle;
@@ -275,7 +320,7 @@ section.no-padding{
       padding-bottom: 20px;
     }
   }
-  
+
   .section--description {
     @include text_Light;
     color: $body-light !important;
@@ -302,43 +347,30 @@ section.no-padding{
     }
   }
 
-  &.has-dark-background {
-    color: $white;
-    h1,
-    h2,
-    h3,
-    p,
-    li,
-    strong {
-      color: $white;
-    }
-  }
-  &.has-light-dark-background {
-    color: $white;
-    background-color: $dark-light;
-    strong,
-    h1,
-    h2,
-    h3,
-    li,
-    p,
-    p strong {
-      color: inherit !important;
-    }
-  }
   .content {
     &.centered-free-text {
-      max-width: 1022px;
-      margin: auto;
       text-align: center;
       padding: 1rem;
-      p {
-        font-size: $fontLarge;
+      font-size: 20px;
+      p,
+      h1,
+      h2,
+      h3,
+      h4 {
+        max-width: 988px;
+        margin: 0 auto;
       }
       strong {
         font-weight: normal;
         font-size: inherit;
         color: $light-blue;
+      }
+      .button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &.highlighted {
+        font-size: $fontLarge;
       }
     }
     &.is-left-aligned {
@@ -388,6 +420,16 @@ section.no-padding{
   font-size: 16px;
   line-height: 100%;
 }
+.small-paragraph {
+  font-size: 14px !important;
+}
+.bold {
+  font-weight: bold;
+}
+.heading {
+  font-weight: bold;
+  text-transform: none;
+}
 
 .image.full-width {
   width: 100%;
@@ -399,13 +441,39 @@ section.no-padding{
   }
 }
 
+.subheading {
+  font-size: 18px !important;
+  font-family: $titleFont !important;
+  font-weight: bold !important;
+  line-height: 110%;
+  color: $white !important;
+}
+
+.centered {
+  margin: auto !important;
+  text-align: center;
+  max-width: 850px;
+
+  .button {
+    margin: 0 auto;
+  }
+}
+
+section.background-section {
+  .content.centered {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.border-top-bottom {
+  border-top: 1px solid $border-dark-background;
+  border-bottom: 1px solid $border-dark-background;
+}
+
 /****************     NAVIGATION    ********************/
 
 nav.navbar {
-  color: $white;
-  background-color: $dark;
-  border-bottom: 1px solid $border-dark-background;
-
   &.is-transparent {
     background-color: transparent;
   }
@@ -418,49 +486,23 @@ nav.navbar {
   .navbar-item,
   .navbar-link {
     color: $white;
-    border: none;
-    font-size: 1rem;
 
-    .navbar-dropdown {
-      background-color: $background-color-dark;
-      color: $white;
-      .navbar-item:hover,
-      .navbar-item:focus {
-        color: $white !important;
-        background-color: transparent;
-      }
-    }
-    &::after {
-      border-color: #fff;
-    }
     &:focus,
     &:hover,
     &:active {
       background-color: transparent;
-      color: $white;
-      border: none;
-      b .navbar-link {
-        background-color: transparent;
-      }
-    }
-
-    &.is-active {
-      filter: brightness(1.3);
-      background-color: #131826 !important;
-      border-bottom: 2px solid $border-dark-background;
-      margin-bottom: -1px;
-      color: $white;
     }
   }
-  .navbar-item.has-dropdown:focus .navbar-link,
-  .navbar-item.has-dropdown:hover .navbar-link,
-  .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: transparent;
+  a.is-active,
+  div[role='button'].is-active {
+    color: $white !important;
+    opacity: 1 !important;
   }
 
   /****************     MOBILE MENU     ********************/
 
   @media only screen and (max-width: $desktop) {
+    background-color: $background-color-dark;
     .navbar-brand {
       figure.image svg {
         width: 200px;
@@ -468,9 +510,6 @@ nav.navbar {
       .navbar-item {
         padding-left: 0;
         padding-right: 0;
-      }
-      &.is-active {
-        background-color: $background-color-dark;
       }
     }
     .navbar-menu.is-active {
@@ -484,34 +523,18 @@ nav.navbar {
       .navbar-link {
         @include text_Navbar;
         padding: 18px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-        &.has-dropdown {
-          background-color: $midnight;
-          .navbar-item {
-            padding-left: 20px;
-          }
-        }
+        color: white;
+        font-weight: bold;
       }
-      .navbar-item.has-dropdown {
-        border: none;
-        padding: 0;
-      }
+
       .navbar-item.has-buttons {
         border: none;
       }
-      .navbar-item.has-dropdown {
-        .navbar-dropdown {
-          display: none;
-        }
-        &.is-active,
-        &:focus,
-        &:hover {
-          background-color: transparent;
-          .navbar-dropdown {
-            display: block;
-          }
-        }
-      }
+    }
+    a.is-active {
+      filter: brightness(1.4);
+      background-color: $secondary-background;
+      font-weight: bold;
     }
 
     .navbar-burger {
@@ -576,13 +599,6 @@ nav.navbar {
         @include text_Bold;
       }
     }
-  }
-}
-
-@media only screen and (max-width: $tablet) {
-  nav.navbar .navbar-menu.is-active .navbar-item.has-dropdown,
-  nav.navbar .navbar-menu.is-active .navbar-link.has-dropdown {
-    background-color: transparent !important;
   }
 }
 
@@ -685,7 +701,7 @@ footer.footer {
       margin-bottom: 20px;
     }
   }
-  section#company-information{
+  section#company-information {
     border-top: 1px solid $border-dark-background;
   }
   section#copyright {
@@ -706,7 +722,7 @@ footer.footer {
       }
       a {
         font-size: 14px;
-        line-height: 14px;
+        line-height: 19px;
       }
     }
     @media only screen and (min-width: $desktop) {
@@ -787,7 +803,9 @@ section.vision-strategy {
   .right-wrapper {
     margin-top: 30px;
     padding: 20px;
-    p {font-weight: 300;}
+    p {
+      font-weight: 300;
+    }
     h3 {
       margin-bottom: 0;
       font-size: 24px;
@@ -798,7 +816,7 @@ section.vision-strategy {
     padding: 32px 24px;
   }
 
-  br { 
+  br {
     display: none;
   }
 
@@ -811,13 +829,19 @@ section.vision-strategy {
     .quad-wrapper {
       padding: 32px 24px;
     }
-    br{display: block;}
+    br {
+      display: block;
+    }
   }
 }
-section.centered-free-text p {font-size: 20px !important;}
+section.centered-free-text p {
+  font-size: 20px !important;
+}
 section.boxes {
   .is-left-aligned {
-    h2, h1, h3 {
+    h2,
+    h1,
+    h3 {
       max-width: 510px;
       margin-left: 0;
     }
@@ -834,7 +858,9 @@ section.boxes {
     }
   }
 }
-section#vision-last {padding-top: .5rem;}
+section#vision-last {
+  padding-top: 0.5rem;
+}
 
 section.about-page-partners {
   background-color: white;
@@ -898,9 +924,9 @@ section.about-page-leadership {
         display: grid;
         grid-template-columns: 65px auto;
         grid-gap: 0 20px;
-        grid-template-areas: 
-        "image role"
-        "image name";
+        grid-template-areas:
+          'image role'
+          'image name';
         .image {
           grid-area: image;
           height: 63px !important;
@@ -926,7 +952,7 @@ section.about-page-leadership {
   }
   @media only screen and (min-width: $tablet) {
     .wrapper {
-      grid-template-columns: repeat(auto-fill, minmax(580px,1fr));
+      grid-template-columns: repeat(auto-fill, minmax(580px, 1fr));
       .name {
         margin-top: 0 !important;
       }
@@ -942,73 +968,6 @@ section.about-page-leadership {
       font-size: 8rem !important;
       max-width: 1000px;
       margin-left: 0 !important;
-    }
-  }
-}
-
-section#camera--image {
-  .product-image {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  @media only screen and (min-width: $tablet) {
-    .product-image {
-      background-size: contain;
-    }
-  }
-}
-
-section.section#inspirational-quote {
-  .wrapper-two-split {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-  }
-  .bg-image {
-    width: 100%;
-    height: 100%;
-  }
-  .content {
-    margin: auto;
-    padding: 1.5rem;
-    p {
-      font-weight: 300;
-      font-size: $fontLarge;
-      line-height: 170%;
-      strong#quote-author {
-        font-size: 16px;
-      }
-    }
-  }
-  @media only screen and (min-width: $tablet) {
-    padding: 3rem 0;
-    .wrapper-two-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background-size: 0 !important;
-    }
-    .bg-image {
-      width: 100%;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    .content {
-      padding: 3rem;
-      max-width: 650px;
-      margin-left: 0;
-      p {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 170%;
-        strong#quote-author {
-          font-size: 16px;
-        }
-      }
     }
   }
 }
@@ -1297,7 +1256,6 @@ section#project-page-primary .wrapper {
 
 /****************     PRODUCT PAGES    ********************/
 section.product-page-primary {
-
   .content.centered-free-text {
     max-width: 854px;
     margin: 0 auto;
@@ -1321,22 +1279,22 @@ section.product-page-primary {
       margin: 0 auto;
     }
   }
-  .large-image {
-    .button {max-width: 290px; }
-  }
   .alternating-sections {
     h3 {
       font-size: 18px;
       color: $body-light;
       margin-bottom: 15px;
     }
-    h1, h2 {
+    h1,
+    h2 {
       margin-top: 0;
     }
   }
   @media only screen and (max-width: $tablet) {
     .large-image {
-      .button {margin: 20px 0;}
+      .button {
+        margin: 20px 0;
+      }
     }
   }
 }

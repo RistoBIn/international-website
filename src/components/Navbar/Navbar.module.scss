@@ -1,0 +1,193 @@
+@import '../_variables.scss';
+
+.dropdown {
+  @include text_Navbar;
+  .navbar__item {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+.navbar__item {
+  transition: opacity 1s ease;
+  outline: none;
+  &::after {
+    border-color: white !important;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .dropdown {
+    @include text_Navbar;
+    .dropdown__content {
+      display: none;
+      outline: none;
+      transition: $transition;
+      background-color: transparent !important;
+      &.dropdown__isActive {
+        background-color: transparent;
+        display: block;
+      }
+    }
+    .navbar__item {
+      display: block;
+      padding: 18px 0 18px 40px;
+      border-bottom: 1px solid $border-dark-background;
+    }
+  }
+
+  .navbar__button {
+    a {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  nav.navbar {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    color: $white;
+    background-color: transparent;
+  }
+  .dropdown {
+    outline: none;
+    z-index: 10;
+    padding: 18px 0;
+    .dropdown__button {
+      background-color: transparent;
+      color: $body-light !important;
+      font-size: 14px;
+      &:focus,
+      &:hover,
+      .dropdown__isActive {
+        color: white !important;
+      }
+    }
+    .dropdown__content {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      max-height: 0px;
+      top: 70px;
+      z-index: 10;
+      justify-items: end;
+      align-items: flex-end;
+      outline: none;
+      overflow: hidden;
+      transition: .5s ease;
+      
+      .container {
+        float: right !important;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      }
+      &.dropdown__content_twoColumns .container > *:first-of-type {
+        grid-column: 1 / span 2;
+        margin-left: auto;
+        margin-right: 0;
+      }
+      &.dropdown__content_oneColumn .container > *:first-of-type {
+        grid-column: 1 / span 3;
+        margin-left: auto;
+        margin-right: 0;
+      }
+      .dropdown__column {
+        display: block !important;
+        margin: 2rem 0;
+        padding: 0 2rem;
+        border-left: 1px solid transparent;
+        text-align: left;
+        .dropdown__item {
+          display: flex;
+          align-items: center;
+          flex-grow: 0;
+          flex-shrink: 0;
+          min-height: 0;
+          margin: 0;
+          padding-bottom: 25px;
+          color: $body-light;
+          &:hover,
+          &:focus {
+            color: white;
+          }
+        }
+        .navbar__item {
+          opacity: 1 !important;
+          color: $body-light !important;
+          
+          &.dropdown__item_active,
+          &:hover,
+          &:focus {
+            color: $white !important;
+            font-weight: bold !important;
+            filter: brightness(1.4);
+          }
+        }
+      }
+      .dropdown__column_highlighted {
+        min-width: 400px;
+        max-width: 100%;
+        .dropdown__item__highlighted {
+          font-size: 28px;
+          padding-bottom: 40px;
+          min-width: 350px;
+        }
+      }
+      &.dropdown__content_oneColumn {
+        padding-right: 6rem !important;
+      }
+    }
+    &:hover,
+    &:focus {
+      .dropdown__content {
+        max-height: 400px !important;
+        transition: .5s ease;
+        & .dropdown__column {
+          border-left: 1px solid $border-dark-background;
+          &:first-of-type {
+            border: none;
+          }
+        }
+
+      }
+    }
+  }
+
+  .navbar:hover,
+  .navbar:focus,
+  .dropdown:hover,
+  .dropdown:focus {
+    background-color: $secondary-background !important;
+    @at-root .dropdown__content {
+      background-color: $secondary-background !important;
+    }
+    .navbar__item {
+      &:not(:hover):not(:focus) {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+@media only screen and (min-width: $fullhd) {
+
+  .dropdown {
+    .dropdown__button {
+      font-size: 16px;
+    }
+    .dropdown__content {
+      .container {
+        float: right !important;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      }
+      .dropdown__column {
+        margin: 2rem 0;
+        padding: 0 2rem;
+        .navbar__item {
+          min-width: 380px;
+        }
+      }
+    }
+  }
+}

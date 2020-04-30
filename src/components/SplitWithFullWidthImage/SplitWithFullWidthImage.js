@@ -20,7 +20,10 @@ const SplitWithFullWidthImage = ({
           'wrapper-two-split',
         )}
         image={splitSectionImage}
-        cssFilter="linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21))"
+        filterStyle={{
+          background:
+            'linear-gradient(177.9deg, #0E111B 0%, rgba(14, 17, 27, 0.61) 27.24%), linear-gradient(0deg, rgba(14, 17, 27, 0.21), rgba(14, 17, 27, 0.21))',
+        }}
       >
         {children}
       </BackgroundImage>

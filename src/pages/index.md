@@ -1,35 +1,106 @@
 ---
 templateKey: index-page
-title: SEALAB
-seoDescription: 'SEALAB - More than meets the eye. '
+title: 'SEALAB '
+seoDescription: >-
+  You've never seen camera technology for harsh environment like this. We're
+  offering AI Solutions under water with great computer vision techniques. Our
+  system is open to third parties. 
 heading: More than meets the eye
-bgimage: /img/sealab-water-hero.jpg
+bgimage: /img/sealab-water-hero-edit.jpg
 items:
-  - description: Billion USD yearly negative impact for poor ocean management
-    heading: '200'
-  - description: Billion people rely on the ocean
-    heading: '7.8'
+  - description: Yearly negative impact due to poor ocean management
+    keyNumber: 200
+    keyNumberAfter: '  Billion'
+    keyNumberBefore: $
+  - description: People rely on the ocean
+    keyNumber: 7.8
+    keyNumberAfter: '  Billion'
   - description: >-
-      Billion USD needed yearly to reduce the negative impact and sustain the
-      ocean from now, to infinity and beyond
-    heading: '21'
+      Needed yearly to reduce the negative impact and sustain the ocean from
+      now, to infinity and beyond
+    keyNumber: 21
+    keyNumberAfter: '  Billion'
+    keyNumberBefore: $
 centeredSection:
-  heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
-  bgimage: /img/subsea-plant.jpg
   button:
-    path: /solutions/
-    text: See solutions
-  description: >-
-    SEALAB cameras and products can be used in many areas and industries, from
-    seafood factories to military underwater diving operations.
-  subheading: Deep Sea & Marine Applications
+    path: /products/software-platform/
+    text: Read more
+  description: 'SEALAB provides a space for people to connect, create and communicate'
+  heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
+  subheading: ''
 productSection:
-  description: >-
-    Superfast FPGA technology together with smart 2D and 3D cameras will change
-    everything in the ocean space.
+  description: |-
+    You've never seen camera technology for harsh environment like this. 
+    Now let's create a better world.
   featuredimage: /img/camera_render.png
   featuredimageBackground: /img/camera-background.png
-  heading: You've Never Seen a Camera Like This
+  features:
+    - heading: 3D
+      icon: /img/icon-3d.svg
+    - heading: FPGA Technology
+      icon: /img/icon-fpga.svg
+    - heading: AI Solutions Under Water
+      icon: /img/icon-ai.svg
+    - heading: Computer Vision Techniques
+      icon: /img/icon-eye.svg
+  heading: Edge to Cloud. Anywhere. Anytime.
+successFactors:
+  bgimage: /img/ice-mountain-blue.jpeg
+  button:
+    path: /about/partnership/
+    text: Collaborate with SEALAB
+  content: >-
+    ## None of us is as smart as all of us
+
+    Our ambition is to continue to generate extensive amounts of data from the
+    ocean and scale up our App community. Not only collecting images and data
+    but collecting the right data. Only in this way, will smart and effective
+    apps and AI solutions be created.
+  features:
+    - >-
+      Enabling easy access to quality machine vision technology, images,
+      expertise and support
+    - Apply state of the art machine learning to different industries
+    - Our ideas will change everything in the Ocean Space
+  subheading: ''
+splitSection:
+  button:
+    path: /sealab-tv-channel/
+    text: TV Schedule
+  content: >-
+    ## SEALAB TV Channel
+
+    The monitored areas include both a gulls nest, an eagles aerie and our own
+    custom built lobster shelter. The goal for this project is simply to satisfy
+    our own curiosity and to provide the inhabitants of Gjæsingen island with a
+    new way to enjoy their local environment.
+  featuredimage: /img/sealab-tv-channel.jpg
+  subheading: ''
+partnering:
+  bgimage: /img/water_dark_light_technology.jpg
+  buttons:
+    - path: /about/partnership/
+      text: Partnerships
+    - path: /research-laboratories/
+      text: Working in SEALAB
+  content: >-
+    ## Partnering with SEALAB
+
+    Our Research Laboratories are constantly developing and testing new
+    technological solutions. SEALAB’s DNA is very strong when we talk about
+    creativity and different ways of thinking. We need more Rockstars on the
+    team. If you have X-factor and what is needed – launch your career at
+    SEALAB.
+  subheading: X-factor
+quoteSection:
+  button:
+    path: /about/innovation-cause-we-can/
+    text: Innovation ‘cause we can
+  content: >-
+    **The little things in life matter. If you can’t do the little things right,
+    you’ll never be able to do the big things right.**
+
+    <p id="author">- Oscar Markovic and Milan Markovic, Founders at Work</p>
 quotes:
   - authorImage: ''
     authorName: ''
@@ -41,54 +112,5 @@ quotes:
     authorName: ''
     authorPosition: ''
     quoteText: The Apple approach for harsh environments
-itemsSection:
-  button:
-    path: /solutions/
-    text: Show all industries
-  heading: We are able to develop and deploy our technology to several industries
-  items:
-    - featuredimage: /img/AdobeStock_187277566.jpeg
-      heading: Harbor Surveillance
-      path: /solutions/harbor-surveillance/
-    - featuredimage: /img/IMG_0539_Adjusted.jpg
-      heading: Atlantic Salmon & Seafood
-      path: /solutions/atlantic-salmon-and-seafood/
-    - featuredimage: /img/AdobeStock_180592840.jpeg
-      heading: Underwater Drones & Robotics
-      path: /solutions/underwater-drones-and-robotics/
-    - featuredimage: /img/AdobeStock_114071575.jpeg
-      heading: Schools & Universities
-      path: /solutions/schools-and-universities/
-    - featuredimage: /img/AdobeStock_294165529.jpeg
-      heading: Science Arctic & Antarctic Surveillance
-      path: /solutions/science-arctic-and-antarctic-surveillance/
-    - featuredimage: /img/AdobeStock_177426726.jpeg
-      heading: Oil & Gas Industry
-      path: /solutions/oil-gas-industry/
-    - featuredimage: /img/AdobeStock_4649419.jpeg
-      heading: Military & Defense
-      path: /solutions/military-and-defense/
-    - featuredimage: /img/AdobeStock_205257493.jpeg
-      heading: Well & Fishing Boats
-      path: /solutions/well-and-fishing-boats/
-    - featuredimage: /img/AdobeStock_245001526.jpeg
-      heading: Seabed Mining
-      path: /solutions/seabed-mining/
-    - featuredimage: /img/AdobeStock_224578518.jpeg
-      heading: Environmental Monitoring
-      path: /solutions/environmental-monitoring/
-    - featuredimage: /img/AdobeStock_232721946.jpeg
-      heading: Bridge & Watercourse Monitoring
-      path: /solutions/bridge-and-watercourse-monitoring/
-    - featuredimage: /img/AdobeStock_224942592.jpeg
-      heading: River & Wildlife monitoring
-      path: /solutions/river-and-wildlife-monitoring/
-    - featuredimage: /img/AdobeStock_59878462.jpeg
-      heading: Hydropower Plants
-      path: /solutions/hydropower-plants/
-splitSection:
-  bgimage: /img/AdobeStock_174371043.jpeg
 ---
-*For most of history, man has had to fight nature to survive; in this century he is beginning to realize that, in order to survive, he must protect it.*
 
-<strong id="quote-author">- Jacques-Yves Cousteau</strong>

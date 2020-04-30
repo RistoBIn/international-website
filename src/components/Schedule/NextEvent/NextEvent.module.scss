@@ -1,0 +1,11 @@
+@import '../../_variables.scss';
+
+.event__item {
+    height: 100px;
+    background-color: $dark-light;
+    border-radius: 3px;
+
+    @media only screen and (min-width: $tablet) {
+        margin-top: 38px;
+    }
+}

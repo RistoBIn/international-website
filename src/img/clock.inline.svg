@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Clock</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Clock" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Circle">
+                <path d="M6.99398,0.333984 C3.31398,0.333984 0.333984,3.32065 0.333984,7.00065 C0.333984,10.6807 3.31398,13.6673 6.99398,13.6673 C10.6807,13.6673 13.6673,10.6807 13.6673,7.00065 C13.6673,3.32065 10.6807,0.333984 6.99398,0.333984 Z M7.00065,12.334 C4.05398,12.334 1.66732,9.94732 1.66732,7.00065 C1.66732,4.05398 4.05398,1.66732 7.00065,1.66732 C9.94732,1.66732 12.334,4.05398 12.334,7.00065 C12.334,9.94732 9.94732,12.334 7.00065,12.334 Z" id="Shape"></path>
+            </g>
+            <g id="Pointer" transform="translate(6.000000, 3.000000)">
+                <polygon id="Path" points="1.33398 0.666016 0.333984 0.666016 0.333984 4.66602 3.83398 6.76602 4.33398 5.94602 1.33398 4.16602"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

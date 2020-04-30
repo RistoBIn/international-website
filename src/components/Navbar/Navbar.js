@@ -1,42 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
+import { number } from 'prop-types';
 import Logo from '../../img/logo.inline.svg';
 import EnvelopeIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
 import { cleanPath } from '../../utils/paths';
 import { idMaker } from '../../utils/id-maker';
+import styles from './Navbar.module.scss';
+import { chunk } from '../../utils/lodash';
 
 const gen = idMaker();
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-    };
-  }
+export const Navbar = ({
+  className,
+  menuPaths,
+  phone = '+47 729 09 111',
+  email = 'contact@sealab.no',
+}) => {
+  const [isHamburgerMenuActive, setHamburgerMenuActive] = useState(false);
 
-  toggleHamburger = () => {
-    this.setState(prevState => ({ active: !prevState.active }));
-  };
-
-  render() {
-    const { active } = this.state;
-    const {
-      className,
-      menuPaths,
-      phone = '+47 729 09 111',
-      email = 'contact@sealab.no',
-    } = this.props;
-
-    return (
+  return (
+    <>
       <nav
-        className={classNames('navbar', className)}
+        className={classNames('navbar', className, styles.navbar)}
         role="navigation"
         aria-label="main navigation"
       >
-        <div className={classNames('navbar-brand', { 'is-active': active })}>
+        <div className={classNames('navbar-brand')}>
           <Link to="/" className="navbar-item">
             <figure className="image">
               <Logo />
@@ -48,10 +39,10 @@ const Navbar = class extends React.Component {
             aria-label="menu"
             aria-expanded="false"
             className={classNames('navbar-burger', 'burger', 'nav-toggle', {
-              'is-active': active,
+              'is-active': isHamburgerMenuActive,
             })}
             data-target="navbarMenuHeroC"
-            onClick={this.toggleHamburger}
+            onClick={() => setHamburgerMenuActive(!isHamburgerMenuActive)}
           >
             <span aria-hidden="true" />
             <span aria-hidden="true" />
@@ -60,14 +51,12 @@ const Navbar = class extends React.Component {
         </div>
         <div
           id="navbarMenuHeroC"
-          className={classNames('navbar-menu', { 'is-active': active })}
+          className={classNames('navbar-menu', {
+            'is-active': isHamburgerMenuActive,
+          })}
         >
           <div className="navbar-end">
-            <NavbarItems
-              menuPaths={menuPaths}
-              setActive={this.toggleActiveMenuItem}
-              onClick={this.toggleHamburger}
-            />
+            <NavbarItems menuPaths={menuPaths} />
 
             <div id="contact" className="is-hidden-tablet">
               <div className="info">
@@ -85,67 +74,141 @@ const Navbar = class extends React.Component {
                 </a>
               </div>
             </div>
-
-            <div className="navbar-item has-buttons">
-              <Link className="button is-white" to="/contact">
+            <div
+              className={classNames(
+                styles.navbar__button,
+                'navbar-item',
+                'has-buttons',
+                'is-hidden-tablet',
+              )}
+            >
+              <Link className="button is-white" to="/contact/">
                 Contact
+              </Link>
+            </div>
+            <div
+              className={classNames(
+                styles.navbar__button,
+                'navbar-item',
+                'has-buttons',
+              )}
+            >
+              <Link className="button is-white" to="/sealab-tv-channel/">
+                SEALAB TV
               </Link>
             </div>
           </div>
         </div>
       </nav>
-    );
-  }
+
+      <div className={classNames(styles.background, 'navbar-background')} />
+    </>
+  );
 };
 
-const NavbarItems = ({ menuPaths, activeMenuItem, onClick }) => {
+const NavbarItems = ({ menuPaths }) => {
   return (
     <>
       {menuPaths.map(menuItem => {
-        if (menuItem.dropdown) {
-          return (
-            <MenuDropDown
-              key={gen.next().value}
-              menuItem={menuItem}
-              activeMenuItem={activeMenuItem}
-              onClick={onClick}
-            />
-          );
+        if (
+          menuItem.dropdown &&
+          typeof menuItem.dropdown !== 'string' &&
+          (menuItem.dropdown.highlighted || menuItem.dropdown.regular)
+        ) {
+          return <MenuDropDown key={gen.next().value} menuItem={menuItem} />;
         }
-        return (
-          <Link
-            key={gen.next().value}
-            activeClassName="is-active"
-            className={classNames('navbar-item', 'is-tab')}
-            to={cleanPath(menuItem.path)}
-            onClick={onClick}
-          >
-            {menuItem.title}
-          </Link>
-        );
+        if (menuItem.path && menuItem.title)
+          return (
+            <Link
+              key={gen.next().value}
+              activeClassName="is-active"
+              className={classNames(
+                'navbar-item',
+                'is-tab',
+                styles.navbar__item,
+              )}
+              to={cleanPath(menuItem.path)}
+            >
+              {menuItem.title}
+            </Link>
+          );
+        return <></>;
       })}
     </>
   );
 };
 
-const MenuDropDown = ({ menuItem, onClick }) => (
-  <div className={classNames('navbar-item', 'has-dropdown', 'is-hoverable')}>
-    <a href={menuItem.path || '#dropdown'} className="navbar-link">
-      {menuItem.title}
-    </a>
-    <div className="navbar-dropdown is-boxed">
-      {menuItem.dropdown.map(subitem => (
+const MenuDropDown = ({ menuItem }) => {
+  const [isExpandedMobile, setExpandedMobile] = useState(false);
+  let highlightColumns = [];
+  let regularColumns = [];
+  if (menuItem.dropdown.highlighted)
+    highlightColumns = chunk(menuItem.dropdown.highlighted, 4);
+  if (menuItem.dropdown.regular)
+    regularColumns = chunk(menuItem.dropdown.regular, 5);
+  const numberOfColumns = regularColumns.length + highlightColumns.length;
+
+  return (
+    <div className={classNames(styles.dropdown)}>
+      <div
+        onKeyDown={() => setExpandedMobile(!isExpandedMobile)}
+        role="button"
+        tabIndex={0}
+        onClick={() => setExpandedMobile(!isExpandedMobile)}
+        className={classNames(
+          'navbar-link',
+          styles.dropdown__button,
+          styles.navbar__item,
+        )}
+      >
+        {menuItem.title}
+      </div>
+      <div
+        className={classNames(
+          styles.dropdown__content,
+          {
+            [styles.dropdown__isActive]: isExpandedMobile,
+          },
+          { [styles.dropdown__content_oneColumn]: numberOfColumns === 1 },
+          { [styles.dropdown__content_twoColumns]: numberOfColumns === 2 },
+        )}
+      >
+        <div className={classNames('container', styles.container)}>
+          {highlightColumns.map(column => {
+            return <DropdownColumn columnItems={column} isHighlighted />;
+          })}
+          {regularColumns.map(column => {
+            return <DropdownColumn columnItems={column} />;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const DropdownColumn = ({ columnItems, isHighlighted }) => (
+  <div
+    className={classNames('navbar-column', styles.dropdown__column, {
+      [styles.dropdown__column_highlighted]: isHighlighted,
+    })}
+  >
+    {columnItems.map(dropdownItem => {
+      return (
         <Link
           key={gen.next().value}
-          className={classNames('navbar-item', 'is-tab')}
-          activeClassName="is-active"
-          to={cleanPath(subitem.path)}
-          onClick={onClick}
+          className={classNames(styles.navbar__item, styles.dropdown__item, {
+            [styles.dropdown__item__highlighted]: isHighlighted,
+          })}
+          activeClassName={classNames(
+            'is-active',
+            styles.dropdown__item_active,
+          )}
+          to={cleanPath(dropdownItem.path)}
         >
-          {subitem.title}
+          {dropdownItem.title}
         </Link>
-      ))}
-    </div>
+      );
+    })}
   </div>
 );
 

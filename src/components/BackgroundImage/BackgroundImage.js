@@ -9,22 +9,26 @@ const BackgroundImageSection = ({
   id,
   children,
   style,
-  cssFilter,
+  filterStyle,
   htmlTag,
 }) => {
   if (image && image.childImageSharp && image.childImageSharp.fluid) {
-    if (cssFilter)
+    if (filterStyle)
       return (
         <BackgroundImage
           Tag={htmlTag || 'section'}
           className={classNames(className, styles.image__section)}
           fluid={image.childImageSharp.fluid}
-          style={style}
+          style={{ ...style }}
           id={id}
         >
           <div
             className={styles.filter}
-            style={{ background: cssFilter, height: '100%' }}
+            style={{
+              height: '102%',
+              width: '100%',
+              ...filterStyle,
+            }}
           >
             {children}
           </div>
@@ -36,7 +40,7 @@ const BackgroundImageSection = ({
         Tag={htmlTag || 'section'}
         className={classNames(className, styles.image__section)}
         fluid={image.childImageSharp.fluid}
-        style={style}
+        style={{ ...style }}
         id={id}
       >
         {children}
@@ -51,11 +55,13 @@ const BackgroundImageSection = ({
         className={classNames(className)}
         style={{
           backgroundImage: `url(${image.publicURL})`,
+          ...style,
         }}
       >
         {children}
       </section>
     );
+  console.error('Check props for BackgroundImage');
   return <></>;
 };
 

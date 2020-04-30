@@ -33,7 +33,10 @@ export const AboutPagePrimaryTemplate = ({
       </section>
       <section className="section has-dark-background about-page-primary">
         <div className="container">
-          <PostContent content={content} className="content is-left-aligned" />
+          <PostContent
+            content={content}
+            className="content is-left-aligned links-are-buttons"
+          />
         </div>
       </section>
     </>

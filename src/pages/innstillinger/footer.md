@@ -1,36 +1,14 @@
 ---
 mainNavigation:
   - path: /solutions/atlantic-salmon-and-seafood/
-    title: Atlantic Salmon & Seafood
-  - path: /solutions/military-and-defense/
-    title: Military & Defense
-  - path: /solutions/schools-and-universities/
-    title: Schools & Universities
-  - path: /solutions/science-arctic-and-antarctic-surveillance/
-    title: Science Arctic & Antarctic Surveillance
-  - path: /solutions/well-and-fishing-boats/
-    title: Well & Fishing Boats
-  - path: /solutions/seabed-mining/
-    title: Seabed Mining
-  - path: /solutions/environmental-monitoring/
-    title: Environmental Monitoring
-  - path: /solutions/harbor-surveillance/
-    title: Harbor Surveillance
-  - path: /solutions/oil-gas-industry/
-    title: Oil & Gas Industry
-  - path: /solutions/underwater-drones-and-robotics/
-    title: Underwater Drones & Robotics
-  - path: /solutions/bridge-and-watercourse-monitoring/
-    title: Bridge & Watercourse Monitoring
-  - path: /solutions/river-and-wildlife-monitoring/
-    title: River & Wildlife Monitoring
-  - path: /solutions/hydropower-plants/
-    title: Hydropower Plants
+    title: Aquaculture
 secondaryNavigation:
   - path: /products/edge-intelligence
     title: Edge Intelligence
+  - path: /products/bluethink-go
+    title: BlueThink™ GO
   - path: /products/software-platform
-    title: IoT Bridge
+    title: BlueThink™ IoT Bridge
 thirdNavigation:
   - path: /projects/indisal
     title: Indisal
@@ -51,29 +29,35 @@ fourthNavigation:
     title: Ocean Space Center
   - path: /social-responsibility
     title: Sustainability impact
+  - path: /research-laboratories/
+    title: Research Laboratories
   - path: /about/partners/
     title: Partners
-  - path: /about/investors/
+  - path: /investors/
     title: Investors
   - path: /about/partnership/
-    title: Partnership
+    title: App Community
   - path: /locations
     title: Locations
 companyOffices:
   - addressItems:
       - SEALAB
-      - 'Transittgata 14, inngang A'
+      - Transittgata 14
+      - Entrance A
       - 7042 Trondheim
-    title: Main office
+      - Norway
+    title: Main office in Norway
   - addressItems:
       - Oslo Science Park
       - Gaustadalléen 21
-      - '0349 Oslo, Norge'
-    title: In Oslo
+      - 0349 Oslo
+      - Norway
+    title: In Norway
   - addressItems:
       - Berlin
       - EUREF-Campus 1-25
-      - '10829 Berlin, Tyskland'
+      - 10829 Berlin
+      - Germany
     title: In Germany
   - addressItems:
       - Niš

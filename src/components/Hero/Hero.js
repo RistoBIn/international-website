@@ -30,7 +30,7 @@ const Hero = ({
           <Button
             text={buttonText}
             className={classNames('is-primary', styles.button)}
-            link={buttonPath}
+            path={buttonPath}
           />
         </div>
       </section>

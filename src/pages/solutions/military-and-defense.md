@@ -3,21 +3,18 @@ templateKey: solution-page-secondary
 title: Military & Defense
 seoDescription: >-
   With underwater computer vision from SEALAB you can compare camera images with
-  photographic databases. In each case, human operators — not machines — make
+  photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
 heading: Military & Defense
+
+priority: 5
 description: >-
   With underwater computer vision from SEALAB you can compare camera images with
-  photographic databases. In each case, human operators — not machines — make
+  photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
 featuredimage: /img/AdobeStock_4649419.jpeg
 splitSections:
   - content: >-
-      With underwater computer vision from SEALAB you can compare camera images
-      with photographic databases. In each case, human operators — not machines
-      — make final judgments before anyone takes action. 
-
-
       When an image is captured in an electronic form, it can be treated as a
       piece of data. Computer vision techniques use this data to simulate human
       vision by recognizing objects within the image and by interpreting aspects

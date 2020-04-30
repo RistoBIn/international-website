@@ -72,58 +72,10 @@
   grid-gap: 11px;
   overflow: hidden;
 
-  .carousel__item {
-    width: 320px;
-    height: 404px;
-    grid-row: 1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    transition: all 1s ease;
-
-    &.carousel__item__active {
-      background-size: cover;
-    }
-    .carousel__item__content {
-      height: 100%;
-      margin: auto 0 !important;
-      padding-top: 120px;
-    }
-    .carousel__item__button,
-    .carousel__item__heading {
-      margin: auto;
-    }
-    .carousel__item__button {
-      max-width: 158px;
-      border: 1px solid $white;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 170%;
-    }
-    .carousel__item__heading {
-      font-weight: bold;
-      line-height: 200%;
-      font-family: $primaryFont;
-      font-size: 24px;
-      padding-bottom: 11px;
-    }
-    &:hover {
-      .carousel__item__button {
-        background-color: $white;
-        border: 1px solid $grey-light;
-        color: $dark;
-      }
-    }
-  }
   @media only screen and (min-width: $tablet) {
     grid-template-columns: repeat(auto-fill, [col] 450px);
     overflow: visible;
     width: 100vw;
     padding-top: 60px;
-    .carousel__item {
-      width: 450px;
-  
-    }
   }
 }

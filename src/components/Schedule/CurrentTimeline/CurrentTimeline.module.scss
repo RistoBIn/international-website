@@ -1,0 +1,41 @@
+@import '../../_variables.scss';
+
+
+
+.timeline {
+    display: none;
+    @media only screen and (min-width: $tablet) {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+        margin-bottom: 10px;
+        border-bottom: 1px solid $border-dark-background;
+        .timeline__time {
+            margin: 0 auto;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.progress {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(89.45deg, #1F2331 0.07%, #192446 99.96%);
+  border-left: 4px solid #569F6B;
+  border-radius: 3px;
+
+  .progress__bar {
+    background: #7BB7EF;
+    opacity: 0.2;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+  }
+}

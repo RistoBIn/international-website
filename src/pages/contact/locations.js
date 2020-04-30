@@ -122,11 +122,11 @@ export default class Index extends React.Component {
                 onClick={() => this.changeMap(trondheimCoordinates)}
                 onKeyPress={() => this.changeMap(trondheimCoordinates)}
               >
-                <h3>Main office</h3>
+                <h3>Main office in Norway</h3>
                 <p>
                   SEALAB OCEAN GROUP <br />
-                  Transittgata 14, inngang A<br />
-                  7042 Trondheim
+                  Transittgata 14, Entrance A<br />
+                  7042 Trondheim, Norway
                 </p>
               </div>
               <div
@@ -138,7 +138,7 @@ export default class Index extends React.Component {
                 onClick={() => this.changeMap(osloCoordinates)}
                 onKeyPress={() => this.changeMap(osloCoordinates)}
               >
-                <h3>Oslo</h3>
+                <h3>Norway</h3>
                 <p>
                   Oslo Science Park
                   <br />
@@ -176,7 +176,7 @@ export default class Index extends React.Component {
               >
                 <h3>Serbia</h3>
                 <p>
-                  In Niš
+                  Niš
                   <br />
                   Bore Vukmirovića 9
                   <br />

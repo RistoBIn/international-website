@@ -13,6 +13,8 @@ description: >-
 item1vsitem2:
   heading: Cloud vs Edge
   item1:
+    featuredimage: /img/cloud.svg
+    heading: Cloud computing
     items:
       - 'Massive, scalable compute power'
       - Unlimited storage
@@ -23,6 +25,8 @@ item1vsitem2:
       - Data sent over internet
       - Relatively high cost
   item2:
+    featuredimage: /img/edge-computing.svg
+    heading: Edge computing
     items:
       - Limited compute power
       - Limited storage
@@ -42,13 +46,16 @@ thirdSection:
   content: >-
     ## The role of Edge in 5G
 
+
     By 2023, 5G will make up around one-fifth of all mobile data traffic, where
     25% of the use-cases will depend on edge computing capabilities. The
     majority of the new 5G revenue potential is expected to come from enterprise
-    & IoT services, of which many will rely on edge computing. 
+    & IoT services, of which many will rely on edge computing.  Therefore edge
+    capabilities will be a fundamental technology as part of a 5G infrastructure
+    for any service provider.
 
-    Therefore edge capabilities will be a fundamental technology as part of a 5G
-    infrastructure for any service provider.
+
+    [5G-HEART](/projects/5G-heart/)
   featuredimage: /img/role-of-edge-in5g.svg
 ---
 

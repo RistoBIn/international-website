@@ -9,6 +9,8 @@ description: >-
   AI, IoT, Edge Computing and smart camera technology from SEALAB can minimize
   the risk of accidents on drilling rigs in the Oil & Gas Industry.
 featuredimage: /img/AdobeStock_177426726.jpeg
+
+priority: 6
 splitSections:
   - content: >-
       AI, IoT, Edge Computing and smart camera technology from SEALAB can

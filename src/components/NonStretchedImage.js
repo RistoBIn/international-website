@@ -6,7 +6,7 @@ const NonStretchedImage = props => {
 
   /* eslint-disable */
   if (props.childImageSharp && props.childImageSharp.fluid && props.childImageSharp.fluid.presentationWidth) {
-    return <Img fluid={props.childImageSharp.fluid} style={{maxWidth: props.childImageSharp.fluid.presentationWidth}} />;
+    return <Img fluid={props.childImageSharp.fluid} className={props.className? props.className : 'image'} style={{maxWidth: props.childImageSharp.fluid.presentationWidth}} />;
   }
   if (props.fluid && props.fluid.presentationWidth) {
     normalizedProps = {

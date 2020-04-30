@@ -3,10 +3,14 @@ import { Link } from 'gatsby';
 import classNames from 'classnames';
 import styles from './Button.module.scss';
 import AngleLeft from '../../img/angle-left.inline.svg';
+import { cleanPath } from '../../utils/paths';
 
 export const Button = ({ className, text, path }) => {
   return (
-    <Link to={path} className={classNames('button', styles.button, className)}>
+    <Link
+      to={cleanPath(path)}
+      className={classNames('button', styles.button, className)}
+    >
       <span>{text}</span>
       <span className="icon is-small">
         <ArrowRight />
@@ -17,7 +21,10 @@ export const Button = ({ className, text, path }) => {
 
 export const ButtonBack = ({ className, text, path }) => {
   return (
-    <Link to={path} className={classNames('button', styles.button, className)}>
+    <Link
+      to={cleanPath(path)}
+      className={classNames('button', styles.button, className)}
+    >
       <span className="icon is-small">
         <AngleLeft />
       </span>

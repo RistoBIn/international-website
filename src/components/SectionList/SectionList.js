@@ -33,7 +33,10 @@ const SectionList = ({ items, id }) => {
                   <TitleAndImage {...item} className={styles.leftColumn} />
                 }
                 rightColumn={
-                  <PostContent content={generateHTML(item.content)} />
+                  <PostContent
+                    className="content links-are-buttons"
+                    content={generateHTML(item.content)}
+                  />
                 }
                 rightColumnCSS={classNames(styles.rightColumn, {
                   [styles.subheading__exist]: item.subheading,

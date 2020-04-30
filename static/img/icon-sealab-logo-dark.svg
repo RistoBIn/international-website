@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="149px" height="53px" viewBox="0 0 149 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sealab-logo-hvit" fill="#192230" fill-rule="nonzero">
+            <g id="Icon">
+                <path d="M149,35.3333333 L149,0 L138.764706,0 L107,53 L131.352941,53 C141.099143,53 149,45.0903639 149,35.3333333 Z" id="Path"></path>
+                <polygon id="Path" points="87 53 98.5365854 53 130 0 118.463415 0"></polygon>
+                <polygon id="Path" points="64 53 80.1240876 53 111 0 94.8759124 0"></polygon>
+                <path d="M0,53 L59.6206897,53 L91,0 L60.9904314,0 C42.6197954,0 25.5961693,9.7678344 16.1445506,25.731712 L0,53 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
