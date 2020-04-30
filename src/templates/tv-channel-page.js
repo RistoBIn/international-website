@@ -61,7 +61,7 @@ export const TVChannelTemplate = ({
             rel="noopener noreferrer"
             href="http://sealab.live/"
           >
-            See BlueThink GO
+            See a demo of BlueThink GO
           </a>
         </div>
       </section>

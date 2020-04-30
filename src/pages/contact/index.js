@@ -43,7 +43,7 @@ export default class Index extends React.Component {
     return (
       <Layout
         seoTitle="Contact us"
-        seoDescription="Reach out us. We're looking forward to it"
+        seoDescription="Contact us today for a demo of our products, or just a nice chat about technology. You can contact us by email: contact@sealab.no, or phone: +47 729 09 111. We're looking forward to hear from you."
       >
         <section id="contact-form" className="section is-medium">
           <div className="container">

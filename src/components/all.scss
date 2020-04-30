@@ -616,9 +616,6 @@ footer.footer {
   }
   section#book-demo {
     border-top: 1px solid $border-dark-background;
-    .columns {
-      width: 100%;
-    }
     .cta {
       margin-left: auto;
       margin-right: 0;
@@ -628,24 +625,14 @@ footer.footer {
       font-weight: 600;
       font-size: 18px;
       &.is-red {
-        color: $red;
-        font-style: normal;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 25px;
         text-transform: none;
-        opacity: unset;
-        padding-bottom: 20px;
       }
-    }
-    p {
-      @include text_Light;
     }
     .contact-info {
       p {
         margin: auto 0;
         vertical-align: middle;
-        color: $white;
         font-weight: 600;
         line-height: 220%;
         span {
