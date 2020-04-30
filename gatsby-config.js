@@ -67,7 +67,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: [`/404/*`, `/admin/*`, '/privacy-policy/*'],
+        exclude: [`/404/*`, `/admin/*`, '/privacy-policy/*', '*/thanks/*'],
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
             let path = edge.node.path;
