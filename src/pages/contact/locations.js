@@ -53,8 +53,8 @@ export default class Index extends React.Component {
 
     return (
       <Layout
-        seoTitle="Contact us"
-        seoDescription="Reach out us. We're looking forward to it"
+        seoTitle="SEALAB - Locations"
+        seoDescription="SEALAB has multiple locations. With our main two offices in Norway, we also have offices in Germany and Serbia. Contact us for more information. "
       >
         <section className="map">
           <div id="google-maps">
