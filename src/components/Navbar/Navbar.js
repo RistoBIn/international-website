@@ -29,8 +29,9 @@ export const Navbar = ({
       >
         <div className={classNames('navbar-brand')}>
           <Link to="/" className="navbar-item">
-            <figure className="image">
+            <figure aria-hidden="true" className="image">
               <Logo />
+              <p style={{ display: 'none' }}>Home</p>
             </figure>
           </Link>
           <button
@@ -82,7 +83,7 @@ export const Navbar = ({
                 'is-hidden-tablet',
               )}
             >
-              <Link className="button is-white" to="/contact/">
+              <Link className="button is-primary" to="/contact/">
                 Contact
               </Link>
             </div>

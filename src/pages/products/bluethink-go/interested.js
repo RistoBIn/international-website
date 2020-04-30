@@ -30,7 +30,7 @@ export const OrderProduct = () => {
                 />
                 <ContactFormProduct
                   formName="bluethink-go"
-                  action="/products/bluethink-go/thanks"
+                  action="/products/bluethink-go/thanks/"
                 />
               </div>
             </div>

@@ -18,12 +18,7 @@ const Hero = ({
         className={classNames(className, 'section', 'has-dark-background')}
       >
         <div
-          className={classNames(
-            styles.title,
-            'container',
-            'title',
-            'has-text-centered',
-          )}
+          className={classNames(styles.title, 'container', 'has-text-centered')}
         >
           <h1 className={styles.heading}>{heading}</h1>
           <p className={styles.subtitle}>{subheading} </p>
