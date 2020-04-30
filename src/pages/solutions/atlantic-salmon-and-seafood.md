@@ -12,14 +12,6 @@ description: >-
   software gives you an unique insight into environmental conditions, fish
   welfare, feeding processes and biomass estimations.
 featuredimage: /img/IMG_0539_Adjusted_topimage.jpg
-btgo:
-  description: >-
-    BlueThink™ GO gives you remote access to livestream, real-time sensor data, weather data, sea conditions and much more, directly from your facility.
-
-    [BlueThink™ GO](/products/bluethink-go/)
-  featuredimage: /img/tablet-holding-portrait.jpg
-  heading: Access your Fish Farm from Anywhere, Anytime
-  subheading: BlueThink™ GO
 splitSections:
   - content: >-
       Aquaculture in Norway is already being improved by SEALAB's solutions
@@ -57,6 +49,16 @@ splitSections:
     heading: Full Traceability Throughout the Entire Production Process
     featuredimage: /img/Laksebilde_2.jpg
     subheading: 'With Data Collection we Provide '
+btgo:
+  heading: 'Access your Fish Farm from Anywhere, Anytime'
+  description: >-
+    BlueThink™ GO gives you remote access to livestream, real-time sensor data,
+    weather data, sea conditions and much more, directly from your facility.
+
+
+    [BlueThink™ GO](/products/bluethink-go/)
+  featuredimage: /img/tablet-holding-portrait.jpg
+  subheading: BlueThink™ GO
 imageSection:
   featuredimage: /img/aquaculture_algaes_cut.jpeg
   left: '### Seafood Production in the Ocean'
