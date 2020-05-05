@@ -29,7 +29,7 @@ menuPaths:
         - path: /solutions/well-and-fishing-boats/
           title: Well and Fishing Boats
     path: '#'
-    title: Solutions
+    title: Industries
   - dropdown:
       highlighted:
         - path: /products/edge-intelligence/
