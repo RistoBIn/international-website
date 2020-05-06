@@ -11,126 +11,7 @@ import { idMaker } from '../../utils/id-maker';
 const gen = idMaker();
 const year = new Date().getFullYear();
 
-const StyledFooter = styled.footer`
-  background: none;
-  margin: 0;
-  padding: 0;
-  .has-dark-background {
-    background-color: $footer-background;
-
-    a,
-    p {
-      font-weight: 600;
-      line-height: 220%;
-      color: $white;
-    }
-  }
-  section#book-demo {
-    border-top: 1px solid $border-dark-background;
-    .cta {
-      margin-left: auto;
-      margin-right: 0;
-    }
-    h3 {
-      color: $white;
-      font-weight: 600;
-      font-size: 18px;
-      &.is-red {
-        font-weight: bold;
-        text-transform: none;
-      }
-    }
-    .contact-info {
-      p {
-        margin: auto 0;
-        vertical-align: middle;
-        font-weight: 600;
-        span {
-          padding-right: 22px;
-          margin: auto 0;
-          svg {
-            margin: auto;
-            height: 18px;
-            width: 18px;
-          }
-        }
-      }
-    }
-
-    .text {
-      padding-right: 20px;
-    }
-    @media only screen and (min-width: $desktop) {
-      .cta {
-        text-align: right;
-        display: flex;
-        .text,
-        .button {
-          margin: auto;
-          margin-right: 0;
-          margin-bottom: 0;
-        }
-        .button {
-          max-width: 180px;
-          margin-left: 0;
-          align-self: flex-end;
-          line-height: 1em;
-        }
-      }
-    }
-  }
-  section#company-information,
-  section#footer-navigation {
-    h3 {
-      font-family: $primaryFont;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 19px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: $white;
-      opacity: 0.5;
-      margin-bottom: 20px;
-    }
-  }
-  section#copyright {
-    border-top: 1px solid $border-dark-background;
-    text-align: center;
-    svg {
-      max-width: 300px;
-      margin: auto 0;
-    }
-    .copyright-text {
-      margin: auto 0;
-      p {
-        font-size: 14px;
-        line-height: 19px;
-        color: $grey-light;
-        opacity: 0.5;
-        padding-bottom: 24px;
-      }
-      a {
-        font-size: 14px;
-        line-height: 19px;
-      }
-    }
-    @media only screen and (min-width: $desktop) {
-      display: flex;
-      .copyright-text {
-        align-self: flex-end;
-        margin-left: auto;
-        display: inline-flex;
-        & > * {
-          padding: 0 20px;
-        }
-        p {
-          padding-bottom: 0px;
-        }
-      }
-    }
-  }
-`;
+const StyledFooter = styled.footer``;
 
 const Footer = ({ phone, email, callToAction, companyOffices }) => {
   return (
@@ -159,18 +40,16 @@ const Footer = ({ phone, email, callToAction, companyOffices }) => {
             <div className="columns">
               <div className="column is-3 contact-info">
                 <h3 className="is-red">Contact</h3>
-                <a href={`mailto:${email}`}>
-                  <span>
+                <div>
+                  <a href={`mailto:${email}`}>
                     <MailIcon />
-                  </span>
-                  {email}
-                </a>
-                <p>
-                  <span>
-                    <PhoneIcon />
-                  </span>
+                    {email}
+                  </a>
+                </div>
+                <a href={`tel:${phone}`}>
+                  <PhoneIcon />
                   {phone}
-                </p>
+                </a>
               </div>
               <div className="column cta is-9">
                 <div className="text">

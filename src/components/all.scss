@@ -630,19 +630,20 @@ footer.footer {
       }
     }
     .contact-info {
-      p {
+      a {
+        display: inline-flex;
         margin: auto 0;
         vertical-align: middle;
         font-weight: 600;
         line-height: 220%;
-        span {
-          padding-right: 22px;
-          margin: auto 0;
-          svg {
-            margin: auto;
-            height: 18px;
-            width: 18px;
-          }
+        transition: $transition;
+        text-decoration: underline;
+      
+        svg {
+          margin: auto;
+          height: 18px;
+          width: 18px;
+          margin-right: 22px;
         }
       }
     }
