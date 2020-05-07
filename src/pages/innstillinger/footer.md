@@ -33,11 +33,11 @@ mainNavigation:
   - path: /solutions/atlantic-salmon-and-seafood/
     title: Aquaculture
 secondaryNavigation:
-  - path: /products/edge-intelligence
+  - path: /technologies/edge-intelligence
     title: Edge Intelligence
   - path: /products/bluethink-go
     title: BlueThink™ GO
-  - path: /products/software-platform
+  - path: /technologies/software-platform
     title: BlueThink™ IoT Bridge
 thirdNavigation:
   - path: /projects/indisal

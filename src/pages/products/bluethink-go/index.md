@@ -1,5 +1,5 @@
 ---
-templateKey: product-page-tertiary
+templateKey: product-page-btgo
 title: BlueThink™ GO
 heading: BlueThink™ GO
 subheading: 'Stay connected to your facility at all times, from anywhere!'
@@ -76,7 +76,7 @@ featuredData:
 ctaSection:
   cta:
     text: 'BlueThink™ IoT Bridge'
-    path: '/products/software-platform/'
+    path: '/technologies/software-platform/'
 customerQuotes:
   - heading: >-
       BlueThink™ GO has given me the opportunity to make important decisions, 

@@ -23,7 +23,7 @@ items:
     keyNumberBefore: $
 centeredSection:
   button:
-    path: /products/software-platform/
+    path: /technologies/software-platform/
     text: Read more
   description: 'SEALAB provides a space for people to connect, create and communicate'
   heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'

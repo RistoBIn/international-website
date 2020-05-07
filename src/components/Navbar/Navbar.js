@@ -176,10 +176,18 @@ const MenuDropDown = ({ menuItem }) => {
       >
         <div className={classNames('container', styles.container)}>
           {highlightColumns.map(column => {
-            return <DropdownColumn columnItems={column} isHighlighted />;
+            return (
+              <DropdownColumn
+                key={gen.next().value}
+                columnItems={column}
+                isHighlighted
+              />
+            );
           })}
           {regularColumns.map(column => {
-            return <DropdownColumn columnItems={column} />;
+            return (
+              <DropdownColumn key={gen.next().value} columnItems={column} />
+            );
           })}
         </div>
       </div>

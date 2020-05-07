@@ -182,6 +182,52 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
 
 
+#### PRODUCT PAGES #### 
+
+  - name: "product-template-hardware"
+    label: "Products - Hardware "
+    folder: "src/pages/products"
+    create: true
+    description: "Hardware sider med tittel, bilde og beskrivende tekst. Her kan man lage, endre eller slette artikler. Alle disse sidene havner under sealab.no/apper/navn-på-side. NB! Mellomrom på tittel oversettes til bindestrek."
+    filter: {field: "templateKey", value: "product-template-hardware"}
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-template-hardware"}
+      - {label: "SEO Description", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Tittel", name: "title", widget: "string" }
+      - label: "Bildekarusell"
+        name: featuredimages
+        widget: list
+        fields:
+          - {label: "Alt text", name: alt, widget: string, hint: "ALLE bilder må ha en text som beskriver hva bildet viser. Dette er krav for alt som ligger på nettet (søk WCAG på nett)"}
+          - {label: "Bilde", name: img, widget: image}
+      - {label: "Overskrift", name: "heading", widget: "string", hint: "H1 Overskrift"}
+      - {label: "Kort beskrivelse", name: "shortDescription", widget: "text"}
+      - label: "Fremhevet spesifikasjoner"
+        name: "highlightSpecifications"
+        widget: "list"
+        fields:
+          - {label: "Verdi", name: "heading", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+      - label: "Spesifikasjoner - resten"
+        name: allSpecifications
+        widget: list
+        fields:
+          - {label: "Tittel", name: heading, widget: string}
+          - {label: "Description", name: description, widget: text, required: false, hint: "Hvis denne er tom, legges det inn en checkmark"}
+      - {label: "Specifications description", name: "specificationDescription", widget: "string", hint: "Use this when describing all the specifications"}
+      - label: "Bilde og text - side om side"
+        name: textAndImages
+        hint: "Vises annenhver høyrestilt og venstrestilt bilde"
+        widget: list
+        fields:
+          - {label: "Tittel", name: heading, widget: string}
+          - {label: "Description", name: description, widget: text}
+          - {label: "Bilde", name: img, widget: image}
+      - {label: "Free text area centered", name: "body", widget: "markdown", }
+      
+      - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}
+  
+
 #### SIMPLE PAGES ####
 
   - name: "simple-pages"
@@ -199,16 +245,15 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
 
   
-#### PRODUCT PAGE TEMPLATE 1 ####
+#### TECHNOLOGIES PAGES ####
   - name: "product-pages-primary"
-    label: "Products"
+    label: "Technologies"
     description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence. New pages will be added at top-level of the pages, under www.sealab.blue/products/name-of-your-page/" 
     files:
-      - file: "src/pages/products/edge-intelligence.md"
+      - file: "src/pages/technologies/edge-intelligence.md"
         label: "Edge Intelligence"
-        name: "product-pages-primary"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-primary"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-primary"}
           - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
           - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
@@ -247,11 +292,10 @@ collections:
             fields:
               - {label: "Left image", name: "featuredimage", widget: image }
               - {label: "Right content", name: "content", widget: "markdown"}
-      - file: "src/pages/products/software-platform.md"
+      - file: "src/pages/technologies/software-platform.md"
         label: "BlueThink Bridge"
-        name: "product-pages-secondary"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page-secondary"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-secondary"}
           - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
           - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines like Google"}
@@ -324,6 +368,9 @@ collections:
               - label: "Right column"
                 name: "right"
                 widget: "markdown"
+
+
+
 
 #### SETTINGS ####
 
@@ -451,7 +498,7 @@ collections:
                 name: button
                 fields:
                   - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
-                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /technologies/edge-intelligence"}
 
           - label: Product section
             widget: object
@@ -529,7 +576,7 @@ collections:
                 name: button
                 fields:
                   - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
-                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /products/edge-intelligence"}
+                  - {label: "Button path", name: path, widget: string, hint: "Last part of url. Example: /technologies/edge-intelligence"}
           - label: Quotes section
             widget: list
             name: quotes

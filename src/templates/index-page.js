@@ -169,7 +169,7 @@ export const IndexPageTemplate = ({
             <Button
               className="is-secondary"
               text="Read more"
-              path="/products/edge-intelligence/"
+              path="/technologies/edge-intelligence/"
             />
             {productSection.features && productSection.features.length > 0 ? (
               <ProductFeatures>

@@ -43,9 +43,9 @@ splitSections:
       Curious about Sealab's core technologies?
 
 
-      [Edge Intelligence](/products/edge-intelligence/)
+      [Edge Intelligence](/technologies/edge-intelligence/)
 
-      [BlueThink IoT Bridge](/products/software-platform/)
+      [BlueThink IoT Bridge](/technologies/software-platform/)
     heading: Full Traceability Throughout the Entire Production Process
     featuredimage: /img/Laksebilde_2.jpg
     subheading: 'With Data Collection we Provide '

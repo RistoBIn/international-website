@@ -1,15 +1,19 @@
 import React from 'react';
 import styles from './HighlightedSpecifications.module.scss';
+import { idMaker } from '../../../utils/id-maker';
+
+const gen = idMaker();
 
 const HighlightedSpecifications = ({ highlighted }) => (
   <section className="section has-dark-background" id={styles.highlighted}>
     <div className="container">
       <p className="description--subtitle">
-        <strong>Spesifikasjoner</strong>
+        <strong>Specifications</strong>
       </p>
       <div className={styles.highlighted__wrapper}>
         {highlighted.map(spec => (
           <HighlightedSpec
+            key={gen.next().value}
             heading={spec.heading}
             description={spec.description}
           />

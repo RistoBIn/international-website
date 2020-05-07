@@ -32,9 +32,9 @@ menuPaths:
     title: Industries
   - dropdown:
       highlighted:
-        - path: /products/edge-intelligence/
+        - path: /technologies/edge-intelligence/
           title: Edge Intelligence
-        - path: /products/software-platform/
+        - path: /technologies/software-platform/
           title: BlueThink™ IoT Bridge
         - path: /products/bluethink-go/
           title: BlueThink™ GO

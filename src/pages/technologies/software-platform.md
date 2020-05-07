@@ -1,5 +1,5 @@
 ---
-templateKey: product-page-secondary
+templateKey: technology-page-secondary
 title: "BlueThink |\_Internet of Things"
 heading: BlueThink IoT Bridge
 seoDescription: >-

@@ -1,5 +1,5 @@
 ---
-templateKey: product-page-primary
+templateKey: technology-page-primary
 title: Edge intelligence
 heading: SEALAB's Edge Computing will power the Ocean Space. Anywhere. Anytime.
 seoDescription: >-

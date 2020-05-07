@@ -9,7 +9,7 @@ import NonStretchedImage from '../components/NonStretchedImage';
 import Button from '../components/Button';
 import SectionListAlternating from '../components/SectionListAlternating';
 
-export const ProductPageTemplate = ({
+export const TechnologyPageTemplate = ({
   contentComponent,
   description,
   heading,
@@ -143,7 +143,7 @@ export const ProductPageTemplate = ({
   );
 };
 
-const ProductPage = ({ data }) => {
+const TechnologyPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   if (!frontmatter) return <></>;
   const {
@@ -161,7 +161,7 @@ const ProductPage = ({ data }) => {
 
   return (
     <Layout seoTitle={title} seoDescription={seoDescription}>
-      <ProductPageTemplate
+      <TechnologyPageTemplate
         content={data.markdownRemark.html}
         contentComponent={HTMLContent}
         heading={heading}
@@ -177,10 +177,10 @@ const ProductPage = ({ data }) => {
   );
 };
 
-export default ProductPage;
+export default TechnologyPage;
 
 export const pageQuery = graphql`
-  query ProductPageSecondaryById($id: String!) {
+  query TechnologyPageSecondaryById($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

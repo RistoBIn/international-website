@@ -29,12 +29,12 @@ const Specifications = ({ highlighted, all }) => {
     if (!isSpecOpen)
       return (
         <span>
-          Alle spesifikasjoner <Arrow />
+          All specifications <Arrow />
         </span>
       );
     return (
       <span>
-        Lukk spesifikasjoner <Arrow isArrowDown />
+        Close specifications <Arrow isArrowDown />
       </span>
     );
   };
