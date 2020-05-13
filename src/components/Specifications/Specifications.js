@@ -16,7 +16,7 @@ const isSpecificationArray = array => {
   return true;
 };
 
-const Specifications = ({ highlighted, all }) => {
+const Specifications = ({ highlighted, all, children }) => {
   const [isSpecOpen, setSpecOpen] = useState(false);
   if (!isSpecificationArray(highlighted) && !isSpecificationArray(all))
     return <></>;
@@ -42,7 +42,25 @@ const Specifications = ({ highlighted, all }) => {
     <>
       <HighlightedSpecifications highlighted={highlighted} />
 
-      {isSpecOpen ? <SpecificationList list={all} /> : <></>}
+      {isSpecOpen ? (
+        <section className="section has-dark-background">
+          <div className={classNames('container', styles.container)}>
+            <SpecificationList list={all} />
+          </div>
+          <div
+            className={classNames(
+              styles.container,
+              'container',
+              'has-text-centered',
+            )}
+          >
+            {children}
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
+
       <section
         className={classNames('section', 'has-dark-background', styles.section)}
       >

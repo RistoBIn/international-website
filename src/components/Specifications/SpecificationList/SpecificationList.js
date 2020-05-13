@@ -2,18 +2,11 @@ import React from 'react';
 import styles from './SpecificationList.module.scss';
 
 const SpecificationList = ({ list }) => (
-  <section
-    className="section has-dark-background"
-    id={styles.specificationList}
-  >
-    <div className="container">
-      <div className={styles.list}>
-        {list.map(spec => (
-          <ListItem heading={spec.heading} description={spec.description} />
-        ))}
-      </div>
-    </div>
-  </section>
+  <div className={styles.list}>
+    {list.map(spec => (
+      <ListItem heading={spec.heading} description={spec.description} />
+    ))}
+  </div>
 );
 
 const ListItem = ({ heading, description }) => {
