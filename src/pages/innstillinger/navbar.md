@@ -53,7 +53,7 @@ menuPaths:
   - dropdown:
       highlighted:
         - path: /investors/
-          title: Investing in SEALAB
+          title: For investors
         - path: /about/vision-strategy/
           title: Vision & Strategy
         - path: /about/business-model/
@@ -65,24 +65,26 @@ menuPaths:
   - dropdown:
       highlighted:
         - path: /about/partnership/
-          title: App Community
+          title: For potential partners
         - path: /press/
           title: Press
         - path: /history/
-          title: History
+          title: Our history
         - path: /research-laboratories/
-          title: Research Laboratories
+          title: R&D in SEALAB
       regular:
         - path: /about/social-responsibility/
           title: Sustainability Impact
         - path: /about/innovation-cause-we-can/
           title: Innovation ‘Cause We Can
         - path: /about/sealab-osc/
-          title: Ocean Space Center
+          title: 'Ocean Space Center '
         - path: /about/partners/
-          title: Partners
+          title: SEALAB's existing partners
         - path: /contact/locations/
           title: Locations
+        - path: /contact/
+          title: Contact
     path: '#'
     title: About
 ---

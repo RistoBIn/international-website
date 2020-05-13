@@ -10,11 +10,11 @@ export const OrderProduct = () => {
     <>
       <Layout>
         <Hero
-          heading="BlueThink™ GO - Report interest"
+          heading="BlueThink™ GO - Order product"
           subheading="The next generation of control room is mobile; report your interest today."
           backgroundImage={backgroundImage}
           buttonPath="#report-interest"
-          buttonText="Report interest"
+          buttonText="Interested? Contact us for more information"
         />
 
         <section id="meld-interesse" className="section has-dark-background">
@@ -22,10 +22,8 @@ export const OrderProduct = () => {
             <div className="columns">
               <div className="column is-6 is-offset-3 has-text-centered">
                 <Title
-                  title="Report interest"
-                  description="Report your interest to be sent further information about the service, 
-                              along with information about pricing. You will be contacted shortly after
-                              the below form is filled out and sent."
+                  title="Interested? Contact us for more information"
+                  description="Contact us if you're interested. We're looking forward to tell you more about what BlueThink GO is, and what it is going to be. "
                   position="center"
                 />
                 <ContactFormProduct

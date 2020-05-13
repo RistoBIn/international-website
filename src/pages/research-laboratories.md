@@ -1,13 +1,13 @@
 ---
 templateKey: research-page
-title: Research Laboratories
-heading: Research Laboratories
-description: >
-  What do you think SEALAB Research Laboratories would have been without curious
-  and highly qualified people?
-seoDescription: >-
-  What do you think SEALAB Research Laboratories would have been without curious
-  and highly qualified people?
+title: R&D - Research Laboratories | SEALAB
+heading: R&D at SEALAB
+description: >-
+  What do you think R&D at SEALAB would have been without curious and highly
+  qualified people?
+seoDescription: >
+  We're constantly developing and testing new technological solutions through
+  R&D. Learn more about our strong creative DNA.
 featuredimages:
   - image: /img/research_markovic.jpg
   - image: /img/research_camera.JPG
@@ -17,7 +17,8 @@ centeredSection:
     path: /contact/
     text: Contact us
   content: >-
-    ## Research and Development Overview
+    ## Our DNA is strong
+
 
     Our Research Laboratories are constantly developing and testing new
     technological solutions. SEALAB’s DNA is very strong when we talk about
@@ -32,43 +33,43 @@ careers:
   buttons:
     - path: /contact/
       text: Contact us
-  heading: Cooperation and client relationships
+  heading: Our R&D department is growing
   left: >-
-    The Team at SEALAB’s Research Laboratory is reinventing the digital world
-    every day. In everything we do, we are looking for those breakthrough
-    product experiences. We strive to do solutions smaller, faster, and better.
-    Our discoveries make completely new things possible in the Ocean Space, in
-    water and in harsh environments. And if computing capabilities are not in
-    demand, we make it possible thanks to our technology. Every day we try to
-    make a difference.
+    SEALAB’s R&D team is reinventing the digital world every day. In everything
+    we do, we are looking for breakthroughs in our product experiences. We
+    strive to do solutions smaller, faster, and better. Our discoveries make
+    completely new things possible in the Ocean Space, in water and in harsh
+    environments. And if computing capabilities are not in demand, we make it
+    possible thanks to our technology. Every day we try to make a difference.
   positions:
     heading: Positions
     items:
-      - Robotics Engineers
-      - Embedded Software Engineers
-      - Front End Software Engineers
-      - Machine Learning Engineers
+      - Robotics engineers
+      - Embedded software engineers
+      - Frontend software engineers
+      - Machine learning engineers
       - Scrum Masters
-      - Manufacturing Engineers
-      - Marketing and Creative Storytellers
-  subheading: SEALAB’s Research Laboratory is growing
+      - Manufacturing engineers
+      - Marketing and creative storytellers
+  subheading: Career at SEALAB
 splitSection:
   featuredimage: /img/research_assembly_in_hand.PNG
   left: >-
     ### What does it mean to give everyone the opportunity to see underwater?
 
-    The sea of the earth must be protected. At the same time, it is helping to
-    provide food to the world more than ever. If this is done correctly, the
-    road ahead will be sustainable. Our strong vision helps the most talented
-    employees to work for the company. Not only work, but to create incredible
-    underwater technology for AI, Edge Computing, underwater cameras and data
-    traffic between Edge and Cloud.
+
+    The global ocean must be protected. Especially because it is helping to
+    provide more food to the world more than ever. If this is done correctly,
+    the road ahead will be sustainable. Our strong vision helps the most
+    talented employees to work for the company. Not only work, but to create
+    incredible underwater technology for AI, Edge Computing, underwater cameras
+    and data traffic between Edge and Cloud.
 backgroundSection:
   bgimage: /img/water_dark_light_technology.jpg
   heading: Can creativity be stimulated if we do not set boundaries?
   description: >-
-    *The founders of SEALAB already looking at various opportunities to develop
-    technology to do research under the ice on Jupiter’s moon, Europa.*
+    *The founders of SEALAB are already looking at various opportunities to
+    develop technology to do research under the ice on Jupiter’s moon, Europa.*
 ---
 ![](/img/research_hardware.JPG)
 
