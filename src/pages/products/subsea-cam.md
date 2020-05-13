@@ -50,13 +50,15 @@ allSpecifications:
     heading: Pan
 textAndImages:
   - description: >-
+      ## Internet of Things
+
       In addition to the underwater camera, the SEALAB camera system integrates underwater light, winch, environmental sensors and software. These communicate together through IoT and support algorithms for machine learning and artificial intelligence.
-    heading: Internet of Things
-    img: /img/5g-bluethink.png
+    featuredimage: /img/5g-bluethink.png
   - description: >-
+      ## Produced in Norway
+
       The new sCAM is both developed and produced in Trondheim at SEALAB Factory. Here, the characteristics of each camera is tested in detail to ensure high quality. 
-    heading: Produced in Norway
-    img: /img/asbjorn_camera_edit.jpg
+    featuredimage: /img/asbjorn_camera_edit.jpg
 seoDescription: >-
   SEALAB offers high performance underwater cameras for Machine Vision and AI in harsh environments. The cameras are strong, very durable, as well as lightweight and compact in size.
 ---

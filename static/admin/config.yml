@@ -220,9 +220,16 @@ collections:
         hint: "Vises annenhver høyrestilt og venstrestilt bilde"
         widget: list
         fields:
-          - {label: "Tittel", name: heading, widget: string}
-          - {label: "Description", name: description, widget: text}
-          - {label: "Bilde", name: img, widget: image}
+          - {label: "Description", name: description, widget: markdown}
+          - {label: "Bilde", name: featuredimage, widget: image}
+          - label: "Content Button"
+            name: "button"
+            hint: "Is placed right under Content text"
+            widget: "object"
+            required: false
+            fields:
+              - {label: Title, name: text, widget: string, required: false}
+              - {label: Link path, name: path, widget: string, required: false}
       - {label: "Free text area centered", name: "body", widget: "markdown", }
       
       - {label: "Tags", name: "tags", required: false, widget: "list", hint: "Denne kan brukes til å la brukeren finne relaterte artikler. OBS! Denne kan stå tom."}

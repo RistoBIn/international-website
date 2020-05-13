@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import Slideshow from '../components/Slideshow';
 // import Button from '../components/Button';
 import Specifications from '../components/Specifications';
-import SectionList from '../components/SectionList';
+import SectionList from '../components/SectionListAlternating';
 
 import Content, { HTMLContent } from '../components/Content';
 import generateHTML from '../utils/generateHTML';
@@ -28,7 +28,6 @@ export const HardwarePageTemplate = ({
   content,
 }) => {
   const PostContent = contentComponent || Content;
-  console.log(textAndImages);
 
   return (
     <>
@@ -78,7 +77,10 @@ export const HardwarePageTemplate = ({
           </StyledCenteredText>
         </div>
       </section>
-      <SectionList items={textAndImages} />
+      <SectionList
+        className="section has-dark-background"
+        sections={textAndImages}
+      />
     </>
   );
 };
@@ -149,9 +151,8 @@ export const HardwarePageQuery = graphql`
           description
         }
         textAndImages {
-          heading
           description
-          img {
+          featuredimage {
             childImageSharp {
               fluid(maxHeight: 790) {
                 ...GatsbyImageSharpFluid_tracedSVG
