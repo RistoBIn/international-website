@@ -44,13 +44,13 @@ careers:
   positions:
     heading: Positions
     items:
-      - Robotics Engineers
-      - Embedded Software Engineers
-      - Front End Software Engineers
-      - Machine Learning Engineers
+      - Robotics engineers
+      - Embedded software engineers
+      - Frontend software engineers
+      - Machine learning engineers
       - Scrum Masters
-      - Manufacturing Engineers
-      - Marketing and Creative Storytellers
+      - Manufacturing engineers
+      - Marketing and creative storytellers
   subheading: Career at SEALAB
 splitSection:
   featuredimage: /img/research_assembly_in_hand.PNG
