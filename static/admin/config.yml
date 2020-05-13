@@ -11,7 +11,6 @@ logo_url: /img/sealab-blue.svg
 display_url:  https://www.sealab.no/
 site_url:  https://www.sealab.no/
 publish_mode: editorial_workflow
-show_preview_links: true
 collections:
 
 #### SOLUTION PAGES TEMPLATES ####
