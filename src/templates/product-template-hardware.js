@@ -1,5 +1,6 @@
 import React from 'react';
 // import classNames from 'classnames';
+import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Slideshow from '../components/Slideshow';
@@ -9,6 +10,11 @@ import SectionList from '../components/SectionList';
 
 import Content, { HTMLContent } from '../components/Content';
 import generateHTML from '../utils/generateHTML';
+
+const StyledCenteredText = styled.div`
+  font-size: 24px;
+  line-height: 170%;
+`;
 
 export const HardwarePageTemplate = ({
   featuredimages,
@@ -63,8 +69,13 @@ export const HardwarePageTemplate = ({
         id="hardware-citation"
         className="section has-dark-background is-medium free-text-centered"
       >
-        <div className="container">
-          <PostContent content={content} />
+        <div className="container centered">
+          <StyledCenteredText>
+            <PostContent
+              className="content free-text-centered"
+              content={content}
+            />
+          </StyledCenteredText>
         </div>
       </section>
       <SectionList items={textAndImages} />
