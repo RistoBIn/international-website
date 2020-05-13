@@ -94,7 +94,7 @@ export const pageQuery = graphql`
             extension
             childImageSharp {
               fluid(maxWidth: 405, quality: 80) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp_noBase64
               }
             }
           }

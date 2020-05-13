@@ -436,13 +436,13 @@ export const pageQuery = graphql`
               publicURL
               regular: childImageSharp {
                 fluid(maxHeight: 148, quality: 60) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                   presentationWidth
                 }
               }
               fullwidth: childImageSharp {
                 fluid(maxWidth: 350, maxHeight: 220, quality: 70) {
-                  ...GatsbyImageSharpFluid_noBase64
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                   presentationWidth
                 }
               }

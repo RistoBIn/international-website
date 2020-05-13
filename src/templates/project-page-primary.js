@@ -99,7 +99,7 @@ export const pageQuery = graphql`
         featuredImage {
           childImageSharp {
             fluid(maxHeight: 600) {
-              ...GatsbyImageSharpFluid_noBase64
+              ...GatsbyImageSharpFluid_withWebp_noBase64
               presentationWidth
             }
           }
@@ -121,7 +121,7 @@ export const pageQuery = graphql`
               extension
               childImageSharp {
                 fluid(maxWidth: 405, quality: 100) {
-                  ...GatsbyImageSharpFluid_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                   presentationWidth
                 }
               }

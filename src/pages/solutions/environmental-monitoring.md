@@ -7,7 +7,7 @@ seoDescription: >-
 heading: Environmental monitoring
 description: Increasing need for environmental monitoring
 priority: 7
-featuredimage: /img/AdobeStock_68760718_topimage.jpeg
+featuredimage: /img/adobe_landscape_mountains_red.jpg
 splitSections:
   - content: >-
       Both watercourses and the ocean space will need more monitoring than ever.

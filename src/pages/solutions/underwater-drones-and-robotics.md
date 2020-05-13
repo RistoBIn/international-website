@@ -9,7 +9,7 @@ priority: 2
 description: >-
   SEALAB have a clear view that machine vision is an important enabling
   technology in robotics and unmanned vehicles.
-featuredimage: /img/AdobeStock_180592840_topimage.jpeg
+featuredimage: /img/adobe_drones_robotics_cropped.jpg
 splitSections:
   - content: >-
       Underwater drones equipped with high-tech sensors and edge computing in
@@ -29,6 +29,6 @@ splitSections:
       aboard an unmanned underwater drone or vessel at the surface, for example,
       you then have to determine what to do about what is seen, which gets into
       autonomy.
-    featuredimage: /img/AdobeStock_180592840.jpeg
+    featuredimage: /img/adobe_drones_robotics.jpg
 ---
 

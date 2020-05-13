@@ -13,7 +13,7 @@ description: >-
   Underwater drones equipped with high-tech sensors and edge computing in
   participation with smart cameras could one day patrol the icy waters of both
   Arctic and Antarctic
-featuredimage: /img/AdobeStock_19279258.jpeg
+featuredimage: /img/adobe_arctic_ice_surface.jpg
 splitSections:
   - content: >-
       ## Antarctic Surveillance

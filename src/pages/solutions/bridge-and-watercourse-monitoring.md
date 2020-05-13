@@ -4,7 +4,7 @@ title: Bridge and Watercourse Monitoring
 seoDescription: Climate Changes are increasing the need for bridge and watercourse monitoring
 heading: Bridge and Watercourse Monitoring
 description: Climate Changes are increasing the need for bridge and watercourse monitoring
-featuredimage: /img/AdobeStock_242526706.jpeg
+featuredimage: /img/adobe_bridge_monitoring_watercourse.jpg
 priority: 7
 splitSections:
   - content: >-

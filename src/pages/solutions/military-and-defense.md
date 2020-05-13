@@ -12,7 +12,7 @@ description: >-
   With underwater computer vision from SEALAB you can compare camera images with
   photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
-featuredimage: /img/AdobeStock_4649419.jpeg
+featuredimage: /img/adobe_military_helicopters_boat.jpeg
 splitSections:
   - content: >-
       When an image is captured in an electronic form, it can be treated as a

@@ -132,7 +132,7 @@ export const HardwarePageQuery = graphql`
           img {
             childImageSharp {
               fluid(maxHeight: 900) {
-                ...GatsbyImageSharpFluid_noBase64
+                ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
             }
@@ -155,7 +155,7 @@ export const HardwarePageQuery = graphql`
           featuredimage {
             childImageSharp {
               fluid(maxHeight: 790) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
             }

@@ -8,10 +8,10 @@ description: >-
 seoDescription: >-
   The Clean Ocean Initiative is SEALABs contribution to keeping the oceans clean
   from plastic and other human waste.
-featuredimage: /img/AdobeStock_194067101.jpeg
+featuredimage: /img/adobe_turtle_plastic_ocean_clean.jpg
 featuredimageCaption: ''
 splitSection:
-  bgimage: /img/AdobeStock_174371043.jpeg
+  bgimage: /img/adobe_man_diving.jpg
   content: >-
     *For most of history, man has had to fight nature to survive; in this
     century he is beginning to realize that, in order to survive, he must

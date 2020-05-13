@@ -11,7 +11,7 @@ description: >-
   It has become increasingly critical that ports, coastal installations, and oil
   rigs around the world be safeguarded against unwanted intruders, who may
   intend sabotage, unlawful entry, or terror attacks.
-featuredimage: /img/AdobeStock_282750626.jpeg
+featuredimage: /img/adobe_harbor_surveillance_buildings.jpg
 splitSections:
   - content: >-
       It has become increasingly critical that ports, coastal installations, and
@@ -30,7 +30,7 @@ splitSections:
       very well in combination with ie Diver Detection Sonar (DDS), Surveillance
       radar and Electro-optical devices (CCD and FLIR).
     heading: Safeguarded Against Unwanted Intruders
-    featuredimage: /img/AdobeStock_187277566.jpeg
+    featuredimage: /img/adobe_harbor_surveillance.jpg
     subheading: Realtime Camera Surveillance with Computer Vision
 ---
 

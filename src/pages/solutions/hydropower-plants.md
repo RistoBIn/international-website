@@ -10,7 +10,7 @@ seoDescription: >-
 heading: Hydropower Plants
 priority: 7
 description: Surveillance of Hydroelectric Power Plants
-featuredimage: /img/AdobeStock_59878462.jpeg
+featuredimage: /img/adobe_hydropower_plants.jpeg
 splitSections:
   - content: >-
       Large systems, such as large manufacturing or power plants,
