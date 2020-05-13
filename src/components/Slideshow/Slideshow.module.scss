@@ -3,7 +3,7 @@
 .slider {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 83vh;
   max-height: 100%;
   overflow: hidden;
 
@@ -15,7 +15,7 @@
   .previous,
   .next {
     transition: $transition;
-    top: 60vh !important;
+    top: 50vh !important;
     #background {
       fill-opacity: 0.2;
     }
@@ -36,12 +36,9 @@
   }
   @media only screen and (min-width: $desktop) {
     height: 50vh;
-    .image {
-      margin-top: 8vh !important;
-    }
     .previous,
     .next {
-      top: 35vh !important;
+      top: 30vh !important;
     }
   }
 }

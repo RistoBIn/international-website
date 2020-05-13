@@ -3,14 +3,13 @@ templateKey: product-template-hardware
 title: Underwater camera to use in harsh environments. Produced in Norway. 
 featuredimages:
   - alt: sCAM Front
-    img: /img/sCAM_front.png
-  - alt: sCAM Mainhouse
-    img: /img/sCAM_mainhouse.png
-  - alt: sCAM Mainhouse second
-    img: /img/sCAM_mainhouse_2.png
-  - alt: sCAM Up right
-    img: /img/sCAM_up_right.png
-heading: Meet our underwater camera for harsh environments - sCAM
+    img: /img/camera_render_forward_2020.png
+  - alt: sCAM Left side
+    img: /img/sCAM_render_left_may2020.png
+  - alt: sCAM Right side
+    img: /img/sCAM_render_right_may2020.png
+heading: Meet sCAM - Our underwater camera for harsh environments
+
 shortDescription: >-
     The new SEALAB-camera is completely groundbreaking in marine environments and uses up to six lenses. The optics are optimized for use in several tasks in the Ocean Space. SEALAB's basic camera DNA is of course essential. The data platform has several separate lenses that are combined and used together. Thus, you get both 2D and 3D images using advanced software and Artificial Intelligence that gives you pictures in unparalleled detail, regardless of lighting conditions - regardless of depth.
 
@@ -27,10 +26,10 @@ highlightSpecifications:
   - description: 'Weight in Water'
     heading: '5 kg'
 allSpecifications:
-  - description: 'Video Resolution (3 lenses)'
-    heading: '3840x2160'
-  - description: 'Video Resolution (6 lenses)'
-    heading: '7680x2160'
+  - description: '3840x2160'
+    heading: 'Video Resolution (3 lenses)'
+  - description: '7680x2160'
+    heading: 'Video Resolution (6 lenses)'
   - description: '22 steps'
     heading: Aperture
   - description: 1/1 - 1/10000 s

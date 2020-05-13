@@ -8,10 +8,7 @@ import Specifications from '../components/Specifications';
 import SectionList from '../components/SectionList';
 
 import Content, { HTMLContent } from '../components/Content';
-
-function isEven(n) {
-  return n % 2 === 0;
-}
+import generateHTML from '../utils/generateHTML';
 
 export const HardwarePageTemplate = ({
   featuredimages,
@@ -19,11 +16,14 @@ export const HardwarePageTemplate = ({
   shortDescription,
   highlightSpecifications,
   allSpecifications,
+  specificationDescription,
   textAndImages,
   contentComponent,
   content,
 }) => {
   const PostContent = contentComponent || Content;
+  console.log(textAndImages);
+
   return (
     <>
       <section className="section has-light-dark-background">
@@ -52,7 +52,12 @@ export const HardwarePageTemplate = ({
       <Specifications
         highlighted={highlightSpecifications}
         all={allSpecifications}
-      />
+      >
+        <PostContent
+          className="content"
+          content={generateHTML(specificationDescription)}
+        />
+      </Specifications>
 
       <section
         id="hardware-citation"
@@ -76,6 +81,7 @@ const HardwarePage = ({ data }) => {
     heading,
     shortDescription,
     seoDescription,
+    specificationDescription,
     highlightSpecifications,
     allSpecifications,
     textAndImages,
@@ -93,6 +99,7 @@ const HardwarePage = ({ data }) => {
         highlightSpecifications={highlightSpecifications}
         allSpecifications={allSpecifications}
         textAndImages={textAndImages}
+        specificationDescription={specificationDescription}
       />
     </Layout>
   );
@@ -111,7 +118,7 @@ export const HardwarePageQuery = graphql`
           alt
           img {
             childImageSharp {
-              fluid(maxHeight: 300) {
+              fluid(maxHeight: 900) {
                 ...GatsbyImageSharpFluid_noBase64
                 presentationWidth
               }
@@ -121,6 +128,7 @@ export const HardwarePageQuery = graphql`
         heading
         shortDescription
         seoDescription
+        specificationDescription
         highlightSpecifications {
           heading
           description
