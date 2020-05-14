@@ -192,8 +192,8 @@ collections:
     filter: {field: "templateKey", value: "product-template-hardware"}
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-template-hardware"}
-      - {label: "SEO Description", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - {label: "Tittel", name: "title", widget: "string" }
+      - {label: "SEO Description", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
       - label: "Bildekarusell"
         name: featuredimages
         widget: list
@@ -253,12 +253,13 @@ collections:
 
   
 #### TECHNOLOGIES PAGES ####
-  - name: "product-pages-primary"
+  - name: "technologies"
     label: "Technologies"
     description: "These are the products. Right now it is possible to create even more pages with the template for Edge Intelligence. New pages will be added at top-level of the pages, under www.sealab.blue/products/name-of-your-page/" 
     files:
       - file: "src/pages/technologies/edge-intelligence.md"
         label: "Edge Intelligence"
+        name: technology-page-primary
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-primary"}
           - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
@@ -301,6 +302,7 @@ collections:
               - {label: "Right content", name: "content", widget: "markdown"}
       - file: "src/pages/technologies/software-platform.md"
         label: "BlueThink Bridge"
+        name: "technology-page-secondary"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-secondary"}
           - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}

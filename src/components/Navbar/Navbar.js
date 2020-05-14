@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import classNames from 'classnames';
-import { number } from 'prop-types';
 import Logo from '../../img/logo.inline.svg';
 import EnvelopeIcon from '../../img/envelope.inline.svg';
 import PhoneIcon from '../../img/phone.inline.svg';
@@ -12,7 +11,7 @@ import { chunk } from '../../utils/lodash';
 
 const gen = idMaker();
 
-export const Navbar = ({
+const Navbar = ({
   className,
   menuPaths,
   phone = '+47 729 09 111',

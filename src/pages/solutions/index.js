@@ -11,8 +11,8 @@ const SolutionsPageTemplate = () => {
       <Section>
         <h1 className="section--title">All solutions</h1>
         <p className="section--description">
-          SEALAB's products can be applied almost anywhere. Find your solution
-          here.
+          SEALAB&apos;s products can be applied almost anywhere. Find your
+          solution here.
         </p>
       </Section>
       <Section>

@@ -7,24 +7,16 @@ import { idMaker } from '../../../utils/id-maker';
 const gen = idMaker();
 
 const CurrentTimeline = ({ heading, event }) => {
-  if (!heading || !event || !event.friendlyName) return <></>;
+  const [eventProgress, setEventProgress] = useState(0);
+
+  if (!heading || !event) return <></>;
+
   const {
     friendlyName,
     state,
     start_time: startTime,
     stop_time: endTime,
   } = event;
-
-  const [eventProgress, setEventProgress] = useState(0);
-
-  const calculateProgress = () => {
-    const start = new Date(Date.parse(startTime)).getTime();
-    const stop = new Date(Date.parse(endTime)).getTime();
-    const duration = stop - start;
-    const elapsed = new Date().getTime() - start;
-    const progress = Math.min(elapsed / duration, 1.0);
-    setEventProgress(progress);
-  };
 
   const generateTimeline = () => {
     const timeList = [];
@@ -48,18 +40,27 @@ const CurrentTimeline = ({ heading, event }) => {
     });
     return strTimeList;
   };
-
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const intervalId = setTimeout(() => {
+      const calculateProgress = () => {
+        const start = new Date(Date.parse(startTime)).getTime();
+        const stop = new Date(Date.parse(endTime)).getTime();
+        const duration = stop - start;
+        const elapsed = new Date().getTime() - start;
+        const progress = Math.min(elapsed / duration, 1.0);
+        setEventProgress(progress);
+      };
       calculateProgress();
     }, 1000);
     return () => {
       clearTimeout(intervalId);
     };
-  }, [eventProgress]);
+  }, [endTime, eventProgress, startTime]);
 
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
+
   return (
     <div className={styles.currentTimeline}>
       {heading}

@@ -79,18 +79,21 @@
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:lint:fix": "eslint --ignore-path .gitignore . --fix && prettier --ignore-path .gitignore --write \"**/*.+(tsx|js|json|md)\""
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb": "^18.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.4.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.1.2",
+    "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-sass": "^2.1.27",
     "prettier": "^1.18.2"
   }

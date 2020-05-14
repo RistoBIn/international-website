@@ -64,7 +64,11 @@ const Footer = ({ phone, email, callToAction, companyOffices }) => {
               </div>
             </div>
           </section>
-          <section id="copyright" className="section is-small">
+          <section
+            aria-hidden="true"
+            id="copyright"
+            className="section is-small"
+          >
             <SealabLogo />
             <div className="copyright-text">
               <p>Copyright © SEALAB AS {year}</p>

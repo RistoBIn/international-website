@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import React from 'react';
 import classNames from 'classnames';
 import styles from './ImageBoxesWithNavigation.module.scss';
 import Button from '../Button';
 import ArrowButton from '../ArrowButton';
 import useArrayNavigation from '../../hooks/useArrayNavigation';
 import { idMaker } from '../../utils/id-maker';
-import BackgroundImage from '../BackgroundImage';
 import CarouselItem from './CarouselItem';
 
 const gen = idMaker();
@@ -17,6 +15,7 @@ const ImageBoxesWithNavigation = ({
   buttonText,
   buttonPath,
 }) => {
+  const { next, previous, activeIndex } = useArrayNavigation(items);
   if (
     !items ||
     items.length < 1 ||
@@ -25,8 +24,6 @@ const ImageBoxesWithNavigation = ({
     !items[0].path
   )
     return <></>;
-  const { next, previous, activeIndex } = useArrayNavigation(items);
-
   return (
     <>
       <section className={classNames('section', 'has-dark-background')}>

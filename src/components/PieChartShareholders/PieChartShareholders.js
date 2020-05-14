@@ -21,7 +21,6 @@ const COLORS = [
 ];
 
 const PieChartShareholders = ({ items }) => {
-  if (!items || items.length < 1) return <></>;
   const [activeIndex, setactiveIndex] = useState(0);
   const data = items.map((item, index) => {
     const { name, percentage: value } = item;
@@ -53,6 +52,7 @@ const PieChartShareholders = ({ items }) => {
     const ey = my;
     const textAnchor = cos >= 0 ? 'start' : 'end';
 
+    if (!items || items.length < 1) return <></>;
     return (
       <g className={styles.pieChart__hover}>
         <text x={cx} y={cy} textAnchor="middle">

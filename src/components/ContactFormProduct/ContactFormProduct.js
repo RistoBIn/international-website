@@ -25,6 +25,7 @@ export default class ContactFormProduct extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
+    /* eslint-disable */
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -35,6 +36,8 @@ export default class ContactFormProduct extends Component {
     })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error));
+
+    /* eslint-enable */
   };
 
   render() {

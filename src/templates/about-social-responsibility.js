@@ -20,7 +20,6 @@ export const SocialResponsibilityPageTemplate = ({
   splitSection,
   threeColSection,
   splitSection2,
-  splitSection3,
 }) => {
   const PostContent = contentComponent || Content;
 

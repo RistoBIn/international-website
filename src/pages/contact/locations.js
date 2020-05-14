@@ -1,14 +1,7 @@
 import React from 'react';
-import { navigate } from 'gatsby-link';
 import classNames from 'classnames';
 import GoogleMap from '../../components/GoogleMap';
 import Layout from '../../components/Layout';
-
-function encode(data) {
-  return Object.keys(data)
-    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&');
-}
 
 export default class Index extends React.Component {
   constructor(props) {

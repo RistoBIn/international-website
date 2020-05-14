@@ -23,7 +23,7 @@ export default class Index extends React.Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-
+/* eslint-disable */
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
@@ -38,6 +38,8 @@ export default class Index extends React.Component {
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error));
   };
+
+  /* eslint-enable */
 
   render() {
     return (

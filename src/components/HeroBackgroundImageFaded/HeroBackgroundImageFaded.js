@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import BackgroundImage from '../BackgroundImage';
-import styles from './HeroBackgroundImageFaded.module.scss';
 
 const Hero = ({ className, image, children, style }) => {
   return (

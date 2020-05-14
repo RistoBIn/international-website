@@ -17,7 +17,6 @@ export const AboutPageSecondaryTemplate = ({
   primarySplitSection,
   centeredTextSection,
   primaryCenteredImageSection,
-  secondarySplitSection,
   tertiarySplitSection,
   quaternarySplitSection,
   primaryCollapsibleList,

@@ -5,7 +5,6 @@ import styles from './PercentageItems.module.scss';
 import generateHTML from '../../utils/generateHTML';
 import Content, { HTMLContent } from '../Content';
 import { idMaker } from '../../utils/id-maker';
-import PercentageIcon from '../../img/percentage-icon.inline.svg';
 
 const gen = idMaker();
 

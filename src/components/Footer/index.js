@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Footer from './Footer';
 
-const DynamicFooter = ({ props, articles }) => {
+const DynamicFooter = ({ props }) => {
   return (
     <StaticQuery
       query={graphql`
