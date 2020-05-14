@@ -6,7 +6,6 @@ import Content, { HTMLContent } from '../components/Content';
 import SplittedSection from '../components/SplittedSection';
 import NonStretchedImage from '../components/NonStretchedImage';
 import ComparisonSection from '../components/ComparisonSection';
-import Title from '../components/Title';
 import generateHTML from '../utils/generateHTML';
 
 export const ProductPageTemplate = ({

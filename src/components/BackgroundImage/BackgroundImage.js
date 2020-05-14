@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import BackgroundImage from 'gatsby-background-image';
-import styles from './BackgroundImage.module.scss';
 
 const BackgroundImageSection = ({
   image,
@@ -17,13 +16,12 @@ const BackgroundImageSection = ({
       return (
         <BackgroundImage
           Tag={htmlTag || 'section'}
-          className={classNames(className, styles.image__section)}
+          className={classNames(className)}
           fluid={image.childImageSharp.fluid}
           style={{ ...style }}
           id={id}
         >
           <div
-            className={styles.filter}
             style={{
               height: '102%',
               width: '100%',
@@ -38,7 +36,7 @@ const BackgroundImageSection = ({
     return (
       <BackgroundImage
         Tag={htmlTag || 'section'}
-        className={classNames(className, styles.image__section)}
+        className={classNames(className)}
         fluid={image.childImageSharp.fluid}
         style={{ ...style }}
         id={id}

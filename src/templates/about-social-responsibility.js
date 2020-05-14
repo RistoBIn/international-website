@@ -1,12 +1,11 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
-import SplittedSection from '../components/SplittedSection';
 import SectionWith3Col from '../components/SectionWith3Col';
+import SplittedSection from '../components/SplittedSection';
 import { idMaker } from '../utils/id-maker';
 
 import generateHTML from '../utils/generateHTML';

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './ComparisonSection.module.scss';
 import { idMaker } from '../../utils/id-maker';
+import styles from './ComparisonSection.module.scss';
 
 const gen = idMaker();
 

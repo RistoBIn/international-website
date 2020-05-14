@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './SectionWith3Col.module.scss';
 import Button from '../Button';
 import generateHTML from '../../utils/generateHTML';
 import Content, { HTMLContent } from '../Content';
 import { idMaker } from '../../utils/id-maker';
+import styles from './SectionWith3Col.module.scss';
 
 const gen = idMaker();
 
