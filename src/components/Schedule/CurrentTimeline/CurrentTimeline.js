@@ -12,6 +12,8 @@ const CurrentTimeline = ({ heading, event }) => {
   const generateTimeline = () => {
     const timeList = [];
     const targetLength = 4;
+    if (!event) return undefined;
+    const { start_time: startTime, stop_time: endTime } = event;
 
     const start = new Date(Date.parse(startTime));
     const stop = new Date(Date.parse(endTime));
@@ -49,6 +51,8 @@ const CurrentTimeline = ({ heading, event }) => {
       clearTimeout(intervalId);
     };
   }, [event, eventProgress]);
+
+  if (!heading || !event) return <></>;
   const {
     friendlyName,
     state,
@@ -57,7 +61,6 @@ const CurrentTimeline = ({ heading, event }) => {
   } = event;
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
-  if (!heading || !event) return <></>;
 
   return (
     <div className={styles.currentTimeline}>
