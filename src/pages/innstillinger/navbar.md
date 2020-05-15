@@ -65,6 +65,8 @@ menuPaths:
           title: Sustainability Impact
         - path: /about/innovation-cause-we-can/
           title: Innovation ‘Cause We Can
+        - path: /about/partners/
+          title: SEALAB's existing partners
     path: '#'
     title: Investors
   - dropdown:
@@ -80,8 +82,6 @@ menuPaths:
       regular:
         - path: /about/sealab-osc/
           title: 'Ocean Space Center '
-        - path: /about/partners/
-          title: SEALAB's existing partners
         - path: /contact/locations/
           title: Locations
         - path: /contact/
