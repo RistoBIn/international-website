@@ -9,8 +9,6 @@ const gen = idMaker();
 const CurrentTimeline = ({ heading, event }) => {
   const [eventProgress, setEventProgress] = useState(0);
 
-  if (!heading || !event) return <></>;
-
   const {
     friendlyName,
     state,
@@ -40,7 +38,6 @@ const CurrentTimeline = ({ heading, event }) => {
     });
     return strTimeList;
   };
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const intervalId = setTimeout(() => {
       const calculateProgress = () => {
@@ -60,6 +57,7 @@ const CurrentTimeline = ({ heading, event }) => {
 
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
+  if (!heading || !event) return <></>;
 
   return (
     <div className={styles.currentTimeline}>
