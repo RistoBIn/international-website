@@ -9,13 +9,6 @@ const gen = idMaker();
 const CurrentTimeline = ({ heading, event }) => {
   const [eventProgress, setEventProgress] = useState(0);
 
-  const {
-    friendlyName,
-    state,
-    start_time: startTime,
-    stop_time: endTime,
-  } = event;
-
   const generateTimeline = () => {
     const timeList = [];
     const targetLength = 4;
@@ -39,6 +32,8 @@ const CurrentTimeline = ({ heading, event }) => {
     return strTimeList;
   };
   useEffect(() => {
+    if (!event) return undefined;
+    const { start_time: startTime, stop_time: endTime } = event;
     const intervalId = setTimeout(() => {
       const calculateProgress = () => {
         const start = new Date(Date.parse(startTime)).getTime();
@@ -53,8 +48,13 @@ const CurrentTimeline = ({ heading, event }) => {
     return () => {
       clearTimeout(intervalId);
     };
-  }, [endTime, eventProgress, startTime]);
-
+  }, [event, eventProgress]);
+  const {
+    friendlyName,
+    state,
+    start_time: startTime,
+    stop_time: endTime,
+  } = event;
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
   if (!heading || !event) return <></>;
