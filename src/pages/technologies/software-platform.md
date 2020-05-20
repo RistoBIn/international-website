@@ -10,19 +10,6 @@ description: >-
   Our software platform, BlueThink, supports IoT integration, video
   distribution, and data handling. This enables good customer applications with
   unlimited possibilities.  
-sectionOne:
-  featuredimage: /img/man-with-btgo-tablet.png
-  left: '## Internet of Things'
-  right: >-
-    IoT, The Internet of Things is now a reality in the ocean space industries
-    due to the convergence of technologies such as wireless communications,
-    micro-electrical systems and of course, the Internet.
-
-
-    A “thing” is any object with embedded electronics that can transfer data
-    over a network, without any human interaction. This could be underwater
-    cameras, environmental sensors, devices in a control room, or components in
-    a vessel.
 sectionTwo: >-
   ### BlueThink™
 

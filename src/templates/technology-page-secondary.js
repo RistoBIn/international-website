@@ -30,7 +30,7 @@ export const TechnologyPageTemplate = ({
           <p className="section--description">{description}</p>
         </div>
       </section>
-      {sectionOne ? (
+      {sectionOne && sectionOne.featuredimage && sectionOne.left ? (
         <LargeImageWithSplitSection
           className="section large-image product-page-primary"
           image={sectionOne.featuredimage}

@@ -301,7 +301,7 @@ collections:
               - {label: "Left image", name: "featuredimage", widget: image }
               - {label: "Right content", name: "content", widget: "markdown"}
       - file: "src/pages/technologies/software-platform.md"
-        label: "BlueThink Bridge"
+        label: "BlueThink Software platform"
         name: "technology-page-secondary"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-secondary"}
@@ -309,14 +309,6 @@ collections:
           - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
           - {label: "Description", name: "description", widget: "text"}
-          - label: "Section 1"
-            name: "sectionOne"
-            widget: "object"
-            required: false
-            fields:
-              - {label: "Content - left", name: "left", widget: "markdown"}
-              - {label: "Illustration figure", name: "featuredimage", widget: image }
-              - {label: "Content - right", name: "right", widget: "markdown"}
           - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
           - label: "Section 3"
             name: "sectionThree"
@@ -378,7 +370,15 @@ collections:
                 name: "right"
                 widget: "markdown"
 
-
+          - label: "Section 1 - INACTIVE"
+            name: "sectionOne"
+            widget: "object"
+            required: false
+            hint: "If one fields is missing, the entire section disappears"
+            fields:
+              - {label: "Content - left", name: "left", widget: "markdown", required: false}
+              - {label: "Illustration figure", name: "featuredimage", widget: image, required: false }
+              - {label: "Content - right", name: "right", widget: "markdown"}
 
 
 #### SETTINGS ####
