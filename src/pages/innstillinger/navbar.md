@@ -35,11 +35,11 @@ menuPaths:
         - path: /technologies/edge-intelligence/
           title: Edge Intelligence
         - path: /technologies/software-platform/
-          title: BlueThink™ IoT Bridge
+          title: BlueThink™ Software platform
         - path: /products/bluethink-go/
           title: BlueThink™ GO
     path: '#'
-    title: Core Technologies
+    title: Technologies
   - dropdown:
       highlighted:
         - path: /projects/indisal/
