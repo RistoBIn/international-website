@@ -3,12 +3,13 @@ templateKey: technology-page-secondary
 title: "Software platform - IoT |\_SEALAB"
 heading: BlueThink™ Software platform
 seoDescription: >-
-  The world, and especially the IT industry, is rapidly changing. We know this.
-  That's why SEALAB has developed a software platform that supports IoT.
+  Our software platform, BlueThink, supports IoT integration, video
+  distribution, and data handling. This enables good customer applications with
+  unlimited possibilities. 
 description: >-
-  The world, and especially the IT industry, is rapidly changing and if
-  businesses do not have the ability to adapt to the changes, they will easily
-  lose their position in the market.
+  Our software platform, BlueThink, supports IoT integration, video
+  distribution, and data handling. This enables good customer applications with
+  unlimited possibilities.  
 sectionOne:
   featuredimage: /img/man-with-btgo-tablet.png
   left: '## Internet of Things'
