@@ -36,10 +36,14 @@ menuPaths:
           title: Edge Intelligence
         - path: /technologies/software-platform/
           title: BlueThink™ Software platform
+    path: '#'
+    title: Technologies
+  - dropdown:
+      highlighted:
         - path: /products/bluethink-go/
           title: BlueThink™ GO
     path: '#'
-    title: Technologies
+    title: Products
   - dropdown:
       highlighted:
         - path: /projects/indisal/
