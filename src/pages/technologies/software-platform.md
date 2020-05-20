@@ -1,6 +1,6 @@
 ---
 templateKey: technology-page-secondary
-title: "Software platform - IoT |\_SEALAB"
+title: "Software platform for IoT integrations - BlueThink |\_SEALAB"
 heading: BlueThink™ Software platform
 seoDescription: >-
   Our software platform, BlueThink, supports IoT integration, video
