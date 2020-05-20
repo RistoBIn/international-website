@@ -35,11 +35,17 @@ menuPaths:
         - path: /technologies/edge-intelligence/
           title: Edge Intelligence
         - path: /technologies/software-platform/
-          title: BlueThink™ IoT Bridge
+          title: BlueThink™ Software platform
+    path: '#'
+    title: Technologies
+  - dropdown:
+      highlighted:
+        - path: /products/subsea-cam/
+          title: sCAM
         - path: /products/bluethink-go/
           title: BlueThink™ GO
     path: '#'
-    title: Core Technologies
+    title: Products
   - dropdown:
       highlighted:
         - path: /projects/indisal/
@@ -56,10 +62,17 @@ menuPaths:
           title: For investors
         - path: /about/vision-strategy/
           title: Vision & Strategy
-        - path: /about/business-model/
-          title: Business Model
         - path: /leadership/
           title: Leadership
+      regular:
+        - path: /about/business-model/
+          title: Business Model
+        - path: /about/social-responsibility/
+          title: Sustainability Impact
+        - path: /about/innovation-cause-we-can/
+          title: Innovation ‘Cause We Can
+        - path: /about/partners/
+          title: SEALAB's existing partners
     path: '#'
     title: Investors
   - dropdown:
@@ -73,14 +86,8 @@ menuPaths:
         - path: /research-laboratories/
           title: R&D in SEALAB
       regular:
-        - path: /about/social-responsibility/
-          title: Sustainability Impact
-        - path: /about/innovation-cause-we-can/
-          title: Innovation ‘Cause We Can
         - path: /about/sealab-osc/
           title: 'Ocean Space Center '
-        - path: /about/partners/
-          title: SEALAB's existing partners
         - path: /contact/locations/
           title: Locations
         - path: /contact/
