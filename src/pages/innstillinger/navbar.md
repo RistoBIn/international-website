@@ -40,6 +40,8 @@ menuPaths:
     title: Technologies
   - dropdown:
       highlighted:
+        - path: /products/subsea-cam/
+          title: sCAM
         - path: /products/bluethink-go/
           title: BlueThink™ GO
     path: '#'
