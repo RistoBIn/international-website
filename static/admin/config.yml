@@ -262,7 +262,7 @@ collections:
         name: technology-page-primary
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-primary"}
-          - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
           - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
           - {label: "Description", name: "description", widget: "text"}
