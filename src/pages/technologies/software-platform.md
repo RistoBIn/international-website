@@ -1,14 +1,15 @@
 ---
 templateKey: technology-page-secondary
-title: "BlueThink |\_Internet of Things"
-heading: BlueThink IoT Bridge
+title: "Software platform - IoT |\_SEALAB"
+heading: BlueThink™ Software platform
 seoDescription: >-
-  The world, and especially the IT industry, is rapidly changing. We know this.
-  That's why SEALAB has developed a software platform that supports IoT.
+  Our software platform, BlueThink, supports IoT integration, video
+  distribution, and data handling. This enables good customer applications with
+  unlimited possibilities. 
 description: >-
-  The world, and especially the IT industry, is rapidly changing and if
-  businesses do not have the ability to adapt to the changes, they will easily
-  lose their position in the market.
+  Our software platform, BlueThink, supports IoT integration, video
+  distribution, and data handling. This enables good customer applications with
+  unlimited possibilities.  
 sectionOne:
   featuredimage: /img/man-with-btgo-tablet.png
   left: '## Internet of Things'
@@ -23,9 +24,10 @@ sectionOne:
     cameras, environmental sensors, devices in a control room, or components in
     a vessel.
 sectionTwo: >-
-  ### Software Platform
+  ### BlueThink™
 
-  ## Software platform for video scaling and data handling
+  ## Software platform for IoT integration, video distribution, and data
+  handling
 
   SEALAB has developed a software platform that supports IoT. The BlueThink™
   platform delivers any data or video required for software applications to
@@ -57,7 +59,7 @@ alternatingSections:
       path: /projects/5G-heart/
       text: 5G HEART
     description: >-
-      ## IoT on 5G
+      ## We contribute to better infrastructure with 5G
 
       The new 5G network is on everyone’s minds these days, and for good reason.
       Not only will 5G improve how we use and communicate with technology, it
