@@ -67,16 +67,20 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: [`/404/*`, `/admin/*`, '/privacy-policy/*', '*/thanks/'],
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
             let path = edge.node.path;
-            let priority = 0.6;
-            if (path.match(/products/)) {
+            let priority = 0.4;
+            if (path.match(/products/) && !path.match(/thanks/)) {
               priority = 1.0;
             } else if (path.match(/about/)) {
               priority = 0.6;
-            } else if (path.match(/contact\/(?=\s|$)/) || path.match(/contact(?=\s|$)/)) {
+            } else if (path.match(/technologies/)) {
+              priority = 0.6;
+            } else if (
+              path.match(/contact\/(?=\s|$)/) ||
+              path.match(/contact(?=\s|$)/)
+            ) {
               priority = 1.0;
             } else if (path.match(/history/)) {
               priority = 0.8;
@@ -100,6 +104,7 @@ module.exports = {
               priority,
             };
           }),
+        exclude: [`/404/*`, `*/admin/*`, '*/privacy-policy/*', '*/thanks/*'],
       },
     },
     'gatsby-plugin-catch-links',
@@ -125,9 +130,9 @@ module.exports = {
         stages: ['develop'],
         options: {
           emitWarning: true,
-          failOnError: false
-        }
-      }
+          failOnError: false,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
