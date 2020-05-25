@@ -378,7 +378,7 @@ collections:
             fields:
               - {label: "Content - left", name: "left", widget: "markdown", required: false}
               - {label: "Illustration figure", name: "featuredimage", widget: image, required: false }
-              - {label: "Content - right", name: "right", widget: "markdown"}
+              - {label: "Content - right", name: "right", widget: "markdown", required: false}
 
 
 #### SETTINGS ####

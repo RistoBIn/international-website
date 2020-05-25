@@ -61,12 +61,9 @@ centeredSection:
   featuredimage: /img/digital-twin.jpg
   left: '### The Digital twin - A bridge between the physical and the digital world'
   right: >-
-    The digitalization of the ocean space has come so far that the living
-    conditions for digital twins are present in several industries.
+    The digitalization of the ocean space has come so far that the living conditions for digital twins are present in several industries. 
 
-    BlueThink is designed to support this technology. This said based on the
-    amount of data the platform is able to collect using from sensors (IoT),
-    it’s ability to process large amounts of data (AI) and extract lessons from
-    these huge amounts of data (Machine Learning).
+    BlueThink™ is designed to support this technology. The software platform is able to store and process large amounts of data. This enables third party suppliers and SEALAB to create computers that extracts lesson from the large amount of data through machine learning.
+
 ---
 
