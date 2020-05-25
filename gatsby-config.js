@@ -67,7 +67,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: [`/404/*`, `/admin/*`, '/privacy-policy/*', '*/thanks/*'],
+        exclude: [`/404/*`, `/admin/*`, '/privacy-policy/*', '*/thanks/'],
         serialize: ({ site, allSitePage }) =>
           allSitePage.edges.map(edge => {
             let path = edge.node.path;
@@ -76,7 +76,7 @@ module.exports = {
               priority = 1.0;
             } else if (path.match(/about/)) {
               priority = 0.6;
-            } else if (path.match(/contact/)) {
+            } else if (path.match(/contact\/(?=\s|$)/) || path.match(/contact(?=\s|$)/)) {
               priority = 1.0;
             } else if (path.match(/history/)) {
               priority = 0.8;
