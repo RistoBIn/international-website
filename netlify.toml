@@ -49,5 +49,5 @@
 #     # skipPatterns is an array of strings you can match against failing reports
 #     skipPatterns = ["*.inline.svg"]
 
-# [[plugins]]
-#  package = "netlify-plugin-gatsby-cache"
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
