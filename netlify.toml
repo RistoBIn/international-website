@@ -26,16 +26,16 @@
       must-revalidate,
       public'''
 
-[[headers]]
-  # Define which paths this specific [[headers]] block will cover.
-  for = "/static/"
-
-    # Multi-key header rules are expressed with multi-line strings.
-    cache-control = '''
-      max-age=31536000,
-      must-revalidate,
-      public,
-      immutable'''
+# [[headers]]
+#   # Define which paths this specific [[headers]] block will cover.
+#   for = "/static/"
+# 
+#     # Multi-key header rules are expressed with multi-line strings.
+#     cache-control = '''
+#       max-age=31536000,
+#       must-revalidate,
+#       public,
+#       immutable'''
 # [[plugins]]
 #   package = "netlify-plugin-checklinks"
 #     [plugins.inputs]
