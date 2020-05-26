@@ -73,8 +73,8 @@ const Slideshow = () => {
         className={classNames(styles.nextEvent)}
       />
       <Program
-        events={currentSchedule.slice(currentEvent)}
-        heading="TV Schedule"
+        events={currentSchedule.slice(currentEvent + 2)}
+        heading="Upcoming events"
         className={classNames(styles.program)}
       />
     </section>

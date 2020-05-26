@@ -20,7 +20,7 @@ const Program = ({ className, heading, events }) => {
             startTime={eventItem.start_time}
             endTime={eventItem.stop_time}
             friendlyName={eventItem.friendlyName}
-            cam={eventItem.state.camera}
+            cam={eventItem.friendlyCameraName}
           />
         );
       })}

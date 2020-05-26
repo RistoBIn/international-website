@@ -7,7 +7,7 @@ const NextEvent = ({ heading, event }) => {
   if (!heading || !event || !event.friendlyName) return <></>;
   const {
     friendlyName,
-    state,
+    friendlyCameraName,
     start_time: startTime,
     stop_time: endTime,
   } = event;
@@ -22,7 +22,7 @@ const NextEvent = ({ heading, event }) => {
           startTime={friendlyStartTime}
           endTime={friendlyEndTime}
           heading={friendlyName}
-          camName={state.camera}
+          camName={friendlyCameraName}
         />
       </div>
     </div>

@@ -11,7 +11,7 @@ const Livestream = () => {
   const siteUID = process.env.GATSBY_UID;
 
   function buildStreamUri(user, passwd, host, port, app, stream) {
-    return `https://${user}:${passwd}@${host}:${port}/${app}/${stream}.stream/playlist.m3u8`;
+    return `https://${user}:${passwd}@${host}:${port}/${app}/${stream}.stream_overlay/playlist.m3u8`;
   }
 
   return (
