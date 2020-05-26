@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import styles from './Schedule.module.scss';
 import CurrentTimeLine from './CurrentTimeline';
-import NextEvent from './NextEvent';
 import Program from './Program';
 import { fetchFromResourceApi } from '../../utils/bluethink-resourcefile-api';
 
@@ -63,17 +62,8 @@ const Slideshow = () => {
         event={currentSchedule[currentEvent]}
         className={classNames(styles.currentTimeline)}
       />
-      <NextEvent
-        heading={<h3 className={styles.timeline__heading}>Coming up next</h3>}
-        event={
-          currentEvent === currentSchedule.length
-            ? undefined
-            : currentSchedule[currentEvent + 1]
-        }
-        className={classNames(styles.nextEvent)}
-      />
       <Program
-        events={currentSchedule.slice(currentEvent + 2)}
+        events={currentSchedule.slice(currentEvent + 1)}
         heading="Upcoming events"
         className={classNames(styles.program)}
       />

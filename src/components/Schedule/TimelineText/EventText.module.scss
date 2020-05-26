@@ -25,9 +25,9 @@
       margin-right: 10px;
     }
     &.is__active {
-      color: $error;
+      color: $red;
       svg, svg path {
-        fill: $error !important;
+        fill: $red !important;
 
       }
     }
