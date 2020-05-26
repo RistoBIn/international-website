@@ -1,0 +1,10 @@
+@import '../_variables.scss';
+
+
+.react-player__preview {
+    height: 40vh !important;
+
+    @media only screen and (min-width: $tablet) {
+        height: 790px !important;
+    }
+}

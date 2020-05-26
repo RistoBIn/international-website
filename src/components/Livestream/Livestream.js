@@ -5,6 +5,7 @@ import styles from './Livestream.module.scss';
 // import { ReactComponent as LivestreamIcon } from '../../../images/sealabIcons/livestream_play.svg';
 import LivestreamPlayIcon from '../../img/icon-livestream-play.inline.svg';
 import PreviewImage from '../../img/seagull_south_east_crop.jpg';
+import './_react-player.scss';
 
 const Livestream = () => {
   const [playerKey, setPlayerKey] = useState(null);
