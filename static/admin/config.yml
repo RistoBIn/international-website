@@ -148,9 +148,9 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page-secondary"}
       - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
       - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
       - {label: "Description", name: "description", widget: "text", hint: "Text."}
-      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
       - {label: "Image", name: "featuredimage", widget: "image", hint: "Image to use on the page."}
       - {label: "Caption", name: "featuredimageCaption", widget: "text", hint: "Caption to use for the image.", required: false}
       - {label: "Content", name: "body", widget: "markdown"}
@@ -192,8 +192,8 @@ collections:
     filter: {field: "templateKey", value: "product-template-hardware"}
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-template-hardware"}
-      - {label: "Tittel", name: "title", widget: "string" }
-      - {label: "SEO Description", required: false, name: "seoDescription", widget: "text", hint: "Vises kun i søkemotorer og i meta-beskrivelser."}
+      - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
+      - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
       - label: "Bildekarusell"
         name: featuredimages
         widget: list
@@ -305,9 +305,9 @@ collections:
         name: "technology-page-secondary"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-secondary"}
-          - {label: "Title", name: "title", widget: "string", hint: "Tittel på fanen og SEO tittel"}
-          - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
+          - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Section 2", name: "sectionTwo", widget: "markdown"}
           - label: "Section 3"
