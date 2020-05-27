@@ -5,7 +5,7 @@ seoDescription: >-
   Our software platform, BlueThink™, supports IoT integration, video
   distribution, and data handling. This enables good customer applications with
   unlimited possibilities.  
-heading: BlueThink™ Software platform
+heading: BlueThink™ Software Platform
 description: >-
   Our software platform, BlueThink™, supports IoT integration, video
   distribution, and data handling. This enables good customer applications with
@@ -36,9 +36,9 @@ sectionThree:
 sectionFour:
   button:
     path: /solutions/atlantic-salmon-and-seafood/
-    text: Norwegian Aquaculture
+    text: Aquaculture
   featuredimage: /img/SEALAB Feed Barge Control Room.png
-  heading: BlueThink and IoT in the aquaculture industry
+  heading: BlueThink™ and IoT in the aquaculture industry
   right: >-
     The Internet of Things is about all the things around us being connected to
     the internet. When things are connected to the network, they can connect,
