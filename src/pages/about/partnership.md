@@ -29,27 +29,27 @@ splitSection:
     applications. With this, SEALAB is in a unique position to store and analyze
     data produced even by third-parties.
   featuredimage: /img/bluethink-open-to-third-parties.svg
-  subheading: SEALAB’s Research Laboratory is growing
+  subheading: SEALAB’s research laboratory is growing
 features:
   content: >-
-    ## Artificial Intelligence Systems
+    ## Artificial intelligence systems
 
     For third parties, BlueThink™ removes the complexity of integrating with
     other systems by providing a single, uniform, and robust communication
     interface. SEALAB is currently working on several BlueThink™-enabled
     applications and AIs, including:
   items:
-    - heading: Individual Salmon Identification
+    - heading: Individual salmon identification
       icon: /img/individual-salmon-identification.svg
-    - heading: Salmon Lice detection
+    - heading: Salmon lice detection
       icon: /img/lice-counting.svg
-    - heading: Fish Welfare estimation
-      description: through respiratory rate analysis
+    - heading: Fish welfare estimationthrough respiratory rate analysis
+      description: ''
       icon: /img/health.svg
-    - heading: Feeding Response Analysis
+    - heading: Feeding response analysis
       description: ''
       icon: /img/food-optimization.svg
-    - heading: Network Monitoring
+    - heading: Network monitoring
       icon: /img/network-monitoring.svg
 partnering:
   buttons:
@@ -58,7 +58,7 @@ partnering:
   heading: None of us is as smart as all of us
   items:
     - content: >-
-        ### 3D Biomass Estimation + MonitorFish
+        ### 3D biomass estimation + MonitorFish
 
 
         SEALAB and MonitorFish have entered into an exciting collaboration on
@@ -71,7 +71,7 @@ partnering:
         real-time to maintain the highest quantity and quality of the fish.
       logo: /img/monitorfish-logo-white.svg
     - content: >-
-        ### Image Enhancer + Intel
+        ### Image enhancer + Intel
 
 
         SEALAB and Intel are collaborating on image enhancement using FPGA. 
