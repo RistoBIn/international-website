@@ -1,6 +1,6 @@
 ---
 templateKey: solution-page-primary
-title: Atlantic Salmon and Seafood
+title: Atlantic Salmon & seafood
 seoDescription: >-
   SEALAB underwater camera combined with computer vision and specially developed
   software give you unique insight into environmental conditions, fish welfare,
@@ -22,7 +22,7 @@ splitSections:
       the cage. All of this helps to reduce losses and can provide a better
       survival rate. The economic benefits are increased while the environmental
       impacts are reduced.
-    heading: How is SEALAB Innovating the Aquaculture Industry?
+    heading: How is SEALAB innovating the aquaculture industry?
     subheading: ''
   - content: >-
       There are currently 430 million live salmon in Norwegian cages. Machine
@@ -46,11 +46,11 @@ splitSections:
       [Edge Intelligence](/technologies/edge-intelligence/)
 
       [BlueThink IoT Bridge](/technologies/software-platform/)
-    heading: Full Traceability Throughout the Entire Production Process
+    heading: Full traceability throughout the entire production process
     featuredimage: /img/Laksebilde_2.jpg
-    subheading: 'With Data Collection we Provide '
+    subheading: 'With data collection we provide '
 btgo:
-  heading: 'Access your Fish Farm from Anywhere, Anytime'
+  heading: 'Access your fish farm from anywhere, anytime'
   description: >-
     BlueThink™ GO gives you remote access to livestream, real-time sensor data,
     weather data, sea conditions and much more, directly from your facility.
@@ -61,7 +61,7 @@ btgo:
   subheading: BlueThink™ GO
 imageSection:
   featuredimage: /img/aquaculture_algaes_cut.jpeg
-  left: '### Seafood Production in the Ocean'
+  left: '### Seafood production in the ocean'
   right: >-
     All over the world, seafood is produced. From Atlantic salmon to whitefish,
     clams, shellfish production, shrimp farming and catching and cultivation of
@@ -72,35 +72,8 @@ imageSection:
 
     ***We give everyone the opportunity to see under water.***
 splitSection:
-  heading: Land Based Fish Farming
-  left: >-
-    ### For a Sustainable Future
-
-
-    Globally land-based aquaculture facilities are increasingly being considered
-    as a more sustainable alternative to open-water fish farms. Until just a few
-    years ago, land-based fish farming was considered too costly, but this is
-    changing as systems and technologies become increasingly sophisticated.
-    Cutting edge technologies will be needed.  
-
-
-    Optimizing water temperature and good access to groundwater is important,
-    but sometimes expensive hydroelectric power rise the risk of the business.
-    This is where better sensorics and computer vision from SEALAB come into
-    play.
-  right: >-
-    ### Setting a new Standard
-
-
-    Companies who seek new ways to make its facility as energy efficient and
-    sustainable as possible will need real time surveillance systems for
-    monitoring fish welfare and the production. SEALABs computer vision systems
-    for biomass control, respiratory rate measuring and feeding control will
-    help our customers to reach their goals.  
-
-
-    Innovation drives the value we create. Our commitment to progress is
-    highlighted by the fact that every year, we invest significantly more into
-    research and development than the industry average.
+  heading: ''
+  left: ''
+  right: ''
 ---
 
