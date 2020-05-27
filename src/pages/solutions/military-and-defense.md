@@ -1,13 +1,12 @@
 ---
 templateKey: solution-page-secondary
-title: Military & Defense
+title: Military & defense
 seoDescription: >-
   With underwater computer vision from SEALAB you can compare camera images with
   photographic databases. In each case, human operators - not machines - make
   final judgments before anyone takes action.
-heading: Military & Defense
-
 priority: 5
+heading: Military & defense
 description: >-
   With underwater computer vision from SEALAB you can compare camera images with
   photographic databases. In each case, human operators - not machines - make
@@ -29,7 +28,7 @@ splitSections:
       expected to provide robust geometric pattern-matching with several degrees
       of freedom, compensate for extreme illumination and perform 3D analysis of
       complex shapes.
-    heading: Human Vision Simulation and Objects Recognition
+    heading: Human vision simulation & objects recognition
   - content: >-
       Both color tracking and motion or range of images can be used. To have
       robotic vision, we need to combine those techniques to use the appropriate
@@ -68,11 +67,11 @@ splitSections:
       human operator in some unknown fashion and highlights the flagged objects
       within the video display. Next steps will be developing algorithms to
       determine risks in humans.
-    heading: Current Innovations
+    heading: Current innovations
     featuredimage: /img/military-innovation.svg
-    subheading: Advanced FPGA Technology for Use Under Water
+    subheading: Advanced FPGA technology for use under water
 ---
-## Autonomous Vehicles
+## Autonomous vehicles
 
 Autonomous vehicles are trained with numerous mounted cameras all around them at various heights and angles that allow it to detect how the car is moving from every perspective. The software is trained on thousands of hours of human driving footage showing the proper and safe way a vehicle should operate from various angles, in various lighting conditions, and in different weather conditions. The vessel or the underwater drone could then get a command to move to a new location. 
 
