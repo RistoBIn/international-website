@@ -1,11 +1,11 @@
 ---
 templateKey: solution-page-secondary
-title: Bridge and Watercourse Monitoring
-seoDescription: Climate Changes are increasing the need for bridge and watercourse monitoring
-heading: Bridge and Watercourse Monitoring
-description: Climate Changes are increasing the need for bridge and watercourse monitoring
-featuredimage: /img/adobe_bridge_monitoring_watercourse.jpg
+title: Bridge and watercourse monitoring
+seoDescription: Climate changes are increasing the need for bridge and watercourse monitoring
 priority: 7
+heading: Bridge and watercourse monitoring
+description: Climate changes are increasing the need for bridge and watercourse monitoring
+featuredimage: /img/adobe_bridge_monitoring_watercourse.jpg
 splitSections:
   - content: >-
       Earth’s climate is now changing faster than at any point in the history of
@@ -25,6 +25,6 @@ splitSections:
       real-time what’s going on.
     heading: ' An increasing need for bridge and watercourse monitoring'
     featuredimage: /img/AdobeStock_232721946.jpeg
-    subheading: Climate Changes
+    subheading: Climate changes
 ---
 
