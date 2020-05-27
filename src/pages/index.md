@@ -1,10 +1,10 @@
 ---
 templateKey: index-page
 title: 'SEALAB '
-seoDescription: >-
+seoDescription": >-
   You've never seen camera technology for harsh environment like this. We're
   offering AI Solutions under water with great computer vision techniques. Our
-  system is open to third parties. 
+  system is open to third parties.
 heading: More than meets the eye
 bgimage: /img/sealab-water-hero-edit.jpg
 items:
@@ -26,7 +26,7 @@ centeredSection:
     path: /technologies/software-platform/
     text: Read more
   description: 'SEALAB provides a space for people to connect, create and communicate'
-  heading: 'The Oceans Affect Us All, but Entering the Deep Is Not for Everyone'
+  heading: 'The oceans affect us all, but entering the deep is not for everyone'
   subheading: ''
 productSection:
   description: |-
@@ -43,7 +43,7 @@ productSection:
       icon: /img/icon-ai.svg
     - heading: Computer Vision Techniques
       icon: /img/icon-eye.svg
-  heading: Edge to Cloud. Anywhere. Anytime.
+  heading: Edge to cloud. Anywhere. Anytime.
 successFactors:
   bgimage: /img/ice-mountain-blue.jpeg
   button:
