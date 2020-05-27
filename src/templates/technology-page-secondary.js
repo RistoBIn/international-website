@@ -80,12 +80,12 @@ export const TechnologyPageTemplate = ({
 
       <SectionListAlternating
         sections={sectionList}
-        className="section alternating-sections"
+        className="section is-medium alternating-sections"
       />
 
       {sectionFour ? (
         <LargeImageWithSplitSection
-          className="section is-large large-image product-page-primary"
+          className="section is-medium large-image product-page-primary"
           image={sectionFour.featuredimage}
           leftColumn={
             <>
