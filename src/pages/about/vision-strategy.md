@@ -1,7 +1,7 @@
 ---
 templateKey: vision-strategy
 title: Vision & Strategy
-heading: Vision & Strategy
+heading: Vision & strategy
 description: >-
   Backed by unique employees and investors we have a strong vision: Give
   everyone the opportunity to see under water. Our vision will help our
@@ -47,8 +47,8 @@ primaryCenteredImageSection:
   featuredimage: /img/_DSC7691.png
   featuredimageCaption: Milan Marković and Oscar Marković
   left: >-
-    ### About Quality, Creativity, User Friendliness and Low Environmental
-    Impact
+    ### About quality, creativity, user friendliness and low environmental
+    impact
 
     We revolutionize the underwater camera market by fulfilling large sales and
     high production volumes SEALAB develops novel 2D and 3D multi-camera systems
@@ -66,7 +66,7 @@ primaryCenteredImageSection:
     development – thousands of hours with hard work by the Founders is now
     behind us.
 tertiarySplitSection:
-  left: '## Some of the Unfair Competitive Advantages of SEALAB'
+  left: '## Some of the unfair competitive advantages of SEALAB'
   right:
     - content: >-
         #### Unfair advantage
