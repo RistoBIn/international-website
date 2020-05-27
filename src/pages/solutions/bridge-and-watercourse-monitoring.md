@@ -1,9 +1,9 @@
 ---
 templateKey: solution-page-secondary
-title: Bridge and watercourse monitoring
+title: Bridge & watercourse monitoring
 seoDescription: Climate changes are increasing the need for bridge and watercourse monitoring
 priority: 7
-heading: Bridge and watercourse monitoring
+heading: Bridge & watercourse monitoring
 description: Climate changes are increasing the need for bridge and watercourse monitoring
 featuredimage: /img/adobe_bridge_monitoring_watercourse.jpg
 splitSections:
