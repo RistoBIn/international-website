@@ -64,7 +64,7 @@ export const TechnologyPageTemplate = ({
         <></>
       )}
       {imageSection && imageSection.featuredimage ? (
-        <section className="background-image-lines section centered-section product-page-primary">
+        <section className="background-image-lines is-medium section centered-section product-page-primary">
           <div className="container">
             <NonStretchedImage
               objectFit="contain"
@@ -77,6 +77,12 @@ export const TechnologyPageTemplate = ({
       ) : (
         <></>
       )}
+
+      <SectionListAlternating
+        sections={sectionList}
+        className="section alternating-sections"
+      />
+
       {sectionFour ? (
         <LargeImageWithSplitSection
           className="section is-large large-image product-page-primary"
@@ -102,10 +108,6 @@ export const TechnologyPageTemplate = ({
         <></>
       )}
 
-      <SectionListAlternating
-        sections={sectionList}
-        className="section alternating-sections"
-      />
       {centeredSection ? (
         <LargeImageWithSplitSection
           className="section is-medium large-image product-page-primary"
