@@ -1,13 +1,13 @@
 ---
 templateKey: project-page-secondary
-title: Clean Ocean Initiative
-heading: Clean Ocean Initiative
-description: >-
-  This initiative is our contribution to keeping the oceans clean from plastic
-  and other human waste.
+title: Clean ocean initiative
 seoDescription: >-
   The Clean Ocean Initiative is SEALABs contribution to keeping the oceans clean
   from plastic and other human waste.
+heading: Clean ocean initiative
+description: >-
+  This initiative is our contribution to keeping the oceans clean from plastic
+  and other human waste.
 featuredimage: /img/adobe_turtle_plastic_ocean_clean.jpg
 featuredimageCaption: ''
 splitSection:
