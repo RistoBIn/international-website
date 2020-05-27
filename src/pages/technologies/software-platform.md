@@ -69,5 +69,15 @@ centeredSection:
     able to store and process large amounts of data. This enables third party
     suppliers and SEALAB to create computers that extract lessons from a large
     amount of data through machine learning.
+sectionOne:
+  featuredimage: /img/Bluethink software highlight.svg
+  left: '## Solutions for the entire value chain'
+  right: >-
+    We provide solutions for the whole value chain. From physical devices like
+    our great camera to software applications like BlueThinkTM GO. Our software
+    platform, BlueThinkTM, stores, and processes data. This enables both ours
+    and third-party software platforms to use the data as they like. At the end
+    of this value chain you’ll find our customers - happy to access their data
+    and devices.
 ---
 
