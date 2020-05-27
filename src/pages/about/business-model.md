@@ -1,7 +1,7 @@
 ---
 templateKey: about-page-primary
-title: Business Model
-heading: Business Model
+title: Business model
+heading: Business model
 description: >
   Our approach to corporate governance 
 
