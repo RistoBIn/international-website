@@ -1,13 +1,13 @@
 ---
 templateKey: solution-page-secondary
-title: Schools and Universities
+title: Schools & universities
 seoDescription: >-
   Environmental education is one of the essential pillars to amaze, raise
   awareness and inculcate new behaviors in children, the citizens of tomorrow.
   SEALAB brings the Ocean in the School by broadcasting live from the deep and
   into the classroom.
-heading: Schools and Universities
 priority: 3
+heading: Schools & universities
 description: >-
   New project at SEALAB R&D Lab to highlight importance of the Ocean Space to
   children.
@@ -25,10 +25,10 @@ splitSections:
       Teachers easily get a toolkit needed to engage children to engage in
       future solutions that must be developed to safeguard the ocean and the
       global environment.
-    heading: SEALAB Brings the Ocean to the Schools
+    heading: SEALAB brings the ocean to the schools
     subheading: ' '
   - content: >-
-      ## Give Everyone the Opportunity to See Under Water
+      ## Give everyone the opportunity to see under water
 
 
       SEALAB gives everyone the opportunity to see underwater, not least to the
