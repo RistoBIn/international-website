@@ -1,12 +1,12 @@
 ---
 templateKey: solution-page-secondary
-title: Harbor Surveillance
+title: Harbor surveillance
 seoDescription: >-
   It has become increasingly critical that ports, coastal installations, and oil
   rigs around the world be safeguarded against unwanted intruders, who may
   intend sabotage, unlawful entry, or terror attacks.
-heading: Harbor Surveillance
 priority: 1
+heading: Harbor surveillance
 description: >-
   It has become increasingly critical that ports, coastal installations, and oil
   rigs around the world be safeguarded against unwanted intruders, who may
@@ -29,8 +29,8 @@ splitSections:
       Realtime camera surveillance with computer vision from SEALAB will work
       very well in combination with ie Diver Detection Sonar (DDS), Surveillance
       radar and Electro-optical devices (CCD and FLIR).
-    heading: Safeguarded Against Unwanted Intruders
+    heading: Safeguarded against unwanted intruders
     featuredimage: /img/adobe_harbor_surveillance.jpg
-    subheading: Realtime Camera Surveillance with Computer Vision
+    subheading: Realtime camera surveillance with computer vision
 ---
 
