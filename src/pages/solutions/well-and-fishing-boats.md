@@ -1,12 +1,12 @@
 ---
 templateKey: solution-page-secondary
-title: Well and Fishing Boats
+title: Well & fishing boats
 seoDescription: >-
   SEALAB's sensor system monitors the fish in the well or tank for the storage
   and transport of live fish for the delivery to port and final processing on
   land. 
-heading: Well and Fishing Boats
 priority: 7
+heading: Well & fishing boats
 description: >-
   SEALAB's sensor system monitors the fish in the well or tank for the storage
   and transport of live fish for the delivery to port and final processing on
@@ -32,7 +32,7 @@ splitSections:
       disturbing the fishes in any manner whatsoever. SEALAB's sensor system
       monitors the fish in the well or tank for the storage and transport of
       live fish for the delivery to port and final processing on land.
-    heading: Real Time Reporting System
+    heading: Real time reporting system
     featuredimage: /img/adobe_well_fish_boats_cage.jpg
 ---
 
