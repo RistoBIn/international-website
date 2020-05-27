@@ -1,6 +1,6 @@
 ---
 templateKey: vision-strategy
-title: Vision & Strategy
+title: Vision & strategy
 heading: Vision & strategy
 description: >-
   Backed by unique employees and investors we have a strong vision: Give
