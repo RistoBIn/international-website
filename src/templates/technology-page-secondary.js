@@ -8,6 +8,7 @@ import generateHTML from '../utils/generateHTML';
 import NonStretchedImage from '../components/NonStretchedImage';
 import Button from '../components/Button';
 import SectionListAlternating from '../components/SectionListAlternating';
+import { ButtonFlex } from '../styles';
 
 export const TechnologyPageTemplate = ({
   contentComponent,
@@ -35,10 +36,17 @@ export const TechnologyPageTemplate = ({
           className="section large-image product-page-primary"
           image={sectionOne.featuredimage}
           leftColumn={
-            <PostContent
-              content={generateHTML(sectionOne.left)}
-              className="content is-left-aligned"
-            />
+            <>
+              <PostContent
+                content={generateHTML(sectionOne.left)}
+                className="content is-left-aligned"
+              />
+              <Button
+                className="is-secondary"
+                text="Contact us for more information"
+                path="/contact/"
+              />
+            </>
           }
           rightColumn={
             <PostContent
@@ -78,6 +86,28 @@ export const TechnologyPageTemplate = ({
         <></>
       )}
 
+      <section className="section is-medium has-dark-background">
+        <div className="container centered">
+          <p className="subheading">Our system is open to third parties</p>
+          <h2>
+            Want to collaborate with us on integrating new solutions to the
+            BlueThink™ Software Platform?
+          </h2>
+          <ButtonFlex>
+            <Button
+              className="is-primary"
+              text="For potential partners"
+              path="/about/partnership/"
+            />
+            <Button
+              className="is-transparent"
+              text="Contact us"
+              path="/contact/"
+            />
+          </ButtonFlex>
+        </div>
+      </section>
+
       <SectionListAlternating
         sections={sectionList}
         className="section is-medium alternating-sections"
@@ -91,7 +121,7 @@ export const TechnologyPageTemplate = ({
             <>
               <h2>{sectionFour.heading}</h2>
               <Button
-                className="is-primary"
+                className="is-transparent"
                 text={sectionFour.button.text}
                 path={sectionFour.button.path}
               />
