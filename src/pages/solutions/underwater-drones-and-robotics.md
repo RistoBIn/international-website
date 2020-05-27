@@ -1,11 +1,11 @@
 ---
 templateKey: solution-page-secondary
-title: Underwater Drones and Robotics
+title: Underwater drones & robotics
 seoDescription: >-
   SEALAB have a clear view that machine vision is an important enabling
   technology in robotics and unmanned vehicles, i.e. underwater drones.
-heading: Underwater Drones and Robotics
 priority: 2
+heading: Underwater drones & robotics
 description: >-
   SEALAB have a clear view that machine vision is an important enabling
   technology in robotics and unmanned vehicles.
@@ -17,7 +17,7 @@ splitSections:
       both Arctic and Antarctic, to help keep an eye on the region’s growing
       shipping traffic—and to be on the lookout for foreign submarines. And on
       top of that: environmental monitoring.
-    heading: Environmental Monitoring
+    heading: Environmental monitoring
   - content: >-
       ## Support for machine vision
 
