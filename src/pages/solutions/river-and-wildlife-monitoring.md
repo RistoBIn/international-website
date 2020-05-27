@@ -1,22 +1,22 @@
 ---
 templateKey: solution-page-primary
-title: River and Wildlife Monitoring
+title: River & wildlife monitoring
 seoDescription: >-
   Environmental Challenges in the Aquaculture Industry Increases the Need for
   River and Wildlife Monitoring.
-heading: River and Wildlife Monitoring
-description: >-
-  Environmental Challenges in the Aquaculture Industry Increases the Need for
-  River and Wildlife Monitoring 
-featuredimage: /img/AdobeStock_245120319.jpeg
 priority: 7
+heading: River & wildlife monitoring
+description: >-
+  Environmental challenges in the aquaculture industry increases the need for
+  river and wildlife monitoring 
+featuredimage: /img/AdobeStock_245120319.jpeg
 splitSections:
   - content: >-
       Increased production of farmed Atlantic salmon (Salmo salar) worldwide and
       declining wild salmonid populations have caused concerns that salmon
       aquaculture is a major driver of abundance and viability of wild salmonid
       populations.
-    heading: Farmed Salmon Threatens the Wild Salmonids
+    heading: Farmed salmon threatens the wild salmonids
 imageSection:
   featuredimage: /img/AdobeStock_224942592.jpeg
   left: >-
