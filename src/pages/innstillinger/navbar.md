@@ -5,37 +5,37 @@ menuPaths:
         - path: /solutions/atlantic-salmon-and-seafood/
           title: Aquaculture
         - path: /solutions/harbor-surveillance/
-          title: Harbor Surveillance
+          title: Harbor surveillance
         - path: /solutions/underwater-drones-and-robotics/
-          title: Underwater Drones and Robotics
+          title: Underwater drones & robotics
         - path: /solutions/schools-and-universities/
-          title: Schools and Universities
+          title: Schools & universities
         - path: /solutions/military-and-defense/
-          title: Military & Defense
+          title: Military & defense
         - path: /solutions/science-arctic-and-antarctic-surveillance/
-          title: Science Arctic and Antarctic Surveillance
+          title: Science arctic & antarctic surveillance
         - path: /solutions/oil-gas-industry/
-          title: Oil and Gas Industry
+          title: Oil & gas industry
         - path: /solutions/bridge-and-watercourse-monitoring/
-          title: Bridge and Watercourse Monitoring
+          title: Bridge & watercourse monitoring
         - path: /solutions/environmental-monitoring/
-          title: Environmental Monitoring
+          title: Environmental monitoring
         - path: /solutions/hydropower-plants/
-          title: Hydropower Plants
+          title: Hydropower plants
         - path: /solutions/river-and-wildlife-monitoring/
-          title: River and Wildlife Monitoring
+          title: River & wildlife monitoring
         - path: /solutions/seabed-mining/
-          title: Seabed Mining
+          title: Seabed mining
         - path: /solutions/well-and-fishing-boats/
-          title: Well and Fishing Boats
+          title: Well & fishing boats
     path: '#'
     title: Industries
   - dropdown:
       highlighted:
         - path: /technologies/edge-intelligence/
-          title: Edge Intelligence
+          title: Edge intelligence
         - path: /technologies/software-platform/
-          title: BlueThink™ Software platform
+          title: BlueThink™ Software Platform
     path: '#'
     title: Technologies
   - dropdown:
@@ -53,7 +53,7 @@ menuPaths:
         - path: /projects/5G-heart/
           title: 5G Heart
         - path: /projects/clean-ocean-initiative/
-          title: Clean Ocean Initiative
+          title: Clean ocean initiative
     path: '#'
     title: Projects
   - dropdown:
@@ -61,16 +61,16 @@ menuPaths:
         - path: /investors/
           title: For investors
         - path: /about/vision-strategy/
-          title: Vision & Strategy
+          title: Vision & strategy
         - path: /leadership/
           title: Leadership
       regular:
         - path: /about/business-model/
-          title: Business Model
+          title: Business model
         - path: /about/social-responsibility/
-          title: Sustainability Impact
+          title: Sustainability impact
         - path: /about/innovation-cause-we-can/
-          title: Innovation ‘Cause We Can
+          title: Innovation ‘cause we can
         - path: /about/partners/
           title: SEALAB's existing partners
     path: '#'
