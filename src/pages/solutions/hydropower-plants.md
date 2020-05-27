@@ -1,15 +1,15 @@
 ---
 templateKey: solution-page-primary
-title: Hydropower Plants
+title: Hydropower plants
 seoDescription: >-
   Large systems, such as large manufacturing or power plants, telecommunication
   or computer networks, require distributed control, monitoring and diagnosis. A
   combination with AI and cameras, intelligent agents are software modules able
   to make decisions on their own, communicate with each other, learn new things
   and even “travel” from system to system.
-heading: Hydropower Plants
 priority: 7
-description: Surveillance of Hydroelectric Power Plants
+heading: Hydropower plants
+description: Surveillance of hydroelectric power plants
 featuredimage: /img/adobe_hydropower_plants.jpeg
 splitSections:
   - content: >-
@@ -19,9 +19,9 @@ splitSections:
       agents are software modules able to make decisions on their own,
       communicate with each other, learn new things and even “travel” from
       system to system.
-    heading: Surveillance of A Hydroelectric Power Plant
+    heading: Surveillance of a hydroelectric power plant
   - content: >-
-      ## Smart Cameras and Edge Computing
+      ## Smart cameras & edge computing
 
 
       The surveillance system can be superimposed with smart cameras and edge
