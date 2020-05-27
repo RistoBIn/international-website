@@ -1,8 +1,8 @@
 ---
 templateKey: about-social-responsibility
-title: Sustainability Impact
-seoDescription: Social responsibility is important to SEALAB. Learn why.
-heading: Sustainability Impact
+title: Sustainability impact
+seoDescription": Social responsibility is important to SEALAB. Learn why.
+heading: Sustainability impact
 description: >-
   SEALAB is dedicated to contributing to sustainable development, and
   safeguarding the ocean space is integral to our vision of giving everyone the
@@ -19,7 +19,7 @@ featuredImages:
   - image: /img/un_goal_13.svg
   - image: /img/un_goal_14.svg
 splitSection:
-  left: '##  UN''s Sustainable Development Goals'
+  left: '##  UN''s sustainable development goals'
   right: >-
     The ocean space is a key resource for energy, food, minerals, leisure, and
     transportation. It represents huge potential for value creation. Yet data
@@ -48,7 +48,7 @@ threeColSection:
       their livelihoods.
     icon: /img/global-population.svg
   - description: >-
-      ### 3/4 of Earth surface
+      ### 3/4 of earth surface
 
       Oceans cover three quarters of the Earth’s surface, contain 97 per cent of
       the Earth’s water, and represent 99 per cent of the living space on the
@@ -56,7 +56,7 @@ threeColSection:
     icon: /img/icon-CSR-3.svg
 splitSection2:
   left: >-
-    ## Corporate Social Responsibility
+    ## Corporate social responsibility
 
 
     ### The three pillars of sustainability
@@ -71,7 +71,7 @@ splitSection2:
 
 
 
-    ### International Organization for Standardization
+    ### International organization for standardization
 
 
     SEALAB has chosen to follow the guidelines stated in ISO 9001: 2015 to
@@ -109,7 +109,7 @@ splitSection3:
     ##### Certified ISO 9001 and ISO 14001 standards
 
 
-    ## International Organization for Standardization
+    ## International organization for standardization
 
 
     SEALAB has chosen to follow the guidelines stated in ISO 9001: 2015 to
