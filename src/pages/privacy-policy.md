@@ -1,8 +1,8 @@
 ---
 templateKey: simple-page
-title: Privacy Policy
-seoDescription: SEALABs Privacy Policy.
-heading: Privacy Policy
+title: Privacy policy
+seoDescription: SEALABs privacy policy.
+heading: Privacy policy
 ---
 # About SEALAB
 
