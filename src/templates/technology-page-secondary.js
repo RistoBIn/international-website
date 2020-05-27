@@ -11,8 +11,8 @@ import SectionListAlternating from '../components/SectionListAlternating';
 
 export const TechnologyPageTemplate = ({
   contentComponent,
-  // description,
-  // heading,
+  description,
+  heading,
   sectionOne,
   sectionTwo,
   imageSection,
@@ -24,12 +24,12 @@ export const TechnologyPageTemplate = ({
 
   return (
     <section className="has-dark-background product-page-primary">
-      {/* <section className="section">
+      <section className="section">
         <div className="container">
           <h1 className="section--title">{heading}</h1>
           <p className="section--description">{description}</p>
         </div>
-      </section> */}
+      </section>
       {sectionOne && sectionOne.featuredimage && sectionOne.left ? (
         <LargeImageWithSplitSection
           className="section large-image product-page-primary"
@@ -52,7 +52,7 @@ export const TechnologyPageTemplate = ({
       )}
 
       {sectionTwo ? (
-        <section className="section centered-section product-page-primary">
+        <section className="section is-large-top centered-section product-page-primary">
           <div className="container">
             <PostContent
               content={generateHTML(sectionTwo)}
@@ -64,7 +64,7 @@ export const TechnologyPageTemplate = ({
         <></>
       )}
       {imageSection && imageSection.featuredimage ? (
-        <section className="background-image-lines section is-medium centered-section product-page-primary">
+        <section className="background-image-lines section centered-section product-page-primary">
           <div className="container">
             <NonStretchedImage
               objectFit="contain"
@@ -79,7 +79,7 @@ export const TechnologyPageTemplate = ({
       )}
       {sectionFour ? (
         <LargeImageWithSplitSection
-          className="section is-medium large-image product-page-primary"
+          className="section is-large large-image product-page-primary"
           image={sectionFour.featuredimage}
           leftColumn={
             <>

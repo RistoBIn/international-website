@@ -376,12 +376,25 @@ body {
   }
 }
 
+
+
 .section.is-small {
   padding: 2rem 1.5rem;
 }
 @media screen and (min-width: $tablet) {
   .hero.is-large .hero-body {
     padding: 18rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .is-large-top {
+    padding: 1.5rem;
+    padding-top: 18rem;
+  }
+  .is-large-bottom {
+    padding: 1.5rem;
+    padding-bottom: 18rem;
   }
 }
 
@@ -484,7 +497,7 @@ nav.navbar {
 
     &:focus,
     &:hover,
-    &:active{
+    &:active {
       background-color: transparent;
     }
   }
@@ -637,7 +650,7 @@ footer.footer {
         line-height: 220%;
         transition: $transition;
         text-decoration: underline;
-      
+
         svg {
           margin: auto;
           height: 18px;

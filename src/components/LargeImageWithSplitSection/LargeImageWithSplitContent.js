@@ -10,15 +10,15 @@ const LargeImageWithSplitContent = ({
   className,
   image,
 }) => {
-  if (!image || !image.childImageSharp) return <></>;
+  if (!image || (!image.childImageSharp && !image.publicURL)) return <></>;
   return (
     <section className={classNames(styles.section, className)}>
       <div className="container">
         <NonStretchedImage
-          fluid={image.childImageSharp.fluid}
           objectFit="contain"
           alt=""
           className={classNames('image', styles.image)}
+          {...image}
         />
         <SplittedSection leftColumn={leftColumn} rightColumn={rightColumn} />
       </div>
