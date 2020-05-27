@@ -1,15 +1,25 @@
 ---
 templateKey: technology-page-secondary
 title: "Software platform for IoT integrations - BlueThink |\_SEALAB"
-heading: BlueThink™ Software platform
 seoDescription: >-
   Our software platform, BlueThink™, supports IoT integration, video
   distribution, and data handling. This enables good customer applications with
   unlimited possibilities.  
+heading: BlueThink™ Software platform
 description: >-
   Our software platform, BlueThink™, supports IoT integration, video
   distribution, and data handling. This enables good customer applications with
   unlimited possibilities.  
+sectionOne:
+  featuredimage: /img/Bluethink software highlight.svg
+  left: '## Solutions for the entire value chain'
+  right: >-
+    We provide solutions for the whole value chain. From physical devices like
+    our great camera to software applications like BlueThink™ GO. Our software
+    platform, BlueThink™, stores, and processes data. This enables both ours and
+    third-party software platforms to use the data as they like. At the end of
+    this value chain you’ll find our customers - happy to access their data and
+    devices.
 sectionTwo: >-
   ### BlueThink™
 
@@ -22,7 +32,7 @@ sectionTwo: >-
   be presented back into the platform for use by other applications.
 sectionThree:
   backgroundImage: /img/zigzagLines.svg
-  featuredimage: /img/IoTKeyFeatures.svg
+  featuredimage: /img/bluethink-software-platform-key-features-iot.svg
 sectionFour:
   button:
     path: /solutions/atlantic-salmon-and-seafood/
@@ -69,15 +79,5 @@ centeredSection:
     able to store and process large amounts of data. This enables third party
     suppliers and SEALAB to create computers that extract lessons from a large
     amount of data through machine learning.
-sectionOne:
-  featuredimage: /img/Bluethink software highlight.svg
-  left: '## Solutions for the entire value chain'
-  right: >-
-    We provide solutions for the whole value chain. From physical devices like
-    our great camera to software applications like BlueThink™ GO. Our software
-    platform, BlueThink™, stores, and processes data. This enables both ours and
-    third-party software platforms to use the data as they like. At the end of
-    this value chain you’ll find our customers - happy to access their data and
-    devices.
 ---
 
