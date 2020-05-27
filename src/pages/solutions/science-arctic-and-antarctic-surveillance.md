@@ -1,14 +1,14 @@
 ---
 templateKey: solution-page-secondary
-title: Science Arctic and Antarctic Surveillance
+title: Science arctic & antarctic surveillance
 seoDescription: >-
   Underwater drones equipped with high-tech sensors and edge computing in
   participation with smart cameras could one day patrol the icy waters of both
   Arctic and Antarctic, to help keep an eye on the region’s growing shipping
   traffic—and to be on the lookout for foreign submarines. And on top of that:
   environmental monitoring.
-heading: Science Arctic and Antarctic Surveillance
 priority: 5
+heading: Science arctic & antarctic surveillance
 description: >-
   Underwater drones equipped with high-tech sensors and edge computing in
   participation with smart cameras could one day patrol the icy waters of both
@@ -16,7 +16,7 @@ description: >-
 featuredimage: /img/adobe_arctic_ice_surface.jpg
 splitSections:
   - content: >-
-      ## Antarctic Surveillance
+      ## Antarctic surveillance
 
 
       Underwater drones equipped with high-tech sensors and edge computing in
@@ -38,11 +38,11 @@ splitSections:
       capabilities are present and will allow for both smart cameras, edge
       computing and data transmitting to satellite.
     heading: >-
-      Using Autonomous Underwater Vehicles as Sensor Platforms for
-      Ice-Monitoring
+      Using autonomous underwater vehicles as sensor platforms for
+      ice-monitoring
   - content: >-
-      ## Project Addressing Risk, Reliability and Ice Data in the Arctic Marine
-      Environment
+      ## Project addressing risk, reliability and ice data in the arctic marine
+      environment
 
 
       Data and knowledge about the marine environment in the Arctic and
