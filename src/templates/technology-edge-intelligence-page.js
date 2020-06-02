@@ -3,11 +3,9 @@ import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
 import generateHTML from '../utils/generateHTML';
 import NonStretchedImage from '../components/NonStretchedImage';
 import Button from '../components/Button';
-import SectionListAlternating from '../components/SectionListAlternating';
 import SplittedSection from '../components/SplittedSection';
 import { ButtonFlex } from '../styles';
 
@@ -21,6 +19,16 @@ const StyledEdgeIntelligence = styled.section`
       font-size: 14px;
       font-weight: bold;
     }
+  }
+  .examples {
+    .container.centered {
+      h2 {
+        max-width: 845px;
+      }
+    }
+  }
+  .buttons {
+    padding-top: 0;
   }
   @media only screen and (max-width: 768px) {
     .system-on-chip .image {
@@ -59,7 +67,6 @@ export const EdgeIntelligenceTemplate = ({
   quote,
   examples,
   thirdSection,
-  centeredSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -131,6 +138,19 @@ export const EdgeIntelligenceTemplate = ({
                   content={generateHTML(sectionItem.content)}
                   className="content is-left-aligned"
                 />
+                {sectionItem.buttons && sectionItem.buttons.length > 0 ? (
+                  <ButtonFlex className="buttons">
+                    {sectionItem.buttons.map(buttonObject => (
+                      <Button
+                        className="is-transparent"
+                        text={buttonObject.text}
+                        path={buttonObject.path}
+                      />
+                    ))}
+                  </ButtonFlex>
+                ) : (
+                  <></>
+                )}
               </StyledContent>
             }
           />
@@ -152,23 +172,67 @@ export const EdgeIntelligenceTemplate = ({
       ) : (
         <></>
       )}
-      {/* {imageSection && imageSection.featuredimage ? (
-        <section className="background-image-lines is-medium section centered-section product-page-primary">
-          <div className="container">
-            <NonStretchedImage
-              objectFit="contain"
-              alt=""
-              className="image"
-              {...imageSection.featuredimage}
+
+      {examples && examples.items && examples.items.length > 0 ? (
+        <section className="section is-large-top examples">
+          <div className="container centered">
+            <h2>{examples.heading}</h2>
+            <PostContent
+              content={generateHTML(examples.content)}
+              className="content"
             />
           </div>
         </section>
       ) : (
         <></>
-      )} */}
+      )}
+
+      {examples && examples.items && examples.items.length > 0 ? (
+        examples.items.map(sectionItem => (
+          <SplittedSection
+            className="section"
+            shouldReorderOnMobile
+            leftColumnCSS="center-vertically"
+            leftColumn={
+              <NonStretchedImage
+                objectFit="contain"
+                alt=""
+                className="image"
+                {...sectionItem.featuredimage}
+              />
+            }
+            rightColumnCSS="center-vertically"
+            rightColumn={
+              <StyledContent>
+                <p className="subheading">{sectionItem.subheading}</p>
+                <h3>{sectionItem.heading}</h3>
+                <PostContent
+                  content={generateHTML(sectionItem.content)}
+                  className="content is-left-aligned"
+                />
+                {sectionItem.buttons && sectionItem.buttons.length > 0 ? (
+                  <ButtonFlex className="buttons">
+                    {sectionItem.buttons.map(buttonObject => (
+                      <Button
+                        className="is-transparent"
+                        text={buttonObject.text}
+                        path={buttonObject.path}
+                      />
+                    ))}
+                  </ButtonFlex>
+                ) : (
+                  <></>
+                )}
+              </StyledContent>
+            }
+          />
+        ))
+      ) : (
+        <></>
+      )}
 
       <SplittedSection
-        className="section content has-dark-background"
+        className="section content has-dark-background has-border-top"
         rightColumn={
           <NonStretchedImage
             objectFit="contain"
