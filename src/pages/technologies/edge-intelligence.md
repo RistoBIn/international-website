@@ -19,6 +19,9 @@ systemOnChip:
       subheading: System on Chip
       heading: Do you want your camera to become conscious?
       content: SEALAB is uniquely positioned to leverage the full potential of EDGE computing. Our market-proven solutions on every step of the value chain have given us the perfect research and development platform for EDGE computing. 
+      buttons:
+        - path: /technologies/what-is-edge-computing/
+          text: Learn more about FPGA
     - featuredimage: /img/sCAM-highlighted.png
       subheading: System on Chip
       heading: 'Central to this is the most valuable component in any imaging infrastructure: the camera.'
