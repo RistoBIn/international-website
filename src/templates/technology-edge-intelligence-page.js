@@ -7,6 +7,7 @@ import generateHTML from '../utils/generateHTML';
 import NonStretchedImage from '../components/NonStretchedImage';
 import Button from '../components/Button';
 import SplittedSection from '../components/SplittedSection';
+import CTASection from '../components/CTASection';
 import { ButtonFlex } from '../styles';
 
 const StyledEdgeIntelligence = styled.section`
@@ -174,7 +175,7 @@ export const EdgeIntelligenceTemplate = ({
       )}
 
       {examples && examples.items && examples.items.length > 0 ? (
-        <section className="section is-large-top examples">
+        <section className="section is-medium examples">
           <div className="container centered">
             <h2>{examples.heading}</h2>
             <PostContent
@@ -182,51 +183,46 @@ export const EdgeIntelligenceTemplate = ({
               className="content"
             />
           </div>
-        </section>
-      ) : (
-        <></>
-      )}
-
-      {examples && examples.items && examples.items.length > 0 ? (
-        examples.items.map(sectionItem => (
-          <SplittedSection
-            className="section"
-            shouldReorderOnMobile
-            leftColumnCSS="center-vertically"
-            leftColumn={
-              <NonStretchedImage
-                objectFit="contain"
-                alt=""
-                className="image"
-                {...sectionItem.featuredimage}
-              />
-            }
-            rightColumnCSS="center-vertically"
-            rightColumn={
-              <StyledContent>
-                <p className="subheading">{sectionItem.subheading}</p>
-                <h3>{sectionItem.heading}</h3>
-                <PostContent
-                  content={generateHTML(sectionItem.content)}
-                  className="content is-left-aligned"
+          {examples.items.map(sectionItem => (
+            <SplittedSection
+              className="section"
+              shouldReorderOnMobile
+              leftColumnCSS="center-vertically"
+              leftColumn={
+                <NonStretchedImage
+                  objectFit="contain"
+                  alt=""
+                  className="image"
+                  {...sectionItem.featuredimage}
                 />
-                {sectionItem.buttons && sectionItem.buttons.length > 0 ? (
-                  <ButtonFlex className="buttons">
-                    {sectionItem.buttons.map(buttonObject => (
-                      <Button
-                        className="is-transparent"
-                        text={buttonObject.text}
-                        path={buttonObject.path}
-                      />
-                    ))}
-                  </ButtonFlex>
-                ) : (
-                  <></>
-                )}
-              </StyledContent>
-            }
-          />
-        ))
+              }
+              rightColumnCSS="center-vertically"
+              rightColumn={
+                <StyledContent>
+                  <p className="subheading">{sectionItem.subheading}</p>
+                  <h3>{sectionItem.heading}</h3>
+                  <PostContent
+                    content={generateHTML(sectionItem.content)}
+                    className="content is-left-aligned"
+                  />
+                  {sectionItem.buttons && sectionItem.buttons.length > 0 ? (
+                    <ButtonFlex className="buttons">
+                      {sectionItem.buttons.map(buttonObject => (
+                        <Button
+                          className="is-transparent"
+                          text={buttonObject.text}
+                          path={buttonObject.path}
+                        />
+                      ))}
+                    </ButtonFlex>
+                  ) : (
+                    <></>
+                  )}
+                </StyledContent>
+              }
+            />
+          ))}
+        </section>
       ) : (
         <></>
       )}
@@ -251,39 +247,11 @@ export const EdgeIntelligenceTemplate = ({
         }
       />
 
-      {/* {centeredSection ? (
-        <LargeImageWithSplitSection
-          className="section is-medium large-image product-page-primary"
-          image={centeredSection.featuredimage}
-          leftColumn={
-            <>
-              <h2>
-                <PostContent
-                  content={generateHTML(centeredSection.left)}
-                  className="content"
-                />
-              </h2>
-              {centeredSection.button && centeredSection.button.text ? (
-                <Button
-                  className="is-primary"
-                  text={centeredSection.button.text}
-                  path={centeredSection.button.path}
-                />
-              ) : (
-                <></>
-              )}
-            </>
-          }
-          rightColumn={
-            <PostContent
-              content={generateHTML(centeredSection.right)}
-              className="content"
-            />
-          }
-        />
-      ) : (
-        <></>
-      )} */}
+      <CTASection
+        heading="Want to Collaborate with SEALAB on new Solutions that are using Edge Technology?"
+        buttonText="Contact us"
+        buttonPath="/contact/"
+      />
     </StyledEdgeIntelligence>
   );
 };
