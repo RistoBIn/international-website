@@ -170,17 +170,19 @@ export const EdgeIntelligenceTemplate = ({
       <SplittedSection
         className="section content has-dark-background"
         rightColumn={
-          <PostContent
-            className="content links-are-buttons"
-            content={generateHTML(thirdSection.content)}
-          />
-        }
-        leftColumn={
           <NonStretchedImage
             objectFit="contain"
             alt=""
-            className="image"
+            className="image centered"
             {...thirdSection.featuredimage}
+          />
+        }
+        rightColumnCSS="centered"
+        leftColumnCSS="center-vertically"
+        leftColumn={
+          <PostContent
+            className="content links-are-buttons"
+            content={generateHTML(thirdSection.content)}
           />
         }
       />
