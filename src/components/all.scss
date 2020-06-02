@@ -355,7 +355,7 @@ body {
         max-width: 988px;
         margin: 0 auto;
       }
-      strong {
+      &.centered-free-text--blue strong {
         font-weight: normal;
         font-size: inherit;
         color: $light-blue;
@@ -456,6 +456,17 @@ body {
   line-height: 110%;
   color: $white !important;
 }
+.subheading--below {
+  color: $body-light;
+  font-size: 24px;
+  line-height: 170%;
+  padding-bottom: 25px;
+}
+
+.zig-zag-background {
+  background-image: url('../img/zigzagLines.svg');
+  background-size: cover;
+}
 
 .centered {
   margin: auto !important;
@@ -465,6 +476,11 @@ body {
   .button {
     margin: 0 auto;
   }
+}
+
+
+.center-vertically {
+  margin: auto 0 !important;
 }
 
 section.background-section {
@@ -477,6 +493,10 @@ section.background-section {
 .border-top-bottom {
   border-top: 1px solid $border-dark-background;
   border-bottom: 1px solid $border-dark-background;
+}
+
+.padding-medium {
+  padding: 2rem;
 }
 
 /****************     NAVIGATION    ********************/

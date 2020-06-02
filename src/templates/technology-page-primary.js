@@ -54,7 +54,7 @@ export const ProductPageTemplate = ({
         }
       />
       <section className="section centered-free-text">
-        <div className="container content  centered-free-text">
+        <div className="container content  centered-free-text centered-free-text--blue">
           <PostContent content={printText} />
         </div>
       </section>
