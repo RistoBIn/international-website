@@ -54,8 +54,8 @@ const CurrentTimeline = ({ heading, event }) => {
 
   if (!heading || !event) return <></>;
   const {
-    friendlyName,
-    friendlyCameraName,
+    friendlyTitleName_en: friendlyTitleName,
+    friendlyCameraName_en: friendlyCameraName,
     start_time: startTime,
     stop_time: endTime,
   } = event;
@@ -74,7 +74,7 @@ const CurrentTimeline = ({ heading, event }) => {
         <EventText
           startTime={friendlyStartTime}
           endTime={friendlyEndTime}
-          heading={friendlyName}
+          heading={friendlyTitleName}
           camName={friendlyCameraName}
           isActive
         />
