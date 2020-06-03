@@ -45,7 +45,8 @@ systemOnChip:
         fulfil the most demanding computer vision and AI tasks. The on-chip
         processing gets past challenges around massive data generation and poor
         image quality by doing the processing in the camera unit itself. Our
-        System on Chip can be customised for different cameras and tasks.
+        system on chip can be customised for different cameras, and remotely
+        reprogrammed to perform ever more advanced tasks.
       heading: >-
         Central to this is the most valuable component in any imaging
         infrastructure: the camera.
