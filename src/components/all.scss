@@ -439,13 +439,19 @@ body {
   text-transform: none;
 }
 
-.image.full-width {
-  width: 100%;
-  height: 375px;
-  overflow: hidden;
+.image {
+  &.full-width {
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+  
+    @media screen and (min-width: $tablet) {
+      height: 100%;
+    }
+  }
 
-  @media screen and (min-width: $tablet) {
-    height: 100%;
+  &.image--center {
+    margin: auto;
   }
 }
 

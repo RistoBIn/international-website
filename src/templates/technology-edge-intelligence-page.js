@@ -106,7 +106,7 @@ export const EdgeIntelligenceTemplate = ({
       </section>
       {systemOnChip && systemOnChip.featuredimage ? (
         <SplittedSection
-          className="section is-large-top"
+          className="section"
           leftColumn={
             <>
               <h2>{systemOnChip.heading}</h2>
@@ -121,7 +121,7 @@ export const EdgeIntelligenceTemplate = ({
             <NonStretchedImage
               objectFit="contain"
               alt=""
-              className="image"
+              className="image image--center"
               {...systemOnChip.featuredimage}
             />
           }
@@ -142,7 +142,7 @@ export const EdgeIntelligenceTemplate = ({
               <NonStretchedImage
                 objectFit="contain"
                 alt=""
-                className="image"
+                className="image image--center"
                 {...sectionItem.featuredimage}
               />
             }
@@ -157,13 +157,21 @@ export const EdgeIntelligenceTemplate = ({
                 />
                 {sectionItem.buttons && sectionItem.buttons.length > 0 ? (
                   <ButtonFlex className="buttons">
-                    {sectionItem.buttons.map(buttonObject => (
-                      <Button
-                        className="is-transparent"
-                        text={buttonObject.text}
-                        path={buttonObject.path}
-                      />
-                    ))}
+                    {sectionItem.buttons.map(buttonObject => {
+                      const { text, path } = buttonObject;
+                      const isContactButton = path.includes('contact');
+
+                      return (
+                        <Button
+                          className={classNames({
+                            'is-transparent': !isContactButton,
+                            'is-primary': isContactButton,
+                          })}
+                          text={text}
+                          path={path}
+                        />
+                      );
+                    })}
                   </ButtonFlex>
                 ) : (
                   <></>
@@ -224,7 +232,7 @@ export const EdgeIntelligenceTemplate = ({
                     <ButtonFlex className="buttons">
                       {sectionItem.buttons.map(buttonObject => (
                         <Button
-                          className="is-transparent"
+                          className={classNames('is-transparent')}
                           text={buttonObject.text}
                           path={buttonObject.path}
                         />
@@ -249,7 +257,7 @@ export const EdgeIntelligenceTemplate = ({
           <NonStretchedImage
             objectFit="contain"
             alt=""
-            className="image"
+            className="image image--center"
             {...thirdSection.featuredimage}
           />
         }
