@@ -242,6 +242,7 @@ export const EdgeIntelligenceTemplate = ({
       )}
 
       <SplittedSection
+        shouldReorderOnMobile
         className="section content has-dark-background has-border-top"
         rightColumn={
           <NonStretchedImage

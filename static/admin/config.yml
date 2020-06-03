@@ -259,47 +259,68 @@ collections:
     files:
       - file: "src/pages/technologies/edge-intelligence.md"
         label: "Edge Intelligence"
-        name: technology-page-primary
+        name: technology-edge-intelligence-page
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-primary"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-edge-intelligence-page"}
           - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
-          - {label: "Heading", name: "heading", widget: "string", hint: "Dette er overskriften man først ser på toppen av siden."}
+          - {label: "Heading", name: "heading", widget: "string", hint: "Heading at the top of the page."}
           - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
           - {label: "Description", name: "description", widget: "text"}
-          - label: Comparison
-            name: item1vsitem2
-            required: false
+          - {label: "Featured image", name: "featuredimage", widget: image }
+          - {label: "Featured image - Mobile", name: "featuredimageMobile", widget: image }
+          - label: System on chip
+            name: systemOnChip
             widget: object
             fields:
               - {label: "Heading", name: "heading", widget: "string"}
               - {label: "Subheading", name: "subheading", widget: "string"}
-              - label: "Item 1"
-                name: item1
-                widget: object
+              - {label: "Content", name: "content", widget: "markdown"}
+              - {label: "Featured image", name: "featuredimage", widget: image }
+              - label: Sub sections
+                name: subsections
+                widget: list
                 fields:
                   - {label: "Heading", name: "heading", widget: "string"}
-                  - {label: "Image", name: "featuredimage", widget: image }
-                  - {label: "Comparison list", name: "items", widget: "list"}
-              - label: "Item 2"
-                name: item2
-                widget: object
-                fields:
-                  - {label: "Heading", name: "heading", widget: "string"}
-                  - {label: "Image", name: "featuredimage", widget: image }
-                  - {label: "Comparison list", name: "items", widget: "list"}
+                  - {label: "Subheading", name: "subheading", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+                  - {label: "Featured image", name: "featuredimage", widget: image }
+                  - label: Button
+                    widget: list
+                    name: buttons
+                    fields:
+                      - {label: "Button text", name: text, widget: string, hint: "Keep it short"}
+                      - {label: "Button path", name: path, widget: string, hint: "Always end with /. Example: /technologies/edge-intelligence/"}
+          - label: Quote
+            name: quote
+            widget: object
+            fields:
+              - {label: "Quote", name: "content", widget: "markdown"}
+              - {label: "Author", name: "author", widget: "text"}
                   
 
-          - {label: "First section image", name: "featuredimageSecondary", widget: image }
-          - {label: "First section content", name: "body", widget: "markdown"}
-
-          - {label: "Centered text", name: "centeredText", widget: "markdown"}
+          - label: "Example"
+            widget: object
+            name: examples
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Content", name: "content", widget: "markdown"}
+              - label: Example items
+                name: items
+                widget: list
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Subheading", name: "subheading", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+                  - {label: "Featured image", name: "featuredimage", widget: image }
 
           - label: "Last section"
             widget: object
             name: thirdSection
+            required: false
             fields:
-              - {label: "Left image", name: "featuredimage", widget: image }
-              - {label: "Right content", name: "content", widget: "markdown"}
+              - {label: "Left image", name: "featuredimage", widget: image, required: false }
+              - {label: "Right content", name: "content", widget: "markdown", required: false}
+
       - file: "src/pages/technologies/software-platform.md"
         label: "BlueThink Software platform"
         name: "technology-page-secondary"
@@ -379,7 +400,50 @@ collections:
               - label: "Right column"
                 name: "right"
                 widget: "markdown"
+      - file: "src/pages/technologies/what-is-edge-computing.md"
+        label: "What is Edge intelligence"
+        name: technology-page-primary
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "technology-page-primary"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
+          - {label: "Heading", name: "heading", widget: "string", hint: "The heading of the page. "}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: Comparison
+            name: item1vsitem2
+            required: false
+            widget: object
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Subheading", name: "subheading", widget: "string"}
+              - label: "Item 1"
+                name: item1
+                widget: object
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Image", name: "featuredimage", widget: image }
+                  - {label: "Comparison list", name: "items", widget: "list"}
+              - label: "Item 2"
+                name: item2
+                widget: object
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Image", name: "featuredimage", widget: image }
+                  - {label: "Comparison list", name: "items", widget: "list"}
+                  
 
+          - {label: "First section image", name: "featuredimageSecondary", widget: image }
+          - {label: "First section content", name: "body", widget: "markdown"}
+
+          - {label: "Centered text", name: "centeredText", widget: "markdown"}
+
+          - label: "Last section"
+            widget: object
+            name: thirdSection
+            required: false
+            fields:
+              - {label: "Left image", name: "featuredimage", widget: image, required: false }
+              - {label: "Right content", name: "content", widget: "markdown", required: false}
 
 
 #### SETTINGS ####

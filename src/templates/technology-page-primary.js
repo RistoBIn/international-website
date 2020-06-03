@@ -58,23 +58,27 @@ export const ProductPageTemplate = ({
           <PostContent content={printText} />
         </div>
       </section>
-      <SplittedSection
-        className="section content has-dark-background"
-        rightColumn={
-          <PostContent
-            className="content links-are-buttons"
-            content={generateHTML(thirdSection.content)}
-          />
-        }
-        leftColumn={
-          <NonStretchedImage
-            objectFit="contain"
-            alt=""
-            className="image"
-            {...thirdSection.featuredimage}
-          />
-        }
-      />
+      {thirdSection ? (
+        <SplittedSection
+          className="section content has-dark-background"
+          rightColumn={
+            <PostContent
+              className="content links-are-buttons"
+              content={generateHTML(thirdSection.content)}
+            />
+          }
+          leftColumn={
+            <NonStretchedImage
+              objectFit="contain"
+              alt=""
+              className="image"
+              {...thirdSection.featuredimage}
+            />
+          }
+        />
+      ) : (
+        <></>
+      )}
     </section>
   );
 };
