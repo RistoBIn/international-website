@@ -8,7 +8,8 @@ seoDescription: >-
 description: >-
   Edge computing is about processing at the points in the value chain where it is useful and efficient. Machine vision and artificial intelligence require a data volume, data quality, and frequency that challenge earlier paradigms such as Cloud computing. Instead of transporting all data to the cloud, important processing is done at the edge.
 
-featuredimage: /img/sealab-value-chain-fpga.svg
+featuredimage: /img/sealab-value-chain-fpga.jpg
+featuredimageMobile: /img/sealab-value-chain-fpga-mobile.jpg
 systemOnChip: 
   heading: System on Chip Developed by SEALAB
   subheading: Based on Experience from the Whole Value Chain
