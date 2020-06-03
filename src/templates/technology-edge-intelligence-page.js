@@ -131,10 +131,12 @@ export const EdgeIntelligenceTemplate = ({
       )}
 
       {systemOnChip && systemOnChip.subsections ? (
-        systemOnChip.subsections.map(sectionItem => (
+        systemOnChip.subsections.map((sectionItem, index) => (
           <SplittedSection
-            className="system-on-chip section"
-            shouldReorderOnMobile
+            className={classNames('system-on-chip', 'section', {
+              'has-border-top--mobile': index === 0,
+              'has-border-top': index === 0,
+            })}
             leftColumnCSS="center-vertically"
             leftColumn={
               <NonStretchedImage
@@ -200,7 +202,6 @@ export const EdgeIntelligenceTemplate = ({
           {examples.items.map(sectionItem => (
             <SplittedSection
               className="section"
-              shouldReorderOnMobile
               leftColumnCSS="center-vertically"
               leftColumn={
                 <NonStretchedImage
