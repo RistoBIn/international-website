@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import classNames from 'classnames';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
@@ -63,6 +64,7 @@ export const EdgeIntelligenceTemplate = ({
   heading,
   subheading,
   featuredimage,
+  featuredimageMobile,
   description,
   systemOnChip,
   quote,
@@ -85,9 +87,21 @@ export const EdgeIntelligenceTemplate = ({
           <NonStretchedImage
             objectFit="contain"
             alt=""
-            className="image"
+            className={classNames('image', {
+              'is-hidden-mobile': featuredimageMobile,
+            })}
             {...featuredimage}
           />
+          {featuredimageMobile ? (
+            <NonStretchedImage
+              objectFit="contain"
+              alt=""
+              className={classNames('image', 'is-hidden-tablet')}
+              {...featuredimageMobile}
+            />
+          ) : (
+            <></>
+          )}
         </div>
       </section>
       {systemOnChip && systemOnChip.featuredimage ? (
@@ -233,7 +247,7 @@ export const EdgeIntelligenceTemplate = ({
           <NonStretchedImage
             objectFit="contain"
             alt=""
-            className="image centered"
+            className="image"
             {...thirdSection.featuredimage}
           />
         }
@@ -266,6 +280,7 @@ const EdgeIntelligencePage = ({ data }) => {
     subheading,
     description,
     featuredimage,
+    featuredimageMobile,
     systemOnChip,
     quote,
     examples,
@@ -282,6 +297,7 @@ const EdgeIntelligencePage = ({ data }) => {
         subheading={subheading}
         description={description}
         featuredimage={featuredimage}
+        featuredimageMobile={featuredimageMobile}
         systemOnChip={systemOnChip}
         quote={quote}
         examples={examples}
@@ -310,6 +326,16 @@ export const pageQuery = graphql`
           extension
           childImageSharp {
             fluid(maxWidth: 1410, quality: 80) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+              presentationWidth
+            }
+          }
+        }
+        featuredimageMobile {
+          publicURL
+          extension
+          childImageSharp {
+            fluid(maxWidth: 700, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
               presentationWidth
             }
