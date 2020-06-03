@@ -4,10 +4,10 @@ import TimelineText from '../TimelineText';
 import { getDigitalTime } from '../../../utils/date';
 
 const NextEvent = ({ heading, event }) => {
-  if (!heading || !event || !event.friendlyName) return <></>;
+  if (!heading || !event || !event.friendlyTitleName_en) return <></>;
   const {
-    friendlyName,
-    friendlyCameraName,
+    friendlyTitleName_en: friendlyTitleName,
+    friendlyCameraName_en: friendlyCameraName,
     start_time: startTime,
     stop_time: endTime,
   } = event;
@@ -21,7 +21,7 @@ const NextEvent = ({ heading, event }) => {
         <TimelineText
           startTime={friendlyStartTime}
           endTime={friendlyEndTime}
-          heading={friendlyName}
+          heading={friendlyTitleName}
           camName={friendlyCameraName}
         />
       </div>
