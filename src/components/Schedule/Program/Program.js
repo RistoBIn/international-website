@@ -19,8 +19,8 @@ const Program = ({ className, heading, events }) => {
             key={gen.next().value}
             startTime={eventItem.start_time}
             endTime={eventItem.stop_time}
-            friendlyName={eventItem.friendlyName}
-            cam={eventItem.friendlyCameraName}
+            friendlyTitleName={eventItem.friendlyTitleName_en}
+            cam={eventItem.friendlyCameraName_en}
           />
         );
       })}
@@ -28,7 +28,7 @@ const Program = ({ className, heading, events }) => {
   );
 };
 
-const EventItem = ({ startTime, endTime, friendlyName, cam }) => {
+const EventItem = ({ startTime, endTime, friendlyTitleName, cam }) => {
   const friendlyStartTime = getDigitalTime(startTime);
   const friendlyEndTime = getDigitalTime(endTime);
 
@@ -40,7 +40,7 @@ const EventItem = ({ startTime, endTime, friendlyName, cam }) => {
       <p
         className={styles.event__time}
       >{`${friendlyStartTime} - ${friendlyEndTime}`}</p>
-      <h4 className={styles.event__heading}>{friendlyName}</h4>
+      <h4 className={styles.event__heading}>{friendlyTitleName}</h4>
       <div className={styles.event__duration}>
         <ClockIcon />
         <p>{duration}</p>
