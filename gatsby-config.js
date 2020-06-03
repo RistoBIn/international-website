@@ -154,6 +154,8 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_KEY,
       },
     },
+    'gatsby-redirect-from',
+    'gatsby-plugin-meta-redirect', // make sure this is always the last one
     // {
     //   resolve: "gatsby-plugin-google-tagmanager",
     //   options: {

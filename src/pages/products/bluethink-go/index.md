@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /bluethink-go/
 templateKey: product-page-btgo
 title: BlueThink™ GO
 heading: BlueThink™ GO
