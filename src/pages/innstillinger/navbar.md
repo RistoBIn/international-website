@@ -72,7 +72,7 @@ menuPaths:
         - path: /about/innovation-cause-we-can/
           title: Innovation ‘cause we can
         - path: /about/partners/
-          title: SEALAB's existing partners
+          title: Our partners
     path: '#'
     title: Investors
   - dropdown:
