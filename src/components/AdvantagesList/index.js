@@ -19,10 +19,21 @@ const Wrap = styled.div`
 		font-size: 14px;
 		line-height: 140%;
 	}
+	@media(max-width: 768px) {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 20px;
+		p {
+			max-width: 191px;
+			margin: 55px auto 0;
+		}
+	}
 `
 const AdvantageItem = styled.div`
   padding: 10px 30px;
   border-left: ${props=>props.bl};
+  @media(max-width: 768px) {
+  	border-left: 0px;
+  }
 `
 
 const AdvantagesList = ({data}) => (

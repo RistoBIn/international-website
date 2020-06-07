@@ -1354,6 +1354,18 @@ section.product-page-primary {
 .is-centered {
   text-align: center;
 }
+.is-mobile-hidden {
+  display: block;
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+.is-mobile-show {
+  display: none;
+  @media only screen and (max-width: $tablet) {
+    display: block;
+  }
+}
 .side-image {
   width: 100%;
   max-width: 570px;
@@ -1364,6 +1376,7 @@ section.product-page-primary {
   max-width: 895px;
   margin: auto;
   width: 100%;
+  text-align: center;
   & * {
     text-align: center !important;
   }
@@ -1373,6 +1386,9 @@ section.product-page-primary {
     width: 100%;
     font-size: 22px;
     line-height: 170%;
+  }
+  & button {
+    margin: 41px 0;
   }
   @media only screen and (max-width: $tablet) {
     & * {

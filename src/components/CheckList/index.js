@@ -33,7 +33,6 @@ const CheckList = ({data}) => {
 	if (!data || data.length < 1) {
     return <></>;
   }
-  console.log(data)
   return (
     <Wrapper >
       {

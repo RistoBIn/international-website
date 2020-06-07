@@ -42,9 +42,9 @@ scamSection:
     Companies who seek new ways to make their facility as energy-efficient and sustainable as possible will need real-time surveillance systems for monitoring fish welfare and production. SEALABs machine vision systems for biomass control, respiratory rate measuring and feeding control will help our customers to reach their goals. SEALAB supplies both underwater and surface cameras.
   linkButtons: 
     - buttonTxt: sCAM
-      buttonLink: /technologies/edge-intelligence/
+      buttonLink: /products/subsea-cam/
     - buttonTxt: "Camera technology/edge computing"
-      buttonLink: /technologies/software-platform/
+      buttonLink: /products/subsea-cam/
   sideImage: /img/sCAM-highlighted.png
 middleImage: /img/land-based-fish-farming-middle.jpg
 controlSection: 
@@ -64,7 +64,7 @@ imageSplitSections:
       Have you ever been concerned about the conditions in the fish tanks when you're not at work? BlueThink™ GO lets you access your real-time data, Livestream, historical data and more no matter where and when. The service is using BlueThink™ Software Platform and is therefore open to third parties.
     linkButtons:
       - buttonTxt: "BlueThink™ GO "
-        buttonLink: /technologies/edge-intelligence/
+        buttonLink: /products/bluethink-go
     sideImage: /img/bluethink-go.png
   - label: Designed for AI and computer vision
     heading: "SEALAB Quintus LED"
@@ -88,7 +88,8 @@ getStartSection:
   description: >-
     Are you interested in using SEALAB's solutions at your fish farm? Or would you like to hear more about some of the products? Do not hesitate to contact us.
   buttonTxt: Contact us for a demo
-  buttonLink: "/technologies/edge-intelligence/"
+  buttonLink: "/contact"
   topImage: /img/get-started-with-sealab.jpg
+  mobileTopImage: /img/get-started-with-sealab-mobile.jpg
 ---
 

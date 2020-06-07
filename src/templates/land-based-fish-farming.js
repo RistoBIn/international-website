@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
@@ -15,6 +15,7 @@ import CheckList from '../components/CheckList';
 import AdvantagesList from '../components/AdvantagesList'
 import LinkButtons from '../components/LinkButtons'
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
+import ArrowRight from '../img/Arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
 
 export const LandBasedFishFarmingPageTemplate = ({
@@ -31,6 +32,8 @@ export const LandBasedFishFarmingPageTemplate = ({
   controlSection,
   imageSplitSections,
   middleDescription,
+  settingSection,
+  getStartSection,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -79,8 +82,8 @@ export const LandBasedFishFarmingPageTemplate = ({
       </section>
       <section className="section">
         <div className="container">
-          <div className="row center-align-wrapper">
-            <p className="section--subheading">{advantageSection.label}</p>
+          <div className="row">
+            <p className="section--subheading has-text-centered">{advantageSection.label}</p>
           </div>
           <AdvantagesList data={advantageSection.advantages} /> 
         </div>
@@ -105,7 +108,7 @@ export const LandBasedFishFarmingPageTemplate = ({
           <Img fluid={middleImage.childImageSharp.fluid} />
         </div>
       </section>
-      <section id="first-section"  className="section">
+      <section className="section">
         <div className="container">
           <div className="columns">
             <div className="column">
@@ -162,7 +165,43 @@ export const LandBasedFishFarmingPageTemplate = ({
       }
       <section className="section">
         <div className="container ">
-          <div className="middle-description" dangerouslySetInnerHTML={{ __html: middleDescription }} />
+          <div className="middle-description">
+            "{middleDescription}"
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <div className="columns is-vcentered reverse-row-order">
+            <div className="column">
+              <h2 className="section--title">{settingSection.heading}</h2>
+              <HTMLContent content={settingSection.content} />
+              <LinkButtons data={settingSection.linkButtons} />
+            </div>
+            <div className="column">
+              <Img className="side-image" fluid={settingSection.sideImage.childImageSharp.fluid} />
+            </div>
+          </div>          
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <div className="row">
+            <Img className="is-mobile-hidden" fluid={getStartSection.topImage.childImageSharp.fluid} />
+            <Img className="is-mobile-show" fluid={getStartSection.mobileTopImage.childImageSharp.fluid} />
+          </div>
+          <div className="row center-align-wrapper">
+            <h2 className="section--title">{getStartSection.heading}</h2>
+            <HTMLContent content={getStartSection.description} />
+            <button className="button is-primary">
+              <Link to={getStartSection.buttonLink}>
+                <span>{getStartSection.buttonTxt}</span>
+                <span className="icon is-small">
+                  <ArrowRight />
+                </span>
+              </Link>
+            </button>
+          </div>      
         </div>
       </section>
     </section>
@@ -171,6 +210,7 @@ export const LandBasedFishFarmingPageTemplate = ({
 
 const Hero = ({ className, heading, description, image }) => {
   return (
+  <div>
     <BackgroundImage
       className={classNames('hero', className)}
       image={image}
@@ -180,17 +220,27 @@ const Hero = ({ className, heading, description, image }) => {
       }}
       style={{
         backgroundPosition: 'bottom center !important',
+        minHeight: "320px",
       }}
     >
-      <div className={classNames('hero-body')}>
+      <div className={classNames('hero-body is-mobile-hidden')}>
         <div className="container">
-          <div>
+          <div className="row">
             <h1>{heading}</h1>
             <p>{description}</p>
           </div>
         </div>
       </div>
     </BackgroundImage>
+    <section className="section is-mobile-show">
+      <div className="container">
+        <div className="row">
+          <h1>{heading}</h1>
+          <p>{description}</p>
+        </div>
+      </div>
+    </section>
+  </div>
   );
 };
 
@@ -211,6 +261,8 @@ const LandBasedFishFarmingPage = ({ data }) => {
     controlSection,
     imageSplitSections,
     middleDescription,
+    settingSection,
+    getStartSection,
   } = frontmatter;
 
   return (
@@ -229,6 +281,8 @@ const LandBasedFishFarmingPage = ({ data }) => {
         controlSection={controlSection}
         imageSplitSections={imageSplitSections}
         middleDescription={middleDescription}
+        settingSection={settingSection}
+        getStartSection={getStartSection}
       />
     </Layout>
   );
@@ -381,6 +435,16 @@ export const pageQuery = graphql`
             extension
             childImageSharp {
               fluid(maxHeight: 491, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
+              }
+            }
+          }
+          mobileTopImage {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 560, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
