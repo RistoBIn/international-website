@@ -38,13 +38,16 @@ body {
       padding: 1.1rem 1rem !important;
     }
     &.is-primary,
-    &:not(.is-secondary):not(.is-transparent):not(.is-white) {
+    &:not(.is-secondary):not(.is-transparent):not(.is-white):not(.is-third) {
       background-color: $red;
       color: $white;
       text-decoration: none !important;
       svg {
         fill: $white;
         stroke: $white;
+      }
+      a {
+        color: $white;
       }
       &:hover,
       &:focus {
@@ -65,10 +68,30 @@ body {
       &:focus {
         opacity: 1;
       }
+
       svg,
       svg path {
         fill: $text-dark;
         stroke: $text-dark;
+      }
+    }
+    &.is-third {
+      background-color: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: $white;
+      opacity: 0.95;
+      &:hover,
+      &:focus {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      a {
+        color: $white;
+      }
+      svg,
+      svg path {
+        fill: $white;
+        stroke: $white;
       }
     }
     &.is-transparent {
@@ -407,6 +430,7 @@ body {
     }
     .column:nth-of-type(2) {
       order: 1;
+      width: 100%;
     }
   }
 }
@@ -1320,4 +1344,52 @@ section.product-page-primary {
       }
     }
   }
+}
+
+/****************     Land Based Fish Farming    ********************/
+
+.is-vcentered {
+  align-items: center;
+}
+.is-centered {
+  text-align: center;
+}
+.side-image {
+  width: 100%;
+  max-width: 570px;
+  margin: auto;
+  min-height: 375px;
+}
+.center-align-wrapper {
+  max-width: 895px;
+  margin: auto;
+  width: 100%;
+  & * {
+    text-align: center !important;
+  }
+  & .description {
+    max-width: 660px;
+    margin: auto;
+    width: 100%;
+    font-size: 22px;
+    line-height: 170%;
+  }
+  @media only screen and (max-width: $tablet) {
+    & * {
+      text-align: left !important;
+      margin-left: 0;
+    }
+    & .description {
+      max-width: 100%;
+    }
+  }
+}
+
+.middle-description {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
 }
