@@ -1125,7 +1125,9 @@ collections:
                 fields:
                   - {label: "Button Text", name: "buttonTxt", widget: string}
                   - {label: "Button Link", name: "buttonLink", widget: string}
-              - {label: "Side Image", name: "sideImage", widget: image}
+              - {label: "Side Image1", name: "sideImage1", widget: image}
+              - {label: "Side Image2", name: "sideImage2", widget: image}
+              - {label: "Side Image3", name: "sideImage3", widget: image}
           - label: "Get Started Section"
             name: getStartSection
             widget: object
