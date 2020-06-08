@@ -2,21 +2,17 @@ import React from 'react';
 import classNames from 'classnames';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
-import Content, { HTMLContent } from '../components/Content';
+import { HTMLContent } from '../components/Content';
 import BackgroundImage from '../components/BackgroundImage';
 import CheckList from '../components/CheckList';
-import AdvantagesList from '../components/AdvantagesList'
-import LinkButtons from '../components/LinkButtons'
+import AdvantagesList from '../components/AdvantagesList';
+import LinkButtons from '../components/LinkButtons';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import ArrowRight from '../img/Arrow.inline.svg';
-import generateHTML from '../utils/generateHTML';
 
 export const LandBasedFishFarmingPageTemplate = ({
-  content,
-  contentComponent,
   description,
   heading,
   featuredimage,
@@ -31,8 +27,6 @@ export const LandBasedFishFarmingPageTemplate = ({
   settingSection,
   getStartSection,
 }) => {
-  const PostContent = contentComponent || Content;
-
   return (
     <section className="solution-page-primary solution-page has-dark-background">
       <Hero
@@ -52,7 +46,7 @@ export const LandBasedFishFarmingPageTemplate = ({
           </AnchorLink>
         </div>
       </section>
-      <section id="first-section"  className="section">
+      <section id="first-section" className="section">
         <div className="container">
           <div className="columns is-vcentered reverse-row-order">
             <div className="column">
@@ -61,19 +55,29 @@ export const LandBasedFishFarmingPageTemplate = ({
               <HTMLContent content={seaToLandSection.description} />
             </div>
             <div className="column">
-              <Img className="side-image" fluid={seaToLandSection.sideImage.childImageSharp.fluid} />
+              <Img
+                className="side-image"
+                fluid={seaToLandSection.sideImage.childImageSharp.fluid}
+              />
             </div>
-          </div>          
+          </div>
         </div>
       </section>
       <section className="section">
         <div className="container">
           <div className="column center-align-wrapper">
-            <p className="section--subheading has-mobile-left">{featureSection.label}</p>
-            <h2 className="section--title has-mobile-left">{featureSection.heading}</h2>
-            <HTMLContent className="description" content={featureSection.description} />
+            <p className="section--subheading has-mobile-left">
+              {featureSection.label}
+            </p>
+            <h2 className="section--title has-mobile-left">
+              {featureSection.heading}
+            </h2>
+            <HTMLContent
+              className="description"
+              content={featureSection.description}
+            />
             <CheckList features={featureSection.features} />
-          </div>    
+          </div>
         </div>
       </section>
       <section className="section">
@@ -81,7 +85,7 @@ export const LandBasedFishFarmingPageTemplate = ({
           <div className="row">
             <p className="bold has-text-centered">{advantageSection.label}</p>
           </div>
-          <AdvantagesList advantages={advantageSection.advantages} /> 
+          <AdvantagesList advantages={advantageSection.advantages} />
         </div>
       </section>
       <section className="section">
@@ -94,9 +98,12 @@ export const LandBasedFishFarmingPageTemplate = ({
               <LinkButtons buttons={scamSection.linkButtons} />
             </div>
             <div className="column">
-              <Img className="side-image" fluid={scamSection.sideImage.childImageSharp.fluid} />
+              <Img
+                className="side-image"
+                fluid={scamSection.sideImage.childImageSharp.fluid}
+              />
             </div>
-          </div>          
+          </div>
         </div>
       </section>
       <section className="section">
@@ -115,54 +122,57 @@ export const LandBasedFishFarmingPageTemplate = ({
               <HTMLContent content={controlSection.content} />
               <LinkButtons buttons={controlSection.linkButtons} />
             </div>
-          </div>          
+          </div>
         </div>
       </section>
-      {
-        imageSplitSections.map((sectionData, i)=>{
-          if (i%2===0) {
-            return(
-              <section className="section">
-                <div className="container">
-                  <div className="columns is-vcentered reverse-row-order">
-                    <div className="column">
-                      <p className="section--subheading">{sectionData.label}</p>
-                      <h2 className="section--title">{sectionData.heading}</h2>
-                      <HTMLContent content={sectionData.content} />
-                      <LinkButtons buttons={sectionData.linkButtons} />
-                    </div>
-                    <div className="column">
-                      <Img className="side-image" fluid={sectionData.sideImage.childImageSharp.fluid} />
-                    </div>
-                  </div>          
+      {imageSplitSections.map((sectionData, i) => {
+        if (i % 2 === 0) {
+          return (
+            <section className="section">
+              <div className="container">
+                <div className="columns is-vcentered reverse-row-order">
+                  <div className="column">
+                    <p className="section--subheading">{sectionData.label}</p>
+                    <h2 className="section--title">{sectionData.heading}</h2>
+                    <HTMLContent content={sectionData.content} />
+                    <LinkButtons buttons={sectionData.linkButtons} />
+                  </div>
+                  <div className="column">
+                    <Img
+                      className="side-image"
+                      fluid={sectionData.sideImage.childImageSharp.fluid}
+                    />
+                  </div>
                 </div>
-              </section>
-            )
-          } else {
-            return(
-              <section className="section">
-                <div className="container">
-                  <div className="columns is-vcentered">
-                    <div className="column">
-                      <Img className="side-image" fluid={sectionData.sideImage.childImageSharp.fluid} />
-                    </div>
-                    <div className="column">
-                      <p className="section--subheading">{sectionData.label}</p>
-                      <h2 className="section--title">{sectionData.heading}</h2>
-                      <HTMLContent content={sectionData.content} />
-                      <LinkButtons buttons={sectionData.linkButtons} />
-                    </div>
-                  </div>          
+              </div>
+            </section>
+          );
+        }
+        return (
+          <section className="section">
+            <div className="container">
+              <div className="columns is-vcentered">
+                <div className="column">
+                  <Img
+                    className="side-image"
+                    fluid={sectionData.sideImage.childImageSharp.fluid}
+                  />
                 </div>
-              </section>
-            )
-          }
-        })
-      }
+                <div className="column">
+                  <p className="section--subheading">{sectionData.label}</p>
+                  <h2 className="section--title">{sectionData.heading}</h2>
+                  <HTMLContent content={sectionData.content} />
+                  <LinkButtons buttons={sectionData.linkButtons} />
+                </div>
+              </div>
+            </div>
+          </section>
+        );
+      })}
       <section className="section">
         <div className="container ">
           <div className="middle-description">
-            "{middleDescription}"
+            &quot;{middleDescription}&quot;
           </div>
         </div>
       </section>
@@ -175,30 +185,37 @@ export const LandBasedFishFarmingPageTemplate = ({
               <LinkButtons buttons={settingSection.linkButtons} />
             </div>
             <div className="column">
-              <Img className="side-image" fluid={settingSection.sideImage.childImageSharp.fluid} />
+              <Img
+                className="side-image"
+                fluid={settingSection.sideImage.childImageSharp.fluid}
+              />
             </div>
-          </div>          
+          </div>
         </div>
       </section>
       <section className="section">
         <div className="container">
           <div className="row">
-            <Img className="is-mobile-hidden" fluid={getStartSection.topImage.childImageSharp.fluid} />
-            <Img className="is-mobile-show" fluid={getStartSection.mobileTopImage.childImageSharp.fluid} />
+            <Img
+              className="is-mobile-hidden"
+              fluid={getStartSection.topImage.childImageSharp.fluid}
+            />
+            <Img
+              className="is-mobile-show"
+              fluid={getStartSection.mobileTopImage.childImageSharp.fluid}
+            />
           </div>
           <div className="row center-align-wrapper">
             <br />
             <h2 className="section--title">{getStartSection.heading}</h2>
             <HTMLContent content={getStartSection.description} />
-            <button className="button is-primary">
-              <Link to={getStartSection.buttonLink}>
-                <span>{getStartSection.buttonTxt}</span>
-                <span className="icon is-small">
-                  <ArrowRight />
-                </span>
-              </Link>
-            </button>
-          </div>      
+            <Link to={getStartSection.buttonLink} className="button is-primary">
+              <span>{getStartSection.buttonTxt}</span>
+              <span className="icon is-small">
+                <ArrowRight />
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
     </section>
@@ -207,37 +224,37 @@ export const LandBasedFishFarmingPageTemplate = ({
 
 const Hero = ({ className, heading, description, image }) => {
   return (
-  <div>
-    <BackgroundImage
-      className={classNames('hero', className)}
-      image={image}
-      filterStyle={{
-        background:
-          'linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))',
-      }}
-      style={{
-        backgroundPosition: 'bottom center !important',
-        minHeight: "320px",
-      }}
-    >
-      <div className={classNames('hero-body is-mobile-hidden')}>
+    <div>
+      <BackgroundImage
+        className={classNames('hero', className)}
+        image={image}
+        filterStyle={{
+          background:
+            'linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))',
+        }}
+        style={{
+          backgroundPosition: 'bottom center !important',
+          minHeight: '320px',
+        }}
+      >
+        <div className={classNames('hero-body is-mobile-hidden')}>
+          <div className="container">
+            <div className="row">
+              <h1>{heading}</h1>
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
+      </BackgroundImage>
+      <section className="section is-mobile-show">
         <div className="container">
           <div className="row">
             <h1>{heading}</h1>
             <p>{description}</p>
           </div>
         </div>
-      </div>
-    </BackgroundImage>
-    <section className="section is-mobile-show">
-      <div className="container">
-        <div className="row">
-          <h1>{heading}</h1>
-          <p>{description}</p>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
   );
 };
 
@@ -289,7 +306,11 @@ export default LandBasedFishFarmingPage;
 
 export const pageQuery = graphql`
   query LandBasedFishFarmingPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "solution-landbased-fishfarming-page" } }) {
+    markdownRemark(
+      frontmatter: {
+        templateKey: { eq: "solution-landbased-fishfarming-page" }
+      }
+    ) {
       id
       html
       frontmatter {
@@ -331,7 +352,7 @@ export const pageQuery = graphql`
           }
         }
         advantageSection {
-          label 
+          label
           advantages {
             advantage
             featuredimage {
