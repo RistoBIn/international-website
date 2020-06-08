@@ -4,6 +4,8 @@ menuPaths:
       regular:
         - path: /solutions/atlantic-salmon-and-seafood/
           title: Aquaculture
+        - path: /solutions/land-based-fish-farming/
+          title: Land based fish farming
         - path: /solutions/harbor-surveillance/
           title: Harbor surveillance
         - path: /solutions/underwater-drones-and-robotics/

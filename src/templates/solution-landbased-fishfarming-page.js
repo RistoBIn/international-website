@@ -289,7 +289,7 @@ export default LandBasedFishFarmingPage;
 
 export const pageQuery = graphql`
   query LandBasedFishFarmingPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "land-based-fish-farming" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "solution-landbased-fishfarming-page" } }) {
       id
       html
       frontmatter {

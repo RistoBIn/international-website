@@ -1,8 +1,9 @@
 ---
-templateKey: land-based-fish-farming
+templateKey: solution-landbased-fishfarming-page
 title: Land based fish farming
 seoDescription: >-
   Complete surveillance and analysis systems for hatcheries and land based fish farming. SEALAB underwater cameras combined with computer vision and a customised software gives the fish farmer a unique insight into the conditions below the surface.
+priority: 2
 heading: Land based fish farming
 description: >-
   Complete surveillance and analysis systems for hatcheries and land based fish farming. SEALAB underwater cameras combined with computer vision and a customised software gives the fish farmer a unique insight into the conditions below the surface.
@@ -49,7 +50,7 @@ scamSection:
 middleImage: /img/land-based-fish-farming-middle.jpg
 controlSection: 
   label: "High-quality Livestream"
-  heading: "BlueThink™ GO"
+  heading: "BlueThink™ Control Room"
   content: >-
     Continuous monitoring is the best decision support available. With our unique camera technology and software, which communicate together (IoT), you get high-quality surveillance images right into your Control Room. A crystal clear look at what is going on in the cages can contribute to higher predictability, lower mortality and better fish welfare. The control room is using BlueThink™ Software Platform and is therefore open to third parties.
   linkButtons: 
