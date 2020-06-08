@@ -1369,21 +1369,23 @@ section.product-page-primary {
 .side-image {
   width: 100%;
   max-width: 570px;
-  margin: auto;
   min-height: 375px;
+  margin: auto;
 }
 .center-align-wrapper {
+  width: 100%;
   max-width: 895px;
   margin: auto;
-  width: 100%;
+  
   text-align: center;
   & * {
     text-align: center !important;
   }
   & .description {
+    width: 100%;
     max-width: 660px;
     margin: auto;
-    width: 100%;
+    
     font-size: 22px;
     line-height: 170%;
   }
