@@ -81,9 +81,11 @@ settingSection:
   content: >-
     Innovation drives the value we create. Whether hardware, software, processes, or services, we’re dedicated to surpassing industry standards to ensure processors can provide food that is high quality, sustainable, and affordable. Our commitment to progress is highlighted by the fact that every year, we invest significantly more into research and development than the industry average.
   linkButtons:
-    - buttonTxt: "SEALAB Quintus LED"
+    - buttonTxt: "R&D at SEALAB"
       buttonLink: /technologies/edge-intelligence/
-  sideImage: /img/land-based-fish-farm-setting.jpg
+  sideImage1: /img/land-based-fish-farm-setting-1.jpg
+  sideImage2: /img/land-based-fish-farm-setting-3.jpg
+  sideImage3: /img/land-based-fish-farm-setting-2.jpg
 getStartSection:
   heading: Get started with SEALAB
   description: >-

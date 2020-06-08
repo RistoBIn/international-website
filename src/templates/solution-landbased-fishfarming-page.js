@@ -28,7 +28,7 @@ export const LandBasedFishFarmingPageTemplate = ({
   getStartSection,
 }) => {
   return (
-    <section className="solution-page-primary solution-page has-dark-background">
+    <section className="solution-page has-dark-background landbased-fishfarming-page">
       <Hero
         className="is-large"
         heading={heading}
@@ -47,8 +47,12 @@ export const LandBasedFishFarmingPageTemplate = ({
         </div>
       </section>
       <section id="first-section" className="section">
+        <Img
+          className="full-width-image is-mobile-show"
+          fluid={seaToLandSection.sideImage.childImageSharp.fluid}
+        />
         <div className="container">
-          <div className="columns is-vcentered reverse-row-order">
+          <div className="columns is-vcentered">
             <div className="column">
               <p className="section--subheading">{seaToLandSection.label}</p>
               <h2 className="section--title">{seaToLandSection.heading}</h2>
@@ -56,7 +60,7 @@ export const LandBasedFishFarmingPageTemplate = ({
             </div>
             <div className="column">
               <Img
-                className="side-image"
+                className="side-image is-mobile-hidden"
                 fluid={seaToLandSection.sideImage.childImageSharp.fluid}
               />
             </div>
@@ -83,7 +87,9 @@ export const LandBasedFishFarmingPageTemplate = ({
       <section className="section">
         <div className="container">
           <div className="row">
-            <p className="bold has-text-centered">{advantageSection.label}</p>
+            <p className="section--subheading has-text-centered">
+              {advantageSection.label}
+            </p>
           </div>
           <AdvantagesList advantages={advantageSection.advantages} />
         </div>
@@ -106,12 +112,12 @@ export const LandBasedFishFarmingPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section">
+      <section className="section is-mobile-hidden">
         <div className="container">
           <Img fluid={middleImage.childImageSharp.fluid} />
         </div>
       </section>
-      <section className="section">
+      <section className="section is-mobile-hidden">
         <div className="container">
           <div className="columns">
             <div className="column">
@@ -185,10 +191,24 @@ export const LandBasedFishFarmingPageTemplate = ({
               <LinkButtons buttons={settingSection.linkButtons} />
             </div>
             <div className="column">
-              <Img
-                className="side-image"
-                fluid={settingSection.sideImage.childImageSharp.fluid}
-              />
+              <div className="side-image">
+                <div>
+                  <Img
+                    className="side-image1"
+                    fluid={settingSection.sideImage1.childImageSharp.fluid}
+                  />
+                </div>
+                <div>
+                  <Img
+                    className="side-image2"
+                    fluid={settingSection.sideImage2.childImageSharp.fluid}
+                  />
+                  <Img
+                    className="side-image3"
+                    fluid={settingSection.sideImage3.childImageSharp.fluid}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -432,11 +452,31 @@ export const pageQuery = graphql`
             buttonTxt
             buttonLink
           }
-          sideImage {
+          sideImage1 {
             publicURL
             extension
             childImageSharp {
-              fluid(maxHeight: 489, quality: 80) {
+              fluid(maxHeight: 289, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
+              }
+            }
+          }
+          sideImage2 {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 200, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
+              }
+            }
+          }
+          sideImage3 {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }

@@ -1348,6 +1348,118 @@ section.product-page-primary {
 
 /****************     Land Based Fish Farming    ********************/
 
+.landbased-fishfarming-page {
+  .section--title {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 0;
+  }
+  .section--subheading {
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    font-weight: bold;
+  }
+  .center-align-wrapper {
+    width: 100%;
+    max-width: 895px;
+    margin: auto;
+    
+    text-align: center;
+    & * {
+      text-align: center !important;
+    }
+    & .description {
+      width: 100%;
+      max-width: 660px;
+      margin: auto;
+      
+      font-size: 22px;
+      line-height: 170%;
+    }
+    & a {
+      margin: 41px 0;
+    }
+  }
+  .side-image {
+    width: 100%;
+    max-width: 570px;
+    min-height: 375px;
+    margin: auto;
+
+    background: transparent;
+
+    .side-image1 {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    .side-image2 {
+      display: inline-block;
+
+      width: 40%;
+      height: 200px;
+      margin-right: 10px;
+    }
+    .side-image3 {
+      display: inline-block;
+
+      width: calc(60% - 10px);
+      height: 200px;
+    }
+  }
+  .middle-description {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+  }
+  .has-text-centered {
+    margin: auto;
+  }
+  @media only screen and (max-width: $tablet) {
+    .column {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .section--title {
+      margin-bottom: 36px;
+    }
+    .middle-description {
+      font-size: 20px;
+    }
+    .center-align-wrapper {
+      & * {
+        margin-left: 0;
+      }
+      & .description {
+        max-width: 100%;
+        text-align: left !important;
+      }
+      & .has-mobile-left {
+        text-align: left !important;
+      }
+    }
+    .side-image {
+      .side-image2 {
+        height: 130px;
+      }
+      .side-image3 {
+        height: 130px;
+      }
+    }
+    .full-width-image {
+      width: calc(100% + 30px);
+      min-height: 375px;
+      margin-left: -15px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+/****************     Global Custom Style    ********************/
+
 .is-vcentered {
   align-items: center;
 }
@@ -1364,56 +1476,5 @@ section.product-page-primary {
   display: none;
   @media only screen and (max-width: $tablet) {
     display: block;
-  }
-}
-.side-image {
-  width: 100%;
-  max-width: 570px;
-  min-height: 375px;
-  margin: auto;
-}
-.center-align-wrapper {
-  width: 100%;
-  max-width: 895px;
-  margin: auto;
-  
-  text-align: center;
-  & * {
-    text-align: center !important;
-  }
-  & .description {
-    width: 100%;
-    max-width: 660px;
-    margin: auto;
-    
-    font-size: 22px;
-    line-height: 170%;
-  }
-  & a {
-    margin: 41px 0;
-  }
-  @media only screen and (max-width: $tablet) {
-    & * {
-      margin-left: 0;
-    }
-    & .description {
-      max-width: 100%;
-      text-align: left !important;
-    }
-    & .has-mobile-left {
-      text-align: left !important;
-    }
-  }
-}
-
-.middle-description {
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 130%;
-  text-align: center;
-  @media only screen and (max-width: $tablet) {
-    font-size: 20px;
   }
 }
