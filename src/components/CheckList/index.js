@@ -29,14 +29,14 @@ const CheckItem = styled.div`
 		background: rgba(255, 255, 255, 0.1);
 	}
 `
-const CheckList = ({data}) => {
-	if (!data || data.length < 1) {
+const CheckList = ({features}) => {
+	if (!features || features.length < 1) {
     return <></>;
   }
   return (
     <Wrapper >
       {
-      	data.map(item=>(
+      	features.map(item=>(
 					<CheckItem>
 						<img src={CheckMark} />{item.feature}
 					</CheckItem>

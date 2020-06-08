@@ -3,19 +3,19 @@ import { Link } from 'gatsby';
 import styles from './LinkButtons.module.scss';
 import ArrowRight from '../../img/Arrow.inline.svg';
 
-const LinkButtons = ({data}) => {
+const LinkButtons = ({buttons}) => {
 	return(
 		<div className={styles.wrap}>
 			{
-				data.map((item, i)=>{
+				buttons.map((item, i)=>{
 					if (i%2===0) {
 						return(
 							<button className="button is-primary">
 								<Link to={item.buttonLink}>
-						      <div className="button-text">{item.buttonTxt}</div>
-						      <div className="icon is-small">
+						      <span>{item.buttonTxt}</span>
+						      <span className="icon is-small">
 						        <ArrowRight />
-						      </div>
+						      </span>
 						    </Link>
 					    </button>
 						)
@@ -23,10 +23,10 @@ const LinkButtons = ({data}) => {
 						return(
 							<button className="button is-third">
 								<Link to={item.buttonLink}>
-						      <div className="button-text">{item.buttonTxt}</div>
-						      <div className="icon is-small">
+						      <span>{item.buttonTxt}</span>
+						      <span className="icon is-small">
 						        <ArrowRight />
-						      </div>
+						      </span>
 						    </Link>
 							</button>
 						)

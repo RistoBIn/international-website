@@ -6,10 +6,6 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
-import SectionList from '../components/SectionList';
-import SplittedSection from '../components/SplittedSection';
-import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
-import BorderedContentSection from '../components/BorderedContentSection';
 import BackgroundImage from '../components/BackgroundImage';
 import CheckList from '../components/CheckList';
 import AdvantagesList from '../components/AdvantagesList'
@@ -73,19 +69,19 @@ export const LandBasedFishFarmingPageTemplate = ({
       <section className="section">
         <div className="container">
           <div className="column center-align-wrapper">
-            <p className="section--subheading">{featureSection.label}</p>
-            <h2 className="section--title">{featureSection.heading}</h2>
+            <p className="section--subheading has-mobile-left">{featureSection.label}</p>
+            <h2 className="section--title has-mobile-left">{featureSection.heading}</h2>
             <HTMLContent className="description" content={featureSection.description} />
-            <CheckList data={featureSection.features} />
+            <CheckList features={featureSection.features} />
           </div>    
         </div>
       </section>
       <section className="section">
         <div className="container">
           <div className="row">
-            <p className="section--subheading has-text-centered">{advantageSection.label}</p>
+            <p className="bold has-text-centered">{advantageSection.label}</p>
           </div>
-          <AdvantagesList data={advantageSection.advantages} /> 
+          <AdvantagesList advantages={advantageSection.advantages} /> 
         </div>
       </section>
       <section className="section">
@@ -95,7 +91,7 @@ export const LandBasedFishFarmingPageTemplate = ({
               <p className="section--subheading">{scamSection.label}</p>
               <h2 className="section--title">{scamSection.heading}</h2>
               <HTMLContent content={scamSection.content} />
-              <LinkButtons data={scamSection.linkButtons} />
+              <LinkButtons buttons={scamSection.linkButtons} />
             </div>
             <div className="column">
               <Img className="side-image" fluid={scamSection.sideImage.childImageSharp.fluid} />
@@ -117,26 +113,26 @@ export const LandBasedFishFarmingPageTemplate = ({
             </div>
             <div className="column">
               <HTMLContent content={controlSection.content} />
-              <LinkButtons data={controlSection.linkButtons} />
+              <LinkButtons buttons={controlSection.linkButtons} />
             </div>
           </div>          
         </div>
       </section>
       {
-        imageSplitSections.map((data, i)=>{
+        imageSplitSections.map((sectionData, i)=>{
           if (i%2===0) {
             return(
               <section className="section">
                 <div className="container">
                   <div className="columns is-vcentered reverse-row-order">
                     <div className="column">
-                      <p className="section--subheading">{data.label}</p>
-                      <h2 className="section--title">{data.heading}</h2>
-                      <HTMLContent content={data.content} />
-                      <LinkButtons data={data.linkButtons} />
+                      <p className="section--subheading">{sectionData.label}</p>
+                      <h2 className="section--title">{sectionData.heading}</h2>
+                      <HTMLContent content={sectionData.content} />
+                      <LinkButtons buttons={sectionData.linkButtons} />
                     </div>
                     <div className="column">
-                      <Img className="side-image" fluid={data.sideImage.childImageSharp.fluid} />
+                      <Img className="side-image" fluid={sectionData.sideImage.childImageSharp.fluid} />
                     </div>
                   </div>          
                 </div>
@@ -148,13 +144,13 @@ export const LandBasedFishFarmingPageTemplate = ({
                 <div className="container">
                   <div className="columns is-vcentered">
                     <div className="column">
-                      <Img className="side-image" fluid={data.sideImage.childImageSharp.fluid} />
+                      <Img className="side-image" fluid={sectionData.sideImage.childImageSharp.fluid} />
                     </div>
                     <div className="column">
-                      <p className="section--subheading">{data.label}</p>
-                      <h2 className="section--title">{data.heading}</h2>
-                      <HTMLContent content={data.content} />
-                      <LinkButtons data={data.linkButtons} />
+                      <p className="section--subheading">{sectionData.label}</p>
+                      <h2 className="section--title">{sectionData.heading}</h2>
+                      <HTMLContent content={sectionData.content} />
+                      <LinkButtons buttons={sectionData.linkButtons} />
                     </div>
                   </div>          
                 </div>
@@ -176,7 +172,7 @@ export const LandBasedFishFarmingPageTemplate = ({
             <div className="column">
               <h2 className="section--title">{settingSection.heading}</h2>
               <HTMLContent content={settingSection.content} />
-              <LinkButtons data={settingSection.linkButtons} />
+              <LinkButtons buttons={settingSection.linkButtons} />
             </div>
             <div className="column">
               <Img className="side-image" fluid={settingSection.sideImage.childImageSharp.fluid} />
@@ -191,6 +187,7 @@ export const LandBasedFishFarmingPageTemplate = ({
             <Img className="is-mobile-show" fluid={getStartSection.mobileTopImage.childImageSharp.fluid} />
           </div>
           <div className="row center-align-wrapper">
+            <br />
             <h2 className="section--title">{getStartSection.heading}</h2>
             <HTMLContent content={getStartSection.description} />
             <button className="button is-primary">

@@ -36,10 +36,10 @@ const AdvantageItem = styled.div`
   }
 `
 
-const AdvantagesList = ({data}) => (
+const AdvantagesList = ({advantages}) => (
 	<Wrap>
 		{
-			data.map((item, i)=>{
+			advantages.map((item, i)=>{
 				return(
 					<AdvantageItem key={i} bl={i===0?"none":"1px solid rgba(255, 255, 255, 0.2)"} >
 						<Img fluid={item.featuredimage.childImageSharp.fluid} />

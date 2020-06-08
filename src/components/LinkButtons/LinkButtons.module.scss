@@ -12,22 +12,22 @@
     	align-items: center;
     }
   }
-  @media(max-width: 768px){
+  @media screen and (max-width: $tablet){
     & button {
     	margin-right: 0;
-    	width: 100%;
-    	a {
-    		width: 100%;
-    		div:nth-child(1) {
-    			width: calc(100% - 40px);
-    			overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-    		}
-    		div:nth-child(2) {
-    			width: 20px !important;
-    			margin-left: 20px;
-    		}
+      width: 100%;
+    	& a {
+        width: 100%;
+    		& span:nth-child(1) {
+          width: calc(100% - 20px);
+          display: block;
+          word-wrap:break-word;
+          white-space: normal;
+          text-align: left;
+        }
+        & span:nth-child(2) {
+          width: 20px;
+        }
     	}
     }
   }

@@ -1392,11 +1392,14 @@ section.product-page-primary {
   }
   @media only screen and (max-width: $tablet) {
     & * {
-      text-align: left !important;
       margin-left: 0;
     }
     & .description {
       max-width: 100%;
+      text-align: left !important;
+    }
+    & .has-mobile-left {
+      text-align: left !important;
     }
   }
 }
@@ -1408,4 +1411,7 @@ section.product-page-primary {
   font-size: 32px;
   line-height: 130%;
   text-align: center;
+  @media only screen and (max-width: $tablet) {
+    font-size: 20px;
+  }
 }
