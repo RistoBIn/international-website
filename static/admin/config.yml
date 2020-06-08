@@ -1029,7 +1029,113 @@ collections:
               - {label: "Highlighted", name: "highlighted", widget: "boolean", required: false, hint: "Makes the background behind year in red color, and some of the text bold"}
               - {label: "Image", name: "featuredimage", widget: image, required: false }
           - {label: "Content", name: "lastContent", widget: "markdown", required: false, hint: "Showed before history."}
-
+      - file: "src/pages/solutions/land-based-fish-farming.md"
+        label: "Land based Fish Farming - SEALAB"
+        name: "land-based-fish-farming"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "solution-landbased-fishfarming-page"}
+          - {label: "Title", name: "title", widget: "string", hint: "Title on the tab and SEO title. Keep title between 25-60 characters. Recommended format: Primary Keyword - Secondary Keyword | Brand Name"}
+          - {label: "Heading", name: "heading", widget: "string", hint: "This is the title you see on the top of a page."}
+          - {label: "Description", name: "description", widget: "markdown", hint: "Markdown text under title", required: false}
+          - {label: "SEO Description", name: "seoDescription", widget: "text", hint: "SEO is important for search engines. Recommended size: 50-160 characters"}
+          - {label: "Pritority", name: priority, widget: number}
+          - {label: "Featured image", name: "featuredimage", widget: image }
+          - label: "From sea to land section"
+            name: seaToLandSection
+            widget: object
+            fields: 
+              - {label: "Section Label", name: "label", widget: string}
+              - {label: "Heading", name: heading, widget: string}
+              - {label: "Section Description", name: description,  widget: "markdown"}
+              - {label: "Side image", name: "sideImage", widget: image }
+          - label: "Features Section"
+            name: featureSection
+            widget: object
+            fields:
+              - {label: "Section Label", name: "label", widget: string}
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Section Description", name: "description",  widget: "markdown"}
+              - label: "Features"
+                name: features
+                widget: list
+                field: {label: "Feature", name: "feature", widget: string}
+          - label: "Advantages Section"
+            name: advantageSection
+            widget: object
+            fields:
+              - {label: "Section Label", name: "label", widget: string}
+              - label: "Advantages"
+                name: advantages
+                widget: list
+                fields: 
+                  - {label: "Advantage", name: "advantage", widget: string}
+                  - {label: "Advantage image", name: "featuredimage", widget: image }
+          - label: "sCAM Section"
+            name: scamSection
+            widget: object
+            fields:
+              - {label: "Section Label", name: "label", widget: string}
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Section Description", name: "content",  widget: "markdown"}
+              - label: "Link Buttons"
+                name: linkButtons
+                widget: list
+                fields: 
+                  - {label: "Button Text", name: "buttonTxt", widget: string}
+                  - {label: "Button Link", name: "buttonLink", widget: string}
+              - {label: "Side image", name: "sideImage", widget: image }
+          - {label: "Full width image", name: "middleImage", widget: image }
+          - label: "BlueThink Control Room Section"
+            name: controlSection
+            widget: object
+            fields: 
+              - {label: "Section Label", name: "label", widget: string}
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Section Description", name: "content",  widget: "markdown"}
+              - label: "Link Buttons"
+                name: linkButtons
+                widget: list
+                fields: 
+                  - {label: "Button Text", name: "buttonTxt", widget: string}
+                  - {label: "Button Link", name: "buttonLink", widget: string}
+          - label: "Image Split Sections"
+            name: imageSplitSections
+            widget: list
+            fields: 
+              - {label: "Section Label", name: "label", widget: string}
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Section Description", name: "content",  widget: "markdown"}
+              - label: "Link Buttons"
+                name: linkButtons
+                widget: list
+                fields: 
+                  - {label: "Button Text", name: "buttonTxt", widget: string}
+                  - {label: "Button Link", name: "buttonLink", widget: string}
+              - {label: "Side Image", name: "sideImage", widget: image}
+          - {label: "Full Width Description Section", name: "middleDescription", widget: "markdown"}
+          - label: "Setting Section"
+            name: settingSection
+            widget: object
+            fields: 
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Section Description", name: "content",  widget: "markdown"}
+              - label: "Link Buttons"
+                name: linkButtons
+                widget: list
+                fields:
+                  - {label: "Button Text", name: "buttonTxt", widget: string}
+                  - {label: "Button Link", name: "buttonLink", widget: string}
+              - {label: "Side Image", name: "sideImage", widget: image}
+          - label: "Get Started Section"
+            name: getStartSection
+            widget: object
+            fields:
+              - {label: "Top full width image", name: "topImage", widget: image}
+              - {label: "Mobile full width image", name: "topImage", widget: image}
+              - {label: "Heading", name: "heading", widget: string}
+              - {label: "Section Description", name: "description", widget: text}
+              - {label: "Button Text", name: "buttonTxt", widget: string}
+              - {label: "Button Link", name: "buttonLink", widget: string}
 
       - file: "src/pages/about/partnership.md"
         label: "Partnership / App community"
