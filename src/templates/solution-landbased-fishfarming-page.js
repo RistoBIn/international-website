@@ -58,10 +58,10 @@ export const LandBasedFishFarmingPageTemplate = ({
               <HTMLContent content={seaToLandSection.description} />
             </div>
             <div className="column">
-              <Img
-                className="side-image is-mobile-hidden"
-                fluid={seaToLandSection.sideImage.childImageSharp.fluid}
-              />
+              <div className="side-image is-mobile-hidden">
+                <div className="image-gradient" />
+                <Img fluid={seaToLandSection.sideImage.childImageSharp.fluid} />
+              </div>
             </div>
           </div>
         </div>

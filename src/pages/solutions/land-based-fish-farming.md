@@ -13,7 +13,7 @@ seaToLandSection:
   heading: From sea to land
   description: >-
     Globally land-based aquaculture facilities are increasingly being considered as a more sustainable alternative to open-water fish farms. Until just a few years ago, land-based fish farming was considered too costly, but this is changing as systems and technologies become increasingly sophisticated. Cutting edge technologies will be needed.
-  sideImage: /img/from-sea-to-land.jpg
+  sideImage: /img/adobe_atlantic_salmon_landbased.jpeg
 featureSection:
   label: Based on experience from traditional fish farming
   heading: SEALAB delivers surveillance and analysis systems for hatcheries and land based fish farming
