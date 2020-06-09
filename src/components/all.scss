@@ -38,7 +38,7 @@ body {
       padding: 1.1rem 1rem !important;
     }
     &.is-primary,
-    &:not(.is-secondary):not(.is-transparent):not(.is-white):not(.is-third) {
+    &:not(.is-secondary):not(.is-transparent):not(.is-white) {
       background-color: $red;
       color: $white;
       text-decoration: none !important;
@@ -73,25 +73,6 @@ body {
       svg path {
         fill: $text-dark;
         stroke: $text-dark;
-      }
-    }
-    &.is-third {
-      background-color: rgba(255, 255, 255, 0.01);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: $white;
-      opacity: 0.95;
-      &:hover,
-      &:focus {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, 0.1);
-      }
-      a {
-        color: $white;
-      }
-      svg,
-      svg path {
-        fill: $white;
-        stroke: $white;
       }
     }
     &.is-transparent {
@@ -1418,6 +1399,20 @@ section.product-page-primary {
   .has-text-centered {
     margin: auto;
   }
+  .buttons-wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+    
+    & a {
+      display: flex;
+      align-items: center;
+
+      margin-right: 18px;
+      margin-bottom: 17px;
+    }
+  }
   @media only screen and (max-width: $tablet) {
     .column {
       padding-left: 0 !important;
@@ -1454,6 +1449,24 @@ section.product-page-primary {
       min-height: 375px;
       margin-left: -15px;
       margin-bottom: 60px;
+    }
+    .buttons-wrap {
+      & a {
+        width: 100%;
+        margin-right: 0;
+        & span:nth-child(1) {
+          display: block;
+
+          width: calc(100% - 20px);
+          
+          text-align: left;
+          word-wrap:break-word;
+          white-space: normal;
+        }
+        & span:nth-child(2) {
+          width: 20px;
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
@@ -8,9 +8,8 @@ import { HTMLContent } from '../components/Content';
 import BackgroundImage from '../components/BackgroundImage';
 import CheckList from '../components/CheckList';
 import AdvantagesList from '../components/AdvantagesList';
-import LinkButtons from '../components/LinkButtons';
+import Button from '../components/Button';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
-import ArrowRight from '../img/Arrow.inline.svg';
 
 export const LandBasedFishFarmingPageTemplate = ({
   description,
@@ -101,7 +100,18 @@ export const LandBasedFishFarmingPageTemplate = ({
               <p className="section--subheading">{scamSection.label}</p>
               <h2 className="section--title">{scamSection.heading}</h2>
               <HTMLContent content={scamSection.content} />
-              <LinkButtons buttons={scamSection.linkButtons} />
+              <div className="buttons-wrap">
+                <Button
+                  className="is-primary"
+                  text={scamSection.firstButtonTxt}
+                  path={scamSection.firstButtonLink}
+                />
+                <Button
+                  className="is-transparent"
+                  text={scamSection.secondButtonTxt}
+                  path={scamSection.secondButtonLink}
+                />
+              </div>
             </div>
             <div className="column">
               <Img
@@ -126,7 +136,18 @@ export const LandBasedFishFarmingPageTemplate = ({
             </div>
             <div className="column">
               <HTMLContent content={controlSection.content} />
-              <LinkButtons buttons={controlSection.linkButtons} />
+              <div className="buttons-wrap">
+                <Button
+                  className="is-primary"
+                  text={controlSection.firstButtonTxt}
+                  path={controlSection.firstButtonLink}
+                />
+                <Button
+                  className="is-transparent"
+                  text={controlSection.secondButtonTxt}
+                  path={controlSection.secondButtonLink}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -141,7 +162,13 @@ export const LandBasedFishFarmingPageTemplate = ({
                     <p className="section--subheading">{sectionData.label}</p>
                     <h2 className="section--title">{sectionData.heading}</h2>
                     <HTMLContent content={sectionData.content} />
-                    <LinkButtons buttons={sectionData.linkButtons} />
+                    <div className="buttons-wrap">
+                      <Button
+                        className="is-primary"
+                        text={sectionData.buttonTxt}
+                        path={sectionData.buttonLink}
+                      />
+                    </div>
                   </div>
                   <div className="column">
                     <Img
@@ -168,7 +195,13 @@ export const LandBasedFishFarmingPageTemplate = ({
                   <p className="section--subheading">{sectionData.label}</p>
                   <h2 className="section--title">{sectionData.heading}</h2>
                   <HTMLContent content={sectionData.content} />
-                  <LinkButtons buttons={sectionData.linkButtons} />
+                  <div className="buttons-wrap">
+                    <Button
+                      className="is-primary"
+                      text={sectionData.buttonTxt}
+                      path={sectionData.buttonLink}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -188,7 +221,13 @@ export const LandBasedFishFarmingPageTemplate = ({
             <div className="column">
               <h2 className="section--title">{settingSection.heading}</h2>
               <HTMLContent content={settingSection.content} />
-              <LinkButtons buttons={settingSection.linkButtons} />
+              <div className="buttons-wrap">
+                <Button
+                  className="is-primary"
+                  text={settingSection.buttonTxt}
+                  path={settingSection.buttonLink}
+                />
+              </div>
             </div>
             <div className="column">
               <div className="side-image">
@@ -229,12 +268,11 @@ export const LandBasedFishFarmingPageTemplate = ({
             <br />
             <h2 className="section--title">{getStartSection.heading}</h2>
             <HTMLContent content={getStartSection.description} />
-            <Link to={getStartSection.buttonLink} className="button is-primary">
-              <span>{getStartSection.buttonTxt}</span>
-              <span className="icon is-small">
-                <ArrowRight />
-              </span>
-            </Link>
+            <Button
+              className="is-primary"
+              text={getStartSection.buttonTxt}
+              path={getStartSection.buttonLink}
+            />
           </div>
         </div>
       </section>
@@ -391,10 +429,10 @@ export const pageQuery = graphql`
           label
           heading
           content
-          linkButtons {
-            buttonTxt
-            buttonLink
-          }
+          firstButtonTxt
+          firstButtonLink
+          secondButtonTxt
+          secondButtonLink
           sideImage {
             publicURL
             extension
@@ -420,19 +458,17 @@ export const pageQuery = graphql`
           label
           heading
           content
-          linkButtons {
-            buttonTxt
-            buttonLink
-          }
+          firstButtonTxt
+          firstButtonLink
+          secondButtonTxt
+          secondButtonLink
         }
         imageSplitSections {
           label
           heading
           content
-          linkButtons {
-            buttonTxt
-            buttonLink
-          }
+          buttonTxt
+          buttonLink
           sideImage {
             publicURL
             extension
@@ -448,10 +484,8 @@ export const pageQuery = graphql`
         settingSection {
           heading
           content
-          linkButtons {
-            buttonTxt
-            buttonLink
-          }
+          buttonTxt
+          buttonLink
           sideImage1 {
             publicURL
             extension
