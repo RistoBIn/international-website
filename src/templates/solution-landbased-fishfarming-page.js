@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import { HTMLContent } from '../components/Content';
@@ -9,6 +8,7 @@ import BackgroundImage from '../components/BackgroundImage';
 import CheckList from '../components/CheckList';
 import AdvantagesList from '../components/AdvantagesList';
 import Button from '../components/Button';
+import NonStretchedImage from '../components/NonStretchedImage';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 
 export const LandBasedFishFarmingPageTemplate = ({
@@ -46,9 +46,9 @@ export const LandBasedFishFarmingPageTemplate = ({
         </div>
       </section>
       <section id="first-section" className="section">
-        <Img
-          className="full-width-image is-mobile-show"
+        <NonStretchedImage
           fluid={seaToLandSection.sideImage.childImageSharp.fluid}
+          className="full-width-image is-mobile-show"
         />
         <div className="container">
           <div className="columns is-vcentered">
@@ -60,7 +60,9 @@ export const LandBasedFishFarmingPageTemplate = ({
             <div className="column">
               <div className="side-image is-mobile-hidden">
                 <div className="image-gradient" />
-                <Img fluid={seaToLandSection.sideImage.childImageSharp.fluid} />
+                <NonStretchedImage
+                  fluid={seaToLandSection.sideImage.childImageSharp.fluid}
+                />
               </div>
             </div>
           </div>
@@ -114,7 +116,7 @@ export const LandBasedFishFarmingPageTemplate = ({
               </div>
             </div>
             <div className="column">
-              <Img
+              <NonStretchedImage
                 className="side-image"
                 fluid={scamSection.sideImage.childImageSharp.fluid}
               />
@@ -124,7 +126,7 @@ export const LandBasedFishFarmingPageTemplate = ({
       </section>
       <section className="section is-mobile-hidden">
         <div className="container">
-          <Img fluid={middleImage.childImageSharp.fluid} />
+          <NonStretchedImage fluid={middleImage.childImageSharp.fluid} />
         </div>
       </section>
       <section className="section is-mobile-hidden">
@@ -171,7 +173,7 @@ export const LandBasedFishFarmingPageTemplate = ({
                     </div>
                   </div>
                   <div className="column">
-                    <Img
+                    <NonStretchedImage
                       className="side-image"
                       fluid={sectionData.sideImage.childImageSharp.fluid}
                     />
@@ -186,7 +188,7 @@ export const LandBasedFishFarmingPageTemplate = ({
             <div className="container">
               <div className="columns is-vcentered">
                 <div className="column">
-                  <Img
+                  <NonStretchedImage
                     className="side-image"
                     fluid={sectionData.sideImage.childImageSharp.fluid}
                   />
@@ -232,17 +234,17 @@ export const LandBasedFishFarmingPageTemplate = ({
             <div className="column">
               <div className="side-image">
                 <div>
-                  <Img
+                  <NonStretchedImage
                     className="side-image1"
                     fluid={settingSection.sideImage1.childImageSharp.fluid}
                   />
                 </div>
                 <div>
-                  <Img
+                  <NonStretchedImage
                     className="side-image2"
                     fluid={settingSection.sideImage2.childImageSharp.fluid}
                   />
-                  <Img
+                  <NonStretchedImage
                     className="side-image3"
                     fluid={settingSection.sideImage3.childImageSharp.fluid}
                   />
@@ -255,11 +257,11 @@ export const LandBasedFishFarmingPageTemplate = ({
       <section className="section">
         <div className="container">
           <div className="row">
-            <Img
+            <NonStretchedImage
               className="is-mobile-hidden"
               fluid={getStartSection.topImage.childImageSharp.fluid}
             />
-            <Img
+            <NonStretchedImage
               className="is-mobile-show"
               fluid={getStartSection.mobileTopImage.childImageSharp.fluid}
             />
@@ -396,7 +398,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 388, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -419,7 +420,6 @@ export const pageQuery = graphql`
               childImageSharp {
                 fluid(maxHeight: 92, quality: 80) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
-                  presentationWidth
                 }
               }
             }
@@ -439,7 +439,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 494, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -450,7 +449,6 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxHeight: 584, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
-              presentationWidth
             }
           }
         }
@@ -475,7 +473,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 582, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -492,7 +489,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 289, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -502,7 +498,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -512,7 +507,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -528,7 +522,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 491, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
@@ -538,7 +531,6 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 560, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
               }
             }
           }
