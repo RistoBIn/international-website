@@ -38,4 +38,4 @@ const SolutionHero = ({ className, heading, description, image }) => {
   );
 };
 
-export default SolutionHero
+export default SolutionHero;

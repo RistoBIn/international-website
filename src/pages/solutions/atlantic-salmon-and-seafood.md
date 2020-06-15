@@ -18,20 +18,23 @@ splitSections:
       - buttonTxt: Edge Computing
         buttonLink: "/technologies/edge-intelligence/"
 imageSection:
-  featuredImage: /img/Innovation_1-2550-for-website.jpg
+  featuredimage: /img/Innovation_1-2550-for-website.jpg
+  subheading: Together we’ll develop cameras the market has never seen before
   left: >-
-    #### Together we’ll develop cameras the market has never seen before
-
     ## Want to equip your camera with a brain?
   right: >-
     SEALAB are developing System on Chip (SoC) with FPGA technology inside that fulfil the most demanding computer vision and AI tasks. The on-chip processing gets past challenges around massive data generation and poor image quality by doing the processing in the camera unit itself. Our system on chip can be customised for different cameras, and remotely reprogrammed to perform even more advanced tasks.
 
     If you are interested in upgrading your underwater camera with FPGA technology from SEALAB, contact us for a meeting.
+  buttonList: 
+    - buttonTxt: Book a Meeting
+      buttonLink: /contact
 imageSplitSection:
   heading: How the aquaculture can benefit from edge computing
   content: >-
     Edge computing is about processing at the points in the value chain where it is useful and efficient. Machine vision and Artificial Intelligence require a data volume, data quality, and frequency that challenge earlier paradigms such as cloud computing. Instead of transporting all data to the cloud, important processing is done at the edge. A AI application that could benefit from this is biomass estimation.
-  featuredimage: /img/biomass-estimation-illustration
+  featuredimage: /img/biomass-estimation-illustration.jpg
+  imageSide: left
   buttonList: 
     - buttonTxt: Read More
       buttonLink: /contact
@@ -40,13 +43,13 @@ experiencesSection:
   content: >-
     In order to succeed with edge computing, it is not sufficient only being capable of programming the FPGA, understanding the industry and which problems the chip should solve is just as important. SEALAB is uniquely positioned for solving this task because: 
   experiences: 
-    - featuredImage: /img/subsea-cameras-manufacture-line.png
+    - featuredimage: /img/subsea-cameras-manufacture-line.png
       description: We have developed, built and supplied subsea cameras for years
-    - featuredImage: /img/world-largest-aquaculture-ai.png
+    - featuredimage: /img/world-largest-aquaculture-ai.png
       description: Possesses the world’s largest data harvesting of aquaculture images for AI
-    - featuredImage: /img/national-international-ai.png
+    - featuredimage: /img/national-international-ai.png
       description: Develops AI applications for use in fish cages
-    - featuredImage: /img/national-international-ai.png
+    - featuredimage: /img/national-international-ai.png
       description: Participates in national and international projects focusing on AI, machine learning, video distribution and 5G
 descriptionSection:
   description: >-
@@ -55,10 +58,11 @@ descriptionSection:
   backgroundImage: /img/aquaculture-background-1.jpg
 blueThinkGo:
   heading: 'Access your fish farm from anywhere, anytime'
-  description: >-
+  content: >-
     BlueThink™ GO gives you remote access to livestream, real-time sensor data,
     weather data, sea conditions and much more, directly from your facility.
   featuredimage: /img/tablet-holding-portrait.jpg
+  imageSide: right
   subheading: BlueThink™ GO
   buttonList:
     - buttonTxt:  BlueThink™ GO

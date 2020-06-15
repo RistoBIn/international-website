@@ -5,10 +5,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
-import NonStretchedImage from '../components/NonStretchedImage';
 import SplittedSection from '../components/SplittedSection';
 import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
-import BorderedContentSection from '../components/BorderedContentSection';
+import SideImageSection from '../components/SideImageSection';
+import GetStartSection from '../components/GetStartSection';
+import ButtonsList from '../components/Button/ButtonsList';
 import SolutionHero from '../components/SolutionHero';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
@@ -20,9 +21,10 @@ export const SolutionPageTemplate = ({
   heading,
   featuredimage,
   splitSections,
-  middleImage,
-  secondSplitSections,
   imageSection,
+  imageSplitSection,
+  blueThinkGo,
+  getStartSection,
   splitSection,
 }) => {
   const PostContent = contentComponent || Content;
@@ -47,25 +49,10 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      {middleImage ? (
-        <section className="section">
-          <NonStretchedImage
-            fluid={middleImage.childImageSharp.fluid}
-            publicURL={middleImage.publicURL}
-            extension={middleImage.extension}
-          />
-        </section>
-      ) : (
-        <></>
-      )}
-      {secondSplitSections ? (
-        <SectionList items={secondSplitSections} />
-      ) : (
-        <></>
-      )}
       {imageSection ? (
         <LargeImageWithSplitSection
           image={imageSection.featuredimage}
+          subheading={imageSection.subheading}
           leftColumn={
             <PostContent
               content={generateHTML(imageSection.left)}
@@ -73,16 +60,24 @@ export const SolutionPageTemplate = ({
             />
           }
           rightColumn={
-            <PostContent
-              content={generateHTML(imageSection.right)}
-              className="content is-left-aligned"
-            />
+            <>
+              <PostContent
+                content={generateHTML(imageSection.right)}
+                className="content is-left-aligned"
+              />
+              {imageSection.buttonList ? (
+                <ButtonsList buttons={imageSection.buttonList} />
+              ) : (
+                <></>
+              )}
+            </>
           }
         />
       ) : (
         <></>
       )}
-
+      <SideImageSection sectionData={imageSplitSection} />
+      <SideImageSection sectionData={blueThinkGo} />
       {splitSection ? (
         <section className="section has-dark-background">
           <div className="container">
@@ -106,7 +101,6 @@ export const SolutionPageTemplate = ({
       ) : (
         <></>
       )}
-
       {content ? (
         <section className="section is-medium has-dark-background">
           <div className="container">
@@ -119,6 +113,7 @@ export const SolutionPageTemplate = ({
       ) : (
         <></>
       )}
+      <GetStartSection sectionData={getStartSection} />
     </section>
   );
 };
@@ -133,10 +128,11 @@ const SolutionPage = ({ data }) => {
     description,
     featuredimage,
     splitSections,
-    middleImage,
     imageSection,
+    imageSplitSection,
+    blueThinkGo,
+    getStartSection,
     splitSection,
-    secondSplitSections,
   } = frontmatter;
 
   return (
@@ -148,9 +144,10 @@ const SolutionPage = ({ data }) => {
         description={description}
         featuredimage={featuredimage}
         splitSections={splitSections}
-        middleImage={middleImage}
-        secondSplitSections={secondSplitSections}
         imageSection={imageSection}
+        imageSplitSection={imageSplitSection}
+        blueThinkGo={blueThinkGo}
+        getStartSection={getStartSection}
         splitSection={splitSection}
       />
     </Layout>
@@ -201,22 +198,12 @@ export const pageQuery = graphql`
         imageSection {
           left
           right
+          subheading
           featuredimage {
+            publicURL
+            extension
             childImageSharp {
               fluid(maxWidth: 1410, quality: 80) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
-              }
-            }
-          }
-        }
-        imageSplitSection {
-          heading
-          subheading
-          content
-          featuredimage {
-            childImageSharp {
-              fluid(maxHeight: 440, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
@@ -227,11 +214,32 @@ export const pageQuery = graphql`
             buttonLink
           }
         }
+        imageSplitSection {
+          heading
+          content
+          featuredimage {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 440, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
+              }
+            }
+          }
+          imageSide
+          buttonList {
+            buttonTxt
+            buttonLink
+          }
+        }
         experiencesSection {
           heading
           content
           experiences {
             featuredimage {
+              publicURL
+              extension
               childImageSharp {
                 fluid(maxHeight: 440, quality: 80) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -245,7 +253,9 @@ export const pageQuery = graphql`
         descriptionSection {
           description
           author
-          featuredimage {
+          backgroundImage {
+            publicURL
+            extension
             childImageSharp {
               fluid(maxWidth: 1410, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -257,8 +267,10 @@ export const pageQuery = graphql`
         blueThinkGo {
           heading
           subheading
-          description
+          content
           featuredimage {
+            publicURL
+            extension
             childImageSharp {
               fluid(maxHeight: 440, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -266,6 +278,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          imageSide
           buttonList {
             buttonTxt
             buttonLink

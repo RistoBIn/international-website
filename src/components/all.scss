@@ -1341,27 +1341,7 @@ section.product-page-primary {
 
     font-weight: bold;
   }
-  .center-align-wrapper {
-    width: 100%;
-    max-width: 895px;
-    margin: auto;
-    
-    text-align: center;
-    & * {
-      text-align: center !important;
-    }
-    & .description {
-      width: 100%;
-      max-width: 660px;
-      margin: auto;
-      
-      font-size: 22px;
-      line-height: 170%;
-    }
-    & a {
-      margin: 41px 0;
-    }
-  }
+  
   .side-image {
     position: relative;
 
@@ -1423,18 +1403,7 @@ section.product-page-primary {
     .middle-description {
       font-size: 20px;
     }
-    .center-align-wrapper {
-      & * {
-        margin-left: 0;
-      }
-      & .description {
-        max-width: 100%;
-        text-align: left !important;
-      }
-      & .has-mobile-left {
-        text-align: left !important;
-      }
-    }
+    
     .side-image {
       .side-image2 {
         height: 130px;
@@ -1453,6 +1422,31 @@ section.product-page-primary {
 }
 
 /****************     Global Custom Style    ********************/
+.center-align-wrapper {
+  width: 100%;
+  max-width: 895px;
+  margin: auto;
+  
+  text-align: center;
+  & * {
+    text-align: center !important;
+  }
+  & .description {
+    width: 100%;
+    max-width: 660px;
+    margin: auto;
+    
+    font-size: 22px;
+    line-height: 170%;
+  }
+  & a {
+    margin: 41px 0;
+  }
+}
+
+.no-margin {
+  margin: 0 !important;
+}
 
 .is-vcentered {
   align-items: center;
@@ -1487,6 +1481,18 @@ section.product-page-primary {
   }
 }
 @media only screen and (max-width: $tablet) {
+  .center-align-wrapper {
+    & * {
+      margin-left: 0;
+    }
+    & .description {
+      max-width: 100%;
+      text-align: left !important;
+    }
+    & .has-mobile-left {
+      text-align: left !important;
+    }
+  }
   .buttons-wrap {
     & a {
       width: 100%;
