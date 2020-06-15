@@ -5,10 +5,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
+import NonStretchedImage from '../components/NonStretchedImage';
 import SplittedSection from '../components/SplittedSection';
 import LargeImageWithSplitSection from '../components/LargeImageWithSplitSection';
 import BorderedContentSection from '../components/BorderedContentSection';
-import BackgroundImage from '../components/BackgroundImage';
+import SolutionHero from '../components/SolutionHero';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
 
@@ -19,8 +20,9 @@ export const SolutionPageTemplate = ({
   heading,
   featuredimage,
   splitSections,
+  middleImage,
+  secondSplitSections,
   imageSection,
-  btgo,
   splitSection,
 }) => {
   const PostContent = contentComponent || Content;
@@ -45,22 +47,22 @@ export const SolutionPageTemplate = ({
         </div>
       </section>
       <SectionList id="first-section" items={splitSections} />
-      {btgo ? (
-        <BorderedContentSection
-          heading={btgo.heading}
-          subheading={btgo.subheading}
-          fluidImage={btgo.featuredimage.childImageSharp.fluid}
-          className="section is-medium"
-        >
-          <PostContent
-            content={generateHTML(btgo.description)}
-            className="content links-are-buttons"
+      {middleImage ? (
+        <section className="section">
+          <NonStretchedImage
+            fluid={middleImage.childImageSharp.fluid}
+            publicURL={middleImage.publicURL}
+            extension={middleImage.extension}
           />
-        </BorderedContentSection>
+        </section>
       ) : (
         <></>
       )}
-
+      {secondSplitSections ? (
+        <SectionList items={secondSplitSections} />
+      ) : (
+        <></>
+      )}
       {imageSection ? (
         <LargeImageWithSplitSection
           image={imageSection.featuredimage}
@@ -121,31 +123,6 @@ export const SolutionPageTemplate = ({
   );
 };
 
-const SolutionHero = ({ className, heading, description, image }) => {
-  return (
-    <BackgroundImage
-      className={classNames('hero', className)}
-      image={image}
-      filterStyle={{
-        background:
-          'linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))',
-      }}
-      style={{
-        backgroundPosition: 'bottom center !important',
-      }}
-    >
-      <div className={classNames('hero-body')}>
-        <div className="container">
-          <div>
-            <h1>{heading}</h1>
-            <p>{description}</p>
-          </div>
-        </div>
-      </div>
-    </BackgroundImage>
-  );
-};
-
 const SolutionPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   if (!frontmatter) return <></>;
@@ -156,9 +133,10 @@ const SolutionPage = ({ data }) => {
     description,
     featuredimage,
     splitSections,
+    middleImage,
     imageSection,
     splitSection,
-    btgo,
+    secondSplitSections,
   } = frontmatter;
 
   return (
@@ -170,9 +148,10 @@ const SolutionPage = ({ data }) => {
         description={description}
         featuredimage={featuredimage}
         splitSections={splitSections}
+        middleImage={middleImage}
+        secondSplitSections={secondSplitSections}
         imageSection={imageSection}
         splitSection={splitSection}
-        btgo={btgo}
       />
     </Layout>
   );
@@ -214,6 +193,10 @@ export const pageQuery = graphql`
               }
             }
           }
+          buttonList {
+            buttonTxt
+            buttonLink
+          }
         }
         imageSection {
           left
@@ -227,23 +210,95 @@ export const pageQuery = graphql`
             }
           }
         }
-        splitSection {
+        imageSplitSection {
           heading
-          left
-          right
-        }
-        btgo {
           subheading
-          heading
-          description
+          content
           featuredimage {
             childImageSharp {
-              fluid(maxHeight: 500, quality: 80) {
+              fluid(maxHeight: 440, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
             }
           }
+          buttonList {
+            buttonTxt
+            buttonLink
+          }
+        }
+        experiencesSection {
+          heading
+          content
+          experiences {
+            featuredimage {
+              childImageSharp {
+                fluid(maxHeight: 440, quality: 80) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                  presentationWidth
+                }
+              }
+            }
+            description
+          }
+        }
+        descriptionSection {
+          description
+          author
+          featuredimage {
+            childImageSharp {
+              fluid(maxWidth: 1410, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
+              }
+            }
+          }
+        }
+        blueThinkGo {
+          heading
+          subheading
+          description
+          featuredimage {
+            childImageSharp {
+              fluid(maxHeight: 440, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
+              }
+            }
+          }
+          buttonList {
+            buttonTxt
+            buttonLink
+          }
+        }
+        getStartSection {
+          heading
+          description
+          buttonTxt
+          buttonLink
+          topImage {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 491, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
+            }
+          }
+          mobileTopImage {
+            publicURL
+            extension
+            childImageSharp {
+              fluid(maxHeight: 560, quality: 80) {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
+            }
+          }
+        }
+        splitSection {
+          heading
+          left
+          right
         }
       }
     }

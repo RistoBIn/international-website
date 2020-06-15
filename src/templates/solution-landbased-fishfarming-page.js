@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import { HTMLContent } from '../components/Content';
-import BackgroundImage from '../components/BackgroundImage';
+import SolutionHero from '../components/SolutionHero';
 import CheckList from '../components/CheckList';
 import AdvantagesList from '../components/AdvantagesList';
 import Button from '../components/Button';
@@ -28,7 +28,7 @@ export const LandBasedFishFarmingPageTemplate = ({
 }) => {
   return (
     <section className="solution-page has-dark-background landbased-fishfarming-page">
-      <Hero
+      <SolutionHero
         className="is-large"
         heading={heading}
         description={description}
@@ -48,6 +48,8 @@ export const LandBasedFishFarmingPageTemplate = ({
       <section id="first-section" className="section">
         <NonStretchedImage
           fluid={seaToLandSection.sideImage.childImageSharp.fluid}
+          publicURL={seaToLandSection.sideImage.publicURL}
+          extension={seaToLandSection.sideImage.extension}
           className="full-width-image is-mobile-show"
         />
         <div className="container">
@@ -62,6 +64,8 @@ export const LandBasedFishFarmingPageTemplate = ({
                 <div className="image-gradient" />
                 <NonStretchedImage
                   fluid={seaToLandSection.sideImage.childImageSharp.fluid}
+                  publicURL={seaToLandSection.sideImage.publicURL}
+                  extension={seaToLandSection.sideImage.extension}
                 />
               </div>
             </div>
@@ -118,6 +122,8 @@ export const LandBasedFishFarmingPageTemplate = ({
             <div className="column">
               <NonStretchedImage
                 className="side-image"
+                publicURL={scamSection.sideImage.publicURL}
+                extension={scamSection.sideImage.extension}
                 fluid={scamSection.sideImage.childImageSharp.fluid}
               />
             </div>
@@ -126,7 +132,11 @@ export const LandBasedFishFarmingPageTemplate = ({
       </section>
       <section className="section is-mobile-hidden">
         <div className="container">
-          <NonStretchedImage fluid={middleImage.childImageSharp.fluid} />
+          <NonStretchedImage
+            fluid={middleImage.childImageSharp.fluid}
+            publicURL={middleImage.publicURL}
+            extension={middleImage.extension}
+          />
         </div>
       </section>
       <section className="section is-mobile-hidden">
@@ -175,6 +185,8 @@ export const LandBasedFishFarmingPageTemplate = ({
                   <div className="column">
                     <NonStretchedImage
                       className="side-image"
+                      publicURL={sectionData.sideImage.publicURL}
+                      extension={sectionData.sideImage.extension}
                       fluid={sectionData.sideImage.childImageSharp.fluid}
                     />
                   </div>
@@ -190,6 +202,8 @@ export const LandBasedFishFarmingPageTemplate = ({
                 <div className="column">
                   <NonStretchedImage
                     className="side-image"
+                    publicURL={sectionData.sideImage.publicURL}
+                    extension={sectionData.sideImage.extension}
                     fluid={sectionData.sideImage.childImageSharp.fluid}
                   />
                 </div>
@@ -236,16 +250,22 @@ export const LandBasedFishFarmingPageTemplate = ({
                 <div>
                   <NonStretchedImage
                     className="side-image1"
+                    publicURL={settingSection.sideImage1.publicURL}
+                    extension={settingSection.sideImage1.extension}
                     fluid={settingSection.sideImage1.childImageSharp.fluid}
                   />
                 </div>
                 <div>
                   <NonStretchedImage
                     className="side-image2"
+                    publicURL={settingSection.sideImage2.publicURL}
+                    extension={settingSection.sideImage2.extension}
                     fluid={settingSection.sideImage2.childImageSharp.fluid}
                   />
                   <NonStretchedImage
                     className="side-image3"
+                    publicURL={settingSection.sideImage3.publicURL}
+                    extension={settingSection.sideImage3.extension}
                     fluid={settingSection.sideImage3.childImageSharp.fluid}
                   />
                 </div>
@@ -259,10 +279,14 @@ export const LandBasedFishFarmingPageTemplate = ({
           <div className="row">
             <NonStretchedImage
               className="is-mobile-hidden"
+              publicURL={getStartSection.topImage.publicURL}
+              extension={getStartSection.topImage.extension}
               fluid={getStartSection.topImage.childImageSharp.fluid}
             />
             <NonStretchedImage
               className="is-mobile-show"
+              publicURL={getStartSection.topImage.publicURL}
+              extension={getStartSection.topImage.extension}
               fluid={getStartSection.mobileTopImage.childImageSharp.fluid}
             />
           </div>
@@ -279,42 +303,6 @@ export const LandBasedFishFarmingPageTemplate = ({
         </div>
       </section>
     </section>
-  );
-};
-
-const Hero = ({ className, heading, description, image }) => {
-  return (
-    <div>
-      <BackgroundImage
-        className={classNames('hero', className)}
-        image={image}
-        filterStyle={{
-          background:
-            'linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))',
-        }}
-        style={{
-          backgroundPosition: 'bottom center !important',
-          minHeight: '320px',
-        }}
-      >
-        <div className={classNames('hero-body is-mobile-hidden')}>
-          <div className="container">
-            <div className="row">
-              <h1>{heading}</h1>
-              <p>{description}</p>
-            </div>
-          </div>
-        </div>
-      </BackgroundImage>
-      <section className="section is-mobile-show">
-        <div className="container">
-          <div className="row">
-            <h1>{heading}</h1>
-            <p>{description}</p>
-          </div>
-        </div>
-      </section>
-    </div>
   );
 };
 

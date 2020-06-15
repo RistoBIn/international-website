@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 import SectionList from '../components/SectionList';
-import BackgroundImage from '../components/BackgroundImage';
+import SolutionHero from '../components/SolutionHero';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 
 export const SolutionPageTemplate = ({
@@ -51,31 +51,6 @@ export const SolutionPageTemplate = ({
         <></>
       )}
     </section>
-  );
-};
-
-const SolutionHero = ({ className, heading, description, image }) => {
-  return (
-    <BackgroundImage
-      className={classNames('hero', className)}
-      image={image}
-      filterStyle={{
-        background:
-          'linear-gradient(358.35deg, #0E111B 4.06%, rgba(14, 17, 27, 0.21) 34.1%), linear-gradient(0deg, rgba(14, 17, 27, 0.3), rgba(14, 17, 27, 0.3))',
-      }}
-      style={{
-        backgroundPosition: 'bottom center !important',
-      }}
-    >
-      <div className={classNames('hero-body')}>
-        <div className="container">
-          <div>
-            <h1>{heading}</h1>
-            <p>{description}</p>
-          </div>
-        </div>
-      </div>
-    </BackgroundImage>
   );
 };
 

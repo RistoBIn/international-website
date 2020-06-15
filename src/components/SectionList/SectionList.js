@@ -5,6 +5,7 @@ import SplittedSection from '../SplittedSection';
 import NonStretchedImage from '../NonStretchedImage';
 import generateHTML from '../../utils/generateHTML';
 import Content, { HTMLContent } from '../Content';
+import ButtonsList from '../Button/ButtonsList'
 import { idMaker } from '../../utils/id-maker';
 
 const gen = idMaker();
@@ -33,10 +34,13 @@ const SectionList = ({ items, id }) => {
                   <TitleAndImage {...item} className={styles.leftColumn} />
                 }
                 rightColumn={
-                  <PostContent
-                    className="content links-are-buttons"
-                    content={generateHTML(item.content)}
-                  />
+                  <>
+                    <PostContent
+                      className="content links-are-buttons"
+                      content={generateHTML(item.content)}
+                    />
+                    <ButtonsList buttons={item.buttonList} />
+                  </>
                 }
                 rightColumnCSS={classNames(styles.rightColumn, {
                   [styles.subheading__exist]: item.subheading,
