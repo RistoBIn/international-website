@@ -81,10 +81,12 @@ export const LandBasedFishFarmingPageTemplate = ({
             <h2 className="section--title has-mobile-left">
               {featureSection.heading}
             </h2>
-            <HTMLContent
-              className="description"
-              content={featureSection.description}
-            />
+            <div className="short-width-wrap">
+              <HTMLContent
+                className="description"
+                content={featureSection.description}
+              />
+            </div>
             <CheckList features={featureSection.features} />
           </div>
         </div>

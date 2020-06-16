@@ -47,7 +47,7 @@ experiencesSection:
       description: We have developed, built and supplied subsea cameras for years
     - featuredimage: /img/world-largest-aquaculture-ai.png
       description: Possesses the world’s largest data harvesting of aquaculture images for AI
-    - featuredimage: /img/national-international-ai.png
+    - featuredimage: /img/individual-salmon-identification.png
       description: Develops AI applications for use in fish cages
     - featuredimage: /img/national-international-ai.png
       description: Participates in national and international projects focusing on AI, machine learning, video distribution and 5G

@@ -331,6 +331,7 @@ body {
   .section--subheading {
     @include text_Light;
     padding-bottom: 20px;
+    font-weight: bold;
     @media screen and (max-width: $tablet) {
       padding-bottom: 10px;
     }
@@ -1424,7 +1425,7 @@ section.product-page-primary {
 /****************     Global Custom Style    ********************/
 .center-align-wrapper {
   width: 100%;
-  max-width: 895px;
+  max-width: 930px;
   margin: auto;
   
   text-align: center;
@@ -1432,10 +1433,6 @@ section.product-page-primary {
     text-align: center !important;
   }
   & .description {
-    width: 100%;
-    max-width: 660px;
-    margin: auto;
-    
     font-size: 22px;
     line-height: 170%;
   }
@@ -1443,11 +1440,15 @@ section.product-page-primary {
     margin: 41px 0;
   }
 }
+.short-width-wrap {
+  width: 100%;
+  max-width: 660px !important;
+  margin: auto !important;
+}
 
 .no-margin {
   margin: 0 !important;
 }
-
 .is-vcentered {
   align-items: center;
 }

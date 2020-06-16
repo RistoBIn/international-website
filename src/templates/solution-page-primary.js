@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Layout from '../components/Layout';
@@ -11,8 +12,15 @@ import SideImageSection from '../components/SideImageSection';
 import GetStartSection from '../components/GetStartSection';
 import ButtonsList from '../components/Button/ButtonsList';
 import SolutionHero from '../components/SolutionHero';
+import ExperiencesList from '../components/ExperiencesList';
+import BackgroundImage from '../components/BackgroundImage';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
+
+const Author = styled.p`
+  margin-top: 24px;
+  margin-bottom: -30px;
+`
 
 export const SolutionPageTemplate = ({
   content,
@@ -23,6 +31,8 @@ export const SolutionPageTemplate = ({
   splitSections,
   imageSection,
   imageSplitSection,
+  experiencesSection,
+  descriptionSection,
   blueThinkGo,
   getStartSection,
   splitSection,
@@ -77,6 +87,52 @@ export const SolutionPageTemplate = ({
         <></>
       )}
       <SideImageSection sectionData={imageSplitSection} />
+      {experiencesSection ? (
+        <section className="section has-dark-background">
+          <div className="container">
+            <div className="column center-align-wrapper">
+              <div className="short-width-wrap">
+                <h2 className="section--title has-mobile-left">
+                  {experiencesSection.heading}
+                </h2>
+              </div>
+              <HTMLContent
+                className="description"
+                content={experiencesSection.content}
+              />
+            </div>
+            <div>
+              <ExperiencesList experiences={experiencesSection.experiences} />
+            </div>
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
+      {descriptionSection ? (
+        <BackgroundImage
+          image={descriptionSection.backgroundImage}
+          id
+          style
+          htmlTag="div"
+        >
+          <section className="section">
+            <div className="container">
+              <div className="column center-align-wrapper">
+                <HTMLContent
+                  className="description is-italic has-text-weight-bold"
+                  content={descriptionSection.description}
+                />
+                <Author className="section--subheading">
+                  {descriptionSection.author}
+                </Author>
+              </div>
+            </div>
+          </section>
+        </BackgroundImage>
+      ) : (
+        <></>
+      )}
       <SideImageSection sectionData={blueThinkGo} />
       {splitSection ? (
         <section className="section has-dark-background">
@@ -130,6 +186,8 @@ const SolutionPage = ({ data }) => {
     splitSections,
     imageSection,
     imageSplitSection,
+    experiencesSection,
+    descriptionSection,
     blueThinkGo,
     getStartSection,
     splitSection,
@@ -146,6 +204,8 @@ const SolutionPage = ({ data }) => {
         splitSections={splitSections}
         imageSection={imageSection}
         imageSplitSection={imageSplitSection}
+        experiencesSection={experiencesSection}
+        descriptionSection={descriptionSection}
         blueThinkGo={blueThinkGo}
         getStartSection={getStartSection}
         splitSection={splitSection}
@@ -241,7 +301,7 @@ export const pageQuery = graphql`
               publicURL
               extension
               childImageSharp {
-                fluid(maxHeight: 440, quality: 80) {
+                fluid(maxHeight: 160, quality: 80) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
                   presentationWidth
                 }
@@ -257,7 +317,7 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 1410, quality: 80) {
+              fluid(maxWidth: 1410, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
