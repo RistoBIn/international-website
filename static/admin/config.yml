@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: RistoBin/international-website
+  repo: RistoBIn/international-website
   branch: aquaculture-page
 
 media_folder: static/img
