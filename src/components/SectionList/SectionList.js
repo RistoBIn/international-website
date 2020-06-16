@@ -5,7 +5,7 @@ import SplittedSection from '../SplittedSection';
 import NonStretchedImage from '../NonStretchedImage';
 import generateHTML from '../../utils/generateHTML';
 import Content, { HTMLContent } from '../Content';
-import ButtonsList from '../Button/ButtonsList'
+import ButtonsList from '../Button/ButtonsList';
 import { idMaker } from '../../utils/id-maker';
 
 const gen = idMaker();

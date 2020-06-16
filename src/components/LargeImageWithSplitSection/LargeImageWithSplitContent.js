@@ -7,7 +7,6 @@ import NonStretchedImage from '../NonStretchedImage';
 const LargeImageWithSplitContent = ({
   leftColumn,
   rightColumn,
-  className,
   image,
   subheading,
 }) => {
@@ -22,7 +21,9 @@ const LargeImageWithSplitContent = ({
           {...image}
         />
         {subheading ? (
-          <p className={classNames('section--subheading', styles.subheading)}>{subheading}</p>
+          <p className={classNames('section--subheading', styles.subheading)}>
+            {subheading}
+          </p>
         ) : (
           <></>
         )}

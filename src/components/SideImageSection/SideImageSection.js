@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './SideImageSection.module.scss'
+import styles from './SideImageSection.module.scss';
 import SplittedSection from '../SplittedSection';
 import NonStretchedImage from '../NonStretchedImage';
 import generateHTML from '../../utils/generateHTML';
@@ -8,11 +8,13 @@ import Content, { HTMLContent } from '../Content';
 import ButtonsList from '../Button/ButtonsList';
 
 const SideImageSection = ({ sectionData }) => {
-	const PostContent = HTMLContent || Content;
+  const PostContent = HTMLContent || Content;
 
-	if (sectionData.imageSide === 'left') {
-		return(
-			<section className='section has-dark-background'>
+  if (!sectionData || sectionData.length < 1) return <></>;
+
+  if (sectionData.imageSide === 'left') {
+    return (
+      <section className="section has-dark-background">
         <div className="container content">
           <SplittedSection
             leftColumn={
@@ -25,11 +27,15 @@ const SideImageSection = ({ sectionData }) => {
             rightColumn={
               <>
                 {sectionData.subheading ? (
-                  <p className="section--subheading no-margin">{sectionData.subheading}</p>	
+                  <p className="section--subheading no-margin">
+                    {sectionData.subheading}
+                  </p>
                 ) : (
-                	<></>
+                  <></>
                 )}
-              	<h2 className="section--title no-margin">{sectionData.heading}</h2>
+                <h2 className="section--title no-margin">
+                  {sectionData.heading}
+                </h2>
                 <PostContent
                   className="content"
                   content={generateHTML(sectionData.content)}
@@ -41,20 +47,25 @@ const SideImageSection = ({ sectionData }) => {
           />
         </div>
       </section>
-		)
-	} else if(sectionData.imageSide === 'right') {
-		return(
-			<section className="section has-dark-background">
+    );
+  }
+  if (sectionData.imageSide === 'right') {
+    return (
+      <section className="section has-dark-background">
         <div className="container content">
           <SplittedSection
             leftColumn={
               <>
-              	{sectionData.subheading ? (
-                  <p className="section--subheading no-margin">{sectionData.subheading}</p>	
+                {sectionData.subheading ? (
+                  <p className="section--subheading no-margin">
+                    {sectionData.subheading}
+                  </p>
                 ) : (
-                	<></>
+                  <></>
                 )}
-              	<h2 className="section--title no-margin">{sectionData.heading}</h2>
+                <h2 className="section--title no-margin">
+                  {sectionData.heading}
+                </h2>
                 <PostContent
                   className="content"
                   content={generateHTML(sectionData.content)}
@@ -73,9 +84,9 @@ const SideImageSection = ({ sectionData }) => {
           />
         </div>
       </section>
+    );
+  }
+  return <></>;
+};
 
-		)
-	}
-}
-
-export default SideImageSection
+export default SideImageSection;

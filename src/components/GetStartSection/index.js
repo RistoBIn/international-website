@@ -5,7 +5,8 @@ import { HTMLContent } from '../Content';
 
 const GetStartSection = ({ sectionData }) => {
   if (!sectionData || sectionData.length < 1) return <></>;
-  return(
+
+  return (
     <section className="section">
       <div className="container">
         <div className="row">
@@ -34,7 +35,7 @@ const GetStartSection = ({ sectionData }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default GetStartSection
+export default GetStartSection;
