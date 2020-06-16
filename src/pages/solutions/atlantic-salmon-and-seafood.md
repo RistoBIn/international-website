@@ -14,7 +14,7 @@ splitSections:
   - content: >-
       The Norwegian Aquaculture is already being improved by SEALAB's solutions through sharp images which in turn provides a better basis for the customer. And now comes many new innovations thanks to our unique edge computing technology combined with smart 2D and 3D subsea cameras: measuring stress in fish, better lining regime, monitoring the entire state of the cage. All of this helps to reduce losses and can provide a better survival rate. The economic benefits are increased at the farms while managing to reduce the environmental impact caused by salmon feeding.
     heading: SEALAB core technology is innovating the industry
-    buttonList: 
+    linkButtons: 
       - buttonTxt: Edge Computing
         buttonLink: "/technologies/edge-intelligence/"
 imageSection:
@@ -26,7 +26,7 @@ imageSection:
     SEALAB are developing System on Chip (SoC) with FPGA technology inside that fulfil the most demanding computer vision and AI tasks. The on-chip processing gets past challenges around massive data generation and poor image quality by doing the processing in the camera unit itself. Our system on chip can be customised for different cameras, and remotely reprogrammed to perform even more advanced tasks.
 
     If you are interested in upgrading your underwater camera with FPGA technology from SEALAB, contact us for a meeting.
-  buttonList: 
+  linkButtons: 
     - buttonTxt: Book a Meeting
       buttonLink: /contact
 imageSplitSection:
@@ -35,7 +35,7 @@ imageSplitSection:
     Edge computing is about processing at the points in the value chain where it is useful and efficient. Machine vision and Artificial Intelligence require a data volume, data quality, and frequency that challenge earlier paradigms such as cloud computing. Instead of transporting all data to the cloud, important processing is done at the edge. A AI application that could benefit from this is biomass estimation.
   featuredimage: /img/biomass-estimation-illustration.jpg
   imageSide: left
-  buttonList: 
+  linkButtons: 
     - buttonTxt: Read More
       buttonLink: /contact
 experiencesSection:
@@ -64,7 +64,7 @@ blueThinkGo:
   featuredimage: /img/tablet-holding-portrait.jpg
   imageSide: right
   subheading: BlueThink™ GO
-  buttonList:
+  linkButtons:
     - buttonTxt:  BlueThink™ GO
       buttonLink: /products/bluethink-go/
 getStartSection:

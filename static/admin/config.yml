@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
-  repo: SEALAB-Software/international-website
-  branch: stable
+  repo: RistoBin/international-website
+  branch: aquaculture-page
 
 media_folder: static/img
 public_folder: /img
 
 logo_url: /img/sealab-blue.svg
 
-display_url:  https://www.sealab.no/
-site_url:  https://www.sealab.no/
+display_url:  https://sealab-staging.netlify.app/
+site_url:  https://sealab-staging.netlify.app/
 publish_mode: editorial_workflow
 collections:
 
@@ -68,24 +68,85 @@ collections:
             - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Content on the right", name: "content", widget: "markdown", }
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
-      - label: "Bordered section"
-        name: btgo
-        widget: object
-        hint: "If image, heading or description is missing the section will not be displayed."
-        required: false
-        fields:
-          - {label: Subheading, name: subheading, widget: string, required: false}
-          - {label: "H2 Title", name: heading, widget: string, required: false}
-          - {label: "Description", name: description, widget: markdown, required: false}
-          - {label: "Image", name: "featuredimage", widget: image, required: false}
+            - label: "LinkButtons"
+              name: linkButtons
+              widget: list
+              required: false
+              fields:
+                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
+                  - {label: "Button Link", name: "buttonLink", widget: "string"}
       - label: "Large image section"
         name: imageSection
         widget: object
         required: false
         fields:
             - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+            - {label: Subheading, name: subheading, widget: string, required: false}
             - {label: "Content - left", name: "left", widget: "markdown", required: false}
             - {label: "Content - right", name: "right", widget: "markdown", required: false }
+            - label: "LinkButtons"
+              name: linkButtons
+              widget: list
+              required: false
+              fields:
+                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
+                  - {label: "Button Link", name: "buttonLink", widget: "string"}
+      - label: "Image splitted section"
+        name: imageSplitSection
+        widget: object
+        required: false
+        fields: 
+            - {label: "Heading", name: "heading", widget: "string", required: false}
+            - {label: Subheading, name: subheading, widget: "string", required: false}
+            - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+            - {label: "Image Side", name: "imageSide", widget: "string"}
+            - {label: "Content", name: "content", widget: "markdown", required: false}
+            - label: "LinkButtons"
+              name: linkButtons
+              widget: list
+              required: false
+              fields:
+                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
+                  - {label: "Button Link", name: "buttonLink", widget: "string"}
+      - lablel: "Experiences Section"
+        name: experiencesSection
+        widget: object
+        required: false
+        fields: 
+            - {label: "Heading", name: "heading", widget: "string", required: false}
+            - {label: "Content", name: "content", widget: "markdown", required: false}
+            - label: "Experiences"
+              name: experiences
+              widget: list
+              required: false
+              fields:
+                  - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+                  - {label: "Experience", name: "description", widget: "string", required: false}
+      - label: "Description Section"
+        name: descriptionSection
+        widget: object
+        required: false
+        fields: 
+            - {label: "Description", name: "description", widget: "string", required: false}
+            - {label: "Author", name: "author", widget: "string", required: false}
+            - {label: "Background Image", name: "backgroundImage", widget: "image", hint: "Image", required: false}
+      - label: "BlueThink go section"
+        name: blueThinkGo
+        widget: object
+        required: false
+        fields: 
+            - {label: "Heading", name: "heading", widget: "string", required: false}
+            - {label: Subheading, name: subheading, widget: "string", required: false}
+            - {label: "Image", name: "featuredimage", widget: "image", hint: "Image", required: false}
+            - {label: "Image Side", name: "imageSide", widget: "string"}
+            - {label: "Content", name: "content", widget: "markdown", required: false}
+            - label: "LinkButtons"
+              name: linkButtons
+              widget: list
+              required: false
+              fields:
+                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
+                  - {label: "Button Link", name: "buttonLink", widget: "string"}
       - label: "Splitted section bottom of page"
         name: splitSection
         widget: object
@@ -94,6 +155,17 @@ collections:
             - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Content - left", name: "left", widget: "markdown", required: false }
             - {label: "Content - right", name: "right", widget: "markdown", required: false }
+      - label: "Get Started Section"
+        name: getStartSection
+        widget: object
+        required: false
+        fields: 
+            - {label: "Full width desktop Image", name: "topImage", widget: "image", hint: "Image", required: false}
+            - {label: "Full width mobile Image", name: "mobileTopImage", widget: "image", hint: "Image", required: false}
+            - {label: "Heading", name: "heading", widget: "string", required: false}
+            - {label: "Description", name: "description", widget: "markdown", required: false}
+            - {label: "Contact Button Text", name: "buttonLink", widget: "string", required: false}
+            - {label: "Contact Button Link", name: "buttonTxt", widget: "string", required: false}
 
 #### PROJECT PAGE TEMPLATE 1 ####
 

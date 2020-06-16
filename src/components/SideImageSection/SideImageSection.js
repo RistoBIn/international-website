@@ -40,7 +40,7 @@ const SideImageSection = ({ sectionData }) => {
                   className="content"
                   content={generateHTML(sectionData.content)}
                 />
-                <ButtonsList buttons={sectionData.buttonList} />
+                <ButtonsList buttons={sectionData.linkButtons} />
               </>
             }
             leftColumnCSS={classNames(styles.automargin, 'automargin')}

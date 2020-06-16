@@ -75,8 +75,8 @@ export const SolutionPageTemplate = ({
                 content={generateHTML(imageSection.right)}
                 className="content is-left-aligned"
               />
-              {imageSection.buttonList ? (
-                <ButtonsList buttons={imageSection.buttonList} />
+              {imageSection.linkButtons ? (
+                <ButtonsList buttons={imageSection.linkButtons} />
               ) : (
                 <></>
               )}
@@ -250,7 +250,7 @@ export const pageQuery = graphql`
               }
             }
           }
-          buttonList {
+          linkButtons {
             buttonTxt
             buttonLink
           }
@@ -269,7 +269,7 @@ export const pageQuery = graphql`
               }
             }
           }
-          buttonList {
+          linkButtons {
             buttonTxt
             buttonLink
           }
@@ -288,7 +288,7 @@ export const pageQuery = graphql`
             }
           }
           imageSide
-          buttonList {
+          linkButtons {
             buttonTxt
             buttonLink
           }
@@ -339,7 +339,7 @@ export const pageQuery = graphql`
             }
           }
           imageSide
-          buttonList {
+          linkButtons {
             buttonTxt
             buttonLink
           }

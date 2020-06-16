@@ -39,7 +39,7 @@ const SectionList = ({ items, id }) => {
                       className="content links-are-buttons"
                       content={generateHTML(item.content)}
                     />
-                    <ButtonsList buttons={item.buttonList} />
+                    <ButtonsList buttons={item.linkButtons} />
                   </>
                 }
                 rightColumnCSS={classNames(styles.rightColumn, {
