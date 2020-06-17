@@ -21,7 +21,7 @@ const ButtonsList = ({ buttons }) => {
           <Button
             className="is-transparent"
             text={item.buttonTxt}
-            path={item.buttonTxt}
+            path={item.buttonLink}
           />
         );
       })}

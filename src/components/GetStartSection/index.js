@@ -11,16 +11,16 @@ const GetStartSection = ({ sectionData }) => {
       <div className="container">
         <div className="row">
           <NonStretchedImage
+            objectFit="contain"
+            alt=""
             className="is-mobile-hidden"
-            publicURL={sectionData.topImage.publicURL}
-            extension={sectionData.topImage.extension}
-            fluid={sectionData.topImage.childImageSharp.fluid}
+            {...sectionData.topImage}
           />
           <NonStretchedImage
+            objectFit="contain"
+            alt=""
             className="is-mobile-show"
-            publicURL={sectionData.topImage.publicURL}
-            extension={sectionData.topImage.extension}
-            fluid={sectionData.mobileTopImage.childImageSharp.fluid}
+            {...sectionData.topImage}
           />
         </div>
         <div className="row center-align-wrapper">

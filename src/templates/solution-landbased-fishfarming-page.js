@@ -64,9 +64,10 @@ export const LandBasedFishFarmingPageTemplate = ({
               <div className="side-image is-mobile-hidden">
                 <div className="image-gradient" />
                 <NonStretchedImage
-                  fluid={seaToLandSection.sideImage.childImageSharp.fluid}
-                  publicURL={seaToLandSection.sideImage.publicURL}
-                  extension={seaToLandSection.sideImage.extension}
+                  objectFit="contain"
+                  alt=""
+                  className="side-image"
+                  {...seaToLandSection.sideImage}
                 />
               </div>
             </div>
@@ -124,10 +125,10 @@ export const LandBasedFishFarmingPageTemplate = ({
             </div>
             <div className="column">
               <NonStretchedImage
+                objectFit="contain"
+                alt=""
                 className="side-image"
-                publicURL={scamSection.sideImage.publicURL}
-                extension={scamSection.sideImage.extension}
-                fluid={scamSection.sideImage.childImageSharp.fluid}
+                {...scamSection.sideImage}
               />
             </div>
           </div>
@@ -136,9 +137,10 @@ export const LandBasedFishFarmingPageTemplate = ({
       <section className="section is-mobile-hidden">
         <div className="container">
           <NonStretchedImage
-            fluid={middleImage.childImageSharp.fluid}
-            publicURL={middleImage.publicURL}
-            extension={middleImage.extension}
+            objectFit="contain"
+            alt=""
+            className="side-image"
+            {...middleImage}
           />
         </div>
       </section>
@@ -187,10 +189,10 @@ export const LandBasedFishFarmingPageTemplate = ({
                   </div>
                   <div className="column">
                     <NonStretchedImage
+                      objectFit="contain"
+                      alt=""
                       className="side-image"
-                      publicURL={sectionData.sideImage.publicURL}
-                      extension={sectionData.sideImage.extension}
-                      fluid={sectionData.sideImage.childImageSharp.fluid}
+                      {...sectionData.sideImage}
                     />
                   </div>
                 </div>
@@ -204,10 +206,10 @@ export const LandBasedFishFarmingPageTemplate = ({
               <div className="columns is-vcentered">
                 <div className="column">
                   <NonStretchedImage
+                    objectFit="contain"
+                    alt=""
                     className="side-image"
-                    publicURL={sectionData.sideImage.publicURL}
-                    extension={sectionData.sideImage.extension}
-                    fluid={sectionData.sideImage.childImageSharp.fluid}
+                    {...sectionData.sideImage}
                   />
                 </div>
                 <div className="column">
@@ -252,24 +254,24 @@ export const LandBasedFishFarmingPageTemplate = ({
               <div className="side-image">
                 <div>
                   <NonStretchedImage
+                    objectFit="contain"
+                    alt=""
                     className="side-image1"
-                    publicURL={settingSection.sideImage1.publicURL}
-                    extension={settingSection.sideImage1.extension}
-                    fluid={settingSection.sideImage1.childImageSharp.fluid}
+                    {...settingSection.sideImage1}
                   />
                 </div>
                 <div>
                   <NonStretchedImage
+                    objectFit="contain"
+                    alt=""
                     className="side-image2"
-                    publicURL={settingSection.sideImage2.publicURL}
-                    extension={settingSection.sideImage2.extension}
-                    fluid={settingSection.sideImage2.childImageSharp.fluid}
+                    {...settingSection.sideImage2}
                   />
                   <NonStretchedImage
+                    objectFit="contain"
+                    alt=""
                     className="side-image3"
-                    publicURL={settingSection.sideImage3.publicURL}
-                    extension={settingSection.sideImage3.extension}
-                    fluid={settingSection.sideImage3.childImageSharp.fluid}
+                    {...settingSection.sideImage3}
                   />
                 </div>
               </div>
@@ -362,6 +364,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 388, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -384,6 +387,7 @@ export const pageQuery = graphql`
               childImageSharp {
                 fluid(maxHeight: 92, quality: 80) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
+                  presentationWidth
                 }
               }
             }
@@ -403,6 +407,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 494, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -413,6 +418,7 @@ export const pageQuery = graphql`
           childImageSharp {
             fluid(maxHeight: 584, quality: 80) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
+              presentationWidth
             }
           }
         }
@@ -437,6 +443,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 582, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -453,6 +460,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 289, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -462,6 +470,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -471,6 +480,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 200, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -486,6 +496,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 491, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }
@@ -495,6 +506,7 @@ export const pageQuery = graphql`
             childImageSharp {
               fluid(maxHeight: 560, quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
+                presentationWidth
               }
             }
           }

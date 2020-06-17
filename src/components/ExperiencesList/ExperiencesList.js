@@ -10,9 +10,10 @@ const ExperiencesList = ({ experiences }) => {
         return (
           <div>
             <NonStretchedImage
-              fluid={experience.featuredimage.childImageSharp.fluid}
-              publicURL={experience.featuredimage.publicURL}
-              extension={experience.featuredimage.extension}
+              objectFit="contain"
+              alt=""
+              className="image"
+              {...experience.featuredimage}
             />
             <p className="section--subheading">{experience.description}</p>
           </div>

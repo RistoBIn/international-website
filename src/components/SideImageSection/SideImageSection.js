@@ -19,9 +19,10 @@ const SideImageSection = ({ sectionData }) => {
           <SplittedSection
             leftColumn={
               <NonStretchedImage
-                publicURL={sectionData.featuredimage.publicURL}
-                extension={sectionData.featuredimage.extension}
-                fluid={sectionData.featuredimage.childImageSharp.fluid}
+                objectFit="contain"
+                alt=""
+                className="image"
+                {...sectionData.featuredimage}
               />
             }
             rightColumn={
@@ -75,9 +76,10 @@ const SideImageSection = ({ sectionData }) => {
             }
             rightColumn={
               <NonStretchedImage
-                publicURL={sectionData.featuredimage.publicURL}
-                extension={sectionData.featuredimage.extension}
-                fluid={sectionData.featuredimage.childImageSharp.fluid}
+                objectFit="contain"
+                alt=""
+                className="image"
+                {...sectionData.featuredimage}
               />
             }
             rightColumnCSS={classNames(styles.automargin, 'automargin')}

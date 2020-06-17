@@ -7,12 +7,13 @@ import NonStretchedImage from '../NonStretchedImage';
 const LargeImageWithSplitContent = ({
   leftColumn,
   rightColumn,
+  className,
   image,
   subheading,
 }) => {
   if (!image || (!image.childImageSharp && !image.publicURL)) return <></>;
   return (
-    <section className="section">
+    <section className={classNames(styles.section, className)}>
       <div className="container">
         <NonStretchedImage
           objectFit="contain"
