@@ -9,6 +9,7 @@ import CheckList from '../components/CheckList';
 import AdvantagesList from '../components/AdvantagesList';
 import Button from '../components/Button';
 import NonStretchedImage from '../components/NonStretchedImage';
+import GetStartSection from '../components/GetStartSection';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 
 export const LandBasedFishFarmingPageTemplate = ({
@@ -276,34 +277,7 @@ export const LandBasedFishFarmingPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="section">
-        <div className="container">
-          <div className="row">
-            <NonStretchedImage
-              className="is-mobile-hidden"
-              publicURL={getStartSection.topImage.publicURL}
-              extension={getStartSection.topImage.extension}
-              fluid={getStartSection.topImage.childImageSharp.fluid}
-            />
-            <NonStretchedImage
-              className="is-mobile-show"
-              publicURL={getStartSection.topImage.publicURL}
-              extension={getStartSection.topImage.extension}
-              fluid={getStartSection.mobileTopImage.childImageSharp.fluid}
-            />
-          </div>
-          <div className="row center-align-wrapper">
-            <br />
-            <h2 className="section--title">{getStartSection.heading}</h2>
-            <HTMLContent content={getStartSection.description} />
-            <Button
-              className="is-primary"
-              text={getStartSection.buttonTxt}
-              path={getStartSection.buttonLink}
-            />
-          </div>
-        </div>
-      </section>
+      <GetStartSection sectionData={getStartSection} />
     </section>
   );
 };

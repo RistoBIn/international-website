@@ -20,7 +20,7 @@ import generateHTML from '../utils/generateHTML';
 const Author = styled.p`
   margin-top: 24px;
   margin-bottom: -30px;
-`
+`;
 
 export const SolutionPageTemplate = ({
   content,

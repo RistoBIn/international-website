@@ -81,6 +81,7 @@ const SideImageSection = ({ sectionData }) => {
               />
             }
             rightColumnCSS={classNames(styles.automargin, 'automargin')}
+            className="reverse-row-order"
           />
         </div>
       </section>
