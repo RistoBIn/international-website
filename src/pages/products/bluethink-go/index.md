@@ -75,7 +75,7 @@ featuredData:
   heading: Increased safety
 ctaSection:
   cta:
-    text: 'BlueThink™ IoT Bridge'
+    text: 'BlueThink™ Software Platform'
     path: '/technologies/software-platform/'
 customerQuotes:
   - heading: >-
