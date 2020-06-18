@@ -1,15 +1,15 @@
 backend:
   name: git-gateway
-  repo: RistoBIn/international-website
-  branch: aquaculture-page
+  repo: SEALAB-Software/international-website
+  branch: stable
 
 media_folder: static/img
 public_folder: /img
 
 logo_url: /img/sealab-blue.svg
 
-display_url:  https://sealab-staging.netlify.app/
-site_url:  https://sealab-staging.netlify.app/
+display_url:  https://www.sealab.no/
+site_url:  https://www.sealab.no/
 publish_mode: editorial_workflow
 collections:
 
@@ -1209,7 +1209,7 @@ collections:
             widget: object
             fields:
               - {label: "Top full width image", name: "topImage", widget: image}
-              - {label: "Mobile full width image", name: "topImage", widget: image}
+              - {label: "Mobile full width image", name: "mobileTopImage", widget: image}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "description", widget: text}
               - {label: "Button Text", name: "text", widget: string}

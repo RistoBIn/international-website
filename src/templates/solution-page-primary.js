@@ -19,7 +19,6 @@ import generateHTML from '../utils/generateHTML';
 
 const Author = styled.p`
   margin-top: 24px;
-  margin-bottom: -30px;
 `;
 
 export const SolutionPageTemplate = ({
@@ -317,7 +316,7 @@ export const pageQuery = graphql`
             publicURL
             extension
             childImageSharp {
-              fluid(maxWidth: 1410, quality: 100) {
+              fluid(maxHeight: 280, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp_noBase64
                 presentationWidth
               }
