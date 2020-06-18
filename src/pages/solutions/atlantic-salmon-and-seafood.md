@@ -15,8 +15,8 @@ splitSections:
       The Norwegian Aquaculture is already being improved by SEALAB's solutions through sharp images which in turn provides a better basis for the customer. And now comes many new innovations thanks to our unique edge computing technology combined with smart 2D and 3D subsea cameras: measuring stress in fish, better lining regime, monitoring the entire state of the cage. All of this helps to reduce losses and can provide a better survival rate. The economic benefits are increased at the farms while managing to reduce the environmental impact caused by salmon feeding.
     heading: SEALAB core technology is innovating the industry
     linkButtons: 
-      - buttonTxt: Edge Computing
-        buttonLink: "/technologies/edge-intelligence/"
+      - text: Edge Computing
+        path: "/technologies/edge-intelligence/"
 imageSection:
   featuredimage: /img/Innovation_1-2550-for-website.jpg
   subheading: Together we’ll develop cameras the market has never seen before
@@ -27,8 +27,8 @@ imageSection:
 
     If you are interested in upgrading your underwater camera with FPGA technology from SEALAB, contact us for a meeting.
   linkButtons: 
-    - buttonTxt: Book a Meeting
-      buttonLink: /contact
+    - text: Book a Meeting
+      path: /contact
 imageSplitSection:
   heading: How the aquaculture can benefit from edge computing
   content: >-
@@ -36,8 +36,8 @@ imageSplitSection:
   featuredimage: /img/biomass-estimation-illustration.jpg
   imageSide: left
   linkButtons: 
-    - buttonTxt: Read More
-      buttonLink: /contact
+    - text: Read More
+      path: /contact
 experiencesSection:
   heading: Based on years of experience in the industry
   content: >-
@@ -65,14 +65,14 @@ blueThinkGo:
   imageSide: right
   subheading: BlueThink™ GO
   linkButtons:
-    - buttonTxt:  BlueThink™ GO
-      buttonLink: /products/bluethink-go/
+    - text:  BlueThink™ GO
+      path: /products/bluethink-go/
 getStartSection:
   heading: Get started with SEALAB
   description: >-
     Are you interested in using SEALAB's solutions at your fish farm? Or would you like to hear more about some of the products? Do not hesitate to contact us.
-  buttonTxt: Contact us for a demo
-  buttonLink: "/contact"
+  text: Contact us for a demo
+  path: "/contact"
   topImage: /img/get-started-with-sealab.jpg
   mobileTopImage: /img/get-started-with-sealab-mobile.jpg
 ---

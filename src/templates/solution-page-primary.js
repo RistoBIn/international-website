@@ -251,8 +251,8 @@ export const pageQuery = graphql`
             }
           }
           linkButtons {
-            buttonTxt
-            buttonLink
+            text
+            path
           }
         }
         imageSection {
@@ -270,8 +270,8 @@ export const pageQuery = graphql`
             }
           }
           linkButtons {
-            buttonTxt
-            buttonLink
+            text
+            path
           }
         }
         imageSplitSection {
@@ -289,8 +289,8 @@ export const pageQuery = graphql`
           }
           imageSide
           linkButtons {
-            buttonTxt
-            buttonLink
+            text
+            path
           }
         }
         experiencesSection {
@@ -340,15 +340,15 @@ export const pageQuery = graphql`
           }
           imageSide
           linkButtons {
-            buttonTxt
-            buttonLink
+            text
+            path
           }
         }
         getStartSection {
           heading
           description
-          buttonTxt
-          buttonLink
+          text
+          path
           topImage {
             publicURL
             extension

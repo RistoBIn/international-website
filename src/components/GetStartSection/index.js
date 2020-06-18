@@ -27,11 +27,7 @@ const GetStartSection = ({ sectionData }) => {
           <br />
           <h2 className="section--title">{sectionData.heading}</h2>
           <HTMLContent content={sectionData.description} />
-          <Button
-            className="is-primary"
-            text={sectionData.buttonTxt}
-            path={sectionData.buttonLink}
-          />
+          <Button className="is-primary" {...sectionData} />
         </div>
       </div>
     </section>

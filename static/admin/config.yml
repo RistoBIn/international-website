@@ -73,8 +73,8 @@ collections:
               widget: list
               required: false
               fields:
-                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
-                  - {label: "Button Link", name: "buttonLink", widget: "string"}
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
       - label: "Large image section"
         name: imageSection
         widget: object
@@ -89,8 +89,8 @@ collections:
               widget: list
               required: false
               fields:
-                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
-                  - {label: "Button Link", name: "buttonLink", widget: "string"}
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
       - label: "Image splitted section"
         name: imageSplitSection
         widget: object
@@ -106,8 +106,8 @@ collections:
               widget: list
               required: false
               fields:
-                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
-                  - {label: "Button Link", name: "buttonLink", widget: "string"}
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
       - lablel: "Experiences Section"
         name: experiencesSection
         widget: object
@@ -145,8 +145,8 @@ collections:
               widget: list
               required: false
               fields:
-                  - {label: "Button Text", name: "buttonTxt", widget: "string"}
-                  - {label: "Button Link", name: "buttonLink", widget: "string"}
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
       - label: "Splitted section bottom of page"
         name: splitSection
         widget: object
@@ -164,8 +164,8 @@ collections:
             - {label: "Full width mobile Image", name: "mobileTopImage", widget: "image", hint: "Image", required: false}
             - {label: "Heading", name: "heading", widget: "string", required: false}
             - {label: "Description", name: "description", widget: "markdown", required: false}
-            - {label: "Contact Button Text", name: "buttonLink", widget: "string", required: false}
-            - {label: "Contact Button Link", name: "buttonTxt", widget: "string", required: false}
+            - {label: "Contact Button Text", name: "text", widget: "string", required: false}
+            - {label: "Contact Button Link", name: "path", widget: "string", required: false}
 
 #### PROJECT PAGE TEMPLATE 1 ####
 
@@ -1149,10 +1149,12 @@ collections:
               - {label: "Section Label", name: "label", widget: string}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - {label: "First Button Text", name: "firstButtonTxt", widget: string}
-              - {label: "First Button Link", name: "firstButtonLink", widget: string}
-              - {label: "Second Button Text", name: "secondButtonTxt", widget: string}
-              - {label: "Second Button Link", name: "secondButtonLink", widget: string}
+              - label: "Link Buttons"
+                name: linkButtons
+                object: list
+                fields: 
+                  - {label: "Button Text", name: "text", widget: string}
+                  - {label: "Button Link", name: "path", widget: string}
               - {label: "Side image", name: "sideImage", widget: image }
           - {label: "Full width image", name: "middleImage", widget: image }
           - label: "BlueThink Control Room Section"
@@ -1162,10 +1164,12 @@ collections:
               - {label: "Section Label", name: "label", widget: string}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - {label: "First Button Text", name: "firstButtonTxt", widget: string}
-              - {label: "First Button Link", name: "firstButtonLink", widget: string}
-              - {label: "Second Button Text", name: "secondButtonTxt", widget: string}
-              - {label: "Second Button Link", name: "secondButtonLink", widget: string}
+              - label: "Link Buttons"
+                name: linkButtons
+                object: list
+                fields: 
+                  - {label: "Button Text", name: "text", widget: string}
+                  - {label: "Button Link", name: "path", widget: string}
           - label: "Image Split Sections"
             name: imageSplitSections
             widget: list
@@ -1173,8 +1177,12 @@ collections:
               - {label: "Section Label", name: "label", widget: string}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - {label: "Button Text", name: "buttonTxt", widget: string}
-              - {label: "Button Link", name: "buttonLink", widget: string}
+              - label: "Link Buttons"
+                name: linkButtons
+                object: list
+                fields: 
+                  - {label: "Button Text", name: "text", widget: string}
+                  - {label: "Button Link", name: "path", widget: string}
               - {label: "Side Image", name: "sideImage", widget: image}
           - {label: "Full Width Description Section", name: "middleDescription", widget: "markdown"}
           - label: "Setting Section"
@@ -1183,8 +1191,12 @@ collections:
             fields: 
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - {label: "Button Text", name: "buttonTxt", widget: string}
-              - {label: "Button Link", name: "buttonLink", widget: string}
+              - label: "Link Buttons"
+                name: linkButtons
+                object: list
+                fields: 
+                  - {label: "Button Text", name: "text", widget: string}
+                  - {label: "Button Link", name: "path", widget: string}
               - {label: "Side Image1", name: "sideImage1", widget: image}
               - {label: "Side Image2", name: "sideImage2", widget: image}
               - {label: "Side Image3", name: "sideImage3", widget: image}
@@ -1196,8 +1208,8 @@ collections:
               - {label: "Mobile full width image", name: "topImage", widget: image}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "description", widget: text}
-              - {label: "Button Text", name: "buttonTxt", widget: string}
-              - {label: "Button Link", name: "buttonLink", widget: string}
+              - {label: "Button Text", name: "text", widget: string}
+              - {label: "Button Link", name: "path", widget: string}
 
       - file: "src/pages/about/partnership.md"
         label: "Partnership / App community"
