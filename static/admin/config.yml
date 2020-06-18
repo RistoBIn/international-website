@@ -1149,12 +1149,13 @@ collections:
               - {label: "Section Label", name: "label", widget: string}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - label: "Link Buttons"
+              - label: "LinkButtons"
                 name: linkButtons
-                object: list
-                fields: 
-                  - {label: "Button Text", name: "text", widget: string}
-                  - {label: "Button Link", name: "path", widget: string}
+                widget: list
+                required: false
+                fields:
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
               - {label: "Side image", name: "sideImage", widget: image }
           - {label: "Full width image", name: "middleImage", widget: image }
           - label: "BlueThink Control Room Section"
@@ -1164,12 +1165,13 @@ collections:
               - {label: "Section Label", name: "label", widget: string}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - label: "Link Buttons"
+              - label: "LinkButtons"
                 name: linkButtons
-                object: list
-                fields: 
-                  - {label: "Button Text", name: "text", widget: string}
-                  - {label: "Button Link", name: "path", widget: string}
+                widget: list
+                required: false
+                fields:
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
           - label: "Image Split Sections"
             name: imageSplitSections
             widget: list
@@ -1177,12 +1179,13 @@ collections:
               - {label: "Section Label", name: "label", widget: string}
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - label: "Link Buttons"
+              - label: "LinkButtons"
                 name: linkButtons
-                object: list
-                fields: 
-                  - {label: "Button Text", name: "text", widget: string}
-                  - {label: "Button Link", name: "path", widget: string}
+                widget: list
+                required: false
+                fields:
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
               - {label: "Side Image", name: "sideImage", widget: image}
           - {label: "Full Width Description Section", name: "middleDescription", widget: "markdown"}
           - label: "Setting Section"
@@ -1191,12 +1194,13 @@ collections:
             fields: 
               - {label: "Heading", name: "heading", widget: string}
               - {label: "Section Description", name: "content",  widget: "markdown"}
-              - label: "Link Buttons"
+              - label: "LinkButtons"
                 name: linkButtons
-                object: list
-                fields: 
-                  - {label: "Button Text", name: "text", widget: string}
-                  - {label: "Button Link", name: "path", widget: string}
+                widget: list
+                required: false
+                fields:
+                  - {label: "Button Text", name: "text", widget: "string"}
+                  - {label: "Button Link", name: "path", widget: "string"}
               - {label: "Side Image1", name: "sideImage1", widget: image}
               - {label: "Side Image2", name: "sideImage2", widget: image}
               - {label: "Side Image3", name: "sideImage3", widget: image}
