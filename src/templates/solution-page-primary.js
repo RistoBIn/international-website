@@ -13,12 +13,18 @@ import GetStartSection from '../components/GetStartSection';
 import ButtonsList from '../components/Button/ButtonsList';
 import SolutionHero from '../components/SolutionHero';
 import ExperiencesList from '../components/ExperiencesList';
-import BackgroundImage from '../components/BackgroundImage';
 import ReadMoreIcon from '../img/readmore-arrow.inline.svg';
 import generateHTML from '../utils/generateHTML';
 
-const Author = styled.p`
-  margin-top: 24px;
+const Quote = styled.section`
+  border-top: 2px solid #27384d;
+  border-bottom: 2px solid #27384d;
+  color: white;
+  font-size: 22px;
+  .quote__author {
+    font-size: 14px;
+    font-weight: bold;
+  }
 `;
 
 export const SolutionPageTemplate = ({
@@ -31,7 +37,7 @@ export const SolutionPageTemplate = ({
   imageSection,
   imageSplitSection,
   experiencesSection,
-  descriptionSection,
+  quote,
   blueThinkGo,
   getStartSection,
   splitSection,
@@ -108,27 +114,16 @@ export const SolutionPageTemplate = ({
       ) : (
         <></>
       )}
-      {descriptionSection ? (
-        <BackgroundImage
-          image={descriptionSection.backgroundImage}
-          id
-          style
-          htmlTag="div"
-        >
-          <section className="section">
-            <div className="container">
-              <div className="column center-align-wrapper">
-                <HTMLContent
-                  className="description is-italic has-text-weight-bold"
-                  content={descriptionSection.description}
-                />
-                <Author className="section--subheading">
-                  {descriptionSection.author}
-                </Author>
-              </div>
-            </div>
-          </section>
-        </BackgroundImage>
+      {quote ? (
+        <Quote className="section zig-zag-background">
+          <div className="container centered">
+            <PostContent
+              content={generateHTML(quote.content)}
+              className="content centered-free-text"
+            />
+            <p className="quote__author">{quote.author}</p>
+          </div>
+        </Quote>
       ) : (
         <></>
       )}
@@ -186,7 +181,7 @@ const SolutionPage = ({ data }) => {
     imageSection,
     imageSplitSection,
     experiencesSection,
-    descriptionSection,
+    quote,
     blueThinkGo,
     getStartSection,
     splitSection,
@@ -204,7 +199,7 @@ const SolutionPage = ({ data }) => {
         imageSection={imageSection}
         imageSplitSection={imageSplitSection}
         experiencesSection={experiencesSection}
-        descriptionSection={descriptionSection}
+        quote={quote}
         blueThinkGo={blueThinkGo}
         getStartSection={getStartSection}
         splitSection={splitSection}
@@ -309,19 +304,9 @@ export const pageQuery = graphql`
             description
           }
         }
-        descriptionSection {
-          description
+        quote {
+          content
           author
-          backgroundImage {
-            publicURL
-            extension
-            childImageSharp {
-              fluid(maxHeight: 280, quality: 100) {
-                ...GatsbyImageSharpFluid_withWebp_noBase64
-                presentationWidth
-              }
-            }
-          }
         }
         blueThinkGo {
           heading

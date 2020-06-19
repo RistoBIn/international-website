@@ -1,13 +1,19 @@
 @import '../_variables.scss';
 
 .subheading {
-	max-width: 365px;
+	width: 45%;
 	margin-top: 90px;
 	margin-bottom: -15px;
 
 	font-weight: bold;
 	@media screen and (max-width: $tablet) {
 		margin-top: 40px;
+		width: 100%;
 	}
 }
 
+.mobilepadding {
+	@media screen and (max-width: $desktop) {
+		padding: 0 20px;
+	}
+}

@@ -17,6 +17,7 @@ const SideImageSection = ({ sectionData }) => {
       <section className="section has-dark-background">
         <div className="container content">
           <SplittedSection
+            className="section content has-dark-background"
             leftColumn={
               <NonStretchedImage
                 objectFit="contain"
@@ -55,10 +56,12 @@ const SideImageSection = ({ sectionData }) => {
       <section className="section has-dark-background">
         <div className="container content">
           <SplittedSection
+            shouldReorderOnMobile
+            className="section content has-dark-background"
             leftColumn={
               <>
                 {sectionData.subheading ? (
-                  <p className="section--subheading no-margin">
+                  <p className="section--subheading">
                     {sectionData.subheading}
                   </p>
                 ) : (
@@ -83,7 +86,6 @@ const SideImageSection = ({ sectionData }) => {
               />
             }
             rightColumnCSS={classNames(styles.automargin, 'automargin')}
-            className="reverse-row-order"
           />
         </div>
       </section>

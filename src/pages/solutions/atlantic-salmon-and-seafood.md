@@ -51,11 +51,10 @@ experiencesSection:
       description: Develops AI applications for use in fish cages
     - featuredimage: /img/national-international-ai.png
       description: Participates in national and international projects focusing on AI, machine learning, video distribution and 5G
-descriptionSection:
-  description: >-
-    SEALAB knows that the volume and value of video data possessed by our customers offers significant potential to generate new insights. Artificial intelligence is the key to unlocking these insights.
+quote:
+  content: >-
+    ***SEALAB knows that the volume and value of video data possessed by our customers offers significant potential to generate new insights. Artificial intelligence is the key to unlocking these insights.***
   author: Milan Markovic, Founder of SEALAB
-  backgroundImage: /img/aquaculture-background-1.jpg
 blueThinkGo:
   heading: 'Access your fish farm from anywhere, anytime'
   content: >-

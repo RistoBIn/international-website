@@ -22,13 +22,23 @@ const LargeImageWithSplitContent = ({
           {...image}
         />
         {subheading ? (
-          <p className={classNames('section--subheading', styles.subheading)}>
+          <p
+            className={classNames(
+              'section--subheading',
+              styles.subheading,
+              styles.mobilepadding,
+            )}
+          >
             {subheading}
           </p>
         ) : (
           <></>
         )}
-        <SplittedSection leftColumn={leftColumn} rightColumn={rightColumn} />
+        <SplittedSection
+          className={styles.mobilepadding}
+          leftColumn={leftColumn}
+          rightColumn={rightColumn}
+        />
       </div>
     </section>
   );
