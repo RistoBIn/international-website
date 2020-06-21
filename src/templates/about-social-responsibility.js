@@ -6,7 +6,7 @@ import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
 import SectionWith3Col from '../components/SectionWith3Col';
 import SplittedSection from '../components/SplittedSection';
-import ResponsibilityTabSection from '../components/ResponsibilityTabSection'
+import ResponsibilityTabSection from '../components/ResponsibilityTabSection';
 import { idMaker } from '../utils/id-maker';
 
 import generateHTML from '../utils/generateHTML';
