@@ -81,29 +81,33 @@ splitSection2:
     management of the company.
   right: /img/three_pilars_of_sustainability.svg
 responsibilities:
-  - description: >-
-      Well-being, safety and a collective environmental responsibility will
-      characterize our daily operations, and we must continuously improve our
-      environmental work, and continue to comply with the local environmental
-      laws in which we conduct our business.
+  listItems: 
+    - heading: Environmental responsibility
+      content: >-
+        Well-being, safety and a collective environmental responsibility will
+        characterize our daily operations, and we must continuously improve our
+        environmental work, and continue to comply with the local environmental
+        laws in which we conduct our business.
 
-      SEALAB manages the business in a way that provides the most efficient use
-      of energy and raw materials, while at the same time working systematically
-      to reduce emissions to air, water and soil.
+        SEALAB manages the business in a way that provides the most efficient use
+        of energy and raw materials, while at the same time working systematically
+        to reduce emissions to air, water and soil.
 
-      Through information, attitude-building and inclusion, we will contribute
-      to strengthening the environmental awareness among our employees, partners
-      and suppliers.
-  - description: >-
-      We promote long-term profitability, fair trade, and good business
-      practices throughout the value chain through transparency, innovation and
-      collaboration. 
-  - description: >-
-      We are dedicated to providing a safe and healthy working environment for
-      all our employees. That means more than just robust training and safety
-      measures; it means promoting equality, and supporting diversity and
-      inclusion. This fosters individual and team development, and a good work
-      culture.
+        Through information, attitude-building and inclusion, we will contribute
+        to strengthening the environmental awareness among our employees, partners
+        and suppliers.
+    - heading: Economic responsibility
+      content: >-
+        We promote long-term profitability, fair trade, and good business
+        practices throughout the value chain through transparency, innovation and
+        collaboration. 
+    - heading: Social responsibility
+      content: >-
+        We are dedicated to providing a safe and healthy working environment for
+        all our employees. That means more than just robust training and safety
+        measures; it means promoting equality, and supporting diversity and
+        inclusion. This fosters individual and team development, and a good work
+        culture.
 splitSection3:
   left: >-
     ##### Certified ISO 9001 and ISO 14001 standards

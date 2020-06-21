@@ -936,10 +936,14 @@ collections:
           - label: "Responsibilities"
             name: "responsibilities"
             required: false
-            widget: list
+            widget: object
             fields:
-                - {label: "Heading --->", name: "description", widget: "string", required: false }
-                - {label: "Content", name: "description", widget: "markdown", required: false }
+              - label: List Items
+                name: listItems
+                widget: list
+                fields:
+                  - {label: "Heading", name: "heading", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
           - label: "ISO"
             name: splitSection3
             required: false

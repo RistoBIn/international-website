@@ -6,6 +6,7 @@ import Content, { HTMLContent } from '../components/Content';
 import NonStretchedImage from '../components/NonStretchedImage';
 import SectionWith3Col from '../components/SectionWith3Col';
 import SplittedSection from '../components/SplittedSection';
+import ResponsibilityTabSection from '../components/ResponsibilityTabSection';
 import { idMaker } from '../utils/id-maker';
 
 import generateHTML from '../utils/generateHTML';
@@ -20,6 +21,8 @@ export const SocialResponsibilityPageTemplate = ({
   splitSection,
   threeColSection,
   splitSection2,
+  responsibilities,
+  splitSection3,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -73,7 +76,11 @@ export const SocialResponsibilityPageTemplate = ({
           />
         }
       />
-      {/* <SplittedSection
+      <ResponsibilityTabSection
+        responsibilities={responsibilities.listItems}
+        className="section has-light-dark-background"
+      />
+      <SplittedSection
         shouldReorderOnMobile
         className="section is-medium"
         leftColumn={
@@ -90,7 +97,7 @@ export const SocialResponsibilityPageTemplate = ({
             {...splitSection3.right}
           />
         }
-      /> */}
+      />
     </section>
   );
 };
@@ -126,6 +133,7 @@ const SocialResponsibilityPage = ({ data }) => {
     splitSection,
     threeColSection,
     splitSection2,
+    responsibilities,
     splitSection3,
   } = frontmatter;
 
@@ -139,6 +147,7 @@ const SocialResponsibilityPage = ({ data }) => {
         splitSection={splitSection}
         threeColSection={threeColSection}
         splitSection2={splitSection2}
+        responsibilities={responsibilities}
         splitSection3={splitSection3}
       />
     </Layout>
@@ -197,6 +206,12 @@ export const pageQuery = graphql`
                 presentationWidth
               }
             }
+          }
+        }
+        responsibilities {
+          listItems {
+            heading
+            content
           }
         }
         splitSection3 {

@@ -134,6 +134,7 @@ export const AboutPageSecondaryTemplate = ({
         <div className="container">
           <CollapsibleList
             collapsibleItems={primaryCollapsibleList.listItems}
+            className="has-dark-background"
           />
         </div>
       </section>
